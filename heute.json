@@ -1,0 +1,243 @@
+{
+ "datum": "2026-10-11",
+ "stand": "2026-10-11T21:04+02:00",
+ "haeuser": {
+  "so": {
+   "status": "fehler",
+   "grund": "https://www.staatsoper-berlin.de/konzerte: HTTPError"
+  },
+  "do": {
+   "status": "fehler",
+   "grund": "https://www.deutscheoperberlin.de/konzerte: HTTPError"
+  },
+  "ko": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "10:00",
+     "titel": "Spielzeitfest",
+     "ort": "Schillertheater â GroÃer Saal"
+    }
+   ],
+   "quelle": "https://www.komische-oper-berlin.de/spielplan/",
+   "format": "ical"
+  },
+  "sb": {
+   "status": "keine",
+   "vorstellungen": [],
+   "quelle": "https://www.staatsballett-berlin.de/spielplan",
+   "format": "ical"
+  },
+  "dt": {
+   "status": "fehler",
+   "grund": "https://www.deutschestheater.de/konzerte: HTTPError"
+  },
+  "be": {
+   "status": "fehler",
+   "grund": "https://www.berliner-ensemble.de/konzerte: HTTPError"
+  },
+  "vb": {
+   "status": "fehler",
+   "grund": "https://www.volksbuehne.berlin/termine: HTTPError"
+  },
+  "mg": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "13:00",
+     "titel": "FUGE",
+     "ort": "Bühne",
+     "url": "https://gorki-theater.vercel.app/de/fuge"
+    },
+    {
+     "zeit": "13:00",
+     "titel": "Die Rückkehr des Odysseus",
+     "ort": "Rangfoyer",
+     "url": "https://gorki-theater.vercel.app/de/die-rueckkehr-des-odysseus"
+    },
+    {
+     "zeit": "14:00",
+     "titel": "L’atelier d’aquarelle dans l’eau – FUGE",
+     "ort": "Galerie",
+     "url": "https://gorki-theater.vercel.app/de/fuge/l-atelier-d-aquarelle-dans-l-eau"
+    },
+    {
+     "zeit": "16:00",
+     "titel": "Feedback Sessions: Autopilot",
+     "ort": "Außenbereich",
+     "url": "https://gorki-theater.vercel.app/de/feedback-sessions/feedback-sessions-autopilot"
+    },
+    {
+     "zeit": "17:00",
+     "titel": "Feedback Sessions: Autopilot",
+     "ort": "Außenbereich",
+     "url": "https://gorki-theater.vercel.app/de/feedback-sessions/feedback-sessions-autopilot"
+    }
+   ],
+   "quelle": "https://www.gorki.de/de/spielplan",
+   "format": "json-ld"
+  },
+  "sh": {
+   "status": "fehler",
+   "grund": "https://www.schaubuehne.de/konzerte: HTTPError"
+  },
+  "hau": {
+   "status": "fehler",
+   "grund": "https://www.hebbel-am-ufer.de/konzerte: HTTPError"
+  },
+  "fp": {
+   "status": "fehler",
+   "grund": "https://www.palast.berlin/konzerte: HTTPError"
+  },
+  "pa": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:00",
+     "titel": "leuchtend, klein, zitronensauer",
+     "ort": "Studio 2"
+    }
+   ],
+   "quelle": "https://www.parkaue.de/spielplan/",
+   "format": "ical"
+  },
+  "gr": {
+   "status": "fehler",
+   "grund": "https://www.grips-theater.de/konzerte: HTTPError"
+  },
+  "bf": {
+   "status": "fehler",
+   "grund": "https://www.berlinerfestspiele.de/konzerte: HTTPError"
+  },
+  "ph": {
+   "status": "fehler",
+   "grund": "https://www.berliner-philharmoniker.de/termine: HTTPError"
+  },
+  "kh": {
+   "status": "fehler",
+   "grund": "https://www.konzerthaus.de/konzerte: HTTPError"
+  },
+  "pbs": {
+   "status": "fehler",
+   "grund": "https://www.boulezsaal.de/termine: HTTPError"
+  },
+  "roc": {
+   "status": "keine",
+   "vorstellungen": [],
+   "quelle": "https://www.roc-berlin.de/kalender/",
+   "format": "json-ld"
+  },
+  "hh-sh": {
+   "status": "fehler",
+   "grund": "https://www.schauspielhaus.de/konzerte: HTTPError"
+  },
+  "hh-th": {
+   "status": "fehler",
+   "grund": "https://www.thalia-theater.de/konzerte: HTTPError"
+  },
+  "hh-kn": {
+   "status": "fehler",
+   "grund": "https://www.kampnagel.de/konzerte: HTTPError"
+  },
+  "hh-so": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "14:00",
+     "titel": "Wir bauen eine neue Stadt",
+     "ort": "Staatsoper, Probebühne 3"
+    },
+    {
+     "zeit": "15:00",
+     "titel": "Der Nussknacker",
+     "ort": "Gastspiel in Baden-Baden, Festspielhaus"
+    }
+   ],
+   "quelle": "https://www.die-hamburgische-staatsoper.de/de",
+   "format": "ical"
+  },
+  "hh-elb": {
+   "status": "fehler",
+   "grund": "https://www.elbphilharmonie.de/termine: HTTPError"
+  },
+  "hh-ndr": {
+   "status": "fehler",
+   "grund": "https://www.ndr.de/termine: HTTPError"
+  },
+  "m-resi": {
+   "status": "fehler",
+   "grund": "https://www.residenztheater.de/konzerte: HTTPError"
+  },
+  "m-mk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "18:00",
+     "titel": "Kammerspiele München: Fünf bis sechs Semmeln und eine kalte Wurst"
+    }
+   ],
+   "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
+   "format": "ical"
+  },
+  "m-vt": {
+   "status": "fehler",
+   "grund": "https://www.muenchner-volkstheater.de/konzerte: HTTPError"
+  },
+  "m-bso": {
+   "status": "fehler",
+   "grund": "https://www.staatsoper.de/: HTTPError"
+  },
+  "m-gp": {
+   "status": "fehler",
+   "grund": "https://www.gaertnerplatztheater.de/: ConnectTimeout"
+  },
+  "m-mph": {
+   "status": "fehler",
+   "grund": "https://www.mphil.de/konzerte: HTTPError"
+  },
+  "m-br": {
+   "status": "fehler",
+   "grund": "https://www.brso.de/termine: HTTPError"
+  },
+  "w-burg": {
+   "status": "fehler",
+   "grund": "https://www.burgtheater.at/konzerte: HTTPError"
+  },
+  "w-vt": {
+   "status": "fehler",
+   "grund": "https://www.volkstheater.at/termine: HTTPError"
+  },
+  "w-jos": {
+   "status": "fehler",
+   "grund": "https://www.josefstadt.org/konzerte: HTTPError"
+  },
+  "w-so": {
+   "status": "fehler",
+   "grund": "https://www.wiener-staatsoper.at/konzerte: HTTPError"
+  },
+  "w-sb": {
+   "status": "fehler",
+   "grund": "https://www.wiener-staatsballett.at/konzerte: HTTPError"
+  },
+  "w-vo": {
+   "status": "fehler",
+   "grund": "https://www.volksoper.at/konzerte: HTTPError"
+  },
+  "w-tadw": {
+   "status": "fehler",
+   "grund": "https://www.theater-wien.at/konzerte: HTTPError"
+  },
+  "w-kh": {
+   "status": "fehler",
+   "grund": "https://www.konzerthaus.at/konzerte: HTTPError"
+  },
+  "w-mv": {
+   "status": "fehler",
+   "grund": "https://www.musikverein.at/: ReadTimeout"
+  },
+  "w-sym": {
+   "status": "fehler",
+   "grund": "https://www.wienersymphoniker.at/konzerte: HTTPError"
+  }
+ }
+}
