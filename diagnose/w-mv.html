@@ -1,0 +1,747 @@
+<!-- https://www.musikverein.at/spielplan -->
+    <!doctype html>
+    <html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel='stylesheet' href='https://musikverein.at/wp-content/plugins/oxygen/plugin/themeless/normalize.min.css'>
+                <link rel="preconnect" href="https://spielplan.musikverein.at" crossorigin>
+<link rel="dns-prefetch" href="https://spielplan.musikverein.at">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <link rel="preload" href="https://musikverein.at/wp-content/plugins/IDL-Functions/fonts/tiempos-text-web-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://musikverein.at/wp-content/plugins/IDL-Functions/fonts/founders-grotesk-web-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+
+  // Consent schema version — mirrors PHP CCP_CONSENT_VERSION / cookie-banner.js.
+  var CCP_CONSENT_VERSION = 1;
+
+  // ---- CONSENT DEFAULTS ----
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    functionality_storage: 'denied',
+    security_storage: 'granted'
+  });
+
+  // ---- read consent from ccp_consent (written by cookie-banner.js) ----
+  function loadCcpConsent(){
+    try {
+      const raw = localStorage.getItem('ccp_consent');
+      if (!raw) return null;
+      const parsed = JSON.parse(raw);
+      if (!parsed || !parsed.timestamp) return null;
+      // invalidate consent stored under an older schema version (numeric compare)
+      if (Number(parsed.version) !== CCP_CONSENT_VERSION) {
+        localStorage.removeItem('ccp_consent');
+        return null;
+      }
+      // expire after 180 days, mirroring cookie-banner.js
+      const age = Date.now() - parsed.timestamp;
+      if (age > 180 * 24 * 60 * 60 * 1000) {
+        localStorage.removeItem('ccp_consent');
+        return null;
+      }
+      return parsed;
+    } catch(e) { return null; }
+  }
+
+  // ---- translate ccp_consent → Google Consent Mode object ----
+  function toConsentMode(c){
+    return {
+      analytics_storage: c.statistics ? 'granted' : 'denied',
+      ad_storage:        c.marketing  ? 'granted' : 'denied'
+    };
+  }
+
+  // ---- GTM loader (only once) ----
+  function loadGTM(){
+    if (window.__GTM_LOADED__) return;
+    window.__GTM_LOADED__ = true;
+
+    (function(w,d,s,l,i){
+      w[l] = w[l] || [];
+      w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+      var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s);
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5NJZS6M');
+  }
+
+  // ---- apply stored consent on page load ----
+  const stored = loadCcpConsent();
+  const qs = (typeof location !== 'undefined' ? location.search : '') || '';
+  const isPreview = /[?&](gtm_debug|gtm_preview|gtm_auth)=/.test(qs);
+
+  if (stored) {
+    const cm = toConsentMode(stored);
+    gtag('consent', 'update', cm);
+    loadGTM();
+
+    if (stored.statistics) {
+      dataLayer.push({ event: 'consent_analytics_granted' });
+    }
+    if (stored.marketing) {
+      dataLayer.push({ event: 'consent_marketing_granted' });
+    }
+  } else if (isPreview) {
+    // Allow Tag Assistant / Preview to connect without consent state.
+    loadGTM();
+  }
+
+  // -------------------------
+  // Called from cookie-banner.js
+  // -------------------------
+  window.enableAnalytics = function(){
+    gtag('consent', 'update', { analytics_storage: 'granted' });
+    loadGTM();
+    dataLayer.push({ event: 'consent_analytics_granted' });
+  };
+
+  window.enableMarketing = function(){
+    gtag('consent', 'update', { ad_storage: 'granted' });
+    loadGTM();
+    dataLayer.push({ event: 'consent_marketing_granted' });
+
+    if (typeof window.unlockEmbeds === 'function') {
+      window.unlockEmbeds();
+    }
+  };
+
+  window.disableAllTracking = function(){
+    gtag('consent', 'update', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied'
+    });
+    dataLayer.push({ event: 'consent_denied' });
+  };
+</script>
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v28.6 (Yoast SEO v28.6) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->
+	
+	<meta name="description" content="Entdecken Sie den aktuellen Spielplan des Musikverein Wien – Konzerthighlights der klassischen und modernen Musik in einzigartigem Ambiente. Jetzt Tickets sichern!" />
+	<link rel="canonical" href="https://musikverein.at/spielplan/" />
+	<meta property="og:locale" content="de_DE" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Spielplan" />
+	<meta property="og:description" content="Spielplan Programm &amp; Karten Suche im Archiv" />
+	<meta property="og:url" content="https://musikverein.at/spielplan/" />
+	<meta property="og:site_name" content="Musikverein Wien" />
+	<meta property="article:publisher" content="https://www.facebook.com/musikverein.wien" />
+	<meta property="article:modified_time" content="2026-09-24T11:13:48+00:00" />
+	<meta property="og:image" content="https://musikverein.at/wp-content/uploads/2025/08/U30_Schulter_quer.jpg" />
+	<meta property="og:image:width" content="1386" />
+	<meta property="og:image:height" content="924" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/musikverein.at\/spielplan\/","url":"https:\/\/musikverein.at\/spielplan\/","name":"Spielplan - Musikverein Wien","isPartOf":{"@id":"https:\/\/musikverein.at\/#website"},"primaryImageOfPage":{"@id":"https:\/\/musikverein.at\/spielplan\/#primaryimage"},"image":{"@id":"https:\/\/musikverein.at\/spielplan\/#primaryimage"},"thumbnailUrl":"https:\/\/musikverein.at\/wp-content\/uploads\/2025\/08\/U30_Schulter_quer.jpg","datePublished":"2025-07-13T08:08:10+00:00","dateModified":"2026-09-24T11:13:48+00:00","breadcrumb":{"@id":"https:\/\/musikverein.at\/spielplan\/#breadcrumb"},"inLanguage":"de","potentialAction":[{"@type":"ReadAction","target":["https:\/\/musikverein.at\/spielplan\/"]}]},{"@type":"ImageObject","inLanguage":"de","@id":"https:\/\/musikverein.at\/spielplan\/#primaryimage","url":"https:\/\/musikverein.at\/wp-content\/uploads\/2025\/08\/U30_Schulter_quer.jpg","contentUrl":"https:\/\/musikverein.at\/wp-content\/uploads\/2025\/08\/U30_Schulter_quer.jpg","width":1386,"height":924,"caption":"Zwei Personen sind von hinten zu sehen, sie sitzen im Konzertsaal und haben die Köpfe zueinander gelegt."},{"@type":"BreadcrumbList","@id":"https:\/\/musikverein.at\/spielplan\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https:\/\/musikverein.at\/"},{"@type":"ListItem","position":2,"name":"Spielplan"}]},{"@type":"WebSite","@id":"https:\/\/musikverein.at\/#website","url":"https:\/\/musikverein.at\/","name":"Musikverein Wien","description":"Einzigartige Konzerte erleben","publisher":{"@id":"https:\/\/musikverein.at\/#organization"},"alternateName":"Einzigartige Konzerte erleben!","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/musikverein.at\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"de"},{"@type":"Organization","@id":"https:\/\/musikverein.at\/#organization","name":"Musikverein Wien","alternateName":"Einzigartige Konzerte erleben!","url":"https:\/\/musikverein.at\/","logo":{"@type":"ImageObject","inLanguage":"de","@id":"https:\/\/musikverein.at\/#\/schema\/logo\/image\/","url":"https:\/\/musikverein.at\/wp-content\/uploads\/2025\/08\/Screenshot-2025-08-24-at-09.45.55.png","contentUrl":"https:\/\/musikverein.at\/wp-content\/uploads\/2025\/08\/Screenshot-2025-08-24-at-09.45.55.png","width":201,"height":141,"caption":"Musikverein Wien"},"image":{"@id":"https:\/\/musikverein.at\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.facebook.com\/musikverein.wien","https:\/\/x.com\/Musikverein","https:\/\/www.youtube.com\/@musikvereinwien3686?cbrd=1&ucbcb=1","https:\/\/www.instagram.com\/accounts\/login\/?next=httpswww.instagram.commusikverein.wien&is_from_rle"]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href="/musikverein.at" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://musikverein.at/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmusikverein.at%2Fspielplan%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://musikverein.at/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmusikverein.at%2Fspielplan%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+
+<link rel='stylesheet' id='idl-css-css' href='https://musikverein.at/wp-content/plugins/IDL-Functions/idl.css?ver=1788836686' media='all' />
+<link rel='stylesheet' id='ccp-style-css' href='https://musikverein.at/wp-content/plugins/Identity%20Lab%20-%20Cookie%20Managmenet/cookie-banner.css?ver=1786966125' media='all' />
+<link rel='stylesheet' id='mv-a11y-nav-css' href='https://musikverein.at/wp-content/plugins/IDL-Functions/mv-a11y-nav.css?ver=1791363587' media='all' />
+<link rel='stylesheet' id='mv-anchor-offset-css' href='https://musikverein.at/wp-content/plugins/IDL-Functions/mv-anchor-offset.css?ver=1788502603' media='all' />
+<script id="jquery-core-js" src="https://musikverein.at/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<link rel="https://api.w.org/" href="https://musikverein.at/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://musikverein.at/wp-json/wp/v2/pages/6240" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://musikverein.at/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.3" />
+<link rel='shortlink' href='https://musikverein.at/?p=6240' />
+<style>.language-switcher a[data-lang-switch]{ pointer-events:auto !important; }</style><link rel="alternate" hreflang="de" href="https://musikverein.at/de/spielplan/" />
+<link rel="alternate" hreflang="en" href="https://musikverein.at/en/spielplan/" />
+<link rel="alternate" hreflang="x-default" href="https://musikverein.at/spielplan/" />
+<title>Spielplan</title>
+<link rel="icon" href="https://musikverein.at/wp-content/uploads/2025/08/cropped-Groser-Saal_c-Wolf-Dieter-Grabner-32x32.webp" sizes="32x32" />
+<link rel="icon" href="https://musikverein.at/wp-content/uploads/2025/08/cropped-Groser-Saal_c-Wolf-Dieter-Grabner-192x192.webp" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://musikverein.at/wp-content/uploads/2025/08/cropped-Groser-Saal_c-Wolf-Dieter-Grabner-180x180.webp" />
+<meta name="msapplication-TileImage" content="https://musikverein.at/wp-content/uploads/2025/08/cropped-Groser-Saal_c-Wolf-Dieter-Grabner-270x270.webp" />
+<style id="mv-meldung-schalter">.mv-meldung{display:none !important;}</style>
+<style id='idl-visibility-css'>.idl-form{display:none !important;}.idl-reselling{display:none !important;}.idl-variant-b{display:none !important;}</style><!-- [HEADER ASSETS] -->
+<link rel="stylesheet" href="https://musikverein.at/wp-content/uploads/oxygen/css/post-19720-defaults.css?v=3b26583883072c5946414c772b9bbe69" />
+
+<link rel="stylesheet" href="https://musikverein.at/wp-content/uploads/oxygen/css/oxy-selectors.css?v=ee1b505e6ff54461b7a3e30ba4a3ba27" />
+
+<link rel="stylesheet" href="https://musikverein.at/wp-content/uploads/oxygen/css/variables.css?v=3ce0b4bb736b8461a28e34b46f474c82" />
+
+<link rel="stylesheet" href="https://musikverein.at/wp-content/uploads/oxygen/css/post-19720.css?v=53c5540173ee66a3396e694ae4f211a4" />
+
+<link rel="stylesheet" href="https://musikverein.at/wp-content/uploads/oxygen/css/post-6240.css?v=52082b431788ebbaa40b13dc6ed15df0" />
+<!-- [/EOF HEADER ASSETS] -->
+    </head>
+    
+    <body class="wp-singular page-template-default page page-id-6240 wp-theme-oxygen-zero oxygen mv-meldung-aus"><a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+        <script>
+  (function(){
+    try{
+      const c = JSON.parse(localStorage.getItem('ccp_consent') || 'null');
+      if (!c) return;
+      if (!c.statistics && !c.marketing) return;
+
+      var ifr = document.createElement('iframe');
+      ifr.src = 'https://www.googletagmanager.com/ns.html?id=GTM-5NJZS6M';
+      ifr.height = 0;
+      ifr.width = 0;
+      ifr.style.display = 'none';
+      ifr.style.visibility = 'hidden';
+      document.body.appendChild(ifr);
+    } catch(e){}
+  })();
+</script>
+<div id="ccp-banner" class="ccp-hidden reveal" role="region" aria-label="Cookie-Hinweis"></div><div id="ccp-modal" class="ccp-hidden"></div><button type="button" id="ccp-reopen-settings" class="ccp-reopen" aria-label="Cookie-Einstellungen">&#127850;</button>            <header class="oxy-container-19720-100 oxy-container menu-section menu-fade fixed"><div class="oxy-container-19720-266 oxy-container push-menu-toggle push-menu"><div class="oxy-container-19720-524 oxy-container column-center-center relative"><div class="oxy-svg-icon-19720-555 oxy-svg-icon menu-close t-r" aria-label="Menü schließen">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M192 32c17.7 0 32 14.3 32 32V199.5l111.5-66.9c15.2-9.1 34.8-4.2 43.9 11s4.2 34.8-11 43.9L254.2 256l114.3 68.6c15.2 9.1 20.1 28.7 11 43.9s-28.7 20.1-43.9 11L224 312.5V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V312.5L48.5 379.4c-15.2 9.1-34.8 4.2-43.9-11s-4.2-34.8 11-43.9L129.8 256 15.5 187.4c-15.2-9.1-20.1-28.7-11-43.9s28.7-20.1 43.9-11L160 199.5V64c0-17.7 14.3-32 32-32z"/></svg>
+</div><div class="oxy-container-19720-535 oxy-container container-logo"><a class="oxy-container-link-19720-554 oxy-container-link" href="https://www.musikverein.at/" target="_self"><div class="oxy-container-19720-452 oxy-container front-plus-2 logo-in-menu"><img class="oxy-image-19720-453 oxy-image" src="https://musikverein.at/wp-content/uploads/2025/06/Asset-1-8-1.webp" alt="Logo des Wiener Musikvereins." loading="lazy" srcset="https://musikverein.at/wp-content/uploads/2025/06/Asset-1-8-1.webp 383w, https://musikverein.at/wp-content/uploads/2025/06/Asset-1-8-1-300x166.webp 300w" sizes="(max-width: 383px) 100vw, 383px"></div></a></div><div class="oxy-container-19720-267 oxy-container container-hidden-menu"><div class="oxy-container-19720-455 oxy-container menu-small max-w-menu"><div class="oxy-container-19720-269 oxy-container space-between-column phone-landscape-column-xl sz2"><div class="oxy-php-code-19720-469 oxy-php-code menu-bold">
+<ul id="menu-all-bold-26-27" class="menu"><li id="menu-item-18343" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-18343"><a href="/spielplan/" aria-current="page">Spielplan</a></li>
+<li id="menu-item-18346" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18346"><a href="/2026-27/">Saison 26/27</a></li>
+<li id="menu-item-18344" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18344"><a href="/fuehrungen/">Führungen</a></li>
+<li id="menu-item-18345" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18345"><a href="/mitgliedschaft/">Mitgliedschaft</a></li>
+</ul>
+</div><div class="oxy-container-19720-709 oxy-container"><h2 class="oxy-text-19720-708 oxy-text grotesk-medium t-beige dropdown-header-menu hide phone-landscape-show">
+Service
+</h2><div class="oxy-php-code-19720-557 oxy-php-code t-beige dropdown-content-menu hide phone-landscape-show">
+<ul id="menu-menu-mobile" class="menu"><li id="menu-item-13521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13521"><a href="/konzertbesuch/">Konzertbesuch</a></li>
+<li id="menu-item-13522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13522"><a href="/musik-schenken/">Musik schenken</a></li>
+<li id="menu-item-13523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13523"><a href="/u30/">U30</a></li>
+<li id="menu-item-13524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13524"><a href="/archiv/start/">Archiv</a></li>
+<li id="menu-item-14381" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14381"><a href="https://shop.musikverein.at/account">Mein Bereich</a></li>
+</ul>
+</div></div><div class="oxy-container-19720-525 oxy-container column-xs"><h2 class="oxy-text-19720-710 oxy-text grotesk-medium t-beige dropdown-header-menu phone-landscape-show sz">
+Kontakt
+</h2><div class="oxy-rich-text-19720-526 oxy-rich-text t-beige t-s t-16">
+<p>+43 1 505 8190<br /><a href="mailto:tickets@musikverein.at">tickets@musikverein.at</a></p>
+</div></div></div><div class="oxy-container-19720-421 oxy-container space-between-column max-w-menu"><div class="oxy-container-19720-302 oxy-container stretch phone-landscape-w-100 phone-landscape-wrap phone-landscape-gap-x w-100 space-between-flex gap-xxl padding-b-s force-hide jdh"><div class="oxy-container-19720-461 oxy-container flex-column-left gap-r phone-landscape-100 tablet-portrait-50"><nav class="oxy-container-19720-437 oxy-container dropdown-menu m-spacer"><h2 class="oxy-text-19720-438 oxy-text grotesk-medium t-beige dropdown-header-menu phone-landscape-hide">
+Service
+</h2><div class="oxy-php-code-19720-439 oxy-php-code t-beige dropdown-content-menu phone-landscape-hide">
+<ul id="menu-all-der-musikverein" class="menu"><li id="menu-item-14499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14499"><a href="/foerdern">Fördern</a></li>
+<li id="menu-item-14495" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14495"><a href="/kontakt-und-team/">Kontakt und Team</a></li>
+<li id="menu-item-14496" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14496"><a href="/konzertbesuch/">Konzertbesuch</a></li>
+<li id="menu-item-14498" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14498"><a href="/allgemeines#nachhaltigkeit">Nachhaltigkeit</a></li>
+<li id="menu-item-14500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14500"><a href="/vermietung/">Vermietung</a></li>
+<li id="menu-item-15662" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15662"><a href="/presse/">Presse</a></li>
+</ul>
+</div></nav></div><div class="oxy-container-19720-493 oxy-container flex-column-left gap-r phone-landscape-100 tablet-portrait-50"><nav class="oxy-container-19720-494 oxy-container dropdown-menu phone-landscape-hide m-spacer"><h2 class="oxy-text-19720-495 oxy-text grotesk-medium t-beige dropdown-header-menu">
+Karten
+</h2><div class="oxy-php-code-19720-496 oxy-php-code t-beige dropdown-content-menu">
+<ul id="menu-all-karten" class="menu"><li id="menu-item-14501" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14501"><a href="/konzertbesuch/#kartenkauf">Kartenkauf</a></li>
+<li id="menu-item-14503" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14503"><a href="/musik-schenken/">Musik schenken</a></li>
+<li id="menu-item-14504" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-14504"><a href="/spielplan/" aria-current="page">Spielplan</a></li>
+<li id="menu-item-14505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14505"><a href="/u30/">U30</a></li>
+</ul>
+</div></nav></div><div class="oxy-container-19720-611 oxy-container flex-column-left gap-r phone-landscape-100 tablet-portrait-50"><nav class="oxy-container-19720-619 oxy-container dropdown-menu phone-landscape-hide m-spacer"><h2 class="oxy-text-19720-620 oxy-text grotesk-medium t-beige dropdown-header-menu">
+Saison
+</h2><div class="oxy-php-code-19720-622 oxy-php-code t-beige dropdown-content-menu">
+<ul id="menu-footer-saison-26-27" class="menu"><li id="menu-item-18330" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18330"><a href="/2026-27/">Die Saison 26/27</a></li>
+<li id="menu-item-18331" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18331"><a href="/2026-27/abonnements/">• Abonnements</a></li>
+<li id="menu-item-18334" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18334"><a href="/2026-27/kinder-jugend-familien/">• Kinder, Jugend &#038; Familien</a></li>
+<li id="menu-item-18332" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18332"><a href="/2026-27/schwerpunkte/neue-formate/">• Neue Formate</a></li>
+<li id="menu-item-18333" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18333"><a href="/2026-27/schwerpunkte/">• Schwerpunkte</a></li>
+</ul>
+</div></nav></div><div class="oxy-container-19720-624 oxy-container flex-column-left gap-r phone-landscape-100 tablet-portrait-50"><nav class="oxy-container-19720-579 oxy-container dropdown-menu phone-landscape-hide m-spacer"><h2 class="oxy-text-19720-580 oxy-text grotesk-medium t-beige dropdown-header-menu">
+Archiv
+</h2><div class="oxy-php-code-19720-582 oxy-php-code t-beige dropdown-content-menu">
+<ul id="menu-footer-archiv" class="menu"><li id="menu-item-11887" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11887"><a href="/archiv/start/">Archiv</a></li>
+<li id="menu-item-16213" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16213"><a href="/archiv/faq/">Archiv FAQs</a></li>
+<li id="menu-item-11886" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11886"><a href="/archiv/forschen/">Forschen im Archiv</a></li>
+<li id="menu-item-12422" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12422"><a href="/archiv/konzertarchiv/">Konzert-Archiv</a></li>
+<li id="menu-item-11890" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11890"><a href="/archiv/katalog/">Katalog</a></li>
+</ul>
+</div></nav></div></div><div id="down" class="oxy-container-19720-610 oxy-container phone-landscape-w-100 phone-landscape-wrap phone-landscape-gap-x"><nav class="oxy-container-19720-702 oxy-container dropdown-menu phone-landscape-hide w-50-fix tablet-landscape-w-100 t-l-w-100-fix"><h2 class="oxy-text-19720-703 oxy-text grotesk-medium dropdown-header-menu t-coral border-coral kkhg">
+Multimedia
+</h2><div id="menu-footer-multimedia-set" class="oxy-php-code-19720-705 oxy-php-code t-beige dropdown-content-menu row">
+<ul id="menu-footer-multimedia" class="menu"><li id="menu-item-16081" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16081"><a href="https://multimedia.musikverein.at/">Übersicht</a></li>
+<li id="menu-item-6250" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6250"><a href="https://multimedia.musikverein.at/tag/artikel/">Artikel</a></li>
+<li id="menu-item-6251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6251"><a href="https://multimedia.musikverein.at/tag/impressionen/">Impressionen</a></li>
+<li id="menu-item-6252" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6252"><a href="https://multimedia.musikverein.at/tag/podcast/">Podcast</a></li>
+<li id="menu-item-6253" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6253"><a href="https://multimedia.musikverein.at/tag/video/">Videos</a></li>
+</ul>
+</div></nav></div></div></div></div><div class="oxy-container-19720-319 oxy-container front-plus-1 menu-video"><div class="oxy-container-19720-320 oxy-container bg-gradient-menu-dark-copy-1"></div><div class="oxy-container-19720-321 oxy-container bg-gradient-menu-dark"></div><div class="oxy-container-19720-322 oxy-container bg-gradient-video bg-blue-dark"></div></div></div></div><div class="oxy-container-19720-116 oxy-container column w-100"><div class="oxy-container-19720-388 oxy-container c-menu"><div class="oxy-container-19720-102 oxy-container c-top-menu"><div class="oxy-container-19720-103 oxy-container logo-blue front-plus-2 logo--shadow logo-b"><a class="oxy-container-link-19720-527 oxy-container-link" href="https://musikverein.at/" target="_self" aria-label="Website Musikverein Wien"><img class="oxy-image-19720-104 oxy-image" src="https://musikverein.at/wp-content/uploads/2025/06/Asset-1-8-1.webp" alt="Logo des Wiener Musikvereins." loading="lazy" srcset="https://musikverein.at/wp-content/uploads/2025/06/Asset-1-8-1.webp 383w, https://musikverein.at/wp-content/uploads/2025/06/Asset-1-8-1-300x166.webp 300w" sizes="(max-width: 383px) 100vw, 383px"></a></div></div><div class="oxy-container-19720-370 oxy-container menu-top m-1"><a class="oxy-text-link-19720-828 oxy-text-link menu-item-top transition grotesk-medium t-beige phone-landscape-m-l-auto m-right no-show-menu-desk m-sp" href="https://musikverein.at/spielplan/" target="_self">
+Spielplan
+</a><div class="oxy-container-19720-530 oxy-container row-center push-menu-toggle tablet-portrait-row"><div class="oxy-svg-icon-19720-529 oxy-svg-icon icon-light t-beige padding-l-x icon-menu tablet-portrait-p-tb-xs phone-landscape-hide">
+<svg xmlns="http://www.w3.org/2000/svg" id="icon-menu3" viewBox="0 0 44 32">
+<path d="M0 6h28v6h-28v-6zM0 14h28v6h-28v-6zM0 22h28v6h-28v-6z"/>
+<path d="M31 14l6 6 6-6z"/>
+</svg>
+</div><a class="oxy-text-link-19720-406 oxy-text-link menu-item-top transition grotesk-medium t-beige phone-landscape-m-l-auto m-right m-sp sp" target="_self" data-interactions="[{&quot;trigger&quot;:&quot;mouse_enter&quot;,&quot;actions&quot;:[{&quot;name&quot;:&quot;add_class&quot;,&quot;css_class&quot;:&quot;menu-border-bottom&quot;,&quot;target&quot;:&quot;this_element&quot;}]},{&quot;trigger&quot;:&quot;mouse_leave&quot;,&quot;target&quot;:&quot;this_element&quot;,&quot;actions&quot;:[{&quot;name&quot;:&quot;remove_class&quot;,&quot;css_class&quot;:&quot;menu-border-bottom&quot;}]}]">
+Menü
+</a></div><a class="oxy-text-link-19720-181 oxy-text-link menu-item-top transition grotesk-medium t-beige phone-landscape-hide" href="/spielplan" target="_self" data-interactions="[{&quot;trigger&quot;:&quot;mouse_enter&quot;,&quot;actions&quot;:[{&quot;name&quot;:&quot;add_class&quot;,&quot;css_class&quot;:&quot;menu-border-bottom&quot;,&quot;target&quot;:&quot;this_element&quot;}]},{&quot;trigger&quot;:&quot;mouse_leave&quot;,&quot;target&quot;:&quot;this_element&quot;,&quot;actions&quot;:[{&quot;name&quot;:&quot;remove_class&quot;,&quot;css_class&quot;:&quot;menu-border-bottom&quot;}]}]">
+Spielplan
+</a><a class="oxy-text-link-19720-386 oxy-text-link menu-item-top transition grotesk-medium t-beige phone-landscape-hide tablet-portrait-hide" href="/foerdern" target="_self" data-interactions="[{&quot;trigger&quot;:&quot;mouse_enter&quot;,&quot;actions&quot;:[{&quot;name&quot;:&quot;add_class&quot;,&quot;css_class&quot;:&quot;menu-border-bottom&quot;,&quot;target&quot;:&quot;this_element&quot;}]},{&quot;trigger&quot;:&quot;mouse_leave&quot;,&quot;target&quot;:&quot;this_element&quot;,&quot;actions&quot;:[{&quot;name&quot;:&quot;remove_class&quot;,&quot;css_class&quot;:&quot;menu-border-bottom&quot;}]}]">
+Fördern
+</a><a class="oxy-text-link-19720-528 oxy-text-link menu-item-top transition grotesk-medium t-beige tablet-landscape-hide" href="/archiv/start/" target="_self" data-interactions="[{&quot;trigger&quot;:&quot;mouse_enter&quot;,&quot;actions&quot;:[{&quot;name&quot;:&quot;add_class&quot;,&quot;css_class&quot;:&quot;menu-border-bottom&quot;,&quot;target&quot;:&quot;this_element&quot;}]},{&quot;trigger&quot;:&quot;mouse_leave&quot;,&quot;target&quot;:&quot;this_element&quot;,&quot;actions&quot;:[{&quot;name&quot;:&quot;remove_class&quot;,&quot;css_class&quot;:&quot;menu-border-bottom&quot;}]}]">
+Archiv
+</a><a class="oxy-text-link-19720-458 oxy-text-link menu-item-top transition grotesk-medium t-beige phone-landscape-hide" href="https://multimedia.musikverein.at/" target="_self" data-interactions="[{&quot;trigger&quot;:&quot;mouse_enter&quot;,&quot;actions&quot;:[{&quot;name&quot;:&quot;add_class&quot;,&quot;css_class&quot;:&quot;menu-border-bottom&quot;,&quot;target&quot;:&quot;this_element&quot;}]},{&quot;trigger&quot;:&quot;mouse_leave&quot;,&quot;target&quot;:&quot;this_element&quot;,&quot;actions&quot;:[{&quot;name&quot;:&quot;remove_class&quot;,&quot;css_class&quot;:&quot;menu-border-bottom&quot;}]}]">
+Multimedia
+</a><a class="oxy-text-link-19720-566 oxy-text-link menu-item-top transition grotesk-medium t-beige phone-portrait-t-s right padding-r-xl phone-landscape-hide" href="https://shop.musikverein.at/account/login" target="_self" data-interactions="[{&quot;trigger&quot;:&quot;mouse_enter&quot;,&quot;actions&quot;:[{&quot;name&quot;:&quot;add_class&quot;,&quot;css_class&quot;:&quot;menu-border-bottom&quot;,&quot;target&quot;:&quot;this_element&quot;}]},{&quot;trigger&quot;:&quot;mouse_leave&quot;,&quot;target&quot;:&quot;this_element&quot;,&quot;actions&quot;:[{&quot;name&quot;:&quot;remove_class&quot;,&quot;css_class&quot;:&quot;menu-border-bottom&quot;}]}]">
+Mein Bereich
+</a><a class="oxy-container-link-19720-832 oxy-container-link user-container menu-item-top hdsfsd" href="https://shop.musikverein.at/account/login" target="_self"><div class="oxy-svg-icon-19720-833 oxy-svg-icon user">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M256 288A144 144 0 1 0 256 0a144 144 0 1 0 0 288zm-94.7 32C72.2 320 0 392.2 0 481.3c0 17 13.8 30.7 30.7 30.7H481.3c17 0 30.7-13.8 30.7-30.7C512 392.2 439.8 320 350.7 320H161.3z"/></svg>
+</div></a></div><div class="oxy-container-19720-533 oxy-container phone-landscape-hide"><div class="oxy-html-code-19720-531 oxy-html-code rolex logo-b">
+<iframe src="https://static.rolex.com/clocks/2021/musikverein_all_at_HTML_80x80/rolex.html"
+        title="Werbung: Rolex"
+        width="80" height="80" frameborder="0" scrolling="no"></iframe>
+</div></div></div><div class="oxy-container-19720-389 oxy-container menu-top m-1 background-menu bg-blue-dark phone-landscape-bg-blue-dark tablet-portrait-bg-blue-dark"></div></div></header><div id="mask" class="oxy-container-19720-474 oxy-container preloader column-center-center"><div class="oxy-container-19720-478 oxy-container row-r"><div class="oxy-text-19720-479 oxy-text grotesk-bold h2-1 t-beige t-xl hide phone-landscape-t-m">
+musikverein
+</div><div id="random-number" class="oxy-text-19720-476 oxy-text t-beige t-l t-xxxl tablet-portrait-t-xxl phone-landscape-t-xl">
+0
+</div></div></div><div class="oxy-container-6364-100-6364-1 oxy-container menu-backdrop oxy-container-6364-100"></div><div class="oxy-php-code-19720-532 oxy-php-code language-switcher">
+<ul class="language-switcher"><li class="active"><a data-lang-switch="1" href="https://musikverein.at/spielplan/">DE</a></li><li><a data-lang-switch="1" href="https://musikverein.at/en/spielplan/">EN</a></li></ul>
+</div><div id="scrollTopBtn" class="oxy-container-19720-820 oxy-container"><div class="oxy-svg-icon-19720-823 oxy-svg-icon STT-Icon t-size-r">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+</div></div><div class="oxy-container-6240-112 oxy-container section-contain-rest component-fade padding-t-xxxl tablet-landscape-p-t-x"><div class="oxy-container-6240-113 oxy-container container column-xl bg-white phone-landscape-p-lr-xl m-b-schwerpunkt c-spieplan margin-top m-kill"><div class="oxy-container-6240-124 oxy-container t-center w-100 column-r gap-xxl tablet-landscape-p-t-spielplan"><div class="oxy-container-6240-131 oxy-container"><div class="oxy-text-6240-125 oxy-text h2-1 grotesk-bold w-100">
+Spielplan
+</div><h1 class="oxy-text-6240-127 oxy-text t-blue italic t-xxl max-600 line-height-11 phone-landscape-t-xl">
+Programm & Karten
+</h1></div><div class="oxy-html-code-6240-116 oxy-html-code w-100">
+<div id="spielplanFrame" class="iframe-container" style="height:2000px">
+    <iframe
+        src="https://spielplan.musikverein.at/spielplan"
+        scrolling="no"
+        frameborder="0"
+        class="responsive-iframe"
+        id="dynamic-iframe"
+        style="height:2000px;width:100%;display:block"
+    ></iframe>
+</div>
+
+<script>
+  const frameWrap = document.getElementById("spielplanFrame");
+  const iframe    = document.getElementById("dynamic-iframe");
+
+  let currentHeight = 2000;
+
+  window.addEventListener("message", function (e) {
+    if (!e.data || typeof e.data.height !== "number") return;
+
+    const newHeight = Math.ceil(e.data.height + 50);
+
+    // 🔒 never shrink on first passes (prevents mobile jitter)
+    if (newHeight <= currentHeight) return;
+
+    currentHeight = newHeight;
+
+    frameWrap.style.height = currentHeight + "px";
+    iframe.style.height    = currentHeight + "px";
+  }, false);
+</script>
+</div></div></div></div><div class="oxy-container-6240-118 oxy-container apart back-2"><div class="oxy-container-6240-119 oxy-container apart bg-blue bg-gradient-black fixed"><div class="oxy-container-6240-120 oxy-container"><div class="oxy-container-6240-121 oxy-container"></div><div class="oxy-container-6240-122 oxy-container bg-gradient-konzert-l-copy-1"></div><div class="oxy-html-code-6240-123 oxy-html-code w-100 opacity-10 jfds">
+<img class="bckg-img" src="https://spielplan.musikverein.at/media/pages/enrichment/uploads/pictures/tease_big/e2c616816f-1695309835/MV2019___Wolf-Dieter_Grabner.jpg" id="heroimage">
+</div></div></div></div><a class="oxy-container-link-6240-137 oxy-container-link mm-link w-100 phone-landscape-center-fix z99 archiv-suche" href="https://musikverein.at/archiv/konzertarchiv/" target="_self"><div class="oxy-text-6240-138 oxy-text button-small bg-2425 t-blue grotesk-bold bg-hover-beige button-archive">
+Suche im Archiv
+</div></a><div class="oxy-container-12723-100 oxy-container section-contain-rest bg-blue sds"><div class="oxy-container-12723-101 oxy-container container"><div class="oxy-container-12723-102 oxy-container footer-spielplan"><div class="oxy-container-12723-103 oxy-container footer-col"><div class="oxy-container-12723-104 oxy-container"><div class="oxy-php-code-12723-145 oxy-php-code t-beige menu-title padding-x">
+<footer>© 2026 Musikverein</footer>
+</div></div></div></div></div></div><div class="oxy-html-code-12723-146 oxy-html-code">
+<!-- Lightbox -->
+<div class="lightbox-popup" style="display:none;">
+  <button class="lightbox-prev" aria-label="Previous">‹</button>
+  <img src="" alt="" />
+  <button class="lightbox-next" aria-label="Next">›</button>
+  <button class="lightbox-close" aria-label="Close">×</button>
+</div>
+
+<div class="lightbox-popup-caption" style="display:none;"></div>
+</div>        <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/plugins/oxygen/plugin/themeless/themes/oxygen-zero/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const cards = document.querySelectorAll('.veranstaltungen-grid .wpgb-card');
+        cards.forEach((card, index) => {
+            const classNum = String(index + 1).padStart(2, '0');
+            card.classList.add(`veranstaltungen-${classNum}`);
+        });
+    });
+    </script>
+        <script>
+    (function () {
+        document.addEventListener('click', function (e) {
+            var a = e.target && e.target.closest && e.target.closest('a[data-lang-switch]');
+            if (!a) return;
+            try { e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation(); } catch (err) {}
+            window.location.assign(a.href);
+        }, true);
+    })();
+    </script>
+    <script id="idl-code-js-extra">
+var idlSettings = {"lang":"de"};
+//# sourceURL=idl-code-js-extra
+</script>
+<script defer id="idl-code-js" src="https://musikverein.at/wp-content/plugins/IDL-Functions/idl-code.js?ver=1789386760"></script>
+<script defer id="dayjs-core-js" src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
+<script defer id="dayjs-de-locale-js" src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/de-at.js"></script>
+<script id="ls-schedule-js" src="https://musikverein.at/wp-content/plugins/IDL-Functions/ls-schedule-button.js?ver=1782199832"></script>
+<script defer id="gsap-js" src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script defer id="gsap-scrolltrigger-js" src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script id="ccp-script-js-extra">
+var ccp_data = {"headline":"Cookies & Datenschutz","text":"Wir verwenden Cookies, um Inhalte zu optimieren und die Nutzung zu analysieren. Durch Klicken auf \u201eAkzeptieren\u201c stimmen Sie der Verwendung zu.","accept":"Akzeptieren","decline":"Ablehnen","settings":"Einstellungen","settings_headline":"Cookie Auswahl","settings_text":"Hier k\u00f6nnen Sie festlegen, welche Cookies auf der Website verwendet werden d\u00fcrfen. Notwendige Cookies sind f\u00fcr den Betrieb der Website erforderlich und k\u00f6nnen nicht deaktiviert werden. Statistik-Cookies helfen uns zu verstehen, wie Besucher:innen die Website nutzen. Marketing-Cookies erm\u00f6glichen es, externe Inhalte und Dienste einzubinden.","save":"Speichern","close":"Schlie\u00dfen","label_necessary":"Technisch notwendige Cookies","label_statistics":"Statistische Cookies","label_marketing":"Marketing Cookies","consent_version":"1"};
+//# sourceURL=ccp-script-js-extra
+</script>
+<script defer id="ccp-script-js" src="https://musikverein.at/wp-content/plugins/Identity%20Lab%20-%20Cookie%20Managmenet/cookie-banner.js?ver=1786965862"></script>
+<script data-wp-strategy="defer" defer id="mv-a11y-additiv-js" src="https://musikverein.at/wp-content/plugins/IDL-Functions/mv-a11y-additiv.js?ver=1791275070"></script>
+<script data-wp-strategy="defer" defer id="mv-anchor-offset-js" src="https://musikverein.at/wp-content/plugins/IDL-Functions/mv-anchor-offset.js?ver=1789387035"></script>
+<script src='https://musikverein.at/wp-content/plugins/oxygen/plugin/global-scripts/oxygen-utils.js?bd_ver=6.1.3' defer></script>
+<script src='https://musikverein.at/wp-content/plugins/oxygen/subplugins/breakdance-elements/dependencies-files/breakdance-interactions@1/dist/interactions.umd.js?bd_ver=6.1.3' defer></script>
+<script>document.addEventListener('DOMContentLoaded', function(){         if (!window.BreakdanceFrontend) {
+            window.BreakdanceFrontend = {}
+        }
+
+        window.BreakdanceFrontend.data = {"homeUrl":"https:\/\/musikverein.at","ajaxUrl":"https:\/\/musikverein.at\/wp-admin\/admin-ajax.php","elementsPluginUrl":"https:\/\/musikverein.at\/wp-content\/plugins\/oxygen\/subplugins\/breakdance-elements\/","BASE_BREAKPOINT_ID":"breakpoint_base","breakpoints":[{"id":"breakpoint_base","label":"Desktop","defaultPreviewWidth":"100%"},{"id":"breakpoint_tablet_landscape","label":"Tablet Landscape","defaultPreviewWidth":1024,"maxWidth":1119},{"id":"breakpoint_tablet_portrait","label":"Tablet Portrait","defaultPreviewWidth":768,"maxWidth":1023},{"id":"breakpoint_phone_landscape","label":"Phone Landscape","defaultPreviewWidth":480,"maxWidth":767},{"id":"breakpoint_phone_portrait","label":"Phone Portrait","defaultPreviewWidth":400,"maxWidth":479}],"subscriptionMode":"pro"}
+
+        if (!window.OxygenFrontend) {
+            window.OxygenFrontend = {}
+        }
+
+        window.OxygenFrontend.data = {"homeUrl":"https:\/\/musikverein.at","ajaxUrl":"https:\/\/musikverein.at\/wp-admin\/admin-ajax.php","elementsPluginUrl":"https:\/\/musikverein.at\/wp-content\/plugins\/oxygen\/subplugins\/breakdance-elements\/","BASE_BREAKPOINT_ID":"breakpoint_base","breakpoints":[{"id":"breakpoint_base","label":"Desktop","defaultPreviewWidth":"100%"},{"id":"breakpoint_tablet_landscape","label":"Tablet Landscape","defaultPreviewWidth":1024,"maxWidth":1119},{"id":"breakpoint_tablet_portrait","label":"Tablet Portrait","defaultPreviewWidth":768,"maxWidth":1023},{"id":"breakpoint_phone_landscape","label":"Phone Landscape","defaultPreviewWidth":480,"maxWidth":767},{"id":"breakpoint_phone_portrait","label":"Phone Portrait","defaultPreviewWidth":400,"maxWidth":479}],"subscriptionMode":"pro"} }) </script>
+<script>document.addEventListener('DOMContentLoaded', function(){ 
+(function ($) {
+  $(document).ready(function () {
+    // Re-init guard (Oxygen / AJAX can run this twice)
+    if (window.__pushMenuInit) return;
+    window.__pushMenuInit = true;
+
+    const $container   = $(".container-menu");
+    // Visible button only — the panel ALSO carries .push-menu-toggle,
+    // so without :not(.push-menu) the toggle handler binds to the panel
+    // and tears the menu down on inside clicks.
+    const $menuTrigger = $(".push-menu-toggle").not(".push-menu");
+    const $menu        = $(".push-menu");
+    const $topItem     = $(".menu-top, .logo-b");
+    const $toggle      = $(".toggle");
+    const $backdrop    = $(".menu-backdrop");
+    const $logoShadow  = $(".logo--shadow");
+    const $closeBtn    = $menu.find(".menu-close");
+
+    let isAnimating = false;
+    const SCROLL_CLOSE_THRESHOLD = 80; // px; ignores mobile address-bar jitter
+    let openScrollY = 0;
+
+    const isOpen = () => $menu.hasClass("push-menu-active");
+
+    // --- a11y: make div-based controls keyboard operable -------------
+    $menuTrigger.attr({ role: "button", tabindex: "0", "aria-expanded": "false" });
+    $closeBtn.attr({ role: "button", tabindex: "0", "aria-label": "Menü schließen" });
+    $menu.attr("aria-hidden", "true");
+
+    // ----------------------------------------------------------------
+    function openMenu() {
+      if (isOpen() || isAnimating) return;
+      isAnimating = true;
+      openScrollY = window.scrollY;
+
+      $menu.addClass("push-menu-active").attr("aria-hidden", "false");
+      $menuTrigger.attr("aria-expanded", "true");
+      $backdrop.addClass("active");
+      $logoShadow.addClass("no-shadow");
+
+      $topItem.stop(true, true).fadeTo(300, 0, function () {
+        $(this).css("visibility", "hidden");
+      });
+      $toggle.stop(true, true).fadeTo(300, 0, function () {
+        $(this).css("visibility", "hidden");
+      });
+
+      $menu.stop(true, true).slideDown(900, function () {
+        isAnimating = false;
+        $menu.find("a[href]").filter(":visible").first().trigger("focus");
+      });
+    }
+
+    function closeMenu() {
+      if (!isOpen() || isAnimating) return;
+      isAnimating = true;
+
+      $menu.removeClass("push-menu-active").attr("aria-hidden", "true");
+      $menuTrigger.attr("aria-expanded", "false");
+      $backdrop.removeClass("active");
+      $logoShadow.removeClass("no-shadow");
+
+      $menu.stop(true, true).slideUp(900, function () {
+        isAnimating = false;
+        $topItem.css("visibility", "visible").stop(true, true).fadeTo(300, 1);
+        $toggle.css("visibility", "visible").stop(true, true).fadeTo(300, 1);
+        $menuTrigger.trigger("focus"); // return focus to trigger
+      });
+    }
+
+    function toggleMenu() {
+      if (isOpen()) closeMenu();
+      else openMenu();
+    }
+
+    // --- Trigger: click + keyboard ----------------------------------
+    $menuTrigger.on("click.pushmenu", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleMenu();
+    });
+    $menuTrigger.on("keydown.pushmenu", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        toggleMenu();
+      }
+    });
+
+    // Clicks inside the menu don't bubble to the outside-click handler
+    $menu.on("click.pushmenu", function (e) {
+      e.stopPropagation();
+    });
+
+    // Close button: click + keyboard
+    $menu.on("click.pushmenu", ".menu-close", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      closeMenu();
+    });
+    $closeBtn.on("keydown.pushmenu", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        closeMenu();
+      }
+    });
+
+    // Close on click outside (container + menu)
+    $(document).on("click.pushmenu", function (e) {
+      if (!$container.length || !isOpen()) return;
+      const inContainer =
+        $container.is(e.target) || $container.has(e.target).length > 0;
+      const inMenu = $menu.is(e.target) || $menu.has(e.target).length > 0;
+      if (!inContainer && !inMenu) closeMenu();
+    });
+
+    // ESC closes
+    $(document).on("keydown.pushmenu", function (e) {
+      if (e.key === "Escape" && isOpen()) closeMenu();
+    });
+
+    // Focus trap while open
+    $menu.on("keydown.pushmenu", function (e) {
+      if (e.key !== "Tab" || !isOpen()) return;
+      const $f = $menu
+        .find("a[href], button, .menu-close, [tabindex='0']")
+        .filter(":visible");
+      if (!$f.length) return;
+      const first = $f[0], last = $f[$f.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault(); last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault(); first.focus();
+      }
+    });
+
+    // Close on scroll — only past a threshold, so mobile chrome
+    // show/hide doesn't slam it shut.
+    $(window).on("scroll.pushmenu", function () {
+      if (!isOpen() || isAnimating) return;
+      if (Math.abs(window.scrollY - openScrollY) > SCROLL_CLOSE_THRESHOLD) {
+        closeMenu();
+      }
+    });
+
+    // ----------------------------------------------------------------
+    // OPTIONAL safety net: force navigation for menu links.
+    // Root cause of the original "critical fix" was the panel carrying
+    // .push-menu-toggle (toggleMenu fired on link clicks). The
+    // :not(.push-menu) selector above removes that. Test the menu links
+    // with this block deleted — they should navigate normally. Kept here
+    // only as a fallback; it passes through anchors, downloads, new tabs.
+    // ----------------------------------------------------------------
+    const menuEl = $menu.get(0);
+    if (menuEl) {
+      menuEl.addEventListener(
+        "click",
+        function (ev) {
+          const a = ev.target.closest("a[href]");
+          if (!a) return;
+          if (ev.button !== 0) return;
+          if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+          if (a.hasAttribute("download")) return;
+          if (a.target && a.target !== "_self") return;
+          const href = (a.getAttribute("href") || "").trim();
+          if (!href || href.startsWith("#")) return;
+          if (href.toLowerCase().startsWith("javascript:")) return;
+          ev.preventDefault();
+          ev.stopPropagation();
+          window.location.assign(a.href);
+        },
+        true
+      );
+    }
+  });
+})(jQuery);
+ }) </script>
+<script>document.addEventListener('DOMContentLoaded', function(){ 
+(function () {
+  if (window.__menuFadeInit) return;
+  window.__menuFadeInit = true;
+  if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  const EDGE = 0.10;
+  const EL   = ".menu-fade";
+  let isShown = null;
+
+  const setMenu = (show, hard = false) => {
+    if (!hard && isShown === show) return;
+    isShown = show;
+    if (hard) {
+      gsap.set(EL, { opacity: show ? 1 : 0, pointerEvents: show ? "auto" : "none" });
+    } else {
+      gsap.set(EL, { pointerEvents: show ? "auto" : "none" });
+      gsap.to(EL, { opacity: show ? 1 : 0, duration: 0.2, overwrite: "auto", ease: "power2.out" });
+    }
+  };
+
+  // Pure helper — no outer-variable dependency, no TDZ risk
+  const atEdgeStop = (progress, scroll) => scroll <= 1 || progress > 0.999;
+
+  const st = ScrollTrigger.create({
+    trigger: document.documentElement,
+    start: "top top",
+    end: "bottom bottom",
+    scrub: true,
+    invalidateOnRefresh: true,
+    onUpdate(self) {
+      if (atEdgeStop(self.progress, self.scroll())) { setMenu(true, true); return; }
+      const p = self.progress;
+      setMenu(p < EDGE || p > 1 - EDGE);
+    }
+  });
+
+  const enforceEdges = () => {
+    if (atEdgeStop(st.progress, window.scrollY)) setMenu(true, true);
+  };
+  window.addEventListener("load", enforceEdges);
+  ScrollTrigger.addEventListener("refresh", enforceEdges);
+  ScrollTrigger.addEventListener("scrollEnd", enforceEdges);
+  enforceEdges();
+})();
+ }) </script>
+<script>document.addEventListener('DOMContentLoaded', function(){ 
+let numberInterval;
+let currentProgress = 0;
+
+function startProgressAnimation() {
+    const $number = jQuery("#random-number");
+    currentProgress = 0;
+
+    numberInterval = setInterval(() => {
+        currentProgress += 1;
+        if (currentProgress > 100) {
+            currentProgress = 100;
+            clearInterval(numberInterval);
+        }
+        $number.text(`${currentProgress}%`);
+    }, 50); // ~5 seconds to 100%
+}
+
+function stopProgressAnimation() {
+    clearInterval(numberInterval);
+    jQuery("#random-number").text("100%");
+}
+
+jQuery(document).ready(function () {
+    startProgressAnimation(); // ✅ start counting up
+
+    const videos = document.querySelectorAll("video");
+    let loadedCount = 0;
+    let hasLoaded = false;
+
+    if (videos.length === 0) {
+        allVideosLoaded();
+    } else {
+        videos.forEach((video) => {
+            video.addEventListener("canplaythrough", () => {
+                loadedCount++;
+                if (loadedCount === videos.length) {
+                    allVideosLoaded();
+                }
+            });
+        });
+
+        // Fallback: in case videos take too long
+        setTimeout(() => {
+            if (!hasLoaded) {
+                console.warn("Some videos didn’t load in time. Proceeding anyway...");
+                allVideosLoaded();
+            }
+        }, 7000); // ⏱ 7-second fallback
+    }
+
+    function allVideosLoaded() {
+        if (hasLoaded) return;
+        hasLoaded = true;
+
+        jQuery("#mask").fadeOut(400, function () {
+            stopProgressAnimation(); // ✅ stop and set to 100%
+            jQuery(this).css("display", "none");
+
+            jQuery("body").addClass("page-loaded");
+        });
+    }
+});
+ }) </script>
+<script>document.addEventListener('DOMContentLoaded', function(){ 
+(function () {
+  if (window.__scrollTopInit) return;
+  window.__scrollTopInit = true;
+
+  const THRESHOLD = 200;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const getY = () => window.pageYOffset || document.documentElement.scrollTop || 0;
+
+  function run() {
+    const btn = document.getElementById('scrollTopBtn');
+    if (!btn) return;
+
+    const toggle = () => {
+      const show = getY() > THRESHOLD;
+      btn.classList.toggle('is-visible', show);
+      btn.classList.toggle('expanded', show);
+    };
+    toggle(); // initial state
+
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => { toggle(); ticking = false; });
+    }, { passive: true });
+
+    // a11y: div behaves like a button
+    btn.setAttribute('role', 'button');
+    btn.setAttribute('tabindex', '0');
+    if (!btn.getAttribute('aria-label')) btn.setAttribute('aria-label', 'Zum Seitenanfang');
+
+    const scrollUp = (e) => {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    };
+    btn.addEventListener('click', scrollUp);
+    btn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') scrollUp(e);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', run, { once: true });
+  } else {
+    run();
+  }
+})();
+ }) </script>
+    </body>
+
+    </html>

@@ -1,26 +1,67 @@
 {
  "datum": "2026-10-11",
- "stand": "2026-10-11T21:04+02:00",
+ "stand": "2026-10-11T21:58+02:00",
  "haeuser": {
   "so": {
-   "status": "fehler",
-   "grund": "https://www.staatsoper-berlin.de/konzerte: HTTPError"
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:00",
+     "titel": "Apollosaal",
+     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/apollosaal.40/"
+    },
+    {
+     "zeit": "12:30",
+     "titel": "Apollosaal",
+     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/apollosaal.40/"
+    },
+    {
+     "zeit": "13:00",
+     "titel": "Dussmann das KulturKaufhaus",
+     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/dussmann-das-kulturkaufhaus.37/"
+    },
+    {
+     "zeit": "16:45",
+     "titel": "Staatsoper Unter den Linden",
+     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/staatsoper-unter-den-linden.35/"
+    },
+    {
+     "zeit": "18:00",
+     "titel": "Staatsoper Unter den Linden",
+     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/staatsoper-unter-den-linden.35/"
+    },
+    {
+     "zeit": "20:50",
+     "titel": "Staatsoper Unter den Linden",
+     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/staatsoper-unter-den-linden.35/"
+    }
+   ],
+   "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
+   "format": "html-time"
   },
   "do": {
    "status": "fehler",
-   "grund": "https://www.deutscheoperberlin.de/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.deutscheoperberlin.de/spielplan -> 404",
+    "https://www.deutscheoperberlin.de/de/spielplan -> 404",
+    "https://www.deutscheoperberlin.de/programm -> 404",
+    "https://www.deutscheoperberlin.de/de/programm -> 404",
+    "https://www.deutscheoperberlin.de/kalender -> 404",
+    "https://www.deutscheoperberlin.de/de/kalender -> 404"
+   ]
   },
   "ko": {
    "status": "ok",
    "vorstellungen": [
     {
      "zeit": "10:00",
-     "titel": "Spielzeitfest",
-     "ort": "Schillertheater â GroÃer Saal"
+     "titel": "Komische Oper Berlin",
+     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/spielzeitfest/1261/"
     }
    ],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
-   "format": "ical"
+   "format": "microdata"
   },
   "sb": {
    "status": "keine",
@@ -30,15 +71,38 @@
   },
   "dt": {
    "status": "fehler",
-   "grund": "https://www.deutschestheater.de/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.deutschestheater.de/de/spielplan -> 404",
+    "https://www.deutschestheater.de/de/programm -> 404",
+    "https://www.deutschestheater.de/kalender -> 404",
+    "https://www.deutschestheater.de/de/kalender -> 404",
+    "https://www.deutschestheater.de/termine -> 404",
+    "https://www.deutschestheater.de/konzerte -> 404"
+   ]
   },
   "be": {
    "status": "fehler",
-   "grund": "https://www.berliner-ensemble.de/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.berliner-ensemble.de/de/spielplan -> 404",
+    "https://www.berliner-ensemble.de/de/programm -> 404",
+    "https://www.berliner-ensemble.de/kalender -> 404",
+    "https://www.berliner-ensemble.de/de/kalender -> 404",
+    "https://www.berliner-ensemble.de/termine -> 404",
+    "https://www.berliner-ensemble.de/konzerte -> 404"
+   ]
   },
   "vb": {
-   "status": "fehler",
-   "grund": "https://www.volksbuehne.berlin/termine: HTTPError"
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "Okt 2026",
+     "url": "https://www.volksbuehne-berlin.de/#day-2026-10-12"
+    }
+   ],
+   "quelle": "https://www.volksbuehne-berlin.de/",
+   "format": "html-time"
   },
   "mg": {
    "status": "ok",
@@ -79,47 +143,115 @@
   },
   "sh": {
    "status": "fehler",
-   "grund": "https://www.schaubuehne.de/konzerte: HTTPError"
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.schaubuehne.de/de/spielplan/ -> 404",
+    "https://www.schaubuehne.de/spielplan -> 404",
+    "https://www.schaubuehne.de/de/spielplan -> 404",
+    "https://www.schaubuehne.de/programm -> 404",
+    "https://www.schaubuehne.de/de/programm -> 404",
+    "https://www.schaubuehne.de/kalender -> 404"
+   ]
   },
   "hau": {
    "status": "fehler",
-   "grund": "https://www.hebbel-am-ufer.de/konzerte: HTTPError"
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.hebbel-am-ufer.de/programm/spielplan/ -> 404",
+    "https://www.hebbel-am-ufer.de/spielplan -> 404",
+    "https://www.hebbel-am-ufer.de/de/spielplan -> 404",
+    "https://www.hebbel-am-ufer.de/de/programm -> 404",
+    "https://www.hebbel-am-ufer.de/kalender -> 404",
+    "https://www.hebbel-am-ufer.de/de/kalender -> 404"
+   ]
   },
   "fp": {
    "status": "fehler",
-   "grund": "https://www.palast.berlin/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.palast.berlin/spielplan -> 404",
+    "https://www.palast.berlin/de/spielplan -> 404",
+    "https://www.palast.berlin/kalender -> 404",
+    "https://www.palast.berlin/de/kalender -> 404",
+    "https://www.palast.berlin/termine -> 404",
+    "https://www.palast.berlin/konzerte -> 404"
+   ]
   },
   "pa": {
    "status": "ok",
    "vorstellungen": [
     {
      "zeit": "11:00",
-     "titel": "leuchtend, klein, zitronensauer",
-     "ort": "Studio 2"
+     "titel": "Theater an der Parkaue",
+     "url": "https://www.parkaue.de/spielplan/spielplan/leuchtend-klein-zitronensauer/1919/"
     }
    ],
    "quelle": "https://www.parkaue.de/spielplan/",
-   "format": "ical"
+   "format": "microdata"
   },
   "gr": {
    "status": "fehler",
-   "grund": "https://www.grips-theater.de/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.grips-theater.de/programm -> 404",
+    "https://www.grips-theater.de/de/programm -> 404",
+    "https://www.grips-theater.de/kalender -> 404",
+    "https://www.grips-theater.de/de/kalender -> 404",
+    "https://www.grips-theater.de/termine -> 404",
+    "https://www.grips-theater.de/konzerte -> 404"
+   ]
   },
   "bf": {
    "status": "fehler",
-   "grund": "https://www.berlinerfestspiele.de/konzerte: HTTPError"
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.berlinerfestspiele.de/kalender -> 404",
+    "https://www.berlinerfestspiele.de/spielplan -> 404",
+    "https://www.berlinerfestspiele.de/de/spielplan -> 404",
+    "https://www.berlinerfestspiele.de/de/kalender -> 404",
+    "https://www.berlinerfestspiele.de/termine -> 404",
+    "https://www.berlinerfestspiele.de/konzerte -> 404"
+   ]
   },
   "ph": {
    "status": "fehler",
-   "grund": "https://www.berliner-philharmoniker.de/termine: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.berliner-philharmoniker.de/spielplan -> 404",
+    "https://www.berliner-philharmoniker.de/de/spielplan -> 404",
+    "https://www.berliner-philharmoniker.de/programm -> 404",
+    "https://www.berliner-philharmoniker.de/de/programm -> 404",
+    "https://www.berliner-philharmoniker.de/de/kalender -> 404",
+    "https://www.berliner-philharmoniker.de/termine -> 404"
+   ]
   },
   "kh": {
-   "status": "fehler",
-   "grund": "https://www.konzerthaus.de/konzerte: HTTPError"
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "15:45",
+     "titel": "OPUS KLASSIK Gala 2026",
+     "url": "https://www.konzerthaus.de/de/programm/opus-klassik-gala-2026/13396"
+    },
+    {
+     "titel": "OPUS KLASSIK Gala 2026",
+     "url": "https://www.konzerthaus.de/de/programm/opus-klassik-gala-2026/13396"
+    }
+   ],
+   "quelle": "https://www.konzerthaus.de/de/programm/11-10-2026",
+   "format": "html-time"
   },
   "pbs": {
    "status": "fehler",
-   "grund": "https://www.boulezsaal.de/termine: HTTPError"
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.boulezsaal.de/de/programm -> 404",
+    "https://www.boulezsaal.de/spielplan -> 404",
+    "https://www.boulezsaal.de/de/spielplan -> 404",
+    "https://www.boulezsaal.de/programm -> 404",
+    "https://www.boulezsaal.de/kalender -> 404",
+    "https://www.boulezsaal.de/de/kalender -> 404"
+   ]
   },
   "roc": {
    "status": "keine",
@@ -129,15 +261,39 @@
   },
   "hh-sh": {
    "status": "fehler",
-   "grund": "https://www.schauspielhaus.de/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.schauspielhaus.de/de/spielplan -> 404",
+    "https://www.schauspielhaus.de/programm -> 404",
+    "https://www.schauspielhaus.de/de/programm -> 404",
+    "https://www.schauspielhaus.de/kalender -> 404",
+    "https://www.schauspielhaus.de/de/kalender -> 404",
+    "https://www.schauspielhaus.de/termine -> 404"
+   ]
   },
   "hh-th": {
    "status": "fehler",
-   "grund": "https://www.thalia-theater.de/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.thalia-theater.de/spielplan -> 404",
+    "https://www.thalia-theater.de/de/spielplan -> 404",
+    "https://www.thalia-theater.de/programm -> 404",
+    "https://www.thalia-theater.de/de/programm -> 404",
+    "https://www.thalia-theater.de/kalender -> 404",
+    "https://www.thalia-theater.de/de/kalender -> 404"
+   ]
   },
   "hh-kn": {
    "status": "fehler",
-   "grund": "https://www.kampnagel.de/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.kampnagel.de/spielplan -> 404",
+    "https://www.kampnagel.de/de/spielplan -> 404",
+    "https://www.kampnagel.de/programm -> 404",
+    "https://www.kampnagel.de/de/programm -> 404",
+    "https://www.kampnagel.de/de/kalender -> 404",
+    "https://www.kampnagel.de/termine -> 404"
+   ]
   },
   "hh-so": {
    "status": "ok",
@@ -158,15 +314,38 @@
   },
   "hh-elb": {
    "status": "fehler",
-   "grund": "https://www.elbphilharmonie.de/termine: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.elbphilharmonie.de/spielplan -> 404",
+    "https://www.elbphilharmonie.de/de/spielplan -> 404",
+    "https://www.elbphilharmonie.de/kalender -> 404",
+    "https://www.elbphilharmonie.de/de/kalender -> 404",
+    "https://www.elbphilharmonie.de/termine -> 404"
+   ]
   },
   "hh-ndr": {
    "status": "fehler",
-   "grund": "https://www.ndr.de/termine: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.ndr.de/spielplan -> 404",
+    "https://www.ndr.de/de/spielplan -> 404",
+    "https://www.ndr.de/programm -> 404",
+    "https://www.ndr.de/de/programm -> 404",
+    "https://www.ndr.de/kalender -> 404",
+    "https://www.ndr.de/de/kalender -> 404"
+   ]
   },
   "m-resi": {
    "status": "fehler",
-   "grund": "https://www.residenztheater.de/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.residenztheater.de/de/spielplan -> 404",
+    "https://www.residenztheater.de/programm -> 404",
+    "https://www.residenztheater.de/de/programm -> 404",
+    "https://www.residenztheater.de/kalender -> 404",
+    "https://www.residenztheater.de/de/kalender -> 404",
+    "https://www.residenztheater.de/termine -> 404"
+   ]
   },
   "m-mk": {
    "status": "ok",
@@ -181,63 +360,200 @@
   },
   "m-vt": {
    "status": "fehler",
-   "grund": "https://www.muenchner-volkstheater.de/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.muenchner-volkstheater.de/de/spielplan -> 404",
+    "https://www.muenchner-volkstheater.de/de/programm -> 404",
+    "https://www.muenchner-volkstheater.de/kalender -> 404",
+    "https://www.muenchner-volkstheater.de/de/kalender -> 404",
+    "https://www.muenchner-volkstheater.de/termine -> 404",
+    "https://www.muenchner-volkstheater.de/konzerte -> 404"
+   ]
   },
   "m-bso": {
    "status": "fehler",
-   "grund": "https://www.staatsoper.de/: HTTPError"
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.staatsoper.de/spielplan -> 403",
+    "https://www.staatsoper.de/de/spielplan -> 403",
+    "https://www.staatsoper.de/programm -> 403",
+    "https://www.staatsoper.de/de/programm -> 403",
+    "https://www.staatsoper.de/kalender -> 403",
+    "https://www.staatsoper.de/de/kalender -> 403"
+   ]
   },
   "m-gp": {
    "status": "fehler",
-   "grund": "https://www.gaertnerplatztheater.de/: ConnectTimeout"
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.gaertnerplatztheater.de/spielplan -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/de/spielplan -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/programm -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/de/programm -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/kalender -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/de/kalender -> ConnectTimeout"
+   ]
   },
   "m-mph": {
-   "status": "fehler",
-   "grund": "https://www.mphil.de/konzerte: HTTPError"
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:00",
+     "titel": "»Motus animi continuus«",
+     "url": "https://www.mphil.de/ueber-uns/musikerinnen-und-musiker/details/michael-martin-kofler"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "Nexus",
+     "url": "https://www.mphil.de/konzerte-und-karten/kalender/konzerte/nexus-2026-10-11"
+    }
+   ],
+   "quelle": "https://www.mphil.de/kalender",
+   "format": "html-time"
   },
   "m-br": {
    "status": "fehler",
-   "grund": "https://www.brso.de/termine: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.brso.de/spielplan -> 404",
+    "https://www.brso.de/de/spielplan -> 404",
+    "https://www.brso.de/programm -> 404",
+    "https://www.brso.de/de/programm -> 404",
+    "https://www.brso.de/kalender -> 404",
+    "https://www.brso.de/de/kalender -> 404"
+   ]
   },
   "w-burg": {
-   "status": "fehler",
-   "grund": "https://www.burgtheater.at/konzerte: HTTPError"
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "Holzfällen",
+     "url": "https://www.burgtheater.at/veranstaltungen/holzfaellen/2026-10-11"
+    },
+    {
+     "titel": "Klassenputtel",
+     "url": "https://www.burgtheater.at/veranstaltungen/klassenputtel/2026-10-11"
+    },
+    {
+     "titel": "Isidor",
+     "url": "https://www.burgtheater.at/veranstaltungen/isidor/2026-10-11"
+    },
+    {
+     "titel": "Die Wand",
+     "url": "https://www.burgtheater.at/veranstaltungen/die-wand/2026-10-11"
+    }
+   ],
+   "quelle": "https://www.burgtheater.at/spielplan",
+   "format": "html-time"
   },
   "w-vt": {
    "status": "fehler",
-   "grund": "https://www.volkstheater.at/termine: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.volkstheater.at/programm -> 404",
+    "https://www.volkstheater.at/de/programm -> 404",
+    "https://www.volkstheater.at/kalender -> 404",
+    "https://www.volkstheater.at/de/kalender -> 404",
+    "https://www.volkstheater.at/termine -> 404"
+   ]
   },
   "w-jos": {
    "status": "fehler",
-   "grund": "https://www.josefstadt.org/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.josefstadt.org/spielplan -> 404",
+    "https://www.josefstadt.org/de/spielplan -> 404",
+    "https://www.josefstadt.org/de/programm -> 404",
+    "https://www.josefstadt.org/kalender -> 404",
+    "https://www.josefstadt.org/de/kalender -> 404",
+    "https://www.josefstadt.org/termine -> 404"
+   ]
   },
   "w-so": {
    "status": "fehler",
-   "grund": "https://www.wiener-staatsoper.at/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.wiener-staatsoper.at/spielplan -> 404",
+    "https://www.wiener-staatsoper.at/de/spielplan -> 404",
+    "https://www.wiener-staatsoper.at/programm -> 404",
+    "https://www.wiener-staatsoper.at/de/programm -> 404",
+    "https://www.wiener-staatsoper.at/de/kalender -> 404",
+    "https://www.wiener-staatsoper.at/termine -> 404"
+   ]
   },
   "w-sb": {
    "status": "fehler",
-   "grund": "https://www.wiener-staatsballett.at/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.wiener-staatsballett.at/spielplan -> 404",
+    "https://www.wiener-staatsballett.at/de/spielplan -> 404",
+    "https://www.wiener-staatsballett.at/programm -> 404",
+    "https://www.wiener-staatsballett.at/de/programm -> 404",
+    "https://www.wiener-staatsballett.at/kalender -> 404",
+    "https://www.wiener-staatsballett.at/de/kalender -> 404"
+   ]
   },
   "w-vo": {
-   "status": "fehler",
-   "grund": "https://www.volksoper.at/konzerte: HTTPError"
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:00",
+     "titel": "Ronja Räubertochter",
+     "url": "https://www.volksoper.at/produktion/ronja-raubertochter-2026.1016099304.de.html"
+    },
+    {
+     "zeit": "18:00",
+     "titel": "Die Zauberflöte",
+     "url": "https://www.volksoper.at/produktion/die-zauberflote-2025.1016916622.de.html"
+    }
+   ],
+   "quelle": "https://www.volksoper.at/spielplan",
+   "format": "microdata"
   },
   "w-tadw": {
    "status": "fehler",
-   "grund": "https://www.theater-wien.at/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.theater-wien.at/spielplan -> 404",
+    "https://www.theater-wien.at/programm -> 404",
+    "https://www.theater-wien.at/kalender -> 404",
+    "https://www.theater-wien.at/termine -> 404",
+    "https://www.theater-wien.at/konzerte -> 404"
+   ]
   },
   "w-kh": {
    "status": "fehler",
-   "grund": "https://www.konzerthaus.at/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.konzerthaus.at/spielplan -> 404",
+    "https://www.konzerthaus.at/de/spielplan -> 404",
+    "https://www.konzerthaus.at/programm -> 404",
+    "https://www.konzerthaus.at/de/programm -> 404",
+    "https://www.konzerthaus.at/de/kalender -> 404",
+    "https://www.konzerthaus.at/termine -> 404"
+   ]
   },
   "w-mv": {
    "status": "fehler",
-   "grund": "https://www.musikverein.at/: ReadTimeout"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.musikverein.at/programm -> 404",
+    "https://www.musikverein.at/de/programm -> 404",
+    "https://www.musikverein.at/kalender -> 404",
+    "https://www.musikverein.at/de/kalender -> 404",
+    "https://www.musikverein.at/termine -> 404"
+   ]
   },
   "w-sym": {
    "status": "fehler",
-   "grund": "https://www.wienersymphoniker.at/konzerte: HTTPError"
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.wienersymphoniker.at/spielplan -> 404",
+    "https://www.wienersymphoniker.at/de/spielplan -> 404",
+    "https://www.wienersymphoniker.at/programm -> 404",
+    "https://www.wienersymphoniker.at/termine -> 404",
+    "https://www.wienersymphoniker.at/konzerte -> 404"
+   ]
   }
  }
 }

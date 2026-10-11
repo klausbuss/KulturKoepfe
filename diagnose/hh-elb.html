@@ -1,0 +1,2291 @@
+<!-- https://www.elbphilharmonie.de/de/programm/ -->
+
+
+
+
+<!DOCTYPE HTML>
+<html lang="de" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-touch">
+<head>
+	<title>Programm - Elbphilharmonie</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Veranstaltungen, Abonnements, die Saison im Überblick: Jetzt im Veranstaltungskalender von Elbphilharmonie und Laeiszhalle stöbern, Tickets direkt buchen.">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+	<meta name="google-site-verification" content="JoUZ76dl6PXwuYZNAvCEgfVwns43082LWUvWr3_YDGg">
+	<meta name="msvalidate.01" content="9AFB81202CCFE43F4652998779EE4914">
+
+	<link rel="shortcut icon" href="https://d3c80vss50ue25.cloudfront.net/static/images/favicons/favicon.edbb048cd1b1.ico">
+	<link rel="shortcut icon" sizes="196x196" href="https://d3c80vss50ue25.cloudfront.net/static/images/favicons/favicon-196.8d8dfca262e2.png">
+	<link rel="icon" sizes="128x128" href="https://d3c80vss50ue25.cloudfront.net/static/images/favicons/favicon-128.529d6ecb723a.png">
+	<link rel="icon" sizes="192x192" href="https://d3c80vss50ue25.cloudfront.net/static/images/favicons/favicon-192.7e5f03037d27.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://d3c80vss50ue25.cloudfront.net/static/images/favicons/favicon-152.3a9a6b59eb84.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="https://d3c80vss50ue25.cloudfront.net/static/images/favicons/favicon-167.605865468ee6.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://d3c80vss50ue25.cloudfront.net/static/images/favicons/favicon-180.eefc81e025b8.png">
+
+	<link rel="preconnect" href="https://shop.elbphilharmonie.de/">
+	<link rel="dns-prefetch" href="https://shop.elbphilharmonie.de/">
+	<link rel="preconnect" href="https://cdn.elbphilharmonie.de/">
+	<link rel="dns-prefetch" href="https://cdn.elbphilharmonie.de/">
+	<link rel="dns-prefetch" href="https://merkliste.elbphilharmonie.de/">
+
+	
+	<link rel="alternate" href="/de/programm/" hreflang="de">
+	
+	<link rel="alternate" href="/en/whats-on/" hreflang="en">
+	
+	<link rel="alternate" hreflang="x-default" href="https://www.elbphilharmonie.de/de/programm/">
+
+	<link href="https://d3c80vss50ue25.cloudfront.net/static/css/build/app.min.8b9e75df58f6.css" rel="stylesheet">
+
+	
+
+	
+
+    <script>
+        var DjangoApp = {
+            settings: {
+                STATIC_URL: "https://d3c80vss50ue25.cloudfront.net/static/",
+                LANGUAGE_CODE: "de",
+                ACTIVITY_ID: "",
+                
+                    SEARCH_URL_AJAX: "/de/suche/ajax/1/",
+                    SEARCH_URL: "/de/suche/",
+                
+                NEWSLETTER_ENABLED: true,
+                
+                    API_USER_ENABLED: true,
+                
+                API_USER_DETAIL: "https://api.elbphilharmonie.de/de/api/user/",
+                API_CART_DETAIL: "https://api.elbphilharmonie.de/de/api/cart/",
+                SITE_ID: "6",
+                MULTIPLE_SHOPS_ENABLED: true
+            },
+            api: {},
+            models: {},
+            views: {},
+            strings: {},
+            templates: {}
+        }
+        var translations = {
+            "expert-from": "Von",
+            "expert-to": "Bis",
+            "expert-composer": "Komponist",
+            "expert-work": "Werk",
+            "expert-distribution": "Reihe / Abonnement / Festival",
+            "expert-performers": "Interpret",
+            "expert-promoter": "Veranstalter",
+            "expert-venue": "Spielort",
+            "expert-day": "Tag",
+            "expert-month": "Monat",
+            "expert-year": "Jahr",
+            "expert-period": "Zeitraum",
+            "expert-reset": "Alle Filter löschen",
+            "expert-canceled": "Auch abgesagte Termine anzeigen",
+            "expert-error-date": "Bitte prüfen Sie das Datum",
+            "expert-loading-text": "Die erweiterte Suche wird geladen...",
+            "expert-results": "Ergebnisse",
+            "expert-result": "Ergebnis",
+            "expert-event-past": "Vergangene Veranstaltung",
+						"unmute-video": "Stummschaltung aufheben",
+						"mute-video": "Video stummschalten",
+						"cartEmpty": "Warenkorb",
+						"cartItemsCount": "Artikel im Warenkorb",
+            "favorite": "Merken",
+            "favorited": "<strong>Gemerkt</strong>",
+            "favorite-alert-off": "Merken / Ticketerinnerung",
+            "favorite-alert-one-on": "<strong>Gemerkt /</strong> Ticketerinnerung",
+            "favorite-alert-two-on": "<strong>Gemerkt / Ticketerinnerung aktiviert</strong>"
+        }
+    </script>
+
+
+	<script id="cart-template" type="text/html">
+		<% if(cart_items_count){ %>
+		<span class="icon icon-basket has-item">Shopping Basket</span>
+		<span class="items-count"><%- cart_items_count %></span>
+		<% if(typeof remaining !== 'undefined'){ %><span class="additional-info"><%- remaining %> Min</span><% } %>
+		<% }else{ %>
+		<span class="icon icon-basket">Shopping Basket</span>
+		<% } %>
+	</script>
+
+
+	<script id="user-template" type="text/html">
+		<!-- profile1_link_begin -->
+		<a href="" class="link-with-icon" title="Kundenkonto">
+			<span class="icon icon-login">Kundenkonto</span>
+			<!-- if logged in -->
+			<% if(typeof is_authenticated !== 'undefined' && is_authenticated){ %><span class="additional-info"><%- display_name %></span><% } %>
+		</a>
+		<!-- profile1_link_end -->
+		<% if(typeof is_authenticated !== 'undefined' && is_authenticated){ %>
+		<div class="overlay-head-elements overlay-login">
+			<div class="table">
+				<div class="table-row">
+					<div class="table-cell">
+						<p class="username"><%- display_name %></p>
+						<p><b>Kundennummer:</b> <%- customer_number %></p>
+						<p><b>E-Mail:</b> <%- email %></p>
+					</div>
+					<div class="table-cell">
+						<!-- profile2_link_begin -->
+						<a href="">Kundenkonto</a>
+						<!-- profile2_link_end -->
+						<br>
+						<!-- logout_link_begin -->
+						<a href="">Logout</a>
+						<!-- logout_link_end -->
+					</div>
+				</div>
+			</div>
+			<a href="#" class="icon icon-close" title="Close">Schließen</a>
+		</div>
+		<% } %>
+	</script>
+
+	
+
+	
+
+	
+	
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Konzerte – Elbphilharmonie und Laeiszhalle" />
+<meta property="og:description" content="Veranstaltungen, Abonnements, die Saison im Überblick: Jetzt im Veranstaltungskalender von Elbphilharmonie und Laeiszhalle stöbern, Tickets direkt buchen." />
+
+	<meta property="og:image" content="https://www.elbphilharmonie.dehttps://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/95/e0/95e0cace-865c-4454-b223-c41be47cd034/170404_new_york_philharmonic_foto_chris_lee2.jpg__1920x1920_q85_subject_location-990%2C876_subsampling-2_upscale.jpg" />
+	<meta property="og:image:secure_url" content="https://www.elbphilharmonie.dehttps://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/95/e0/95e0cace-865c-4454-b223-c41be47cd034/170404_new_york_philharmonic_foto_chris_lee2.jpg__1920x1920_q85_subject_location-990%2C876_subsampling-2_upscale.jpg" />
+
+
+
+</head>
+
+<body class="no-js  ">
+	
+
+	
+		<!-- Google Tag Manager -->
+<div data-cookie-consent="google_analytics">
+  <!--if-consent
+      <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MH9K989"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MH9K989');</script>
+    endif-->
+</div>
+<!-- End Google Tag Manager -->
+	
+
+	
+	
+
+	
+
+	<div class="page-container " >
+
+		
+
+
+
+
+
+
+
+
+<header class="header">
+	
+	<a href="/de/" title="Elbphilharmonie Laeiszhalle Hamburg" class="header__logo">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 56 67.9" enable-background="new 0 0 56 67.9" xml:space="preserve" class="header__logo-svg">
+<rect class="logo-line-11" x="43.5" y="39.6" width="12.5" height="3.4"/>
+<rect class="logo-line-10" x="43.5" y="56.6" width="12.5" height="1.1"/>
+<rect class="logo-line-9" x="43.5" y="67.6" width="12.5" height="0.3"/>
+<rect class="logo-line-8" x="29" y="46.4" width="12.5" height="1.1"/>
+<rect class="logo-line-7" x="29" y="53.4" width="12.5" height="0.6"/>
+<rect class="logo-line-6" x="14.5" y="39.6" width="12.5" height="3.4"/>
+<rect class="logo-line-5" x="14.5" y="46.4" width="12.5" height="2.3"/>
+<rect class="logo-line-4" x="14.5" y="56.6" width="12.5" height="1.1"/>
+<rect class="logo-line-3" y="39.6" width="12.5" height="1.7"/>
+<rect class="logo-line-2" y="46.4" width="12.5" height="1.1"/>
+<rect class="logo-line-1" y="53.4" width="12.5" height="0.6"/>
+<rect class="logo-bottom" y="23.1" width="56" height="10.7"/>
+<path class="logo-top" d="M56,0v24.1H0V13.9c5.1,2.2,11,0.8,14.7-3.4c7,6.3,18.5,2.8,24.1-7.3C49.2,9.8,55.9,0,56,0z"/>
+<!-- <path class="logo-icon" d="M38.9,3.2c-5.6,10.1-17.1,13.6-24.1,7.3c-3.7,4.2-9.6,5.6-14.7,3.4l0,19.9h56V0C56,0,49.3,9.8,38.9,3.2"/> -->
+</svg>
+
+	</a>
+
+	<div class="header__actions">
+		<!-- Menu toggle button -->
+		<button type="button" class="header__burger" aria-hidden="true" title="Menu">
+			<i class="header__burger-line"></i>
+			<i class="header__burger-line"></i>
+			<i class="header__burger-line"></i>
+		</button>
+
+		<!-- User account icon -->
+		<div class="header__actions--account header__above-item" data-name="Kundenkonto">
+			<a href="#" class="header__above-account--link" title="Kundenkonto" data-js-login-link>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Group 2201"><g fill="none" data-name="Group 2198" transform="translate(-1178 -12)"><path d="M1178 12h24v24h-24z" data-name="Rectangle 174"/><circle cx="4.746" cy="4.746" r="4.746" stroke="#000" stroke-miterlimit="10" stroke-width="2" data-name="Ellipse 81" transform="translate(1185.199 16.001)"/><path d="M1182.8 32.001a6.767 6.767 0 0 1 7-6.508 6.768 6.768 0 0 1 7 6.508" stroke="#000" stroke-miterlimit="10" stroke-width="2" data-name="Path 556"/></g></g></svg>
+			</a>
+		</div>
+
+		<!-- Search icon -->
+		<button type="button" class="header__actions--search" aria-hidden="true" title="Suche">
+			<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" x="0" y="0" version="1.1" viewBox="0 0 30 30"><path d="M29.875 27.35 19.076 16.549a10.444 10.444 0 0 0 1.916-6.035C20.992 4.714 16.29.01 10.49.01 4.69.01-.012 4.714-.012 10.515c0 5.8 4.703 10.501 10.502 10.501a10.47 10.47 0 0 0 5.956-1.854l10.81 10.81 2.619-2.62zM10.5 17.844a7.344 7.344 0 1 1 0-14.688 7.344 7.344 0 0 1 0 14.688z" fill="#000"/></svg>
+		</button>
+	</div>
+
+	<nav aria-label="Main menu" class="header__navigation">
+		<ul class="header__menu">
+			<li class="header__menu-indicator"></li>
+			
+				<li class="header__menu-item header__menu-item--active" data-name="Programm">
+					<a href="/de/programm/" class=" active" aria-current="page">Programm</a>
+				</li>
+			
+				<li class="header__menu-item " data-name="Besuch">
+					<a href="/de/besuch" class="">Besuch</a>
+				</li>
+			
+				<li class="header__menu-item " data-name="Musik für alle">
+					<a href="/de/musik-fuer-alle" class="">Musik für alle</a>
+				</li>
+			
+				<li class="header__menu-item " data-name="Die Häuser">
+					<a href="/de/die-haeuser-2026" class="">Die Häuser</a>
+				</li>
+			
+				<li class="header__menu-item " data-name="Mediathek">
+					<a href="/de/mediathek" class="">Mediathek</a>
+				</li>
+			
+				<li class="header__menu-item " data-name="Unterstützen">
+					<a href="/de/unterstuetzen" class="">Unterstützen</a>
+				</li>
+			
+				<li class="header__menu-item " data-name="Shop">
+					<a href="https://shop.elbphilharmonie.de/ep/de" class="">Shop</a>
+				</li>
+			
+		</ul>
+
+		<aside class="header__above">
+			
+				
+					<div class="header__search js-search">
+						<button class="header__search-button bold"><span class="header__search-text">Suche</span> <i class="icon-search"></i></button>
+						<form id="search-form" action="/de/suche/" method="get" class="header__search-form js-search-form">
+							<div class="header__search-wrapper">
+								<i class="icon-search header__search-icon"></i>
+								<label for="search-input" class="show-for-sr">Suche</label>
+								<input type="search" id="search-input" placeholder="Suche" name="q" autocomplete="off" class="header__search-input js-autocomplete-input">
+								<!-- <button type="submit" id="search-submit" value="Search" title=""></button> -->
+							</div>
+						</form>
+						<nav class="header__autocomplete">
+							<div class="header__autocomplete-loading loading-animation"></div>
+              <div class="header__autocomplete-noresult">
+                <h4>Ihre Suche ergab leider kein Ergebnis.</h4>
+                <p class="din">Bitte versuchen Sie es mit einem anderen Suchbegriff.</p>
+              </div>
+							<ul class="header__autocomplete-list"></ul>
+						</nav>
+					</div>
+				
+			
+
+			<div class="header__above-items--holder">
+				<ul class="header__above-items header__above-items--auth-specific">
+					<li class="header__above-item" data-name="Kundenkonto">
+						<a href="#" class="header__above-account--link" data-js-login-link title="Kundenkonto">
+							<span class="header__above-text header__above-account--name bold">
+								<span class="header__above-account--login">Login</span>
+							</span>
+							<i class="icon-account"></i>
+						</a>
+				</ul>
+	
+				<ul class="header__above-items">
+					<li class="header__above-item header__above-item--merklist" data-name="Merkliste">
+						<a href="#" title="Merkliste" class="" id="merklist">
+							<i class="icon-merken"></i>
+							<span class="header__above-count header__merklist-count"></span>
+						</a>
+					</li>
+					
+					<li class="header__above-item" data-name="Warenkorb">
+						<a href="#" class="header__above-basket" data-js-basket-link title="Warenkorb">
+							<i class="icon-basket"></i>
+							<span class="header__above-count header__basket-count" aria-hidden="true"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="header__languages">
+				
+				
+				<a href="#" class="header__languages-current" aria-expanded="false">De</a>
+				<ul class="header__languages-options" aria-hidden="true">
+					
+						<li class="header__languages-option">
+							<a href="/de/programm/"
+                 class="header__languages-link--active  header__languages-link--DE header__languages-link"
+                 lang="de" 
+                 hreflang="de"
+               >
+							 	<!-- Show full language name -->
+                <span class="show-for-large">
+									Deutsch
+								</span>
+
+								<!-- Show just short name, e.g. EN -->
+                <span class="hide-for-large">
+									de
+								</span>
+              </a>
+						</li>
+					
+						<li class="header__languages-option">
+							<a href="/en/whats-on/"
+                 class=" header__languages-link--EN header__languages-link"
+                 lang="en" 
+                 hreflang="en"
+               >
+							 	<!-- Show full language name -->
+                <span class="show-for-large">
+									English
+								</span>
+
+								<!-- Show just short name, e.g. EN -->
+                <span class="hide-for-large">
+									en
+								</span>
+              </a>
+						</li>
+					
+				</ul>
+			</div>
+		</aside>
+
+		<aside class="header__merklist grid-x align-center">
+			<button title="Merkliste schließen" class="header__merklist-close" type="button"></button>
+			<div class="header__merklist-wrapper cell small-10 medium-7 large-5" data-merkcontent="loggedin" style="display: none">
+				<h2 class="header__merklist-title line-center">Ihre Merkliste ist leer</h2>
+				<p class="header__merklist-text"> Mit der <strong>Merken</strong> <i class="icon-merken-star"></i> -Funktion können Sie Veranstaltungen in Ihrer Merkliste speichern.</p>
+				<div class="header__merklist-button">
+					<a href="/de/programm/" class="link link-default">Programm anschauen</a>
+				</div>
+			</div>
+
+			<div class="header__merklist-wrapper cell small-10 medium-7 large-5" data-merkcontent="loggedout" >
+				<h2 class="header__merklist-title line-center">Merkliste</h2>
+        <p class="header__merklist-text">Um Ihre Merkliste einzusehen, ist es erforderlich, dass Sie entweder im bisherigen oder im neuen Online-Shop angemeldet sind.<br> Wenn Sie noch kein Elbphilharmonie-Kundenkonto besitzen, registrieren Sie sich bitte im neuen Online-Shop.</p>
+				<div class="header__merklist-button">
+        <a href="https://shop.elbphilharmonie.de/de/meine-daten/" class="button link link-default header__merklist-account">Anmelden im bisherigen Online-Shop</a>
+          <br />
+					<a href="https://webshop.elbphilharmonie.de/webshop/webticket/shop?page=myaccount/accountoverview.secure" class="button link link-default header__merklist-account">Anmelden oder registrieren im neuen Online-Shop</a>
+				</div>
+			</div>
+
+			<div class="header__merklist-container cell large-10 xlarge-12 grid-container" data-merkcontent="list" style="display: none">
+        <div class="grid-x align-center header__merklist-header">
+          <div class="cell large-8">
+            <h2 class="header__merklist-title line-center">Merkliste</h2>
+            <button type="button" class="header__merklist-clear" data-clear="all">Merkliste löschen <i class="icon-trash-merklist"></i></button>
+            <button type="button" class="header__merklist-clear" data-clear="alert">Alle Ticketerinnungen deaktivieren <i class="icon-trash-merklist"></i></button>
+          </div>
+        </div>
+
+				<!-- 
+					Tab for events
+					-
+					This section contencted to tabGenerator() function in
+					merklist.js. The name "events-tab__*" is the the key
+					to separate tab from eachother. It mean everytime
+					you want to create a new tab, you need to change
+					"events-tab" to something else and pass it to the
+					tabGenerator() function, whereever you want to use.
+					-
+					P.S.01 Don't miss the datasets on the <li> tags.
+					P.S.02 Always add "events-tab__aside-item--active" to first <li> tag.
+				-->
+				<div class="events-tab grid-container">
+					<aside class="events-tab__aside">
+						<ul class="events-tab__aside-list">
+							<li class="events-tab__aside-item events-tab__aside-item--active" tabindex="0" data-item="Upcoming" data-name="Upcoming">
+								<!-- Upcoming Events -->
+								Aktuelle Veranstaltungen
+							</li>
+							<li class="events-tab__aside-item" tabindex="0" data-item="Past" data-name="Past">
+								<!-- Past Events -->
+								Vergangene Veranstaltungen
+							</li>
+							<li class="events-tab__aside-line"></li>
+						</ul>
+					</aside>
+				</div>
+				<!-- /end -->
+
+				<!-- 
+					Event list
+					-
+					This "events-tab___*" here is also conetected to
+					the tabGenerator() function. as long comment above
+					will explain it better.
+				-->
+        <ul class="event-list events-tab__list merklist-list">
+          <li data-category="Upcoming" class="events-tab__item">
+            <ul class="header__merklist--current-events"></ul>
+            <ul style="display: none;" class="empty-elements">
+              <li class="upcoming events-tab__item--empty">
+                <span class="grid-x grid-margin-x align-center">
+                  <span class="cell large-8">
+                    Sie haben keine aktuellen Veranstaltungen gespeichert. 
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li data-category="Past" class="events-tab__item">
+            <ul class="header__merklist--past-events"></ul>
+            <ul style="display: none;" class="empty-elements">
+              <li class="past events-tab__item--empty">
+                <span class="grid-x grid-margin-x align-center">
+                  <span class="cell large-8">
+                    Sie haben keine vergangenen Veranstaltungen gespeichert.
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+				<!-- /end -->
+
+        <div class="header__merklist-loading">
+          <div class="loading-animation"></div>
+        </div>
+        <div class="header__merklist-footer grid-margin-x grid-x align-center">
+					<div class="cell large-8">
+            <a href="/de/programm/" title="Weiter im Programm" class="button hollow link link-default">Weiter im Programm</a>
+          </div>
+        </div>
+			</div>
+		</aside>
+
+	</nav>
+</header>
+
+		
+
+
+		<main class="content-container">
+			
+	<div class="grid-container">
+		<div class="grid-x grid-margin-x align-center">
+			<div class="cell">
+				
+
+<header class="grid-container page-header less-space">
+	<div class="grid-x grid-margin-x align-center">
+		<div class="cell medium-10">
+			<h1>Programm</h1>
+      <p class="description-bold">Alle Veranstaltungen in den beiden Konzerthäusern<br> Elbphilharmonie und Laeiszhalle</p>
+		</div>
+	</div>
+</header>
+
+<aside>
+  <nav class="grid-container section-container anchor-nav event-tabs" data-al="event-tabs">
+    <ul class="anchor-nav__list">
+      <li class="anchor-nav__item">
+        <a href="/de/programm/" class="anchor-nav__link active" data-name="Veranstaltungen" aria-current="page">
+          Veranstaltungen
+        </a>
+      </li>
+      <li class="anchor-nav__item">
+        <a href="/de/themen-festivals" class="anchor-nav__link" data-name="Themen & Festivals" >
+          Themen & Festivals
+        </a>
+      </li>
+      <li class="anchor-nav__item">
+        <a href="/de/abos" class="anchor-nav__link" data-name="Abos" >
+          Abos
+        </a>
+      </li>
+      <li class="anchor-nav__item">
+        <a href="/de/mitmachen" class="anchor-nav__link" data-name="Mitmachen" >
+          Mitmachen
+        </a>
+      </li>
+      <li class="anchor-nav__indicator"></li>
+    </ul>
+  </nav>
+</aside>
+
+				
+
+				<section id="program-section" class="booking-list-page">
+
+					<aside class="filter"  data-has-filter="0" data-has-date="0">
+						<div class="filter__fakeblock"></div>
+						<div class="filter__group">
+							
+                            <span class="filter__intro">Liste filtern:</span>
+                            
+							<div class="filter__content">
+								<nav class="filter__navigation">
+									<button type="button"
+											class="filter__navigation-button filter__navigation-button--calendar"
+                      data-button-action="calendar"
+                      data-class="calendar--open"
+                      data-action="toggle"
+                      title="Datum"
+                      aria-controls="calendar-filter"
+                      aria-expanded="false"
+                      >
+										<i class="icon-calendar" data-name="Datum"></i>
+                      
+                        <span class="filter__navigation-text">Datum</span>
+                      
+										<i class="icon-chevron-down" data-name="Datum"></i>
+									</button>
+                                    
+                                    <button type="button"
+											class="filter__navigation-button filter__navigation-button--filter"
+											data-button-action="filter__wrapper" data-class="filter__wrapper--open"
+                      aria-controls="filter-nav"
+                      aria-expanded="false"
+											data-action="add" title="Liste filtern">
+										<i class="icon-filter" data-name="Liste filtern"></i>
+										
+											<span class="filter__navigation-text">Liste filtern</span>
+										
+									</button>
+                                    
+								</nav>
+								
+                                <ul class="filter__checkboxes">
+                                    
+
+<li class="filter__option filter__option--checkbox">
+    <label for="tickets-opener-1" class=" ">
+      <input id="tickets-opener-1" class="filter__checkbox" type="checkbox" data-link="/de/programm/TICKETS/" data-name="Tickets verfügbar" >
+      <span class="filter__option-text">Tickets verfügbar</span>
+    </label>
+  </li>
+  <li class="filter__option filter__option--checkbox">
+    <label for="only-elphilharmonie-1" class=" ">
+      <input id="only-elphilharmonie-1" class="filter__checkbox" type="checkbox" data-link="/de/programm/EPHH/" data-name="Nur Elbphilharmonie" >
+      <span class="filter__option-text">Nur Elbphilharmonie</span>
+    </label>
+  </li>
+  
+
+                                </ul>
+                                
+							</div>
+              <div id="calendar-filter" aria-hidden="true" class="calendar "
+								 data-last-date="31. Juli 2028 23:59" data-day="11"
+								 data-month="10" data-year="2026"
+								 data-first_event_date="2025-08-01T00:00:00+02:00"
+								 data-last_event_date="2028-07-31T23:59:00+02:00"
+								 data-urlpattern="/de/programm/11-22-3333/">
+								
+<header class="calendar__header">
+  <button title="schließen" class="calendar__close" data-button-action="calendar" data-class="calendar--open" data-action="remove" ></button>
+  <h2 class="no-line calendar__title">Datum</h2>
+</header>
+<div class="calendar__wrapper">
+	<div class="calendar__headline">
+
+    <a href="" class="calendar__prev" title="Vormonat"><i class="icon-arrow-left"></i></a>
+    <span class="calendar__current">
+      <span class="calendar__current-month bold">Oktober</span>
+      <span class="calendar__current-year bold">2026</span>
+    </span>
+    <a id='calendar-next-month' href="" class="calendar__next" title="nächsten Monat"><i class="icon-arrow-right"></i></a>
+	</div>
+  <div class="calendar__content">
+    <table class="calendar__table">
+      <thead class="calendar__thead">
+        <tr>
+          <th>
+            <span>MO</span>
+          </th>
+          <th>
+            <span>DI</span>
+          </th>
+          <th>
+            <span>MI</span>
+          </th>
+          <th>
+            <span>DO</span>
+          </th>
+          <th>
+            <span>FR</span>
+          </th>
+          <th>
+            <span>SA</span>
+          </th>
+          <th>
+            <span>SO</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="calendar__tbody">
+        
+          <tr>
+            
+              <td>
+                
+              </td>
+              
+            
+              <td>
+                
+              </td>
+              
+            
+              <td>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/01-10-2026/" class="past ">01</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/02-10-2026/" class="past ">02</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/03-10-2026/" class="past ">03</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/04-10-2026/" class="past ">04</button>
+                
+              </td>
+              
+            
+          </tr>
+        
+          <tr>
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/05-10-2026/" class="past ">05</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/06-10-2026/" class="past ">06</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/07-10-2026/" class="past ">07</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/08-10-2026/" class="past ">08</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/09-10-2026/" class="past ">09</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/10-10-2026/" class="past ">10</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/11-10-2026/" class="today current-day ">11</button>
+                
+              </td>
+              
+            
+          </tr>
+        
+          <tr>
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/12-10-2026/" class="">12</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/13-10-2026/" class="">13</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/14-10-2026/" class="">14</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/15-10-2026/" class="">15</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/16-10-2026/" class="">16</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/17-10-2026/" class="">17</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/18-10-2026/" class="">18</button>
+                
+              </td>
+              
+            
+          </tr>
+        
+          <tr>
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/19-10-2026/" class="">19</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/20-10-2026/" class="">20</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/21-10-2026/" class="">21</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/22-10-2026/" class="">22</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/23-10-2026/" class="">23</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/24-10-2026/" class="">24</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/25-10-2026/" class="">25</button>
+                
+              </td>
+              
+            
+          </tr>
+        
+          <tr>
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/26-10-2026/" class="">26</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/27-10-2026/" class="">27</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/28-10-2026/" class="">28</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/29-10-2026/" class="">29</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/30-10-2026/" class="">30</button>
+                
+              </td>
+              
+            
+              <td>
+                
+                <button type="button" data-filter="/de/programm/31-10-2026/" class="">31</button>
+                
+              </td>
+              
+            
+              <td>
+                
+              </td>
+              
+            
+          </tr>
+        
+      </tbody>
+      <tbody class="calendar__unavailable" >
+        <tr >
+          <td>
+            <a href="/de/erweiterte-suche" class="link-default bold">Alle Veranstaltungen finden Sie im Konzertarchiv</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<footer class="calendar__footer">
+  <button type="button" data-filter="/de/programm/11-22-3333/" class="link link-default calendar__today" title="Konzerte ab heute anzeigen">Konzerte ab heute anzeigen</button>
+</footer>
+<!-- <script> -->
+
+<!-- 	if(!(typeof $ === 'undefined')) { -->
+<!-- 		var last_event_date = $('#calendar-filter').attr('data-last-date'); -->
+<!-- 		// check if user reaches to the month of last event in calendar -->
+<!-- 		if ( !last_event_date || last_event_date == '' ) -->
+<!-- 			$('#calendar-next-month').hide(); -->
+<!-- 	} -->
+<!-- </script> -->
+
+							</div>
+							<nav class="filter__wrapper" id="filter-nav" aria-hidden="false">
+                <i class="filter__wrapper-blend"
+                    data-button-action="filter__wrapper"
+                    data-class="filter__wrapper--open"
+                    data-action="remove"
+                ></i>
+								<div class="filter__scroller">
+									<header class="filter__header">
+										<button class="filter__button-back bold"
+												data-button-action="filter__wrapper"
+												data-class="filter__wrapper--open"
+												data-action="remove"
+												type="button"
+												title="Veranstaltungen">
+											<i class="icon-arrow-left"></i>
+											Veranstaltungen
+										</button>
+										
+									</header>
+									
+                                    <ul class="filter__options">
+										<li class="filter__option filter__option--title">
+											<h2 class="no-line filter__title">Filter</h2>
+										</li>
+										<li class="filter__option" data-name="Ort">
+											<button id="location-opener"
+												class="filter__option-button"
+												aria-expanded="false"
+												aria-controls="filter-venues"
+											>
+												Ort<i class="icon-chevron-down"></i>
+											</button>
+											<ul class="filter__items" aria-hidden="true" id="filter-venues" role="listbox">
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Elbphilharmonie Hamburg" rel="nofollow" data-filter="EPHH/" class="filter__link ">Elbphilharmonie Hamburg</button>
+      
+      
+    </li>
+  
+    <li class="filter__item filter__item--subelement" >
+      <button type="button" data-name="Großer Saal" rel="nofollow" data-filter="EPGS/" class="filter__link ">Großer Saal</button>
+      
+      
+    </li>
+  
+    <li class="filter__item filter__item--subelement" >
+      <button type="button" data-name="Kleiner Saal" rel="nofollow" data-filter="EPKS/" class="filter__link ">Kleiner Saal</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Laeiszhalle Hamburg" rel="nofollow" data-filter="LHHH/" class="filter__link ">Laeiszhalle Hamburg</button>
+      
+      
+    </li>
+  
+    <li class="filter__item filter__item--subelement" >
+      <button type="button" data-name="Großer Saal" rel="nofollow" data-filter="LHGS/" class="filter__link ">Großer Saal</button>
+      
+      
+    </li>
+  
+    <li class="filter__item filter__item--subelement" >
+      <button type="button" data-name="Kleiner Saal" rel="nofollow" data-filter="LHKS/" class="filter__link ">Kleiner Saal</button>
+      
+        <hr>
+      
+      
+    </li>
+  
+    <li class="filter__item filter__item--subelement" >
+      <button type="button" data-name="Studio E" rel="nofollow" data-filter="STDE/" class="filter__link ">Studio E</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Bunker Feldstraße" rel="nofollow" data-filter="BUFE/" class="filter__link ">Bunker Feldstraße</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Rolf-Liebermann-Studio" rel="nofollow" data-filter="RLSN/" class="filter__link ">Rolf-Liebermann-Studio</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Studio Eins" rel="nofollow" data-filter="NDRS/" class="filter__link ">Studio Eins</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Wilhelm Leuschner Seniorenzentrum" rel="nofollow" data-filter="WLSZ/" class="filter__link ">Wilhelm Leuschner Seniorenzentrum</button>
+      
+      
+    </li>
+  
+</ul>
+
+										</li>
+										<li class="filter__option" data-name="Genre">
+											<button
+												id="genre-opener"
+												class="filter__option-button"
+												aria-expanded="false"
+												aria-controls="filter-genres"
+											>
+												Genre<i class="icon-chevron-down"></i>
+											</button>
+											<ul class="filter__items" aria-hidden="true" id="filter-genres" role="listbox">
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Orchesterkonzerte" rel="nofollow" data-filter="OR/" class="filter__link ">Orchesterkonzerte</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Ensemblekonzerte" rel="nofollow" data-filter="ENS/" class="filter__link ">Ensemblekonzerte</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Kammerkonzerte &amp; Recitals" rel="nofollow" data-filter="KM/" class="filter__link ">Kammerkonzerte &amp; Recitals</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Klavierabende" rel="nofollow" data-filter="KLAV/" class="filter__link ">Klavierabende</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Orgelkonzerte" rel="nofollow" data-filter="ORG/" class="filter__link ">Orgelkonzerte</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Oper, Chor &amp; Oratorium" rel="nofollow" data-filter="OC/" class="filter__link ">Oper, Chor &amp; Oratorium</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Arien- &amp; Liederabende" rel="nofollow" data-filter="VM/" class="filter__link ">Arien- &amp; Liederabende</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Alte Musik &amp; Originalklang" rel="nofollow" data-filter="AM/" class="filter__link ">Alte Musik &amp; Originalklang</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Neue Musik" rel="nofollow" data-filter="NM/" class="filter__link ">Neue Musik</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Jazz" rel="nofollow" data-filter="JA/" class="filter__link ">Jazz</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Weltmusik" rel="nofollow" data-filter="WELT/" class="filter__link ">Weltmusik</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Pop, Rock, Singer-Songwriter" rel="nofollow" data-filter="PRS/" class="filter__link ">Pop, Rock, Singer-Songwriter</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Elektronische Musik" rel="nofollow" data-filter="ELEK/" class="filter__link ">Elektronische Musik</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Show &amp; Unterhaltung" rel="nofollow" data-filter="SHOW/" class="filter__link ">Show &amp; Unterhaltung</button>
+      
+      
+    </li>
+  
+</ul>
+
+										</li>
+										<li class="filter__option" data-name="Empfohlen für">
+											<button
+												id="audience-opener"
+												class="filter__option-button"
+												aria-expanded="false"
+												aria-controls="filter-recommendations"
+											>
+												Empfohlen für<i class="icon-chevron-down"></i>
+											</button>
+											<ul class="filter__items" aria-hidden="true" id="filter-recommendations" role="listbox">
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Einsteiger" rel="nofollow" data-filter="EIN/" class="filter__link ">Einsteiger</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Fortgeschrittene" rel="nofollow" data-filter="FOR/" class="filter__link ">Fortgeschrittene</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Experimentierfreudige" rel="nofollow" data-filter="EXF/" class="filter__link ">Experimentierfreudige</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Familien" rel="nofollow" data-filter="FAM/" class="filter__link ">Familien</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="0-1 Jahre" rel="nofollow" data-filter="0JA/" class="filter__link ">0-1 Jahre</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="1-3 Jahre" rel="nofollow" data-filter="1JA/" class="filter__link ">1-3 Jahre</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="3-5 Jahre" rel="nofollow" data-filter="3JA/" class="filter__link ">3-5 Jahre</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Ab 6 Jahre" rel="nofollow" data-filter="6JA/" class="filter__link ">Ab 6 Jahre</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Ab 8 Jahre" rel="nofollow" data-filter="8JA/" class="filter__link ">Ab 8 Jahre</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Teenager" rel="nofollow" data-filter="TEE/" class="filter__link ">Teenager</button>
+      
+      
+    </li>
+  
+</ul>
+
+										</li>
+										<li class="filter__option" data-name="Veranstaltungsart">
+											<button
+												id="type-opener"
+												class="filter__option-button"
+												aria-expanded="false"
+												aria-controls="filter-kinds"
+											>
+												Veranstaltungsart<i class="icon-chevron-down"></i>
+											</button>
+											<ul class="filter__items" aria-hidden="true" id="filter-kinds" role="listbox">
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Konzerte" rel="nofollow" data-filter="KON/" class="filter__link ">Konzerte</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Film und Filmmusik" rel="nofollow" data-filter="FILM/" class="filter__link ">Film und Filmmusik</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Lesung / Podcast / Gespräch" rel="nofollow" data-filter="LES/" class="filter__link ">Lesung / Podcast / Gespräch</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Günstige Konzerte für Menschen U30 (REDticket)" rel="nofollow" data-filter="RED/" class="filter__link ">Günstige Konzerte für Menschen U30 (REDticket)</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Workshops" rel="nofollow" data-filter="INST/" class="filter__link ">Workshops</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Elbphilharmonie PLUS" rel="nofollow" data-filter="EPPLUS/" class="filter__link ">Elbphilharmonie PLUS</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Veranstaltungen der HamburgMusik" rel="nofollow" data-filter="EIV/" class="filter__link ">Veranstaltungen der HamburgMusik</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Veranstaltungen des NDR" rel="nofollow" data-filter="NDR/" class="filter__link ">Veranstaltungen des NDR</button>
+      
+      
+    </li>
+  
+    <li class="filter__item filter__item--subelement" >
+      <button type="button" data-name="NDR Elbphilharmonie Orchester" rel="nofollow" data-filter="NDR_EO/" class="filter__link ">NDR Elbphilharmonie Orchester</button>
+      
+      
+    </li>
+  
+    <li class="filter__item filter__item--subelement" >
+      <button type="button" data-name="NDR Bigband" rel="nofollow" data-filter="NDR_BB/" class="filter__link ">NDR Bigband</button>
+      
+      
+    </li>
+  
+    <li class="filter__item filter__item--subelement" >
+      <button type="button" data-name="NDR Vokalensemble" rel="nofollow" data-filter="NDR_CH/" class="filter__link ">NDR Vokalensemble</button>
+      
+      
+    </li>
+  
+    <li class="filter__item filter__item--subelement" >
+      <button type="button" data-name="NDR Jazzkonzerte" rel="nofollow" data-filter="NDR_JA/" class="filter__link ">NDR Jazzkonzerte</button>
+      
+      
+    </li>
+  
+    <li class="filter__item filter__item--subelement" >
+      <button type="button" data-name="NDR Familienkonzerte" rel="nofollow" data-filter="NDR_ED/" class="filter__link ">NDR Familienkonzerte</button>
+      
+      
+    </li>
+  
+    <li class="filter__item filter__item--subelement" >
+      <button type="button" data-name="NDR Kultur" rel="nofollow" data-filter="NDR_KU/" class="filter__link ">NDR Kultur</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Veranstaltungen der Symphoniker Hamburg" rel="nofollow" data-filter="SYMP/" class="filter__link ">Veranstaltungen der Symphoniker Hamburg</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Veranstaltungen des Ensemble Resonanz" rel="nofollow" data-filter="ER/" class="filter__link ">Veranstaltungen des Ensemble Resonanz</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Veranstaltungen des Philharmonischen Staatsorchesters Hamburg" rel="nofollow" data-filter="PHIL/" class="filter__link ">Veranstaltungen des Philharmonischen Staatsorchesters Hamburg</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Veranstaltungen der Konzertdirektion Dr. Rudolf Goette" rel="nofollow" data-filter="GOET/" class="filter__link ">Veranstaltungen der Konzertdirektion Dr. Rudolf Goette</button>
+      
+      
+    </li>
+  
+    <li class="filter__item " >
+      <button type="button" data-name="Veranstaltungen der Kammermusikfreunde" rel="nofollow" data-filter="KMF/" class="filter__link ">Veranstaltungen der Kammermusikfreunde</button>
+      
+      
+    </li>
+  
+</ul>
+
+										</li>
+										
+
+<li class="filter__option filter__option--checkbox">
+    <label for="tickets-opener-2" class=" ">
+      <input id="tickets-opener-2" class="filter__checkbox" type="checkbox" data-link="/de/programm/TICKETS/" data-name="Tickets verfügbar" >
+      <span class="filter__option-text">Tickets verfügbar</span>
+    </label>
+  </li>
+  <li class="filter__option filter__option--checkbox">
+    <label for="only-elphilharmonie-2" class=" ">
+      <input id="only-elphilharmonie-2" class="filter__checkbox" type="checkbox" data-link="/de/programm/EPHH/" data-name="Nur Elbphilharmonie" >
+      <span class="filter__option-text">Nur Elbphilharmonie</span>
+    </label>
+  </li>
+  
+
+									</ul>
+									
+                                    <footer class="filter__footer filter__footer--off">
+                  
+									</footer>
+								</div>
+							</nav>
+						</div>
+					</aside>
+
+					
+
+					<div class="program-section__loading loading-animation" style="display: none; opacity: 0;"></div>
+
+					
+						<div class="grid-x grid-margin-x align-center">
+							<div class="cell large-10 xlarge-12">
+								<ul class="event-list" id="event-list">
+									
+
+
+
+
+		<li id="event_id_000000e9001774fe" data-category="Past" data-event-id="783" class="event-item past" data-categories="[]"><div class="grid-x grid-margin-x"><div class="cell xlarge-2"><div class="grid-x grid-margin-x date-and-place"><div class="cell small-6 medium-4 xlarge-12 date-cell"><div><span class="indicator-line" data-line></span></div><span class="caption"><time datetime="2026-10-11T11:00:00+02:00"><strong class="date nobreak">So, 11.10.2026</strong><span class="time">11&nbsp;Uhr</span></time></span></div><div class="cell small-6 medium-8 xlarge-12 place-cell"><span class="caption uppercase"><strong>Elbphilharmonie</strong> Großer Saal
+							</span></div></div></div><div class="cell medium-4 hide-for-small-only image-cell"><a href="/de/programm/ndr-elbphilharmonie-orchester-frank-peter-zimmermann-alan-gilbert/27827" tabindex="-1" class="event-image-link"><picture aria-hidden="true"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/c5/d6/c5d61a96-0f8b-4c92-baf9-39fe15df2ca3/alan_gilbert_c_marco_borggreve_ndr_33.jpg__219x164_q85_crop_subject_location-987%2C1234_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/c5/d6/c5d61a96-0f8b-4c92-baf9-39fe15df2ca3/alan_gilbert_c_marco_borggreve_ndr_33.jpg__392x294_q85_crop_subject_location-987%2C1234_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/c5/d6/c5d61a96-0f8b-4c92-baf9-39fe15df2ca3/alan_gilbert_c_marco_borggreve_ndr_33.jpg__442x328_q85_crop_subject_location-987%2C1234_subsampling-2_upscale.jpg" alt=""></picture><picture class="blurry show-for-medium"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/c5/d6/c5d61a96-0f8b-4c92-baf9-39fe15df2ca3/alan_gilbert_c_marco_borggreve_ndr_33.jpg__219x164_q85_crop_subject_location-987%2C1234_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/c5/d6/c5d61a96-0f8b-4c92-baf9-39fe15df2ca3/alan_gilbert_c_marco_borggreve_ndr_33.jpg__392x294_q85_crop_subject_location-987%2C1234_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/c5/d6/c5d61a96-0f8b-4c92-baf9-39fe15df2ca3/alan_gilbert_c_marco_borggreve_ndr_33.jpg__442x328_q85_crop_subject_location-987%2C1234_subsampling-2_upscale.jpg" alt="Alan Gilbert" title="Alan Gilbert © Marco Borggreve"></picture></a></div><div class="cell medium-8 xlarge-6 grid-y align-justify event-main"><div class="cell"><p class="event-title h2 no-line"><a href="/de/programm/ndr-elbphilharmonie-orchester-frank-peter-zimmermann-alan-gilbert/27827">
+                                NDR Elbphilharmonie Orchester / Frank Peter Zimmermann / Alan Gilbert
+                            </a></p><p class="event-subtitle">Mazzoli: Orpheus Undone / Walton: Violinkonzert / Mozart: Sinfonie Nr. 41 »Jupiter«</p></div><div class="cell status-info grid-x align-justify align-bottom"><div class="cell small-12 large-shrink "><button class="event__bookmark"
+                                    type="button"
+                                    data-alert="false"
+                                    data-id="000000e9:001774fe"
+                                    data-name="So, 11.10.2026 - NDR Elbphilharmonie Orchester / Frank Peter Zimmermann / Alan Gilbert"><i class="event__bookmark-icon icon icon-merken-star" data-bookmark-icon-off="icon-merken-star" data-bookmark-icon-on="icon-merken-star-blue"></i><span class="event__bookmark-text "
+                                      data-bookmark-text-off='Merken'
+                                      data-bookmark-text-on='<strong>Gemerkt</strong>'
+                                      data-bookmark-alert-off='Merken / Ticketerinnerung'
+                                      data-bookmark-alert-one-on='<strong>Gemerkt /</strong> Ticketerinnerung'
+                                      data-bookmark-alert-two-on='<strong>Gemerkt / Ticketerinnerung aktiviert</strong>'
+                                >Merken</span>&nbsp;
+                            </button></div><div class="cell small-1 large-auto"></div><div class="cell small-auto medium-shrink  text-right"><div class="past-status status-box"><span class="status">Vergangenes Konzert</span></div><div class="presale sale-status status-box" style="display: none;"><span class="ticket-and-prices"><a class="link link-ticket"
+	   href="/de/programm/ticket/ndr-elbphilharmonie-orchester-frank-peter-zimmermann-alan-gilbert/27827"
+	   data-name="NDR Elbphilharmonie Orchester / Frank Peter Zimmermann / Alan Gilbert - Restkarten erhalten Sie an der Tages-/Abendkasse"
+
+	
+
+	
+
+	
+		
+	
+
+	><!--  -->
+            Restkarten erhalten Sie an der Tages-/Abendkasse
+
+	</a></span></div></div></div></div></div></li>
+
+
+		<li id="event_id_000000e9001a81dd" data-category="Past" data-event-id="1613" class="event-item past" data-categories="[]"><div class="grid-x grid-margin-x"><div class="cell xlarge-2"><div class="grid-x grid-margin-x date-and-place"><div class="cell small-6 medium-4 xlarge-12 date-cell"><div><span class="indicator-line" data-line></span></div><span class="caption"><time datetime="2026-10-11T11:00:00+02:00"><strong class="date nobreak">So, 11.10.2026</strong><span class="time">11&nbsp;Uhr</span></time></span></div><div class="cell small-6 medium-8 xlarge-12 place-cell"><span class="caption uppercase"><strong>Elbphilharmonie</strong> Kleiner Saal
+							</span></div></div></div><div class="cell medium-4 hide-for-small-only image-cell"><a href="/de/programm/quatuor-ebene/27993" tabindex="-1" class="event-image-link"><picture aria-hidden="true"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/30/51/30513a7d-c549-4462-bc3f-9eb1124e6bfb/quatuor_ebene_c_julien_mignot3.jpg__219x164_q85_crop_subject_location-905%2C640_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/30/51/30513a7d-c549-4462-bc3f-9eb1124e6bfb/quatuor_ebene_c_julien_mignot3.jpg__392x294_q85_crop_subject_location-905%2C640_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/30/51/30513a7d-c549-4462-bc3f-9eb1124e6bfb/quatuor_ebene_c_julien_mignot3.jpg__442x328_q85_crop_subject_location-905%2C640_subsampling-2_upscale.jpg" alt=""></picture><picture class="blurry show-for-medium"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/30/51/30513a7d-c549-4462-bc3f-9eb1124e6bfb/quatuor_ebene_c_julien_mignot3.jpg__219x164_q85_crop_subject_location-905%2C640_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/30/51/30513a7d-c549-4462-bc3f-9eb1124e6bfb/quatuor_ebene_c_julien_mignot3.jpg__392x294_q85_crop_subject_location-905%2C640_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/30/51/30513a7d-c549-4462-bc3f-9eb1124e6bfb/quatuor_ebene_c_julien_mignot3.jpg__442x328_q85_crop_subject_location-905%2C640_subsampling-2_upscale.jpg" alt="Quatuor Ébène" title="Quatuor Ébène © Julien Mignot"></picture></a></div><div class="cell medium-8 xlarge-6 grid-y align-justify event-main"><div class="cell"><p class="event-title h2 no-line"><a href="/de/programm/quatuor-ebene/27993">
+                                Quatuor Ébène
+                            </a></p><p class="event-subtitle">Beethoven-Zyklus II</p></div><div class="cell status-info grid-x align-justify align-bottom"><div class="cell small-12 large-shrink "><button class="event__bookmark"
+                                    type="button"
+                                    data-alert="false"
+                                    data-id="000000e9:001a81dd"
+                                    data-name="So, 11.10.2026 - Quatuor Ébène"><i class="event__bookmark-icon icon icon-merken-star" data-bookmark-icon-off="icon-merken-star" data-bookmark-icon-on="icon-merken-star-blue"></i><span class="event__bookmark-text "
+                                      data-bookmark-text-off='Merken'
+                                      data-bookmark-text-on='<strong>Gemerkt</strong>'
+                                      data-bookmark-alert-off='Merken / Ticketerinnerung'
+                                      data-bookmark-alert-one-on='<strong>Gemerkt /</strong> Ticketerinnerung'
+                                      data-bookmark-alert-two-on='<strong>Gemerkt / Ticketerinnerung aktiviert</strong>'
+                                >Merken</span>&nbsp;
+                            </button></div><div class="cell small-1 large-auto"></div><div class="cell small-auto medium-shrink  text-right"><div class="past-status status-box"><span class="status">Vergangenes Konzert</span></div><div class="presale sale-status status-box" style="display: none;"><span class="ticket-and-prices"><a class="link link-ticket"
+	   href="/de/programm/ticket/quatuor-ebene/27993"
+	   data-name="Quatuor Ébène - Restkarten erhalten Sie an der Tages-/Abendkasse"
+
+	
+
+	
+
+	
+		
+	
+
+	><!--  -->
+            Restkarten erhalten Sie an der Tages-/Abendkasse
+
+	</a></span></div></div></div></div></div></li>
+
+
+		<li id="event_id_000000e9001d37d1" data-category="Past" data-event-id="1763" class="event-item past" data-categories="[]"><div class="grid-x grid-margin-x"><div class="cell xlarge-2"><div class="grid-x grid-margin-x date-and-place"><div class="cell small-6 medium-4 xlarge-12 date-cell"><div><span class="indicator-line" data-line></span></div><span class="caption"><time datetime="2026-10-11T15:00:00+02:00"><strong class="date nobreak">So, 11.10.2026</strong><span class="time">11&nbsp;Uhr / 15&nbsp;Uhr</span></time></span></div><div class="cell small-6 medium-8 xlarge-12 place-cell"><span class="caption uppercase"><strong>Elbphilharmonie</strong> Kaistudio 1
+							</span></div></div></div><div class="cell medium-4 hide-for-small-only image-cell"><a href="/de/programm/funkelkonzert-s-obotaqua/28296" tabindex="-1" class="event-image-link"><picture aria-hidden="true"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/d5/01/d50102ae-7fd8-4c9f-9d67-e49ea552a1ec/240501_obotaqua_c_claudia_hohne_093.jpg__219x164_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/d5/01/d50102ae-7fd8-4c9f-9d67-e49ea552a1ec/240501_obotaqua_c_claudia_hohne_093.jpg__392x294_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/d5/01/d50102ae-7fd8-4c9f-9d67-e49ea552a1ec/240501_obotaqua_c_claudia_hohne_093.jpg__442x328_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg" alt=""></picture><picture class="blurry show-for-medium"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/d5/01/d50102ae-7fd8-4c9f-9d67-e49ea552a1ec/240501_obotaqua_c_claudia_hohne_093.jpg__219x164_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/d5/01/d50102ae-7fd8-4c9f-9d67-e49ea552a1ec/240501_obotaqua_c_claudia_hohne_093.jpg__392x294_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/d5/01/d50102ae-7fd8-4c9f-9d67-e49ea552a1ec/240501_obotaqua_c_claudia_hohne_093.jpg__442x328_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg" alt="»Obotaqua«" title="»Obotaqua« © Claudia Höhne"></picture></a></div><div class="cell medium-8 xlarge-6 grid-y align-justify event-main"><div class="cell"><p class="event-title h2 no-line"><a href="/de/programm/funkelkonzert-s-obotaqua/28296">
+                                Funkelkonzert S / Obotaqua
+                            </a></p><p class="event-subtitle">für Familien mit Kindern von 1–3 Jahren</p></div><div class="cell status-info grid-x align-justify align-bottom"><div class="cell small-12 large-shrink "><button class="event__bookmark"
+                                    type="button"
+                                    data-alert="false"
+                                    data-id="000000e9:001d37d1"
+                                    data-name="So, 11.10.2026 - Funkelkonzert S / Obotaqua"><i class="event__bookmark-icon icon icon-merken-star" data-bookmark-icon-off="icon-merken-star" data-bookmark-icon-on="icon-merken-star-blue"></i><span class="event__bookmark-text "
+                                      data-bookmark-text-off='Merken'
+                                      data-bookmark-text-on='<strong>Gemerkt</strong>'
+                                      data-bookmark-alert-off='Merken / Ticketerinnerung'
+                                      data-bookmark-alert-one-on='<strong>Gemerkt /</strong> Ticketerinnerung'
+                                      data-bookmark-alert-two-on='<strong>Gemerkt / Ticketerinnerung aktiviert</strong>'
+                                >Merken</span>&nbsp;
+                            </button></div><div class="cell small-1 large-auto"></div><div class="cell small-auto medium-shrink  text-right"><div class="past-status status-box"><span class="status">Vergangenes Konzert</span></div><div class="presale sale-status status-box" style="display: none;"><span class="ticket-and-prices"><a class="link link-ticket"
+	   href="/de/programm/funkelkonzert-s-obotaqua/28295?reprised=1"
+	   data-name="Funkelkonzert S / Obotaqua - Eventuell Restkarten an der Tages-/Abendkasse"
+
+	
+
+	
+
+	
+		
+	
+
+	><!--  -->
+            Eventuell Restkarten an der Tages-/Abendkasse
+
+	</a></span></div></div></div></div></div></li>
+
+
+		<li id="event_id_000000e9001c29d1" data-category="Past" data-event-id="2553" class="event-item past" data-categories="[]"><div class="grid-x grid-margin-x"><div class="cell xlarge-2"><div class="grid-x grid-margin-x date-and-place"><div class="cell small-6 medium-4 xlarge-12 date-cell"><div><span class="indicator-line" data-line></span></div><span class="caption"><time datetime="2026-10-11T11:00:00+02:00"><strong class="date nobreak">So, 11.10.2026</strong><span class="time">11&nbsp;Uhr</span></time></span></div><div class="cell small-6 medium-8 xlarge-12 place-cell"><span class="caption uppercase"><strong>Laeiszhalle</strong> Kleiner Saal
+							</span></div></div></div><div class="cell medium-4 hide-for-small-only image-cell"><a href="/de/programm/akkordeonprojektorchester-hamburg-fabian-dobler/28955" tabindex="-1" class="event-image-link"><picture aria-hidden="true"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/7c/2f/7c2fb144-bb4c-40dd-bfcf-3931dc836604/fabian_dobler_c_stephan_boehme.jpg__219x164_q85_crop_subject_location-942%2C503_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/7c/2f/7c2fb144-bb4c-40dd-bfcf-3931dc836604/fabian_dobler_c_stephan_boehme.jpg__392x294_q85_crop_subject_location-942%2C503_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/7c/2f/7c2fb144-bb4c-40dd-bfcf-3931dc836604/fabian_dobler_c_stephan_boehme.jpg__442x328_q85_crop_subject_location-942%2C503_subsampling-2_upscale.jpg" alt=""></picture><picture class="blurry show-for-medium"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/7c/2f/7c2fb144-bb4c-40dd-bfcf-3931dc836604/fabian_dobler_c_stephan_boehme.jpg__219x164_q85_crop_subject_location-942%2C503_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/7c/2f/7c2fb144-bb4c-40dd-bfcf-3931dc836604/fabian_dobler_c_stephan_boehme.jpg__392x294_q85_crop_subject_location-942%2C503_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/7c/2f/7c2fb144-bb4c-40dd-bfcf-3931dc836604/fabian_dobler_c_stephan_boehme.jpg__442x328_q85_crop_subject_location-942%2C503_subsampling-2_upscale.jpg" alt="Fabian Dobler" title="Fabian Dobler © Stephan Boehme"></picture></a></div><div class="cell medium-8 xlarge-6 grid-y align-justify event-main"><div class="cell"><p class="event-title h2 no-line"><a href="/de/programm/akkordeonprojektorchester-hamburg-fabian-dobler/28955">
+                                AkkordeonProjektOrchester Hamburg / Fabian Dobler
+                            </a></p><p class="event-subtitle">Dobler / Piazzolla</p></div><div class="cell status-info grid-x align-justify align-bottom"><div class="cell small-12 large-shrink "><button class="event__bookmark"
+                                    type="button"
+                                    data-alert="false"
+                                    data-id="000000e9:001c29d1"
+                                    data-name="So, 11.10.2026 - AkkordeonProjektOrchester Hamburg / Fabian Dobler"><i class="event__bookmark-icon icon icon-merken-star" data-bookmark-icon-off="icon-merken-star" data-bookmark-icon-on="icon-merken-star-blue"></i><span class="event__bookmark-text "
+                                      data-bookmark-text-off='Merken'
+                                      data-bookmark-text-on='<strong>Gemerkt</strong>'
+                                      data-bookmark-alert-off='Merken / Ticketerinnerung'
+                                      data-bookmark-alert-one-on='<strong>Gemerkt /</strong> Ticketerinnerung'
+                                      data-bookmark-alert-two-on='<strong>Gemerkt / Ticketerinnerung aktiviert</strong>'
+                                >Merken</span>&nbsp;
+                            </button></div><div class="cell small-1 large-auto"></div><div class="cell small-auto medium-shrink  text-right"><div class="past-status status-box"><span class="status">Vergangenes Konzert</span></div><div class="presale sale-status status-box" style="display: none;"><span class="ticket-and-prices"><a class="link link-ticket"
+	   href="/de/programm/ticket/akkordeonprojektorchester-hamburg-fabian-dobler/28955"
+	   data-name="AkkordeonProjektOrchester Hamburg / Fabian Dobler - Tickets erhalten Sie an der Tages-/Abendkasse"
+
+	
+
+	
+
+	
+		
+	
+
+	><!--  -->
+            Tickets erhalten Sie an der Tages-/Abendkasse
+
+	</a></span></div></div></div></div></div></li>
+
+
+		<li id="event_id_000000e9001d278d" data-category="Upcoming" data-event-id="45316" class="event-item" data-categories="[]"><div class="grid-x grid-margin-x"><div class="cell xlarge-2"><div class="grid-x grid-margin-x date-and-place"><div class="cell small-6 medium-4 xlarge-12 date-cell"><div><span class="indicator-line" data-line></span></div><span class="caption"><time datetime="2026-10-11T19:00:00+02:00"><strong class="date nobreak">So, 11.10.2026</strong><span class="time">19&nbsp;Uhr</span></time></span></div><div class="cell small-6 medium-8 xlarge-12 place-cell"><span class="caption uppercase"><strong>Elbphilharmonie</strong> Kleiner Saal
+							</span></div></div></div><div class="cell medium-4 hide-for-small-only image-cell"><a href="/de/programm/10-erard-festival/27869" tabindex="-1" class="event-image-link"><picture aria-hidden="true"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/c1/e6/c1e61a7a-1b93-4962-a657-206c27fa4f25/konzertfluegel_mit_schriftzug_erard_c_stephanie_weber.jpg__219x164_q85_crop_subject_location-591%2C388_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/c1/e6/c1e61a7a-1b93-4962-a657-206c27fa4f25/konzertfluegel_mit_schriftzug_erard_c_stephanie_weber.jpg__392x294_q85_crop_subject_location-591%2C388_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/c1/e6/c1e61a7a-1b93-4962-a657-206c27fa4f25/konzertfluegel_mit_schriftzug_erard_c_stephanie_weber.jpg__442x328_q85_crop_subject_location-591%2C388_subsampling-2_upscale.jpg" alt=""></picture><picture class="blurry show-for-medium"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/c1/e6/c1e61a7a-1b93-4962-a657-206c27fa4f25/konzertfluegel_mit_schriftzug_erard_c_stephanie_weber.jpg__219x164_q85_crop_subject_location-591%2C388_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/c1/e6/c1e61a7a-1b93-4962-a657-206c27fa4f25/konzertfluegel_mit_schriftzug_erard_c_stephanie_weber.jpg__392x294_q85_crop_subject_location-591%2C388_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/c1/e6/c1e61a7a-1b93-4962-a657-206c27fa4f25/konzertfluegel_mit_schriftzug_erard_c_stephanie_weber.jpg__442x328_q85_crop_subject_location-591%2C388_subsampling-2_upscale.jpg" alt="Flügel der Firma Érard" title="Flügel der Firma Érard © Stephanie Weber"></picture></a></div><div class="cell medium-8 xlarge-6 grid-y align-justify event-main"><div class="cell"><p class="event-title h2 no-line"><a href="/de/programm/10-erard-festival/27869">
+                                10. Érard-Festival
+                            </a></p><p class="event-subtitle">Brahms / Chopin / Strauss</p></div><div class="cell status-info grid-x align-justify align-bottom"><div class="cell small-12 large-shrink "><button class="event__bookmark"
+                                    type="button"
+                                    data-alert="false"
+                                    data-id="000000e9:001d278d"
+                                    data-name="So, 11.10.2026 - 10. Érard-Festival"><i class="event__bookmark-icon icon icon-merken-star" data-bookmark-icon-off="icon-merken-star" data-bookmark-icon-on="icon-merken-star-blue"></i><span class="event__bookmark-text "
+                                      data-bookmark-text-off='Merken'
+                                      data-bookmark-text-on='<strong>Gemerkt</strong>'
+                                      data-bookmark-alert-off='Merken / Ticketerinnerung'
+                                      data-bookmark-alert-one-on='<strong>Gemerkt /</strong> Ticketerinnerung'
+                                      data-bookmark-alert-two-on='<strong>Gemerkt / Ticketerinnerung aktiviert</strong>'
+                                >Merken</span>&nbsp;
+                            </button></div><div class="cell small-1 large-auto"></div><div class="cell small-auto medium-shrink  text-right"><div class="online-sale-ended-status status-box"><span class="status">
+					Online-Verkauf beendet
+				</span></div><div class="presale sale-status status-box" style="display: none;"><span class="ticket-and-prices"><a class="link link-ticket"
+	   href="/de/programm/ticket/10-erard-festival/27869"
+	   data-name="10. Érard-Festival - Tickets erhalten Sie an der Tages-/Abendkasse"
+
+	
+
+	
+
+	
+		
+	
+
+	><!--  -->
+            Tickets erhalten Sie an der Tages-/Abendkasse
+
+	</a></span></div></div></div></div></div></li>
+
+
+		<li id="event_id_000000e90019b251" data-category="Past" data-event-id="668" class="event-item past" data-categories="[]"><div class="grid-x grid-margin-x"><div class="cell xlarge-2"><div class="grid-x grid-margin-x date-and-place"><div class="cell small-6 medium-4 xlarge-12 date-cell"><div><span class="indicator-line" data-line></span></div><span class="caption"><time datetime="2026-10-11T19:00:00+02:00"><strong class="date nobreak">So, 11.10.2026</strong><span class="time">19&nbsp;Uhr</span></time></span></div><div class="cell small-6 medium-8 xlarge-12 place-cell"><span class="caption uppercase"><strong>Laeiszhalle</strong> Großer Saal
+							</span></div></div></div><div class="cell medium-4 hide-for-small-only image-cell"><a href="/de/programm/symphoniker-hamburg-adrian-iliescu-miguel-sepulveda/28045" tabindex="-1" class="event-image-link"><picture aria-hidden="true"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/4b/73/4b733561-f5dc-422c-ae7a-647cffa59e7c/miguel_sepulveda_c_diana_tinoco_4.jpg__219x164_q85_crop_subject_location-942%2C759_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/4b/73/4b733561-f5dc-422c-ae7a-647cffa59e7c/miguel_sepulveda_c_diana_tinoco_4.jpg__392x294_q85_crop_subject_location-942%2C759_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/4b/73/4b733561-f5dc-422c-ae7a-647cffa59e7c/miguel_sepulveda_c_diana_tinoco_4.jpg__442x328_q85_crop_subject_location-942%2C759_subsampling-2_upscale.jpg" alt=""></picture><picture class="blurry show-for-medium"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/4b/73/4b733561-f5dc-422c-ae7a-647cffa59e7c/miguel_sepulveda_c_diana_tinoco_4.jpg__219x164_q85_crop_subject_location-942%2C759_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/4b/73/4b733561-f5dc-422c-ae7a-647cffa59e7c/miguel_sepulveda_c_diana_tinoco_4.jpg__392x294_q85_crop_subject_location-942%2C759_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/4b/73/4b733561-f5dc-422c-ae7a-647cffa59e7c/miguel_sepulveda_c_diana_tinoco_4.jpg__442x328_q85_crop_subject_location-942%2C759_subsampling-2_upscale.jpg" alt="Miguel Sepúlveda" title="Miguel Sepúlveda © Diana Tinoco"></picture></a></div><div class="cell medium-8 xlarge-6 grid-y align-justify event-main"><div class="cell"><p class="event-title h2 no-line"><a href="/de/programm/symphoniker-hamburg-adrian-iliescu-miguel-sepulveda/28045">
+                                Symphoniker Hamburg / Adrian Iliescu / Miguel Sepúlveda
+                            </a></p><p class="event-subtitle">Weill: Violinkonzert / Rachmaninow: Sinfonische Tänze</p></div><div class="cell status-info grid-x align-justify align-bottom"><div class="cell small-12 large-shrink "><button class="event__bookmark"
+                                    type="button"
+                                    data-alert="false"
+                                    data-id="000000e9:0019b251"
+                                    data-name="So, 11.10.2026 - Symphoniker Hamburg / Adrian Iliescu / Miguel Sepúlveda"><i class="event__bookmark-icon icon icon-merken-star" data-bookmark-icon-off="icon-merken-star" data-bookmark-icon-on="icon-merken-star-blue"></i><span class="event__bookmark-text "
+                                      data-bookmark-text-off='Merken'
+                                      data-bookmark-text-on='<strong>Gemerkt</strong>'
+                                      data-bookmark-alert-off='Merken / Ticketerinnerung'
+                                      data-bookmark-alert-one-on='<strong>Gemerkt /</strong> Ticketerinnerung'
+                                      data-bookmark-alert-two-on='<strong>Gemerkt / Ticketerinnerung aktiviert</strong>'
+                                >Merken</span>&nbsp;
+                            </button></div><div class="cell small-1 large-auto"></div><div class="cell small-auto medium-shrink  text-right"><div class="past-status status-box"><span class="status">Vergangenes Konzert</span></div><div class="presale sale-status status-box" style="display: none;"><span class="ticket-and-prices"><a class="link link-ticket"
+	   href="/de/programm/ticket/symphoniker-hamburg-adrian-iliescu-miguel-sepulveda/28045"
+	   data-name="Symphoniker Hamburg / Adrian Iliescu / Miguel Sepúlveda - Tickets erhalten Sie an der Tages-/Abendkasse"
+
+	
+
+	
+
+	
+		
+	
+
+	><!--  -->
+            Tickets erhalten Sie an der Tages-/Abendkasse
+
+	</a></span></div></div></div></div></div></li>
+
+
+		<li id="event_id_000000e9001e14ee" data-category="Past" data-event-id="2551076" class="event-item past" data-categories="[]"><div class="grid-x grid-margin-x"><div class="cell xlarge-2"><div class="grid-x grid-margin-x date-and-place"><div class="cell small-6 medium-4 xlarge-12 date-cell"><div><span class="indicator-line" data-line></span></div><span class="caption"><time datetime="2026-10-11T20:00:00+02:00"><strong class="date nobreak">So, 11.10.2026</strong><span class="time">20&nbsp;Uhr</span></time></span></div><div class="cell small-6 medium-8 xlarge-12 place-cell"><span class="caption uppercase"><strong>Elbphilharmonie</strong> Großer Saal
+							</span></div></div></div><div class="cell medium-4 hide-for-small-only image-cell"><a href="/de/programm/juli-zeh/28920" tabindex="-1" class="event-image-link"><picture aria-hidden="true"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/6a/a2/6aa2de52-110a-44f5-9def-d4ffc240e476/juli_zeh_c_thomas_koy.jpg__219x164_q85_crop_subject_location-969%2C485_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/6a/a2/6aa2de52-110a-44f5-9def-d4ffc240e476/juli_zeh_c_thomas_koy.jpg__392x294_q85_crop_subject_location-969%2C485_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/6a/a2/6aa2de52-110a-44f5-9def-d4ffc240e476/juli_zeh_c_thomas_koy.jpg__442x328_q85_crop_subject_location-969%2C485_subsampling-2_upscale.jpg" alt=""></picture><picture class="blurry show-for-medium"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/6a/a2/6aa2de52-110a-44f5-9def-d4ffc240e476/juli_zeh_c_thomas_koy.jpg__219x164_q85_crop_subject_location-969%2C485_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/6a/a2/6aa2de52-110a-44f5-9def-d4ffc240e476/juli_zeh_c_thomas_koy.jpg__392x294_q85_crop_subject_location-969%2C485_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/6a/a2/6aa2de52-110a-44f5-9def-d4ffc240e476/juli_zeh_c_thomas_koy.jpg__442x328_q85_crop_subject_location-969%2C485_subsampling-2_upscale.jpg" alt="Juli Zeh" title="Juli Zeh © Thomas Koy"></picture></a></div><div class="cell medium-8 xlarge-6 grid-y align-justify event-main"><div class="cell"><p class="event-title h2 no-line"><a href="/de/programm/juli-zeh/28920">
+                                Juli Zeh
+                            </a></p><p class="event-subtitle">Buchpremiere »Pony Show« – Harbour Front Literaturfestival</p></div><div class="cell status-info grid-x align-justify align-bottom"><div class="cell small-12 large-shrink "><button class="event__bookmark"
+                                    type="button"
+                                    data-alert="false"
+                                    data-id="000000e9:001e14ee"
+                                    data-name="So, 11.10.2026 - Juli Zeh"><i class="event__bookmark-icon icon icon-merken-star" data-bookmark-icon-off="icon-merken-star" data-bookmark-icon-on="icon-merken-star-blue"></i><span class="event__bookmark-text "
+                                      data-bookmark-text-off='Merken'
+                                      data-bookmark-text-on='<strong>Gemerkt</strong>'
+                                      data-bookmark-alert-off='Merken / Ticketerinnerung'
+                                      data-bookmark-alert-one-on='<strong>Gemerkt /</strong> Ticketerinnerung'
+                                      data-bookmark-alert-two-on='<strong>Gemerkt / Ticketerinnerung aktiviert</strong>'
+                                >Merken</span>&nbsp;
+                            </button></div><div class="cell small-1 large-auto"></div><div class="cell small-auto medium-shrink  text-right"><div class="past-status status-box"><span class="status">Vergangene Veranstaltung</span></div><div class="presale sale-status status-box" style="display: none;"><span class="ticket-and-prices"><a class="link link-ticket"
+	   href="/de/programm/ticket/juli-zeh/28920"
+	   data-name="Juli Zeh - Eventuell Restkarten an der Tages-/Abendkasse"
+
+	
+
+	
+		
+			target="_blank"
+		
+	
+
+	
+		
+			target="_blank"
+		
+	
+
+	><!--  -->
+            Eventuell Restkarten an der Tages-/Abendkasse
+
+	</a></span></div></div></div></div></div></li>
+
+
+		<li id="event_id_000000e9001d37d3" data-category="Upcoming" data-event-id="1765" class="event-item" data-categories="[]"><div class="grid-x grid-margin-x"><div class="cell xlarge-2"><div class="grid-x grid-margin-x date-and-place"><div class="cell small-6 medium-4 xlarge-12 date-cell"><div><span class="indicator-line" data-line></span></div><span class="caption"><time datetime="2026-10-12T11:15:00+02:00"><strong class="date nobreak">Mo, 12.10.2026</strong><span class="time">9:30&nbsp;Uhr / 11:15&nbsp;Uhr</span></time></span></div><div class="cell small-6 medium-8 xlarge-12 place-cell"><span class="caption uppercase"><strong>Elbphilharmonie</strong> Kaistudio 1
+							</span></div></div></div><div class="cell medium-4 hide-for-small-only image-cell"><a href="/de/programm/funkelkonzert-s-obotaqua/28298" tabindex="-1" class="event-image-link"><picture aria-hidden="true"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/5f/a7/5fa760a5-f7e3-490e-a922-60345edafd9e/240501_obotaqua_c_claudia_hohne_009.jpg__219x164_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/5f/a7/5fa760a5-f7e3-490e-a922-60345edafd9e/240501_obotaqua_c_claudia_hohne_009.jpg__392x294_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/5f/a7/5fa760a5-f7e3-490e-a922-60345edafd9e/240501_obotaqua_c_claudia_hohne_009.jpg__442x328_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg" alt=""></picture><picture class="blurry show-for-medium"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/5f/a7/5fa760a5-f7e3-490e-a922-60345edafd9e/240501_obotaqua_c_claudia_hohne_009.jpg__219x164_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/5f/a7/5fa760a5-f7e3-490e-a922-60345edafd9e/240501_obotaqua_c_claudia_hohne_009.jpg__392x294_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/5f/a7/5fa760a5-f7e3-490e-a922-60345edafd9e/240501_obotaqua_c_claudia_hohne_009.jpg__442x328_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg" alt="Funkelkonzert »Obotaqua«" title="Funkelkonzert »Obotaqua« © Claudia Höhne"></picture></a></div><div class="cell medium-8 xlarge-6 grid-y align-justify event-main"><div class="cell"><p class="event-title h2 no-line"><a href="/de/programm/funkelkonzert-s-obotaqua/28298">
+                                Funkelkonzert S / Obotaqua
+                            </a></p><p class="event-subtitle">für Familien mit Kindern von 1–3 Jahren</p></div><div class="cell status-info grid-x align-justify align-bottom"><div class="cell small-12 large-shrink "><button class="event__bookmark"
+                                    type="button"
+                                    data-alert="false"
+                                    data-id="000000e9:001d37d3"
+                                    data-name="Mo, 12.10.2026 - Funkelkonzert S / Obotaqua"><i class="event__bookmark-icon icon icon-merken-star" data-bookmark-icon-off="icon-merken-star" data-bookmark-icon-on="icon-merken-star-blue"></i><span class="event__bookmark-text "
+                                      data-bookmark-text-off='Merken'
+                                      data-bookmark-text-on='<strong>Gemerkt</strong>'
+                                      data-bookmark-alert-off='Merken / Ticketerinnerung'
+                                      data-bookmark-alert-one-on='<strong>Gemerkt /</strong> Ticketerinnerung'
+                                      data-bookmark-alert-two-on='<strong>Gemerkt / Ticketerinnerung aktiviert</strong>'
+                                >Merken</span>&nbsp;
+                            </button></div><div class="cell small-1 large-auto"></div><div class="cell small-auto medium-shrink  text-right"><div class="soldout-status status-box"><span class="ticket-and-prices"><span class="status link-sold-out">
+						Ausverkauft
+					</span></span></div><div class="presale sale-status status-box" style="display: none;"><span class="ticket-and-prices"><a class="link link-ticket"
+	   href="/de/programm/funkelkonzert-s-obotaqua/28297?reprised=1"
+	   data-name="Funkelkonzert S / Obotaqua - Eventuell Restkarten an der Tages-/Abendkasse"
+
+	
+
+	
+
+	
+		
+	
+
+	><!--  -->
+            Eventuell Restkarten an der Tages-/Abendkasse
+
+	</a></span></div></div></div></div></div></li>
+
+
+		<li id="event_id_000000e9001df641" data-category="Upcoming" data-event-id="2552" class="event-item" data-categories="[]"><div class="grid-x grid-margin-x"><div class="cell xlarge-2"><div class="grid-x grid-margin-x date-and-place"><div class="cell small-6 medium-4 xlarge-12 date-cell"><div><span class="indicator-line" data-line></span></div><span class="caption"><time datetime="2026-10-12T19:30:00+02:00"><strong class="date nobreak">Mo, 12.10.2026</strong><span class="time">19:30&nbsp;Uhr</span></time></span></div><div class="cell small-6 medium-8 xlarge-12 place-cell"><span class="caption uppercase"><strong>Elbphilharmonie</strong> Kleiner Saal
+							</span></div></div></div><div class="cell medium-4 hide-for-small-only image-cell"><a href="/de/programm/sergey-sadovoy/28960" tabindex="-1" class="event-image-link"><picture aria-hidden="true"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/66/b3/66b30899-ea91-438c-9565-c241ac28b5b0/sergey_sadovoy_c_umut_kiran1.jpg__219x164_q85_crop_subject_location-969%2C768_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/66/b3/66b30899-ea91-438c-9565-c241ac28b5b0/sergey_sadovoy_c_umut_kiran1.jpg__392x294_q85_crop_subject_location-969%2C768_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/66/b3/66b30899-ea91-438c-9565-c241ac28b5b0/sergey_sadovoy_c_umut_kiran1.jpg__442x328_q85_crop_subject_location-969%2C768_subsampling-2_upscale.jpg" alt=""></picture><picture class="blurry show-for-medium"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/66/b3/66b30899-ea91-438c-9565-c241ac28b5b0/sergey_sadovoy_c_umut_kiran1.jpg__219x164_q85_crop_subject_location-969%2C768_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/66/b3/66b30899-ea91-438c-9565-c241ac28b5b0/sergey_sadovoy_c_umut_kiran1.jpg__392x294_q85_crop_subject_location-969%2C768_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/66/b3/66b30899-ea91-438c-9565-c241ac28b5b0/sergey_sadovoy_c_umut_kiran1.jpg__442x328_q85_crop_subject_location-969%2C768_subsampling-2_upscale.jpg" alt="Sergey Sadovoy" title="Sergey Sadovoy © Umut Kiran"></picture></a></div><div class="cell medium-8 xlarge-6 grid-y align-justify event-main"><div class="cell"><p class="event-title h2 no-line"><a href="/de/programm/sergey-sadovoy/28960">
+                                Sergey Sadovoy
+                            </a></p><p class="event-subtitle">»Bach auf dem Akkordeon«</p></div><div class="cell status-info grid-x align-justify align-bottom"><div class="cell small-12 large-shrink "><button class="event__bookmark"
+                                    type="button"
+                                    data-alert="false"
+                                    data-id="000000e9:001df641"
+                                    data-name="Mo, 12.10.2026 - Sergey Sadovoy"><i class="event__bookmark-icon icon icon-merken-star" data-bookmark-icon-off="icon-merken-star" data-bookmark-icon-on="icon-merken-star-blue"></i><span class="event__bookmark-text "
+                                      data-bookmark-text-off='Merken'
+                                      data-bookmark-text-on='<strong>Gemerkt</strong>'
+                                      data-bookmark-alert-off='Merken / Ticketerinnerung'
+                                      data-bookmark-alert-one-on='<strong>Gemerkt /</strong> Ticketerinnerung'
+                                      data-bookmark-alert-two-on='<strong>Gemerkt / Ticketerinnerung aktiviert</strong>'
+                                >Merken</span>&nbsp;
+                            </button></div><div class="cell small-1 large-auto"></div><div class="cell small-auto medium-shrink  text-right"><div class="soldout-status status-box"><span class="ticket-and-prices"><span class="status link-sold-out">
+						Ausverkauft
+					</span></span></div><div class="presale sale-status status-box" style="display: none;"><span class="ticket-and-prices"><a class="link link-ticket"
+	   href="/de/programm/ticket/sergey-sadovoy/28960"
+	   data-name="Sergey Sadovoy - Eventuell Restkarten an der Tages-/Abendkasse"
+
+	
+
+	
+
+	
+		
+	
+
+	><!--  -->
+            Eventuell Restkarten an der Tages-/Abendkasse
+
+	</a></span></div></div></div></div></div></li>
+
+
+		<li id="event_id_000000e9001dc174" data-category="Upcoming" data-event-id="4031" class="event-item" data-categories="[]"><div class="grid-x grid-margin-x"><div class="cell xlarge-2"><div class="grid-x grid-margin-x date-and-place"><div class="cell small-6 medium-4 xlarge-12 date-cell"><div><span class="indicator-line" data-line></span></div><span class="caption"><time datetime="2026-10-12T20:00:00+02:00"><strong class="date nobreak">Mo, 12.10.2026</strong><span class="time">20&nbsp;Uhr</span></time></span></div><div class="cell small-6 medium-8 xlarge-12 place-cell"><span class="caption uppercase"><strong>Elbphilharmonie</strong> Großer Saal
+							</span></div></div></div><div class="cell medium-4 hide-for-small-only image-cell"><a href="/de/programm/neue-philharmonie-hamburg/29091" tabindex="-1" class="event-image-link"><picture aria-hidden="true"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/2f/55/2f557ec0-c98e-4432-9a21-d3dd7bdd4113/elbphilhamonie_grosser_saal_foto_chris_lee.jpg__219x164_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/2f/55/2f557ec0-c98e-4432-9a21-d3dd7bdd4113/elbphilhamonie_grosser_saal_foto_chris_lee.jpg__392x294_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/2f/55/2f557ec0-c98e-4432-9a21-d3dd7bdd4113/elbphilhamonie_grosser_saal_foto_chris_lee.jpg__442x328_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg" alt=""></picture><picture class="blurry show-for-medium"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/2f/55/2f557ec0-c98e-4432-9a21-d3dd7bdd4113/elbphilhamonie_grosser_saal_foto_chris_lee.jpg__219x164_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/2f/55/2f557ec0-c98e-4432-9a21-d3dd7bdd4113/elbphilhamonie_grosser_saal_foto_chris_lee.jpg__392x294_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/2f/55/2f557ec0-c98e-4432-9a21-d3dd7bdd4113/elbphilhamonie_grosser_saal_foto_chris_lee.jpg__442x328_q85_crop_subject_location-960%2C640_subsampling-2_upscale.jpg" alt="Elbphilharmonie Großer Saal" title="Elbphilharmonie Großer Saal © Chris Lee"></picture></a></div><div class="cell medium-8 xlarge-6 grid-y align-justify event-main"><div class="cell"><p class="event-title h2 no-line"><a href="/de/programm/neue-philharmonie-hamburg/29091">
+                                Neue Philharmonie Hamburg
+                            </a></p><p class="event-subtitle">Geschlossene Veranstaltung</p></div><div class="cell status-info grid-x align-justify align-bottom"><div class="cell small-12 large-shrink "><button class="event__bookmark"
+                                    type="button"
+                                    data-alert="false"
+                                    data-id="000000e9:001dc174"
+                                    data-name="Mo, 12.10.2026 - Neue Philharmonie Hamburg"><i class="event__bookmark-icon icon icon-merken-star" data-bookmark-icon-off="icon-merken-star" data-bookmark-icon-on="icon-merken-star-blue"></i><span class="event__bookmark-text "
+                                      data-bookmark-text-off='Merken'
+                                      data-bookmark-text-on='<strong>Gemerkt</strong>'
+                                      data-bookmark-alert-off='Merken / Ticketerinnerung'
+                                      data-bookmark-alert-one-on='<strong>Gemerkt /</strong> Ticketerinnerung'
+                                      data-bookmark-alert-two-on='<strong>Gemerkt / Ticketerinnerung aktiviert</strong>'
+                                >Merken</span>&nbsp;
+                            </button></div><div class="cell small-1 large-auto"></div><div class="cell small-auto medium-shrink  text-right"><div class="unsaleable-status status-box"></div><div class="presale sale-status status-box" style="display: none;"><span class="ticket-and-prices"></span></div></div></div></div></div></li>
+
+
+		<li id="event_id_000000e9001b1cd8" data-category="Upcoming" data-event-id="21482503" class="event-item" data-categories="[]"><div class="grid-x grid-margin-x"><div class="cell xlarge-2"><div class="grid-x grid-margin-x date-and-place"><div class="cell small-6 medium-4 xlarge-12 date-cell"><div><span class="indicator-line" data-line></span></div><span class="caption"><time datetime="2026-10-12T20:00:00+02:00"><strong class="date nobreak">Mo, 12.10.2026</strong><span class="time">20&nbsp;Uhr</span></time></span></div><div class="cell small-6 medium-8 xlarge-12 place-cell"><span class="caption uppercase"><strong>Laeiszhalle</strong> Großer Saal
+							</span></div></div></div><div class="cell medium-4 hide-for-small-only image-cell"><a href="/de/programm/ed-obrien/24341" tabindex="-1" class="event-image-link"><picture aria-hidden="true"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/04/b4/04b4650d-eef1-4cbe-8955-13da837ce704/ed_obrien_c_gullick.jpg__219x164_q85_crop_subject_location-869%2C576_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/04/b4/04b4650d-eef1-4cbe-8955-13da837ce704/ed_obrien_c_gullick.jpg__392x294_q85_crop_subject_location-869%2C576_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/04/b4/04b4650d-eef1-4cbe-8955-13da837ce704/ed_obrien_c_gullick.jpg__442x328_q85_crop_subject_location-869%2C576_subsampling-2_upscale.jpg" alt=""></picture><picture class="blurry show-for-medium"><source media="(max-width: 640px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="><source media="(max-width: 1024px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/04/b4/04b4650d-eef1-4cbe-8955-13da837ce704/ed_obrien_c_gullick.jpg__219x164_q85_crop_subject_location-869%2C576_subsampling-2_upscale.jpg"><source media="(max-width: 1440px)" srcset="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/04/b4/04b4650d-eef1-4cbe-8955-13da837ce704/ed_obrien_c_gullick.jpg__392x294_q85_crop_subject_location-869%2C576_subsampling-2_upscale.jpg"><img src="https://d3c80vss50ue25.cloudfront.net/media/filer_public_thumbnails/filer_public/04/b4/04b4650d-eef1-4cbe-8955-13da837ce704/ed_obrien_c_gullick.jpg__442x328_q85_crop_subject_location-869%2C576_subsampling-2_upscale.jpg" alt="Ed O&#x27;Brien" title="Ed O&#x27;Brien © Gullick"></picture></a></div><div class="cell medium-8 xlarge-6 grid-y align-justify event-main"><div class="cell"><p class="event-title h2 no-line"><a href="/de/programm/ed-obrien/24341">
+                                Ed O’Brien
+                            </a></p><p class="event-subtitle">»An Evening With… Blue Morpho«</p></div><div class="cell status-info grid-x align-justify align-bottom"><div class="cell small-12 large-shrink "><button class="event__bookmark"
+                                    type="button"
+                                    data-alert="false"
+                                    data-id="000000e9:001b1cd8"
+                                    data-name="Mo, 12.10.2026 - Ed O’Brien"><i class="event__bookmark-icon icon icon-merken-star" data-bookmark-icon-off="icon-merken-star" data-bookmark-icon-on="icon-merken-star-blue"></i><span class="event__bookmark-text "
+                                      data-bookmark-text-off='Merken'
+                                      data-bookmark-text-on='<strong>Gemerkt</strong>'
+                                      data-bookmark-alert-off='Merken / Ticketerinnerung'
+                                      data-bookmark-alert-one-on='<strong>Gemerkt /</strong> Ticketerinnerung'
+                                      data-bookmark-alert-two-on='<strong>Gemerkt / Ticketerinnerung aktiviert</strong>'
+                                >Merken</span>&nbsp;
+                            </button></div><div class="cell small-1 large-auto"></div><div class="cell small-auto medium-shrink  text-right"><div class="sale-status status-box"><span class="ticket-and-prices "><a class="link link-ticket"
+	   href="/de/programm/ticket/ed-obrien/24341"
+	   data-name="Ed O’Brien - Trotzdem Tickets bestellen"
+
+	
+
+	
+		
+			target="_blank"
+		
+	
+
+	
+		
+			target="_blank"
+		
+	
+
+	><!--  --><span>Tickets <span class="price-from">ab € </span></span><span class="price-from"><span>39</span></span></a></span></div><div class="presale sale-status status-box" style="display: none;"><span class="ticket-and-prices"><a class="link link-ticket"
+	   href="/de/programm/ticket/ed-obrien/24341"
+	   data-name="Ed O’Brien - Trotzdem Tickets bestellen"
+
+	
+
+	
+		
+			target="_blank"
+		
+	
+
+	
+		
+			target="_blank"
+		
+	
+
+	><!--  --><span>Tickets <span class="price-from">ab € </span></span><span class="price-from"><span>39</span></span></a></span></div></div></div></div></div></li>
+
+
+
+
+	
+<li class="loading-event loading-animation">Loading...</li>
+
+
+
+
+
+	<li data-url="/de/programm/13-10-2026/">
+		<noscript>
+			<div class="grid-container">
+				<div class="grid-x grid-margin-x">
+					<div class="cell text-center">
+						<a href="/de/programm/13-10-2026/" class="link link-default button secondary">
+							Weitere Konzerte
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="spacer"></div>
+		</noscript>
+	</li>
+
+
+								</ul>
+							</div>
+						</div>
+					
+
+				</section>
+
+			</div>
+		</div>
+	</div>
+
+  
+
+
+      
+
+<aside class="merklist-modal">
+	<div class="merklist-modal__wrapper">
+		<button class="merklist-modal__close js-merklist-modal__close" type="button" title="Schließen"></button>
+    <!-- MODAL: login -->
+    <div class="merklist-modal__content" data-modal="login">
+      <p class="merklist-modal__title line-center h3">Merkliste</p>
+      <p class="merklist-modal__text">Anmeldung erforderlich. Wenn Sie noch kein Elbphilharmonie-Kundenkonto besitzen, können Sie sich schnell und einfach registrieren.</p>
+      <div class="merklist-modal__button">
+        <a href="#" class="button link link-default merklist-modal__account">Anmelden oder registrieren</a>
+      </div>
+    </div>
+    <!-- MODAL: alert check -->
+    <div class="merklist-modal__content" data-modal="alert" style="display: none;">
+      <p class="merklist-modal__title line-center h3">Ihre Auswahl</p>
+      <label  class="merklist-modal__label">
+      <input type="radio" name="alert" class="merklist-modal__radio" value="1">
+        <span>Auf die Merkliste setzen</span>
+      </label>
+      <label class="merklist-modal__label">
+      <input type="radio" name="alert" class="merklist-modal__radio" value="2" checked>
+        <span>Erinnerung an den Vorverkaufsstart aktivieren</span>
+        <span class="merklist-modal__text">Sie werden einen Tag vor Beginn des Ticketvorverkaufs per E-Mail informiert.</span>
+      </label>
+      <div class="merklist-modal__button">
+        <button type="button" class="button link link-default merklist-modal__save">Bestätigen</button>
+      </div>
+    </div>
+    <!-- MODAL: alert uncheck -->
+    <div class="merklist-modal__content" data-modal="uncheck" style="display: none;">
+      <p class="merklist-modal__title line-center h3">Merkliste bearbeiten</p>
+      <label class="merklist-modal__label">
+        <input type="radio" name="uncheck" class="merklist-modal__radio" value="1" checked>
+        <span>Ticketerinnerung deaktivieren</span>
+      </label>
+      <label  class="merklist-modal__label">
+        <input type="radio" name="uncheck" class="merklist-modal__radio" value="DELETE">
+        <span>Veranstaltung ganz von der Merkliste entfernen</span>
+      </label>
+      <div class="merklist-modal__button">
+        <button type="button" class="button link link-default merklist-modal__save">Bestätigen</button>
+      </div>
+    </div>
+	</div>
+</aside>
+
+      <aside class="blog__lightbox">
+  <div class="blog__lightbox-container">
+    <button class="blog__lightbox-close" title="Close modal"></button>
+    <div class="blog__lightbox-wrapper">
+      <iframe src="" id="blog-iframe" scrolling="no" class="blog__lightbox-iframe" allow="fullscreen"></iframe>
+    </div>
+  </div>
+</aside>
+
+		</main>
+
+		
+            
+			    
+
+
+
+
+<footer class="footer footer--rolex">
+	
+		
+
+<div class="news-banner-container">
+    <div class="grid-x grid-margin-x align-center cms-row">
+        <div class="news-banner-content cell medium-10 large-8 cms-col">
+            <div class="news-banner-item">
+                <a href="/de/newsletter" class="home-intro__newsletter button-circle yellow">
+                    <i class="icon-newsletter"></i>
+                    <span class="home-intro__newsletter-text button-circle-text">Newsletter abonnieren</span>
+                </a>
+            </div>
+            <div class="news-banner-item news-banner-text">
+                <p>Mit dem <strong>Newsletter</strong> auf dem Laufenden bleiben</p>
+                <a href="/de/newsletter" class="link link-default detail-link">Zur Newsletter-Anmeldung</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+	
+
+  <div class="footer__container">
+    <div class="grid-container">
+      <div class="footer__wrapper-top">
+        <button type="button" onclick="Footer.onScrollTop()" class="link link-show-less footer__button-top">Nach oben</button>
+      </div>
+    </div>
+    <div class="grid-container footer__wrapper">
+      <ul class="footer__menu">
+        
+        
+          <li class="footer__menu-item"><a href="/de/kontakt-elbphilharmonie" class="">Kontakt</a></li>
+        
+          <li class="footer__menu-item"><a href="/de/faq" class="">FAQ</a></li>
+        
+          <li class="footer__menu-item"><a href="/de/publikationen" class="">Publikationen</a></li>
+        
+          <li class="footer__menu-item"><a href="/de/erweiterte-suche" class="">Konzertarchiv</a></li>
+        
+          <li class="footer__menu-item"><a href="/de/presse" class="">Presse</a></li>
+        
+          <li class="footer__menu-item"><a href="/de/vermietung" class="">Vermietung</a></li>
+        
+          <li class="footer__menu-item"><a href="/de/team" class="">Team</a></li>
+        
+          <li class="footer__menu-item"><a href="/de/karriere" class="">Karriere</a></li>
+        
+          <li class="footer__menu-item"><a href="/de/zahlung" class="">Zahlung</a></li>
+        
+          <li class="footer__menu-item"><a href="/de/agb" class="">AGB</a></li>
+        
+          <li class="footer__menu-item"><a href="https://www.elbphilharmonie.de/ep/bestell-widerruf" class="">Widerruf</a></li>
+        
+          <li class="footer__menu-item"><a href="/de/datenschutzerklaerung" class="">Datenschutz</a></li>
+        
+          <li class="footer__menu-item"><a href="/de/barrierefreiheit" class="">Barrierefreiheit</a></li>
+        
+          <li class="footer__menu-item"><a href="/de/impressum" class="">Impressum</a></li>
+        
+          <li class="footer__menu-item"><a href="javascript:window.elbphilharmonie.consent.editSettings()">Cookie-Einstellungen</a></li>
+      </ul>
+      <aside class="footer__column">
+        
+        <ul class="footer__socials">
+          <li class="footer__social"><a href="https://www.facebook.com/elbphilharmonie.hamburg" title="Facebook" class="icon-facebook footer__social-link" rel="noopener" target="_blank"></a></li>
+          <li class="footer__social"><a href="https://www.youtube.com/user/ElbphilharmonieHH" title="Youtube" class="icon-youtube footer__social-link" rel="noopener" target="_blank"></a></li>
+          <li class="footer__social"><a href="https://www.instagram.com/elbphilharmonie/" title="Instagram" class="icon-instagram footer__social-link" rel="noopener" target="_blank"></a></li>
+          <li class="footer__social"><a href="https://bsky.app/profile/elbphilharmonie.de" title="BlueSky" class="icon-bluesky footer__social-link" rel="noopener" target="_blank"></a></li>
+          <li class="footer__social"><a href="https://www.tiktok.com/@elbphilharmoniehamburg" title="TikTok" class="icon-tiktok footer__social-link" rel="noopener" target="_blank"></a></li>
+          <li class="footer__social"><a href="https://open.spotify.com/user/elbphilharmonie" title="Spotify" class="icon-spotify footer__social-link" rel="noopener" target="_blank"></a></li>
+        </ul>
+      </aside>
+    </div>
+
+    
+
+
+
+<ul class="sitemap grid-container" id="sitemap" hidden="hidden">
+	
+	
+		
+			<li class="sitemap__column sitemap__column--logo">
+        <a href="/de/" title="Elbphilharmonie Laeiszhalle Hamburg">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 56 67.9" enable-background="new 0 0 56 67.9" xml:space="preserve" class="header__logo-svg">
+<rect class="logo-line-11" x="43.5" y="39.6" width="12.5" height="3.4"/>
+<rect class="logo-line-10" x="43.5" y="56.6" width="12.5" height="1.1"/>
+<rect class="logo-line-9" x="43.5" y="67.6" width="12.5" height="0.3"/>
+<rect class="logo-line-8" x="29" y="46.4" width="12.5" height="1.1"/>
+<rect class="logo-line-7" x="29" y="53.4" width="12.5" height="0.6"/>
+<rect class="logo-line-6" x="14.5" y="39.6" width="12.5" height="3.4"/>
+<rect class="logo-line-5" x="14.5" y="46.4" width="12.5" height="2.3"/>
+<rect class="logo-line-4" x="14.5" y="56.6" width="12.5" height="1.1"/>
+<rect class="logo-line-3" y="39.6" width="12.5" height="1.7"/>
+<rect class="logo-line-2" y="46.4" width="12.5" height="1.1"/>
+<rect class="logo-line-1" y="53.4" width="12.5" height="0.6"/>
+<rect class="logo-bottom" y="23.1" width="56" height="10.7"/>
+<path class="logo-top" d="M56,0v24.1H0V13.9c5.1,2.2,11,0.8,14.7-3.4c7,6.3,18.5,2.8,24.1-7.3C49.2,9.8,55.9,0,56,0z"/>
+<!-- <path class="logo-icon" d="M38.9,3.2c-5.6,10.1-17.1,13.6-24.1,7.3c-3.7,4.2-9.6,5.6-14.7,3.4l0,19.9h56V0C56,0,49.3,9.8,38.9,3.2"/> -->
+</svg>
+
+          
+        </a>
+			</li>
+      <li class="sitemap__column">
+        <ul class="sitemap__items">
+		
+	
+		
+			<li class="sitemap__item">
+		        <a href="/de/programm/" title="Programm" class="sitemap__title">
+					Programm
+		        </a>
+		        <ul class="sitemap__submenu">
+					
+
+
+
+
+
+
+
+					
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/abos" class="">Abonnements</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/mitmachen" class="">Mitmachen</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/saison" class="">Saison 2026/27</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+				</ul>
+			</li>
+		
+	
+		
+			<li class="sitemap__item">
+		        <a href="/de/besuch" title="Besuch" class="sitemap__title">
+					Besuch
+		        </a>
+		        <ul class="sitemap__submenu">
+					
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/ticketinformationen" class="">Ticketinformationen</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/plaza" class="">Elbphilharmonie Plaza</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/fuehrungen" class="">Hausführungen</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/konzert-tipps/" class="">Elbphilharmonie Konzert-Tipps</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/u30" class="">Elbphilharmonie U30</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/mediathek/tipps-fur-den-konzertbesuch/881" class="">Wissenswertes vor dem Konzertbesuch</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/anfahrt" class="">Anfahrt</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/gastronomie" class="">Gastronomie</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/gutscheine" class="">Gutscheine</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/hotel" class="">Hotel</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+				</ul>
+			</li>
+		
+	
+		
+			<li class="sitemap__item">
+		        <a href="/de/musik-fuer-alle" title="Musik für alle" class="sitemap__title">
+					Musik für alle
+		        </a>
+		        <ul class="sitemap__submenu">
+					
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/funkelkonzerte" class="">Funkelkonzerte</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+				</ul>
+			</li>
+		
+	
+		
+			<li class="sitemap__item">
+		        <a href="/de/die-haeuser-2026" title="Die Häuser" class="sitemap__title">
+					Die Häuser
+		        </a>
+		        <ul class="sitemap__submenu">
+					
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/elbphilharmonie-das-haus" class="">Elbphilharmonie</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/10-Jahre" class="">Jubiläum: 10 Jahre Elbphilharmonie</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							Laeiszhalle
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+				</ul>
+			</li>
+		
+	
+		
+			<li class="sitemap__item">
+		        <a href="/de/mediathek" title="Mediathek" class="sitemap__title">
+					Mediathek
+		        </a>
+		        <ul class="sitemap__submenu">
+					
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/mediathek/category/streams" class="">Streams</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/mediathek/category/videos" class="">Videos</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/mediathek/category/artikel" class="">Artikel</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+						<li class="sitemap__submenu-item">
+							<a href="/de/mediathek/category/podcasts" class="">Podcasts</a>
+							<ul class="sitemap__submenu-3 menu3">
+								
+							</ul>
+						</li>
+					
+				</ul>
+			</li>
+		
+	
+		
+			<li class="sitemap__item">
+		        <a href="/de/unterstuetzen" title="Unterstützen" class="sitemap__title">
+					Unterstützen
+		        </a>
+		        <ul class="sitemap__submenu">
+					
+					
+				</ul>
+			</li>
+		
+	
+		
+			<li class="sitemap__item">
+		        <a href="https://shop.elbphilharmonie.de/ep/de" title="Shop" class="sitemap__title">
+					Shop
+		        </a>
+		        <ul class="sitemap__submenu">
+					
+					
+				</ul>
+			</li>
+		
+	
+    </ul>
+  </li>
+</ul>
+
+
+    <!-- Static footer sponsors (always at bottom) -->
+    <div class="footer__sponsors-wrapper footer__sponsors-wrapper--static">
+      <div class="grid-container">
+        <aside class="footer__sitemap">
+          <button class="link link-show-more footer__sitemap-button" type="button" aria-expanded="false">Sitemap</button>
+        </aside>
+        <ul class="footer__sponsors">
+          <!-- <li class="footer__sponsor"><a href="http://www.sap.com/germany/index.html" rel="noopener" target="_blank" title="SAP"><img src="https://d3c80vss50ue25.cloudfront.net/static/images/sponsor/sap.0fc35352c2f3.png" class="sap" alt="SAP Logo"></a></li> -->
+          <li class="footer__sponsor"><a href="https://www.kuehne-stiftung.org/de" rel="noopener" target="_blank" title="Kühne Stiftung"><img src="https://d3c80vss50ue25.cloudfront.net/static/images/sponsor/kuehne-stiftung.f10ce63fec1d.png" class="kuehne-stiftung" alt="Kühne Stiftung Logo"></a></li>
+          <li class="footer__sponsor"><a href="https://www.juliusbaer.com/de/ueber-uns/unser-engagement/sponsoring/musik-sponsoring/" rel="noopener" target="_blank" title="Julius Bär"><img src="https://d3c80vss50ue25.cloudfront.net/static/images/sponsor/julius-bar.aa8228ce91f8.png" class="julius-baer" alt="Julius Bär Logo"></a></li>
+          <li class="footer__sponsor">
+            <iframe src="https://www.elbphilharmonie.de/ep/rolex/rolex.html" name="Rolex watch" title="Rolex Logo" style="width:75px;height:75px;border:0;margin:0;padding:0;overflow:hidden;" SCROLLING=NO frameborder="NO"></iframe>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky footer sponsors (fixed position, toggles visibility) -->
+  <div class="footer__sponsors-wrapper footer__sponsors-wrapper--sticky">
+    <div class="grid-container">
+      <div class="footer__to-top">
+        <button type="button" onclick="Footer.onScrollTop()" class="link link-show-less footer__button-top">Nach oben</button>
+      </div>
+      <ul class="footer__sponsors">
+        <!-- <li class="footer__sponsor"><a href="http://www.sap.com/germany/index.html" rel="noopener" target="_blank" title="SAP"><img src="https://d3c80vss50ue25.cloudfront.net/static/images/sponsor/sap.0fc35352c2f3.png" class="sap" alt="SAP Logo"></a></li> -->
+        <li class="footer__sponsor"><a href="https://www.kuehne-stiftung.org/de" rel="noopener" target="_blank" title="Kühne Stiftung"><img src="https://d3c80vss50ue25.cloudfront.net/static/images/sponsor/kuehne-stiftung.f10ce63fec1d.png" class="kuehne-stiftung" alt="Kühne Stiftung Logo"></a></li>
+        <li class="footer__sponsor"><a href="https://www.juliusbaer.com/de/ueber-uns/unser-engagement/sponsoring/musik-sponsoring/" rel="noopener" target="_blank" title="Julius Bär"><img src="https://d3c80vss50ue25.cloudfront.net/static/images/sponsor/julius-bar.aa8228ce91f8.png" class="julius-baer" alt="Julius Bär Logo"></a></li>
+        <li class="footer__sponsor">
+          <iframe src="https://www.elbphilharmonie.de/ep/rolex/rolex.html"" name="Rolex watch" title="Rolex Logo" style="width:75px;height:75px;border:0;margin:0;padding:0;overflow:hidden;" SCROLLING=NO frameborder="NO"></iframe>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+            
+		
+
+	</div>
+
+	
+
+  <script>
+    var Instance = 'live';
+  </script>
+
+	
+	<script src="https://d3c80vss50ue25.cloudfront.net/static/js/build/app.min.55e11ad96bc4.js"></script>
+	<script src="https://d3c80vss50ue25.cloudfront.net/static/js/lib/gsap.min.46162d81d71a.js" async></script>
+	<script src="https://d3c80vss50ue25.cloudfront.net/static/js/lib/ScrollToPlugin.min.21763adc6594.js" async></script>
+	<script src="https://cdn.elbphilharmonie.de/de/webshop/v2/api.js"></script>
+
+	
+
+	
+
+	
+	<script src="https://d3c80vss50ue25.cloudfront.net/static/js/build/booking-list-page.min.75ab14ee778b.js"></script>
+	<script>
+    Calendar.months = [
+      "Januar",
+      "Februar",
+      "März",
+      "April",
+      "Mai",
+      "Juni",
+      "Juli",
+      "August",
+      "September",
+      "Oktober",
+      "November",
+      "Dezember",
+    ]
+	</script>
+
+
+	
+
+	
+		<script src="/ep/consent-de.js" async defer></script>
+	
+
+	<script src="https://d3c80vss50ue25.cloudfront.net/static/js/src/cookie-handler-extended.25f77ba6165c.js"></script>
+
+
+
+	<script src="https://d3c80vss50ue25.cloudfront.net/static/js/lib/SmoothScroll.min.4a260d24a8bb.js" async></script>
+	<!-- INSTANCE_NAME: live -->
+</body>
+</html>
