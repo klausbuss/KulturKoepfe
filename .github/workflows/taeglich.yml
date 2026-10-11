@@ -22,6 +22,6 @@ jobs:
         run: |
           git config user.name "kulturkoepfe-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add heute.json
+          git add heute.json diagnose || git add heute.json
           git commit -m "Heute läuft: $(date +%F)" || echo "Keine Änderung"
           git push
