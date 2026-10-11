@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kulturköpfe</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<style>
+  :root{--beton:#E4E4E0;--papier:#F7F7F5;--schwarz:#000;--grau:#5E5E5A;--linie:#C9C9C4;
+    --u2:#DA421E;--u3:#16683D;--u5:#7E5330;--u6:#8C6DAB;--u7:#528DBA;--u9:#F3791D}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Archivo",Arial,sans-serif;background:var(--beton);color:#000;font-size:16px;line-height:1.45}
+  .app{max-width:480px;margin:0 auto;min-height:100vh;background:var(--papier);padding-bottom:40px}
+  header{padding:22px 18px 6px}
+  h1{font-stretch:62%;font-weight:900;font-size:56px;line-height:.85;letter-spacing:-.5px}
+  h1 span{display:block}
+  .sub{color:var(--grau);font-size:14px;margin-top:8px}
+  .stadtwahl{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:14px;color:var(--grau)}
+  .stadtwahl select{font:inherit;font-weight:800;font-size:18px;color:#000;background:var(--papier);border:1.5px solid #000;border-radius:20px;padding:6px 14px;cursor:pointer}
+  .pfad{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;padding:14px 18px 0;font-size:14px;color:var(--grau)}
+  .pfad button{font:inherit;color:#000;background:none;border:0;text-decoration:underline;cursor:pointer;padding:2px 0}
+  .zurueck{font:inherit;font-weight:700;background:none;border:1.5px solid #000;border-radius:20px;padding:4px 12px;cursor:pointer;margin-right:4px;color:#000;text-decoration:none!important}
+  h2{padding:22px 18px 10px;font-stretch:70%;font-weight:900;font-size:32px;line-height:1.05}
+  .gross{display:block;width:calc(100% - 36px);margin:0 18px 12px;padding:26px 20px;text-align:left;font:inherit;font-stretch:62%;font-weight:900;font-size:48px;line-height:1;color:#fff;background:#000;border:0;cursor:pointer}
+  .gross small{display:block;font-stretch:100%;font-weight:400;font-size:15px;margin-top:8px;opacity:.85}
+  .gross.u6{background:var(--u6)} .gross.u9{background:var(--u9)} .gross.u3{background:var(--u3)}
+  .zeile{display:grid;grid-template-columns:8px 1fr;gap:14px;width:100%;padding:14px 18px;border:0;border-bottom:1px solid var(--linie);background:none;text-align:left;font:inherit;color:inherit;cursor:pointer}
+  .zeile .bar{border-radius:2px}
+  .zeile b{font-stretch:80%;font-size:21px;font-weight:800;display:block;line-height:1.15}
+  .zeile small{color:var(--grau);font-size:14px}
+  .kopf{padding:18px;border-bottom:1px solid var(--linie);display:grid;grid-template-columns:88px 1fr;gap:16px;align-items:start}
+  .portrait{position:relative;width:88px;height:110px;overflow:hidden;display:flex;align-items:center;justify-content:center;color:#fff;font-stretch:62%;font-weight:900;font-size:42px;line-height:1}
+  .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;filter:grayscale(1)}
+  .credit{display:block;margin-top:8px;font-size:11px;line-height:1.3;color:var(--grau)}
+  .credit a{color:inherit}
+  .raster{display:grid;grid-template-columns:1fr 1fr;gap:24px 14px;padding:4px 18px 0}
+  .karte .portrait{width:100%;height:auto;aspect-ratio:4/5;font-size:64px}
+  .karte b{font-stretch:80%;font-size:19px;font-weight:800;display:block;line-height:1.15;margin-top:8px}
+  .karte .rolle{font-size:14px;font-weight:700}
+  .hauslink{font:inherit;font-size:14px;color:var(--grau);background:none;border:0;padding:0;margin-top:2px;text-align:left;text-decoration:underline;cursor:pointer}
+  h3{padding:28px 18px 6px;font-stretch:70%;font-weight:900;font-size:24px}
+  .person{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:12px 18px;border-bottom:1px solid var(--linie);align-items:start}
+  .person .portrait{width:56px;height:70px;font-size:26px}
+  .person b{font-stretch:80%;font-size:19px;font-weight:800;display:block;line-height:1.15}
+  .person p{font-size:14px;margin-top:2px}
+  .preis{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:12px 18px;border-bottom:1px solid var(--linie);align-items:baseline}
+  .preis .jahr{font-stretch:62%;font-weight:900;font-size:26px;line-height:1}
+  .preis b{font-stretch:80%;font-size:19px;font-weight:800;display:block;line-height:1.15}
+  .preis p{font-size:14px;margin-top:2px}
+  .preis small{display:block;font-size:13px;color:var(--grau);margin-top:2px}
+  .info.hausehre{color:#000;font-weight:700;padding-bottom:8px}
+  .heute{margin:0 18px 12px;padding:12px 14px;background:#000;color:#fff}
+  .heute h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;opacity:.75}
+  .heute ul{list-style:none}
+  .heute li{margin-top:6px}
+  .heute li b{font-stretch:80%;font-size:20px;font-weight:800;line-height:1.15}
+  .heute li span{display:block;font-size:14px;opacity:.85}
+  .heute a{color:inherit}
+  .heute.leer{background:none;color:var(--grau);border:1px solid var(--linie)}
+  .heute-kurz{display:block;font-size:13px;font-weight:700;color:#000;margin-top:2px}
+  .info.klein{font-size:13px;padding-top:12px}
+  .kopf b{font-stretch:70%;font-weight:900;font-size:34px;line-height:1;display:block}
+  .kopf .rolle{font-weight:700;margin-top:4px}
+  .kopf p{margin-top:8px;max-width:60ch}
+  .info{padding:4px 18px 0;color:var(--grau);max-width:60ch}
+  .link{display:inline-block;margin:0 18px 8px;padding:12px 18px;background:#000;color:#fff;text-decoration:none;font-weight:700}
+  .stand{padding:24px 18px 0;font-size:13px;color:var(--grau)}
+  button:focus-visible,a:focus-visible{outline:3px solid var(--u9);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="app">
+  <header><h1><span>Kultur</span><span>köpfe</span></h1>
+    <label class="stadtwahl"><span>Stadt</span>
+      <select id="stadt"><option value="berlin">Berlin</option><option value="hamburg">Hamburg</option><option value="muenchen">München</option><option value="wien">Wien</option></select>
+    </label>
+    <p class="sub" id="sub"></p></header>
+  <nav class="pfad" id="pfad" aria-label="Pfad"></nav>
+  <main id="view"></main>
+  <p class="stand">Stand Oktober 2026</p>
+</div>
+<script>
+const SPARTEN = {"Theater":"var(--u6)","Festival":"var(--u2)","Oper":"var(--u3)","Tanz":"var(--u7)","Konzert":"var(--u5)"};
+const BEREICHE = {theater:"Theater", musik:"Musik"};
+const HAEUSER = [
+  {stadt:"berlin",id:"so",bereich:"musik",name:"Staatsoper Unter den Linden",sparte:"Oper",bezirk:"Mitte",c:[13.3955,52.5165],web:"staatsoper-berlin.de"},
+  {stadt:"berlin",id:"do",bereich:"musik",name:"Deutsche Oper Berlin",sparte:"Oper",bezirk:"Charlottenburg-Wilmersdorf",c:[13.3087,52.5121],web:"deutscheoperberlin.de"},
+  {stadt:"berlin",id:"ko",bereich:"musik",name:"Komische Oper Berlin",zusatz:"derzeit im Schillertheater",sparte:"Oper",bezirk:"Charlottenburg-Wilmersdorf",c:[13.3218,52.5097],web:"komische-oper-berlin.de"},
+  {stadt:"berlin",id:"sb",bereich:"musik",name:"Staatsballett Berlin",zusatz:"spielt in Staatsoper und Deutscher Oper",sparte:"Tanz",bezirk:"Mitte",c:null,web:"staatsballett-berlin.de"},
+  {stadt:"berlin",id:"dt",bereich:"theater",name:"Deutsches Theater",sparte:"Theater",bezirk:"Mitte",c:[13.3835,52.5240],web:"deutschestheater.de"},
+  {stadt:"berlin",id:"be",bereich:"theater",name:"Berliner Ensemble",sparte:"Theater",bezirk:"Mitte",c:[13.3875,52.5210],web:"berliner-ensemble.de"},
+  {stadt:"berlin",id:"vb",bereich:"theater",name:"Volksbühne",sparte:"Theater",bezirk:"Mitte",c:[13.4115,52.5268],web:"volksbuehne.berlin"},
+  {stadt:"berlin",id:"mg",bereich:"theater",name:"Maxim Gorki Theater",sparte:"Theater",bezirk:"Mitte",c:[13.3975,52.5180],web:"gorki.de"},
+  {stadt:"berlin",id:"sh",bereich:"theater",name:"Schaubühne",sparte:"Theater",bezirk:"Charlottenburg-Wilmersdorf",c:[13.2975,52.4985],web:"schaubuehne.de"},
+  {stadt:"berlin",id:"hau",bereich:"theater",name:"HAU Hebbel am Ufer",sparte:"Theater",bezirk:"Kreuzberg",c:[13.3830,52.4985],web:"hebbel-am-ufer.de"},
+  {stadt:"berlin",id:"fp",bereich:"theater",name:"Friedrichstadt-Palast",sparte:"Theater",bezirk:"Mitte",c:[13.3888,52.5255],web:"palast.berlin"},
+  {stadt:"berlin",id:"pa",bereich:"theater",name:"Theater an der Parkaue",zusatz:"Junges Staatstheater",sparte:"Theater",bezirk:"Lichtenberg",c:[13.4975,52.5140],web:"parkaue.de"},
+  {stadt:"berlin",id:"gr",bereich:"theater",name:"GRIPS Theater",sparte:"Theater",bezirk:"Mitte",c:[13.3420,52.5185],web:"grips-theater.de"},
+  {stadt:"berlin",id:"bf",bereich:"theater",name:"Berliner Festspiele",zusatz:"Theatertreffen, Musikfest u. a.",sparte:"Festival",bezirk:"Charlottenburg-Wilmersdorf",c:[13.3254,52.4996],web:"berlinerfestspiele.de"},
+  {stadt:"berlin",id:"ph",bereich:"musik",name:"Berliner Philharmoniker",zusatz:"Philharmonie",sparte:"Konzert",bezirk:"Mitte",c:[13.3699,52.5099],web:"berliner-philharmoniker.de"},
+  {stadt:"berlin",id:"kh",bereich:"musik",name:"Konzerthaus Berlin",zusatz:"am Gendarmenmarkt",sparte:"Konzert",bezirk:"Mitte",c:[13.3920,52.5137],web:"konzerthaus.de"},
+  {stadt:"berlin",id:"pbs",bereich:"musik",name:"Pierre Boulez Saal",zusatz:"Barenboim-Said Akademie",sparte:"Konzert",bezirk:"Mitte",c:[13.3950,52.5155],web:"boulezsaal.de"},
+  {stadt:"berlin",id:"roc",bereich:"musik",name:"Rundfunk-Orchester und -Chöre",zusatz:"DSO, RSB, RIAS Kammerchor, Rundfunkchor",sparte:"Konzert",bezirk:"Charlottenburg-Wilmersdorf",c:null,web:"roc-berlin.de"}
+  ,{stadt:"hamburg",id:"hh-sh",bereich:"theater",name:"Deutsches SchauSpielHaus",sparte:"Theater",bezirk:"St. Georg",c:[10.0090,53.5543],web:"schauspielhaus.de"},
+  {stadt:"hamburg",id:"hh-th",bereich:"theater",name:"Thalia Theater",sparte:"Theater",bezirk:"Altstadt",c:[9.9965,53.5520],web:"thalia-theater.de"},
+  {stadt:"hamburg",id:"hh-kn",bereich:"theater",name:"Kampnagel",zusatz:"Internationale Kulturfabrik",sparte:"Theater",bezirk:"Winterhude",c:[10.0225,53.5835],web:"kampnagel.de"},
+  {stadt:"hamburg",id:"hh-so",bereich:"musik",name:"Staatsoper Hamburg",sparte:"Oper",bezirk:"Neustadt",c:[9.9886,53.5568],web:"die-hamburgische-staatsoper.de"},
+  {stadt:"hamburg",id:"hh-hb",bereich:"musik",name:"Hamburg Ballett",zusatz:"spielt in der Staatsoper",sparte:"Tanz",bezirk:"Neustadt",c:null,web:"die-hamburgische-staatsoper.de"},
+  {stadt:"hamburg",id:"hh-elb",bereich:"musik",name:"Elbphilharmonie und Laeiszhalle",sparte:"Konzert",bezirk:"HafenCity",c:[9.9841,53.5413],web:"elbphilharmonie.de"},
+  {stadt:"hamburg",id:"hh-ndr",bereich:"musik",name:"NDR Elbphilharmonie Orchester",zusatz:"Residenzorchester der Elbphilharmonie",sparte:"Konzert",bezirk:"HafenCity",c:null,web:"ndr.de/orchester_chor"},
+  {stadt:"muenchen",id:"m-resi",bereich:"theater",name:"Residenztheater",zusatz:"Bayerisches Staatsschauspiel",sparte:"Theater",bezirk:"Altstadt-Lehel",c:[11.5788,48.1399],web:"residenztheater.de"},
+  {stadt:"muenchen",id:"m-mk",bereich:"theater",name:"Münchner Kammerspiele",sparte:"Theater",bezirk:"Altstadt-Lehel",c:[11.5838,48.1384],web:"muenchner-kammerspiele.de"},
+  {stadt:"muenchen",id:"m-vt",bereich:"theater",name:"Münchner Volkstheater",sparte:"Theater",bezirk:"Ludwigsvorstadt-Isarvorstadt",c:[11.5530,48.1268],web:"muenchner-volkstheater.de"},
+  {stadt:"muenchen",id:"m-bso",bereich:"musik",name:"Bayerische Staatsoper",zusatz:"Nationaltheater",sparte:"Oper",bezirk:"Altstadt-Lehel",c:[11.5795,48.1394],web:"staatsoper.de"},
+  {stadt:"muenchen",id:"m-bsb",bereich:"musik",name:"Bayerisches Staatsballett",zusatz:"spielt im Nationaltheater",sparte:"Tanz",bezirk:"Altstadt-Lehel",c:null,web:"staatsoper.de"},
+  {stadt:"muenchen",id:"m-gp",bereich:"musik",name:"Staatstheater am Gärtnerplatz",sparte:"Oper",bezirk:"Ludwigsvorstadt-Isarvorstadt",c:[11.5760,48.1310],web:"gaertnerplatztheater.de"},
+  {stadt:"muenchen",id:"m-mph",bereich:"musik",name:"Münchner Philharmoniker",zusatz:"Isarphilharmonie",sparte:"Konzert",bezirk:"Sendling",c:[11.5626,48.1132],web:"mphil.de"},
+  {stadt:"muenchen",id:"m-br",bereich:"musik",name:"Symphonieorchester des BR",sparte:"Konzert",bezirk:"Altstadt-Lehel",c:null,web:"brso.de"},
+  {stadt:"wien",id:"w-burg",bereich:"theater",name:"Burgtheater",sparte:"Theater",bezirk:"Innere Stadt",c:[16.3613,48.2104],web:"burgtheater.at"},
+  {stadt:"wien",id:"w-vt",bereich:"theater",name:"Volkstheater Wien",sparte:"Theater",bezirk:"Neubau",c:[16.3584,48.2051],web:"volkstheater.at"},
+  {stadt:"wien",id:"w-jos",bereich:"theater",name:"Theater in der Josefstadt",sparte:"Theater",bezirk:"Josefstadt",c:[16.3510,48.2101],web:"josefstadt.org"},
+  {stadt:"wien",id:"w-so",bereich:"musik",name:"Wiener Staatsoper",sparte:"Oper",bezirk:"Innere Stadt",c:[16.3692,48.2031],web:"wiener-staatsoper.at"},
+  {stadt:"wien",id:"w-sb",bereich:"musik",name:"Wiener Staatsballett",zusatz:"spielt in Staatsoper und Volksoper",sparte:"Tanz",bezirk:"Innere Stadt",c:null,web:"wiener-staatsballett.at"},
+  {stadt:"wien",id:"w-vo",bereich:"musik",name:"Volksoper Wien",sparte:"Oper",bezirk:"Alsergrund",c:[16.3511,48.2205],web:"volksoper.at"},
+  {stadt:"wien",id:"w-tadw",bereich:"musik",name:"Theater an der Wien",sparte:"Oper",bezirk:"Mariahilf",c:[16.3637,48.1997],web:"theater-wien.at"},
+  {stadt:"wien",id:"w-kh",bereich:"musik",name:"Wiener Konzerthaus",sparte:"Konzert",bezirk:"Landstraße",c:[16.3790,48.2012],web:"konzerthaus.at"},
+  {stadt:"wien",id:"w-mv",bereich:"musik",name:"Musikverein Wien",zusatz:"Gesellschaft der Musikfreunde, privater Träger",sparte:"Konzert",bezirk:"Innere Stadt",c:[16.3726,48.2006],web:"musikverein.at"},
+  {stadt:"wien",id:"w-sym",bereich:"musik",name:"Wiener Symphoniker",sparte:"Konzert",bezirk:"Innere Stadt",c:null,web:"wienersymphoniker.at"}
+];
+const haus = id => HAEUSER.find(h=>h.id===id);
+const intendanz = [
+  ["so","Elisabeth Sobotka","Intendantin","Leitet die Staatsoper Unter den Linden seit 2024."],
+  ["do","Aviel Cahn","Intendant","Seit der Spielzeit 2026/27 Intendant der Deutschen Oper Berlin."],
+  ["ko","Susanne Moser","Ko-Intendantin","Seit 2005 Geschäftsführende Direktorin, seit 2022/23 gemeinsam mit Philip Bröking Intendantin. Vertrag bis 2032."],
+  ["ko","Philip Bröking","Ko-Intendant","Operndirektor, seit 2022/23 gemeinsam mit Susanne Moser Intendant. Vertrag bis 2032."],
+  ["sb","Christian Spuck","Intendant","Choreograf, seit der Spielzeit 2023/24 Intendant des Staatsballetts."],
+  ["dt","Iris Laufenberg","Intendantin","Seit 2023/24 Intendantin, die erste Frau an der Spitze des Deutschen Theaters."],
+  ["be","Oliver Reese","Intendant","Seit 2017 Intendant, 2026/27 ist seine zehnte Spielzeit."],
+  ["vb","Matthias Lilienthal","Intendant","Seit 2026 Intendant, mit den Choreografinnen Florentina Holzinger und Marlene Monteiro Freitas im künstlerischen Leitungsteam."],
+  ["mg","Çağla Ilk","Intendantin","Architektin und Dramaturgin, seit der Spielzeit 2026/27 Intendantin."],
+  ["sh","Thomas Ostermeier","Künstlerischer Leiter","Regisseur, leitet die Schaubühne seit 1999."],
+  ["hau","Annemie Vanackere","Intendantin","Seit 2012 Intendantin und Geschäftsführerin, Vertrag bis 2028."],
+  ["fp","Berndt Schmidt","Intendant","Seit 2007 Intendant und Geschäftsführer, Vertrag bis 2034."],
+  ["pa","Christina Schulz","Ko-Intendantin","Leitet die Parkaue seit 2021 gemeinsam mit Alexander Riemenschneider, Vertrag bis 2031."],
+  ["pa","Alexander Riemenschneider","Ko-Intendant","Regisseur, leitet die Parkaue seit 2021 gemeinsam mit Christina Schulz, Vertrag bis 2031."],
+  ["gr","Winfried Tobias","Leitungsteam","Seit 2025/26 Teil des vierköpfigen Leitungsteams, künstlerische Leitung."],
+  ["gr","Natalie Driemeyer","Leitungsteam","Dramaturgin, seit 2025/26 im vierköpfigen Leitungsteam."],
+  ["gr","Thomas Keller","Leitungsteam","Musiker und Komponist, seit 2025/26 im vierköpfigen Leitungsteam."],
+  ["gr","Jutta Brinkschulte","Leitungsteam","Kulturmanagerin, seit 2025/26 im vierköpfigen Leitungsteam."],
+  ["bf","Matthias Pees","Intendant","Seit September 2022 Intendant der Berliner Festspiele, zuvor Künstlerhaus Mousonturm Frankfurt."],
+  ["bf","Nora Hertlein-Hull","Leiterin Theatertreffen","Leitet seit 2024 das Theatertreffen."],
+  ["so","Christian Thielemann","Generalmusikdirektor","Seit 2024 Generalmusikdirektor der Staatsoper und der Staatskapelle Berlin."],
+  ["do","Maxime Pascal","Erster Gastdirigent","Ab 2026/27 gemeinsam mit Michele Spotti. Einen neuen Generalmusikdirektor beruft das Haus vorerst nicht."],
+  ["do","Michele Spotti","Erster Gastdirigent","Ab 2026/27 gemeinsam mit Maxime Pascal."],
+  ["ko","James Gaffigan","Generalmusikdirektor","Seit der Spielzeit 2023/24 Generalmusikdirektor der Komischen Oper."],
+  ["ph","Andrea Zietzschmann","Intendantin","Seit 2017/18 Intendantin der Stiftung Berliner Philharmoniker, Vertrag läuft im August 2028 aus."],
+  ["ph","Kirill Petrenko","Chefdirigent","Seit 2019 Chefdirigent der Berliner Philharmoniker."],
+  ["kh","Tobias Rempe","Intendant","Seit 2025 Intendant des Konzerthauses."],
+  ["kh","Joana Mallwitz","Chefdirigentin","Seit 2023/24 Chefdirigentin des Konzerthausorchesters, als erste Frau. Vertrag bis 2032/33."],
+  ["pbs","Daniel Barenboim","Präsident","Gründer des Saals, leitete im März 2017 das Eröffnungskonzert."],
+  ["pbs","Kirsten Dawes","Co-Leitung","Verantwortet seit der Eröffnung die künstlerische Planung des Saals."],
+  ["pbs","Kurt Danner","Co-Leitung","Leitete zuvor Marketing und Vertrieb des Saals."],
+  ["roc","Anselm Rose","Geschäftsführer","Leitet die ROC, Trägerin von vier Ensembles."],
+  ["roc","Kazuki Yamada","Chefdirigent DSO","Seit 2026/27 Chefdirigent des Deutschen Symphonie-Orchesters, Nachfolger von Robin Ticciati."],
+  ["hh-sh","Karin Beier","Intendantin","Seit 2013/14 Intendantin. 2024 wurde das Haus für ihren Antikenmarathon »Anthropolis« zum Theater des Jahres gewählt."],
+  ["hh-th","Sonja Anders","Intendantin","Seit 2025/26 Intendantin, als erste Frau an der Spitze des Thalia Theaters."],
+  ["hh-kn","Amelie Deuflhard","Intendantin","Seit 2007 künstlerische Leiterin und Geschäftsführerin. Kampnagel gehört inzwischen ganz der Stadt Hamburg."],
+  ["hh-so","Tobias Kratzer","Intendant","Regisseur, seit 2025 Intendant der Staatsoper Hamburg."],
+  ["hh-so","Omer Meir Wellber","Generalmusikdirektor","Seit 2025 Generalmusikdirektor, Nachfolger von Kent Nagano."],
+  ["hh-hb","Lloyd Riggins","Künstlerischer Ballettdirektor (interim)","Leitet das Hamburg Ballett interimistisch, verlängert bis Mitte 2027."],
+  ["hh-hb","Nicolas Hartmann","Ballettbetriebsdirektor (interim)","Gemeinsam mit Lloyd Riggins in der Interimsleitung bis Mitte 2027."],
+  ["hh-elb","Christoph Lieben-Seutter","Generalintendant","Seit 2007 Generalintendant von Elbphilharmonie und Laeiszhalle, Vertrag bis 2029."],
+  ["hh-ndr","Alan Gilbert","Chefdirigent","Seit 2019/20 Chefdirigent, 2026/27 ist seine achte Saison."],
+  ["m-resi","Andreas Beck","Staatsintendant","Seit der Spielzeit 2019/20 Intendant des Residenztheaters."],
+  ["m-mk","Barbara Mundel","Intendantin","Seit 2020/21 Intendantin, Vertrag bis 2028. Die Nachfolge ist ausgeschrieben."],
+  ["m-vt","Christian Stückl","Intendant","Leitet das Volkstheater seit 2002, auch Spielleiter der Oberammergauer Passionsspiele."],
+  ["m-bso","Serge Dorny","Staatsintendant","Seit 2021 Staatsintendant der Bayerischen Staatsoper."],
+  ["m-bso","Vladimir Jurowski","Generalmusikdirektor","Seit 2021 Generalmusikdirektor, zugleich Chefdirigent des RSB in Berlin."],
+  ["m-bsb","Laurent Hilaire","Ballettdirektor","Seit Mai 2022 Direktor des Bayerischen Staatsballetts."],
+  ["m-gp","Josef E. Köpplinger","Staatsintendant","Seit 2012/13 Staatsintendant des Gärtnerplatztheaters, Vertrag bis 2030."],
+  ["m-mph","Lahav Shani","Chefdirigent","Seit September 2026 Chefdirigent der Münchner Philharmoniker, Nachfolger von Waleri Gergijew."],
+  ["m-br","Simon Rattle","Chefdirigent","Seit 2023/24 Chefdirigent von Symphonieorchester und Chor des BR."],
+  ["w-burg","Stefan Bachmann","Direktor","Seit 2024/25 Direktor des Burgtheaters, 2026/27 ist seine dritte Saison."],
+  ["w-vt","Jan Philipp Gloger","Künstlerischer Direktor","Seit September 2025, Nachfolger von Kay Voges."],
+  ["w-jos","Marie Rötzer","Künstlerische Leiterin","Seit September 2026 Direktorin, Nachfolgerin von Herbert Föttinger. Zuvor Intendantin in St. Pölten."],
+  ["w-so","Bogdan Roščić","Direktor","Seit Juli 2020 Direktor der Wiener Staatsoper."],
+  ["w-sb","Alessandra Ferri","Ballettdirektorin","Seit September 2025 Direktorin des Wiener Staatsballetts, Nachfolgerin von Martin Schläpfer."],
+  ["w-vo","Lotte de Beer","Direktorin","Regisseurin, seit 2022/23 Direktorin der Volksoper."],
+  ["w-tadw","Stefan Herheim","Intendant","Regisseur, seit 2022/23 Intendant. Das Haus wurde unter ihm zum Opernhaus des Jahres gewählt."],
+  ["w-kh","Matthias Naske","Intendant","Seit 2013 Intendant des Wiener Konzerthauses."],
+  ["w-mv","Stephan Pauly","Intendant","Seit 2020 Intendant des Musikvereins, Vertrag bis Juni 2030."],
+  ["w-sym","Petr Popelka","Chefdirigent","Seit 2024/25 Chefdirigent der Wiener Symphoniker."],
+  ["roc","Vladimir Jurowski","Chefdirigent RSB","Seit 2017 Chefdirigent des Rundfunk-Sinfonieorchesters, Vertrag bis 2029."]
+].map(([h,name,rolle,bio])=>({haus:h,name,rolle,bio}));
+
+// Personen, für die ein Foto im deutschen Wikipedia-Artikel gesucht wird.
+// Alle anderen bekommen Initialen. Bilder in der deutschen Wikipedia sind frei lizenziert.
+const KUENSTLER = {
+  "hh-sh":{regie:[
+      ["Katie Mitchell","Britische Regisseurin, mit »Anatomie eines Suizids« und »Bernarda Albas Haus« zweimal zum Theatertreffen eingeladen."],
+      ["Anita Vulesica","Inszenierte »Die Maschine oder: Über allen Gipfeln ist Ruh« (Theatertreffen 2025)."],
+      ["Yana Ross","Inszenierte 2026 Tschechows »Die Möwe«."]],
+    ensemble:[
+      ["Lina Beckmann","Seit 2013 im Ensemble, Schauspielerin des Jahres 2024 für das Solo »Laios«."],
+      ["Julia Wieninger","Spielt die Bernarda Alba in Katie Mitchells Inszenierung."],
+      ["Bettina Stucky","Ensemblemitglied, zuletzt in »Bernarda Albas Haus«."]]},
+  "hh-th":{regie:[
+      ["Anne Lenk","Regisseurin, gehört zur Leitung des Thalia unter Sonja Anders."],
+      ["Anna Bergmann","Inszeniert 2026 »Dornröschen«, Koproduktion mit der Staatsoper."]],
+    ensemble:[
+      ["Rosa Thormeyer","Ensemblemitglied, spielte in der Eröffnungspremiere »Was ihr wollt« 2025."],
+      ["Gloria Odosi","Mit Sonja Anders neu im Ensemble, Viola in »Was ihr wollt«."]]},
+  "m-resi":{regie:[
+      ["Ulrich Rasche","Inszeniert 2026 »Faust I«, seine »Räuber« waren 2017 beim Theatertreffen."],
+      ["Elsa-Sophie Jach","Inszeniert 2026 »König Lear« mit Manfred Zapatka."],
+      ["Luise Voigt","Inszenierte »Die Gewehre der Frau Carrar / Würgendes Blei« (Theatertreffen 2025)."]],
+    ensemble:[
+      ["Manfred Zapatka","Münchner Publikumsliebling, spielt 2026 den König Lear."]]},
+  "m-mk":{regie:[
+      ["Jan-Christoph Gockel","Hausregisseur und Teil der künstlerischen Leitung, »Wallenstein« beim Theatertreffen 2026."],
+      ["Jette Steckel","Zweimal zum Theatertreffen eingeladen, zuletzt mit »Mephisto« 2026."],
+      ["Marco Layera","Inszenierte »Mia san Mia« an den Kammerspielen."]],
+    ensemble:[
+      ["Thomas Schmauser","Spielt den Hendrik Höfgen in »Mephisto«, vielfach ausgezeichnet."],
+      ["Wiebke Puls","Ensemblemitglied, 2024 in »Die Vaterlosen« beim Theatertreffen. Inszeniert und spielt 2026 auch selbst, nach einem Roman von Anne Pauly."],
+      ["Samuel Koch","Spielt den Wallenstein in Gockels Inszenierung."]]},
+  "w-burg":{regie:[
+      ["Nicolas Stemann","Eröffnet die Saison 2026/27 mit Jelineks »Unter Tieren«."],
+      ["Ersan Mondtag","Inszeniert 2026 Dürrenmatts »Die Physiker«."],
+      ["Jan Bosse","Inszeniert 2026 Zweigs »Ungeduld des Herzens«."]],
+    ensemble:[
+      ["Michael Maertens","Seit 2009 im Ensemble, Nestroy-Preisträger."],
+      ["Caroline Peters","Seit 2024/25 wieder festes Ensemblemitglied."],
+      ["Nils Strunk","Seit 2021/22 im Ensemble, Elisabeth-Orth-Preis für die »Schachnovelle«."],
+      ["Stefanie Reinsperger","Kehrte unter Bachmann ans Burgtheater zurück. Nestroy-Nominierung 2025 für »Liliom« und »Elisabeth!«."],
+      ["Jörg Ratjen","Für den Nestroy-Preis 2025 als bester Schauspieler nominiert, als Wolfram in Mayenburgs »Ellen Babić« am Akademietheater."]]},
+  "w-vt":{regie:[
+      ["Rieke Süßkow","Hausregisseurin unter Jan Philipp Gloger."],
+      ["Leonie Böhm","Nestroy-Preis 2025 für die beste Regie, »Fräulein Else« beim Theatertreffen 2026."],
+      ["Felicitas Brucker","Inszenierte zum Start der Intendanz Gloger »Caché« nach Haneke."]],
+    ensemble:[], hinweis:"Mit der Intendanz von Jan Philipp Gloger hat sich das Ensemble 2025 neu formiert. Prägende Namen ergänze ich, sobald sie sich belegen lassen."},
+  sh:{regie:[
+      ["Marius von Mayenburg","Autor und Regisseur, Premiere an der Schaubühne 2026."],
+      ["Katie Mitchell","Britische Regisseurin, Premiere an der Schaubühne 2026."],
+      ["Falk Richter","Autor und Regisseur, neue Arbeit an der Schaubühne 2025."]],
+    ensemble:[
+      ["Lars Eidinger","Festes Ensemblemitglied, spielt den Hamlet in Ostermeiers Inszenierung."],
+      ["Ursina Lardi","Festes Ensemblemitglied, zuletzt »Die Seherin« mit Milo Rau."],
+      ["Jörg Hartmann","Kehrte für Ostermeiers »changes« ins Ensemble zurück."]]},
+  be:{regie:[
+      ["Barrie Kosky","Inszenierte »Die Dreigroschenoper« und »K.« nach Kafka."],
+      ["Michael Thalheimer","Seine »Medea« läuft am BE seit Reeses Start 2017."],
+      ["Johan Simons","Inszenierte »Antigone«."]],
+    ensemble:[
+      ["Jens Harzer","Spielt Oscar Wildes Monolog »De Profundis«."],
+      ["Matthias Brandt","Ensemblemitglied, bekannt aus Film und Fernsehen."],
+      ["Constanze Becker","Seit 2017/18 im Ensemble, zuvor am Schauspiel Frankfurt."]]},
+  dt:{regie:[
+      ["Jan Bosse","Premiere auf der großen DT-Bühne 2026."],
+      ["Anna Bergmann","Premiere auf der großen DT-Bühne 2026."],
+      ["András Dömötör","Inszenierte »Der Fall McNeal« (2025)."]],
+    ensemble:[
+      ["Ulrich Matthes","Seit 2004/05 im Ensemble, Gertrud-Eysoldt-Ring 2004."],
+      ["Julischka Eichel","Seit 2023/24 im Ensemble, Alfred-Kerr-Darstellerpreis."],
+      ["Svenja Liesau","Seit 2023/24 im Ensemble, zuvor lange am Gorki."]]},
+  vb:{regie:[
+      ["Rimini Protokoll","Eröffnen die Spielzeit 2026/27 mit »House of Hopes«."],
+      ["Florentina Holzinger","Performancekünstlerin, Teil des Artistic Boards."],
+      ["Milan Peschel","Volksbühnen-Veteran, arbeitet mit dem Theater RambaZamba."]],
+    ensemble:[
+      ["Gro Swantje Kohlhof","Im neuen zwölfköpfigen Ensemble, kommt aus Lilienthals Münchner Kammerspielen."],
+      ["Julia Riedler","Im neuen zwölfköpfigen Ensemble, kommt aus Lilienthals Münchner Kammerspielen."],
+      ["Benjamin Radjaipour","Im neuen zwölfköpfigen Ensemble, kommt aus Lilienthals Münchner Kammerspielen."]]},
+  mg:{regie:[
+      ["Ulrike Ottinger","Filmemacherin, erste Theaterpremiere der neuen Intendanz: »Das Hörrohr« nach Leonora Carrington."],
+      ["Constanza Macras","Choreografin, das Gorki wird künstlerische Heimat ihrer Compagnie Dorky Park."],
+      ["Ayham Majid Agha","Inszeniert Becketts »Das letzte Band«."]],
+    ensemble:[], hinweis:"Fast das gesamte bisherige Ensemble hat das Haus verlassen. Das neue Ensemble baut sich mit der Spielzeit 2026/27 erst auf."}
+};
+
+const PREISE = {
+  "hh-sh":{liste:[
+      [2025,"Bernarda Albas Haus","Katie Mitchell","Theatertreffen-Einladung"],
+      [2025,"Die Maschine oder: Über allen Gipfeln ist Ruh","Anita Vulesica","Theatertreffen-Einladung"],
+      [2024,"Laios (Anthropolis II)","Karin Beier","Theatertreffen-Einladung, Theater heute: Inszenierung des Jahres"],
+      [2022,"Die Ruhe","Signa Köstler","Theatertreffen-Einladung"],
+      [2021,"Reich des Todes","Karin Beier","Theatertreffen-Einladung"],
+      [2020,"Anatomie eines Suizids","Katie Mitchell","Theatertreffen-Einladung"],
+      [2018,"Am Königsweg","Falk Richter","Theatertreffen-Einladung"],
+      [2016,"Schiff der Träume","Karin Beier","Theatertreffen-Einladung"],
+      [2016,"Effi Briest – allerdings mit anderem Text und auch anderer Melodie","Clemens Sienknecht und Barbara Bürk","Theatertreffen-Einladung"]],
+    haus:"2024 von der Kritikerumfrage der Zeitschrift Theater heute zum »Theater des Jahres« gewählt."},
+  "hh-th":{liste:[
+      [2022,"Doughnuts","Toshiki Okada","Theatertreffen-Einladung"],
+      [2018,"Die Odyssee","Antú Romero Nunes","Theatertreffen-Einladung"],
+      [2017,"Der Schimmelreiter","Johan Simons","Theatertreffen-Einladung"]]},
+  "m-resi":{liste:[
+      [2025,"Die Gewehre der Frau Carrar / Würgendes Blei","Luise Voigt","Theatertreffen-Einladung"],
+      [2023,"Das Vermächtnis","Philipp Stölzl","Theatertreffen-Einladung"],
+      [2017,"Die Räuber","Ulrich Rasche","Theatertreffen-Einladung"]]},
+  "m-mk":{liste:[
+      [2026,"Wallenstein. Ein Schlachtfest in sieben Gängen","Jan-Christoph Gockel","Theatertreffen-Einladung, Theater heute: Inszenierung des Jahres"],
+      [2026,"Mephisto","Jette Steckel","Theatertreffen-Einladung"],
+      [2024,"Die Vaterlosen","Jette Steckel","Theatertreffen-Einladung"],
+      [2023,"Nora","Felicitas Brucker","Theatertreffen-Einladung"],
+      [2022,"Like Lovers Do (Memoiren der Medusa)","Pınar Karabulut","Theatertreffen-Einladung"],
+      [2020,"The Vacuum Cleaner","Toshiki Okada","Theatertreffen-Einladung"],
+      [2020,"Die Kränkungen der Menschheit","Anta Helena Recke","Theatertreffen-Einladung (Produktion von Anta Helena Recke mit den Kammerspielen)"],
+      [2019,"Dionysos Stadt","Christopher Rüping","Theatertreffen-Einladung, Theater heute: Inszenierung des Jahres"],
+      [2018,"Trommeln in der Nacht","Christopher Rüping","Theatertreffen-Einladung"],
+      [2018,"Mittelreich (Neufassung)","Anta Helena Recke","Theatertreffen-Einladung"],
+      [2016,"Mittelreich","Anna-Sophie Mahler","Theatertreffen-Einladung"]],
+    haus:"Von Theater heute zum »Theater des Jahres« gewählt: 2019, 2020 und 2026. Dazu Gesamtsieger der Kritikerumfrage der Deutschen Bühne für 2025/26."},
+  "m-vt":{liste:[], hinweis:"Seit 2016 keine Einladung zum Theatertreffen."},
+  "w-burg":{liste:[
+      [2023,"Die Eingeborenen von Maria Blut","Lucia Bihler","Theatertreffen-Einladung"],
+      [2023,"Zwiegespräch","Rieke Süßkow","Theatertreffen-Einladung"],
+      [2021,"Automatenbüffet","Barbara Frey","Theatertreffen-Einladung"],
+      [2019,"Hotel Strindberg","Simon Stone","Theatertreffen-Einladung (mit Theater Basel)"],
+      [2018,"Die Welt im Rücken","Jan Bosse","Theatertreffen-Einladung"],
+      [2016,"John Gabriel Borkman","Simon Stone","Theatertreffen-Einladung (mit Theater Basel)"]]},
+  "w-vt":{liste:[
+      [2026,"Fräulein Else","Leonie Böhm","Theatertreffen-Einladung, Nestroy-Preis 2025 für die beste Regie"],
+      [2022,"humanistää! eine abschaffung der sparten","Claudia Bauer","Theatertreffen-Einladung, Theater heute: Inszenierung des Jahres"]]},
+  "w-jos":{liste:[], hinweis:"Seit 2016 keine Einladung zum Theatertreffen."},
+  dt:{liste:[
+      [2023,"Der Einzige und sein Eigentum","Sebastian Hartmann","Theatertreffen-Einladung"],
+      [2021,"Der Zauberberg","Sebastian Hartmann","Theatertreffen-Einladung"],
+      [2021,"Maria Stuart","Anne Lenk","Theatertreffen-Einladung"],
+      [2020,"Der Menschenfeind","Anne Lenk","Theatertreffen-Einladung"],
+      [2019,"Persona","Anna Bergmann","Theatertreffen-Einladung"],
+      [2016,"Väter und Söhne","Daniela Löffner","Theatertreffen-Einladung"]],
+    haus:"2023 von der Kritikerumfrage der Zeitschrift Theater heute zum »Theater des Jahres« gewählt."},
+  be:{liste:[], hinweis:"Seit 2016 keine Einladung zum Theatertreffen. Auszeichnungen einzelner Inszenierungen durch FAUST, Nestroy oder Theater heute habe ich nicht gefunden."},
+  vb:{liste:[
+      [2026,"A Year without Summer","Florentina Holzinger","Theatertreffen-Einladung"],
+      [2025,"ja nichts ist ok","René Pollesch","Theatertreffen-Einladung"],
+      [2023,"Ophelia's Got Talent","Florentina Holzinger","Theatertreffen-Einladung"],
+      [2018,"Faust","Frank Castorf","Theatertreffen-Einladung"],
+      [2017,"Pfusch","Herbert Fritsch","Theatertreffen-Einladung"],
+      [2016,"der die mann","Herbert Fritsch","Theatertreffen-Einladung"]]},
+  mg:{liste:[
+      [2025,"Unser Deutschlandmärchen","Hakan Savaş Mican","Theatertreffen-Einladung"],
+      [2022,"Slippery Slope","Yael Ronen","Theatertreffen-Einladung"],
+      [2021,"Und sicher ist mit mir die Welt verschwunden","Sebastian Nübling","Theater heute: Stück des Jahres 2021 (Text: Sibylle Berg)"],
+      [2020,"Hamlet","Christian Weise","Theater heute: Bühnenbild des Jahres (Julia Oschatz)"],
+      [2016,"The Situation","Yael Ronen","Theatertreffen-Einladung"]]},
+  sh:{liste:[
+      [2024,"Bucket List","Yael Ronen und Shlomi Shaban","Theatertreffen-Einladung"],
+      [2024,"The Silence","Falk Richter","Theatertreffen-Einladung"],
+      [2018,"Rückkehr nach Reims","Thomas Ostermeier","Theatertreffen-Einladung"]]}
+};
+
+const WIKI = new Set([...Object.values(KUENSTLER).flatMap(k=>[...k.regie,...k.ensemble].map(x=>x[0])),"Elisabeth Sobotka","Aviel Cahn","Susanne Moser","Philip Bröking","Christian Spuck",
+  "Iris Laufenberg","Oliver Reese","Matthias Lilienthal","Çağla Ilk","Thomas Ostermeier",
+  "Annemie Vanackere","Berndt Schmidt","Alexander Riemenschneider","Matthias Pees","Christian Thielemann",
+  "Maxime Pascal","Michele Spotti","James Gaffigan","Andrea Zietzschmann","Kirill Petrenko","Joana Mallwitz",
+  "Kazuki Yamada","Vladimir Jurowski","Daniel Barenboim",
+  "Karin Beier","Sonja Anders","Tobias Kratzer","Omer Meir Wellber","Lloyd Riggins","Christoph Lieben-Seutter","Alan Gilbert",
+  "Andreas Beck","Barbara Mundel","Christian Stückl","Serge Dorny","Laurent Hilaire","Josef E. Köpplinger","Lahav Shani","Simon Rattle",
+  "Stefan Bachmann","Jan Philipp Gloger","Marie Rötzer","Bogdan Roščić","Alessandra Ferri","Lotte de Beer","Stefan Herheim",
+  "Matthias Naske","Stephan Pauly","Petr Popelka","Amelie Deuflhard","Jörg Ratjen"]);
+// Schutz gegen Namensvettern: Artikel muss einen Bühnenbezug haben
+const BUEHNE = /Intendant|Theater|Oper|Ballett|Choreogra|Regisseur|Dramaturg|Kulturmanager|Bühne|Schauspiel|Performance|Dirigent|Orchester|Festspiele/i;
+const initialen = n => n.split(/\s+/).map(w=>w[0]).filter(Boolean).slice(0,2).join("");
+const bilder = {};
+
+async function ladeBild(name){
+  if(!WIKI.has(name)) return null;
+  if(name in bilder) return bilder[name];
+  bilder[name] = null;
+  try{
+    const r = await fetch("https://de.wikipedia.org/api/rest_v1/page/summary/" + encodeURIComponent(name.replace(/ /g,"_")));
+    if(!r.ok) return null;
+    const d = await r.json();
+    if(d.type!=="standard" || !d.thumbnail || !BUEHNE.test(d.extract||"")) return null;
+    const datei = decodeURIComponent((d.originalimage||d.thumbnail).source.split("/").pop());
+    const bild = {src:d.thumbnail.source, seite:"https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(datei), autor:"", lizenz:""};
+    try{
+      const m = await fetch("https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&prop=imageinfo&iiprop=extmetadata&titles=File:" + encodeURIComponent(datei)).then(x=>x.json());
+      const meta = Object.values(m.query.pages)[0].imageinfo?.[0]?.extmetadata || {};
+      const tmp = document.createElement("div"); tmp.innerHTML = meta.Artist?.value || "";
+      bild.autor = tmp.textContent.trim();
+      bild.lizenz = meta.LicenseShortName?.value || "";
+    }catch(e){}
+    return bilder[name] = bild;
+  }catch(e){ return null; }
+}
+
+function zeigeBilder(hausId){
+  document.querySelectorAll("[data-name]").forEach(async el=>{
+    const bild = await ladeBild(el.dataset.name);
+    if(!bild || state.haus!==hausId) return;
+    const img = new Image();
+    img.alt = "Foto von " + el.dataset.name;
+    img.onload = ()=>{
+      el.querySelector(".portrait").append(img);
+      const c = document.createElement("small"); c.className = "credit";
+      const a = document.createElement("a"); a.href = bild.seite; a.target = "_blank"; a.rel = "noopener";
+      a.textContent = "Foto: " + [bild.autor, bild.lizenz].filter(Boolean).join(", ") + (bild.autor||bild.lizenz ? "" : "Wikimedia Commons");
+      c.append(a); el.querySelector(".text").append(c);
+    };
+    img.src = bild.src;
+  });
+}
+
+const state = {stadt:"berlin", bereich:null, haus:null};
+const $ = id => document.getElementById(id);
+const schritte = () => [
+  state.bereich && {label:BEREICHE[state.bereich], reset:{bereich:null,haus:null}},
+  state.haus && {label: state.haus==="alle" ? "Alle Köpfe" : haus(state.haus).name, reset:{haus:null}}
+].filter(Boolean);
+
+function personHTML([name,info],farbe){
+  return `<div class="person" data-name="${name}">
+    <div class="portrait" style="background:${farbe}" aria-hidden="true">${initialen(name)}</div>
+    <div class="text"><b>${name}</b><p>${info}</p></div></div>`;
+}
+function kuenstlerHTML(h){
+  const k = KUENSTLER[h.id]; if(!k) return preisHTML(h);
+  const f = SPARTEN[h.sparte];
+  return `<h3>Regie</h3>` + k.regie.map(x=>personHTML(x,f)).join("") +
+    `<h3>Ensemble</h3>` + (k.ensemble.length ? k.ensemble.map(x=>personHTML(x,f)).join("") : `<p class="info">${k.hinweis}</p>`) +
+    `<p class="info klein">Auswahl prägender Namen, Stand Oktober 2026.</p>` + preisHTML(h);
+}
+function preisHTML(h){
+  const p = PREISE[h.id]; if(!p) return "";
+  const f = SPARTEN[h.sparte];
+  return `<h3>Ausgezeichnet seit 2016</h3>` +
+    (p.haus ? `<p class="info hausehre">${p.haus}</p>` : "") +
+    (p.liste.length ? p.liste.map(([jahr,titel,regie,preis])=>`
+      <div class="preis"><span class="jahr" style="color:${f}">${jahr}</span>
+        <div><b>${titel}</b><p>Regie: ${regie}</p><small>${preis}</small></div></div>`).join("")
+      : `<p class="info">${p.hinweis}</p>`) +
+    `<p class="info klein">Theatertreffen: Auswahl der zehn bemerkenswertesten Inszenierungen des Jahres. Dazu Auszeichnungen wie die Kritikerumfrage von Theater heute oder der Nestroy-Preis.</p>`;
+}
+
+// „Heute läuft“: wird täglich von abruf.py erzeugt
+let HEUTE = null;
+const esc = t => String(t||"").replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const heuteISO = () => new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Berlin"}).format(new Date());
+const heute = id => HEUTE && HEUTE[id];
+function heuteKurz(id){
+  const h = heute(id); if(!h) return "";
+  if(h.status==="keine") return `<span class="heute-kurz">Heute keine Vorstellung</span>`;
+  if(h.status!=="ok") return "";
+  const v = h.vorstellungen[0], mehr = h.vorstellungen.length-1;
+  return `<span class="heute-kurz">Heute: ${esc(v.titel)}${v.zeit ? ", "+v.zeit : ""}${mehr>0 ? " (+"+mehr+")" : ""}</span>`;
+}
+function heuteBlock(id){
+  const h = heute(id); if(!h) return "";
+  if(h.status==="keine") return `<div class="heute leer"><h4>Heute läuft</h4><ul><li><span>Heute keine Vorstellung</span></li></ul></div>`;
+  if(h.status!=="ok") return "";
+  return `<div class="heute"><h4>Heute läuft</h4><ul>` + h.vorstellungen.map(v=>`
+    <li><b>${v.url ? `<a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.titel)}</a>` : esc(v.titel)}</b>
+    <span>${[v.zeit ? v.zeit+" Uhr" : "", esc(v.ort)].filter(Boolean).join(" · ")}</span></li>`).join("") + `</ul></div>`;
+}
+fetch("heute.json",{cache:"no-store"}).then(r=>r.ok ? r.json() : null).then(d=>{
+  if(d && d.datum===heuteISO()){ HEUTE = d.haeuser; render(); }
+}).catch(()=>{});
+
+const STAEDTE = {berlin:"Berlins", hamburg:"Hamburgs", muenchen:"Münchens", wien:"Wiens"};
+const imOrt = h => h.stadt===state.stadt;
+const anzahl = b => HAEUSER.filter(h=>imOrt(h) && h.bereich===b).length;
+const leute = () => intendanz.filter(p=>{const h=haus(p.haus); return imOrt(h) && h.bereich===state.bereich;});
+
+function render(){
+  $("sub").textContent = `Die öffentlichen Bühnen ${STAEDTE[state.stadt]} und wer sie leitet`;
+  const s = schritte();
+  $("pfad").innerHTML = s.length ? `<button class="zurueck" data-zurueck>Zurück</button>` +
+    s.map((x,i)=>`<button data-schritt="${i}">${x.label}</button>`).join("<span>/</span>") : "";
+  let v = "";
+  if(!state.bereich){
+    v = `<h2>Was interessiert dich?</h2>
+      <button class="gross" data-set='{"bereich":"theater"}'>Theater<small>${anzahl("theater")} öffentliche Bühnen</small></button>
+      <button class="gross u3" data-set='{"bereich":"musik"}'>Musik<small>${anzahl("musik")} Opern, Konzerthäuser und Orchester</small></button>`;
+  } else if(!state.haus){
+    v = `<h2>${state.bereich==="musik" ? "Welches Haus?" : "Welches Theater?"}</h2>` + `
+      <button class="gross u6" data-set='{"haus":"alle"}'>Alle Köpfe<small>${leute().length} Leitungspersonen auf einen Blick</small></button>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).map(h=>`
+      <button class="zeile" data-set='{"haus":"${h.id}"}'>
+        <span class="bar" style="background:${SPARTEN[h.sparte]}"></span>
+        <span><b>${h.name}</b><small>${h.zusatz ? h.zusatz + ", " : ""}${h.bezirk}</small>${heuteKurz(h.id)}</span>
+      </button>`).join("");
+  } else if(state.haus==="alle"){
+    v = `<h2>Alle Köpfe ${BEREICHE[state.bereich]}</h2><div class="raster">` + leute().map(p=>{
+      const h = haus(p.haus);
+      return `<div class="karte" data-name="${p.name}">
+        <div class="portrait" style="background:${SPARTEN[h.sparte]}" aria-hidden="true">${initialen(p.name)}</div>
+        <div class="text"><b>${p.name}</b><div class="rolle">${p.rolle}</div>
+          <button class="hauslink" data-set='{"haus":"${h.id}"}'>${h.name}</button></div>
+      </div>`;}).join("") + `</div>`;
+  } else {
+    const h = haus(state.haus);
+    const team = intendanz.filter(p=>p.haus===h.id);
+    v = `<h2>${h.name}</h2>` + heuteBlock(h.id) + `
+      <a class="link" href="https://${h.web}" target="_blank" rel="noopener">Spielplan auf ${h.web}</a>
+      <h3>Leitung</h3>` + team.map(p=>`
+        <div class="kopf" data-name="${p.name}">
+          <div class="portrait" style="background:${SPARTEN[h.sparte]}" aria-hidden="true">${initialen(p.name)}</div>
+          <div class="text"><b>${p.name}</b><div class="rolle">${p.rolle}</div><p>${p.bio}</p></div>
+        </div>`).join("") + kuenstlerHTML(h);
+  }
+  $("view").innerHTML = v;
+  if(state.haus) zeigeBilder(state.haus);
+}
+
+document.addEventListener("click", ev=>{
+  const t = ev.target.closest("button"); if(!t) return;
+  if(t.dataset.set) Object.assign(state, JSON.parse(t.dataset.set));
+  else if(t.hasAttribute("data-zurueck")){ const s = schritte(); Object.assign(state, s[s.length-1].reset); }
+  else if(t.dataset.schritt){ const s = schritte(), i = +t.dataset.schritt; if(s[i+1]) Object.assign(state, s[i+1].reset); }
+  else return;
+  render(); window.scrollTo(0,0);
+  const f = document.querySelector("main button, main a"); if(f) f.focus({preventScroll:true});
+});
+$("stadt").addEventListener("change", e=>{
+  Object.assign(state, {stadt:e.target.value, bereich:null, haus:null});
+  render(); window.scrollTo(0,0);
+});
+render();
+</script>
+</body>
+</html>
