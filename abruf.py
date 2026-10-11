@@ -11,6 +11,7 @@ Die App zeigt dann einfach nur den Spielplan-Link an.
 """
 import datetime as dt
 import html
+import os
 import json
 import re
 import sys
@@ -111,6 +112,8 @@ def laden(url):
     time.sleep(PAUSE)
     r = sitzung.get(url, timeout=TIMEOUT)
     r.raise_for_status()
+    if "charset" not in r.headers.get("Content-Type", "").lower():
+        r.encoding = "utf-8"
     return r
 
 
@@ -177,6 +180,50 @@ def events_jsonld(soup, basis):
     return gefunden
 
 
+# ---------- Microdata (itemtype=".../Event") ----------
+
+def events_microdata(soup, basis):
+    gefunden = []
+    for el in soup.find_all(attrs={"itemtype": re.compile(r"Event", re.I)}):
+        st = el.find(attrs={"itemprop": "startDate"})
+        if not st:
+            continue
+        datum, uhr = zeitpunkt(st.get("content") or st.get("datetime") or st.get_text())
+        name = el.find(attrs={"itemprop": "name"})
+        link = el.find(attrs={"itemprop": "url"}) or el.find("a", href=True)
+        if datum and name:
+            gefunden.append({"datum": datum, "zeit": uhr, "titel": text(name.get("content") or name.get_text()),
+                             "ort": "", "url": urljoin(basis, link.get("href") or link.get("content") or "") if link else ""})
+    return gefunden
+
+
+# ---------- Notlösung: <time datetime="..."> im Spielplan ----------
+
+def events_timetags(soup, basis):
+    gefunden = []
+    for t in soup.find_all("time", attrs={"datetime": True}):
+        datum, uhr = zeitpunkt(t["datetime"])
+        if datum != HEUTE:
+            continue
+        el, titel, link = t, "", ""
+        for _ in range(5):                      # bis zu 5 Ebenen nach oben suchen
+            el = el.parent
+            if el is None:
+                break
+            kopf = el.find(["h2", "h3", "h4"])
+            a = el.find("a", href=True)
+            if kopf and text(kopf.get_text()):
+                titel = text(kopf.get_text())
+            elif a and len(text(a.get_text())) > 3:
+                titel = text(a.get_text())
+            if titel:
+                link = urljoin(basis, a["href"]) if a else ""
+                break
+        if titel and len(titel) < 150:
+            gefunden.append({"datum": datum, "zeit": uhr, "titel": titel, "ort": "", "url": link})
+    return gefunden
+
+
 # ---------- iCal ----------
 
 def ics_links(soup, basis):
@@ -224,19 +271,29 @@ def abrufen(hid, eintrag):
     web, gezielt = eintrag
     basis = "https://www." + web
     kandidaten = list(dict.fromkeys(gezielt + [basis.rstrip("/") + p for p in PFADE]))
-    letzter_fehler = "keine strukturierten Termindaten gefunden"
+    fehler = []
+    erste_seite = None
     for url in kandidaten:
         try:
             r = laden(url)
-        except PermissionError as e:
-            letzter_fehler = str(e)
+        except PermissionError:
+            fehler.append(f"{url} -> robots.txt verbietet Abruf")
+            continue
+        except requests.HTTPError as e:
+            code = e.response.status_code if e.response is not None else "?"
+            fehler.append(f"{url} -> {code}")
             continue
         except requests.RequestException as e:
-            letzter_fehler = f"{url}: {type(e).__name__}"
+            fehler.append(f"{url} -> {type(e).__name__}")
             continue
         soup = BeautifulSoup(r.text, "html.parser")
+        if erste_seite is None and (url in gezielt or not gezielt):
+            erste_seite = (r.url, r.text)
         termine = events_jsonld(soup, r.url)
         quelle = "json-ld"
+        if not termine:
+            termine = events_microdata(soup, r.url)
+            quelle = "microdata"
         if not termine:
             for link in ics_links(soup, r.url):
                 try:
@@ -244,6 +301,9 @@ def abrufen(hid, eintrag):
                     quelle = "ical"
                 except (requests.RequestException, PermissionError):
                     continue
+        if not termine:
+            termine = events_timetags(soup, r.url)
+            quelle = "html-time"
         if termine:
             heute = [t for t in termine if t["datum"] == HEUTE and t["titel"]]
             eindeutig = {}
@@ -254,7 +314,12 @@ def abrufen(hid, eintrag):
             return {"status": "ok" if vorstellungen else "keine",
                     "vorstellungen": vorstellungen,
                     "quelle": r.url, "format": quelle}
-    return {"status": "fehler", "grund": letzter_fehler}
+    if erste_seite:
+        os.makedirs("diagnose", exist_ok=True)
+        with open(f"diagnose/{hid}.html", "w", encoding="utf-8") as f:
+            f.write(f"<!-- {erste_seite[0]} -->\n" + erste_seite[1][:400_000])
+    grund = "geladen, aber keine Termindaten erkannt" if erste_seite else "keine Seite erreichbar"
+    return {"status": "fehler", "grund": grund, "versuche": fehler[:6]}
 
 
 def main():
@@ -271,6 +336,8 @@ def main():
         ergebnis["haeuser"][hid] = res
         info = (", ".join(v["titel"] for v in res.get("vorstellungen", []))
                 or res.get("grund", "heute nichts"))
+        if res["status"] == "fehler":
+            info += "  |  " + "; ".join(res.get("versuche", [])[:3])
         print(f"{hid:8} {res['status']:7} {info[:90]}", flush=True)
 
     with open("heute.json", "w", encoding="utf-8") as f:
