@@ -1,24 +1,24 @@
 {
  "datum": "2026-10-12",
- "stand": "2026-10-12T06:11+02:00",
+ "stand": "2026-10-12T07:49+02:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
      "zeit": "11:00",
-     "titel": "Apollosaal",
-     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/apollosaal.40/"
+     "titel": "Kinderkonzert I",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/kinderkonzert-i.27837/#event-154853"
     },
     {
      "zeit": "19:00",
-     "titel": "Pierre Boulez Saal",
-     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/pierre-boulez-saal.21/"
+     "titel": "Konzert im Pierre Boulez Saal I",
+     "url": "https://www.staatsoper-berlin.de/de/kuenstler/gemma-new.3876/"
     },
     {
      "zeit": "19:30",
-     "titel": "Staatsoper Unter den Linden",
-     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/staatsoper-unter-den-linden.35/"
+     "titel": "Jubiläumsgala der Staatlichen Ballett- und Artistikschule",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/jubilaeumsgala-der-staatlichen-ballett-und-artistikschule.29727/#event-165724"
     }
    ],
    "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
@@ -49,21 +49,36 @@
    "format": "ical"
   },
   "dt": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.deutschestheater.de/de/spielplan -> 404",
-    "https://www.deutschestheater.de/de/programm -> 404",
-    "https://www.deutschestheater.de/kalender -> 404",
-    "https://www.deutschestheater.de/de/kalender -> 404",
-    "https://www.deutschestheater.de/termine -> 404",
-    "https://www.deutschestheater.de/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "17:00",
+     "titel": "Theaterfortbildung für Lehrende: Parzival",
+     "url": "https://www.deutschestheater.de/programm/produktionen/theaterfortbildung-fuer-lehrende-parzival"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Ach, Mom!",
+     "url": "https://www.deutschestheater.de/programm/produktionen/ach-mom"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Parzival",
+     "url": "https://www.deutschestheater.de/programm/produktionen/parzival"
+    },
+    {
+     "titel": "Sonne und Beton",
+     "url": "https://www.deutschestheater.de/programm/produktionen/sonne-und-beton"
+    }
+   ],
+   "quelle": "https://www.deutschestheater.de/programm/spielplan",
+   "format": "html-datum"
   },
   "be": {
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "19:00",
      "titel": "Der Hauptmann von Köpenick",
      "url": "https://www.berliner-ensemble.de/inszenierung/max-hopp-der-hauptmann-von-koepenick"
     }
@@ -76,22 +91,18 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Interfilm 42: Preview",
+     "titel": "Roter Salon Interfilm 42: Preview",
      "url": "https://www.volksbuehne-berlin.de/produktionen/interfilm-42/20261012-1700/"
     },
     {
      "zeit": "19:30",
-     "titel": "Spooky Paradise",
+     "titel": "Große Bühne Spooky Paradise Philippe Quesne mit dt. und engl. ÜT Audiodeskription Theatertag",
      "url": "https://www.volksbuehne-berlin.de/produktionen/spooky-paradise/20261012-1730/"
     },
     {
      "zeit": "20:00",
-     "titel": "Perfection",
+     "titel": "Prater Perfection Nach dem Roman von Vincenzo Latronico Anta Recke Zusatzvorstellung auf Deutsch und Englisch",
      "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261012-1800/"
-    },
-    {
-     "titel": "Interfilm 42: Preview",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/interfilm-42/20261012-1700/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
@@ -105,7 +116,7 @@
   },
   "sh": {
    "status": "fehler",
-   "grund": "keine Seite erreichbar",
+   "grund": "geladen, aber keine Termindaten erkannt",
    "versuche": [
     "https://www.schaubuehne.de/de/spielplan/ -> 404",
     "https://www.schaubuehne.de/spielplan -> 404",
@@ -117,7 +128,7 @@
   },
   "hau": {
    "status": "fehler",
-   "grund": "keine Seite erreichbar",
+   "grund": "geladen, aber keine Termindaten erkannt",
    "versuche": [
     "https://www.hebbel-am-ufer.de/programm/spielplan/ -> 404",
     "https://www.hebbel-am-ufer.de/spielplan -> 404",
@@ -144,7 +155,7 @@
    "vorstellungen": [
     {
      "zeit": "10:00",
-     "titel": "Theater an der Parkaue",
+     "titel": "Regiert euch!(12+)",
      "url": "https://www.parkaue.de/spielplan/spielplan/regiert-euch/1918/"
     }
    ],
@@ -164,22 +175,23 @@
    ]
   },
   "bf": {
-   "status": "fehler",
-   "grund": "keine Seite erreichbar",
-   "versuche": [
-    "https://www.berlinerfestspiele.de/kalender -> 404",
-    "https://www.berlinerfestspiele.de/spielplan -> 404",
-    "https://www.berlinerfestspiele.de/de/spielplan -> 404",
-    "https://www.berlinerfestspiele.de/de/kalender -> 404",
-    "https://www.berlinerfestspiele.de/termine -> 404",
-    "https://www.berlinerfestspiele.de/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "22:00",
+     "titel": "Ein Panorama internationaler Tanz-, Theater- und Performanceaufführungen",
+     "url": "https://www.berlinerfestspiele.de/programm"
+    }
+   ],
+   "quelle": "https://www.berlinerfestspiele.de/programm",
+   "format": "json-eingebettet"
   },
   "ph": {
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Mehr lesen",
+     "zeit": "20:00",
+     "titel": "QuartettBeethoven-Zyklus mit dem Quatuor Ébène",
      "url": "https://www.berliner-philharmoniker.de/konzerte/kalender/57035/"
     }
    ],
@@ -200,7 +212,7 @@
   },
   "pbs": {
    "status": "fehler",
-   "grund": "keine Seite erreichbar",
+   "grund": "geladen, aber keine Termindaten erkannt",
    "versuche": [
     "https://www.boulezsaal.de/de/programm -> 404",
     "https://www.boulezsaal.de/spielplan -> 404",
@@ -229,16 +241,15 @@
    ]
   },
   "hh-th": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.thalia-theater.de/spielplan -> 404",
-    "https://www.thalia-theater.de/de/spielplan -> 404",
-    "https://www.thalia-theater.de/programm -> 404",
-    "https://www.thalia-theater.de/de/programm -> 404",
-    "https://www.thalia-theater.de/kalender -> 404",
-    "https://www.thalia-theater.de/de/kalender -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "Der König stirbt",
+     "url": "https://www.thalia-theater.de/de/stuecke/der-konig-stirbt/298"
+    }
+   ],
+   "quelle": "https://www.thalia-theater.de/de/termine",
+   "format": "html-datum"
   },
   "hh-kn": {
    "status": "fehler",
@@ -259,15 +270,31 @@
    "format": "ical"
   },
   "hh-elb": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.elbphilharmonie.de/spielplan -> 404",
-    "https://www.elbphilharmonie.de/de/spielplan -> 404",
-    "https://www.elbphilharmonie.de/kalender -> 404",
-    "https://www.elbphilharmonie.de/de/kalender -> 404",
-    "https://www.elbphilharmonie.de/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:15",
+     "titel": "Funkelkonzert S / Obotaqua",
+     "url": "https://www.elbphilharmonie.de/de/programm/funkelkonzert-s-obotaqua/28298"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Sergey Sadovoy",
+     "url": "https://www.elbphilharmonie.de/de/programm/sergey-sadovoy/28960"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Neue Philharmonie Hamburg",
+     "url": "https://www.elbphilharmonie.de/de/programm/neue-philharmonie-hamburg/29091"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Ed O’Brien",
+     "url": "https://www.elbphilharmonie.de/de/programm/ed-obrien/24341"
+    }
+   ],
+   "quelle": "https://www.elbphilharmonie.de/de/programm/",
+   "format": "html-time"
   },
   "hh-ndr": {
    "status": "fehler",
@@ -282,16 +309,16 @@
    ]
   },
   "m-resi": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.residenztheater.de/de/spielplan -> 404",
-    "https://www.residenztheater.de/programm -> 404",
-    "https://www.residenztheater.de/de/programm -> 404",
-    "https://www.residenztheater.de/kalender -> 404",
-    "https://www.residenztheater.de/de/kalender -> 404",
-    "https://www.residenztheater.de/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "König Lear",
+     "url": "https://www.residenztheater.de/stuecke/detail/koenig-lear"
+    }
+   ],
+   "quelle": "https://www.residenztheater.de/spielplan",
+   "format": "html-datum"
   },
   "m-mk": {
    "status": "keine",
@@ -363,27 +390,43 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Auslöschung. Ein Zerfall",
-     "url": "https://www.burgtheater.at/veranstaltungen/ausloeschung-ein-zerfall/2026-10-12"
+     "zeit": "19:30",
+     "titel": "Mo. Montag"
     },
     {
-     "titel": "Der eingebildete Kranke",
-     "url": "https://www.burgtheater.at/veranstaltungen/der-eingebildete-kranke/2026-10-12"
+     "zeit": "20:00",
+     "titel": "Mo. Montag"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
    "format": "html-time"
   },
   "w-vt": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.volkstheater.at/programm -> 404",
-    "https://www.volkstheater.at/de/programm -> 404",
-    "https://www.volkstheater.at/kalender -> 404",
-    "https://www.volkstheater.at/de/kalender -> 404",
-    "https://www.volkstheater.at/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "TANGO-SCHNUPPERKURS",
+     "url": "https://www.volkstheater.at/spielstaetten/rote-bar"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "STATE OF THE UNION",
+     "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "WOYZECK",
+     "url": "https://www.volkstheater.at/spielstaetten/volkstheater-bezirke/vz-praterstern"
+    },
+    {
+     "zeit": "21:30",
+     "titel": "TANGO ARGENTINO",
+     "url": "https://www.volkstheater.at/spielstaetten/rote-bar"
+    }
+   ],
+   "quelle": "https://www.volkstheater.at/spielplan/",
+   "format": "html-datum"
   },
   "w-jos": {
    "status": "fehler",
@@ -398,28 +441,20 @@
    ]
   },
   "w-so": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.wiener-staatsoper.at/spielplan -> 404",
-    "https://www.wiener-staatsoper.at/de/spielplan -> 404",
-    "https://www.wiener-staatsoper.at/programm -> 404",
-    "https://www.wiener-staatsoper.at/de/programm -> 404",
-    "https://www.wiener-staatsoper.at/de/kalender -> 404",
-    "https://www.wiener-staatsoper.at/termine -> 404"
-   ]
-  },
-  "w-sb": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.wiener-staatsballett.at/spielplan -> 404",
-    "https://www.wiener-staatsballett.at/de/spielplan -> 404",
-    "https://www.wiener-staatsballett.at/programm -> 404",
-    "https://www.wiener-staatsballett.at/de/programm -> 404",
-    "https://www.wiener-staatsballett.at/kalender -> 404",
-    "https://www.wiener-staatsballett.at/de/kalender -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Eine floren­tinische Tragödie/ Herzog Blaubarts Burg",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/eine-florentinische-tragoedie-herzog-blaubarts-burg/2026-10-12/"
+    },
+    {
+     "titel": "Abo 14",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/die-verkaufte-braut-prodana-nevsta/2025-10-13/"
+    }
+   ],
+   "quelle": "https://www.wiener-staatsoper.at/kalender/2026/oktober/",
+   "format": "html-datum"
   },
   "w-vo": {
    "status": "ok",
@@ -445,16 +480,21 @@
    ]
   },
   "w-kh": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.konzerthaus.at/spielplan -> 404",
-    "https://www.konzerthaus.at/de/spielplan -> 404",
-    "https://www.konzerthaus.at/programm -> 404",
-    "https://www.konzerthaus.at/de/programm -> 404",
-    "https://www.konzerthaus.at/de/kalender -> 404",
-    "https://www.konzerthaus.at/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Pink Martini",
+     "url": "https://konzerthaus.at/de/programm-und-karten/pink-martini/63565"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "SCHMUSECHOR SOLO",
+     "url": "https://konzerthaus.at/de/programm-und-karten/schmusechor-solo/63582"
+    }
+   ],
+   "quelle": "https://konzerthaus.at/de/programm-und-karten",
+   "format": "html-datum"
   },
   "w-mv": {
    "status": "fehler",
