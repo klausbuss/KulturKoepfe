@@ -1,6 +1,6 @@
 {
- "datum": "2026-10-11",
- "stand": "2026-10-11T21:58+02:00",
+ "datum": "2026-10-12",
+ "stand": "2026-10-12T06:11+02:00",
  "haeuser": {
   "so": {
    "status": "ok",
@@ -11,27 +11,12 @@
      "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/apollosaal.40/"
     },
     {
-     "zeit": "12:30",
-     "titel": "Apollosaal",
-     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/apollosaal.40/"
+     "zeit": "19:00",
+     "titel": "Pierre Boulez Saal",
+     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/pierre-boulez-saal.21/"
     },
     {
-     "zeit": "13:00",
-     "titel": "Dussmann das KulturKaufhaus",
-     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/dussmann-das-kulturkaufhaus.37/"
-    },
-    {
-     "zeit": "16:45",
-     "titel": "Staatsoper Unter den Linden",
-     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/staatsoper-unter-den-linden.35/"
-    },
-    {
-     "zeit": "18:00",
-     "titel": "Staatsoper Unter den Linden",
-     "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/staatsoper-unter-den-linden.35/"
-    },
-    {
-     "zeit": "20:50",
+     "zeit": "19:30",
      "titel": "Staatsoper Unter den Linden",
      "url": "https://www.staatsoper-berlin.de/de/ihr-besuch/anfahrt/staatsoper-unter-den-linden.35/"
     }
@@ -52,14 +37,8 @@
    ]
   },
   "ko": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "10:00",
-     "titel": "Komische Oper Berlin",
-     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/spielzeitfest/1261/"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
    "format": "microdata"
   },
@@ -82,62 +61,45 @@
    ]
   },
   "be": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.berliner-ensemble.de/de/spielplan -> 404",
-    "https://www.berliner-ensemble.de/de/programm -> 404",
-    "https://www.berliner-ensemble.de/kalender -> 404",
-    "https://www.berliner-ensemble.de/de/kalender -> 404",
-    "https://www.berliner-ensemble.de/termine -> 404",
-    "https://www.berliner-ensemble.de/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "Der Hauptmann von Köpenick",
+     "url": "https://www.berliner-ensemble.de/inszenierung/max-hopp-der-hauptmann-von-koepenick"
+    }
+   ],
+   "quelle": "https://www.berliner-ensemble.de/spielplan",
+   "format": "html-time"
   },
   "vb": {
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Okt 2026",
-     "url": "https://www.volksbuehne-berlin.de/#day-2026-10-12"
+     "zeit": "19:00",
+     "titel": "Interfilm 42: Preview",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/interfilm-42/20261012-1700/"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Spooky Paradise",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/spooky-paradise/20261012-1730/"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Perfection",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261012-1800/"
+    },
+    {
+     "titel": "Interfilm 42: Preview",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/interfilm-42/20261012-1700/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
    "format": "html-time"
   },
   "mg": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "13:00",
-     "titel": "FUGE",
-     "ort": "Bühne",
-     "url": "https://gorki-theater.vercel.app/de/fuge"
-    },
-    {
-     "zeit": "13:00",
-     "titel": "Die Rückkehr des Odysseus",
-     "ort": "Rangfoyer",
-     "url": "https://gorki-theater.vercel.app/de/die-rueckkehr-des-odysseus"
-    },
-    {
-     "zeit": "14:00",
-     "titel": "L’atelier d’aquarelle dans l’eau – FUGE",
-     "ort": "Galerie",
-     "url": "https://gorki-theater.vercel.app/de/fuge/l-atelier-d-aquarelle-dans-l-eau"
-    },
-    {
-     "zeit": "16:00",
-     "titel": "Feedback Sessions: Autopilot",
-     "ort": "Außenbereich",
-     "url": "https://gorki-theater.vercel.app/de/feedback-sessions/feedback-sessions-autopilot"
-    },
-    {
-     "zeit": "17:00",
-     "titel": "Feedback Sessions: Autopilot",
-     "ort": "Außenbereich",
-     "url": "https://gorki-theater.vercel.app/de/feedback-sessions/feedback-sessions-autopilot"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.gorki.de/de/spielplan",
    "format": "json-ld"
   },
@@ -181,9 +143,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
+     "zeit": "10:00",
      "titel": "Theater an der Parkaue",
-     "url": "https://www.parkaue.de/spielplan/spielplan/leuchtend-klein-zitronensauer/1919/"
+     "url": "https://www.parkaue.de/spielplan/spielplan/regiert-euch/1918/"
     }
    ],
    "quelle": "https://www.parkaue.de/spielplan/",
@@ -214,32 +176,27 @@
    ]
   },
   "ph": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.berliner-philharmoniker.de/spielplan -> 404",
-    "https://www.berliner-philharmoniker.de/de/spielplan -> 404",
-    "https://www.berliner-philharmoniker.de/programm -> 404",
-    "https://www.berliner-philharmoniker.de/de/programm -> 404",
-    "https://www.berliner-philharmoniker.de/de/kalender -> 404",
-    "https://www.berliner-philharmoniker.de/termine -> 404"
-   ]
-  },
-  "kh": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "15:45",
-     "titel": "OPUS KLASSIK Gala 2026",
-     "url": "https://www.konzerthaus.de/de/programm/opus-klassik-gala-2026/13396"
-    },
-    {
-     "titel": "OPUS KLASSIK Gala 2026",
-     "url": "https://www.konzerthaus.de/de/programm/opus-klassik-gala-2026/13396"
+     "titel": "Mehr lesen",
+     "url": "https://www.berliner-philharmoniker.de/konzerte/kalender/57035/"
     }
    ],
-   "quelle": "https://www.konzerthaus.de/de/programm/11-10-2026",
+   "quelle": "https://www.berliner-philharmoniker.de/",
    "format": "html-time"
+  },
+  "kh": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.konzerthaus.de/spielplan -> 404",
+    "https://www.konzerthaus.de/de/spielplan -> 404",
+    "https://www.konzerthaus.de/kalender -> 404",
+    "https://www.konzerthaus.de/de/kalender -> 404",
+    "https://www.konzerthaus.de/termine -> 404",
+    "https://www.konzerthaus.de/konzerte -> 404"
+   ]
   },
   "pbs": {
    "status": "fehler",
@@ -296,19 +253,8 @@
    ]
   },
   "hh-so": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "14:00",
-     "titel": "Wir bauen eine neue Stadt",
-     "ort": "Staatsoper, Probebühne 3"
-    },
-    {
-     "zeit": "15:00",
-     "titel": "Der Nussknacker",
-     "ort": "Gastspiel in Baden-Baden, Festspielhaus"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.die-hamburgische-staatsoper.de/de",
    "format": "ical"
   },
@@ -348,13 +294,8 @@
    ]
   },
   "m-mk": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "18:00",
-     "titel": "Kammerspiele München: Fünf bis sechs Semmeln und eine kalte Wurst"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
    "format": "ical"
   },
@@ -395,21 +336,16 @@
    ]
   },
   "m-mph": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "11:00",
-     "titel": "»Motus animi continuus«",
-     "url": "https://www.mphil.de/ueber-uns/musikerinnen-und-musiker/details/michael-martin-kofler"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "Nexus",
-     "url": "https://www.mphil.de/konzerte-und-karten/kalender/konzerte/nexus-2026-10-11"
-    }
-   ],
-   "quelle": "https://www.mphil.de/kalender",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.mphil.de/spielplan -> 404",
+    "https://www.mphil.de/de/spielplan -> 404",
+    "https://www.mphil.de/programm -> 404",
+    "https://www.mphil.de/de/programm -> 404",
+    "https://www.mphil.de/de/kalender -> 404",
+    "https://www.mphil.de/termine -> 404"
+   ]
   },
   "m-br": {
    "status": "fehler",
@@ -427,20 +363,12 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Holzfällen",
-     "url": "https://www.burgtheater.at/veranstaltungen/holzfaellen/2026-10-11"
+     "titel": "Auslöschung. Ein Zerfall",
+     "url": "https://www.burgtheater.at/veranstaltungen/ausloeschung-ein-zerfall/2026-10-12"
     },
     {
-     "titel": "Klassenputtel",
-     "url": "https://www.burgtheater.at/veranstaltungen/klassenputtel/2026-10-11"
-    },
-    {
-     "titel": "Isidor",
-     "url": "https://www.burgtheater.at/veranstaltungen/isidor/2026-10-11"
-    },
-    {
-     "titel": "Die Wand",
-     "url": "https://www.burgtheater.at/veranstaltungen/die-wand/2026-10-11"
+     "titel": "Der eingebildete Kranke",
+     "url": "https://www.burgtheater.at/veranstaltungen/der-eingebildete-kranke/2026-10-12"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
@@ -497,14 +425,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Ronja Räubertochter",
-     "url": "https://www.volksoper.at/produktion/ronja-raubertochter-2026.1016099304.de.html"
-    },
-    {
-     "zeit": "18:00",
+     "zeit": "10:00",
      "titel": "Die Zauberflöte",
-     "url": "https://www.volksoper.at/produktion/die-zauberflote-2025.1016916622.de.html"
+     "url": "https://www.volksoper.at/produktion/die-zauberflote-2025.1013794043.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
