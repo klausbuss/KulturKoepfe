@@ -79,7 +79,7 @@ HAEUSER = {
     "w-vt":   ("volkstheater.at", []),
     "w-jos":  ("josefstadt.org", []),
     "w-so":   ("wiener-staatsoper.at", []),
-    "w-sb":   ("wiener-staatsballett.at", []),
+    "w-sb":   None,
     "w-vo":   ("volksoper.at", []),
     "w-tadw": ("theater-wien.at", []),
     "w-kh":   ("konzerthaus.at", []),
@@ -189,38 +189,223 @@ def events_microdata(soup, basis):
         if not st:
             continue
         datum, uhr = zeitpunkt(st.get("content") or st.get("datetime") or st.get_text())
-        name = el.find(attrs={"itemprop": "name"})
-        link = el.find(attrs={"itemprop": "url"}) or el.find("a", href=True)
+        def eigen(prop):
+            for x in el.find_all(attrs={"itemprop": prop}):
+                besitzer = x.find_parent(attrs={"itemscope": True})
+                if besitzer is el or (x is not el and besitzer is None):
+                    return x
+            return None
+        name = eigen("name")
+        link = eigen("url") or el.find("a", href=True)
         if datum and name:
             gefunden.append({"datum": datum, "zeit": uhr, "titel": text(name.get("content") or name.get_text()),
                              "ort": "", "url": urljoin(basis, link.get("href") or link.get("content") or "") if link else ""})
     return gefunden
 
 
-# ---------- Notlösung: <time datetime="..."> im Spielplan ----------
+# ---------- Notlösungen für Spielpläne ohne Standarddaten ----------
+
+MONATE = "Jan|Feb|Mär|Mar|Apr|Mai|Jun|Jul|Aug|Sep|Okt|Oct|Nov|Dez|Dec"
+MONATSNAMEN = ["Jan\\w*", "Feb\\w*", "M(ä|ae|a)r\\w*", "Apr\\w*", "Ma[iy]", "Jun\\w*",
+               "Jul\\w*", "Aug\\w*", "Sep\\w*", "O[ck]t\\w*", "Nov\\w*", "De[zc]\\w*"]
+KEIN_TITEL = re.compile(
+    r"^(\W*|\d{1,2}[.:]\d{2}.*|.*\b(" + MONATE + r")\w*\.? \d{4}|"
+    r"(Mo|Di|Mi|Do|Fr|Sa|So)\.?,? \d.*|((Mo|Di|Mi|Do|Fr|Sa|So)\W*){3,}|"
+    r".*(Uhr|Karten|Tickets?|Merken|Ausverkauft|Restkarten|mehr|Info).*|"
+    r"(Alle )?Termine|Details|Weiterlesen|Zum Stück.*|Zur Produktion.*|Programm|Spielplan)$", re.I)
+ORT_WORTE = re.compile(r"(saal|bühne|foyer|kammer|studio|halle|anfahrt|spielstätte|kaufhaus)", re.I)
+TITEL_KLASSE = re.compile(r"(title|titel|headline|heading|name)", re.I)
+TITEL_KLASSE_STARK = re.compile(r"(title|titel|headline)", re.I)
+DATUM = re.compile(r"\b\d{1,2}\.\s?\d{1,2}\.(\s?\d{2,4})?")
+# 19:30 · 19.30 Uhr · 19 Uhr
+UHRZEIT = re.compile(r"\b([01]?\d|2[0-3]):([0-5]\d)\b"
+                     r"|\b([01]?\d|2[0-3])[.]([0-5]\d)(?=\s*(Uhr|[–-]\s*\d{1,2}[.:]\d{2}\s*Uhr))"
+                     r"|\b([01]?\d|2[0-3])\s*Uhr")
+
+
+def uhrzeit_aus(t, ab=0):
+    for m in UHRZEIT.finditer(t, ab):
+        if m.group(1):
+            return f"{int(m.group(1)):02d}:{m.group(2)}"
+        if m.group(3):
+            return f"{int(m.group(3)):02d}:{m.group(4)}"
+        return f"{int(m.group(6)):02d}:00"
+    return ""
+
+
+NEBENSACHE = re.compile(r"(place|venue|location|ort\b|date|datum|time|zeit|caption|meta|ticket|button)", re.I)
+
+
+def ist_nebensache(x, grenze):
+    """Liegt das Element in einem Orts-, Datums- oder Ticketbereich?"""
+    while x is not None and x is not grenze:
+        if NEBENSACHE.search(" ".join(x.get("class", []))):
+            return True
+        x = x.parent
+    return False
+
+
+def titel_kandidaten(el):
+    """Mögliche Stücktitel in einem Element als (Rang, Text), beste zuerst."""
+    kand = []
+    for x in el.find_all(class_=TITEL_KLASSE):
+        kl = " ".join(x.get("class", [])).lower()
+        if "sub" in kl or "unter" in kl or "venue" in kl or "location" in kl or "place" in kl:
+            continue
+        kand.append((0 if TITEL_KLASSE_STARK.search(kl) else 1, x))
+    for x in el.find_all(["h2", "h3", "h4", "h5"]):
+        kand.append((1, x))
+    for x in el.find_all(["strong", "b"]):
+        kand.append((2, x))
+    for x in el.find_all("a", href=True):
+        if not x["href"].startswith("#") and not ORT_WORTE.search(x["href"]):
+            kand.append((3, x))
+    gesehen, aus = set(), []
+    for rang, x in sorted(kand, key=lambda k: k[0]):
+        if ist_nebensache(x, el):
+            continue
+        t = text(x.get_text())
+        if not t or len(t) < 3 or len(t) > 120 or KEIN_TITEL.match(t) or DATUM.fullmatch(t) or t in gesehen:
+            continue
+        if rang == 3 and ORT_WORTE.search(t) and len(t) < 30:
+            continue
+        gesehen.add(t)
+        aus.append((rang, t))
+    return aus
+
+
+def link_in(el, basis):
+    for a in el.find_all("a", href=True):
+        h = a["href"]
+        if not h.startswith(("#", "mailto:", "tel:")) and not ORT_WORTE.search(h):
+            return urljoin(basis, h)
+    return ""
+
+
+def eintrag_um(start, basis, datum, uhr=""):
+    """Vom Datumselement nach oben gehen, bis genau ein Titel gefunden ist."""
+    el, notbehelf = start, None
+    for _ in range(8):
+        el = el.parent
+        if el is None or el.name in ("body", "html"):
+            break
+        titel = titel_kandidaten(el)
+        if not titel:
+            continue
+        inhalt = el.get_text(" ")
+        # zu weit nach oben gelaufen, wenn mehrere Einträge mit eigener Uhrzeit drin sind
+        if len(set(m.group(0) for m in UHRZEIT.finditer(inhalt))) > 2 and len(titel) > 3:
+            break
+        zeit = uhr
+        if not zeit:
+            # bevorzugt die Uhrzeit nach dem Datum (davor steht oft „Einführung 18:30“)
+            m = DATUM.search(inhalt)
+            zeit = uhrzeit_aus(inhalt, m.end() if m else 0) or uhrzeit_aus(inhalt)
+        if not zeit:
+            # Uhrzeit steht manchmal eine Ebene höher, z. B. in einer Fußzeile des Eintrags
+            hoeher = el.parent
+            for _ in range(2):
+                if hoeher is None:
+                    break
+                zeiten = {m.group(0) for m in UHRZEIT.finditer(hoeher.get_text(" "))}
+                if len(zeiten) > 2:
+                    break
+                if zeiten:
+                    zeit = uhrzeit_aus(hoeher.get_text(" "))
+                    break
+                hoeher = hoeher.parent
+        eintrag = {"datum": datum, "zeit": zeit, "titel": titel[0][1], "ort": "", "url": link_in(el, basis)}
+        if titel[0][0] <= 1:          # Titel aus Klasse oder Überschrift: sicher genug
+            return eintrag
+        notbehelf = notbehelf or eintrag
+    return notbehelf
+
 
 def events_timetags(soup, basis):
     gefunden = []
     for t in soup.find_all("time", attrs={"datetime": True}):
         datum, uhr = zeitpunkt(t["datetime"])
-        if datum != HEUTE:
+        if datum == HEUTE:
+            e = eintrag_um(t, basis, datum, uhr)
+            if e:
+                gefunden.append(e)
+    return gefunden
+
+
+def events_datumstext(soup, basis):
+    """Einträge, bei denen das Datum als Text steht, z. B. „11.10.2026“ oder „So, 11.10.26“."""
+    d = HEUTE
+    monat = MONATSNAMEN[d.month - 1]
+    # „11.10.2026“, „So, 11.10.26“, „So 11/10“, „11/10/26“, „Di | 13. Okt“, „So 11 Okt 2026“, „Di 13 Oktober — 2026“
+    muster = re.compile(
+        r"^\W*((Mo|Di|Mi|Do|Fr|Sa|So|Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*\.?\s*[,|]?\s*)?"
+        r"0?%d\s*(\.\s*0?%d\.|/\s*0?%d\b|\.?\s*(%s))" % (d.day, d.month, d.month, monat), re.I)
+    treffer = []
+    for el in soup.find_all(True):
+        if el.name in ("script", "style", "option", "label", "select", "button", "noscript"):
             continue
-        el, titel, link = t, "", ""
-        for _ in range(5):                      # bis zu 5 Ebenen nach oben suchen
-            el = el.parent
-            if el is None:
-                break
-            kopf = el.find(["h2", "h3", "h4"])
-            a = el.find("a", href=True)
-            if kopf and text(kopf.get_text()):
-                titel = text(kopf.get_text())
-            elif a and len(text(a.get_text())) > 3:
-                titel = text(a.get_text())
-            if titel:
-                link = urljoin(basis, a["href"]) if a else ""
-                break
-        if titel and len(titel) < 150:
-            gefunden.append({"datum": datum, "zeit": uhr, "titel": titel, "ort": "", "url": link})
+        t = text(el.get_text(" "))
+        if len(t) <= 40 and muster.match(t):
+            # Jahr prüfen, falls angegeben
+            jahr = re.search(r"\b(20\d\d)\b|\d{1,2}[./]\s*\d{1,2}[./]\s*(\d{2})\b", t)
+            if jahr and int(next(g for g in jahr.groups() if g)) % 100 != d.year % 100:
+                continue
+            treffer.append(el)
+    # nur die innersten Treffer behalten
+    innerste = [el for el in treffer if not any(x is not el and el in x.parents for x in treffer)]
+    gefunden = []
+    for el in innerste:
+        if el.find_parent(class_=re.compile(r"(filter|calendar-nav|datepicker|month-list|sprung)", re.I)):
+            continue
+        e = eintrag_um(el, basis, d)
+        if e:
+            gefunden.append(e)
+    return gefunden
+
+
+def events_json_eingebettet(soup, basis):
+    """JSON-Daten in data-Attributen oder <script type=application/json> (z. B. Kampnagel, Next.js)."""
+    quellen = [s.string or "" for s in soup.find_all("script", type=re.compile("json"))
+               if s.get("type") != "application/ld+json"]
+    for el in soup.find_all(True):
+        for k, v in el.attrs.items():
+            if k.startswith("data-") and isinstance(v, str) and v[:1] in "{[" and len(v) > 200:
+                quellen.append(v)
+    gefunden = []
+
+    def start_von(o):
+        for k in ("eventStart", "startDate", "start_date", "date_start", "dateStart", "start", "begin", "datetime", "date"):
+            v = o.get(k)
+            if isinstance(v, dict):
+                v = v.get("date")
+            if isinstance(v, str) and re.match(r"\d{4}-\d{2}-\d{2}", v):
+                return v.replace(" ", "T")[:19]
+        return None
+
+    def walk(o):
+        if isinstance(o, list):
+            for x in o:
+                walk(x)
+        elif isinstance(o, dict):
+            st = start_von(o)
+            titel = o.get("title") or o.get("name") or o.get("headline")
+            if st and isinstance(titel, str) and not DATUM.fullmatch(titel.strip()):
+                datum, uhr = zeitpunkt(st)
+                if datum == HEUTE:
+                    unter = o.get("subline") or o.get("subtitle")
+                    t = text(titel) + (f": {text(unter)}" if isinstance(unter, str) and len(text(titel)) < 25 else "")
+                    url = o.get("href") or o.get("url") or o.get("link") or ""
+                    gefunden.append({"datum": datum, "zeit": o.get("time") or uhr, "titel": t,
+                                     "ort": "", "url": urljoin(basis, url) if isinstance(url, str) else ""})
+            for v in o.values():
+                if isinstance(v, (dict, list)):
+                    walk(v)
+
+    for q in quellen:
+        try:
+            walk(json.loads(q))
+        except (json.JSONDecodeError, TypeError):
+            continue
     return gefunden
 
 
@@ -267,6 +452,12 @@ def events_ics(inhalt):
 
 # ---------- pro Haus ----------
 
+def speichere_diagnose(hid, seite):
+    os.makedirs("diagnose", exist_ok=True)
+    with open(f"diagnose/{hid}.html", "w", encoding="utf-8") as f:
+        f.write(f"<!-- {seite[0]} -->\n" + seite[1][:600_000])
+
+
 def abrufen(hid, eintrag):
     web, gezielt = eintrag
     basis = "https://www." + web
@@ -287,8 +478,9 @@ def abrufen(hid, eintrag):
             fehler.append(f"{url} -> {type(e).__name__}")
             continue
         soup = BeautifulSoup(r.text, "html.parser")
-        if erste_seite is None and (url in gezielt or not gezielt):
+        if erste_seite is None:
             erste_seite = (r.url, r.text)
+            speichere_diagnose(hid, erste_seite)
         termine = events_jsonld(soup, r.url)
         quelle = "json-ld"
         if not termine:
@@ -301,23 +493,26 @@ def abrufen(hid, eintrag):
                     quelle = "ical"
                 except (requests.RequestException, PermissionError):
                     continue
-        if not termine:
-            termine = events_timetags(soup, r.url)
-            quelle = "html-time"
+        for name, erkenner in (("json-eingebettet", events_json_eingebettet),
+                               ("html-time", events_timetags),
+                               ("html-datum", events_datumstext)):
+            if termine:
+                break
+            termine = erkenner(soup, r.url)
+            quelle = name
         if termine:
             heute = [t for t in termine if t["datum"] == HEUTE and t["titel"]]
             eindeutig = {}
             for t in sorted(heute, key=lambda t: t["zeit"] or "99"):
                 eindeutig.setdefault((t["titel"], t["zeit"]), t)
+            for t in eindeutig.values():
+                t["titel"] = re.sub(r"^[^:]{3,30}(München|Berlin|Hamburg|Wien):\s*", "", t["titel"])
+                t["titel"] = re.sub(r"\s+[-–]\s+\d{1,2}\.? ?(" + MONATE + r")\w*\.?$", "", t["titel"])
             vorstellungen = [{k: v for k, v in t.items() if k != "datum" and v}
                              for t in eindeutig.values()]
             return {"status": "ok" if vorstellungen else "keine",
                     "vorstellungen": vorstellungen,
                     "quelle": r.url, "format": quelle}
-    if erste_seite:
-        os.makedirs("diagnose", exist_ok=True)
-        with open(f"diagnose/{hid}.html", "w", encoding="utf-8") as f:
-            f.write(f"<!-- {erste_seite[0]} -->\n" + erste_seite[1][:400_000])
     grund = "geladen, aber keine Termindaten erkannt" if erste_seite else "keine Seite erreichbar"
     return {"status": "fehler", "grund": grund, "versuche": fehler[:6]}
 
