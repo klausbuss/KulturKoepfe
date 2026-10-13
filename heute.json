@@ -1,6 +1,6 @@
 {
- "datum": "2026-10-12",
- "stand": "2026-10-12T07:49+02:00",
+ "datum": "2026-10-13",
+ "stand": "2026-10-13T06:12+02:00",
  "haeuser": {
   "so": {
    "status": "ok",
@@ -8,17 +8,17 @@
     {
      "zeit": "11:00",
      "titel": "Kinderkonzert I",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/kinderkonzert-i.27837/#event-154853"
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/kinderkonzert-i.27837/#event-154854"
+    },
+    {
+     "zeit": "17:45",
+     "titel": "Vor-Führung",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/vor-fuehrung.22834/#event-176550"
     },
     {
      "zeit": "19:00",
-     "titel": "Konzert im Pierre Boulez Saal I",
-     "url": "https://www.staatsoper-berlin.de/de/kuenstler/gemma-new.3876/"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Jubiläumsgala der Staatlichen Ballett- und Artistikschule",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/jubilaeumsgala-der-staatlichen-ballett-und-artistikschule.29727/#event-165724"
+     "titel": "Le nozze di Figaro",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/le-nozze-di-figaro.7/#event-153982"
     }
    ],
    "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
@@ -37,8 +37,14 @@
    ]
   },
   "ko": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:00",
+     "titel": "Instru­men­ten­atlas",
+     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/instrumentenatlas/1365/"
+    }
+   ],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
    "format": "microdata"
   },
@@ -52,23 +58,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "17:00",
-     "titel": "Theaterfortbildung für Lehrende: Parzival",
-     "url": "https://www.deutschestheater.de/programm/produktionen/theaterfortbildung-fuer-lehrende-parzival"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Ach, Mom!",
-     "url": "https://www.deutschestheater.de/programm/produktionen/ach-mom"
+     "zeit": "19:00",
+     "titel": "Öffentliche Probe: Die Holländerinnen",
+     "url": "https://www.deutschestheater.de/programm/produktionen/oeffentliche-probe-die-hollaenderinnen"
     },
     {
      "zeit": "20:00",
-     "titel": "Parzival",
-     "url": "https://www.deutschestheater.de/programm/produktionen/parzival"
-    },
-    {
-     "titel": "Sonne und Beton",
-     "url": "https://www.deutschestheater.de/programm/produktionen/sonne-und-beton"
+     "titel": "Wie Grischa mit einer verwegenen Idee beinahe den Weltfrieden auslöste",
+     "url": "https://www.deutschestheater.de/programm/produktionen/wie-grischa-mit-einer-verwegenen-idee-beinahe-den-weltfrieden-ausloeste"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -79,8 +76,8 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Der Hauptmann von Köpenick",
-     "url": "https://www.berliner-ensemble.de/inszenierung/max-hopp-der-hauptmann-von-koepenick"
+     "titel": "Unsere Väter",
+     "url": "https://www.berliner-ensemble.de/inszenierung/unsere-vaeter"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -90,19 +87,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Roter Salon Interfilm 42: Preview",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/interfilm-42/20261012-1700/"
+     "zeit": "17:30",
+     "titel": "Treffpunkt Kassenhalle Theaterführung auf Englisch",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/theaterfuehrung/20261013-1530/"
     },
     {
      "zeit": "19:30",
-     "titel": "Große Bühne Spooky Paradise Philippe Quesne mit dt. und engl. ÜT Audiodeskription Theatertag",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/spooky-paradise/20261012-1730/"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Prater Perfection Nach dem Roman von Vincenzo Latronico Anta Recke Zusatzvorstellung auf Deutsch und Englisch",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261012-1800/"
+     "titel": "Große Bühne Mononoke Satoko Ichihara mit engl. ÜT",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/mononoke/20261013-1730/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
@@ -139,47 +131,52 @@
    ]
   },
   "fp": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.palast.berlin/spielplan -> 404",
-    "https://www.palast.berlin/de/spielplan -> 404",
-    "https://www.palast.berlin/kalender -> 404",
-    "https://www.palast.berlin/de/kalender -> 404",
-    "https://www.palast.berlin/termine -> 404",
-    "https://www.palast.berlin/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "BLINDED by DELIGHT",
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6954"
+    }
+   ],
+   "quelle": "https://www.palast.berlin/",
+   "format": "html-datum"
   },
   "pa": {
    "status": "ok",
    "vorstellungen": [
     {
      "zeit": "10:00",
-     "titel": "Regiert euch!(12+)",
-     "url": "https://www.parkaue.de/spielplan/spielplan/regiert-euch/1918/"
+     "titel": "Wazn Teez?(6+)",
+     "url": "https://www.parkaue.de/spielplan/spielplan/wazn-teez/1917/"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "ON AIR ON FIRE(14+)",
+     "url": "https://www.parkaue.de/spielplan/spielplan/on-air-on-fire/1916/"
     }
    ],
    "quelle": "https://www.parkaue.de/spielplan/",
    "format": "microdata"
   },
   "gr": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.grips-theater.de/programm -> 404",
-    "https://www.grips-theater.de/de/programm -> 404",
-    "https://www.grips-theater.de/kalender -> 404",
-    "https://www.grips-theater.de/de/kalender -> 404",
-    "https://www.grips-theater.de/termine -> 404",
-    "https://www.grips-theater.de/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:00",
+     "titel": "Das Herz eines Boxers",
+     "url": "https://www.grips-theater.de/de/spielplan/das-herz-eines-boxers/3198"
+    }
+   ],
+   "quelle": "https://www.grips-theater.de/de/spielplan",
+   "format": "html-datum"
   },
   "bf": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "22:00",
-     "titel": "Ein Panorama internationaler Tanz-, Theater- und Performanceaufführungen",
+     "zeit": "00:00",
+     "titel": "Marina Abramović: Balkan Erotic Epic. The Stage Version",
      "url": "https://www.berlinerfestspiele.de/programm"
     }
    ],
@@ -187,16 +184,16 @@
    "format": "json-eingebettet"
   },
   "ph": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "20:00",
-     "titel": "QuartettBeethoven-Zyklus mit dem Quatuor Ébène",
-     "url": "https://www.berliner-philharmoniker.de/konzerte/kalender/57035/"
-    }
-   ],
-   "quelle": "https://www.berliner-philharmoniker.de/",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.berliner-philharmoniker.de/spielplan -> 404",
+    "https://www.berliner-philharmoniker.de/de/spielplan -> 404",
+    "https://www.berliner-philharmoniker.de/programm -> 404",
+    "https://www.berliner-philharmoniker.de/de/programm -> 404",
+    "https://www.berliner-philharmoniker.de/de/kalender -> 404",
+    "https://www.berliner-philharmoniker.de/termine -> 404"
+   ]
   },
   "kh": {
    "status": "fehler",
@@ -229,23 +226,28 @@
    "format": "json-ld"
   },
   "hh-sh": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.schauspielhaus.de/de/spielplan -> 404",
-    "https://www.schauspielhaus.de/programm -> 404",
-    "https://www.schauspielhaus.de/de/programm -> 404",
-    "https://www.schauspielhaus.de/kalender -> 404",
-    "https://www.schauspielhaus.de/de/kalender -> 404",
-    "https://www.schauspielhaus.de/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Vampire’s Mountain",
+     "url": "https://schauspielhaus.de/stuecke/vampires-mountain"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "My Personal Ten Years: Wir schaffen das!",
+     "url": "https://schauspielhaus.de/stuecke/my-personal-ten-years-wir-schaffen-das"
+    }
+   ],
+   "quelle": "https://schauspielhaus.de/spielplan",
+   "format": "html-datum"
   },
   "hh-th": {
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Der König stirbt",
-     "url": "https://www.thalia-theater.de/de/stuecke/der-konig-stirbt/298"
+     "titel": "Dschinns",
+     "url": "https://www.thalia-theater.de/de/stuecke/dschinns/340"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
@@ -275,22 +277,22 @@
     {
      "zeit": "11:15",
      "titel": "Funkelkonzert S / Obotaqua",
-     "url": "https://www.elbphilharmonie.de/de/programm/funkelkonzert-s-obotaqua/28298"
+     "url": "https://www.elbphilharmonie.de/de/programm/funkelkonzert-s-obotaqua/28300"
     },
     {
      "zeit": "19:30",
-     "titel": "Sergey Sadovoy",
-     "url": "https://www.elbphilharmonie.de/de/programm/sergey-sadovoy/28960"
+     "titel": "Phil Siemers",
+     "url": "https://www.elbphilharmonie.de/de/programm/phil-siemers/28897"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Igor Levit / Klavierabend",
+     "url": "https://www.elbphilharmonie.de/de/programm/igor-levit-klavierabend/27885"
     },
     {
      "zeit": "20:00",
-     "titel": "Neue Philharmonie Hamburg",
-     "url": "https://www.elbphilharmonie.de/de/programm/neue-philharmonie-hamburg/29091"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Ed O’Brien",
-     "url": "https://www.elbphilharmonie.de/de/programm/ed-obrien/24341"
+     "titel": "Sebastian Knauer / Czech National Symphony Orchestra / John Axelrod",
+     "url": "https://www.elbphilharmonie.de/de/programm/sebastian-knauer-czech-national-symphony-orchestra-john-axelrod/29042"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
@@ -313,30 +315,40 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "König Lear",
-     "url": "https://www.residenztheater.de/stuecke/detail/koenig-lear"
+     "titel": "Die Dreigroschenoper",
+     "url": "https://www.residenztheater.de/stuecke/detail/die-dreigroschenoper"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Alice Hasters: Anti Opfer",
+     "url": "https://www.residenztheater.de/stuecke/detail/anti-opfer"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
    "format": "html-datum"
   },
   "m-mk": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Offene Probe 'Jugend ohne Gott'"
+    }
+   ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
    "format": "ical"
   },
   "m-vt": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.muenchner-volkstheater.de/de/spielplan -> 404",
-    "https://www.muenchner-volkstheater.de/de/programm -> 404",
-    "https://www.muenchner-volkstheater.de/kalender -> 404",
-    "https://www.muenchner-volkstheater.de/de/kalender -> 404",
-    "https://www.muenchner-volkstheater.de/termine -> 404",
-    "https://www.muenchner-volkstheater.de/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "20:00",
+     "titel": "I WANNA CONTACT THE LIVING – Das Gespenstische von Canterville",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/i-wanna-contact-living-das-gespenstische-von-canterville"
+    }
+   ],
+   "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
+   "format": "html-datum"
   },
   "m-bso": {
    "status": "fehler",
@@ -390,12 +402,16 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "19:00",
+     "titel": "Di. Dienstag"
+    },
+    {
      "zeit": "19:30",
-     "titel": "Mo. Montag"
+     "titel": "Di. Dienstag"
     },
     {
      "zeit": "20:00",
-     "titel": "Mo. Montag"
+     "titel": "Di. Dienstag"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
@@ -405,24 +421,19 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "TANGO-SCHNUPPERKURS",
-     "url": "https://www.volkstheater.at/spielstaetten/rote-bar"
+     "zeit": "17:00",
+     "titel": "THEATER TRIFFT BEZIRKE",
+     "url": "https://www.volkstheater.at/spielstaetten/volkstheater-bezirke/vz-floridsdorf"
     },
     {
      "zeit": "19:30",
-     "titel": "STATE OF THE UNION",
+     "titel": "MYTHEN DES ALLTAGS",
      "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
     },
     {
      "zeit": "19:30",
      "titel": "WOYZECK",
-     "url": "https://www.volkstheater.at/spielstaetten/volkstheater-bezirke/vz-praterstern"
-    },
-    {
-     "zeit": "21:30",
-     "titel": "TANGO ARGENTINO",
-     "url": "https://www.volkstheater.at/spielstaetten/rote-bar"
+     "url": "https://www.volkstheater.at/spielstaetten/volkstheater-bezirke/vz-floridsdorf"
     }
    ],
    "quelle": "https://www.volkstheater.at/spielplan/",
@@ -445,12 +456,8 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Eine floren­tinische Tragödie/ Herzog Blaubarts Burg",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/eine-florentinische-tragoedie-herzog-blaubarts-burg/2026-10-12/"
-    },
-    {
-     "titel": "Abo 14",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/die-verkaufte-braut-prodana-nevsta/2025-10-13/"
+     "titel": "Il Barbiere di Siviglia",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/il-barbiere-di-siviglia/2026-10-13/"
     }
    ],
    "quelle": "https://www.wiener-staatsoper.at/kalender/2026/oktober/",
@@ -460,37 +467,41 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "10:00",
-     "titel": "Die Zauberflöte",
-     "url": "https://www.volksoper.at/produktion/die-zauberflote-2025.1013794043.de.html"
+     "zeit": "19:30",
+     "titel": "Willkommen Zuhause!",
+     "url": "https://www.volksoper.at/produktion/willkommen-zuhause-2026.1022591875.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
    "format": "microdata"
   },
   "w-tadw": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.theater-wien.at/spielplan -> 404",
-    "https://www.theater-wien.at/programm -> 404",
-    "https://www.theater-wien.at/kalender -> 404",
-    "https://www.theater-wien.at/termine -> 404",
-    "https://www.theater-wien.at/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "00:00",
+     "titel": "Backstageführung Deutsch"
+    },
+    {
+     "zeit": "00:00",
+     "titel": "Backstage Guided Tour English"
+    }
+   ],
+   "quelle": "https://www.theater-wien.at/de/home",
+   "format": "html-time"
   },
   "w-kh": {
    "status": "ok",
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "Pink Martini",
-     "url": "https://konzerthaus.at/de/programm-und-karten/pink-martini/63565"
+     "titel": "Mario Rom's Interzone",
+     "url": "https://konzerthaus.at/de/programm-und-karten/mario-roms-interzone/63856"
     },
     {
      "zeit": "19:30",
      "titel": "SCHMUSECHOR SOLO",
-     "url": "https://konzerthaus.at/de/programm-und-karten/schmusechor-solo/63582"
+     "url": "https://konzerthaus.at/de/programm-und-karten/schmusechor-solo/64464"
     }
    ],
    "quelle": "https://konzerthaus.at/de/programm-und-karten",
