@@ -485,7 +485,7 @@ function render(){
       <button class="gross u3" data-set='{"bereich":"musik"}'>Musik<small>${anzahl("musik")} Opern, Konzerthäuser und Orchester</small></button>`;
   } else if(!state.haus){
     v = `<h2>${state.bereich==="musik" ? "Welches Haus?" : "Welches Theater?"}</h2>` + `
-      <button class="gross dezent" data-set='{"haus":"alle"}'>Alle Köpfe<small>${leute().length} Leitungspersonen auf einen Blick</small></button>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).map(h=>`
+      <button class="gross dezent" data-set='{"haus":"alle"}'>Alle Köpfe<span aria-hidden="true"> →</span><small>${leute().length} Leitungspersonen auf einen Blick</small></button>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).map(h=>`
       <button class="zeile" data-set='{"haus":"${h.id}"}'>
         <span class="bar" style="background:${SPARTEN[h.sparte]}"></span>
         <span><b>${h.name}</b><small>${h.zusatz ? h.zusatz + ", " : ""}${h.bezirk}</small>${heuteKurz(h.id)}</span>
