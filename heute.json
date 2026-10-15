@@ -1,17 +1,22 @@
 {
- "datum": "2026-10-14",
- "stand": "2026-10-14T06:22+02:00",
+ "datum": "2026-10-15",
+ "stand": "2026-10-15T06:21+02:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "00:00",
-     "titel": "Kinderkonzert I",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/kinderkonzert-i.27837/?spielzeit=2026-2027#event-154853"
+     "zeit": "17:45",
+     "titel": "Vor-Führung",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/vor-fuehrung.22834/#event-176551"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "Le nozze di Figaro",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/le-nozze-di-figaro.7/#event-153983"
     }
    ],
-   "quelle": "https://www.staatsoper-berlin.de/de/",
+   "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
    "format": "html-time"
   },
   "do": {
@@ -43,22 +48,21 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "Alexander Gertz: Im Schatten der Drohnen. Als ukrainischer Sanitäter an der Front",
-     "url": "https://www.deutschestheater.de/programm/produktionen/buchvorstellung-im-schatten-der-drohnen"
+     "titel": "Nora oder Wie man das Herrenhaus kompostiert",
+     "url": "https://www.deutschestheater.de/programm/produktionen/nora-oder-wie-man-das-herrenhaus-kompostiert"
     },
     {
      "zeit": "20:00",
-     "titel": "Sophie Rois fährt gegen die Wand im Deutschen Theater",
-     "url": "https://www.deutschestheater.de/programm/produktionen/sophie-rois-faehrt-gegen-die-wand-im-deutschen-theater"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "P*RN",
-     "url": "https://www.deutschestheater.de/programm/produktionen/porn"
+     "titel": "Männerphantasien",
+     "url": "https://www.deutschestheater.de/programm/produktionen/maennerphantasien"
     },
     {
      "titel": "disconnected",
      "url": "https://www.deutschestheater.de/programm/produktionen/disconnected"
+    },
+    {
+     "titel": "Sonne und Beton",
+     "url": "https://www.deutschestheater.de/programm/produktionen/sonne-und-beton"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -69,8 +73,8 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "RCE",
-     "url": "https://www.berliner-ensemble.de/inszenierung/rce"
+     "titel": "Einblicke: Open Space",
+     "url": "https://www.berliner-ensemble.de/inszenierung/einblicke-open-space"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -80,14 +84,24 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "19:00",
+     "titel": "3. Stock P14: Schwule Nonnen im Kloster Antoni Zawol",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/p14-schwule-nonnen-im-kloster/20261015-1700/"
+    },
+    {
      "zeit": "19:30",
-     "titel": "Große Bühne House of Hopes Rimini Protokoll: Stefan Kaegi, Daniel Wetzel dt. und engl. Tour verfügbar",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/house-of-hopes/20261014-1730/"
+     "titel": "Große Bühne ja nichts ist ok Pollesch/Hinrichs",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/ja-nichts-ist-ok/20261015-1730/"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Roter Salon 20 Minuten mit Olga Hohmann, Ethan Braun und Kristina Kusmina Dreit Lecture Performance",
+     "url": "https://www.volksbuehne-berlin.de/reihen-und-projekte/20-minuten/20-minuten/"
     },
     {
      "zeit": "20:00",
      "titel": "Prater Perfection Nach dem Roman von Vincenzo Latronico Anta Recke auf Deutsch und Englisch",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261014-1800/"
+     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261015-1800/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
@@ -124,34 +138,34 @@
    ]
   },
   "fp": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.palast.berlin/spielplan -> 404",
-    "https://www.palast.berlin/de/spielplan -> 404",
-    "https://www.palast.berlin/kalender -> 404",
-    "https://www.palast.berlin/de/kalender -> 404",
-    "https://www.palast.berlin/termine -> 404",
-    "https://www.palast.berlin/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "BLINDED by DELIGHT",
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6955"
+    }
+   ],
+   "quelle": "https://www.palast.berlin/",
+   "format": "html-datum"
   },
   "pa": {
    "status": "ok",
    "vorstellungen": [
     {
      "zeit": "10:00",
-     "titel": "Wazn Teez?(6+)",
-     "url": "https://www.parkaue.de/spielplan/spielplan/wazn-teez/1915/"
+     "titel": "Pi Pa Poetry Slam(7+)",
+     "url": "https://www.parkaue.de/spielplan/spielplan/pi-pa-poetry-slam/1967/"
     },
     {
-     "zeit": "11:00",
-     "titel": "MannOhMann(12+)",
-     "url": "https://www.parkaue.de/spielplan/spielplan/mannohmann/1914/"
+     "zeit": "10:00",
+     "titel": "leuchtend, klein, zitronensauer(3+)",
+     "url": "https://www.parkaue.de/spielplan/spielplan/leuchtend-klein-zitronensauer/1912/"
     },
     {
-     "zeit": "19:00",
-     "titel": "ON AIR ON FIRE(14+)",
-     "url": "https://www.parkaue.de/spielplan/spielplan/on-air-on-fire/1913/"
+     "zeit": "18:00",
+     "titel": "Antigones Vermächtnis(14+)",
+     "url": "https://www.parkaue.de/spielplan/spielplan/antigones-vermaechtnis/1911/"
     }
    ],
    "quelle": "https://www.parkaue.de/spielplan/",
@@ -163,12 +177,12 @@
     {
      "zeit": "11:00",
      "titel": "Das Herz eines Boxers",
-     "url": "https://www.grips-theater.de/de/spielplan/das-herz-eines-boxers/3205"
+     "url": "https://www.grips-theater.de/de/spielplan/das-herz-eines-boxers/3200"
     },
     {
      "zeit": "17:00",
      "titel": "oh peinlich",
-     "url": "https://www.grips-theater.de/de/spielplan/oh-peinlich/3381"
+     "url": "https://www.grips-theater.de/de/spielplan/oh-peinlich/3113"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
@@ -202,17 +216,12 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "14:00",
-     "titel": "Espresso-Konzert",
-     "url": "https://www.konzerthaus.de/de/programm/espresso-konzert/12488"
-    },
-    {
      "zeit": "20:00",
-     "titel": "Berliner Konzert Chor",
-     "url": "https://www.konzerthaus.de/de/programm/berliner-konzert-chor/13346"
+     "titel": "musica reanimata – Gesprächskonzert",
+     "url": "https://www.konzerthaus.de/de/programm/musica-reanimata-gesprachskonzert/12489"
     }
    ],
-   "quelle": "https://www.konzerthaus.de/de/programm/14-10-2026",
+   "quelle": "https://www.konzerthaus.de/de/programm/15-10-2026",
    "format": "html-time"
   },
   "pbs": {
@@ -231,10 +240,10 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "22:00",
-     "titel": "Debüt im Deutschlandfunk Kultur",
-     "ort": "Philharmonie Berlin, Großer Saal",
-     "url": "https://www.roc-berlin.de/konzerte/debuet-im-deutschlandfunk-kultur-8/concert/227071/"
+     "zeit": "21:30",
+     "titel": "Walser im Wedding – mit Samtblech und Schwark",
+     "ort": "Ballhaus Wedding",
+     "url": "https://www.roc-berlin.de/konzerte/kammerkonzert-im-ballhaus-wedding-8/concert/227871/"
     }
    ],
    "quelle": "https://www.roc-berlin.de/kalender/",
@@ -245,13 +254,13 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "A Perfect Sky",
-     "url": "https://schauspielhaus.de/stuecke/perfect-sky"
+     "titel": "Drosseln",
+     "url": "https://schauspielhaus.de/stuecke/drosseln"
     },
     {
      "zeit": "20:00",
-     "titel": "My Personal Ten Years: Wir schaffen das!",
-     "url": "https://schauspielhaus.de/stuecke/my-personal-ten-years-wir-schaffen-das"
+     "titel": "Minidramen aus der Juke Box",
+     "url": "https://schauspielhaus.de/stuecke/minidramen-aus-der-juke-box"
     }
    ],
    "quelle": "https://schauspielhaus.de/spielplan",
@@ -261,8 +270,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Lesefest Seiteneinsteiger",
-     "url": "https://www.thalia-theater.de/de/stuecke/lesefest-seiteneinsteiger/223"
+     "titel": "Der zerbrochne Krug",
+     "url": "https://www.thalia-theater.de/de/stuecke/der-zerbrochne-krug/172"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
@@ -272,28 +281,17 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "K3 MOVEMENT CLASS",
-     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55020"
+     "zeit": "19:30",
+     "titel": "Ligna: Es war einmal in St. Georg",
+     "url": "https://kampnagel.de/produktionen/kandthecity-ligna-es-war-einmal-in-st-georg"
     }
    ],
    "quelle": "https://kampnagel.de/kalender",
    "format": "json-eingebettet"
   },
   "hh-so": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "13:30",
-     "titel": "Führung durch die Staatsoper",
-     "ort": "Staatsoper, Treffpunkt: Bühneneingang"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "A Cinderella Story",
-     "ort": "Staatsoper, Großes Haus"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.die-hamburgische-staatsoper.de/de",
    "format": "ical"
   },
@@ -302,35 +300,47 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "NDR Kammerkonzert / Leif Ove Andsnes"
+     "titel": "Symphoniker Hamburg / Edgar Moreau / Anna Rakitina",
+     "url": "https://www.elbphilharmonie.de/de/programm/symphoniker-hamburg-edgar-moreau-anna-rakitina/28054"
     },
     {
      "zeit": "20:00",
-     "titel": "Igor Levit / Klavierabend",
-     "url": "https://www.elbphilharmonie.de/de/programm/igor-levit-klavierabend/27889"
+     "titel": "NDR Elbphilharmonie Orchester / Leif Ove Andsnes / Alan Gilbert",
+     "url": "https://www.elbphilharmonie.de/de/programm/ndr-elbphilharmonie-orchester-leif-ove-andsnes-alan-gilbert/27830"
+    },
+    {
+     "zeit": "20:30",
+     "titel": "BENSH47",
+     "url": "https://www.elbphilharmonie.de/de/programm/bensh47/28644"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
    "format": "html-time"
   },
   "hh-ndr": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:30",
-     "titel": "Klavierquintette mit Leif Ove Andsnes"
-    }
-   ],
-   "quelle": "https://www.ndr.de/orchester_chor/elbphilharmonieorchester/konzerte",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.ndr.de/spielplan -> 404",
+    "https://www.ndr.de/de/spielplan -> 404",
+    "https://www.ndr.de/programm -> 404",
+    "https://www.ndr.de/de/programm -> 404",
+    "https://www.ndr.de/kalender -> 404",
+    "https://www.ndr.de/de/kalender -> 404"
+   ]
   },
   "m-resi": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Ein sanfter Tod",
-     "url": "https://www.residenztheater.de/stuecke/detail/ein-sanfter-tod"
+     "zeit": "19:30",
+     "titel": "Cabaret",
+     "url": "https://www.residenztheater.de/stuecke/detail/cabaret"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Bernarda Albas Haus",
+     "url": "https://www.residenztheater.de/stuecke/detail/bernarda-albas-haus"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
@@ -340,12 +350,12 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Offene Probe 'Münchner Verkehr'"
+     "zeit": "19:30",
+     "titel": "Oft wollte ich weglaufen, nie habe ich es getan."
     },
     {
      "zeit": "20:00",
-     "titel": "Suchers Leidenschaften: Ödön von Horváth"
+     "titel": "Edgar Selge: Juras letzter Winter"
     }
    ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
@@ -355,9 +365,14 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "19:30",
+     "titel": "Was ihr wollt",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/was-ihr-wollt"
+    },
+    {
      "zeit": "20:00",
-     "titel": "I WANNA CONTACT THE LIVING – Das Gespenstische von Canterville",
-     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/i-wanna-contact-living-das-gespenstische-von-canterville"
+     "titel": "Andreas Bönte Buchpräsentation mit Gespräch",
+     "url": "https://www.muenchner-volkstheater.de/programm/extra/andreas-boente"
     }
    ],
    "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
@@ -388,16 +403,16 @@
    ]
   },
   "m-mph": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.mphil.de/spielplan -> 404",
-    "https://www.mphil.de/de/spielplan -> 404",
-    "https://www.mphil.de/programm -> 404",
-    "https://www.mphil.de/de/programm -> 404",
-    "https://www.mphil.de/de/kalender -> 404",
-    "https://www.mphil.de/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "18:30",
+     "titel": "1. Jugendkonzert",
+     "url": "https://www.mphil.de/ueber-uns/musikerinnen-und-musiker/details/anja-bihlmaier"
+    }
+   ],
+   "quelle": "https://www.mphil.de/kalender",
+   "format": "html-time"
   },
   "m-br": {
    "status": "fehler",
@@ -416,11 +431,15 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Mi. Mittwoch"
+     "titel": "Do. Donnerstag"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Do. Donnerstag"
     },
     {
      "zeit": "20:00",
-     "titel": "Mi. Mittwoch"
+     "titel": "Do. Donnerstag"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
@@ -430,8 +449,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "KOMÖDIE MIT BANKÜBERFALL",
+     "zeit": "18:30",
+     "titel": "DIE ANKUNFT",
      "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
     }
    ],
@@ -439,24 +458,26 @@
    "format": "html-datum"
   },
   "w-jos": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.josefstadt.org/spielplan -> 404",
-    "https://www.josefstadt.org/de/spielplan -> 404",
-    "https://www.josefstadt.org/de/programm -> 404",
-    "https://www.josefstadt.org/kalender -> 404",
-    "https://www.josefstadt.org/de/kalender -> 404",
-    "https://www.josefstadt.org/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "Letzte Runde (Last Call)"
+    }
+   ],
+   "quelle": "https://www.josefstadt.org/start.html",
+   "format": "html-datum"
   },
   "w-so": {
    "status": "ok",
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Carmen",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/carmen/2026-10-14/"
+     "titel": "Die Entführung aus dem Serail",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/die-entfuehrung-aus-dem-serail/2026-10-15/"
+    },
+    {
+     "titel": "Abo 18",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/otello/2025-09-04/"
     }
    ],
    "quelle": "https://www.wiener-staatsoper.at/kalender/2026/oktober/",
@@ -467,8 +488,8 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "La bohème",
-     "url": "https://www.volksoper.at/produktion/la-boheme-1980.1014434975.de.html"
+     "titel": "Die Zauberflöte",
+     "url": "https://www.volksoper.at/produktion/die-zauberflote-2025.1014663512.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
@@ -479,7 +500,7 @@
    "vorstellungen": [
     {
      "zeit": "00:00",
-     "titel": "Klangstreich – Eine Note tanzt aus der ReiheMarc L. Vogler"
+     "titel": "Unterwegs mit dem Arnold Schoenberg ChorFührung"
     }
    ],
    "quelle": "https://www.theater-wien.at/de/home",
@@ -489,19 +510,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "12:30",
-     "titel": "Roman Borisov, Klavier",
-     "url": "https://konzerthaus.at/de/programm-und-karten/roman-borisov-klavier/63825"
-    },
-    {
      "zeit": "19:30",
-     "titel": "esperanza spalding / Clark Rundell / Tineke Postma / Leo Genovese / Terri Lyne Carrington",
-     "url": "https://konzerthaus.at/de/programm-und-karten/esperanza-spalding-clark-rundell-tineke-postma-leo-genovese-terri-lyne-carrington/63834"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Galakonzert 30 Jahre Live Music Now",
-     "url": "https://konzerthaus.at/de/programm-und-karten/galakonzert-30-jahre-live-music-now/64408"
+     "titel": "Barcelona Gipsy balKan Orchestra",
+     "url": "https://konzerthaus.at/de/programm-und-karten/barcelona-gipsy-balkan-orchestra/63974"
     }
    ],
    "quelle": "https://konzerthaus.at/de/programm-und-karten",
@@ -520,13 +531,14 @@
   },
   "w-sym": {
    "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
+   "grund": "keine Seite erreichbar",
    "versuche": [
-    "https://www.wienersymphoniker.at/spielplan -> 404",
-    "https://www.wienersymphoniker.at/de/spielplan -> 404",
-    "https://www.wienersymphoniker.at/programm -> 404",
-    "https://www.wienersymphoniker.at/termine -> 404",
-    "https://www.wienersymphoniker.at/konzerte -> 404"
+    "https://www.wienersymphoniker.at/spielplan -> 429",
+    "https://www.wienersymphoniker.at/de/spielplan -> 429",
+    "https://www.wienersymphoniker.at/programm -> 429",
+    "https://www.wienersymphoniker.at/de/programm -> 429",
+    "https://www.wienersymphoniker.at/kalender -> 429",
+    "https://www.wienersymphoniker.at/de/kalender -> 429"
    ]
   }
  }
