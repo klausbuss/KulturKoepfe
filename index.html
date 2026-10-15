@@ -351,40 +351,47 @@ const PREISE = {
       [2018,"Rückkehr nach Reims","Thomas Ostermeier","Theatertreffen-Einladung"]]}
 };
 
-const WIKI = new Set([...Object.values(KUENSTLER).flatMap(k=>[...k.regie,...k.ensemble].map(x=>x[0])),"Elisabeth Sobotka","Aviel Cahn","Susanne Moser","Philip Bröking","Christian Spuck",
-  "Iris Laufenberg","Oliver Reese","Matthias Lilienthal","Çağla Ilk","Thomas Ostermeier",
-  "Annemie Vanackere","Berndt Schmidt","Alexander Riemenschneider","Matthias Pees","Christian Thielemann",
-  "Maxime Pascal","Michele Spotti","James Gaffigan","Andrea Zietzschmann","Kirill Petrenko","Joana Mallwitz",
-  "Kazuki Yamada","Vladimir Jurowski","Daniel Barenboim",
-  "Karin Beier","Sonja Anders","Tobias Kratzer","Omer Meir Wellber","Lloyd Riggins","Christoph Lieben-Seutter","Alan Gilbert",
-  "Andreas Beck","Barbara Mundel","Christian Stückl","Serge Dorny","Laurent Hilaire","Josef E. Köpplinger","Lahav Shani","Simon Rattle",
-  "Stefan Bachmann","Jan Philipp Gloger","Marie Rötzer","Bogdan Roščić","Alessandra Ferri","Lotte de Beer","Stefan Herheim",
-  "Matthias Naske","Stephan Pauly","Petr Popelka","Amelie Deuflhard","Jörg Ratjen"]);
-// Schutz gegen Namensvettern: Artikel muss einen Bühnenbezug haben
-const BUEHNE = /Intendant|Theater|Oper|Ballett|Choreogra|Regisseur|Dramaturg|Kulturmanager|Bühne|Schauspiel|Performance|Dirigent|Orchester|Festspiele/i;
+// Fotos werden für alle Personen gesucht: erst in der deutschen, dann in der englischen
+// Wikipedia, zuletzt über Wikidata (Bild-Eigenschaft P18). Alle Quellen verweisen auf
+// frei lizenzierte Bilder in Wikimedia Commons.
+// Schutz gegen Namensvettern: Artikel oder Wikidata-Beschreibung muss einen Bühnenbezug haben
+const BUEHNE = /Intendant|Theat|Oper|Ballet|Choreogra|Regisseur|Director|Dramaturg|Kulturmanager|Bühne|Stage|Schauspiel|Actor|Actress|Performance|Perform|Dirigent|Conductor|Orchest|Festspiele|Festival|Musiker|Musician|Komponist|Composer|Tänzer|Dancer|Sänger|Singer|Filmemacher|Filmmaker/i;
 const initialen = n => n.split(/\s+/).map(w=>w[0]).filter(Boolean).slice(0,2).join("");
 const bilder = {};
+const holeJSON = url => fetch(url).then(r=>r.ok ? r.json() : null).catch(()=>null);
+
+async function ausWikipedia(name, sprache){
+  const d = await holeJSON(`https://${sprache}.wikipedia.org/api/rest_v1/page/summary/` + encodeURIComponent(name.replace(/ /g,"_")));
+  if(!d || d.type!=="standard" || !d.thumbnail || !BUEHNE.test((d.description||"") + " " + (d.extract||""))) return null;
+  return {src:d.thumbnail.source, datei:decodeURIComponent((d.originalimage||d.thumbnail).source.split("/").pop())};
+}
+
+async function ausWikidata(name){
+  const api = "https://www.wikidata.org/w/api.php?format=json&origin=*&";
+  const s = await holeJSON(api + "action=wbsearchentities&type=item&language=de&uselang=de&limit=7&search=" + encodeURIComponent(name));
+  const passend = (s?.search||[]).filter(e=>(e.label||"").toLowerCase()===name.toLowerCase() && BUEHNE.test(e.description||""));
+  if(!passend.length) return null;
+  const d = await holeJSON(api + "action=wbgetentities&props=claims&ids=" + passend.map(e=>e.id).join("|"));
+  for(const e of passend){
+    const datei = d?.entities?.[e.id]?.claims?.P18?.[0]?.mainsnak?.datavalue?.value;
+    if(datei) return {src:"https://commons.wikimedia.org/wiki/Special:FilePath/" + encodeURIComponent(datei) + "?width=330", datei};
+  }
+  return null;
+}
 
 async function ladeBild(name){
-  if(!WIKI.has(name)) return null;
   if(name in bilder) return bilder[name];
-  bilder[name] = null;
-  try{
-    const r = await fetch("https://de.wikipedia.org/api/rest_v1/page/summary/" + encodeURIComponent(name.replace(/ /g,"_")));
-    if(!r.ok) return null;
-    const d = await r.json();
-    if(d.type!=="standard" || !d.thumbnail || !BUEHNE.test(d.extract||"")) return null;
-    const datei = decodeURIComponent((d.originalimage||d.thumbnail).source.split("/").pop());
-    const bild = {src:d.thumbnail.source, seite:"https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(datei), autor:"", lizenz:""};
-    try{
-      const m = await fetch("https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&prop=imageinfo&iiprop=extmetadata&titles=File:" + encodeURIComponent(datei)).then(x=>x.json());
-      const meta = Object.values(m.query.pages)[0].imageinfo?.[0]?.extmetadata || {};
-      const tmp = document.createElement("div"); tmp.innerHTML = meta.Artist?.value || "";
-      bild.autor = tmp.textContent.trim();
-      bild.lizenz = meta.LicenseShortName?.value || "";
-    }catch(e){}
-    return bilder[name] = bild;
-  }catch(e){ return null; }
+  return bilder[name] = (async()=>{
+    const fund = await ausWikipedia(name,"de") || await ausWikipedia(name,"en") || await ausWikidata(name);
+    if(!fund) return null;
+    const bild = {src:fund.src, seite:"https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(fund.datei), autor:"", lizenz:""};
+    const m = await holeJSON("https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&prop=imageinfo&iiprop=extmetadata&titles=File:" + encodeURIComponent(fund.datei));
+    const meta = Object.values(m?.query?.pages||{})[0]?.imageinfo?.[0]?.extmetadata || {};
+    const tmp = document.createElement("div"); tmp.innerHTML = meta.Artist?.value || "";
+    bild.autor = tmp.textContent.trim();
+    bild.lizenz = meta.LicenseShortName?.value || "";
+    return bild;
+  })();
 }
 
 function zeigeBilder(hausId){
