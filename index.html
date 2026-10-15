@@ -24,6 +24,8 @@
   .gross{display:block;width:calc(100% - 36px);margin:0 18px 12px;padding:26px 20px;text-align:left;font:inherit;font-stretch:62%;font-weight:900;font-size:48px;line-height:1;color:#fff;background:#000;border:0;cursor:pointer}
   .gross small{display:block;font-stretch:100%;font-weight:400;font-size:15px;margin-top:8px;opacity:.85}
   .gross.u6{background:var(--u6)} .gross.u9{background:var(--u9)} .gross.u3{background:var(--u3)}
+  .gross.dezent{background:none;color:#000;font-stretch:70%;font-size:26px;padding:4px 0 14px;border-bottom:1px solid var(--linie)}
+  .gross.dezent small{color:var(--grau);opacity:1;font-size:14px;margin-top:4px}
   .zeile{display:grid;grid-template-columns:8px 1fr;gap:14px;width:100%;padding:14px 18px;border:0;border-bottom:1px solid var(--linie);background:none;text-align:left;font:inherit;color:inherit;cursor:pointer}
   .zeile .bar{border-radius:2px}
   .zeile b{font-stretch:80%;font-size:21px;font-weight:800;display:block;line-height:1.15}
@@ -483,7 +485,7 @@ function render(){
       <button class="gross u3" data-set='{"bereich":"musik"}'>Musik<small>${anzahl("musik")} Opern, Konzerthäuser und Orchester</small></button>`;
   } else if(!state.haus){
     v = `<h2>${state.bereich==="musik" ? "Welches Haus?" : "Welches Theater?"}</h2>` + `
-      <button class="gross u6" data-set='{"haus":"alle"}'>Alle Köpfe<small>${leute().length} Leitungspersonen auf einen Blick</small></button>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).map(h=>`
+      <button class="gross dezent" data-set='{"haus":"alle"}'>Alle Köpfe<small>${leute().length} Leitungspersonen auf einen Blick</small></button>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).map(h=>`
       <button class="zeile" data-set='{"haus":"${h.id}"}'>
         <span class="bar" style="background:${SPARTEN[h.sparte]}"></span>
         <span><b>${h.name}</b><small>${h.zusatz ? h.zusatz + ", " : ""}${h.bezirk}</small>${heuteKurz(h.id)}</span>
