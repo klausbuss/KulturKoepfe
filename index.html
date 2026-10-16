@@ -255,6 +255,7 @@ const intendanz = [
   ["b-mfn","Johannes Vogel","Generaldirektor","Seit 2012 Generaldirektor, zugleich Professor an der Humboldt-Universität."],
   ["b-kw","Emma Enderby","Direktorin","Seit April 2024 Direktorin, Nachfolgerin von Krist Gruijthuijsen."],
   ["b-hkw","Bonaventure Soh Bejeng Ndikung","Intendant","Kurator, seit 2023 Intendant des Hauses der Kulturen der Welt."],
+  ["b-hkw","Nele Warthemann","Künstlerische Koordination","Koordiniert die künstlerische Arbeit am Haus der Kulturen der Welt.","fotos/nele-warthemann.jpg"],
   ["b-gb","Jenny Schlenzka","Direktorin","Seit September 2023 Direktorin, Nachfolgerin von Stephanie Rosenthal. Zuvor Leiterin von Performance Space New York."],
   ["b-fut","Stefan Brandt","Direktor","Seit 2017 Direktor des Futuriums. Wechselt im Januar 2027 als Generaldirektor zur Stiftung Oper in Berlin."],
   ["hh-kh","Alexander Klar","Direktor","Seit August 2019 Direktor, zuvor Direktor des Museums Wiesbaden."],
@@ -288,7 +289,7 @@ const intendanz = [
   ["w-wm","Matti Bunzl","Direktor","Seit 2015 Direktor, führte das Haus durch den Umbau am Karlsplatz."],
   ["w-tmw","Peter Aufreiter","Generaldirektor","Seit 2020 Generaldirektor, zweite Amtszeit bis 2030."],
   ["w-wmw","Claudia Banz","Direktorin","Seit Februar 2025 Direktorin, Nachfolgerin von Jonathan Fine."]
-].map(([h,name,rolle,bio])=>({haus:h,name,rolle,bio}));
+].map(([h,name,rolle,bio,foto])=>({haus:h,name,rolle,bio,foto}));
 
 // Personen, für die ein Foto im deutschen Wikipedia-Artikel gesucht wird.
 // Alle anderen bekommen Initialen. Bilder in der deutschen Wikipedia sind frei lizenziert.
@@ -479,6 +480,8 @@ async function ausWikidata(name){
 async function ladeBild(name){
   if(name in bilder) return bilder[name];
   return bilder[name] = (async()=>{
+    const eigen = intendanz.find(p=>p.name===name && p.foto);   // Foto liegt im Repo
+    if(eigen) return {src:eigen.foto, seite:"", autor:"", lizenz:"", eigen:true};
     const fund = await ausWikipedia(name,"de") || await ausWikipedia(name,"en") || await ausWikidata(name);
     if(!fund) return null;
     const bild = {src:fund.src, seite:"https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(fund.datei), autor:"", lizenz:""};
@@ -499,6 +502,7 @@ function zeigeBilder(hausId){
     img.alt = "Foto von " + el.dataset.name;
     img.onload = ()=>{
       el.querySelector(".portrait").append(img);
+      if(bild.eigen) return;
       const c = document.createElement("small"); c.className = "credit";
       const a = document.createElement("a"); a.href = bild.seite; a.target = "_blank"; a.rel = "noopener";
       a.textContent = "Foto: " + [bild.autor, bild.lizenz].filter(Boolean).join(", ") + (bild.autor||bild.lizenz ? "" : "Wikimedia Commons");
