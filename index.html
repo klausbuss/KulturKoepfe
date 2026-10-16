@@ -15,8 +15,9 @@
   h1{font-stretch:62%;font-weight:900;font-size:56px;line-height:.85;letter-spacing:-.5px}
   h1 span{display:block}
   .sub{color:var(--grau);font-size:14px;margin-top:8px}
-  .stadtwahl{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:14px;color:var(--grau)}
-  .stadtwahl select{font:inherit;font-weight:800;font-size:18px;color:#000;background:var(--papier);border:1.5px solid #000;border-radius:20px;padding:6px 14px;cursor:pointer}
+  .stadtwahl{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .stadtwahl button{font:inherit;font-weight:800;font-size:16px;color:#000;background:var(--papier);border:1.5px solid #000;border-radius:20px;padding:5px 14px;cursor:pointer}
+  .stadtwahl button[aria-pressed="true"]{background:#000;color:#fff}
   .pfad{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;padding:14px 18px 0;font-size:14px;color:var(--grau)}
   .pfad button{font:inherit;color:#000;background:none;border:0;text-decoration:underline;cursor:pointer;padding:2px 0}
   .zurueck{font:inherit;font-weight:700;background:none;border:1.5px solid #000;border-radius:20px;padding:4px 12px;cursor:pointer;margin-right:4px;color:#000;text-decoration:none!important}
@@ -25,6 +26,7 @@
   .gross small{display:block;font-stretch:100%;font-weight:400;font-size:15px;margin-top:8px;opacity:.85}
   .gross.u6{background:var(--u6)} .gross.u9{background:var(--u9)} .gross.u3{background:var(--u3)}
   .gross.dezent{background:none;color:#000;font-stretch:70%;font-size:26px;padding:4px 0 14px;border-bottom:1px solid var(--linie)}
+  .gross.dezent.oben{margin-top:18px}
   .gross.dezent small{color:var(--grau);opacity:1;font-size:14px;margin-top:4px}
   .zeile{display:grid;grid-template-columns:8px 1fr;gap:14px;width:100%;padding:14px 18px;border:0;border-bottom:1px solid var(--linie);background:none;text-align:left;font:inherit;color:inherit;cursor:pointer}
   .zeile .bar{border-radius:2px}
@@ -73,9 +75,9 @@
 <body>
 <div class="app">
   <header><h1><span>Kultur</span><span>köpfe</span></h1>
-    <label class="stadtwahl"><span>Stadt</span>
-      <select id="stadt"><option value="berlin">Berlin</option><option value="hamburg">Hamburg</option><option value="muenchen">München</option><option value="wien">Wien</option></select>
-    </label>
+    <div class="stadtwahl" id="stadt" role="group" aria-label="Stadt">
+      <button data-stadt="berlin" aria-pressed="true">Berlin</button><button data-stadt="hamburg" aria-pressed="false">Hamburg</button><button data-stadt="muenchen" aria-pressed="false">München</button><button data-stadt="wien" aria-pressed="false">Wien</button>
+    </div>
     <p class="sub" id="sub"></p></header>
   <nav class="pfad" id="pfad" aria-label="Pfad"></nav>
   <main id="view"></main>
@@ -417,7 +419,7 @@ const state = {stadt:"berlin", bereich:null, haus:null};
 const $ = id => document.getElementById(id);
 const schritte = () => [
   state.bereich && {label:BEREICHE[state.bereich], reset:{bereich:null,haus:null}},
-  state.haus && {label: state.haus==="alle" ? "Alle Köpfe" : haus(state.haus).name, reset:{haus:null}}
+  state.haus && {label: state.haus==="alle" ? "Übersicht" : haus(state.haus).name, reset:{haus:null}}
 ].filter(Boolean);
 
 function personHTML([name,info],farbe){
@@ -474,6 +476,7 @@ const anzahl = b => HAEUSER.filter(h=>imOrt(h) && h.bereich===b).length;
 const leute = () => intendanz.filter(p=>{const h=haus(p.haus); return imOrt(h) && h.bereich===state.bereich;});
 
 function render(){
+  document.querySelectorAll("[data-stadt]").forEach(b=>b.setAttribute("aria-pressed", b.dataset.stadt===state.stadt));
   $("sub").textContent = `Die öffentlichen Bühnen ${STAEDTE[state.stadt]} und wer sie leitet`;
   const s = schritte();
   $("pfad").innerHTML = s.length ? `<button class="zurueck" data-zurueck>Zurück</button>` +
@@ -484,14 +487,15 @@ function render(){
       <button class="gross" data-set='{"bereich":"theater"}'>Theater<small>${anzahl("theater")} öffentliche Bühnen</small></button>
       <button class="gross u3" data-set='{"bereich":"musik"}'>Musik<small>${anzahl("musik")} Opern, Konzerthäuser und Orchester</small></button>`;
   } else if(!state.haus){
-    v = `<h2>${state.bereich==="musik" ? "Welches Haus?" : "Welches Theater?"}</h2>` + `
-      <button class="gross dezent" data-set='{"haus":"alle"}'><span aria-hidden="true">→ </span>Alle Köpfe auf einen Blick<small>${leute().length} Leitungspersonen</small></button>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).map(h=>`
+    v = `
+      <button class="gross dezent oben" data-set='{"haus":"alle"}'><span aria-hidden="true">→ </span>Übersicht<small>${leute().length} Leitungspersonen</small></button>
+      <h2>${state.bereich==="musik" ? "Die Häuser:" : "Die Theater:"}</h2>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).map(h=>`
       <button class="zeile" data-set='{"haus":"${h.id}"}'>
         <span class="bar" style="background:${SPARTEN[h.sparte]}"></span>
         <span><b>${h.name}</b><small>${h.zusatz ? h.zusatz + ", " : ""}${h.bezirk}</small>${heuteKurz(h.id)}</span>
       </button>`).join("");
   } else if(state.haus==="alle"){
-    v = `<h2>Alle Köpfe ${BEREICHE[state.bereich]}</h2><div class="raster">` + leute().map(p=>{
+    v = `<h2>Übersicht ${BEREICHE[state.bereich]}</h2><div class="raster">` + leute().map(p=>{
       const h = haus(p.haus);
       return `<div class="karte" data-name="${p.name}">
         <div class="portrait" style="background:${SPARTEN[h.sparte]}" aria-hidden="true">${initialen(p.name)}</div>
@@ -515,16 +519,13 @@ function render(){
 
 document.addEventListener("click", ev=>{
   const t = ev.target.closest("button"); if(!t) return;
-  if(t.dataset.set) Object.assign(state, JSON.parse(t.dataset.set));
+  if(t.dataset.stadt) Object.assign(state, {stadt:t.dataset.stadt, bereich:null, haus:null});
+  else if(t.dataset.set) Object.assign(state, JSON.parse(t.dataset.set));
   else if(t.hasAttribute("data-zurueck")){ const s = schritte(); Object.assign(state, s[s.length-1].reset); }
   else if(t.dataset.schritt){ const s = schritte(), i = +t.dataset.schritt; if(s[i+1]) Object.assign(state, s[i+1].reset); }
   else return;
   render(); window.scrollTo(0,0);
   const f = document.querySelector("main button, main a"); if(f) f.focus({preventScroll:true});
-});
-$("stadt").addEventListener("change", e=>{
-  Object.assign(state, {stadt:e.target.value, bereich:null, haus:null});
-  render(); window.scrollTo(0,0);
 });
 render();
 </script>
