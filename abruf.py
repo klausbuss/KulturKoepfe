@@ -108,6 +108,8 @@ MUSEEN = {
     "b-mfn": ("museumfuernaturkunde.berlin", ["https://www.museumfuernaturkunde.berlin/de/museum/ausstellungen"]),
     "b-kw":  ("kw-berlin.de", ["https://www.kw-berlin.de/"]),
     "b-hkw": ("hkw.de", ["https://www.hkw.de/programm"]),
+    "b-gb":  ("berlinerfestspiele.de", ["https://www.berlinerfestspiele.de/gropius-bau/programm/ausstellungen"]),
+    "b-fut": ("futurium.de", ["https://futurium.de/de/ausstellung"]),
     # Hamburg
     "hh-kh":    ("hamburger-kunsthalle.de", ["https://www.hamburger-kunsthalle.de/ausstellungen"]),
     "hh-mkg":   ("mkg-hamburg.de", ["https://www.mkg-hamburg.de/ausstellungen"]),
