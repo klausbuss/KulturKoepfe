@@ -540,8 +540,14 @@ let HEUTE = null;
 const esc = t => String(t||"").replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const heuteISO = () => new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Berlin"}).format(new Date());
 const heute = id => HEUTE && HEUTE[id];
+const datumKurz = iso => new Date(iso+"T12:00:00").toLocaleDateString("de-DE",{day:"numeric",month:"long",year:"numeric"});
 function heuteKurz(id){
   const h = heute(id); if(!h) return "";
+  if(h.ausstellungen){
+    if(h.status!=="ok") return "";
+    const a = h.ausstellungen[0], mehr = h.ausstellungen.length-1;
+    return `<span class="heute-kurz">Aktuell: ${esc(a.titel)}${mehr>0 ? " (+"+mehr+")" : ""}</span>`;
+  }
   if(h.status==="keine") return `<span class="heute-kurz">Heute keine Vorstellung</span>`;
   if(h.status!=="ok") return "";
   const v = h.vorstellungen[0], mehr = h.vorstellungen.length-1;
@@ -549,6 +555,12 @@ function heuteKurz(id){
 }
 function heuteBlock(id){
   const h = heute(id); if(!h) return "";
+  if(h.ausstellungen){
+    if(h.status!=="ok") return "";
+    return `<div class="heute"><h4>Aktuelle Ausstellungen</h4><ul>` + h.ausstellungen.map(a=>`
+      <li><b>${a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.titel)}</a>` : esc(a.titel)}</b>
+      <span>bis ${datumKurz(a.bis)}</span></li>`).join("") + `</ul></div>`;
+  }
   if(h.status==="keine") return `<div class="heute leer"><h4>Heute läuft</h4><ul><li><span>Heute keine Vorstellung</span></li></ul></div>`;
   if(h.status!=="ok") return "";
   return `<div class="heute"><h4>Heute läuft</h4><ul>` + h.vorstellungen.map(v=>`

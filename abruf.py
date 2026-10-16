@@ -6,8 +6,11 @@ Liest die Spielplanseiten der Häuser und sucht dort nach strukturierten
 Termindaten: schema.org-Events (JSON-LD) oder iCal-Dateien (.ics).
 Das Ergebnis landet in heute.json, die die App beim Öffnen lädt.
 
+Für die Museen werden die Ausstellungsseiten gelesen und die Ausstellungen
+gesammelt, die heute laufen (Beginn bis Ende umfasst das heutige Datum).
+
 Häuser, bei denen nichts gefunden wird, bekommen den Status "fehler".
-Die App zeigt dann einfach nur den Spielplan-Link an.
+Die App zeigt dann einfach nur den Spielplan- bzw. Ausstellungslink an.
 """
 import datetime as dt
 import html
@@ -85,6 +88,59 @@ HAEUSER = {
     "w-kh":   ("konzerthaus.at", []),
     "w-mv":   ("musikverein.at", []),
     "w-sym":  ("wienersymphoniker.at", []),
+}
+
+# Museen: id: (Website, [gezielte Ausstellungsadressen]), None = nicht abrufen
+SMB = "https://www.smb.museum/museen-einrichtungen/"
+AUSSTELLUNGS_PFADE = ["/ausstellungen", "/de/ausstellungen", "/ausstellungen/aktuell",
+                      "/exhibitions", "/en/exhibitions", "/programm", "/"]
+MUSEEN = {
+    # Berlin
+    "b-nm":  ("smb.museum", [SMB + "neues-museum/ausstellungen/aktuell/"]),
+    "b-pm":  None,                       # wegen Sanierung geschlossen
+    "b-ang": ("smb.museum", [SMB + "alte-nationalgalerie/ausstellungen/aktuell/"]),
+    "b-nng": ("smb.museum", [SMB + "neue-nationalgalerie/ausstellungen/aktuell/"]),
+    "b-gg":  ("smb.museum", [SMB + "gemaeldegalerie/ausstellungen/aktuell/"]),
+    "b-hbf": ("smb.museum", [SMB + "hamburger-bahnhof/ausstellungen/aktuell/"]),
+    "b-hf":  ("humboldtforum.org", ["https://www.humboldtforum.org/de/ausstellungen/"]),
+    "b-jmb": ("jmberlin.de", ["https://www.jmberlin.de/ausstellungen"]),
+    "b-dhm": ("dhm.de", ["https://www.dhm.de/ausstellungen/"]),
+    "b-mfn": ("museumfuernaturkunde.berlin", ["https://www.museumfuernaturkunde.berlin/de/museum/ausstellungen"]),
+    "b-kw":  ("kw-berlin.de", ["https://www.kw-berlin.de/"]),
+    "b-hkw": ("hkw.de", ["https://www.hkw.de/programm"]),
+    # Hamburg
+    "hh-kh":    ("hamburger-kunsthalle.de", ["https://www.hamburger-kunsthalle.de/ausstellungen"]),
+    "hh-mkg":   ("mkg-hamburg.de", ["https://www.mkg-hamburg.de/ausstellungen"]),
+    "hh-dth":   ("deichtorhallen.de", ["https://www.deichtorhallen.de/de/ausstellungen"]),
+    "hh-bkf":   ("buceriuskunstforum.de", ["https://www.buceriuskunstforum.de/ausstellungen"]),
+    "hh-markk": ("markk-hamburg.de", ["https://markk-hamburg.de/ausstellungen/"]),
+    "hh-mhg":   None,                    # wegen Modernisierung geschlossen
+    "hh-am":    ("shmh.de", ["https://www.shmh.de/altonaer-museum/ausstellungen/"]),
+    "hh-amh":   ("amh.de", ["https://amh.de/ausstellungen/"]),
+    "hh-imm":   ("imm-hamburg.de", ["https://imm-hamburg.de/ausstellungen/"]),
+    "hh-mda":   ("shmh.de", ["https://www.shmh.de/museum-der-arbeit/ausstellungen/"]),
+    # München
+    "m-ap":  ("pinakothek.de", ["https://www.pinakothek.de/de/alte-pinakothek/ausstellungen"]),
+    "m-pdm": ("pinakothek.de", ["https://www.pinakothek.de/de/pinakothek-der-moderne/ausstellungen"]),
+    "m-mb":  ("museum-brandhorst.de", ["https://www.museum-brandhorst.de/ausstellungen/"]),
+    "m-lb":  ("lenbachhaus.de", ["https://www.lenbachhaus.de/entdecken/ausstellungen"]),
+    "m-dm":  ("deutsches-museum.de", ["https://www.deutsches-museum.de/museumsinsel/ausstellungen"]),
+    "m-bnm": ("bayerisches-nationalmuseum.de", ["https://www.bayerisches-nationalmuseum.de/ausstellungen"]),
+    "m-hdk": ("hausderkunst.de", ["https://hausderkunst.de/ausstellungen"]),
+    "m-gly": ("antike-am-koenigsplatz.mwn.de", ["https://antike-am-koenigsplatz.mwn.de/"]),
+    "m-m5k": ("museum-fuenf-kontinente.de", ["https://www.museum-fuenf-kontinente.de/ausstellungen/"]),
+    "m-nsd": ("nsdoku.de", ["https://www.nsdoku.de/ausstellungen"]),
+    # Wien
+    "w-khm":   ("khm.at", ["https://www.khm.at/besuchen/ausstellungen/"]),
+    "w-alb":   ("albertina.at", ["https://www.albertina.at/ausstellungen/"]),
+    "w-bel":   ("belvedere.at", ["https://www.belvedere.at/ausstellungen"]),
+    "w-leo":   ("leopoldmuseum.org", ["https://www.leopoldmuseum.org/de/ausstellungen"]),
+    "w-mumok": ("mumok.at", ["https://www.mumok.at/de/ausstellungen"]),
+    "w-mak":   ("mak.at", ["https://www.mak.at/ausstellungen"]),
+    "w-nhm":   ("nhm.at", ["https://www.nhm.at/ausstellungen"]),
+    "w-wm":    ("wienmuseum.at", ["https://www.wienmuseum.at/ausstellungen"]),
+    "w-tmw":   ("technischesmuseum.at", ["https://www.technischesmuseum.at/ausstellungen"]),
+    "w-wmw":   ("weltmuseumwien.at", ["https://www.weltmuseumwien.at/ausstellungen/"]),
 }
 
 sitzung = requests.Session()
@@ -450,6 +506,155 @@ def events_ics(inhalt):
     return gefunden
 
 
+# ---------- Ausstellungen (Museen) ----------
+
+def ausstellungen_jsonld(soup, basis):
+    """schema.org-Events (z. B. ExhibitionEvent) mit Beginn und Ende."""
+    gefunden = []
+
+    def durchgehen(obj):
+        if isinstance(obj, list):
+            for x in obj:
+                durchgehen(x)
+        elif isinstance(obj, dict):
+            typ = obj.get("@type", [])
+            typ = [typ] if isinstance(typ, str) else typ
+            if any(isinstance(t, str) and t.endswith("Event") for t in typ):
+                von, _ = zeitpunkt(obj.get("startDate"))
+                bis, _ = zeitpunkt(obj.get("endDate"))
+                if bis:
+                    gefunden.append({"titel": text(obj.get("name")), "von": von, "bis": bis,
+                                     "url": urljoin(basis, obj["url"]) if isinstance(obj.get("url"), str) else ""})
+            for v in obj.values():
+                if isinstance(v, (dict, list)):
+                    durchgehen(v)
+
+    for tag in soup.find_all("script", type="application/ld+json"):
+        try:
+            durchgehen(json.loads(tag.string or tag.get_text() or ""))
+        except (json.JSONDecodeError, TypeError):
+            continue
+    return gefunden
+
+
+MONAT_NR = [re.compile(r"^" + m + r"$", re.I) for m in MONATSNAMEN]
+# 12.10.2026 · 12.10. · 12. Oktober 2026 · 12 Oct 2026 · 12. Okt.
+EIN_DATUM = re.compile(r"(\d{1,2})\.?\s*(?:(\d{1,2})\.|([A-Za-zÄÖÜäöü]{3,10})\.?)\s*((?:19|20)\d\d(?!\d)|\d\d(?![\d:.]))?")
+STRICH = re.compile(r"^\s*(?:[–—-]|bis|to|until)\s*$", re.I)
+
+
+def monat_aus(wort):
+    for i, m in enumerate(MONAT_NR):
+        if m.match(wort):
+            return i + 1
+    return None
+
+
+def daten_im_text(t):
+    """Alle Datumsangaben im Text als (start, ende, tag, monat, jahr oder None)."""
+    aus = []
+    for m in EIN_DATUM.finditer(t):
+        tag = int(m.group(1))
+        monat = int(m.group(2)) if m.group(2) else monat_aus(m.group(3))
+        if not monat or not 1 <= monat <= 12 or not 1 <= tag <= 31:
+            continue
+        jahr = m.group(4)
+        jahr = (2000 + int(jahr) if len(jahr) == 2 else int(jahr)) if jahr else None
+        aus.append((m.start(), m.end(), tag, monat, jahr))
+    return aus
+
+
+def datum_bauen(tag, monat, jahr):
+    try:
+        return dt.date(jahr, monat, tag)
+    except ValueError:
+        return None
+
+
+def zeitraum_aus(t):
+    """„10.10.2026 – 12.1.2027“, „10. Okt. – 12. Jan. 2027“, „bis 12.01.2027“ -> (von, bis)."""
+    daten = daten_im_text(t)
+    for i in range(len(daten) - 1):
+        a, b = daten[i], daten[i + 1]
+        if b[4] and STRICH.match(t[a[1]:b[0]]):
+            bis = datum_bauen(b[2], b[3], b[4])
+            von = datum_bauen(a[2], a[3], a[4] or b[4])
+            if von and bis and von > bis and not a[4]:
+                von = datum_bauen(a[2], a[3], b[4] - 1)
+            if von and bis and von <= bis:
+                return von, bis
+    for d in daten:
+        if d[4] and re.search(r"\b(bis|until|through|noch bis)\s*$", t[:d[0]], re.I):
+            bis = datum_bauen(d[2], d[3], d[4])
+            if bis:
+                return None, bis
+    return None, None
+
+
+def ausstellungen_html(soup, basis):
+    """Elemente mit Zeitraum suchen und den Titel der Ausstellung daneben finden."""
+    treffer = []
+    for el in soup.find_all(True):
+        if el.name in ("script", "style", "option", "select", "noscript", "head", "title"):
+            continue
+        t = text(el.get_text(" "))
+        if not t or len(t) > 80:
+            continue
+        von, bis = zeitraum_aus(t)
+        if bis:
+            treffer.append((el, von, bis))
+    elemente = [x[0] for x in treffer]
+    gefunden = []
+    for el, von, bis in treffer:
+        if any(x is not el and x in el.descendants for x in elemente):
+            continue        # nur die innersten Treffer
+        if el.find_parent(["footer", "nav"]) or el.find_parent(class_=re.compile(r"(footer|opening|oeffnung|hours)", re.I)):
+            continue
+        e = eintrag_um(el, basis, bis)
+        if e:
+            gefunden.append({"titel": e["titel"], "von": von, "bis": bis, "url": e["url"]})
+    return gefunden
+
+
+def ausstellungen_abrufen(hid, eintrag):
+    web, gezielt = eintrag
+    basis = "https://www." + web
+    kandidaten = list(dict.fromkeys(gezielt + [basis.rstrip("/") + p for p in AUSSTELLUNGS_PFADE]))
+    fehler, erste_seite = [], None
+    for url in kandidaten:
+        try:
+            r = laden(url)
+        except PermissionError:
+            fehler.append(f"{url} -> robots.txt verbietet Abruf")
+            continue
+        except requests.HTTPError as e:
+            fehler.append(f"{url} -> {e.response.status_code if e.response is not None else '?'}")
+            continue
+        except requests.RequestException as e:
+            fehler.append(f"{url} -> {type(e).__name__}")
+            continue
+        soup = BeautifulSoup(r.text, "html.parser")
+        if erste_seite is None:
+            erste_seite = (r.url, r.text)
+            speichere_diagnose(hid, erste_seite)
+        liste, quelle = ausstellungen_jsonld(soup, r.url), "json-ld"
+        if not liste:
+            liste, quelle = ausstellungen_html(soup, r.url), "html-zeitraum"
+        if not liste:
+            continue
+        aktuell, gesehen = [], set()
+        for a in sorted(liste, key=lambda a: a["bis"]):
+            if not a["titel"] or a["titel"] in gesehen or a["bis"] < HEUTE or (a["von"] and a["von"] > HEUTE):
+                continue
+            gesehen.add(a["titel"])
+            aktuell.append({k: (v.isoformat() if isinstance(v, dt.date) else v)
+                            for k, v in a.items() if v})
+        return {"status": "ok" if aktuell else "keine", "ausstellungen": aktuell[:8],
+                "quelle": r.url, "format": quelle}
+    grund = "geladen, aber keine Ausstellungsdaten erkannt" if erste_seite else "keine Seite erreichbar"
+    return {"status": "fehler", "grund": grund, "versuche": fehler[:6]}
+
+
 # ---------- pro Haus ----------
 
 def speichere_diagnose(hid, seite):
@@ -534,6 +739,20 @@ def main():
         if res["status"] == "fehler":
             info += "  |  " + "; ".join(res.get("versuche", [])[:3])
         print(f"{hid:8} {res['status']:7} {info[:90]}", flush=True)
+
+    for hid, eintrag in MUSEEN.items():
+        if eintrag is None:
+            continue
+        try:
+            res = ausstellungen_abrufen(hid, eintrag)
+        except Exception as e:  # ein Museum darf nie den ganzen Lauf stoppen
+            res = {"status": "fehler", "grund": f"{type(e).__name__}: {e}"}
+        ergebnis["haeuser"][hid] = res
+        info = (", ".join(a["titel"] + " (bis " + a["bis"] + ")" for a in res.get("ausstellungen", []))
+                or res.get("grund", "keine laufende Ausstellung"))
+        if res["status"] == "fehler":
+            info += "  |  " + "; ".join(res.get("versuche", [])[:3])
+        print(f"{hid:8} {res['status']:7} {info[:110]}", flush=True)
 
     with open("heute.json", "w", encoding="utf-8") as f:
         json.dump(ergebnis, f, ensure_ascii=False, indent=1)
