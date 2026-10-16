@@ -228,7 +228,7 @@ const intendanz = [
   ["m-gp","Josef E. Köpplinger","Staatsintendant","Seit 2012/13 Staatsintendant des Gärtnerplatztheaters, Vertrag bis 2030."],
   ["m-mph","Lahav Shani","Chefdirigent","Seit September 2026 Chefdirigent der Münchner Philharmoniker, Nachfolger von Waleri Gergijew."],
   ["m-br","Simon Rattle","Chefdirigent","Seit 2023/24 Chefdirigent von Symphonieorchester und Chor des BR."],
-  ["w-burg","Stefan Bachmann","Direktor","Schweizer Regisseur, seit 2024/25 Direktor des Burgtheaters, Nachfolger von Martin Kušej. 2026/27 ist seine dritte Saison. Von 2013 bis 2024 war er inszenierender Intendant des Schauspiel Köln.","fotos/stefan-bachmann.jpg","Bernhard Holub, CC BY-SA 4.0"],
+  ["w-burg","Stefan Bachmann","Direktor","Schweizer Regisseur, seit 2024/25 Direktor des Burgtheaters, Nachfolger von Martin Kušej. 2026/27 ist seine dritte Saison. Von 2013 bis 2024 war er inszenierender Intendant des Schauspiel Köln.","fotos/stefan-bachmann.jpg","Dromedar 61, CC BY-SA 4.0","https://commons.wikimedia.org/wiki/File:Wiener_Festwochen_2025_Stefan_Bachmann_Burgtheater_BHO-2249.jpg"],
   ["w-vt","Jan Philipp Gloger","Künstlerischer Direktor","Seit September 2025, Nachfolger von Kay Voges."],
   ["w-jos","Marie Rötzer","Künstlerische Leiterin","Seit September 2026 Direktorin, Nachfolgerin von Herbert Föttinger. Zuvor Intendantin in St. Pölten."],
   ["w-so","Bogdan Roščić","Direktor","Seit Juli 2020 Direktor der Wiener Staatsoper."],
@@ -289,7 +289,7 @@ const intendanz = [
   ["w-wm","Matti Bunzl","Direktor","Seit 2015 Direktor, führte das Haus durch den Umbau am Karlsplatz."],
   ["w-tmw","Peter Aufreiter","Generaldirektor","Seit 2020 Generaldirektor, zweite Amtszeit bis 2030."],
   ["w-wmw","Claudia Banz","Direktorin","Seit Februar 2025 Direktorin, Nachfolgerin von Jonathan Fine."]
-].map(([h,name,rolle,bio,foto,credit])=>({haus:h,name,rolle,bio,foto,credit}));
+].map(([h,name,rolle,bio,foto,credit,fotoseite])=>({haus:h,name,rolle,bio,foto,credit,fotoseite}));
 
 // Personen, für die ein Foto im deutschen Wikipedia-Artikel gesucht wird.
 // Alle anderen bekommen Initialen. Bilder in der deutschen Wikipedia sind frei lizenziert.
@@ -482,7 +482,7 @@ async function ladeBild(name){
   return bilder[name] = (async()=>{
     const eigen = intendanz.find(p=>p.name===name && p.foto);   // Foto liegt im Repo
     if(eigen?.foto==="-") return null;   // bewusst kein Foto (Suche lieferte das falsche)
-    if(eigen) return {src:eigen.foto, seite:"", autor:eigen.credit, lizenz:"", eigen:true};
+    if(eigen) return {src:eigen.foto, seite:eigen.fotoseite||"", autor:eigen.credit, lizenz:"", eigen:true};
     const fund = await ausWikipedia(name,"de") || await ausWikipedia(name,"en") || await ausWikidata(name);
     if(!fund) return null;
     const bild = {src:fund.src, seite:"https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(fund.datei), autor:"", lizenz:""};
@@ -506,7 +506,7 @@ function zeigeBilder(hausId){
       if(bild.eigen && !bild.autor) return;   // eigenes Foto ohne Nachweis: keine Zeile
       const c = document.createElement("small"); c.className = "credit";
       const txt = "Foto: " + [bild.autor, bild.lizenz].filter(Boolean).join(", ") + (bild.autor||bild.lizenz ? "" : "Wikimedia Commons");
-      if(bild.eigen) c.textContent = txt;
+      if(bild.eigen && !bild.seite) c.textContent = txt;
       else {
         const a = document.createElement("a"); a.href = bild.seite; a.target = "_blank"; a.rel = "noopener";
         a.textContent = txt; c.append(a);
