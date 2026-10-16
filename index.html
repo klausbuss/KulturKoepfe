@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
 <style>
   :root{--beton:#E4E4E0;--papier:#F7F7F5;--schwarz:#000;--grau:#5E5E5A;--linie:#C9C9C4;
-    --u2:#DA421E;--u3:#16683D;--u5:#7E5330;--u6:#8C6DAB;--u7:#528DBA;--u9:#F3791D}
+    --u2:#DA421E;--u3:#16683D;--u5:#7E5330;--u6:#8C6DAB;--u7:#528DBA;--u9:#F3791D;--u8:#224F86}
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:"Archivo",Arial,sans-serif;background:var(--beton);color:#000;font-size:16px;line-height:1.45}
   .app{max-width:480px;margin:0 auto;min-height:100vh;background:var(--papier);padding-bottom:40px}
@@ -24,7 +24,7 @@
   h2{padding:22px 18px 10px;font-stretch:70%;font-weight:900;font-size:32px;line-height:1.05}
   .gross{display:block;width:calc(100% - 36px);margin:0 18px 12px;padding:26px 20px;text-align:left;font:inherit;font-stretch:62%;font-weight:900;font-size:48px;line-height:1;color:#fff;background:#000;border:0;cursor:pointer}
   .gross small{display:block;font-stretch:100%;font-weight:400;font-size:15px;margin-top:8px;opacity:.85}
-  .gross.u6{background:var(--u6)} .gross.u9{background:var(--u9)} .gross.u3{background:var(--u3)}
+  .gross.u6{background:var(--u6)} .gross.u9{background:var(--u9)} .gross.u3{background:var(--u3)} .gross.u8{background:var(--u8)}
   .gross.dezent{background:none;color:#000;font-stretch:70%;font-size:26px;padding:4px 0 14px;border-bottom:1px solid var(--linie)}
   .gross.dezent.oben{margin-top:18px}
   .gross.dezent small{color:var(--grau);opacity:1;font-size:14px;margin-top:4px}
@@ -84,8 +84,8 @@
   <p class="stand">Stand Oktober 2026</p>
 </div>
 <script>
-const SPARTEN = {"Theater":"var(--u6)","Festival":"var(--u2)","Oper":"var(--u3)","Tanz":"var(--u7)","Konzert":"var(--u5)"};
-const BEREICHE = {theater:"Theater", musik:"Musik"};
+const SPARTEN = {"Theater":"var(--u6)","Festival":"var(--u2)","Oper":"var(--u3)","Tanz":"var(--u7)","Konzert":"var(--u5)","Museum":"var(--u8)"};
+const BEREICHE = {theater:"Theater", musik:"Musik", museen:"Museen"};
 const HAEUSER = [
   {stadt:"berlin",id:"so",bereich:"musik",name:"Staatsoper Unter den Linden",sparte:"Oper",bezirk:"Mitte",c:[13.3955,52.5165],web:"staatsoper-berlin.de"},
   {stadt:"berlin",id:"do",bereich:"musik",name:"Deutsche Oper Berlin",sparte:"Oper",bezirk:"Charlottenburg-Wilmersdorf",c:[13.3087,52.5121],web:"deutscheoperberlin.de"},
@@ -130,6 +130,48 @@ const HAEUSER = [
   {stadt:"wien",id:"w-kh",bereich:"musik",name:"Wiener Konzerthaus",sparte:"Konzert",bezirk:"Landstraße",c:[16.3790,48.2012],web:"konzerthaus.at"},
   {stadt:"wien",id:"w-mv",bereich:"musik",name:"Musikverein Wien",zusatz:"Gesellschaft der Musikfreunde, privater Träger",sparte:"Konzert",bezirk:"Innere Stadt",c:[16.3726,48.2006],web:"musikverein.at"},
   {stadt:"wien",id:"w-sym",bereich:"musik",name:"Wiener Symphoniker",sparte:"Konzert",bezirk:"Innere Stadt",c:null,web:"wienersymphoniker.at"}
+  ,{stadt:"berlin",id:"b-nm",bereich:"museen",name:"Neues Museum",zusatz:"Ägyptisches Museum und Museum für Vor- und Frühgeschichte",sparte:"Museum",bezirk:"Mitte",c:[13.398,52.52],web:"smb.museum/museen-einrichtungen/neues-museum"}
+  ,{stadt:"berlin",id:"b-pm",bereich:"museen",name:"Pergamonmuseum",zusatz:"wegen Sanierung geschlossen, Teilöffnung am 4. Juni 2027",sparte:"Museum",bezirk:"Mitte",c:[13.3966,52.5212],web:"smb.museum/museen-einrichtungen/pergamonmuseum"}
+  ,{stadt:"berlin",id:"b-ang",bereich:"museen",name:"Alte Nationalgalerie",zusatz:"Museumsinsel",sparte:"Museum",bezirk:"Mitte",c:[13.3982,52.5208],web:"smb.museum/museen-einrichtungen/alte-nationalgalerie"}
+  ,{stadt:"berlin",id:"b-nng",bereich:"museen",name:"Neue Nationalgalerie",zusatz:"Kulturforum",sparte:"Museum",bezirk:"Mitte",c:[13.3672,52.5069],web:"smb.museum/museen-einrichtungen/neue-nationalgalerie"}
+  ,{stadt:"berlin",id:"b-gg",bereich:"museen",name:"Gemäldegalerie",zusatz:"Kulturforum",sparte:"Museum",bezirk:"Mitte",c:[13.366,52.5085],web:"smb.museum/museen-einrichtungen/gemaeldegalerie"}
+  ,{stadt:"berlin",id:"b-hbf",bereich:"museen",name:"Hamburger Bahnhof",zusatz:"Nationalgalerie der Gegenwart",sparte:"Museum",bezirk:"Mitte",c:[13.372,52.5284],web:"smb.museum/museen-einrichtungen/hamburger-bahnhof"}
+  ,{stadt:"berlin",id:"b-hf",bereich:"museen",name:"Humboldt Forum",zusatz:"im Berliner Schloss",sparte:"Museum",bezirk:"Mitte",c:[13.4022,52.5175],web:"humboldtforum.org"}
+  ,{stadt:"berlin",id:"b-jmb",bereich:"museen",name:"Jüdisches Museum Berlin",sparte:"Museum",bezirk:"Kreuzberg",c:[13.3953,52.502],web:"jmberlin.de"}
+  ,{stadt:"berlin",id:"b-dhm",bereich:"museen",name:"Deutsches Historisches Museum",zusatz:"Zeughaus",sparte:"Museum",bezirk:"Mitte",c:[13.3969,52.5178],web:"dhm.de"}
+  ,{stadt:"berlin",id:"b-mfn",bereich:"museen",name:"Museum für Naturkunde",sparte:"Museum",bezirk:"Mitte",c:[13.3794,52.5302],web:"museumfuernaturkunde.berlin"}
+  ,{stadt:"berlin",id:"b-kw",bereich:"museen",name:"KW Institute for Contemporary Art",sparte:"Museum",bezirk:"Mitte",c:[13.3956,52.5272],web:"kw-berlin.de"}
+  ,{stadt:"berlin",id:"b-hkw",bereich:"museen",name:"Haus der Kulturen der Welt",sparte:"Museum",bezirk:"Mitte",c:[13.365,52.5186],web:"hkw.de"}
+  ,{stadt:"hamburg",id:"hh-kh",bereich:"museen",name:"Hamburger Kunsthalle",sparte:"Museum",bezirk:"St. Georg",c:[10.0028,53.5555],web:"hamburger-kunsthalle.de"}
+  ,{stadt:"hamburg",id:"hh-mkg",bereich:"museen",name:"Museum für Kunst und Gewerbe",zusatz:"MK&G",sparte:"Museum",bezirk:"St. Georg",c:[10.009,53.551],web:"mkg-hamburg.de"}
+  ,{stadt:"hamburg",id:"hh-dth",bereich:"museen",name:"Deichtorhallen",zusatz:"Halle für aktuelle Kunst, Haus der Photographie",sparte:"Museum",bezirk:"Altstadt",c:[10.0055,53.5485],web:"deichtorhallen.de"}
+  ,{stadt:"hamburg",id:"hh-bkf",bereich:"museen",name:"Bucerius Kunst Forum",zusatz:"privater Träger",sparte:"Museum",bezirk:"Altstadt",c:[9.993,53.5505],web:"buceriuskunstforum.de"}
+  ,{stadt:"hamburg",id:"hh-markk",bereich:"museen",name:"MARKK – Museum am Rothenbaum",zusatz:"Kulturen und Künste der Welt",sparte:"Museum",bezirk:"Rotherbaum",c:[9.9855,53.5655],web:"markk-hamburg.de"}
+  ,{stadt:"hamburg",id:"hh-mhg",bereich:"museen",name:"Museum für Hamburgische Geschichte",zusatz:"wegen Modernisierung geschlossen",sparte:"Museum",bezirk:"Neustadt",c:[9.9735,53.5515],web:"shmh.de"}
+  ,{stadt:"hamburg",id:"hh-am",bereich:"museen",name:"Altonaer Museum",sparte:"Museum",bezirk:"Altona",c:[9.9365,53.549],web:"shmh.de"}
+  ,{stadt:"hamburg",id:"hh-amh",bereich:"museen",name:"Archäologisches Museum Hamburg",sparte:"Museum",bezirk:"Harburg",c:[9.983,53.461],web:"amh.de"}
+  ,{stadt:"hamburg",id:"hh-imm",bereich:"museen",name:"Internationales Maritimes Museum",zusatz:"privater Träger, Peter Tamm Sen. Stiftung",sparte:"Museum",bezirk:"HafenCity",c:[9.999,53.5435],web:"imm-hamburg.de",hinweis:"Die Stiftung nennt öffentlich keine Museumsleitung. Ich ergänze sie, sobald sie sich belegen lässt."}
+  ,{stadt:"hamburg",id:"hh-mda",bereich:"museen",name:"Museum der Arbeit und Deutsches Hafenmuseum",zusatz:"Hafenmuseum im Aufbau",sparte:"Museum",bezirk:"Barmbek",c:[10.0445,53.583],web:"shmh.de"}
+  ,{stadt:"muenchen",id:"m-ap",bereich:"museen",name:"Alte Pinakothek",zusatz:"Bayerische Staatsgemäldesammlungen",sparte:"Museum",bezirk:"Maxvorstadt",c:[11.57,48.1483],web:"pinakothek.de"}
+  ,{stadt:"muenchen",id:"m-pdm",bereich:"museen",name:"Pinakothek der Moderne",zusatz:"Bayerische Staatsgemäldesammlungen",sparte:"Museum",bezirk:"Maxvorstadt",c:[11.572,48.147],web:"pinakothek.de"}
+  ,{stadt:"muenchen",id:"m-mb",bereich:"museen",name:"Museum Brandhorst",zusatz:"Bayerische Staatsgemäldesammlungen",sparte:"Museum",bezirk:"Maxvorstadt",c:[11.5743,48.1483],web:"museum-brandhorst.de"}
+  ,{stadt:"muenchen",id:"m-lb",bereich:"museen",name:"Lenbachhaus",zusatz:"Städtische Galerie",sparte:"Museum",bezirk:"Maxvorstadt",c:[11.5636,48.1468],web:"lenbachhaus.de"}
+  ,{stadt:"muenchen",id:"m-dm",bereich:"museen",name:"Deutsches Museum",zusatz:"Museumsinsel",sparte:"Museum",bezirk:"Au-Haidhausen",c:[11.5834,48.1299],web:"deutsches-museum.de"}
+  ,{stadt:"muenchen",id:"m-bnm",bereich:"museen",name:"Bayerisches Nationalmuseum",sparte:"Museum",bezirk:"Altstadt-Lehel",c:[11.5913,48.143],web:"bayerisches-nationalmuseum.de"}
+  ,{stadt:"muenchen",id:"m-hdk",bereich:"museen",name:"Haus der Kunst",sparte:"Museum",bezirk:"Altstadt-Lehel",c:[11.5857,48.144],web:"hausderkunst.de"}
+  ,{stadt:"muenchen",id:"m-gly",bereich:"museen",name:"Glyptothek und Antikensammlungen",zusatz:"am Königsplatz",sparte:"Museum",bezirk:"Maxvorstadt",c:[11.5658,48.1465],web:"antike-am-koenigsplatz.mwn.de"}
+  ,{stadt:"muenchen",id:"m-m5k",bereich:"museen",name:"Museum Fünf Kontinente",sparte:"Museum",bezirk:"Altstadt-Lehel",c:[11.588,48.138],web:"museum-fuenf-kontinente.de"}
+  ,{stadt:"muenchen",id:"m-nsd",bereich:"museen",name:"NS-Dokumentationszentrum",sparte:"Museum",bezirk:"Maxvorstadt",c:[11.568,48.145],web:"nsdoku.de"}
+  ,{stadt:"wien",id:"w-khm",bereich:"museen",name:"Kunsthistorisches Museum",sparte:"Museum",bezirk:"Innere Stadt",c:[16.3617,48.2038],web:"khm.at"}
+  ,{stadt:"wien",id:"w-alb",bereich:"museen",name:"Albertina",sparte:"Museum",bezirk:"Innere Stadt",c:[16.3683,48.2047],web:"albertina.at"}
+  ,{stadt:"wien",id:"w-bel",bereich:"museen",name:"Belvedere",sparte:"Museum",bezirk:"Landstraße",c:[16.3809,48.1916],web:"belvedere.at"}
+  ,{stadt:"wien",id:"w-leo",bereich:"museen",name:"Leopold Museum",zusatz:"Privatstiftung im MuseumsQuartier",sparte:"Museum",bezirk:"Neubau",c:[16.3592,48.2025],web:"leopoldmuseum.org"}
+  ,{stadt:"wien",id:"w-mumok",bereich:"museen",name:"mumok",zusatz:"Museum moderner Kunst, MuseumsQuartier",sparte:"Museum",bezirk:"Neubau",c:[16.358,48.2035],web:"mumok.at"}
+  ,{stadt:"wien",id:"w-mak",bereich:"museen",name:"MAK – Museum für angewandte Kunst",sparte:"Museum",bezirk:"Innere Stadt",c:[16.381,48.2075],web:"mak.at"}
+  ,{stadt:"wien",id:"w-nhm",bereich:"museen",name:"Naturhistorisches Museum",sparte:"Museum",bezirk:"Innere Stadt",c:[16.36,48.2052],web:"nhm.at"}
+  ,{stadt:"wien",id:"w-wm",bereich:"museen",name:"Wien Museum",zusatz:"am Karlsplatz",sparte:"Museum",bezirk:"Wieden",c:[16.3718,48.199],web:"wienmuseum.at"}
+  ,{stadt:"wien",id:"w-tmw",bereich:"museen",name:"Technisches Museum Wien",sparte:"Museum",bezirk:"Penzing",c:[16.3176,48.1906],web:"technischesmuseum.at"}
+  ,{stadt:"wien",id:"w-wmw",bereich:"museen",name:"Weltmuseum Wien",sparte:"Museum",bezirk:"Innere Stadt",c:[16.3653,48.2058],web:"weltmuseumwien.at"}
 ];
 const haus = id => HAEUSER.find(h=>h.id===id);
 const intendanz = [
@@ -194,7 +236,54 @@ const intendanz = [
   ["w-kh","Matthias Naske","Intendant","Seit 2013 Intendant des Wiener Konzerthauses."],
   ["w-mv","Stephan Pauly","Intendant","Seit 2020 Intendant des Musikvereins, Vertrag bis Juni 2030."],
   ["w-sym","Petr Popelka","Chefdirigent","Seit 2024/25 Chefdirigent der Wiener Symphoniker."],
-  ["roc","Vladimir Jurowski","Chefdirigent RSB","Seit 2017 Chefdirigent des Rundfunk-Sinfonieorchesters, Vertrag bis 2029."]
+  ["roc","Vladimir Jurowski","Chefdirigent RSB","Seit 2017 Chefdirigent des Rundfunk-Sinfonieorchesters, Vertrag bis 2029."],
+  ["b-nm","Friederike Seyfried","Direktorin Ägyptisches Museum","Leitet das Ägyptische Museum und Papyrussammlung seit 2009, Hüterin der Nofretete."],
+  ["b-nm","Matthias Wemhoff","Direktor Museum für Vor- und Frühgeschichte","Seit 2008 Direktor des Museums, zugleich Landesarchäologe von Berlin."],
+  ["b-pm","Martin Maischberger","Direktor Antikensammlung","Seit 2026 Direktor, Nachfolger von Andreas Scholl. Zur Antikensammlung gehört der Pergamonaltar."],
+  ["b-pm","Barbara Helwing","Direktorin Vorderasiatisches Museum","Seit 2019 Direktorin, zuständig unter anderem für das Ischtar-Tor."],
+  ["b-pm","Stefan Weber","Direktor Museum für Islamische Kunst","Leitet das Museum seit 2009, dessen neue Dauerausstellung 2027 im Pergamonmuseum eröffnet."],
+  ["b-ang","Anette Hüsch","Direktorin","Seit März 2025 Direktorin, Nachfolgerin von Ralph Gleis. Zuvor Direktorin der Kunsthalle zu Kiel."],
+  ["b-nng","Klaus Biesenbach","Direktor","Seit 2022 Direktor der Neuen Nationalgalerie und des künftigen berlin modern, zuvor unter anderem am MoMA in New York."],
+  ["b-gg","Dagmar Hirschfelder","Direktorin","Seit November 2021 Direktorin, Nachfolgerin von Michael Eissenhauer. Spezialistin für altdeutsche Malerei."],
+  ["b-hbf","Sam Bardaouil","Direktor","Leitet den Hamburger Bahnhof seit 2022 gemeinsam mit Till Fellrath."],
+  ["b-hbf","Till Fellrath","Direktor","Leitet den Hamburger Bahnhof seit 2022 gemeinsam mit Sam Bardaouil."],
+  ["b-hf","Hartmut Dorgerloh","Generalintendant","Seit 2018 Generalintendant der Stiftung Humboldt Forum, Vertrag bis 2028."],
+  ["b-jmb","Hetty Berg","Direktorin","Seit April 2020 Direktorin, zweite Amtszeit bis März 2029. Zuvor am Jüdischen Kulturviertel Amsterdam."],
+  ["b-dhm","Raphael Gross","Präsident","Schweizer Historiker, seit April 2017 Präsident des Deutschen Historischen Museums."],
+  ["b-mfn","Johannes Vogel","Generaldirektor","Seit 2012 Generaldirektor, zugleich Professor an der Humboldt-Universität."],
+  ["b-kw","Emma Enderby","Direktorin","Seit April 2024 Direktorin, Nachfolgerin von Krist Gruijthuijsen."],
+  ["b-hkw","Bonaventure Soh Bejeng Ndikung","Intendant","Kurator, seit 2023 Intendant des Hauses der Kulturen der Welt."],
+  ["hh-kh","Alexander Klar","Direktor","Seit August 2019 Direktor, zuvor Direktor des Museums Wiesbaden."],
+  ["hh-mkg","Tulga Beyerle","Direktorin","Designexpertin, seit Dezember 2018 Direktorin, zuvor am Kunstgewerbemuseum Dresden."],
+  ["hh-dth","Dirk Luckow","Intendant","Seit 2009 Intendant der Deichtorhallen, zuvor Direktor der Kunsthalle zu Kiel."],
+  ["hh-bkf","Kathrin Baumstark","Direktorin","Leitet das Bucerius Kunst Forum am Rathausmarkt."],
+  ["hh-markk","Barbara Plankensteiner","Direktorin","Seit 2017 Direktorin, führte die Umbenennung in MARKK und plant den Umbau bis 2031."],
+  ["hh-mhg","Bettina Probst","Direktorin","Seit November 2020 Direktorin, begleitet die Modernisierung des Hauses."],
+  ["hh-am","Anja Dauschek","Direktorin","Seit 2017 Direktorin des Altonaer Museums."],
+  ["hh-amh","Rainer-Maria Weiss","Direktor","Seit 2003 Direktor und Landesarchäologe, Vertrag bis 2028. Entdeckte die Reste der Hammaburg."],
+  ["hh-mda","Rita Müller","Direktorin Museum der Arbeit","Leitet das Museum der Arbeit in Barmbek."],
+  ["hh-mda","Klaus Bernhard","Direktor Deutsches Hafenmuseum","Leitet den Aufbau des Deutschen Hafenmuseums."],
+  ["m-ap","Anton Biebl","Leiter Bayerische Staatsgemäldesammlungen","Seit April 2025 Leiter der Staatsgemäldesammlungen, zuvor Kulturreferent der Stadt München."],
+  ["m-pdm","Anton Biebl","Leiter Bayerische Staatsgemäldesammlungen","Seit April 2025 Leiter der Staatsgemäldesammlungen, zuvor Kulturreferent der Stadt München."],
+  ["m-mb","Achim Hochdörfer","Direktor","Direktor des Museums Brandhorst, Kunsthistoriker und Kurator."],
+  ["m-lb","Matthias Mühling","Direktor","Seit 2014 Direktor, kuratierte 2024 die große Blaue-Reiter-Schau."],
+  ["m-dm","Michael Decker","Generaldirektor","Physiker, seit Juni 2025 Generaldirektor, Nachfolger von Wolfgang M. Heckl. Zuvor am Karlsruher Institut für Technologie."],
+  ["m-bnm","Frank Matthias Kammel","Generaldirektor","Seit Juli 2018 Generaldirektor, zuvor stellvertretender Generaldirektor des Germanischen Nationalmuseums."],
+  ["m-hdk","Andrea Lissoni","Künstlerischer Direktor","Seit April 2020 künstlerischer Direktor, zuvor Kurator an der Tate Modern."],
+  ["m-gly","Florian Knauß","Direktor","Klassischer Archäologe, seit 2011 Direktor von Glyptothek und Antikensammlungen."],
+  ["m-m5k","Uta Werlich","Direktorin","Sinologin und Ethnologin, seit April 2018 Direktorin, zuvor am Linden-Museum Stuttgart."],
+  ["m-nsd","Mirjam Zadoff","Direktorin","Historikerin, seit Mai 2018 Direktorin, zuvor Professorin an der Indiana University."],
+  ["w-khm","Jonathan Fine","Generaldirektor","Seit Januar 2025 Generaldirektor des KHM-Museumsverbands, zuvor Direktor des Weltmuseums."],
+  ["w-alb","Ralph Gleis","Generaldirektor","Seit Januar 2025 Generaldirektor, Nachfolger von Klaus Albrecht Schröder. Zuvor Direktor der Alten Nationalgalerie Berlin."],
+  ["w-bel","Stella Rollig","Generaldirektorin","Leitet das Belvedere seit 2017, ihre Amtszeit endet im Januar 2027."],
+  ["w-bel","Nina Zimmer","Designierte Generaldirektorin","Übernimmt im Januar 2027, kommt vom Kunstmuseum Bern und Zentrum Paul Klee."],
+  ["w-leo","Hans-Peter Wipplinger","Museologischer Direktor","Seit 2015 Direktor des Leopold Museums."],
+  ["w-mumok","Fatima Hellberg","Generaldirektorin","Seit Oktober 2025 Generaldirektorin, Nachfolgerin von Karola Kraus. Zuvor am Bonner Kunstverein."],
+  ["w-mak","Lilli Hollein","Generaldirektorin","Seit September 2021 Generaldirektorin, Mitgründerin der Vienna Design Week."],
+  ["w-nhm","Katrin Vohland","Generaldirektorin","Seit Juni 2020 Generaldirektorin, verlängert bis 2030."],
+  ["w-wm","Matti Bunzl","Direktor","Seit 2015 Direktor, führte das Haus durch den Umbau am Karlsplatz."],
+  ["w-tmw","Peter Aufreiter","Generaldirektor","Seit 2020 Generaldirektor, zweite Amtszeit bis 2030."],
+  ["w-wmw","Claudia Banz","Direktorin","Seit Februar 2025 Direktorin, Nachfolgerin von Jonathan Fine."]
 ].map(([h,name,rolle,bio])=>({haus:h,name,rolle,bio}));
 
 // Personen, für die ein Foto im deutschen Wikipedia-Artikel gesucht wird.
@@ -473,11 +562,12 @@ fetch("heute.json",{cache:"no-store"}).then(r=>r.ok ? r.json() : null).then(d=>{
 const STAEDTE = {berlin:"Berlins", hamburg:"Hamburgs", muenchen:"Münchens", wien:"Wiens"};
 const imOrt = h => h.stadt===state.stadt;
 const anzahl = b => HAEUSER.filter(h=>imOrt(h) && h.bereich===b).length;
-const leute = () => intendanz.filter(p=>{const h=haus(p.haus); return imOrt(h) && h.bereich===state.bereich;});
+const leute = () => intendanz.filter(p=>{const h=haus(p.haus); return imOrt(h) && h.bereich===state.bereich;})
+  .filter((p,i,alle)=>alle.findIndex(q=>q.name===p.name)===i);  // wer mehrere Häuser leitet, nur einmal
 
 function render(){
   document.querySelectorAll("[data-stadt]").forEach(b=>b.setAttribute("aria-pressed", b.dataset.stadt===state.stadt));
-  $("sub").textContent = `Die öffentlichen Bühnen ${STAEDTE[state.stadt]} und wer sie leitet`;
+  $("sub").textContent = `Die öffentlichen Bühnen und Museen ${STAEDTE[state.stadt]} und wer sie leitet`;
   const s = schritte();
   $("pfad").innerHTML = s.length ? `<button class="zurueck" data-zurueck>Zurück</button>` +
     s.map((x,i)=>`<button data-schritt="${i}">${x.label}</button>`).join("<span>/</span>") : "";
@@ -485,11 +575,12 @@ function render(){
   if(!state.bereich){
     v = `<h2>Was interessiert dich?</h2>
       <button class="gross" data-set='{"bereich":"theater"}'>Theater<small>${anzahl("theater")} öffentliche Bühnen</small></button>
-      <button class="gross u3" data-set='{"bereich":"musik"}'>Musik<small>${anzahl("musik")} Opern, Konzerthäuser und Orchester</small></button>`;
+      <button class="gross u3" data-set='{"bereich":"musik"}'>Musik<small>${anzahl("musik")} Opern, Konzerthäuser und Orchester</small></button>
+      <button class="gross u8" data-set='{"bereich":"museen"}'>Museen<small>${anzahl("museen")} Museen und Ausstellungshäuser</small></button>`;
   } else if(!state.haus){
     v = `
       <button class="gross dezent oben" data-set='{"haus":"alle"}'><span aria-hidden="true">→ </span>Übersicht<small>${leute().length} Leitungspersonen</small></button>
-      <h2>${state.bereich==="musik" ? "Die Häuser:" : "Die Theater:"}</h2>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).map(h=>`
+      <h2>${{theater:"Die Theater:", musik:"Die Häuser:", museen:"Die Museen:"}[state.bereich]}</h2>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).map(h=>`
       <button class="zeile" data-set='{"haus":"${h.id}"}'>
         <span class="bar" style="background:${SPARTEN[h.sparte]}"></span>
         <span><b>${h.name}</b><small>${h.zusatz ? h.zusatz + ", " : ""}${h.bezirk}</small>${heuteKurz(h.id)}</span>
@@ -506,12 +597,12 @@ function render(){
     const h = haus(state.haus);
     const team = intendanz.filter(p=>p.haus===h.id);
     v = `<h2>${h.name}</h2>` + heuteBlock(h.id) + `
-      <a class="link" href="https://${h.web}" target="_blank" rel="noopener">Spielplan auf ${h.web}</a>
+      <a class="link" href="https://${h.web}" target="_blank" rel="noopener">${h.bereich==="museen" ? "Ausstellungen" : "Spielplan"} auf ${h.web.split("/")[0]}</a>
       <h3>Leitung</h3>` + team.map(p=>`
         <div class="kopf" data-name="${p.name}">
           <div class="portrait" style="background:${SPARTEN[h.sparte]}" aria-hidden="true">${initialen(p.name)}</div>
           <div class="text"><b>${p.name}</b><div class="rolle">${p.rolle}</div><p>${p.bio}</p></div>
-        </div>`).join("") + kuenstlerHTML(h);
+        </div>`).join("") + (team.length ? "" : `<p class="info">${h.hinweis||""}</p>`) + kuenstlerHTML(h);
   }
   $("view").innerHTML = v;
   if(state.haus) zeigeBilder(state.haus);
