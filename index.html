@@ -228,7 +228,7 @@ const intendanz = [
   ["m-gp","Josef E. Köpplinger","Staatsintendant","Seit 2012/13 Staatsintendant des Gärtnerplatztheaters, Vertrag bis 2030."],
   ["m-mph","Lahav Shani","Chefdirigent","Seit September 2026 Chefdirigent der Münchner Philharmoniker, Nachfolger von Waleri Gergijew."],
   ["m-br","Simon Rattle","Chefdirigent","Seit 2023/24 Chefdirigent von Symphonieorchester und Chor des BR."],
-  ["w-burg","Stefan Bachmann","Direktor","Seit 2024/25 Direktor des Burgtheaters, 2026/27 ist seine dritte Saison."],
+  ["w-burg","Stefan Bachmann","Direktor","Seit 2024/25 Direktor des Burgtheaters, 2026/27 ist seine dritte Saison.","-"],
   ["w-vt","Jan Philipp Gloger","Künstlerischer Direktor","Seit September 2025, Nachfolger von Kay Voges."],
   ["w-jos","Marie Rötzer","Künstlerische Leiterin","Seit September 2026 Direktorin, Nachfolgerin von Herbert Föttinger. Zuvor Intendantin in St. Pölten."],
   ["w-so","Bogdan Roščić","Direktor","Seit Juli 2020 Direktor der Wiener Staatsoper."],
@@ -481,6 +481,7 @@ async function ladeBild(name){
   if(name in bilder) return bilder[name];
   return bilder[name] = (async()=>{
     const eigen = intendanz.find(p=>p.name===name && p.foto);   // Foto liegt im Repo
+    if(eigen?.foto==="-") return null;   // bewusst kein Foto (Suche lieferte das falsche)
     if(eigen) return {src:eigen.foto, seite:"", autor:eigen.credit, lizenz:"", eigen:true};
     const fund = await ausWikipedia(name,"de") || await ausWikipedia(name,"en") || await ausWikidata(name);
     if(!fund) return null;
