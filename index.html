@@ -659,7 +659,10 @@ if(location.hash==="#fotocheck" || location.search.includes("fotocheck")){
       document.getElementById("fc-ok").insertAdjacentHTML("beforeend", `<figure style="margin:0;width:96px"><img src="${b.src}" alt="" style="width:96px;height:120px;object-fit:cover;object-position:50% 20%;display:block"><figcaption style="font-size:12px;line-height:1.2">${n}</figcaption></figure>`);
     } else {
       const orte = [...ort[n]].join(", ");
-      document.getElementById("fc-liste").insertAdjacentHTML("beforeend", `<p style="padding:6px 18px"><b>${n}</b>, ${orte}</p>`);
+      // Warum kein Foto? de-Wikipedia prüfen und Grund anzeigen
+      const d = await holeJSON("https://de.wikipedia.org/api/rest_v1/page/summary/" + encodeURIComponent(n.replace(/ /g,"_")));
+      const grund = !d ? "kein Artikel" : d.type!=="standard" ? "Begriffsklärung" : !d.thumbnail ? "Artikel ohne Foto" : "Foto da, Filter blockt: " + (d.description||"ohne Beschreibung");
+      document.getElementById("fc-liste").insertAdjacentHTML("beforeend", `<p style="padding:6px 18px"><b>${n}</b>, ${orte}<br><small>${grund}</small></p>`);
     }
   })).then(()=>{ document.getElementById("fc-stand").textContent = "Fertig. Aufgelistet sind alle ohne Foto."; });
 }
