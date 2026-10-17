@@ -645,7 +645,7 @@ document.addEventListener("click", ev=>{
 render();
 
 // Hilfsansicht: index.html#fotocheck listet alle Leitungspersonen, zu denen kein Foto gefunden wird.
-if(location.hash==="#fotocheck"){
+if(location.hash==="#fotocheck" || location.search.includes("fotocheck")){
   const ort = {};   // Name -> Häuser
   intendanz.forEach(p=>(ort[p.name] ||= new Set()).add(haus(p.haus).name));
   Object.entries(KUENSTLER).forEach(([hid,k])=>["regie","ensemble"].forEach(g=>(k[g]||[]).forEach(([n])=>(ort[n] ||= new Set()).add(haus(hid)?.name||hid))));
