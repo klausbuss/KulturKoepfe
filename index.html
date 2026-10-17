@@ -453,7 +453,7 @@ const PREISE = {
 // Wikipedia, zuletzt über Wikidata (Bild-Eigenschaft P18). Alle Quellen verweisen auf
 // frei lizenzierte Bilder in Wikimedia Commons.
 // Schutz gegen Namensvettern: Artikel oder Wikidata-Beschreibung muss einen Bühnenbezug haben
-const BUEHNE = /Intendant|Theat|Oper|Ballet|Choreogra|Regisseur|Director|Dramaturg|Kulturmanager|Bühne|Stage|Schauspiel|Actor|Actress|Performance|Perform|Dirigent|Conductor|Orchest|Festspiele|Festival|Musiker|Musician|Komponist|Composer|Tänzer|Dancer|Sänger|Singer|Filmemacher|Filmmaker/i;
+const BUEHNE = /Intendant|Theat|Oper|Ballet|Choreogra|Regisseur|Director|Dramaturg|Kulturmanager|Bühne|Stage|Schauspiel|Actor|Actress|Performance|Perform|Dirigent|Conductor|Orchest|Festspiele|Festival|Musiker|Musician|Komponist|Composer|Tänzer|Dancer|Sänger|Singer|Filmemacher|Filmmaker|Museum|Direktor|Kurator|Curator|Kunsthistoriker|Art historian|Historiker|Historian|Archäolog|Archaeolog|Ethnolog|Ethnolog|Physiker|Physicist|Sinolog|Kunstvermittl|Galerie|Gallery|Ausstellung|Exhibition|Architekt|Designer|Wissenschaftler|Scientist|Biologe|Biologist|Paläontolog|Zoolog|Kulturwissenschaft/i;
 const initialen = n => n.split(/\s+/).map(w=>w[0]).filter(Boolean).slice(0,2).join("");
 const bilder = {};
 const holeJSON = url => fetch(url).then(r=>r.ok ? r.json() : null).catch(()=>null);
@@ -650,12 +650,14 @@ if(location.hash==="#fotocheck" || location.search.includes("fotocheck")){
   intendanz.forEach(p=>(ort[p.name] ||= new Set()).add(haus(p.haus).name));
   Object.entries(KUENSTLER).forEach(([hid,k])=>["regie","ensemble"].forEach(g=>(k[g]||[]).forEach(([n])=>(ort[n] ||= new Set()).add(haus(hid)?.name||hid))));
   const namen = Object.keys(ort);
-  document.getElementById("view").innerHTML = `<h2>Fotocheck</h2><p class="info" id="fc-stand">Prüfe 0 von ${namen.length} …</p><div id="fc-liste"></div>`;
+  document.getElementById("view").innerHTML = `<h2>Fotocheck</h2><p class="info" id="fc-stand">Prüfe 0 von ${namen.length} …</p><div id="fc-liste"></div><h2>Gefunden, bitte kontrollieren</h2><div id="fc-ok" style="display:flex;flex-wrap:wrap;gap:12px;padding:0 18px"></div>`;
   let fertig = 0;
   Promise.all(namen.map(async n=>{
     const b = await ladeBild(n);
     document.getElementById("fc-stand").textContent = `Prüfe ${++fertig} von ${namen.length} …`;
-    if(!b){
+    if(b){
+      document.getElementById("fc-ok").insertAdjacentHTML("beforeend", `<figure style="margin:0;width:96px"><img src="${b.src}" alt="" style="width:96px;height:120px;object-fit:cover;object-position:50% 20%;display:block"><figcaption style="font-size:12px;line-height:1.2">${n}</figcaption></figure>`);
+    } else {
       const orte = [...ort[n]].join(", ");
       document.getElementById("fc-liste").insertAdjacentHTML("beforeend", `<p style="padding:6px 18px"><b>${n}</b>, ${orte}</p>`);
     }
