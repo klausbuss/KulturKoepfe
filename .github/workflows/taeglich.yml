@@ -2,6 +2,8 @@ name: Heute läuft
 
 on:
   schedule:
+    - cron: "10 22 * * *"  # kurz nach Mitternacht (Sommerzeit), damit die Seite nach 0 Uhr nicht leer ist
+    - cron: "10 23 * * *"  # dasselbe für die Winterzeit
     - cron: "0 4 * * *"   # täglich 4 Uhr UTC = 5 bzw. 6 Uhr deutscher Zeit
   workflow_dispatch:      # erlaubt den Start per Knopfdruck
 
