@@ -643,6 +643,21 @@ document.addEventListener("click", ev=>{
   const f = document.querySelector("main button, main a"); if(f) f.focus({preventScroll:true});
 });
 render();
+
+// Hilfsansicht: index.html#fotocheck listet alle Leitungspersonen, zu denen kein Foto gefunden wird.
+if(location.hash==="#fotocheck"){
+  const namen = [...new Set(intendanz.map(p=>p.name))];
+  document.getElementById("view").innerHTML = `<h2>Fotocheck</h2><p class="info" id="fc-stand">Prüfe 0 von ${namen.length} …</p><div id="fc-liste"></div>`;
+  let fertig = 0;
+  Promise.all(namen.map(async n=>{
+    const b = await ladeBild(n);
+    document.getElementById("fc-stand").textContent = `Prüfe ${++fertig} von ${namen.length} …`;
+    if(!b){
+      const orte = intendanz.filter(p=>p.name===n).map(p=>haus(p.haus).name).join(", ");
+      document.getElementById("fc-liste").insertAdjacentHTML("beforeend", `<p style="padding:6px 18px"><b>${n}</b>, ${orte}</p>`);
+    }
+  })).then(()=>{ document.getElementById("fc-stand").textContent = "Fertig. Aufgelistet sind alle ohne Foto."; });
+}
 </script>
 </body>
 </html>
