@@ -30,8 +30,8 @@
 	<!-- / Yoast SEO plugin. -->
 
 
-<link rel="preload" href="https://markk-hamburg.de/wp-content/cache/borlabs-cookie/1/borlabs-cookie-config-de.json.js?ver=3.4.6-55" as="script">
-<link rel="preload" href="https://markk-hamburg.de/wp-content/cache/borlabs-cookie/1/borlabs-cookie-1-de.css?ver=3.4.6-47" as="style">
+<link rel="preload" href="https://markk-hamburg.de/wp-content/cache/borlabs-cookie/1/borlabs-cookie-config-de.json.js?ver=3.4.6-56" as="script">
+<link rel="preload" href="https://markk-hamburg.de/wp-content/cache/borlabs-cookie/1/borlabs-cookie-1-de.css?ver=3.4.6-49" as="style">
 <link rel="preload" href="https://markk-hamburg.de/wp-content/plugins/borlabs-cookie/assets/javascript/borlabs-cookie-prioritize.min.js?ver=3.4.6" as="script">
 <style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
@@ -143,101 +143,51 @@ body :is(form#loginform,form#registerform,form#lostpasswordform) div.brlbs-cmpnt
 
 /*# sourceURL=borlabs-cookie-critical-inline-css */
 </style>
-<link onload="this.media='all';this.onload=null" data-borlabs-cookie-deferred-style="1" rel='stylesheet' id='borlabs-cookie-custom-css' href='https://markk-hamburg.de/wp-content/cache/borlabs-cookie/1/borlabs-cookie-1-de.css?ver=3.4.6-47' media="print" />
-<noscript><link rel='stylesheet' id='borlabs-cookie-custom-css' href='https://markk-hamburg.de/wp-content/cache/borlabs-cookie/1/borlabs-cookie-1-de.css?ver=3.4.6-47' media='all' />
+<link onload="this.media='all';this.onload=null" data-borlabs-cookie-deferred-style="1" rel='stylesheet' id='borlabs-cookie-custom-css' href='https://markk-hamburg.de/wp-content/cache/borlabs-cookie/1/borlabs-cookie-1-de.css?ver=3.4.6-49' media="print" />
+<noscript><link rel='stylesheet' id='borlabs-cookie-custom-css' href='https://markk-hamburg.de/wp-content/cache/borlabs-cookie/1/borlabs-cookie-1-de.css?ver=3.4.6-49' media='all' />
 </noscript>
 <link rel='stylesheet' id='style-css' href='https://markk-hamburg.de/wp-content/themes/markk-2026/css/main.css?ver=1788965921' media='all' />
-<script data-no-optimize="1" data-no-minify="1" data-cfasync="false" id="borlabs-cookie-config-js" src="https://markk-hamburg.de/wp-content/cache/borlabs-cookie/1/borlabs-cookie-config-de.json.js?ver=3.4.6-55"></script>
+<script data-no-optimize="1" data-no-minify="1" data-cfasync="false" id="borlabs-cookie-config-js" src="https://markk-hamburg.de/wp-content/cache/borlabs-cookie/1/borlabs-cookie-config-de.json.js?ver=3.4.6-56"></script>
 <script data-no-optimize="1" data-no-minify="1" data-cfasync="false" id="borlabs-cookie-prioritize-js" src="https://markk-hamburg.de/wp-content/plugins/borlabs-cookie/assets/javascript/borlabs-cookie-prioritize.min.js?ver=3.4.6"></script>
 <meta name="generator" content="webp-uploads 2.7.1">
 <script data-borlabs-cookie-script-blocker-ignore>
-    if ('0' === '1' && ('0' === '1' || '1' === '1')) {
-        window['gtag_enable_tcf_support'] = true;
-    }
+(function () {
+    const id = 'UA-125436444-1', advanced = '0' === '1', basic = '1' === '1';
+    if ('0' === '1' && (advanced || basic)) { window.gtag_enable_tcf_support = true; }
     window.dataLayer = window.dataLayer || [];
-    if (typeof gtag !== 'function') {
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-    }
+    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
     gtag('set', 'developer_id.dYjRjMm', true);
-    if ('0' === '1' || '1' === '1') {
+    if (advanced || basic) {
+        const readConsents = function () {
+            if (!document.cookie.split('; ').some(c => c.startsWith('borlabs-cookie='))) { return {}; }
+            const value = document.cookie.match('(^|;)\\s*borlabs-cookie-gcs\\s*=\\s*([^;]+)')?.pop() || '';
+            const consents = value !== '' ? JSON.parse(decodeURIComponent(value)) : {};
+            return consents.cookie_version === window.borlabsCookieConfig.settings.cookieVersion ? consents : {};
+        };
         if (window.BorlabsCookieGoogleConsentModeDefaultSet !== true) {
-            let getCookieValue = function (name) {
-                return document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || '';
-            };
-            let consentsFromCookie = {};
-            if (document.cookie.split('; ').some(c => c.startsWith('borlabs-cookie='))) {
-                let cookieValue = getCookieValue('borlabs-cookie-gcs');
-                if (cookieValue !== '') {
-                    consentsFromCookie = JSON.parse(decodeURIComponent(cookieValue));
-                    if (consentsFromCookie.cookie_version !== window.borlabsCookieConfig.settings.cookieVersion) {
-                        consentsFromCookie = {};
-                    } else {
-                        delete consentsFromCookie.cookie_version;
-                    }
-                }
-            }
-            let defaultValues = {
-                'ad_storage': 'denied',
-                'ad_user_data': 'denied',
-                'ad_personalization': 'denied',
-                'analytics_storage': 'denied',
-                'functionality_storage': 'denied',
-                'personalization_storage': 'denied',
-                'security_storage': 'denied',
-                'wait_for_update': 500,
-            };
-            gtag('consent', 'default', { ...defaultValues, ...consentsFromCookie });
+            const consents = readConsents();
+            delete consents.cookie_version;
+            gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', functionality_storage: 'denied', personalization_storage: 'denied', security_storage: 'denied', wait_for_update: 500, ...consents });
         }
         window.BorlabsCookieGoogleConsentModeDefaultSet = true;
-        let borlabsCookieConsentChangeHandler = function () {
-            window.dataLayer = window.dataLayer || [];
-            if (typeof gtag !== 'function') { function gtag(){dataLayer.push(arguments);} }
-
-            let getCookieValue = function (name) {
-                return document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || '';
-            };
-            let consentsFromCookie = {};
-            if (document.cookie.split('; ').some(c => c.startsWith('borlabs-cookie='))) {
-                let cookieValue = getCookieValue('borlabs-cookie-gcs');
-                if (cookieValue !== '') {
-                    consentsFromCookie = JSON.parse(decodeURIComponent(cookieValue));
-                    if (consentsFromCookie.cookie_version !== window.borlabsCookieConfig.settings.cookieVersion) {
-                        consentsFromCookie = {};
-                    }
-                }
-            }
-
-            consentsFromCookie.analytics_storage = BorlabsCookie.Consents.hasConsent('google-analytics') ? 'granted' : 'denied';
-            consentsFromCookie.cookie_version = window.borlabsCookieConfig.settings.cookieVersion;
-
-            BorlabsCookie.CookieLibrary.setCookie(
-                'borlabs-cookie-gcs',
-                JSON.stringify(consentsFromCookie),
-                BorlabsCookie.Settings.automaticCookieDomainAndPath.value ? '' : BorlabsCookie.Settings.cookieDomain.value,
-                BorlabsCookie.Settings.cookiePath.value,
-                BorlabsCookie.Cookie.getPluginCookie().expires,
-                BorlabsCookie.Settings.cookieSecure.value,
-                BorlabsCookie.Settings.cookieSameSite.value
-            );
-        }
-        document.addEventListener('borlabs-cookie-consent-saved', borlabsCookieConsentChangeHandler);
-        document.addEventListener('borlabs-cookie-handle-unblock', borlabsCookieConsentChangeHandler);
+        const handler = function () {
+            const consents = readConsents(), s = BorlabsCookie.Settings;
+            consents.analytics_storage = BorlabsCookie.Consents.hasConsent('google-analytics') ? 'granted' : 'denied';
+            consents.cookie_version = window.borlabsCookieConfig.settings.cookieVersion;
+            BorlabsCookie.CookieLibrary.setCookie('borlabs-cookie-gcs', JSON.stringify(consents), s.automaticCookieDomainAndPath.value ? '' : s.cookieDomain.value, s.cookiePath.value, BorlabsCookie.Cookie.getPluginCookie().expires, s.cookieSecure.value, s.cookieSameSite.value);
+        };
+        document.addEventListener('borlabs-cookie-consent-saved', handler);
+        document.addEventListener('borlabs-cookie-handle-unblock', handler);
     }
-    if ('0' === '1') {
-        gtag("js", new Date());
-        gtag("config", "UA-125436444-1", {"anonymize_ip": true});
-
-        (function (w, d, s, i) {
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s);
-            j.async = true;
-            j.src =
-                "https://www.googletagmanager.com/gtag/js?id=" + i;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, "script", "UA-125436444-1");
+    if (advanced) {
+        gtag('js', new Date());
+        gtag('config', id);
+        const f = document.getElementsByTagName('script')[0], j = document.createElement('script');
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+        f.parentNode.insertBefore(j, f);
     }
+})();
 </script><link rel="icon" href="https://markk-hamburg.de/wp-content/uploads/2026/07/cropped-favicon-32x32.webp" sizes="32x32" />
 <link rel="icon" href="https://markk-hamburg.de/wp-content/uploads/2026/07/cropped-favicon-192x192.webp" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://markk-hamburg.de/wp-content/uploads/2026/07/cropped-favicon-180x180.webp" />
@@ -371,7 +321,7 @@ Donnerstags bis 21 Uhr</p>
         <div class="column_image w-100 w-60-l w-50-xl relative pl5-l">
 
                 <div class="visual relative">
-        <video autoplay muted loop class="w-100 h-auto object-cover video_autoplay db"><source src="https://markk-hamburg.de/wp-content/uploads/2026/03/sonderausstellungen-exponate.mp4" type="video/mp4" id="visual_6ad232876c4f6"></video>    </div>
+        <video autoplay muted loop class="w-100 h-auto object-cover video_autoplay db"><source src="https://markk-hamburg.de/wp-content/uploads/2026/03/sonderausstellungen-exponate.mp4" type="video/mp4" id="visual_6ad2fa045f94b"></video>    </div>
 
 
 
@@ -557,7 +507,7 @@ Donnerstags bis 21 Uhr</p>
         </h2>        </div>
 
         
-            <div class="dauerausstellungen_list swiper" id="dauerausstellungen_6ad23287767c5">
+            <div class="dauerausstellungen_list swiper" id="dauerausstellungen_6ad2fa046b714">
                 <div class="swiper-wrapper">
                                             <div class="swiper-slide w-100">
                             <a class="dauerausstelung_teaser link bg-blue--20 black flex flex-column flex-row-l items-stretch justify-start" href="https://markk-hamburg.de/ausstellungen/uri-korea/" aria-labelledby="dauerausstellung-slide-406-heading">
@@ -742,7 +692,7 @@ Rothenbaumchaussee 64<br />
 
             <li class="flex flex-column flex-gap-2">
                                     <a href="tel:+49404288790" rel="nofollow">+49 40 42 88 79 - 0</a>
-                                                    <a href="mailto:in&#102;&#111;&#064;m&#097;&#114;k&#107;-&#104;&#097;mb&#117;rg&#046;&#100;&#101;" rel="nofollow">in&#102;&#111;&#064;mar&#107;k&#045;&#104;&#097;m&#098;&#117;&#114;&#103;.d&#101;</a>
+                                                    <a href="mailto:i&#110;f&#111;&#064;m&#097;rk&#107;-&#104;&#097;&#109;b&#117;&#114;&#103;.d&#101;" rel="nofollow">&#105;&#110;fo&#064;m&#097;rkk&#045;ha&#109;&#098;ur&#103;&#046;&#100;&#101;</a>
                             </li>
 
         </ul>
