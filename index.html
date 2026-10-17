@@ -586,9 +586,14 @@ fetch("heute.json",{cache:"no-store"}).then(r=>r.ok ? r.json() : null).then(d=>{
 
 const STAEDTE = {berlin:"Berlins", hamburg:"Hamburgs", muenchen:"Münchens", wien:"Wiens"};
 const imOrt = h => h.stadt===state.stadt;
+// Diese Häuser stehen in ihrer Liste ganz oben (Reihenfolge = Rang), alle anderen behalten ihre Reihenfolge
+const NACH_OBEN = ["ko","b-hkw","bf"];
+const rang = id => { const i = NACH_OBEN.indexOf(id); return i<0 ? NACH_OBEN.length : i; };
+const nachRang = (a,b) => rang(a.id)-rang(b.id);   // Array.sort ist stabil
 const anzahl = b => HAEUSER.filter(h=>imOrt(h) && h.bereich===b).length;
 const leute = () => intendanz.filter(p=>{const h=haus(p.haus); return imOrt(h) && h.bereich===state.bereich;})
-  .filter((p,i,alle)=>alle.findIndex(q=>q.name===p.name)===i);  // wer mehrere Häuser leitet, nur einmal
+  .filter((p,i,alle)=>alle.findIndex(q=>q.name===p.name)===i)  // wer mehrere Häuser leitet, nur einmal
+  .sort((a,b)=>rang(a.haus)-rang(b.haus));
 
 function render(){
   document.querySelectorAll("[data-stadt]").forEach(b=>b.setAttribute("aria-pressed", b.dataset.stadt===state.stadt));
@@ -605,7 +610,7 @@ function render(){
   } else if(!state.haus){
     v = `
       <button class="gross dezent oben" data-set='{"haus":"alle"}'><span aria-hidden="true">→ </span>Übersicht<small>${leute().length} Leitungspersonen</small></button>
-      <h2>${{theater:"Die Theater:", musik:"Die Häuser:", museen:"Die Museen:"}[state.bereich]}</h2>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).map(h=>`
+      <h2>${{theater:"Die Theater:", musik:"Die Häuser:", museen:"Die Museen:"}[state.bereich]}</h2>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).sort(nachRang).map(h=>`
       <button class="zeile" data-set='{"haus":"${h.id}"}'>
         <span class="bar" style="background:${SPARTEN[h.sparte]}"></span>
         <span><b>${h.name}</b><small>${h.zusatz ? h.zusatz + ", " : ""}${h.bezirk}</small>${heuteKurz(h.id)}</span>
