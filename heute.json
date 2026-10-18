@@ -1,6 +1,6 @@
 {
  "datum": "2026-10-18",
- "stand": "2026-10-18T01:28+02:00",
+ "stand": "2026-10-18T06:20+02:00",
  "haeuser": {
   "so": {
    "status": "ok",
@@ -118,14 +118,14 @@
   },
   "sh": {
    "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
+   "grund": "keine Seite erreichbar",
    "versuche": [
-    "https://www.schaubuehne.de/de/spielplan/ -> 404",
-    "https://www.schaubuehne.de/spielplan -> 404",
-    "https://www.schaubuehne.de/de/spielplan -> 404",
-    "https://www.schaubuehne.de/programm -> 404",
-    "https://www.schaubuehne.de/de/programm -> 404",
-    "https://www.schaubuehne.de/kalender -> 404"
+    "https://www.schaubuehne.de/de/spielplan/ -> ConnectTimeout",
+    "https://www.schaubuehne.de/spielplan -> ConnectTimeout",
+    "https://www.schaubuehne.de/de/spielplan -> ConnectTimeout",
+    "https://www.schaubuehne.de/programm -> ConnectTimeout",
+    "https://www.schaubuehne.de/de/programm -> ConnectTimeout",
+    "https://www.schaubuehne.de/kalender -> ConnectTimeout"
    ]
   },
   "hau": {
@@ -404,11 +404,17 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Tatort Mittelmeer",
+     "zeit": "19:00",
+     "titel": "Tide",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/tide"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Tatort Mittelmeer Szenische Lesung",
      "url": "https://www.muenchner-volkstheater.de/programm/extra/tatort-mittelmeer"
     }
    ],
-   "quelle": "https://www.muenchner-volkstheater.de/",
+   "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
    "format": "html-datum"
   },
   "m-bso": {
@@ -424,20 +430,16 @@
    ]
   },
   "m-gp": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "11:00",
-     "titel": "News",
-     "url": "https://www.gaertnerplatztheater.de/de/start/index.html#belowHeader"
-    },
-    {
-     "titel": "MACHT THEATER!",
-     "url": "https://www.gaertnerplatztheater.de/de/produktionen/macht-theater.html?ID_Vorstellung=5425&m=345"
-    }
-   ],
-   "quelle": "https://www.gaertnerplatztheater.de/de/start/index.html",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.gaertnerplatztheater.de/spielplan -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/de/spielplan -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/programm -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/de/programm -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/kalender -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/de/kalender -> ConnectTimeout"
+   ]
   },
   "m-mph": {
    "status": "ok",
@@ -565,6 +567,31 @@
      "zeit": "11:00",
      "titel": "Allez hop",
      "url": "https://konzerthaus.at/de/programm-und-karten/allez-hop/64039"
+    },
+    {
+     "zeit": "11:00",
+     "titel": "Vorhören!",
+     "url": "https://konzerthaus.at/de/programm-und-karten/vorhoeren/64153"
+    },
+    {
+     "zeit": "14:00",
+     "titel": "Allez hop",
+     "url": "https://konzerthaus.at/de/programm-und-karten/allez-hop/64040"
+    },
+    {
+     "zeit": "14:00",
+     "titel": "Sing Along »Europa«",
+     "url": "https://konzerthaus.at/de/programm-und-karten/sing-along-europa/64337"
+    },
+    {
+     "zeit": "16:00",
+     "titel": "Allez hop",
+     "url": "https://konzerthaus.at/de/programm-und-karten/allez-hop/64041"
+    },
+    {
+     "zeit": "17:00",
+     "titel": "Sing Along »Europa«",
+     "url": "https://konzerthaus.at/de/programm-und-karten/sing-along-europa/63883"
     }
    ],
    "quelle": "https://konzerthaus.at/de/programm-und-karten",
@@ -582,16 +609,16 @@
    ]
   },
   "w-sym": {
-   "status": "fehler",
-   "grund": "keine Seite erreichbar",
-   "versuche": [
-    "https://www.wienersymphoniker.at/spielplan -> 429",
-    "https://www.wienersymphoniker.at/de/spielplan -> 429",
-    "https://www.wienersymphoniker.at/programm -> 429",
-    "https://www.wienersymphoniker.at/de/programm -> 429",
-    "https://www.wienersymphoniker.at/kalender -> 429",
-    "https://www.wienersymphoniker.at/de/kalender -> 429"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:00",
+     "titel": "Minasi, de la Salle ・ Mayer, Mozart, Beethoven",
+     "url": "https://www.wienersymphoniker.at/konzert/minasi-de-la-salle-mayer-mozart-beethoven-18-10-2026"
+    }
+   ],
+   "quelle": "https://www.wienersymphoniker.at/kalender",
+   "format": "html-time"
   },
   "b-nm": {
    "status": "ok",
@@ -1161,21 +1188,21 @@
    ]
   },
   "m-bnm": {
-   "status": "ok",
-   "ausstellungen": [
-    {
-     "titel": "Lange Nacht der Münchner Museen: Kinderprogramm",
-     "von": "2000-05-01",
-     "bis": "2030-06-01",
-     "url": "https://www.bayerisches-nationalmuseum.de/veranstaltungen/lange-nacht-der-münchner-museen-kinderprogramm"
-    }
-   ],
+   "status": "keine",
+   "ausstellungen": [],
    "quelle": "https://www.bayerisches-nationalmuseum.de/",
    "format": "html-zeitraum"
   },
   "m-hdk": {
-   "status": "keine",
-   "ausstellungen": [],
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Ausstellungen",
+     "von": "2026-07-17",
+     "bis": "2026-10-26",
+     "url": "https://www.hausderkunst.de/eintauchen/tomas-saraceno"
+    }
+   ],
    "quelle": "https://www.hausderkunst.de/kalender",
    "format": "html-zeitraum"
   },
@@ -1213,16 +1240,19 @@
    ]
   },
   "w-alb": {
-   "status": "fehler",
-   "grund": "keine Seite erreichbar",
-   "versuche": [
-    "https://www.albertina.at/ausstellungen/ -> ReadTimeout",
-    "https://www.albertina.at/ausstellungen -> ReadTimeout",
-    "https://www.albertina.at/de/ausstellungen -> ReadTimeout",
-    "https://www.albertina.at/ausstellungen/aktuell -> ReadTimeout",
-    "https://www.albertina.at/exhibitions -> ReadTimeout",
-    "https://www.albertina.at/en/exhibitions -> ReadTimeout"
-   ]
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "DIE WELT IM FOKUS",
+     "bis": "2026-10-26"
+    },
+    {
+     "titel": "SHARA HUGHES",
+     "bis": "2027-02-28"
+    }
+   ],
+   "quelle": "https://www.albertina.at/ausstellungen/",
+   "format": "html-zeitraum"
   },
   "w-bel": {
    "status": "ok",
