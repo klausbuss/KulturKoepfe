@@ -1,6 +1,6 @@
 {
  "datum": "2026-10-18",
- "stand": "2026-10-18T06:20+02:00",
+ "stand": "2026-10-18T16:46+02:00",
  "haeuser": {
   "so": {
    "status": "ok",
@@ -8,7 +8,7 @@
     {
      "zeit": "11:00",
      "titel": "Apollo-Salon II",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/apollo-salon-ii.28087/#event-156095"
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/apollo-salon-ii.28087/?spielzeit=2026-2027#event-156095"
     },
     {
      "zeit": "16:45",
@@ -91,8 +91,8 @@
    "vorstellungen": [
     {
      "zeit": "16:30",
-     "titel": "Helga Schubert: Die Woche danach",
-     "url": "https://www.berliner-ensemble.de/inszenierung/helga-schubert-die-woche-danach"
+     "titel": "Mephisto",
+     "url": "https://www.berliner-ensemble.de/index.php/inszenierung/mephisto"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -102,9 +102,7 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "16:00",
-     "titel": "Große Bühne A Year without Summer Florentina Holzinger mit dt. und engl. ÜT",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/a-year-without-summer/20261018-1400/"
+     "titel": "Calendar"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
@@ -118,14 +116,14 @@
   },
   "sh": {
    "status": "fehler",
-   "grund": "keine Seite erreichbar",
+   "grund": "geladen, aber keine Termindaten erkannt",
    "versuche": [
-    "https://www.schaubuehne.de/de/spielplan/ -> ConnectTimeout",
-    "https://www.schaubuehne.de/spielplan -> ConnectTimeout",
-    "https://www.schaubuehne.de/de/spielplan -> ConnectTimeout",
-    "https://www.schaubuehne.de/programm -> ConnectTimeout",
-    "https://www.schaubuehne.de/de/programm -> ConnectTimeout",
-    "https://www.schaubuehne.de/kalender -> ConnectTimeout"
+    "https://www.schaubuehne.de/de/spielplan/ -> 404",
+    "https://www.schaubuehne.de/spielplan -> 404",
+    "https://www.schaubuehne.de/de/spielplan -> 404",
+    "https://www.schaubuehne.de/programm -> 404",
+    "https://www.schaubuehne.de/de/programm -> 404",
+    "https://www.schaubuehne.de/kalender -> 404"
    ]
   },
   "hau": {
@@ -141,16 +139,16 @@
    ]
   },
   "fp": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "15:30",
-     "titel": "BLINDED by DELIGHT",
-     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6973"
-    }
-   ],
-   "quelle": "https://www.palast.berlin/",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.palast.berlin/spielplan -> 404",
+    "https://www.palast.berlin/de/spielplan -> 404",
+    "https://www.palast.berlin/kalender -> 404",
+    "https://www.palast.berlin/de/kalender -> 404",
+    "https://www.palast.berlin/termine -> 404",
+    "https://www.palast.berlin/konzerte -> 404"
+   ]
   },
   "pa": {
    "status": "ok",
@@ -366,11 +364,6 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Macht Theater!",
-     "url": "https://www.residenztheater.de/stuecke/detail/macht-theater"
-    },
-    {
      "zeit": "16:00",
      "titel": "Buch trifft Bühne: Leseclub zu »Bye Bye Lolita«",
      "url": "https://www.residenztheater.de/stuecke/detail/buchtrifftbuehne"
@@ -470,23 +463,28 @@
    "vorstellungen": [
     {
      "zeit": "11:00",
-     "titel": "So. Sonntag"
+     "titel": "Lesen & Lauschen: Geschichten vom Franz",
+     "url": "https://www.burgtheater.at/veranstaltungen/lesen-lauschen-geschichten-vom-franz/2026-10-18"
     },
     {
      "zeit": "16:00",
-     "titel": "So. Sonntag"
+     "titel": "DIE BURG LIEST ANLÄSSLICH DES 90. GEBURTSTAGS VON CHRISTINE NÖSTLINGER: \"Konrad oder das Kind aus der Konservenbüchse\"",
+     "url": "https://www.burgtheater.at/veranstaltungen/die-burg-liest-anlaesslich-des-90-geburtstags-von-christine-noestlinger-konrad-oder"
     },
     {
      "zeit": "18:00",
-     "titel": "So. Sonntag"
+     "titel": "Sankt Falstaff",
+     "url": "https://www.burgtheater.at/veranstaltungen/sankt-falstaff/2026-10-18"
     },
     {
      "zeit": "18:30",
-     "titel": "So. Sonntag"
+     "titel": "Die Nacht kurz vor den Wäldern",
+     "url": "https://www.burgtheater.at/veranstaltungen/die-nacht-kurz-vor-den-waeldern/2026-10-18"
     },
     {
      "zeit": "19:00",
-     "titel": "So. Sonntag"
+     "titel": "Richard III.",
+     "url": "https://www.burgtheater.at/veranstaltungen/richard-iii/2026-10-18"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
@@ -545,15 +543,15 @@
    "format": "microdata"
   },
   "w-tadw": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "00:00",
-     "titel": "Klangstreich – Eine Note tanzt aus der ReiheMarc L. Vogler"
-    }
-   ],
-   "quelle": "https://www.theater-wien.at/de/home",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.theater-wien.at/spielplan -> 404",
+    "https://www.theater-wien.at/programm -> 404",
+    "https://www.theater-wien.at/kalender -> 404",
+    "https://www.theater-wien.at/termine -> 404",
+    "https://www.theater-wien.at/konzerte -> 404"
+   ]
   },
   "w-kh": {
    "status": "ok",
@@ -609,16 +607,15 @@
    ]
   },
   "w-sym": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "11:00",
-     "titel": "Minasi, de la Salle ・ Mayer, Mozart, Beethoven",
-     "url": "https://www.wienersymphoniker.at/konzert/minasi-de-la-salle-mayer-mozart-beethoven-18-10-2026"
-    }
-   ],
-   "quelle": "https://www.wienersymphoniker.at/kalender",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.wienersymphoniker.at/spielplan -> 404",
+    "https://www.wienersymphoniker.at/de/spielplan -> 404",
+    "https://www.wienersymphoniker.at/programm -> 404",
+    "https://www.wienersymphoniker.at/termine -> 404",
+    "https://www.wienersymphoniker.at/konzerte -> 404"
+   ]
   },
   "b-nm": {
    "status": "ok",
@@ -1391,37 +1388,7 @@
      "bis": "2026-10-18"
     },
     {
-     "titel": "Birdly® – Das VR-Flug-Erlebnis",
-     "von": "2026-10-18",
-     "bis": "2026-10-18"
-    },
-    {
-     "titel": "Hochspannungsvorführung",
-     "von": "2026-10-18",
-     "bis": "2026-10-18"
-    },
-    {
      "titel": "minTi",
-     "von": "2026-10-18",
-     "bis": "2026-10-18"
-    },
-    {
-     "titel": "LOK.Vorführung",
-     "von": "2026-10-18",
-     "bis": "2026-10-18"
-    },
-    {
-     "titel": "Bergwerk",
-     "von": "2026-10-18",
-     "bis": "2026-10-18"
-    },
-    {
-     "titel": "LogoRobo – Robotik ganz nah",
-     "von": "2026-10-18",
-     "bis": "2026-10-18"
-    },
-    {
-     "titel": "techLAB",
      "von": "2026-10-18",
      "bis": "2026-10-18"
     }
