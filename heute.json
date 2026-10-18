@@ -1,29 +1,14 @@
 {
- "datum": "2026-10-18",
- "stand": "2026-10-18T16:46+02:00",
+ "datum": "2026-10-19",
+ "stand": "2026-10-19T00:31+02:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Apollo-Salon II",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/apollo-salon-ii.28087/?spielzeit=2026-2027#event-156095"
-    },
-    {
-     "zeit": "16:45",
-     "titel": "Vor-Führung",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/vor-fuehrung.22834/#event-176554"
-    },
-    {
      "zeit": "18:00",
-     "titel": "Madama Butterfly",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/madama-butterfly.19/#event-153987"
-    },
-    {
-     "zeit": "21:30",
-     "titel": "Nach(t)führung",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/nach-t-fuehrung.10795/#event-176239"
+     "titel": "Öffentliche Generalprobe für alle U30",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/oeffentliche-generalprobe-fuer-alle-u30.27843/#event-154875"
     }
    ],
    "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
@@ -45,9 +30,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "Wunder­kammer",
-     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/wunderkammer/1265/"
+     "zeit": "19:30",
+     "titel": "Hommage",
+     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/hommage/1367/"
     }
    ],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
@@ -57,8 +42,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "Wunderkammer"
+     "zeit": "09:30",
+     "titel": "Feriencamp",
+     "ort": "Unter den Linden 7, 10117 Berlin"
     }
    ],
    "quelle": "https://www.staatsballett-berlin.de/spielplan",
@@ -68,19 +54,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Das ist mein Gesang, der sein musste – Das weiße Leintuch von Antanas Škėma",
-     "url": "https://www.deutschestheater.de/programm/produktionen/corinna-harfouch-hideyo-harada-oktober-2026"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "Die Physiker",
-     "url": "https://www.deutschestheater.de/programm/produktionen/die-physiker"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Prima Facie",
-     "url": "https://www.deutschestheater.de/programm/produktionen/prima-facie"
+     "zeit": "19:30",
+     "titel": "Die Gehaltserhöhung",
+     "url": "https://www.deutschestheater.de/programm/produktionen/die-gehaltserhoehung"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -90,9 +66,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "16:30",
-     "titel": "Mephisto",
-     "url": "https://www.berliner-ensemble.de/index.php/inszenierung/mephisto"
+     "titel": "Mitgliederversammlung des Freundeskreises",
+     "url": "https://www.berliner-ensemble.de/inszenierung/mitgliederversammlung-des-freundeskreises"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -102,7 +77,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Calendar"
+     "zeit": "20:00",
+     "titel": "Prater Perfection Nach dem Roman von Vincenzo Latronico Anta Recke auf Deutsch und Englisch",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261019-1800/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
@@ -151,14 +128,8 @@
    ]
   },
   "pa": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "16:00",
-     "titel": "Wolf(10+)",
-     "url": "https://www.parkaue.de/spielplan/spielplan/wolf/1908/"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.parkaue.de/spielplan/",
    "format": "microdata"
   },
@@ -166,9 +137,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "16:00",
-     "titel": "oh peinlich",
-     "url": "https://www.grips-theater.de/de/spielplan/oh-peinlich/3175"
+     "zeit": "18:00",
+     "titel": "Upload Virgin",
+     "url": "https://www.grips-theater.de/de/spielplan/upload-virgin/3176"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
@@ -199,31 +170,16 @@
    ]
   },
   "kh": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "11:00",
-     "titel": "Mozart-Matinee",
-     "url": "https://www.konzerthaus.de/de/programm/mozart-matinee/12496"
-    },
-    {
-     "zeit": "11:00",
-     "titel": "Kinderbetreuung Mozart-Matinee",
-     "url": "https://www.konzerthaus.de/de/programm/kinderbetreuung-mozart-matinee/13310"
-    },
-    {
-     "zeit": "15:00",
-     "titel": "KlangKüken",
-     "url": "https://www.konzerthaus.de/de/programm/klangkuken/12497"
-    },
-    {
-     "zeit": "16:00",
-     "titel": "Konzerthausorchester Berlin, François Leleux",
-     "url": "https://www.konzerthaus.de/de/programm/konzerthausorchester-berlin-francois-leleux/12498"
-    }
-   ],
-   "quelle": "https://www.konzerthaus.de/de/programm/18-10-2026",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.konzerthaus.de/spielplan -> 404",
+    "https://www.konzerthaus.de/de/spielplan -> 404",
+    "https://www.konzerthaus.de/kalender -> 404",
+    "https://www.konzerthaus.de/de/kalender -> 404",
+    "https://www.konzerthaus.de/termine -> 404",
+    "https://www.konzerthaus.de/konzerte -> 404"
+   ]
   },
   "pbs": {
    "status": "fehler",
@@ -238,41 +194,29 @@
    ]
   },
   "roc": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:00",
-     "titel": "Heldinnen: Ethel Smyth",
-     "ort": "Villa Elisabeth",
-     "url": "https://www.roc-berlin.de/konzerte/heldinnen-ethel-smyth/concert/227075/"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.roc-berlin.de/kalender/",
    "format": "json-ld"
   },
   "hh-sh": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "16:00",
-     "titel": "Drosseln",
-     "url": "https://schauspielhaus.de/stuecke/drosseln"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Kabale und Liebe – allerdings mit anderem Text und auch anderer Melodie",
-     "url": "https://schauspielhaus.de/stuecke/kabale-und-liebe-allerdings-mit-anderem-text-und-auch-anderer-melodie"
-    }
-   ],
-   "quelle": "https://schauspielhaus.de/spielplan",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.schauspielhaus.de/de/spielplan -> 404",
+    "https://www.schauspielhaus.de/programm -> 404",
+    "https://www.schauspielhaus.de/de/programm -> 404",
+    "https://www.schauspielhaus.de/kalender -> 404",
+    "https://www.schauspielhaus.de/de/kalender -> 404",
+    "https://www.schauspielhaus.de/termine -> 404"
+   ]
   },
   "hh-th": {
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Die Wut, die bleibt",
-     "url": "https://www.thalia-theater.de/de/stuecke/die-wut-die-bleibt/190"
+     "titel": "Die kleine Meerjungfrau",
+     "url": "https://www.thalia-theater.de/de/stuecke/die-kleine-meerjungfrau/176"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
@@ -282,19 +226,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "15:00",
-     "titel": "Ligna: Es war einmal in St. Georg",
-     "url": "https://kampnagel.de/produktionen/kandthecity-ligna-es-war-einmal-in-st-georg"
+     "zeit": "19:30",
+     "titel": "K3 MOVEMENT CLASS",
+     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55020"
     },
     {
-     "zeit": "18:00",
-     "titel": "Ligna: Es war einmal in St. Georg",
-     "url": "https://kampnagel.de/produktionen/kandthecity-ligna-es-war-einmal-in-st-georg"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "Meine Damen und Herren mit Gob Squad",
-     "url": "https://kampnagel.de/produktionen/kandthecity-meine-damen-und-herren-mit-gob-squad-das-wutschwert-muss-man-herausziehen-bevor-es-weitergeht"
+     "zeit": "19:30",
+     "titel": "PROBEBÜHNE UNPLUGGED",
+     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55050"
     }
    ],
    "quelle": "https://kampnagel.de/kalender",
@@ -310,39 +249,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "NDR Elbphilharmonie Orchester / Alan Gilbert",
-     "url": "https://www.elbphilharmonie.de/de/programm/ndr-elbphilharmonie-orchester-alan-gilbert/27831"
-    },
-    {
-     "zeit": "11:00",
-     "titel": "Steinway Klavierspiel-Wettbewerb 2026",
-     "url": "https://www.elbphilharmonie.de/de/programm/steinway-klavierspiel-wettbewerb-2026/29132"
-    },
-    {
-     "zeit": "13:30",
-     "titel": "NDR Elbphilharmonie Orchester / Leif Ove Andsnes / Alan Gilbert",
-     "url": "https://www.elbphilharmonie.de/de/programm/ndr-elbphilharmonie-orchester-leif-ove-andsnes-alan-gilbert/27868"
-    },
-    {
-     "zeit": "14:00",
-     "titel": "Workshop: Klassiko Orchesterinstrumente",
-     "url": "https://www.elbphilharmonie.de/de/programm/workshop-klassiko-orchesterinstrumente/28620"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "Konzert der Tenöre",
-     "url": "https://www.elbphilharmonie.de/de/programm/konzert-der-tenore/28254"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Jules Ahoi",
-     "url": "https://www.elbphilharmonie.de/de/programm/jules-ahoi/27492"
+     "zeit": "20:00",
+     "titel": "New York Philharmonic / Orfeó Català / Gustavo Dudamel",
+     "url": "https://www.elbphilharmonie.de/de/programm/new-york-philharmonic-orfeo-catala-gustavo-dudamel/27933"
     },
     {
      "zeit": "20:00",
-     "titel": "New York Philharmonic / Gustavo Dudamel",
-     "url": "https://www.elbphilharmonie.de/de/programm/new-york-philharmonic-gustavo-dudamel/27773"
+     "titel": "ABGESAGT: Cécile McLorin Salvant",
+     "url": "https://www.elbphilharmonie.de/de/programm/abgesagt-cecile-mclorin-salvant/28232"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
@@ -364,19 +278,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "16:00",
-     "titel": "Buch trifft Bühne: Leseclub zu »Bye Bye Lolita«",
-     "url": "https://www.residenztheater.de/stuecke/detail/buchtrifftbuehne"
-    },
-    {
-     "zeit": "18:30",
-     "titel": "König Lear",
-     "url": "https://www.residenztheater.de/stuecke/detail/koenig-lear"
+     "zeit": "19:30",
+     "titel": "Ödipus",
+     "url": "https://www.residenztheater.de/stuecke/detail/oedipus"
     },
     {
      "zeit": "20:00",
-     "titel": "Bye Bye Lolita",
-     "url": "https://www.residenztheater.de/stuecke/detail/bye-bye-lolita"
+     "titel": "Das Gelobte Land",
+     "url": "https://www.residenztheater.de/stuecke/detail/das-gelobte-land"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
@@ -386,29 +295,28 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Macht Theater!"
+     "zeit": "20:00",
+     "titel": "Ein Abend für Elfriede Jelinek"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "(Münchner) Verkehr"
     }
    ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
    "format": "ical"
   },
   "m-vt": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:00",
-     "titel": "Tide",
-     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/tide"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Tatort Mittelmeer Szenische Lesung",
-     "url": "https://www.muenchner-volkstheater.de/programm/extra/tatort-mittelmeer"
-    }
-   ],
-   "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.muenchner-volkstheater.de/de/spielplan -> 404",
+    "https://www.muenchner-volkstheater.de/de/programm -> 404",
+    "https://www.muenchner-volkstheater.de/kalender -> 404",
+    "https://www.muenchner-volkstheater.de/de/kalender -> 404",
+    "https://www.muenchner-volkstheater.de/termine -> 404",
+    "https://www.muenchner-volkstheater.de/konzerte -> 404"
+   ]
   },
   "m-bso": {
    "status": "fehler",
@@ -438,9 +346,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Anja Bihlmaier",
-     "url": "https://www.mphil.de/ueber-uns/musikerinnen-und-musiker/details/anja-bihlmaier"
+     "zeit": "15:30",
+     "titel": "Familienkonzert im 2411 Für Kinder von 3 bis 6 Jahren (in Gruppen oder mit ihren Familien)",
+     "url": "https://www.mphil.de/konzerte-und-karten/kalender/konzerte/familienkonzert-2026-10-19-15-30-00"
     }
    ],
    "quelle": "https://www.mphil.de/kalender",
@@ -462,50 +370,29 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Lesen & Lauschen: Geschichten vom Franz",
-     "url": "https://www.burgtheater.at/veranstaltungen/lesen-lauschen-geschichten-vom-franz/2026-10-18"
+     "zeit": "20:00",
+     "titel": "Glaube Liebe Hoffnung",
+     "url": "https://www.burgtheater.at/veranstaltungen/glaube-liebe-hoffnung/2026-10-19"
     },
     {
-     "zeit": "16:00",
-     "titel": "DIE BURG LIEST ANLÄSSLICH DES 90. GEBURTSTAGS VON CHRISTINE NÖSTLINGER: \"Konrad oder das Kind aus der Konservenbüchse\"",
-     "url": "https://www.burgtheater.at/veranstaltungen/die-burg-liest-anlaesslich-des-90-geburtstags-von-christine-noestlinger-konrad-oder"
-    },
-    {
-     "zeit": "18:00",
-     "titel": "Sankt Falstaff",
-     "url": "https://www.burgtheater.at/veranstaltungen/sankt-falstaff/2026-10-18"
-    },
-    {
-     "zeit": "18:30",
-     "titel": "Die Nacht kurz vor den Wäldern",
-     "url": "https://www.burgtheater.at/veranstaltungen/die-nacht-kurz-vor-den-waeldern/2026-10-18"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "Richard III.",
-     "url": "https://www.burgtheater.at/veranstaltungen/richard-iii/2026-10-18"
+     "zeit": "20:00",
+     "titel": "Dear Papi - My beloved Sargnagel",
+     "url": "https://www.burgtheater.at/veranstaltungen/dear-papi-my-beloved-sargnagel/2026-10-19"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
    "format": "html-time"
   },
   "w-vt": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "16:00",
-     "titel": "STADT-BÜHNE",
-     "url": "https://www.volkstheater.at/spielstaetten/rote-bar"
-    },
-    {
-     "zeit": "17:30",
-     "titel": "LIV, LOVE, LAUGH STRÖMQUIST",
-     "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
-    }
-   ],
-   "quelle": "https://www.volkstheater.at/spielplan/",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.volkstheater.at/programm -> 404",
+    "https://www.volkstheater.at/de/programm -> 404",
+    "https://www.volkstheater.at/kalender -> 404",
+    "https://www.volkstheater.at/de/kalender -> 404",
+    "https://www.volkstheater.at/termine -> 404"
+   ]
   },
   "w-jos": {
    "status": "fehler",
@@ -523,8 +410,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Abo 22",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/vec-makropulos/2025-11-30/"
+     "titel": "Abo 13",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/otello/2025-09-08/"
     }
    ],
    "quelle": "https://www.wiener-staatsoper.at/kalender/2026/oktober/",
@@ -534,9 +421,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "17:00",
-     "titel": "Ronja Räubertochter",
-     "url": "https://www.volksoper.at/produktion/ronja-raubertochter-2026.1016099452.de.html"
+     "zeit": "20:00",
+     "titel": "Der Zarewitsch",
+     "url": "https://www.volksoper.at/produktion/der-zarewitsch-2026.1013793976.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
@@ -557,39 +444,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Wiener Symphoniker / de la Salle / Minasi",
-     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-symphoniker-de-la-salle-minasi/63692"
-    },
-    {
-     "zeit": "11:00",
+     "zeit": "09:00",
      "titel": "Allez hop",
-     "url": "https://konzerthaus.at/de/programm-und-karten/allez-hop/64039"
-    },
-    {
-     "zeit": "11:00",
-     "titel": "Vorhören!",
-     "url": "https://konzerthaus.at/de/programm-und-karten/vorhoeren/64153"
-    },
-    {
-     "zeit": "14:00",
-     "titel": "Allez hop",
-     "url": "https://konzerthaus.at/de/programm-und-karten/allez-hop/64040"
-    },
-    {
-     "zeit": "14:00",
-     "titel": "Sing Along »Europa«",
-     "url": "https://konzerthaus.at/de/programm-und-karten/sing-along-europa/64337"
-    },
-    {
-     "zeit": "16:00",
-     "titel": "Allez hop",
-     "url": "https://konzerthaus.at/de/programm-und-karten/allez-hop/64041"
-    },
-    {
-     "zeit": "17:00",
-     "titel": "Sing Along »Europa«",
-     "url": "https://konzerthaus.at/de/programm-und-karten/sing-along-europa/63883"
+     "url": "https://konzerthaus.at/de/programm-und-karten/allez-hop/64042"
     }
    ],
    "quelle": "https://konzerthaus.at/de/programm-und-karten",
@@ -1153,13 +1010,12 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Shifting the Silence. Die Stille verschieben Gegenwartskunst im Lenbachhaus",
-     "von": "2025-10-14",
+     "titel": "Shifting the Silence. Die Stille verschieben",
      "bis": "2027-01-31",
      "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/shifting-the-silence"
     },
     {
-     "titel": "Über die Welt hinaus. Der Blaue Reiter",
+     "titel": "Über die Welt hinaus Der Blaue Reiter",
      "von": "2026-03-10",
      "bis": "2027-09-05",
      "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/ueber-die-welt-hinaus-der-blaue-reiter"
@@ -1170,7 +1026,7 @@
      "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/was-zu-verschwinden-droht-wird-bild"
     }
    ],
-   "quelle": "https://www.lenbachhaus.de/programm/ausstellungen",
+   "quelle": "https://www.lenbachhaus.de/",
    "format": "html-zeitraum"
   },
   "m-dm": {
@@ -1185,8 +1041,15 @@
    ]
   },
   "m-bnm": {
-   "status": "keine",
-   "ausstellungen": [],
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "AUSGEBUCHT! Kultursalon+",
+     "von": "2000-04-01",
+     "bis": "2030-05-01",
+     "url": "https://www.bayerisches-nationalmuseum.de/veranstaltungen/kultursalon24.10.2026"
+    }
+   ],
    "quelle": "https://www.bayerisches-nationalmuseum.de/",
    "format": "html-zeitraum"
   },
@@ -1299,11 +1162,6 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "KATERYNA LYSOVENKO",
-     "von": "2026-09-16",
-     "bis": "2026-10-18"
-    },
-    {
      "titel": "20 Jahre VIENNA DESIGN WEEK",
      "von": "2026-09-29",
      "bis": "2026-11-01"
@@ -1384,13 +1242,23 @@
    "ausstellungen": [
     {
      "titel": "miniXplore",
-     "von": "2026-10-18",
-     "bis": "2026-10-18"
+     "von": "2026-10-19",
+     "bis": "2026-10-19"
     },
     {
      "titel": "minTi",
-     "von": "2026-10-18",
-     "bis": "2026-10-18"
+     "von": "2026-10-19",
+     "bis": "2026-10-19"
+    },
+    {
+     "titel": "Birdly® – Das VR-Flug-Erlebnis",
+     "von": "2026-10-19",
+     "bis": "2026-10-19"
+    },
+    {
+     "titel": "Hochspannungsvorführung",
+     "von": "2026-10-19",
+     "bis": "2026-10-19"
     }
    ],
    "quelle": "https://www.technischesmuseum.at/jart/prj3/tmw/main.jart",
