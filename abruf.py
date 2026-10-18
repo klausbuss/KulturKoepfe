@@ -269,6 +269,7 @@ MONATSNAMEN = ["Jan\\w*", "Feb\\w*", "M(ä|ae|a)r\\w*", "Apr\\w*", "Ma[iy]", "Ju
 KEIN_TITEL = re.compile(
     r"^(\W*|\d{1,2}[.:]\d{2}.*|.*\b(" + MONATE + r")\w*\.? \d{4}|"
     r"(Mo|Di|Mi|Do|Fr|Sa|So)\.?,? \d.*|((Mo|Di|Mi|Do|Fr|Sa|So)\W*){3,}|"
+    r"((Mo|Di|Mi|Do|Fr|Sa|So)\.?\s+)?(Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag|Sonntag)\.?|"
     r".*(Uhr|Karten|Tickets?|Merken|Ausverkauft|Restkarten|mehr|Info).*|"
     r"(Alle )?Termine|Details|Weiterlesen|Zum Stück.*|Zur Produktion.*|Programm|Spielplan)$", re.I)
 ORT_WORTE = re.compile(r"(saal|bühne|foyer|kammer|studio|halle|anfahrt|spielstätte|kaufhaus)", re.I)
@@ -310,6 +311,8 @@ def titel_kandidaten(el):
         kl = " ".join(x.get("class", [])).lower()
         if "sub" in kl or "unter" in kl or "venue" in kl or "location" in kl or "place" in kl:
             continue
+        if "day-name" in kl or "weekday" in kl or "wochentag" in kl:
+            continue          # z. B. Burgtheater: s-event__day-name = „So. Sonntag“
         kand.append((0 if TITEL_KLASSE_STARK.search(kl) else 1, x))
     for x in el.find_all(["h2", "h3", "h4", "h5"]):
         kand.append((1, x))
