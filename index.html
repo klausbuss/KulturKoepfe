@@ -20,7 +20,8 @@
   .stadtwahl button[aria-pressed="true"]{background:#000;color:#fff}
   .pfad{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;padding:14px 18px 0;font-size:14px;color:var(--grau)}
   .pfad button{font:inherit;color:#000;background:none;border:0;text-decoration:underline;cursor:pointer;padding:2px 0}
-  .zurueck{font:inherit;font-weight:700;background:none;border:1.5px solid #000;border-radius:20px;padding:4px 12px;cursor:pointer;margin-right:4px;color:#000;text-decoration:none!important}
+  .zurueck{font:inherit;font-size:17px;font-weight:800;background:#000;border:0;border-radius:24px;padding:10px 20px;min-height:44px;cursor:pointer;margin-right:6px;color:#fff;text-decoration:none!important}
+  .zurueck:active{opacity:.7}
   h2{padding:22px 18px 10px;font-stretch:70%;font-weight:900;font-size:32px;line-height:1.05}
   .gross{display:block;width:calc(100% - 36px);margin:0 18px 12px;padding:26px 20px;text-align:left;font:inherit;font-stretch:62%;font-weight:900;font-size:48px;line-height:1;color:#fff;background:#000;border:0;cursor:pointer}
   .gross small{display:block;font-stretch:100%;font-weight:400;font-size:15px;margin-top:8px;opacity:.85}
@@ -599,7 +600,7 @@ function render(){
   document.querySelectorAll("[data-stadt]").forEach(b=>b.setAttribute("aria-pressed", b.dataset.stadt===state.stadt));
   $("sub").textContent = `Die öffentlichen Bühnen und Museen ${STAEDTE[state.stadt]} und wer sie leitet`;
   const s = schritte();
-  $("pfad").innerHTML = s.length ? `<button class="zurueck" data-zurueck>Zurück</button>` +
+  $("pfad").innerHTML = s.length ? `<button class="zurueck" data-zurueck>← Zurück</button>` +
     s.map((x,i)=>`<button data-schritt="${i}">${x.label}</button>`).join("<span>/</span>") : "";
   let v = "";
   if(!state.bereich){
