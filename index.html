@@ -610,7 +610,7 @@ function render(){
       <button class="gross u8" data-set='{"bereich":"museen"}'>Museen<small>${anzahl("museen")} Museen und Ausstellungshäuser</small></button>`;
   } else if(!state.haus){
     v = `
-      <button class="gross dezent oben" data-set='{"haus":"alle"}'><span aria-hidden="true">→ </span>Übersicht<small>${leute().length} Leitungspersonen</small></button>
+      <button class="gross dezent oben" data-set='{"haus":"alle"}'><span aria-hidden="true">→ </span>Übersicht<small>${leute().length} ${state.bereich==="museen" ? "Köpfe" : "Leitungspersonen"}</small></button>
       <h2>${{theater:"Die Theater:", musik:"Die Häuser:", museen:"Die Museen:"}[state.bereich]}</h2>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).sort(nachRang).map(h=>`
       <button class="zeile" data-set='{"haus":"${h.id}"}'>
         <span class="bar" style="background:${SPARTEN[h.sparte]}"></span>
@@ -629,7 +629,7 @@ function render(){
     const team = intendanz.filter(p=>p.haus===h.id);
     v = `<h2>${h.name}</h2>` + heuteBlock(h.id) + `
       <a class="link" href="https://${h.web}" target="_blank" rel="noopener">${h.bereich==="museen" ? "Ausstellungen" : "Spielplan"} auf ${h.web.split("/")[0]}</a>
-      <h3>Leitung</h3>` + team.map(p=>`
+      <h3>${h.bereich==="museen" ? "Köpfe" : "Leitung"}</h3>` + team.map(p=>`
         <div class="kopf" data-name="${p.name}">
           <div class="portrait" style="background:${SPARTEN[h.sparte]}" aria-hidden="true">${initialen(p.name)}</div>
           <div class="text"><b>${p.name}</b><div class="rolle">${p.rolle}</div><p>${p.bio}</p></div>
