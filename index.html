@@ -460,8 +460,14 @@ const initialen = n => n.split(/\s+/).map(w=>w[0]).filter(Boolean).slice(0,2).jo
 const bilder = {};
 const holeJSON = url => fetch(url).then(r=>r.ok ? r.json() : null).catch(()=>null);
 
+// Namensvettern: Führt der Name allein auf eine Begriffsklärung, steht hier der richtige Artikel.
+const WIKI_ARTIKEL = {
+  "Johannes Vogel": {de:"Johannes Vogel (Botaniker)", en:"Johannes Vogel (botanist)"}
+};
+
 async function ausWikipedia(name, sprache){
-  const d = await holeJSON(`https://${sprache}.wikipedia.org/api/rest_v1/page/summary/` + encodeURIComponent(name.replace(/ /g,"_")));
+  const artikel = WIKI_ARTIKEL[name]?.[sprache] || name;
+  const d = await holeJSON(`https://${sprache}.wikipedia.org/api/rest_v1/page/summary/` + encodeURIComponent(artikel.replace(/ /g,"_")));
   if(!d || d.type!=="standard" || !d.thumbnail || !BUEHNE.test((d.description||"") + " " + (d.extract||""))) return null;
   return {src:d.thumbnail.source, datei:decodeURIComponent((d.originalimage||d.thumbnail).source.split("/").pop())};
 }

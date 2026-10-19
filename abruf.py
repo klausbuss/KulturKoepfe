@@ -51,7 +51,7 @@ HAEUSER = {
     "vb":  ("volksbuehne.berlin", ["https://www.volksbuehne.berlin/de/spielplan"]),
     "mg":  ("gorki.de", ["https://www.gorki.de/de/spielplan"]),
     "sh":  ("schaubuehne.de", ["https://www.schaubuehne.de/de/spielplan/"]),
-    "hau": ("hebbel-am-ufer.de", ["https://www.hebbel-am-ufer.de/programm/spielplan/"]),
+    "hau": ("hebbel-am-ufer.de", ["https://www.hebbel-am-ufer.de/programm/spielplan-tickets/"]),
     "fp":  ("palast.berlin", []),
     "pa":  ("parkaue.de", ["https://www.parkaue.de/spielplan/"]),
     "gr":  ("grips-theater.de", ["https://www.grips-theater.de/de/spielplan"]),
@@ -105,7 +105,7 @@ MUSEEN = {
     "b-hf":  ("humboldtforum.org", ["https://www.humboldtforum.org/de/ausstellungen/"]),
     "b-jmb": ("jmberlin.de", ["https://www.jmberlin.de/ausstellungen"]),
     "b-dhm": ("dhm.de", ["https://www.dhm.de/ausstellungen/"]),
-    "b-mfn": ("museumfuernaturkunde.berlin", ["https://www.museumfuernaturkunde.berlin/de/museum/ausstellungen"]),
+    "b-mfn": ("museumfuernaturkunde.berlin", ["https://www.museumfuernaturkunde.berlin/besuch-planen/die-ausstellung"]),
     "b-kw":  ("kw-berlin.de", ["https://www.kw-berlin.de/"]),
     "b-hkw": ("hkw.de", ["https://www.hkw.de/programm"]),
     "b-gb":  ("berlinerfestspiele.de", ["https://www.berlinerfestspiele.de/gropius-bau/programm/ausstellungen"]),
@@ -382,6 +382,42 @@ def eintrag_um(start, basis, datum, uhr=""):
     return notbehelf
 
 
+def events_tagesliste(soup, basis):
+    """Monatsspielplan als Liste von Tagesblöcken (z. B. HAU).
+
+    Aufbau: <div class="month"> mit Überschrift „Oktober 2026“, darin <li class="day"
+    data-filterdate="8-10"> je Tag und <div|li class="item"> je Termin mit Uhrzeit
+    (.date strong), Spielort (.event-venue) und Titel (.info-wrap h3 / h4).
+    Einträge ohne Uhrzeit (Festival-Hinweise, Kombitickets) werden übersprungen."""
+    gefunden = []
+    for monat in soup.select("div.month"):
+        kopf = monat.find("h3")
+        jahr = re.search(r"\b(20\d\d)\b", kopf.get_text(" ") if kopf else "")
+        if not jahr:
+            continue
+        for tag in monat.select("li.day[data-filterdate]"):
+            try:
+                t, mo = (int(x) for x in tag["data-filterdate"].split("-"))
+                datum = dt.date(int(jahr.group(1)), mo, t)
+            except ValueError:
+                continue
+            if datum != HEUTE:
+                continue
+            for item in tag.select(".item"):
+                uhr = item.select_one(".date strong")
+                zeit = uhrzeit_aus(text(uhr.get_text(" "))) if uhr else ""
+                if not zeit:
+                    continue
+                teile = [text(x.get_text(" ")) for x in item.select(".info-wrap h3, .info-wrap h4")]
+                titel = " – ".join(x for x in teile if x)
+                ort = item.select_one(".event-venue")
+                link = item.select_one("a.show-btn[href]")
+                gefunden.append({"datum": datum, "zeit": zeit, "titel": titel,
+                                 "ort": ort.get("data-venue", "") if ort else "",
+                                 "url": urljoin(basis, link["href"]) if link else ""})
+    return gefunden
+
+
 def events_timetags(soup, basis):
     gefunden = []
     for t in soup.find_all("time", attrs={"datetime": True}):
@@ -621,6 +657,42 @@ def ausstellungen_html(soup, basis):
     return gefunden
 
 
+# Häuser, deren Übersichtsseite keine Zeiträume zeigt: Das Ende („bis 30.06.2027“)
+# steht erst auf der Seite der einzelnen Ausstellung.
+MIT_DETAILSEITEN = {"b-mfn"}
+MAX_DETAILSEITEN = 15
+
+
+def ausstellungen_detailseiten(soup, url):
+    """Unterseiten der Übersicht einzeln lesen: Titel aus der h1, Zeitraum aus dem Haupttext.
+    Ausstellungen ohne Datum (Dauerausstellungen) fallen dabei heraus."""
+    host = urlparse(url).netloc
+    pfad = urlparse(url).path.rstrip("/") + "/"
+    links = []
+    for a in soup.find_all("a", href=True):
+        ziel = urljoin(url, a["href"]).split("#")[0].split("?")[0]
+        p = urlparse(ziel)
+        if p.netloc == host and p.path.startswith(pfad) and p.path.rstrip("/") + "/" != pfad \
+                and ziel not in links:
+            links.append(ziel)
+    gefunden = []
+    for ziel in links[:MAX_DETAILSEITEN]:
+        try:
+            r = laden(ziel)
+        except (PermissionError, requests.RequestException):
+            continue
+        seite = BeautifulSoup(r.text, "html.parser")
+        kopf = seite.find("h1")
+        titel = text(kopf.get_text(" ")) if kopf else ""
+        haupt = seite.find("main") or seite
+        for x in haupt(["script", "style", "noscript"]):
+            x.decompose()
+        von, bis = zeitraum_aus(text(haupt.get_text(" ")))
+        if titel and bis:
+            gefunden.append({"titel": titel, "von": von, "bis": bis, "url": r.url})
+    return gefunden
+
+
 def ausstellungen_abrufen(hid, eintrag):
     web, gezielt = eintrag
     basis = "https://www." + web
@@ -645,6 +717,8 @@ def ausstellungen_abrufen(hid, eintrag):
         liste, quelle = ausstellungen_jsonld(soup, r.url), "json-ld"
         if not liste:
             liste, quelle = ausstellungen_html(soup, r.url), "html-zeitraum"
+        if not liste and hid in MIT_DETAILSEITEN:
+            liste, quelle = ausstellungen_detailseiten(soup, r.url), "detailseiten"
         if not liste:
             continue
         aktuell, gesehen = [], set()
@@ -703,7 +777,8 @@ def abrufen(hid, eintrag):
                     quelle = "ical"
                 except (requests.RequestException, PermissionError):
                     continue
-        for name, erkenner in (("json-eingebettet", events_json_eingebettet),
+        for name, erkenner in (("html-tagesliste", events_tagesliste),
+                               ("json-eingebettet", events_json_eingebettet),
                                ("html-time", events_timetags),
                                ("html-datum", events_datumstext)):
             if termine:
