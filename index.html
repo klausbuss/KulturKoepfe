@@ -140,7 +140,7 @@ const HAEUSER = [
   ,{stadt:"berlin",id:"b-hf",bereich:"museen",name:"Humboldt Forum",zusatz:"im Berliner Schloss",sparte:"Museum",bezirk:"Mitte",c:[13.4022,52.5175],web:"humboldtforum.org"}
   ,{stadt:"berlin",id:"b-jmb",bereich:"museen",name:"Jüdisches Museum Berlin",sparte:"Museum",bezirk:"Kreuzberg",c:[13.3953,52.502],web:"jmberlin.de"}
   ,{stadt:"berlin",id:"b-dhm",bereich:"museen",name:"Deutsches Historisches Museum",zusatz:"Zeughaus",sparte:"Museum",bezirk:"Mitte",c:[13.3969,52.5178],web:"dhm.de"}
-  ,{stadt:"berlin",id:"b-mfn",bereich:"museen",name:"Museum für Naturkunde",sparte:"Museum",bezirk:"Mitte",c:[13.3794,52.5302],web:"museumfuernaturkunde.berlin"}
+  ,{stadt:"berlin",id:"b-mfn",bereich:"museen",name:"Museum für Naturkunde",sparte:"Museum",bezirk:"Mitte",c:[13.3794,52.5302],web:"museumfuernaturkunde.berlin",zu:[1]}
   ,{stadt:"berlin",id:"b-kw",bereich:"museen",name:"KW Institute for Contemporary Art",sparte:"Museum",bezirk:"Mitte",c:[13.3956,52.5272],web:"kw-berlin.de"}
   ,{stadt:"berlin",id:"b-hkw",bereich:"museen",name:"Haus der Kulturen der Welt",sparte:"Museum",bezirk:"Mitte",c:[13.365,52.5186],web:"hkw.de"}
   ,{stadt:"berlin",id:"b-gb",bereich:"museen",name:"Gropius Bau",zusatz:"Berliner Festspiele",sparte:"Museum",bezirk:"Kreuzberg",c:[13.3818,52.5066],web:"berlinerfestspiele.de/gropius-bau"}
@@ -555,7 +555,11 @@ const esc = t => String(t||"").replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">
 const heuteISO = () => new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Berlin"}).format(new Date());
 const heute = id => HEUTE && HEUTE[id];
 const datumKurz = iso => new Date(iso+"T12:00:00").toLocaleDateString("de-DE",{day:"numeric",month:"long",year:"numeric"});
+// Ruhetage: HAEUSER-Eintrag mit zu:[1] = montags geschlossen (0 = Sonntag … 6 = Samstag)
+const wochentag = () => new Date(heuteISO()+"T12:00:00").getDay();
+const geschlossen = id => (haus(id)?.zu||[]).includes(wochentag());
 function heuteKurz(id){
+  if(geschlossen(id)) return `<span class="heute-kurz">Heute geschlossen</span>`;
   const h = heute(id); if(!h) return "";
   if(h.ausstellungen){
     if(h.status!=="ok") return "";
@@ -568,6 +572,10 @@ function heuteKurz(id){
   return `<span class="heute-kurz">Heute: ${esc(v.titel)}${v.zeit ? ", "+v.zeit : ""}${mehr>0 ? " (+"+mehr+")" : ""}</span>`;
 }
 function heuteBlock(id){
+  const zu = geschlossen(id) ? `<div class="heute leer"><h4>Heute</h4><ul><li><span>Heute geschlossen (Ruhetag)</span></li></ul></div>` : "";
+  return zu + heuteBlockDaten(id);
+}
+function heuteBlockDaten(id){
   const h = heute(id); if(!h) return "";
   if(h.ausstellungen){
     if(h.status!=="ok") return "";
