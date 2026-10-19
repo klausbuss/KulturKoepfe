@@ -2,10 +2,12 @@ name: Heute läuft
 
 on:
   schedule:
-    - cron: "10 22 * * *"  # kurz nach Mitternacht (Sommerzeit), damit die Seite nach 0 Uhr nicht leer ist
-    - cron: "10 23 * * *"  # dasselbe für die Winterzeit
-    - cron: "0 4 * * *"   # täglich 4 Uhr UTC = 5 bzw. 6 Uhr deutscher Zeit
-  workflow_dispatch:      # erlaubt den Start per Knopfdruck
+    # Einmal täglich um 6 Uhr deutscher Zeit. GitHub kennt nur UTC: 04:00 UTC ist im Sommer
+    # 6 Uhr, 05:00 UTC im Winter. Der Schritt „Zeit prüfen“ lässt nur den ersten Lauf ab
+    # 6 Uhr arbeiten, der zweite Zeitpunkt wird übersprungen.
+    - cron: "0 4 * * *"
+    - cron: "0 5 * * *"
+  workflow_dispatch:      # erlaubt den Start per Knopfdruck (läuft immer)
 
 permissions:
   contents: write
@@ -15,12 +17,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Zeit prüfen (einmal täglich ab 6 Uhr deutscher Zeit)
+        id: zeit
+        run: |
+          stunde=$(TZ=Europe/Berlin date +%H)
+          heute=$(TZ=Europe/Berlin date +%F)
+          if [ "${{ github.event_name }}" = "schedule" ] && { [ "$stunde" -lt 6 ] || grep -q "\"datum\": \"$heute\"" heute.json; }; then
+            echo "Übersprungen (Stunde $stunde, heute.json hat schon den Stand von $heute oder es ist vor 6 Uhr)"
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/setup-python@v5
+        if: steps.zeit.outputs.run == 'true'
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+        if: steps.zeit.outputs.run == 'true'
       - run: python abruf.py
+        if: steps.zeit.outputs.run == 'true'
       - name: heute.json speichern
+        if: steps.zeit.outputs.run == 'true'
         run: |
           git config user.name "kulturkoepfe-bot"
           git config user.email "actions@users.noreply.github.com"
