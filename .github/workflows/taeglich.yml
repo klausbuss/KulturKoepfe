@@ -22,8 +22,9 @@ jobs:
         run: |
           stunde=$(TZ=Europe/Berlin date +%H)
           heute=$(TZ=Europe/Berlin date +%F)
-          if [ "${{ github.event_name }}" = "schedule" ] && { [ "$stunde" -lt 6 ] || grep -q "\"datum\": \"$heute\"" heute.json; }; then
-            echo "Übersprungen (Stunde $stunde, heute.json hat schon den Stand von $heute oder es ist vor 6 Uhr)"
+          muster="\"stand\": \"${heute}T(0[6-9]|1[0-9]|2[0-3])"
+          if [ "${{ github.event_name }}" = "schedule" ] && { [ "$stunde" -lt 6 ] || grep -Eq "$muster" heute.json; }; then
+            echo "Übersprungen (Stunde $stunde; es ist vor 6 Uhr oder heute.json wurde heute schon ab 6 Uhr erzeugt)"
             echo "run=false" >> "$GITHUB_OUTPUT"
           else
             echo "run=true" >> "$GITHUB_OUTPUT"
@@ -43,4 +44,9 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add heute.json diagnose || git add heute.json
           git commit -m "Heute läuft: $(date +%F)" || echo "Keine Änderung"
-          git push
+          for versuch in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push fehlgeschlagen (Versuch $versuch), neuer Versuch"
+            sleep 5
+          done
+          exit 1
