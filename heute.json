@@ -1,14 +1,14 @@
 {
- "datum": "2026-10-19",
- "stand": "2026-10-19T01:29+02:00",
+ "datum": "2026-10-20",
+ "stand": "2026-10-20T06:22+02:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "Öffentliche Generalprobe für alle U30",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/oeffentliche-generalprobe-fuer-alle-u30.27843/#event-154875"
+     "zeit": "19:00",
+     "titel": "Sym­pho­nie­kon­zert II",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/symphoniekonzert-ii.27763/#event-154680"
     }
    ],
    "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
@@ -27,26 +27,14 @@
    ]
   },
   "ko": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:30",
-     "titel": "Hommage",
-     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/hommage/1367/"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
    "format": "microdata"
   },
   "sb": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "09:30",
-     "titel": "Feriencamp",
-     "ort": "Unter den Linden 7, 10117 Berlin"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.staatsballett-berlin.de/spielplan",
    "format": "ical"
   },
@@ -54,9 +42,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Die Gehaltserhöhung",
-     "url": "https://www.deutschestheater.de/programm/produktionen/die-gehaltserhoehung"
+     "zeit": "19:00",
+     "titel": "Automatenbüfett",
+     "url": "https://www.deutschestheater.de/programm/produktionen/automatenbuefett-1"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -66,8 +54,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Mitgliederversammlung des Freundeskreises",
-     "url": "https://www.berliner-ensemble.de/inszenierung/mitgliederversammlung-des-freundeskreises"
+     "titel": "Probenbesuch: \"Warten auf'n Bus\"",
+     "url": "https://www.berliner-ensemble.de/inszenierung/probenbesuch-warten-aufn-bus"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -79,7 +67,7 @@
     {
      "zeit": "20:00",
      "titel": "Prater Perfection Nach dem Roman von Vincenzo Latronico Anta Recke auf Deutsch und Englisch",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261019-1800/"
+     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261020-1800/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
@@ -107,25 +95,25 @@
    "status": "fehler",
    "grund": "geladen, aber keine Termindaten erkannt",
    "versuche": [
-    "https://www.hebbel-am-ufer.de/programm/spielplan/ -> 404",
     "https://www.hebbel-am-ufer.de/spielplan -> 404",
     "https://www.hebbel-am-ufer.de/de/spielplan -> 404",
     "https://www.hebbel-am-ufer.de/de/programm -> 404",
     "https://www.hebbel-am-ufer.de/kalender -> 404",
-    "https://www.hebbel-am-ufer.de/de/kalender -> 404"
+    "https://www.hebbel-am-ufer.de/de/kalender -> 404",
+    "https://www.hebbel-am-ufer.de/termine -> 404"
    ]
   },
   "fp": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.palast.berlin/spielplan -> 404",
-    "https://www.palast.berlin/de/spielplan -> 404",
-    "https://www.palast.berlin/kalender -> 404",
-    "https://www.palast.berlin/de/kalender -> 404",
-    "https://www.palast.berlin/termine -> 404",
-    "https://www.palast.berlin/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "BLINDED by DELIGHT",
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6956"
+    }
+   ],
+   "quelle": "https://www.palast.berlin/",
+   "format": "html-datum"
   },
   "pa": {
    "status": "keine",
@@ -137,9 +125,14 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "10:00",
+     "titel": "oh peinlich",
+     "url": "https://www.grips-theater.de/de/spielplan/oh-peinlich/3177"
+    },
+    {
      "zeit": "18:00",
      "titel": "Upload Virgin",
-     "url": "https://www.grips-theater.de/de/spielplan/upload-virgin/3176"
+     "url": "https://www.grips-theater.de/de/spielplan/upload-virgin/3178"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
@@ -200,23 +193,33 @@
    "format": "json-ld"
   },
   "hh-sh": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.schauspielhaus.de/de/spielplan -> 404",
-    "https://www.schauspielhaus.de/programm -> 404",
-    "https://www.schauspielhaus.de/de/programm -> 404",
-    "https://www.schauspielhaus.de/kalender -> 404",
-    "https://www.schauspielhaus.de/de/kalender -> 404",
-    "https://www.schauspielhaus.de/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Zur Person: Hannah Arendt",
+     "url": "https://schauspielhaus.de/stuecke/zur-person-hannah-arendt"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Drosseln",
+     "url": "https://schauspielhaus.de/stuecke/drosseln"
+    },
+    {
+     "zeit": "20:30",
+     "titel": "Kunstformen der Natur",
+     "url": "https://schauspielhaus.de/stuecke/kunstformen-der-natur"
+    }
+   ],
+   "quelle": "https://schauspielhaus.de/spielplan",
+   "format": "html-datum"
   },
   "hh-th": {
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Die kleine Meerjungfrau",
-     "url": "https://www.thalia-theater.de/de/stuecke/die-kleine-meerjungfrau/176"
+     "titel": "Asche",
+     "url": "https://www.thalia-theater.de/de/stuecke/asche/157"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
@@ -226,22 +229,28 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
+     "zeit": "17:30",
      "titel": "K3 MOVEMENT CLASS",
      "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55020"
     },
     {
      "zeit": "19:30",
-     "titel": "PROBEBÜHNE UNPLUGGED",
-     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55050"
+     "titel": "K3 MOVEMENT CLASS",
+     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55020"
     }
    ],
    "quelle": "https://kampnagel.de/kalender",
    "format": "json-eingebettet"
   },
   "hh-so": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Macbeth",
+     "ort": "Staatsoper, Großes Haus"
+    }
+   ],
    "quelle": "https://www.die-hamburgische-staatsoper.de/de",
    "format": "ical"
   },
@@ -249,14 +258,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "New York Philharmonic / Orfeó Català / Gustavo Dudamel",
-     "url": "https://www.elbphilharmonie.de/de/programm/new-york-philharmonic-orfeo-catala-gustavo-dudamel/27933"
+     "zeit": "10:00",
+     "titel": "Saitentag",
+     "url": "https://www.elbphilharmonie.de/de/programm/saitentag/28647"
     },
     {
      "zeit": "20:00",
-     "titel": "ABGESAGT: Cécile McLorin Salvant",
-     "url": "https://www.elbphilharmonie.de/de/programm/abgesagt-cecile-mclorin-salvant/28232"
+     "titel": "Jeremias & Ensemble",
+     "url": "https://www.elbphilharmonie.de/de/programm/jeremias-ensemble/28819"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
@@ -279,13 +288,8 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "Ödipus",
-     "url": "https://www.residenztheater.de/stuecke/detail/oedipus"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Das Gelobte Land",
-     "url": "https://www.residenztheater.de/stuecke/detail/das-gelobte-land"
+     "titel": "Der zerbrochne Krug",
+     "url": "https://www.residenztheater.de/stuecke/detail/der-zerbrochne-krug"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
@@ -295,28 +299,28 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Ein Abend für Elfriede Jelinek"
+     "zeit": "18:00",
+     "titel": "MK:ollektiv 2026-2027"
     },
     {
      "zeit": "20:00",
-     "titel": "(Münchner) Verkehr"
+     "titel": "Jugend ohne Gott"
     }
    ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
    "format": "ical"
   },
   "m-vt": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.muenchner-volkstheater.de/de/spielplan -> 404",
-    "https://www.muenchner-volkstheater.de/de/programm -> 404",
-    "https://www.muenchner-volkstheater.de/kalender -> 404",
-    "https://www.muenchner-volkstheater.de/de/kalender -> 404",
-    "https://www.muenchner-volkstheater.de/termine -> 404",
-    "https://www.muenchner-volkstheater.de/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "20:00",
+     "titel": "Philophobia",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/philophobia"
+    }
+   ],
+   "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
+   "format": "html-datum"
   },
   "m-bso": {
    "status": "fehler",
@@ -343,16 +347,16 @@
    ]
   },
   "m-mph": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "15:30",
-     "titel": "Familienkonzert im 2411 Für Kinder von 3 bis 6 Jahren (in Gruppen oder mit ihren Familien)",
-     "url": "https://www.mphil.de/konzerte-und-karten/kalender/konzerte/familienkonzert-2026-10-19-15-30-00"
-    }
-   ],
-   "quelle": "https://www.mphil.de/kalender",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.mphil.de/spielplan -> 404",
+    "https://www.mphil.de/de/spielplan -> 404",
+    "https://www.mphil.de/programm -> 404",
+    "https://www.mphil.de/de/programm -> 404",
+    "https://www.mphil.de/de/kalender -> 404",
+    "https://www.mphil.de/termine -> 404"
+   ]
   },
   "m-br": {
    "status": "fehler",
@@ -370,29 +374,40 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Glaube Liebe Hoffnung",
-     "url": "https://www.burgtheater.at/veranstaltungen/glaube-liebe-hoffnung/2026-10-19"
+     "zeit": "19:30",
+     "titel": "Puls!",
+     "url": "https://www.burgtheater.at/veranstaltungen/puls/2026-10-20"
     },
     {
-     "zeit": "20:00",
-     "titel": "Dear Papi - My beloved Sargnagel",
-     "url": "https://www.burgtheater.at/veranstaltungen/dear-papi-my-beloved-sargnagel/2026-10-19"
+     "zeit": "19:30",
+     "titel": "König Ubu",
+     "url": "https://www.burgtheater.at/veranstaltungen/koenig-ubu/2026-10-20"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Am Ziel",
+     "url": "https://www.burgtheater.at/veranstaltungen/am-ziel/2026-10-20"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
    "format": "html-time"
   },
   "w-vt": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.volkstheater.at/programm -> 404",
-    "https://www.volkstheater.at/de/programm -> 404",
-    "https://www.volkstheater.at/kalender -> 404",
-    "https://www.volkstheater.at/de/kalender -> 404",
-    "https://www.volkstheater.at/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "18:30",
+     "titel": "DIE ANKUNFT",
+     "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "LAMENTO",
+     "url": "https://www.volkstheater.at/produktion/3143189/lamento/3551376"
+    }
+   ],
+   "quelle": "https://www.volkstheater.at/spielplan/",
+   "format": "html-datum"
   },
   "w-jos": {
    "status": "fehler",
@@ -410,43 +425,52 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Abo 13",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/otello/2025-09-08/"
+     "zeit": "19:00",
+     "titel": "Nijinsky"
     }
    ],
-   "quelle": "https://www.wiener-staatsoper.at/kalender/2026/oktober/",
+   "quelle": "https://www.wiener-staatsoper.at/",
    "format": "html-datum"
   },
   "w-vo": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Der Zarewitsch",
-     "url": "https://www.volksoper.at/produktion/der-zarewitsch-2026.1013793976.de.html"
+     "zeit": "18:00",
+     "titel": "Ronja Räubertochter",
+     "url": "https://www.volksoper.at/produktion/ronja-raubertochter-2026.1014199582.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
    "format": "microdata"
   },
   "w-tadw": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.theater-wien.at/spielplan -> 404",
-    "https://www.theater-wien.at/programm -> 404",
-    "https://www.theater-wien.at/kalender -> 404",
-    "https://www.theater-wien.at/termine -> 404",
-    "https://www.theater-wien.at/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "00:00",
+     "titel": "Klangstreich – Eine Note tanzt aus der ReiheMarc L. Vogler"
+    },
+    {
+     "zeit": "00:00",
+     "titel": "Der fliegende HolländerRichard Wagner"
+    }
+   ],
+   "quelle": "https://www.theater-wien.at/de/home",
+   "format": "html-time"
   },
   "w-kh": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "09:00",
-     "titel": "Allez hop",
-     "url": "https://konzerthaus.at/de/programm-und-karten/allez-hop/64042"
+     "zeit": "19:30",
+     "titel": "Camerata Salzburg / Tharaud / Downie-Dear",
+     "url": "https://konzerthaus.at/de/programm-und-karten/camerata-salzburg-tharaud-downie-dear/63781"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Bela Koreny & Friends",
+     "url": "https://konzerthaus.at/de/programm-und-karten/bela-koreny-friends/63948"
     }
    ],
    "quelle": "https://konzerthaus.at/de/programm-und-karten",
@@ -464,15 +488,16 @@
    ]
   },
   "w-sym": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.wienersymphoniker.at/spielplan -> 404",
-    "https://www.wienersymphoniker.at/de/spielplan -> 404",
-    "https://www.wienersymphoniker.at/programm -> 404",
-    "https://www.wienersymphoniker.at/termine -> 404",
-    "https://www.wienersymphoniker.at/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Wagner \"Der fliegende Holländer\"",
+     "url": "https://www.wienersymphoniker.at/konzert/wagner-der-fliegende-hollaender-20-10-2026"
+    }
+   ],
+   "quelle": "https://www.wienersymphoniker.at/kalender",
+   "format": "html-time"
   },
   "b-nm": {
    "status": "ok",
@@ -663,15 +688,21 @@
    "format": "html-zeitraum"
   },
   "b-mfn": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Ausstellungsdaten erkannt",
-   "versuche": [
-    "https://www.museumfuernaturkunde.berlin/ausstellungen -> 404",
-    "https://www.museumfuernaturkunde.berlin/de/ausstellungen -> 403",
-    "https://www.museumfuernaturkunde.berlin/ausstellungen/aktuell -> 404",
-    "https://www.museumfuernaturkunde.berlin/exhibitions -> 404",
-    "https://www.museumfuernaturkunde.berlin/en/exhibitions -> 404"
-   ]
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "ZUGvögel – Eine Sammlung in Bewegung",
+     "bis": "2027-06-30",
+     "url": "https://www.museumfuernaturkunde.berlin/besuch-planen/die-ausstellung/zugvoegel/"
+    },
+    {
+     "titel": "DINOSAURIER! Zeitalter der Riesenechsen",
+     "bis": "2027-11-30",
+     "url": "https://www.museumfuernaturkunde.berlin/besuch-planen/die-ausstellung/dinosaurier/"
+    }
+   ],
+   "quelle": "https://www.museumfuernaturkunde.berlin/besuch-planen/die-ausstellung",
+   "format": "detailseiten"
   },
   "b-kw": {
    "status": "ok",
@@ -1010,12 +1041,13 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Shifting the Silence. Die Stille verschieben",
+     "titel": "Shifting the Silence. Die Stille verschieben Gegenwartskunst im Lenbachhaus",
+     "von": "2025-10-14",
      "bis": "2027-01-31",
      "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/shifting-the-silence"
     },
     {
-     "titel": "Über die Welt hinaus Der Blaue Reiter",
+     "titel": "Über die Welt hinaus. Der Blaue Reiter",
      "von": "2026-03-10",
      "bis": "2027-09-05",
      "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/ueber-die-welt-hinaus-der-blaue-reiter"
@@ -1026,7 +1058,7 @@
      "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/was-zu-verschwinden-droht-wird-bild"
     }
    ],
-   "quelle": "https://www.lenbachhaus.de/",
+   "quelle": "https://www.lenbachhaus.de/programm/ausstellungen",
    "format": "html-zeitraum"
   },
   "m-dm": {
@@ -1091,13 +1123,15 @@
    "format": "html-zeitraum"
   },
   "w-khm": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Ausstellungsdaten erkannt",
-   "versuche": [
-    "https://www.khm.at/de/ausstellungen -> 404",
-    "https://www.khm.at/ausstellungen/aktuell -> 404",
-    "https://www.khm.at/exhibitions -> 404"
-   ]
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Ein 2000 Jahre altes Rätsel",
+     "bis": "2027-03-29"
+    }
+   ],
+   "quelle": "https://www.khm.at/",
+   "format": "html-zeitraum"
   },
   "w-alb": {
    "status": "ok",
@@ -1201,16 +1235,16 @@
    "format": "html-zeitraum"
   },
   "w-nhm": {
-   "status": "ok",
-   "ausstellungen": [
-    {
-     "titel": "Gutes Sammeln – Böses Sammeln",
-     "bis": "2027-06-27",
-     "url": "https://www.nhm.at/gutes_sammeln_boeses_sammeln"
-    }
-   ],
-   "quelle": "https://www.nhm.at/jart/prj3/nhm-resp/main.jart",
-   "format": "html-zeitraum"
+   "status": "fehler",
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.nhm.at/ausstellungen -> ReadTimeout",
+    "https://www.nhm.at/de/ausstellungen -> ReadTimeout",
+    "https://www.nhm.at/ausstellungen/aktuell -> ReadTimeout",
+    "https://www.nhm.at/exhibitions -> ReadTimeout",
+    "https://www.nhm.at/en/exhibitions -> ReadTimeout",
+    "https://www.nhm.at/programm -> ReadTimeout"
+   ]
   },
   "w-wm": {
    "status": "ok",
@@ -1242,36 +1276,38 @@
    "ausstellungen": [
     {
      "titel": "miniXplore",
-     "von": "2026-10-19",
-     "bis": "2026-10-19"
+     "von": "2026-10-20",
+     "bis": "2026-10-20"
     },
     {
      "titel": "minTi",
-     "von": "2026-10-19",
-     "bis": "2026-10-19"
+     "von": "2026-10-20",
+     "bis": "2026-10-20"
     },
     {
      "titel": "Birdly® – Das VR-Flug-Erlebnis",
-     "von": "2026-10-19",
-     "bis": "2026-10-19"
+     "von": "2026-10-20",
+     "bis": "2026-10-20"
     },
     {
      "titel": "Hochspannungsvorführung",
-     "von": "2026-10-19",
-     "bis": "2026-10-19"
+     "von": "2026-10-20",
+     "bis": "2026-10-20"
     }
    ],
    "quelle": "https://www.technischesmuseum.at/jart/prj3/tmw/main.jart",
    "format": "json-ld"
   },
   "w-wmw": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Ausstellungsdaten erkannt",
-   "versuche": [
-    "https://www.weltmuseumwien.at/de/ausstellungen -> 404",
-    "https://www.weltmuseumwien.at/ausstellungen/aktuell -> 404",
-    "https://www.weltmuseumwien.at/exhibitions -> 404"
-   ]
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Ein 2000 Jahre altes Rätsel",
+     "bis": "2027-03-29"
+    }
+   ],
+   "quelle": "https://www.weltmuseumwien.at/",
+   "format": "html-zeitraum"
   }
  }
 }
