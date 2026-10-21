@@ -1,14 +1,14 @@
 {
- "datum": "2026-10-20",
- "stand": "2026-10-20T06:22+02:00",
+ "datum": "2026-10-21",
+ "stand": "2026-10-21T06:23+02:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
+     "zeit": "20:00",
      "titel": "Sym­pho­nie­kon­zert II",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/symphoniekonzert-ii.27763/#event-154680"
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/symphoniekonzert-ii.27763/#event-154681"
     }
    ],
    "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
@@ -42,9 +42,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Automatenbüfett",
-     "url": "https://www.deutschestheater.de/programm/produktionen/automatenbuefett-1"
+     "zeit": "20:00",
+     "titel": "Der erste fiese Typ",
+     "url": "https://www.deutschestheater.de/programm/produktionen/der-erste-fiese-typ"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -54,8 +54,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Probenbesuch: \"Warten auf'n Bus\"",
-     "url": "https://www.berliner-ensemble.de/inszenierung/probenbesuch-warten-aufn-bus"
+     "titel": "Probenbesuch: \"Die Letzten werden die Allerletzten sein\"",
+     "url": "https://www.berliner-ensemble.de/inszenierung/probenbesuch-die-letzten-werden-die-allerletzten-sein"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -66,8 +66,18 @@
    "vorstellungen": [
     {
      "zeit": "20:00",
+     "titel": "identity factory (solo version)",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/identity-factory/20261021-1800/"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "The Drama Is Present",
+     "url": "https://www.volksbuehne-berlin.de/reihen-und-projekte/the-drama-is-present/the-drama-is-present/"
+    },
+    {
+     "zeit": "20:00",
      "titel": "Prater Perfection Nach dem Roman von Vincenzo Latronico Anta Recke auf Deutsch und Englisch",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261020-1800/"
+     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261021-1800/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
@@ -109,7 +119,7 @@
     {
      "zeit": "19:30",
      "titel": "BLINDED by DELIGHT",
-     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6956"
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6957"
     }
    ],
    "quelle": "https://www.palast.berlin/",
@@ -127,12 +137,12 @@
     {
      "zeit": "10:00",
      "titel": "oh peinlich",
-     "url": "https://www.grips-theater.de/de/spielplan/oh-peinlich/3177"
+     "url": "https://www.grips-theater.de/de/spielplan/oh-peinlich/3179"
     },
     {
      "zeit": "18:00",
-     "titel": "Upload Virgin",
-     "url": "https://www.grips-theater.de/de/spielplan/upload-virgin/3178"
+     "titel": "Das Heimatkleid",
+     "url": "https://www.grips-theater.de/de/spielplan/das-heimatkleid/3180"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
@@ -202,13 +212,8 @@
     },
     {
      "zeit": "20:00",
-     "titel": "Drosseln",
-     "url": "https://schauspielhaus.de/stuecke/drosseln"
-    },
-    {
-     "zeit": "20:30",
-     "titel": "Kunstformen der Natur",
-     "url": "https://schauspielhaus.de/stuecke/kunstformen-der-natur"
+     "titel": "Best of FUN FACTS",
+     "url": "https://schauspielhaus.de/stuecke/best-fun-facts"
     }
    ],
    "quelle": "https://schauspielhaus.de/spielplan",
@@ -218,8 +223,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Asche",
-     "url": "https://www.thalia-theater.de/de/stuecke/asche/157"
+     "titel": "Arendt",
+     "url": "https://www.thalia-theater.de/de/stuecke/arendt/156"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
@@ -246,9 +251,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Macbeth",
-     "ort": "Staatsoper, Großes Haus"
+     "zeit": "13:30",
+     "titel": "Führung durch die Staatsoper",
+     "ort": "Staatsoper, Treffpunkt: Bühneneingang"
     }
    ],
    "quelle": "https://www.die-hamburgische-staatsoper.de/de",
@@ -260,36 +265,46 @@
     {
      "zeit": "10:00",
      "titel": "Saitentag",
-     "url": "https://www.elbphilharmonie.de/de/programm/saitentag/28647"
+     "url": "https://www.elbphilharmonie.de/de/programm/saitentag/28649"
     },
     {
      "zeit": "20:00",
-     "titel": "Jeremias & Ensemble",
-     "url": "https://www.elbphilharmonie.de/de/programm/jeremias-ensemble/28819"
+     "titel": "Jedermann Reloaded",
+     "url": "https://www.elbphilharmonie.de/de/programm/jedermann-reloaded/28887"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Clara Lösel",
+     "url": "https://www.elbphilharmonie.de/de/programm/clara-losel/28930"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
    "format": "html-time"
   },
   "hh-ndr": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.ndr.de/spielplan -> 404",
-    "https://www.ndr.de/de/spielplan -> 404",
-    "https://www.ndr.de/programm -> 404",
-    "https://www.ndr.de/de/programm -> 404",
-    "https://www.ndr.de/kalender -> 404",
-    "https://www.ndr.de/de/kalender -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Musikmetropole Budapest: Leif Ove Andsnes & Alan Gilbert",
+     "url": "https://www.ndr.de/orchester_chor/elbphilharmonieorchester/konzerte/ndr-elbphilharmonie-orchester-zu-gast-in-budapest-leif-ove-andsnes-alan-gilbert,gilbert-160.html"
+    }
+   ],
+   "quelle": "https://www.ndr.de/orchester_chor/elbphilharmonieorchester/konzerte",
+   "format": "html-datum"
   },
   "m-resi": {
    "status": "ok",
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "Der zerbrochne Krug",
-     "url": "https://www.residenztheater.de/stuecke/detail/der-zerbrochne-krug"
+     "titel": "Munich Machine",
+     "url": "https://www.residenztheater.de/stuecke/detail/munich-machine"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "La Musica – zwischen ihr und ihm",
+     "url": "https://www.residenztheater.de/stuecke/detail/la-musica"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
@@ -299,12 +314,12 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "MK:ollektiv 2026-2027"
+     "zeit": "20:00",
+     "titel": "Play Auerbach!"
     },
     {
-     "zeit": "20:00",
-     "titel": "Jugend ohne Gott"
+     "zeit": "22:15",
+     "titel": "Jour Fixe für Lehrkräfte „Play Auerbach“"
     }
    ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
@@ -375,18 +390,13 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "Puls!",
-     "url": "https://www.burgtheater.at/veranstaltungen/puls/2026-10-20"
-    },
-    {
-     "zeit": "19:30",
      "titel": "König Ubu",
-     "url": "https://www.burgtheater.at/veranstaltungen/koenig-ubu/2026-10-20"
+     "url": "https://www.burgtheater.at/veranstaltungen/koenig-ubu/2026-10-21"
     },
     {
-     "zeit": "19:30",
-     "titel": "Am Ziel",
-     "url": "https://www.burgtheater.at/veranstaltungen/am-ziel/2026-10-20"
+     "zeit": "20:00",
+     "titel": "Egal",
+     "url": "https://www.burgtheater.at/veranstaltungen/egal/2026-10-21"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
@@ -396,14 +406,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:30",
-     "titel": "DIE ANKUNFT",
+     "zeit": "19:00",
+     "titel": "ÖDIPUS TYRANN",
      "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
     },
     {
-     "zeit": "20:00",
-     "titel": "LAMENTO",
-     "url": "https://www.volkstheater.at/produktion/3143189/lamento/3551376"
+     "zeit": "19:00",
+     "titel": "WOYZECK",
+     "url": "https://www.volkstheater.at/spielstaetten/volkstheater-bezirke/theater-akzent"
     }
    ],
    "quelle": "https://www.volkstheater.at/spielplan/",
@@ -425,20 +435,25 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Nijinsky"
+     "titel": "Abo 10",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/tannhaeuser/2025-09-17/"
     }
    ],
-   "quelle": "https://www.wiener-staatsoper.at/",
+   "quelle": "https://www.wiener-staatsoper.at/kalender/2026/oktober/",
    "format": "html-datum"
   },
   "w-vo": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "Ronja Räubertochter",
-     "url": "https://www.volksoper.at/produktion/ronja-raubertochter-2026.1014199582.de.html"
+     "zeit": "11:00",
+     "titel": "Chicago",
+     "url": "https://www.volksoper.at/produktion/chicago-2025.1013863791.de.html"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "Die Fledermaus",
+     "url": "https://www.volksoper.at/produktion/die-fledermaus-1990.1013381835.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
@@ -449,11 +464,7 @@
    "vorstellungen": [
     {
      "zeit": "00:00",
-     "titel": "Klangstreich – Eine Note tanzt aus der ReiheMarc L. Vogler"
-    },
-    {
-     "zeit": "00:00",
-     "titel": "Der fliegende HolländerRichard Wagner"
+     "titel": "HerculesGeorg Friedrich Händel"
     }
    ],
    "quelle": "https://www.theater-wien.at/de/home",
@@ -463,14 +474,29 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Camerata Salzburg / Tharaud / Downie-Dear",
-     "url": "https://konzerthaus.at/de/programm-und-karten/camerata-salzburg-tharaud-downie-dear/63781"
+     "zeit": "12:30",
+     "titel": "Marie-Luise Stockinger / Katharina Lorenz / Miriam Adefris",
+     "url": "https://konzerthaus.at/de/programm-und-karten/marie-luise-stockinger-katharina-lorenz-miriam-adefris/64131#important-info"
+    },
+    {
+     "zeit": "18:30",
+     "titel": "Camerata Salzburg / Tharaud / Downie Dear",
+     "url": "https://konzerthaus.at/de/programm-und-karten/camerata-salzburg-tharaud-downie-dear/63780"
+    },
+    {
+     "zeit": "18:30",
+     "titel": "Marie-Luise Stockinger / Katharina Lorenz / Miriam Adefris",
+     "url": "https://konzerthaus.at/de/programm-und-karten/marie-luise-stockinger-katharina-lorenz-miriam-adefris/63949#important-info"
+    },
+    {
+     "zeit": "18:45",
+     "titel": "Einführungsgespräch Cantando Admont",
+     "url": "https://konzerthaus.at/de/programm-und-karten/einfuehrungsgespraech-cantando-admont/64519"
     },
     {
      "zeit": "19:30",
-     "titel": "Bela Koreny & Friends",
-     "url": "https://konzerthaus.at/de/programm-und-karten/bela-koreny-friends/63948"
+     "titel": "Cantando Admont",
+     "url": "https://konzerthaus.at/de/programm-und-karten/cantando-admont/63840"
     }
    ],
    "quelle": "https://konzerthaus.at/de/programm-und-karten",
@@ -488,16 +514,15 @@
    ]
   },
   "w-sym": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:00",
-     "titel": "Wagner \"Der fliegende Holländer\"",
-     "url": "https://www.wienersymphoniker.at/konzert/wagner-der-fliegende-hollaender-20-10-2026"
-    }
-   ],
-   "quelle": "https://www.wienersymphoniker.at/kalender",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.wienersymphoniker.at/spielplan -> 404",
+    "https://www.wienersymphoniker.at/de/spielplan -> 404",
+    "https://www.wienersymphoniker.at/programm -> 404",
+    "https://www.wienersymphoniker.at/termine -> 404",
+    "https://www.wienersymphoniker.at/konzerte -> 404"
+   ]
   },
   "b-nm": {
    "status": "ok",
@@ -1099,8 +1124,15 @@
    "format": "html-zeitraum"
   },
   "m-gly": {
-   "status": "keine",
-   "ausstellungen": [],
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Beten und Opfern",
+     "von": "2026-10-21",
+     "bis": "2026-10-21",
+     "url": "https://www.antike-am-koenigsplatz.mwn.de/event/beten-und-opfern/"
+    }
+   ],
    "quelle": "https://www.antike-am-koenigsplatz.mwn.de/",
    "format": "json-ld"
   },
@@ -1235,16 +1267,26 @@
    "format": "html-zeitraum"
   },
   "w-nhm": {
-   "status": "fehler",
-   "grund": "keine Seite erreichbar",
-   "versuche": [
-    "https://www.nhm.at/ausstellungen -> ReadTimeout",
-    "https://www.nhm.at/de/ausstellungen -> ReadTimeout",
-    "https://www.nhm.at/ausstellungen/aktuell -> ReadTimeout",
-    "https://www.nhm.at/exhibitions -> ReadTimeout",
-    "https://www.nhm.at/en/exhibitions -> ReadTimeout",
-    "https://www.nhm.at/programm -> ReadTimeout"
-   ]
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Vorsicht Hochspannung Sonderausstellung im Narrenturm",
+     "bis": "2027-04-24",
+     "url": "https://www.nhm.at/besuch/ausstellungen/vorsicht-hochspannung"
+    },
+    {
+     "titel": "Gutes Sammeln - Böses Sammeln",
+     "bis": "2027-06-27",
+     "url": "https://www.nhm.at/besuch/ausstellungen/gutes-sammeln-boeses-sammeln"
+    },
+    {
+     "titel": "GENchangers.",
+     "bis": "2027-07-26",
+     "url": "https://www.nhm.at/besuch/ausstellungen/genchangers"
+    }
+   ],
+   "quelle": "https://www.nhm.at/",
+   "format": "html-zeitraum"
   },
   "w-wm": {
    "status": "ok",
@@ -1276,23 +1318,28 @@
    "ausstellungen": [
     {
      "titel": "miniXplore",
-     "von": "2026-10-20",
-     "bis": "2026-10-20"
+     "von": "2026-10-21",
+     "bis": "2026-10-21"
     },
     {
      "titel": "minTi",
-     "von": "2026-10-20",
-     "bis": "2026-10-20"
+     "von": "2026-10-21",
+     "bis": "2026-10-21"
     },
     {
      "titel": "Birdly® – Das VR-Flug-Erlebnis",
-     "von": "2026-10-20",
-     "bis": "2026-10-20"
+     "von": "2026-10-21",
+     "bis": "2026-10-21"
     },
     {
      "titel": "Hochspannungsvorführung",
-     "von": "2026-10-20",
-     "bis": "2026-10-20"
+     "von": "2026-10-21",
+     "bis": "2026-10-21"
+    },
+    {
+     "titel": "Bodies in Making-Toolkit: Pädagog:innen-Workshop",
+     "von": "2026-10-21",
+     "bis": "2026-10-21"
     }
    ],
    "quelle": "https://www.technischesmuseum.at/jart/prj3/tmw/main.jart",
