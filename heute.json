@@ -1,24 +1,24 @@
 {
- "datum": "2026-10-22",
- "stand": "2026-10-22T06:24+02:00",
+ "datum": "2026-10-23",
+ "stand": "2026-10-23T06:23+02:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "17:45",
+     "zeit": "18:15",
      "titel": "Vor-Führung",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/vor-fuehrung.22834/#event-176555"
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/vor-fuehrung.22834/#event-176556"
     },
     {
-     "zeit": "19:00",
-     "titel": "Madama Butterfly",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/madama-butterfly.19/#event-153988"
+     "zeit": "19:30",
+     "titel": "Giselle",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/giselle.13681/#event-155218"
     },
     {
-     "zeit": "22:30",
+     "zeit": "22:20",
      "titel": "Nach(t)führung",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/nach-t-fuehrung.10795/#event-176240"
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/nach-t-fuehrung.10795/#event-176241"
     }
    ],
    "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
@@ -37,14 +37,26 @@
    ]
   },
   "ko": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Or­pheus in der Un­ter­welt",
+     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/orpheus-in-der-unterwelt/1299/"
+    }
+   ],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
    "format": "microdata"
   },
   "sb": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Giselle",
+     "ort": "Unter den Linden 7, 10117 Berlin"
+    }
+   ],
    "quelle": "https://www.staatsballett-berlin.de/spielplan",
    "format": "ical"
   },
@@ -52,19 +64,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:30",
-     "titel": "Schwarze Löcher und forensische Landschaften",
-     "url": "https://www.deutschestheater.de/programm/produktionen/schwarze-loecher-und-forensische-landschaften"
-    },
-    {
      "zeit": "19:30",
-     "titel": "Die Holländerinnen",
-     "url": "https://www.deutschestheater.de/programm/produktionen/die-hollaenderinnen"
+     "titel": "Der Fall McNeal",
+     "url": "https://www.deutschestheater.de/programm/produktionen/der-fall-mcneal"
     },
     {
      "zeit": "20:00",
-     "titel": "Ismene, Schwester von",
-     "url": "https://www.deutschestheater.de/programm/produktionen/ismene-schwester-von"
+     "titel": "Die drei Leben der Hannah Arendt",
+     "url": "https://www.deutschestheater.de/programm/produktionen/die-drei-leben-der-hannah-arendt"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -74,8 +81,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Einblicke: Open Space",
-     "url": "https://www.berliner-ensemble.de/inszenierung/einblicke-open-space"
+     "titel": "Der letzte Himmel",
+     "url": "https://www.berliner-ensemble.de/inszenierung/der-letzte-himmel"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -86,21 +93,23 @@
    "vorstellungen": [
     {
      "zeit": "20:30",
-     "titel": "Aufführungen",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/space-afrika-present-quiet-storm/20261022-1830/"
-    },
-    {
-     "zeit": "20:30",
-     "titel": "Space Afrika present: Quiet Storm",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/space-afrika-present-quiet-storm/20261022-1830/"
+     "titel": "Große Bühne House of Hopes Rimini Protokoll: Stefan Kaegi, Daniel Wetzel dt. und engl. Tour verfügbar",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/house-of-hopes/20261023-1830/"
     }
    ],
-   "quelle": "https://www.volksbuehne-berlin.de/konzerte/",
+   "quelle": "https://www.volksbuehne-berlin.de/",
    "format": "html-time"
   },
   "mg": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "IN THE CORPSE OF THE PRESENT Prinz Friedrich von Homburg Heinrich von Kleist",
+     "ort": "Galerie",
+     "url": "https://www.gorki.de/de/in-the-corpse-of-the-present-prinz-friedrich-von-homburg-2"
+    }
+   ],
    "quelle": "https://www.gorki.de/de/spielplan",
    "format": "json-ld"
   },
@@ -121,6 +130,12 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
+     "titel": "Creamcake – 3hd 2026: Beyond Imagining",
+     "ort": "HAU2",
+     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/creamcake-3hd-2026-beyond-imaginging/"
+    },
+    {
+     "zeit": "20:00",
      "titel": "She She Pop – Alles Mögliche",
      "ort": "HAU1",
      "url": "https://www.hebbel-am-ufer.de/programm/pdetail/she-she-pop-alles-moegliche/"
@@ -130,16 +145,16 @@
    "format": "html-tagesliste"
   },
   "fp": {
-   "status": "fehler",
-   "grund": "keine Seite erreichbar",
-   "versuche": [
-    "https://www.palast.berlin/spielplan -> 403",
-    "https://www.palast.berlin/de/spielplan -> 403",
-    "https://www.palast.berlin/programm -> 403",
-    "https://www.palast.berlin/de/programm -> 403",
-    "https://www.palast.berlin/kalender -> 403",
-    "https://www.palast.berlin/de/kalender -> 403"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "BLINDED by DELIGHT",
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6964"
+    }
+   ],
+   "quelle": "https://www.palast.berlin/",
+   "format": "html-datum"
   },
   "pa": {
    "status": "keine",
@@ -148,16 +163,21 @@
    "format": "microdata"
   },
   "gr": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.grips-theater.de/programm -> 404",
-    "https://www.grips-theater.de/de/programm -> 404",
-    "https://www.grips-theater.de/kalender -> 404",
-    "https://www.grips-theater.de/de/kalender -> 404",
-    "https://www.grips-theater.de/termine -> 404",
-    "https://www.grips-theater.de/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "10:00",
+     "titel": "Laura war hier",
+     "url": "https://www.grips-theater.de/de/spielplan/laura-war-hier/3181"
+    },
+    {
+     "zeit": "18:00",
+     "titel": "Das Heimatkleid",
+     "url": "https://www.grips-theater.de/de/spielplan/das-heimatkleid/3182"
+    }
+   ],
+   "quelle": "https://www.grips-theater.de/de/spielplan",
+   "format": "html-datum"
   },
   "bf": {
    "status": "fehler",
@@ -187,12 +207,12 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "14:00",
-     "titel": "Espresso-Konzert",
-     "url": "https://www.konzerthaus.de/de/programm/espresso-konzert/12499"
+     "zeit": "19:00",
+     "titel": "C. Bechstein Klavierabend",
+     "url": "https://www.konzerthaus.de/de/programm/c-bechstein-klavierabend/13316"
     }
    ],
-   "quelle": "https://www.konzerthaus.de/de/programm/22-10-2026",
+   "quelle": "https://www.konzerthaus.de/de/programm/23-10-2026",
    "format": "html-time"
   },
   "pbs": {
@@ -211,16 +231,10 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "12:00",
-     "titel": "Moderierte Probe mit Dima Slobodeniouk & Xavier de Maistre",
-     "ort": "Haus des Rundfunks",
-     "url": "https://www.roc-berlin.de/konzerte/moderierte-probe-mit-dima-slobodeniouk-xavier-de-maistre/concert/227077/"
-    },
-    {
-     "zeit": "21:30",
-     "titel": "RundfunkchorLounge 26/27 »Sauberes Wasser und schmutzige Geschäfte«",
-     "ort": "Heimathafen Neukölln",
-     "url": "https://www.roc-berlin.de/konzerte/rundfunkchorlounge-26-27-sauberes-wasser-und-schmutzige-geschaefte/concert/227079/"
+     "zeit": "21:00",
+     "titel": "Game on Symphony",
+     "ort": "Haus des Rundfunks Großer Sendesaal",
+     "url": "https://www.roc-berlin.de/konzerte/game-on-symphony/concert/227081/"
     }
    ],
    "quelle": "https://www.roc-berlin.de/kalender/",
@@ -231,13 +245,8 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "alphabet",
-     "url": "https://schauspielhaus.de/stuecke/alphabet"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Der eigene Tod",
-     "url": "https://schauspielhaus.de/stuecke/der-eigene-tod"
+     "titel": "Fabian oder Der Gang vor die Hunde",
+     "url": "https://schauspielhaus.de/stuecke/fabian-oder-der-gang-vor-die-hunde"
     }
    ],
    "quelle": "https://schauspielhaus.de/spielplan",
@@ -247,8 +256,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Hard Times",
-     "url": "https://www.thalia-theater.de/de/stuecke/hard-times/169"
+     "titel": "The Boys Are Kissing",
+     "url": "https://www.thalia-theater.de/de/stuecke/the-boys-are-kissing/160"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
@@ -258,92 +267,91 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "17:30",
-     "titel": "K3 MOVEMENT CLASS",
-     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55020"
+     "zeit": "08:30",
+     "titel": "MORNING TECHNO",
+     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55045"
     },
     {
-     "zeit": "19:30",
-     "titel": "K3 MOVEMENT CLASS",
-     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55020"
+     "zeit": "18:00",
+     "titel": "Ursina Tossi: #TOUCH_LAB",
+     "url": "https://kampnagel.de/produktionen/ursina-tossi-touch-lab"
     }
    ],
    "quelle": "https://kampnagel.de/kalender",
    "format": "json-eingebettet"
   },
   "hh-so": {
-   "status": "fehler",
-   "grund": "keine Seite erreichbar",
-   "versuche": [
-    "https://www.die-hamburgische-staatsoper.de/spielplan -> 403",
-    "https://www.die-hamburgische-staatsoper.de/de/spielplan -> 403",
-    "https://www.die-hamburgische-staatsoper.de/programm -> 403",
-    "https://www.die-hamburgische-staatsoper.de/de/programm -> 403",
-    "https://www.die-hamburgische-staatsoper.de/kalender -> 403",
-    "https://www.die-hamburgische-staatsoper.de/de/kalender -> 403"
-   ]
+   "status": "keine",
+   "vorstellungen": [],
+   "quelle": "https://www.die-hamburgische-staatsoper.de/de",
+   "format": "ical"
   },
   "hh-elb": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "10:00",
-     "titel": "Saitentag",
-     "url": "https://www.elbphilharmonie.de/de/programm/saitentag/28650"
+     "zeit": "11:30",
+     "titel": "Der Rote Ritter 2027 / Preisverleihung",
+     "url": "https://www.elbphilharmonie.de/de/programm/der-rote-ritter-2027-preisverleihung/29043"
     },
     {
-     "zeit": "19:30",
-     "titel": "Poznaner Knabenchor",
-     "url": "https://www.elbphilharmonie.de/de/programm/poznaner-knabenchor/28954"
+     "zeit": "14:00",
+     "titel": "»diasporAsa« – Workshop",
+     "url": "https://www.elbphilharmonie.de/de/programm/diasporasa-workshop/29243"
     },
     {
-     "zeit": "20:00",
-     "titel": "ABGESAGT: Nik Bärtsch’s Ronin",
-     "url": "https://www.elbphilharmonie.de/de/programm/abgesagt-nik-bartschs-ronin/28840"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Wiener Johann Strauss Orchester / Johannes Wildner",
-     "url": "https://www.elbphilharmonie.de/de/programm/wiener-johann-strauss-orchester-johannes-wildner/29160"
+     "zeit": "18:00",
+     "titel": "»We Insist!« Vinyl Listening Session & Gespräch",
+     "url": "https://www.elbphilharmonie.de/de/programm/we-insist-vinyl-listening-session-gesprach/29149"
     },
     {
      "zeit": "20:00",
-     "titel": "Tara-Louise Wittwer",
-     "url": "https://www.elbphilharmonie.de/de/programm/tara-louise-wittwer/27724"
+     "titel": "Piotr Anderszewski / Klavierabend",
+     "url": "https://www.elbphilharmonie.de/de/programm/piotr-anderszewski-klavierabend/28036"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "ABGESAGT: Tahsim Durgun",
+     "url": "https://www.elbphilharmonie.de/de/programm/abgesagt-tahsim-durgun/27504"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Queenz of Piano",
+     "url": "https://www.elbphilharmonie.de/de/programm/queenz-of-piano/27618"
+    },
+    {
+     "zeit": "21:00",
+     "titel": "Ensemble Resonanz / Richard von der Schulenburg",
+     "url": "https://www.elbphilharmonie.de/de/programm/ensemble-resonanz-richard-von-der-schulenburg/28677"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
    "format": "html-time"
   },
   "hh-ndr": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "20:00",
-     "titel": "Leif Ove Andsnes & Alan Gilbert",
-     "url": "https://www.ndr.de/orchester_chor/elbphilharmonieorchester/konzerte/ndr-elbphilharmonie-orchester-mit-leif-ove-andsnes-und-alan-gilbert-in-wien,gilbert-162.html"
-    }
-   ],
-   "quelle": "https://www.ndr.de/orchester_chor/elbphilharmonieorchester/konzerte",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.ndr.de/spielplan -> 404",
+    "https://www.ndr.de/de/spielplan -> 404",
+    "https://www.ndr.de/programm -> 404",
+    "https://www.ndr.de/de/programm -> 404",
+    "https://www.ndr.de/kalender -> 404",
+    "https://www.ndr.de/de/kalender -> 404"
+   ]
   },
   "m-resi": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Resi-Werkstatt: »Die Dreigroschenoper«",
-     "url": "https://www.residenztheater.de/stuecke/detail/resi-werkstatt"
-    },
-    {
      "zeit": "19:30",
-     "titel": "Gschichtn vom Brandner Kaspar",
-     "url": "https://www.residenztheater.de/stuecke/detail/brandner"
+     "titel": "Die Rückseite des Lebens",
+     "url": "https://www.residenztheater.de/stuecke/detail/die-rueckseite-des-lebens"
     },
     {
      "zeit": "20:00",
-     "titel": "Ein sanfter Tod",
-     "url": "https://www.residenztheater.de/stuecke/detail/ein-sanfter-tod"
+     "titel": "Spitzenreiterinnen",
+     "url": "https://www.residenztheater.de/stuecke/detail/spitzenreiterinnen"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
@@ -353,12 +361,12 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Eskalation"
+     "zeit": "12:00",
+     "titel": "Transport: Fasten your Seat Belts!"
     },
     {
-     "zeit": "19:30",
-     "titel": "Wokey Wokey"
+     "zeit": "20:00",
+     "titel": "Die Giehse"
     }
    ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
@@ -368,9 +376,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "YAIMA Konzert",
-     "url": "https://www.muenchner-volkstheater.de/programm/extra/yaima"
+     "zeit": "16:00",
+     "titel": "Nacht der Autorinnen und Autoren der Süddeutschen Zeitung Lesung",
+     "url": "https://www.muenchner-volkstheater.de/programm/extra/nacht-der-autorinnen-und-autoren-der-sueddeutschen-zeitung"
     }
    ],
    "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
@@ -404,14 +412,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "09:30",
-     "titel": "Kindergartenkonzert: »Fünf Freunde auf Weltreise« (Holzblasensemble)",
-     "url": "https://www.mphil.de/konzerte-und-karten/kalender/konzerte/kindergartenkonzert-fuenf-freunde-auf-weltreise-holzblasensemble-2026-10-22-09-30-00"
-    },
-    {
-     "zeit": "11:00",
-     "titel": "Kindergartenkonzert: »Fünf Freunde auf Weltreise« (Holzblasensemble)",
-     "url": "https://www.mphil.de/konzerte-und-karten/kalender/konzerte/kindergartenkonzert-fuenf-freunde-auf-weltreise-holzblasensemble-2026-10-22-11-00-00"
+     "zeit": "19:30",
+     "titel": "Thomas Hengelbrock",
+     "url": "https://www.mphil.de/ueber-uns/musikerinnen-und-musiker/details/thomas-hengelbrock"
     }
    ],
    "quelle": "https://www.mphil.de/kalender",
@@ -433,19 +436,19 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Die gröẞere Hoffnung",
-     "url": "https://www.burgtheater.at/veranstaltungen/die-groessere-hoffnung/2026-10-22"
+     "zeit": "18:00",
+     "titel": "Unter Tieren",
+     "url": "https://www.burgtheater.at/veranstaltungen/unter-tieren/2026-10-23"
     },
     {
      "zeit": "19:00",
-     "titel": "Sankt Falstaff",
-     "url": "https://www.burgtheater.at/veranstaltungen/sankt-falstaff/2026-10-22"
+     "titel": "Die Weltautorin. Ein Abend für Elfriede Jelinek",
+     "url": "https://www.burgtheater.at/veranstaltungen/die-weltautorin-ein-abend-fuer-elfriede-jelinek/2026-10-23"
     },
     {
-     "zeit": "20:00",
-     "titel": "Klassenputtel",
-     "url": "https://www.burgtheater.at/veranstaltungen/klassenputtel/2026-10-22"
+     "zeit": "19:00",
+     "titel": "Merlin oder das wüste Land",
+     "url": "https://www.burgtheater.at/veranstaltungen/merlin-oder-das-wueste-land/2026-10-23"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
@@ -455,18 +458,13 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "MYTHEN DES ALLTAGS",
+     "zeit": "19:30",
+     "titel": "STATE OF THE UNION",
      "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
     },
     {
-     "zeit": "19:00",
-     "titel": "WOYZECK",
-     "url": "https://www.volkstheater.at/spielstaetten/volkstheater-bezirke/vhs-wiener-urania"
-    },
-    {
      "zeit": "20:00",
-     "titel": "TRUE STORY NIGHTS",
+     "titel": "DAS MONSTER",
      "url": "https://www.volkstheater.at/spielstaetten/rote-bar"
     }
    ],
@@ -490,12 +488,12 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Nijinsky",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/nijinsky/2026-10-22/"
+     "titel": "Die Entführung aus dem Serail",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/die-entfuehrung-aus-dem-serail/2026-10-23/"
     },
     {
-     "titel": "Abo 19",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/cosi-fan-tutte/2025-10-23/"
+     "titel": "Abo 5",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/die-zauberfloete/2025-09-12/"
     }
    ],
    "quelle": "https://www.wiener-staatsoper.at/kalender/2026/oktober/",
@@ -506,8 +504,8 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Chicago",
-     "url": "https://www.volksoper.at/produktion/chicago-2025.1013381819.de.html"
+     "titel": "La bohème",
+     "url": "https://www.volksoper.at/produktion/la-boheme-1980.1014434918.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
@@ -518,7 +516,11 @@
    "vorstellungen": [
     {
      "zeit": "00:00",
-     "titel": "Der fliegende HolländerRichard Wagner"
+     "titel": "Backstage Guided Tour English"
+    },
+    {
+     "zeit": "00:00",
+     "titel": "Backstageführung Deutsch"
     }
    ],
    "quelle": "https://www.theater-wien.at/de/home",
@@ -528,24 +530,24 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Schulkonzert: Marie-Luise Stockinger / Katharina Lorenz / Miriam Adefris",
-     "url": "https://konzerthaus.at/de/programm-und-karten/schulkonzert-marie-luise-stockinger-katharina-lorenz-miriam-adefris/64411"
+     "zeit": "13:00",
+     "titel": "Wiener Konzerthaus Backstage",
+     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-konzerthaus-backstage/64396"
     },
     {
-     "zeit": "18:00",
-     "titel": "Abschlusskonzert isaCommunity",
-     "url": "https://konzerthaus.at/de/programm-und-karten/abschlusskonzert-isacommunity/64409"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Christian Gerhaher / Gerold Huber",
-     "url": "https://konzerthaus.at/de/programm-und-karten/christian-gerhaher-gerold-huber/63685"
+     "zeit": "14:00",
+     "titel": "Wiener Konzerthaus Backstage",
+     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-konzerthaus-backstage/64405"
     },
     {
      "zeit": "19:30",
-     "titel": "NDR Elbphilharmonie Orchester / Andsnes / Gilbert",
-     "url": "https://konzerthaus.at/de/programm-und-karten/ndr-elbphilharmonie-orchester-andsnes-gilbert/63727"
+     "titel": "Ólafur Arnalds",
+     "url": "https://konzerthaus.at/de/programm-und-karten/olafur-arnalds/63646"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Pichler / Steffenhagen / Werths / Luser",
+     "url": "https://konzerthaus.at/de/programm-und-karten/pichler-steffenhagen-werths-luser/63896"
     }
    ],
    "quelle": "https://konzerthaus.at/de/programm-und-karten",
@@ -559,17 +561,16 @@
     "https://www.musikverein.at/de/programm -> 404",
     "https://www.musikverein.at/kalender -> 404",
     "https://www.musikverein.at/de/kalender -> 404",
-    "https://www.musikverein.at/termine -> 404",
-    "https://www.musikverein.at/ -> SSLError"
+    "https://www.musikverein.at/termine -> 404"
    ]
   },
   "w-sym": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Wagner \"Der fliegende Holländer\"",
-     "url": "https://www.wienersymphoniker.at/konzert/wagner-der-fliegende-hollaender-22-10-2026"
+     "zeit": "19:30",
+     "titel": "Popelka, Wang ・ Bartók, Barber, Schumann",
+     "url": "https://www.wienersymphoniker.at/konzert/popelka-wang-bartok-barber-schumann-23-10-2026"
     }
    ],
    "quelle": "https://www.wienersymphoniker.at/kalender",
@@ -802,7 +803,7 @@
      "bis": "2027-01-10"
     }
    ],
-   "quelle": "https://www.kw-berlin.de/de/ausstellungen",
+   "quelle": "https://www.kw-berlin.de/de/",
    "format": "html-zeitraum"
   },
   "b-hkw": {
@@ -913,6 +914,11 @@
      "titel": "Schubladenschau #4: Tanz",
      "von": "2026-10-09",
      "bis": "2027-04-25"
+    },
+    {
+     "titel": "Hella Jongerius",
+     "von": "2026-10-23",
+     "bis": "2027-06-13"
     },
     {
      "titel": "XULY.Bët",
@@ -1077,6 +1083,10 @@
    "status": "ok",
    "ausstellungen": [
     {
+     "titel": "Fritz Winters Kosmos der 1930er und 1940er Jahre",
+     "bis": "2027-02-21"
+    },
+    {
      "titel": "ZWISCHENRÄUME UND ÜBERGÄNGE. KUNST UND RAUM SEIT 1960",
      "von": "2026-07-03",
      "bis": "2027-08-15"
@@ -1088,6 +1098,10 @@
   "m-pdm": {
    "status": "ok",
    "ausstellungen": [
+    {
+     "titel": "Fritz Winters Kosmos der 1930er und 1940er Jahre",
+     "bis": "2027-02-21"
+    },
     {
      "titel": "ZWISCHENRÄUME UND ÜBERGÄNGE. KUNST UND RAUM SEIT 1960",
      "von": "2026-07-03",
@@ -1181,15 +1195,8 @@
    "format": "html-zeitraum"
   },
   "m-gly": {
-   "status": "ok",
-   "ausstellungen": [
-    {
-     "titel": "Rom und das Christentum",
-     "von": "2026-10-22",
-     "bis": "2026-10-22",
-     "url": "https://www.antike-am-koenigsplatz.mwn.de/event/rom-und-das-christentum/"
-    }
-   ],
+   "status": "keine",
+   "ausstellungen": [],
    "quelle": "https://www.antike-am-koenigsplatz.mwn.de/",
    "format": "json-ld"
   },
@@ -1238,16 +1245,17 @@
    "format": "html-zeitraum"
   },
   "w-bel": {
-   "status": "fehler",
-   "grund": "keine Seite erreichbar",
-   "versuche": [
-    "https://www.belvedere.at/ausstellungen -> ConnectTimeout",
-    "https://www.belvedere.at/de/ausstellungen -> ConnectTimeout",
-    "https://www.belvedere.at/ausstellungen/aktuell -> ConnectTimeout",
-    "https://www.belvedere.at/exhibitions -> ConnectTimeout",
-    "https://www.belvedere.at/en/exhibitions -> ConnectTimeout",
-    "https://www.belvedere.at/programm -> ConnectTimeout"
-   ]
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "CARLONE CONTEMPORARY: Asta Gröting",
+     "von": "2026-09-24",
+     "bis": "2027-03-29",
+     "url": "https://www.belvedere.at/go/tickets?location[]=1"
+    }
+   ],
+   "quelle": "https://www.belvedere.at/ausstellungen-aktuell",
+   "format": "html-zeitraum"
   },
   "w-leo": {
    "status": "ok",
@@ -1385,23 +1393,28 @@
    "ausstellungen": [
     {
      "titel": "miniXplore",
-     "von": "2026-10-22",
-     "bis": "2026-10-22"
+     "von": "2026-10-23",
+     "bis": "2026-10-23"
     },
     {
      "titel": "minTi",
-     "von": "2026-10-22",
-     "bis": "2026-10-22"
+     "von": "2026-10-23",
+     "bis": "2026-10-23"
     },
     {
      "titel": "Birdly® – Das VR-Flug-Erlebnis",
-     "von": "2026-10-22",
-     "bis": "2026-10-22"
+     "von": "2026-10-23",
+     "bis": "2026-10-23"
+    },
+    {
+     "titel": "Hochspannungsvorführung",
+     "von": "2026-10-23",
+     "bis": "2026-10-23"
     },
     {
      "titel": "techLAB",
-     "von": "2026-10-22",
-     "bis": "2026-10-22"
+     "von": "2026-10-23",
+     "bis": "2026-10-23"
     }
    ],
    "quelle": "https://www.technischesmuseum.at/jart/prj3/tmw/main.jart",
@@ -1415,7 +1428,7 @@
      "bis": "2027-03-29"
     }
    ],
-   "quelle": "https://www.weltmuseumwien.at/",
+   "quelle": "https://www.weltmuseumwien.at/ausstellungen",
    "format": "html-zeitraum"
   }
  }
