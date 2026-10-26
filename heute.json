@@ -1,17 +1,17 @@
 {
- "datum": "2026-10-25",
- "stand": "2026-10-25T06:21+01:00",
+ "datum": "2026-10-26",
+ "stand": "2026-10-26T06:24+01:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "Tosca",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/tosca.23/#event-153990"
+     "zeit": "00:00",
+     "titel": "Liederabend Internationales Opernstudio",
+     "url": "https://tickets.staatsoper-berlin.de/webshop/webticket/shop?language=de&event=20408"
     }
    ],
-   "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
+   "quelle": "https://www.staatsoper-berlin.de/de/",
    "format": "html-time"
   },
   "do": {
@@ -27,54 +27,29 @@
    ]
   },
   "ko": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "15:00",
-     "titel": "Wunder­kammer",
-     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/wunderkammer/1266/"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "Wunder­kammer",
-     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/wunderkammer/1267/"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
    "format": "microdata"
   },
   "sb": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "13:00",
-     "titel": "DIY - Dance it yourself"
-    },
-    {
-     "zeit": "15:00",
-     "titel": "Wunderkammer"
-    }
-   ],
-   "quelle": "https://www.staatsballett-berlin.de/spielplan",
-   "format": "ical"
+   "status": "keine",
+   "vorstellungen": [],
+   "quelle": "https://www.staatsballett-berlin.de/",
+   "format": "json-ld"
   },
   "dt": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Die Einstein-Protokolle – erstmals veröffentlicht",
-     "url": "https://www.deutschestheater.de/programm/produktionen/lesung-die-einstein-protokolle"
-    },
-    {
      "zeit": "19:00",
-     "titel": "Spirit And The Dust",
-     "url": "https://www.deutschestheater.de/programm/produktionen/spirit-and-the-dust"
+     "titel": "Hannah Arendt: Von persona non grata zur Sympathieträgerin",
+     "url": "https://www.deutschestheater.de/programm/produktionen/hannah-arendt-von-persona-non-grata-zur-sympathietraegerin"
     },
     {
-     "zeit": "19:30",
-     "titel": "Unter Vögeln",
-     "url": "https://www.deutschestheater.de/programm/produktionen/unter-voegeln-bookpink-new-arrivals"
+     "zeit": "20:00",
+     "titel": "Die drei Leben der Hannah Arendt",
+     "url": "https://www.deutschestheater.de/programm/produktionen/die-drei-leben-der-hannah-arendt"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -84,8 +59,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Historische Führung",
-     "url": "https://www.berliner-ensemble.de/inszenierung/historische-fuehrung"
+     "titel": "Warten auf'n Bus",
+     "url": "https://www.berliner-ensemble.de/inszenierung/warten-aufn-bus"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -95,24 +70,22 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Große Bühne Der Schnittchenkauf René Pollesch",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/der-schnittchenkauf/20261025-1830/"
+     "zeit": "20:00",
+     "titel": "Grüner Salon KCMD x DAAD mit Yana Shliabanska, Javier Areal Vélez Konzert",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261026-1900/"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Prater Perfection Nach dem Roman von Vincenzo Latronico Anta Recke auf Deutsch und Englisch",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261026-1900/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
    "format": "html-time"
   },
   "mg": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "13:00",
-     "titel": "IN THE CORPSE OF THE PRESENT Prinz Friedrich von Homburg Heinrich von Kleist",
-     "ort": "Galerie",
-     "url": "https://www.gorki.de/de/in-the-corpse-of-the-present-prinz-friedrich-von-homburg-2"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.gorki.de/de/spielplan",
    "format": "json-ld"
   },
@@ -141,26 +114,20 @@
    ]
   },
   "fp": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "15:30",
-     "titel": "BLINDED by DELIGHT",
-     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6974"
-    }
-   ],
-   "quelle": "https://www.palast.berlin/",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.palast.berlin/spielplan -> 404",
+    "https://www.palast.berlin/de/spielplan -> 404",
+    "https://www.palast.berlin/kalender -> 404",
+    "https://www.palast.berlin/de/kalender -> 404",
+    "https://www.palast.berlin/termine -> 404",
+    "https://www.palast.berlin/konzerte -> 404"
+   ]
   },
   "pa": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "16:00",
-     "titel": "LAUTSTÄRKER(12+)",
-     "url": "https://www.parkaue.de/spielplan/spielplan/lautstaerker/1961/"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.parkaue.de/spielplan/",
    "format": "microdata"
   },
@@ -168,9 +135,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "16:00",
+     "zeit": "10:00",
      "titel": "Vier zurück",
-     "url": "https://www.grips-theater.de/de/spielplan/vier-zuruck/3184"
+     "url": "https://www.grips-theater.de/de/spielplan/vier-zuruck/3185"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
@@ -201,26 +168,16 @@
    ]
   },
   "kh": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "16:00",
-     "titel": "Neue Philharmonie",
-     "url": "https://www.konzerthaus.de/de/programm/neue-philharmonie/13425"
-    },
-    {
-     "zeit": "16:00",
-     "titel": "Galakonzert",
-     "url": "https://www.konzerthaus.de/de/programm/galakonzert/13494"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "Kathrin Pechlof Trio",
-     "url": "https://www.konzerthaus.de/de/programm/kathrin-pechlof-trio/13408"
-    }
-   ],
-   "quelle": "https://www.konzerthaus.de/de/programm/25-10-2026",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.konzerthaus.de/spielplan -> 404",
+    "https://www.konzerthaus.de/de/spielplan -> 404",
+    "https://www.konzerthaus.de/kalender -> 404",
+    "https://www.konzerthaus.de/de/kalender -> 404",
+    "https://www.konzerthaus.de/termine -> 404",
+    "https://www.konzerthaus.de/konzerte -> 404"
+   ]
   },
   "pbs": {
    "status": "fehler",
@@ -244,19 +201,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "16:00",
-     "titel": "Medea in Kolchis",
-     "url": "https://schauspielhaus.de/stuecke/medea-kolchis"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Das Adressbuch",
-     "url": "https://schauspielhaus.de/stuecke/das-adressbuch"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Medea in Korinth",
-     "url": "https://schauspielhaus.de/stuecke/medea-korinth"
+     "zeit": "19:00",
+     "titel": "Kinder des Widerstands #8",
+     "url": "https://schauspielhaus.de/stuecke/kinder-des-widerstands-8"
     }
    ],
    "quelle": "https://schauspielhaus.de/spielplan",
@@ -266,24 +213,29 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Deutsches Haus",
-     "url": "https://www.thalia-theater.de/de/stuecke/deutsches-haus/336"
+     "titel": "Die Vegetarierin",
+     "url": "https://www.thalia-theater.de/de/stuecke/die-vegetarierin/352"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
    "format": "html-datum"
   },
   "hh-kn": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.kampnagel.de/spielplan -> 404",
-    "https://www.kampnagel.de/de/spielplan -> 404",
-    "https://www.kampnagel.de/programm -> 404",
-    "https://www.kampnagel.de/de/programm -> 404",
-    "https://www.kampnagel.de/de/kalender -> 404",
-    "https://www.kampnagel.de/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "14:00",
+     "titel": "YOUNG MOVEMENT CLASS (14–18)",
+     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55039"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "K3 MOVEMENT CLASS",
+     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55020"
+    }
+   ],
+   "quelle": "https://kampnagel.de/kalender",
+   "format": "json-eingebettet"
   },
   "hh-so": {
    "status": "keine",
@@ -296,38 +248,18 @@
    "vorstellungen": [
     {
      "zeit": "10:00",
-     "titel": "Workshop: Kosmos Flairdrum",
-     "url": "https://www.elbphilharmonie.de/de/programm/workshop-kosmos-flairdrum/28809"
+     "titel": "Flairdrum",
+     "url": "https://www.elbphilharmonie.de/de/programm/flairdrum/28654"
     },
     {
-     "zeit": "11:00",
+     "zeit": "20:00",
      "titel": "Stabat mater / Philharmonisches Staatsorchester",
-     "url": "https://www.elbphilharmonie.de/de/programm/stabat-mater-philharmonisches-staatsorchester/27818"
+     "url": "https://www.elbphilharmonie.de/de/programm/stabat-mater-philharmonisches-staatsorchester/27819"
     },
     {
-     "zeit": "11:00",
-     "titel": "Symphonisches Blasorchester Norderstedt",
-     "url": "https://www.elbphilharmonie.de/de/programm/symphonisches-blasorchester-norderstedt/28907"
-    },
-    {
-     "zeit": "14:30",
-     "titel": "»diasporAsa« – Konzert",
-     "url": "https://www.elbphilharmonie.de/de/programm/diasporasa-konzert/29244"
-    },
-    {
-     "zeit": "15:15",
-     "titel": "Workshop: Klassiko Orchesterinstrumente",
-     "url": "https://www.elbphilharmonie.de/de/programm/workshop-klassiko-orchesterinstrumente/28600"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "Chris D’Elia",
-     "url": "https://www.elbphilharmonie.de/de/programm/chris-delia/29092"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Dudok Quartet Amsterdam",
-     "url": "https://www.elbphilharmonie.de/de/programm/dudok-quartet-amsterdam/27975"
+     "zeit": "20:00",
+     "titel": "Fischer-Z",
+     "url": "https://www.elbphilharmonie.de/de/programm/fischer-z/27692"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
@@ -349,14 +281,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:30",
-     "titel": "Die Dreigroschenoper",
-     "url": "https://www.residenztheater.de/stuecke/detail/die-dreigroschenoper"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "(Nicht)Mütter!",
-     "url": "https://www.residenztheater.de/stuecke/detail/nichtmuetter"
+     "zeit": "20:00",
+     "titel": "La Musica – zwischen ihr und ihm",
+     "url": "https://www.residenztheater.de/stuecke/detail/la-musica"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
@@ -366,33 +293,28 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "Floris München"
+     "zeit": "17:00",
+     "titel": "Kammerschau #36"
     },
     {
      "zeit": "20:00",
-     "titel": "Sauhund"
+     "titel": "Danton"
     }
    ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
    "format": "ical"
   },
   "m-vt": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:30",
-     "titel": "DIE GEIERWALLY",
-     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/die-geierwally"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Fischer Fritz",
-     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/fischer-fritz"
-    }
-   ],
-   "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.muenchner-volkstheater.de/de/spielplan -> 404",
+    "https://www.muenchner-volkstheater.de/de/programm -> 404",
+    "https://www.muenchner-volkstheater.de/kalender -> 404",
+    "https://www.muenchner-volkstheater.de/de/kalender -> 404",
+    "https://www.muenchner-volkstheater.de/termine -> 404",
+    "https://www.muenchner-volkstheater.de/konzerte -> 404"
+   ]
   },
   "m-bso": {
    "status": "fehler",
@@ -447,29 +369,28 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Richard III.",
-     "url": "https://www.burgtheater.at/veranstaltungen/richard-iii/2026-10-25"
+     "titel": "Elisabeth!",
+     "url": "https://www.burgtheater.at/veranstaltungen/elisabeth/2026-10-26"
     },
     {
      "zeit": "19:00",
-     "titel": "Zu ebener Erde und erster Stock",
-     "url": "https://www.burgtheater.at/veranstaltungen/zu-ebener-erde-und-erster-stock/2026-10-25"
+     "titel": "Der Revisor",
+     "url": "https://www.burgtheater.at/veranstaltungen/der-revisor/2026-10-26"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
    "format": "html-time"
   },
   "w-vt": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "18:00",
-     "titel": "MACBETH",
-     "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
-    }
-   ],
-   "quelle": "https://www.volkstheater.at/spielplan/",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.volkstheater.at/programm -> 404",
+    "https://www.volkstheater.at/de/programm -> 404",
+    "https://www.volkstheater.at/kalender -> 404",
+    "https://www.volkstheater.at/de/kalender -> 404",
+    "https://www.volkstheater.at/termine -> 404"
+   ]
   },
   "w-jos": {
    "status": "fehler",
@@ -487,11 +408,11 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Abo 23",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/kallirhoe/2025-10-26/"
+     "zeit": "19:00",
+     "titel": "Otello"
     }
    ],
-   "quelle": "https://www.wiener-staatsoper.at/kalender/2026/oktober/",
+   "quelle": "https://www.wiener-staatsoper.at/",
    "format": "html-datum"
   },
   "w-vo": {
@@ -499,35 +420,35 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Die Fledermaus",
-     "url": "https://www.volksoper.at/produktion/die-fledermaus-1990.1014664060.de.html"
+     "titel": "Der Zarewitsch",
+     "url": "https://www.volksoper.at/produktion/der-zarewitsch-2026.1014664160.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
    "format": "microdata"
   },
   "w-tadw": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "00:00",
-     "titel": "Der fliegende HolländerRichard Wagner"
-    }
-   ],
-   "quelle": "https://www.theater-wien.at/de/home",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.theater-wien.at/spielplan -> 404",
+    "https://www.theater-wien.at/programm -> 404",
+    "https://www.theater-wien.at/kalender -> 404",
+    "https://www.theater-wien.at/termine -> 404",
+    "https://www.theater-wien.at/konzerte -> 404"
+   ]
   },
   "w-kh": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:30",
-     "titel": "Krystian Zimerman",
-     "url": "https://konzerthaus.at/de/programm-und-karten/krystian-zimerman/64539#important-info"
-    }
-   ],
-   "quelle": "https://konzerthaus.at/de/programm-und-karten",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.konzerthaus.at/spielplan -> 404",
+    "https://www.konzerthaus.at/de/spielplan -> 404",
+    "https://www.konzerthaus.at/programm -> 404",
+    "https://www.konzerthaus.at/de/programm -> 404",
+    "https://www.konzerthaus.at/de/kalender -> 404",
+    "https://www.konzerthaus.at/termine -> 404"
+   ]
   },
   "w-mv": {
    "status": "fehler",
@@ -541,21 +462,15 @@
    ]
   },
   "w-sym": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "11:00",
-     "titel": "Popelka, Wang ・ Bartók, Barber, Schumann",
-     "url": "https://www.wienersymphoniker.at/konzert/popelka-wang-bartok-barber-schumann-25-10-2026"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "Wagner \"Der fliegende Holländer\"",
-     "url": "https://www.wienersymphoniker.at/konzert/wagner-der-fliegende-hollaender-25-10-2026"
-    }
-   ],
-   "quelle": "https://www.wienersymphoniker.at/kalender",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.wienersymphoniker.at/spielplan -> 404",
+    "https://www.wienersymphoniker.at/de/spielplan -> 404",
+    "https://www.wienersymphoniker.at/programm -> 404",
+    "https://www.wienersymphoniker.at/termine -> 404",
+    "https://www.wienersymphoniker.at/konzerte -> 404"
+   ]
   },
   "b-nm": {
    "status": "ok",
@@ -616,12 +531,6 @@
   "b-nng": {
    "status": "ok",
    "ausstellungen": [
-    {
-     "titel": "Neue NationalgalerieFujiko Nakaya. Nebelskulptur im Skulpturengarten der Neuen Nationalgalerie",
-     "von": "2026-04-30",
-     "bis": "2026-10-25",
-     "url": "https://www.smb.museum/museen-einrichtungen/neue-nationalgalerie/ausstellungen/detail/fujiko-nakaya-nebelskulptur-im-skulpturengarten-der-neuen-nationalgalerie/"
-    },
     {
      "titel": "Neue NationalgalerieRuin und RauschBerlin 1910–1930",
      "von": "2026-04-25",
@@ -1153,10 +1062,10 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Musikpodium der Jugend",
-     "von": "2000-03-01",
-     "bis": "2030-04-01",
-     "url": "https://www.bayerisches-nationalmuseum.de/veranstaltungen/musikpodium-der-jugend"
+     "titel": "AUSGEBUCHT: Kultursalon+",
+     "von": "2000-04-01",
+     "bis": "2030-05-01",
+     "url": "https://www.bayerisches-nationalmuseum.de/veranstaltungen/kultursalon30.10.2026"
     }
    ],
    "quelle": "https://www.bayerisches-nationalmuseum.de/",
@@ -1374,38 +1283,43 @@
    "ausstellungen": [
     {
      "titel": "miniXplore",
-     "von": "2026-10-25",
-     "bis": "2026-10-25"
+     "von": "2026-10-26",
+     "bis": "2026-10-26"
     },
     {
      "titel": "Birdly® – Das VR-Flug-Erlebnis",
-     "von": "2026-10-25",
-     "bis": "2026-10-25"
-    },
-    {
-     "titel": "minTi",
-     "von": "2026-10-25",
-     "bis": "2026-10-25"
-    },
-    {
-     "titel": "Bergwerk",
-     "von": "2026-10-25",
-     "bis": "2026-10-25"
-    },
-    {
-     "titel": "Materialwelten – die Bausteine unseres Alltags",
-     "von": "2026-10-25",
-     "bis": "2026-10-25"
-    },
-    {
-     "titel": "techLAB",
-     "von": "2026-10-25",
-     "bis": "2026-10-25"
+     "von": "2026-10-26",
+     "bis": "2026-10-26"
     },
     {
      "titel": "Hochspannungsvorführung",
-     "von": "2026-10-25",
-     "bis": "2026-10-25"
+     "von": "2026-10-26",
+     "bis": "2026-10-26"
+    },
+    {
+     "titel": "Alles einsteigen – wir fahren ab!",
+     "von": "2026-10-26",
+     "bis": "2026-10-26"
+    },
+    {
+     "titel": "minTi",
+     "von": "2026-10-26",
+     "bis": "2026-10-26"
+    },
+    {
+     "titel": "LOK.Vorführung",
+     "von": "2026-10-26",
+     "bis": "2026-10-26"
+    },
+    {
+     "titel": "Bergwerk",
+     "von": "2026-10-26",
+     "bis": "2026-10-26"
+    },
+    {
+     "titel": "Leicht wie Luft oder hart wie Stahl",
+     "von": "2026-10-26",
+     "bis": "2026-10-26"
     }
    ],
    "quelle": "https://www.technischesmuseum.at/jart/prj3/tmw/main.jart",
