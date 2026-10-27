@@ -1,17 +1,16 @@
 {
- "datum": "2026-10-26",
- "stand": "2026-10-26T06:24+01:00",
+ "datum": "2026-10-27",
+ "stand": "2026-10-27T06:24+01:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "00:00",
-     "titel": "Liederabend Internationales Opernstudio",
-     "url": "https://tickets.staatsoper-berlin.de/webshop/webticket/shop?language=de&event=20408"
+     "zeit": "20:00",
+     "titel": "Liederabend Internationales Opernstudio"
     }
    ],
-   "quelle": "https://www.staatsoper-berlin.de/de/",
+   "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
    "format": "html-time"
   },
   "do": {
@@ -33,23 +32,29 @@
    "format": "microdata"
   },
   "sb": {
-   "status": "keine",
-   "vorstellungen": [],
-   "quelle": "https://www.staatsballett-berlin.de/",
-   "format": "json-ld"
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Forum",
+     "ort": "Bismarckstraße 35, 10627 Berlin"
+    }
+   ],
+   "quelle": "https://www.staatsballett-berlin.de/spielplan",
+   "format": "ical"
   },
   "dt": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Hannah Arendt: Von persona non grata zur Sympathieträgerin",
-     "url": "https://www.deutschestheater.de/programm/produktionen/hannah-arendt-von-persona-non-grata-zur-sympathietraegerin"
+     "zeit": "18:00",
+     "titel": "Hospital der Geister",
+     "url": "https://www.deutschestheater.de/programm/produktionen/hospital-der-geister"
     },
     {
      "zeit": "20:00",
-     "titel": "Die drei Leben der Hannah Arendt",
-     "url": "https://www.deutschestheater.de/programm/produktionen/die-drei-leben-der-hannah-arendt"
+     "titel": "ugly duckling",
+     "url": "https://www.deutschestheater.de/programm/produktionen/ugly-duckling"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -59,8 +64,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Warten auf'n Bus",
-     "url": "https://www.berliner-ensemble.de/inszenierung/warten-aufn-bus"
+     "titel": "Der letzte Himmel",
+     "url": "https://www.berliner-ensemble.de/inszenierung/der-letzte-himmel"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -70,22 +75,24 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Grüner Salon KCMD x DAAD mit Yana Shliabanska, Javier Areal Vélez Konzert",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261026-1900/"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Prater Perfection Nach dem Roman von Vincenzo Latronico Anta Recke auf Deutsch und Englisch",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261026-1900/"
+     "zeit": "21:00",
+     "titel": "Berlin Review x Volksbühne: Fire From All Sides",
+     "url": "https://www.volksbuehne-berlin.de/reihen-und-projekte/berlin-review-x-volksbuehne-fire-from-all-sides/berlin-review-x-volksbuehne-fire-from-all-sides/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
    "format": "html-time"
   },
   "mg": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "13:00",
+     "titel": "IN THE CORPSE OF THE PRESENT Prinz Friedrich von Homburg Heinrich von Kleist",
+     "ort": "Galerie",
+     "url": "https://www.gorki.de/de/in-the-corpse-of-the-present-prinz-friedrich-von-homburg-2"
+    }
+   ],
    "quelle": "https://www.gorki.de/de/spielplan",
    "format": "json-ld"
   },
@@ -102,28 +109,29 @@
    ]
   },
   "hau": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.hebbel-am-ufer.de/spielplan -> 404",
-    "https://www.hebbel-am-ufer.de/de/spielplan -> 404",
-    "https://www.hebbel-am-ufer.de/de/programm -> 404",
-    "https://www.hebbel-am-ufer.de/kalender -> 404",
-    "https://www.hebbel-am-ufer.de/de/kalender -> 404",
-    "https://www.hebbel-am-ufer.de/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Gegenmacht: Ein Crashkurs für eine demokratische Offensive – #1 Schluss mit Transparenz? Das Informationsfreiheitsgesetz in Gefahr",
+     "ort": "HAU1",
+     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/gegenmacht-ein-crashkurs-fuer-eine-demokratische-offensive-1-schluss-mit-transparenz-das-informationsfreiheitsgesetz-in-gefahr/"
+    }
+   ],
+   "quelle": "https://www.hebbel-am-ufer.de/programm/spielplan-tickets/",
+   "format": "html-tagesliste"
   },
   "fp": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.palast.berlin/spielplan -> 404",
-    "https://www.palast.berlin/de/spielplan -> 404",
-    "https://www.palast.berlin/kalender -> 404",
-    "https://www.palast.berlin/de/kalender -> 404",
-    "https://www.palast.berlin/termine -> 404",
-    "https://www.palast.berlin/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "BLINDED by DELIGHT",
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6959"
+    }
+   ],
+   "quelle": "https://www.palast.berlin/",
+   "format": "html-datum"
   },
   "pa": {
    "status": "keine",
@@ -136,8 +144,8 @@
    "vorstellungen": [
     {
      "zeit": "10:00",
-     "titel": "Vier zurück",
-     "url": "https://www.grips-theater.de/de/spielplan/vier-zuruck/3185"
+     "titel": "Laura war hier",
+     "url": "https://www.grips-theater.de/de/spielplan/laura-war-hier/3186"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
@@ -168,16 +176,15 @@
    ]
   },
   "kh": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.konzerthaus.de/spielplan -> 404",
-    "https://www.konzerthaus.de/de/spielplan -> 404",
-    "https://www.konzerthaus.de/kalender -> 404",
-    "https://www.konzerthaus.de/de/kalender -> 404",
-    "https://www.konzerthaus.de/termine -> 404",
-    "https://www.konzerthaus.de/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "AsianArt Ensemble",
+     "url": "https://www.konzerthaus.de/de/programm/asianart-ensemble/13213"
+    }
+   ],
+   "quelle": "https://www.konzerthaus.de/de/programm/27-10-2026",
+   "format": "html-time"
   },
   "pbs": {
    "status": "fehler",
@@ -201,9 +208,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Kinder des Widerstands #8",
-     "url": "https://schauspielhaus.de/stuecke/kinder-des-widerstands-8"
+     "zeit": "19:30",
+     "titel": "Zukunft der Demokratie #14",
+     "url": "https://schauspielhaus.de/stuecke/zukunft-der-demokratie-14"
     }
    ],
    "quelle": "https://schauspielhaus.de/spielplan",
@@ -213,8 +220,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Die Vegetarierin",
-     "url": "https://www.thalia-theater.de/de/stuecke/die-vegetarierin/352"
+     "titel": "Dschinns",
+     "url": "https://www.thalia-theater.de/de/stuecke/dschinns/340"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
@@ -229,7 +236,7 @@
      "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55039"
     },
     {
-     "zeit": "19:30",
+     "zeit": "17:30",
      "titel": "K3 MOVEMENT CLASS",
      "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55020"
     }
@@ -238,8 +245,14 @@
    "format": "json-eingebettet"
   },
   "hh-so": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Im Aufschwung XVIII",
+     "ort": "Ernst Deutsch Theater"
+    }
+   ],
    "quelle": "https://www.die-hamburgische-staatsoper.de/de",
    "format": "ical"
   },
@@ -249,17 +262,22 @@
     {
      "zeit": "10:00",
      "titel": "Flairdrum",
-     "url": "https://www.elbphilharmonie.de/de/programm/flairdrum/28654"
+     "url": "https://www.elbphilharmonie.de/de/programm/flairdrum/28810"
+    },
+    {
+     "zeit": "12:30",
+     "titel": "Lunchkonzert der Symphoniker Hamburg",
+     "url": "https://www.elbphilharmonie.de/de/programm/lunchkonzert-der-symphoniker-hamburg/28135"
     },
     {
      "zeit": "20:00",
-     "titel": "Stabat mater / Philharmonisches Staatsorchester",
-     "url": "https://www.elbphilharmonie.de/de/programm/stabat-mater-philharmonisches-staatsorchester/27819"
+     "titel": "Salut Salon",
+     "url": "https://www.elbphilharmonie.de/de/programm/salut-salon/28924"
     },
     {
      "zeit": "20:00",
      "titel": "Fischer-Z",
-     "url": "https://www.elbphilharmonie.de/de/programm/fischer-z/27692"
+     "url": "https://www.elbphilharmonie.de/de/programm/fischer-z/24364"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
@@ -278,43 +296,48 @@
    ]
   },
   "m-resi": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "20:00",
-     "titel": "La Musica – zwischen ihr und ihm",
-     "url": "https://www.residenztheater.de/stuecke/detail/la-musica"
-    }
-   ],
-   "quelle": "https://www.residenztheater.de/spielplan",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.residenztheater.de/de/spielplan -> 404",
+    "https://www.residenztheater.de/programm -> 404",
+    "https://www.residenztheater.de/de/programm -> 404",
+    "https://www.residenztheater.de/kalender -> 404",
+    "https://www.residenztheater.de/de/kalender -> 404",
+    "https://www.residenztheater.de/termine -> 404"
+   ]
   },
   "m-mk": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "17:00",
-     "titel": "Kammerschau #36"
+     "zeit": "19:30",
+     "titel": "War was? 70 Jahre Münchner Lach- und Schießgesellschaft"
     },
     {
      "zeit": "20:00",
-     "titel": "Danton"
+     "titel": "(Münchner) Verkehr"
     }
    ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
    "format": "ical"
   },
   "m-vt": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.muenchner-volkstheater.de/de/spielplan -> 404",
-    "https://www.muenchner-volkstheater.de/de/programm -> 404",
-    "https://www.muenchner-volkstheater.de/kalender -> 404",
-    "https://www.muenchner-volkstheater.de/de/kalender -> 404",
-    "https://www.muenchner-volkstheater.de/termine -> 404",
-    "https://www.muenchner-volkstheater.de/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Ein Volksfeind",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/ein-volksfeind"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Offene Wunde",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/offene-wunde"
+    }
+   ],
+   "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
+   "format": "html-datum"
   },
   "m-bso": {
    "status": "fehler",
@@ -368,14 +391,19 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Elisabeth!",
-     "url": "https://www.burgtheater.at/veranstaltungen/elisabeth/2026-10-26"
+     "zeit": "09:30",
+     "titel": "Karussell der Gefühle",
+     "url": "https://www.burgtheater.at/veranstaltungen/karussell-der-gefuehle/2026-10-27"
     },
     {
      "zeit": "19:00",
-     "titel": "Der Revisor",
-     "url": "https://www.burgtheater.at/veranstaltungen/der-revisor/2026-10-26"
+     "titel": "Wir sind noch einmal davongekommen",
+     "url": "https://www.burgtheater.at/veranstaltungen/wir-sind-noch-einmal-davongekommen/2026-10-27"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "Merlin oder das wüste Land",
+     "url": "https://www.burgtheater.at/veranstaltungen/merlin-oder-das-wueste-land/2026-10-27"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
@@ -409,10 +437,15 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Otello"
+     "titel": "Nijinsky",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/nijinsky/2026-10-27/"
+    },
+    {
+     "titel": "Abo 3",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/giselle/2025-09-23/"
     }
    ],
-   "quelle": "https://www.wiener-staatsoper.at/",
+   "quelle": "https://www.wiener-staatsoper.at/kalender/2026/oktober/",
    "format": "html-datum"
   },
   "w-vo": {
@@ -420,35 +453,35 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Der Zarewitsch",
-     "url": "https://www.volksoper.at/produktion/der-zarewitsch-2026.1014664160.de.html"
+     "titel": "Die Zauberflöte",
+     "url": "https://www.volksoper.at/produktion/die-zauberflote-2025.1014664295.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
    "format": "microdata"
   },
   "w-tadw": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.theater-wien.at/spielplan -> 404",
-    "https://www.theater-wien.at/programm -> 404",
-    "https://www.theater-wien.at/kalender -> 404",
-    "https://www.theater-wien.at/termine -> 404",
-    "https://www.theater-wien.at/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "00:00",
+     "titel": "Unterwegs mit der Technischen DirektorinFührung"
+    }
+   ],
+   "quelle": "https://www.theater-wien.at/de/home",
+   "format": "html-time"
   },
   "w-kh": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.konzerthaus.at/spielplan -> 404",
-    "https://www.konzerthaus.at/de/spielplan -> 404",
-    "https://www.konzerthaus.at/programm -> 404",
-    "https://www.konzerthaus.at/de/programm -> 404",
-    "https://www.konzerthaus.at/de/kalender -> 404",
-    "https://www.konzerthaus.at/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Pizzera & Jaus & folkshilfe",
+     "url": "https://konzerthaus.at/de/programm-und-karten/pizzera-jaus-folkshilfe/64334"
+    }
+   ],
+   "quelle": "https://konzerthaus.at/de/programm-und-karten",
+   "format": "html-datum"
   },
   "w-mv": {
    "status": "fehler",
@@ -760,16 +793,6 @@
      "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/david-novros"
     },
     {
-     "titel": "SKULPTURALDie neuen Galerien",
-     "bis": "2027-04-11",
-     "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/skulptural"
-    },
-    {
-     "titel": "This is the Modern WorldDurchbrüche in der Kunst 1900–1960",
-     "bis": "2027-05-30",
-     "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/modern-world"
-    },
-    {
      "titel": "ImpressionismusDeutsch-Französische Begegnungen",
      "bis": "2027-11-14",
      "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/impressionismus"
@@ -778,6 +801,16 @@
      "titel": "Making HistoryHans Makart und die Salonmalerei des 19. Jahrhunderts",
      "bis": "2028-01-02",
      "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/making-history"
+    },
+    {
+     "titel": "SKULPTURALDie neuen Galerien",
+     "bis": "2028-04-30",
+     "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/skulptural"
+    },
+    {
+     "titel": "This is the Modern WorldDurchbrüche in der Kunst 1900–1960",
+     "bis": "2028-05-07",
+     "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/modern-world"
     }
    ],
    "quelle": "https://www.hamburger-kunsthalle.de/de/unsere-ausstellungen",
@@ -1076,8 +1109,8 @@
    "ausstellungen": [
     {
      "titel": "Ausstellungen",
-     "von": "2026-07-17",
-     "bis": "2026-10-26",
+     "von": "2026-06-12",
+     "bis": "2026-12-07",
      "url": "https://www.hausderkunst.de/eintauchen/tomas-saraceno"
     }
    ],
@@ -1122,10 +1155,6 @@
   "w-alb": {
    "status": "ok",
    "ausstellungen": [
-    {
-     "titel": "DIE WELT IM FOKUS",
-     "bis": "2026-10-26"
-    },
     {
      "titel": "SHARA HUGHES",
      "bis": "2027-02-28"
@@ -1283,43 +1312,38 @@
    "ausstellungen": [
     {
      "titel": "miniXplore",
-     "von": "2026-10-26",
-     "bis": "2026-10-26"
-    },
-    {
-     "titel": "Birdly® – Das VR-Flug-Erlebnis",
-     "von": "2026-10-26",
-     "bis": "2026-10-26"
-    },
-    {
-     "titel": "Hochspannungsvorführung",
-     "von": "2026-10-26",
-     "bis": "2026-10-26"
-    },
-    {
-     "titel": "Alles einsteigen – wir fahren ab!",
-     "von": "2026-10-26",
-     "bis": "2026-10-26"
+     "von": "2026-10-27",
+     "bis": "2026-10-27"
     },
     {
      "titel": "minTi",
-     "von": "2026-10-26",
-     "bis": "2026-10-26"
+     "von": "2026-10-27",
+     "bis": "2026-10-27"
     },
     {
-     "titel": "LOK.Vorführung",
-     "von": "2026-10-26",
-     "bis": "2026-10-26"
+     "titel": "Birdly® – Das VR-Flug-Erlebnis",
+     "von": "2026-10-27",
+     "bis": "2026-10-27"
+    },
+    {
+     "titel": "Technik macht Ferien",
+     "von": "2026-10-27",
+     "bis": "2026-10-27"
     },
     {
      "titel": "Bergwerk",
-     "von": "2026-10-26",
-     "bis": "2026-10-26"
+     "von": "2026-10-27",
+     "bis": "2026-10-27"
     },
     {
-     "titel": "Leicht wie Luft oder hart wie Stahl",
-     "von": "2026-10-26",
-     "bis": "2026-10-26"
+     "titel": "Das ist es wert! Chancen der Kreislaufwirtschaft",
+     "von": "2026-10-27",
+     "bis": "2026-10-27"
+    },
+    {
+     "titel": "Hochspannungsvorführung",
+     "von": "2026-10-27",
+     "bis": "2026-10-27"
     }
    ],
    "quelle": "https://www.technischesmuseum.at/jart/prj3/tmw/main.jart",
