@@ -1,6 +1,6 @@
 {
- "datum": "2026-10-29",
- "stand": "2026-10-29T06:34+01:00",
+ "datum": "2026-10-30",
+ "stand": "2026-10-30T06:33+01:00",
  "haeuser": {
   "so": {
    "status": "ok",
@@ -8,17 +8,12 @@
     {
      "zeit": "18:15",
      "titel": "Vor-Führung",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/vor-fuehrung.22834/#event-176559"
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/vor-fuehrung.22834/#event-176560"
     },
     {
      "zeit": "19:30",
      "titel": "Giselle",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/giselle.13681/#event-155219"
-    },
-    {
-     "zeit": "22:20",
-     "titel": "Nach(t)führung",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/nach-t-fuehrung.10795/#event-176243"
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/giselle.13681/#event-155220"
     }
    ],
    "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
@@ -37,8 +32,14 @@
    ]
   },
   "ko": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Or­pheus in der Un­ter­welt",
+     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/orpheus-in-der-unterwelt/1300/"
+    }
+   ],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
    "format": "microdata"
   },
@@ -58,9 +59,24 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:30",
-     "titel": "Das Dinner",
-     "url": "https://www.deutschestheater.de/programm/produktionen/das-dinner"
+     "zeit": "18:00",
+     "titel": "Elfriede wird 80!",
+     "url": "https://www.deutschestheater.de/programm/produktionen/elfriede-wird-80"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Angabe der Person",
+     "url": "https://www.deutschestheater.de/programm/produktionen/angabe-der-person"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Bunbury. Ernst sein is everything!",
+     "url": "https://www.deutschestheater.de/programm/produktionen/bunbury-ernst-sein-is-everything"
+    },
+    {
+     "zeit": "22:00",
+     "titel": "Magic Hammond XXL",
+     "url": "https://www.deutschestheater.de/programm/produktionen/magic-hammond-xxl-geburtstagsparty"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -70,8 +86,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Katharina Thalbach liest: Irmgard Keun",
-     "url": "https://www.berliner-ensemble.de/inszenierung/katharina-thalbach-liest-irmgard-keun"
+     "titel": "Neumitglieder-Führung mit Oliver Reese",
+     "url": "https://www.berliner-ensemble.de/inszenierung/neumitglieder-fuehrung-mit-oliver-reese"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -81,29 +97,44 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "15:00",
+     "zeit": "13:00",
      "titel": "Grüner Salon Raw Voice Lab mit Sarmen Almond Workshop",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/raw-voice-lab/20261029-1400/"
+     "url": "https://www.volksbuehne-berlin.de/produktionen/raw-voice-lab/20261030-1200/"
+    },
+    {
+     "zeit": "13:00",
+     "titel": "The School of Self-Defense",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/20261030-1200/"
+    },
+    {
+     "zeit": "14:00",
+     "titel": "Prater-Probebühne The School of Self-Defense Boxing Girls: Wendo (Feminist Self-Defense Course) Workshop auf Englisch",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/20261030-1300/"
     },
     {
      "zeit": "16:00",
-     "titel": "Roter Salon The School of Self-Defense Ana Pi / NA MATA LAB: Joy Is Not a Metaphor Workshop auf Englisch",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/20261029-1500/"
+     "titel": "Roter Salon The School of Self-Defense Puma Camillê: A Workshop about Capoeira History Workshop auf Englisch",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/20261030-1500/"
     },
     {
-     "zeit": "19:30",
-     "titel": "Große Bühne The School of Self-Defense Mata Leão Davi Pontes, Wallace Ferreira Uraufführung anschließend Premierenparty",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/mata-leao/20261029-1830/"
+     "zeit": "18:00",
+     "titel": "Re. Seitenfoyer The School of Self-Defense Community Bar",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/20261030-1700/"
     },
     {
-     "zeit": "20:00",
-     "titel": "Grüner Salon No More Medication mit Sarmen Almond Sound meditation and album release",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/raw-voice-lab/20261029-1900/"
+     "zeit": "19:00",
+     "titel": "Grüner Salon Don Mee Choi: KAUMKRIEG / Freely Frayed mit Don Mee Choi, Uljana Wolf, Lotta Thießen Buchpremiere",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/don-mee-choi-kaumkrieg-freely-frayed/20261030-1800/"
     },
     {
-     "zeit": "21:30",
-     "titel": "Roter Salon LYZZA, XD Erica Premierenparty Mata Leão",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/lyzza-xd-erica/20261029-2030/"
+     "zeit": "19:00",
+     "titel": "3. Stock P14: endlich endlich Pia Schacht, Mirjam Schulze",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/p14-endlich-endlich/20261030-1800/"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "The School of Self-Defense",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/mata-leao/20261030-1800/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
@@ -117,12 +148,6 @@
      "titel": "IN THE CORPSE OF THE PRESENT Prinz Friedrich von Homburg Heinrich von Kleist",
      "ort": "Galerie",
      "url": "https://www.gorki.de/de/in-the-corpse-of-the-present-prinz-friedrich-von-homburg-2"
-    },
-    {
-     "zeit": "17:00",
-     "titel": "Noise als Strategie — Workshop",
-     "ort": "Eingangsfoyer",
-     "url": "https://www.gorki.de/de/noise-als-strategie"
     }
    ],
    "quelle": "https://www.gorki.de/de/spielplan",
@@ -144,10 +169,10 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Total Refusal & Theater im Bahnhof – Let’s Play I Am Old and Tired",
-     "ort": "HAU3",
-     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/total-refusal-theater-im-bahnhof-lets-play-i-am-old-and-tired/"
+     "zeit": "19:00",
+     "titel": "ADIRA Drag Festival 3.0 – Who’s Your Diva?!",
+     "ort": "HAU1",
+     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/adira-drag-festival-whos-your-diva/"
     }
    ],
    "quelle": "https://www.hebbel-am-ufer.de/programm/spielplan-tickets/",
@@ -159,7 +184,7 @@
     {
      "zeit": "19:30",
      "titel": "BLINDED by DELIGHT",
-     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6961"
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6965"
     }
    ],
    "quelle": "https://www.palast.berlin/",
@@ -177,46 +202,47 @@
     {
      "zeit": "18:00",
      "titel": "Das Herz eines Boxers",
-     "url": "https://www.grips-theater.de/de/spielplan/das-herz-eines-boxers/3189"
+     "url": "https://www.grips-theater.de/de/spielplan/das-herz-eines-boxers/3190"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
    "format": "html-datum"
   },
   "bf": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "titel": "Festivals & Programmreihen",
-     "url": "https://www.berlinerfestspiele.de/jazzfest-berlin"
-    }
-   ],
-   "quelle": "https://www.berlinerfestspiele.de/programm",
-   "format": "html-datum"
-  },
-  "ph": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "20:00",
-     "titel": "Diskurs in der PhilharmonieDeutschland hat gewählt. Wie lange steht die »Brandmauer« noch?",
-     "url": "https://www.berliner-philharmoniker.de/konzerte/kalender/57048/"
-    }
-   ],
-   "quelle": "https://www.berliner-philharmoniker.de/",
-   "format": "html-time"
-  },
-  "kh": {
    "status": "fehler",
    "grund": "geladen, aber keine Termindaten erkannt",
    "versuche": [
-    "https://www.konzerthaus.de/spielplan -> 404",
-    "https://www.konzerthaus.de/de/spielplan -> 404",
-    "https://www.konzerthaus.de/kalender -> 404",
-    "https://www.konzerthaus.de/de/kalender -> 404",
-    "https://www.konzerthaus.de/termine -> 404",
-    "https://www.konzerthaus.de/konzerte -> 404"
+    "https://www.berlinerfestspiele.de/kalender -> 404",
+    "https://www.berlinerfestspiele.de/spielplan -> 404",
+    "https://www.berlinerfestspiele.de/de/spielplan -> 404",
+    "https://www.berlinerfestspiele.de/de/kalender -> 404",
+    "https://www.berlinerfestspiele.de/termine -> 404",
+    "https://www.berlinerfestspiele.de/konzerte -> 404"
    ]
+  },
+  "ph": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.berliner-philharmoniker.de/spielplan -> 404",
+    "https://www.berliner-philharmoniker.de/de/spielplan -> 404",
+    "https://www.berliner-philharmoniker.de/programm -> 404",
+    "https://www.berliner-philharmoniker.de/de/programm -> 404",
+    "https://www.berliner-philharmoniker.de/de/kalender -> 404",
+    "https://www.berliner-philharmoniker.de/termine -> 404"
+   ]
+  },
+  "kh": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Konzerthausorchester Berlin, Riccardo Minasi",
+     "url": "https://www.konzerthaus.de/de/programm/konzerthausorchester-berlin-riccardo-minasi/12501"
+    }
+   ],
+   "quelle": "https://www.konzerthaus.de/de/programm/30-10-2026",
+   "format": "html-time"
   },
   "pbs": {
    "status": "fehler",
@@ -231,8 +257,21 @@
    ]
   },
   "roc": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "20:30",
+     "titel": "Jazzik Electrolights",
+     "ort": "Haus des Rundfunks",
+     "url": "https://www.roc-berlin.de/konzerte/jazzik-electrolights/concert/227085/"
+    },
+    {
+     "zeit": "21:00",
+     "titel": "Honeck & Frang",
+     "ort": "Philharmonie Berlin, Großer Saal",
+     "url": "https://www.roc-berlin.de/konzerte/honeck-frang/concert/227087/"
+    }
+   ],
    "quelle": "https://www.roc-berlin.de/kalender/",
    "format": "json-ld"
   },
@@ -246,13 +285,8 @@
     },
     {
      "zeit": "20:00",
-     "titel": "TURBOSTAAT",
-     "url": "https://schauspielhaus.de/stuecke/turbostaat"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Hiroshima-Salon",
-     "url": "https://schauspielhaus.de/stuecke/hiroshima-salon"
+     "titel": "Laios",
+     "url": "https://schauspielhaus.de/stuecke/laios"
     }
    ],
    "quelle": "https://schauspielhaus.de/spielplan",
@@ -262,8 +296,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "The Boys Are Kissing",
-     "url": "https://www.thalia-theater.de/de/stuecke/the-boys-are-kissing/160"
+     "titel": "Der Menschenfeind",
+     "url": "https://www.thalia-theater.de/de/stuecke/der-menschenfeind/347"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
@@ -273,27 +307,43 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "14:00",
-     "titel": "YOUNG MOVEMENT CLASS (14–18)",
-     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55039"
+     "zeit": "08:30",
+     "titel": "MORNING TECHNO",
+     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55045"
     },
     {
-     "zeit": "17:30",
+     "zeit": "10:30",
+     "titel": "Big Moment #1: Daniel Dominguez Teruel",
+     "url": "https://kampnagel.de/produktionen/performativebaustelle-big-moment--1-spatenstich-mit-daniel-dominguez-teruel"
+    },
+    {
+     "zeit": "15:00",
+     "titel": "OPEN CLASS: DANCE WELL",
+     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55022"
+    },
+    {
+     "zeit": "18:00",
      "titel": "K3 MOVEMENT CLASS",
      "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55020"
     },
     {
      "zeit": "19:00",
-     "titel": "Eröffnung Probenzentrum Kaltenkircher Platz",
-     "url": "https://kampnagel.de/produktionen/kandthecity-eroeffnung-kaltenkircher-platz"
+     "titel": "Re-Opening HALLOWEEN SPECIAL: INTERNATIONAL ZOMBIES UNITED",
+     "url": "https://kampnagel.de/produktionen/performativebaustelle-migrantpolitan-halloween"
     }
    ],
    "quelle": "https://kampnagel.de/kalender",
    "format": "json-eingebettet"
   },
   "hh-so": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Wunderland",
+     "ort": "Staatsoper, Großes Haus"
+    }
+   ],
    "quelle": "https://www.die-hamburgische-staatsoper.de/de",
    "format": "ical"
   },
@@ -301,29 +351,24 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "18:30",
+     "titel": "Farah Kaddour solo & Tilt Trio",
+     "url": "https://www.elbphilharmonie.de/de/programm/farah-kaddour-solo-tilt-trio/27973"
+    },
+    {
      "zeit": "19:00",
-     "titel": "Dresdner Kreuzchor",
-     "url": "https://www.elbphilharmonie.de/de/programm/dresdner-kreuzchor/29131"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Sanam",
-     "url": "https://www.elbphilharmonie.de/de/programm/sanam/28422"
+     "titel": "Dämmerland",
+     "url": "https://www.elbphilharmonie.de/de/programm/dammerland/27630"
     },
     {
      "zeit": "20:00",
-     "titel": "Die Feisten",
-     "url": "https://www.elbphilharmonie.de/de/programm/die-feisten/27450"
+     "titel": "Sven Regener",
+     "url": "https://www.elbphilharmonie.de/de/programm/sven-regener/29061"
     },
     {
-     "zeit": "20:00",
-     "titel": "NDR Kultur: Podium der Jungen",
-     "url": "https://www.elbphilharmonie.de/de/programm/ndr-kultur-podium-der-jungen/29247"
-    },
-    {
-     "zeit": "21:00",
-     "titel": "NDR Vokalensemble / LIN",
-     "url": "https://www.elbphilharmonie.de/de/programm/ndr-vokalensemble-lin/29201"
+     "zeit": "21:30",
+     "titel": "Rayess Bek & Joan Baz",
+     "url": "https://www.elbphilharmonie.de/de/programm/rayess-bek-joan-baz/28671"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
@@ -345,14 +390,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Zwischenruf: Macho-Politik",
-     "url": "https://www.residenztheater.de/stuecke/detail/zwischenruf"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Die Gewehre der Frau Carrar / Würgendes Blei",
-     "url": "https://www.residenztheater.de/stuecke/detail/die-gewehre-der-frau-carrar-wuergendes-blei"
+     "zeit": "19:30",
+     "titel": "Prima Facie",
+     "url": "https://www.residenztheater.de/stuecke/detail/prima-facie"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
@@ -362,12 +402,12 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Meister und Margarita"
+     "zeit": "19:30",
+     "titel": "Absolvent*innenvorsprechen"
     },
     {
      "zeit": "20:00",
-     "titel": "(Münchner) Verkehr"
+     "titel": "Play Auerbach!"
     }
    ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
@@ -377,9 +417,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "U20 Poetry Slam Slam",
-     "url": "https://www.muenchner-volkstheater.de/programm/extra/u20-poetry-slam"
+     "zeit": "20:00",
+     "titel": "Oskar Haag Konzert",
+     "url": "https://www.muenchner-volkstheater.de/programm/extra/oskar-haag"
     }
    ],
    "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
@@ -438,18 +478,18 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Die Wurzel aus Sein",
-     "url": "https://www.burgtheater.at/veranstaltungen/die-wurzel-aus-sein/2026-10-29"
+     "titel": "Die letzten Tage der Menschheit",
+     "url": "https://www.burgtheater.at/veranstaltungen/die-letzten-tage-der-menschheit/2026-10-30"
     },
     {
      "zeit": "19:30",
-     "titel": "König Ubu",
-     "url": "https://www.burgtheater.at/veranstaltungen/koenig-ubu/2026-10-29"
+     "titel": "Lysistrata",
+     "url": "https://www.burgtheater.at/veranstaltungen/lysistrata/2026-10-30"
     },
     {
      "zeit": "20:00",
-     "titel": "Lysistrata",
-     "url": "https://www.burgtheater.at/veranstaltungen/lysistrata/2026-10-29"
+     "titel": "Stefko Hanushevsky erzählt: Der groẞe Diktator",
+     "url": "https://www.burgtheater.at/veranstaltungen/stefko-hanushevsky-erzaehlt-der-grosse-diktator/2026-10-30"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
@@ -459,8 +499,18 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "21:30",
-     "titel": "1000 TAKTE TANZ",
+     "zeit": "16:00",
+     "titel": "DIE KLEINE HEXE",
+     "url": "https://www.volkstheater.at/produktion/3142283/die-kleine-hexe/3487143"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "FRÄULEIN ELSE",
+     "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "TRUE STORY NIGHTS",
      "url": "https://www.volkstheater.at/spielstaetten/rote-bar"
     }
    ],
@@ -484,8 +534,8 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Otello",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/otello/2026-10-29/"
+     "titel": "Nijinsky",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/nijinsky/2026-10-30/"
     }
    ],
    "quelle": "https://www.wiener-staatsoper.at/kalender/2026/oktober/",
@@ -496,8 +546,8 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Die Zauberflöte",
-     "url": "https://www.volksoper.at/produktion/die-zauberflote-2025.1013794912.de.html"
+     "titel": "Ronja Räubertochter",
+     "url": "https://www.volksoper.at/produktion/ronja-raubertochter-2026.1014664264.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
@@ -508,27 +558,38 @@
    "vorstellungen": [
     {
      "zeit": "00:00",
-     "titel": "Backstageführung Deutsch"
-    },
-    {
-     "zeit": "00:00",
-     "titel": "Backstage Guided Tour English"
+     "titel": "Der fliegende HolländerRichard Wagner"
     }
    ],
    "quelle": "https://www.theater-wien.at/de/home",
    "format": "html-time"
   },
   "w-kh": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.konzerthaus.at/spielplan -> 404",
-    "https://www.konzerthaus.at/de/spielplan -> 404",
-    "https://www.konzerthaus.at/programm -> 404",
-    "https://www.konzerthaus.at/de/programm -> 404",
-    "https://www.konzerthaus.at/de/kalender -> 404",
-    "https://www.konzerthaus.at/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "13:00",
+     "titel": "Wiener Konzerthaus Backstage",
+     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-konzerthaus-backstage/64397"
+    },
+    {
+     "zeit": "14:00",
+     "titel": "Wiener Konzerthaus Backstage",
+     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-konzerthaus-backstage/64406"
+    },
+    {
+     "zeit": "18:30",
+     "titel": "Plus: Einführungsgespräch + Blick hinter die Kulissen",
+     "url": "https://konzerthaus.at/de/programm-und-karten/plus-einfuehrungsgespraech-blick-hinter-die-kulissen/64476"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "ORF Radio-Symphonieorchester / Pia Palme",
+     "url": "https://konzerthaus.at/de/programm-und-karten/orf-radio-symphonieorchester-pia-palme/64436"
+    }
+   ],
+   "quelle": "https://konzerthaus.at/de/programm-und-karten",
+   "format": "html-datum"
   },
   "w-mv": {
    "status": "fehler",
@@ -542,69 +603,46 @@
    ]
   },
   "w-sym": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.wienersymphoniker.at/spielplan -> 404",
-    "https://www.wienersymphoniker.at/de/spielplan -> 404",
-    "https://www.wienersymphoniker.at/programm -> 404",
-    "https://www.wienersymphoniker.at/termine -> 404",
-    "https://www.wienersymphoniker.at/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Wagner \"Der fliegende Holländer\"",
+     "url": "https://www.wienersymphoniker.at/konzert/wagner-der-fliegende-hollaender-30-10-2026"
+    }
+   ],
+   "quelle": "https://www.wienersymphoniker.at/kalender",
+   "format": "html-time"
   },
   "b-nm": {
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "PETRI BerlinBerliner SkulpturenfundEntartete Kunst im Bombenschutt",
-     "von": "2025-10-16",
-     "bis": "2026-11-01",
-     "url": "https://www.smb.museum/ausstellungen/detail/berliner-skulpturenfund/"
+     "titel": "Neues Museum100 Jahre Wörterbuch der ägyptischen Sprache",
+     "von": "2026-06-06",
+     "bis": "2026-12-31",
+     "url": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/detail/100-jahre-woerterbuch-der-aegyptischen-sprache/"
     },
     {
-     "titel": "Humboldt ForumVerwandt seinGeteilte Sprache, geteiltes Wissen?",
-     "von": "2025-10-03",
-     "bis": "2026-11-09",
-     "url": "https://www.smb.museum/ausstellungen/detail/verwandt-sein/"
+     "titel": "Neues MuseumSchicksal in den SternenDie Anfänge des Tierkreises",
+     "von": "2026-03-21",
+     "bis": "2027-01-10",
+     "url": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/detail/schicksal-in-den-sternen/"
     },
     {
-     "titel": "Sammlung Scharf-GerstenbergWechselwirkung",
-     "von": "2026-07-17",
-     "bis": "2026-11-15",
-     "url": "https://www.smb.museum/ausstellungen/detail/wechselwirkung/"
+     "titel": "Neues MuseumDioskuren – Der geschenkte Tag",
+     "von": "2025-04-12",
+     "bis": "2027-03-14",
+     "url": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/detail/dioskuren-der-geschenkte-tag/"
     },
     {
-     "titel": "Museum für FotografieHelmut Newton‘s One-off Album",
-     "von": "2026-06-05",
-     "bis": "2026-11-15",
-     "url": "https://www.smb.museum/ausstellungen/detail/helmut-newtons-one-off-album/"
-    },
-    {
-     "titel": "Museum für FotografieRooms / Stages",
-     "von": "2026-06-05",
-     "bis": "2026-11-15",
-     "url": "https://www.smb.museum/ausstellungen/detail/rooms-stages/"
-    },
-    {
-     "titel": "Alte NationalgalerieSkandal!Hermione von Preuschen und der Mors Imperator",
-     "von": "2026-03-22",
-     "bis": "2026-11-15",
-     "url": "https://www.smb.museum/ausstellungen/detail/skandal/"
-    },
-    {
-     "titel": "Humboldt ForumManatunga – künstlerische Interventionen von George Nuku",
-     "von": "2025-05-18",
-     "bis": "2026-11-30",
-     "url": "https://www.smb.museum/ausstellungen/detail/manatunga-kuenstlerische-interventionen-von-george-nuku/"
-    },
-    {
-     "titel": "Humboldt ForumFreunde der Kunst OstasiensZur Gründung der Gesellschaft für Ostasiatische Kunst vor 100 Jahren",
-     "von": "2026-09-16",
-     "bis": "2026-12-07",
-     "url": "https://www.smb.museum/ausstellungen/detail/freunde-der-kunst-ostasiens/"
+     "titel": "Neues MuseumDie Krone von KertschSchätze aus Europas Frühzeit",
+     "von": "2017-10-19",
+     "bis": "2027-09-22",
+     "url": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/detail/die-krone-von-kertsch/"
     }
    ],
-   "quelle": "https://www.smb.museum/ausstellungen/aktuell/",
+   "quelle": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/aktuell/",
    "format": "html-zeitraum"
   },
   "b-ang": {
@@ -785,6 +823,11 @@
    "status": "ok",
    "ausstellungen": [
     {
+     "titel": "Pale Blue. UdK Studierenden’ Zine Präsentation – Antwort auf Asad Raza – 2075",
+     "von": "2026-10-30",
+     "bis": "2026-11-01"
+    },
+    {
      "titel": "Susan Hiller Bad Dreams",
      "bis": "2027-01-10"
     },
@@ -937,6 +980,11 @@
      "bis": "2026-11-01"
     },
     {
+     "titel": "Hito Steyerl – Deine Mudda macht Show",
+     "von": "2026-10-30",
+     "bis": "2027-03-29"
+    },
+    {
      "titel": "Joyce Pensato: Eyes For You",
      "von": "2026-10-10",
      "bis": "2027-04-04"
@@ -1013,16 +1061,9 @@
    "format": "html-zeitraum"
   },
   "hh-amh": {
-   "status": "ok",
-   "ausstellungen": [
-    {
-     "titel": "Vortrag: Die Ursprünge des Hamburger Stadtwappens",
-     "von": "2026-10-29",
-     "bis": "2026-10-29",
-     "url": "https://amh.de/veranstaltung/vortrag-die-urspruenge-des-hamburger-stadtwappens/"
-    }
-   ],
-   "quelle": "https://amh.de/ausstellungen/alle-ausstellungen/",
+   "status": "keine",
+   "ausstellungen": [],
+   "quelle": "https://amh.de/programm/veranstaltungskalender/",
    "format": "json-ld"
   },
   "hh-imm": {
@@ -1126,6 +1167,11 @@
      "bis": "2027-05-30"
     },
     {
+     "titel": "Ausstellung In My Head. Künstlerische Positionen der Gegenwart",
+     "von": "2026-10-30",
+     "bis": "2027-05-30"
+    },
+    {
      "titel": "Ausstellung Long Story Short. Eine Kunstgeschichte aus der Sammlung Brandhorst von den 1960er-Jahren bis zur Gegenwart",
      "von": "2025-10-23",
      "bis": "2027-09-12"
@@ -1202,15 +1248,8 @@
    "format": "html-zeitraum"
   },
   "m-gly": {
-   "status": "ok",
-   "ausstellungen": [
-    {
-     "titel": "Griechische Götterbilder",
-     "von": "2026-10-29",
-     "bis": "2026-10-29",
-     "url": "https://www.antike-am-koenigsplatz.mwn.de/event/griechische-goetterbilder-2/"
-    }
-   ],
+   "status": "keine",
+   "ausstellungen": [],
    "quelle": "https://www.antike-am-koenigsplatz.mwn.de/",
    "format": "json-ld"
   },
@@ -1246,6 +1285,10 @@
   "w-alb": {
    "status": "ok",
    "ausstellungen": [
+    {
+     "titel": "HER STORY",
+     "bis": "2027-02-14"
+    },
     {
      "titel": "SHARA HUGHES",
      "bis": "2027-02-28"
@@ -1403,43 +1446,38 @@
    "ausstellungen": [
     {
      "titel": "miniXplore",
-     "von": "2026-10-29",
-     "bis": "2026-10-29"
+     "von": "2026-10-30",
+     "bis": "2026-10-30"
     },
     {
      "titel": "minTi",
-     "von": "2026-10-29",
-     "bis": "2026-10-29"
+     "von": "2026-10-30",
+     "bis": "2026-10-30"
     },
     {
      "titel": "Birdly® – Das VR-Flug-Erlebnis",
-     "von": "2026-10-29",
-     "bis": "2026-10-29"
-    },
-    {
-     "titel": "Hochspannungsvorführung",
-     "von": "2026-10-29",
-     "bis": "2026-10-29"
-    },
-    {
-     "titel": "Technik macht Ferien",
-     "von": "2026-10-29",
-     "bis": "2026-10-29"
-    },
-    {
-     "titel": "LOK.Vorführung",
-     "von": "2026-10-29",
-     "bis": "2026-10-29"
+     "von": "2026-10-30",
+     "bis": "2026-10-30"
     },
     {
      "titel": "Bergwerk",
-     "von": "2026-10-29",
-     "bis": "2026-10-29"
+     "von": "2026-10-30",
+     "bis": "2026-10-30"
     },
     {
-     "titel": "Reisen einst und jetzt",
-     "von": "2026-10-29",
-     "bis": "2026-10-29"
+     "titel": "Das ist es wert! Chancen der Kreislaufwirtschaft",
+     "von": "2026-10-30",
+     "bis": "2026-10-30"
+    },
+    {
+     "titel": "techLAB",
+     "von": "2026-10-30",
+     "bis": "2026-10-30"
+    },
+    {
+     "titel": "Hochspannungsvorführung",
+     "von": "2026-10-30",
+     "bis": "2026-10-30"
     }
    ],
    "quelle": "https://www.technischesmuseum.at/jart/prj3/tmw/main.jart",
