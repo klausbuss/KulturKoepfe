@@ -1,19 +1,24 @@
 {
- "datum": "2026-10-31",
- "stand": "2026-10-31T06:29+01:00",
+ "datum": "2026-11-01",
+ "stand": "2026-11-01T06:36+01:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "16:45",
-     "titel": "Vor-Führung",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/vor-fuehrung.22834/#event-176561"
+     "zeit": "11:00",
+     "titel": "Ballettgespräch",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/ballettgespraech.13680/#event-155183"
     },
     {
-     "zeit": "18:00",
-     "titel": "Tosca",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/tosca.23/#event-153992"
+     "zeit": "17:00",
+     "titel": "Gastspiel in Frankfurt am Main",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/staatskapelle-berlin-gastspiel-in-frankfurt-am-main.27787/#event-154743"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Liederabend Rachel Willis-Sørensen",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/liederabend-rachel-willis-soerensen.27797/#event-154768"
     }
    ],
    "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
@@ -35,17 +40,23 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Jew­geni Onegin",
-     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/jewgeni-onegin/1253/"
+     "zeit": "16:00",
+     "titel": "Pippi Lang­strumpf",
+     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/pippi-langstrumpf/1316/"
     }
    ],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
    "format": "microdata"
   },
   "sb": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:00",
+     "titel": "Ballettgespräch",
+     "ort": "Unter den Linden 7, 10117 Berlin"
+    }
+   ],
    "quelle": "https://www.staatsballett-berlin.de/spielplan",
    "format": "ical"
   },
@@ -54,23 +65,18 @@
    "vorstellungen": [
     {
      "zeit": "18:00",
-     "titel": "Szenen des Schwindels",
-     "url": "https://www.deutschestheater.de/programm/produktionen/szenen-des-schwindels"
+     "titel": "Utopischer Überschuss: Zukunftserzählungen der DDR-Literatur",
+     "url": "https://www.deutschestheater.de/programm/produktionen/auf-der-schotterpiste-der-geschichte-utopischer-ueberschuss"
     },
     {
      "zeit": "19:00",
-     "titel": "Deutscher Herbst",
-     "url": "https://www.deutschestheater.de/programm/produktionen/deutscher-herbst"
+     "titel": "Die Holländerinnen",
+     "url": "https://www.deutschestheater.de/programm/produktionen/die-hollaenderinnen"
     },
     {
-     "zeit": "20:00",
-     "titel": "Polaris",
-     "url": "https://www.deutschestheater.de/programm/produktionen/polaris"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Wetten, dass. Die Suche nach dem Wir",
-     "url": "https://www.deutschestheater.de/programm/produktionen/wetten-dass"
+     "zeit": "19:30",
+     "titel": "Wie Grischa mit einer verwegenen Idee beinahe den Weltfrieden auslöste",
+     "url": "https://www.deutschestheater.de/programm/produktionen/wie-grischa-mit-einer-verwegenen-idee-beinahe-den-weltfrieden-ausloeste"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -80,8 +86,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "De Profundis",
-     "url": "https://www.berliner-ensemble.de/inszenierung/de-profundis"
+     "zeit": "19:00",
+     "titel": "Historische Führung",
+     "url": "https://www.berliner-ensemble.de/inszenierung/historische-fuehrung"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -91,39 +98,39 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Grüner Salon Raw Voice Lab mit Sarmen Almond Workshop",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/raw-voice-lab/20261031-1000/"
+     "zeit": "12:00",
+     "titel": "Prater-Foyer The School of Self-Defense Community Bar",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/20261101-1100/"
     },
     {
      "zeit": "12:00",
      "titel": "The School of Self-Defense",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/20261031-1100/"
-    },
-    {
-     "zeit": "14:00",
-     "titel": "The School of Self-Defense",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/20261031-1300/"
+     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/20261101-1100/"
     },
     {
      "zeit": "16:00",
-     "titel": "Re. Seitenfoyer The School of Self-Defense Community Bar",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/20261031-1500/"
-    },
-    {
-     "zeit": "17:00",
-     "titel": "Grüner Salon Raw Voice Lab Showcase mit Sarmen Almond, Anna Clementi und Workshop-Teilnehmer*innen Konzert",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/raw-voice-lab/20261031-1600/"
-    },
-    {
-     "zeit": "17:00",
      "titel": "The School of Self-Defense",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/20261031-1600/"
+     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/mata-leao/20261101-1500/"
     },
     {
-     "zeit": "22:00",
-     "titel": "Grüner Salon Danse Macabre mit DJ-Sets und Performances von Leslie Garcia, Nyksan und Freund*innen Party",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/danse-macabre/20261031-2100/"
+     "zeit": "17:00",
+     "titel": "Roter Salon GEHEIME PLÄNE: Uphill Battle Rechtssystem Sonntagsgespräch mit Jean Peters von CORRECTIV",
+     "url": "https://www.volksbuehne-berlin.de/reihen-und-projekte/geheime-plaene/geheime-plaene-uphill-battle-rechtssystem/"
+    },
+    {
+     "zeit": "18:00",
+     "titel": "Prater-Foyer The School of Self-Defense Community Bar",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/20261101-1700/"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "The School of Self-Defense",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/20261101-1800/"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "3. Stock P14: endlich endlich Pia Schacht, Mirjam Schulze",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/p14-endlich-endlich/20261101-1800/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
@@ -136,18 +143,6 @@
      "zeit": "13:00",
      "titel": "IN THE CORPSE OF THE PRESENT Prinz Friedrich von Homburg Heinrich von Kleist",
      "ort": "Galerie",
-     "url": "https://www.gorki.de/de/in-the-corpse-of-the-present-prinz-friedrich-von-homburg-2"
-    },
-    {
-     "zeit": "17:00",
-     "titel": "Noise als Strategie — Workshop",
-     "ort": "Eingangsfoyer",
-     "url": "https://www.gorki.de/de/noise-als-strategie"
-    },
-    {
-     "zeit": "21:00",
-     "titel": "IN THE CORPSE OF THE PRESENT Prinz Friedrich von Homburg Heinrich von Kleist",
-     "ort": "Parkettfoyer",
      "url": "https://www.gorki.de/de/in-the-corpse-of-the-present-prinz-friedrich-von-homburg-2"
     }
    ],
@@ -170,7 +165,7 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
+     "zeit": "17:00",
      "titel": "Shieveh Theater Company – The Shadows",
      "ort": "HAU2",
      "url": "https://www.hebbel-am-ufer.de/programm/pdetail/shieveh-theater-company-the-shadows/"
@@ -185,7 +180,7 @@
     {
      "zeit": "15:30",
      "titel": "BLINDED by DELIGHT",
-     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6950"
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6976"
     }
    ],
    "quelle": "https://www.palast.berlin/",
@@ -201,59 +196,52 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
+     "zeit": "11:00",
+     "titel": "aneinander - vorbei",
+     "url": "https://www.grips-theater.de/de/spielplan/aneinander-vorbei/3244"
+    },
+    {
+     "zeit": "18:00",
      "titel": "Linie 1",
-     "url": "https://www.grips-theater.de/de/spielplan/linie-1/3135"
+     "url": "https://www.grips-theater.de/de/spielplan/linie-1/3302"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
    "format": "html-datum"
   },
   "bf": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.berlinerfestspiele.de/kalender -> 404",
-    "https://www.berlinerfestspiele.de/spielplan -> 404",
-    "https://www.berlinerfestspiele.de/de/spielplan -> 404",
-    "https://www.berlinerfestspiele.de/de/kalender -> 404",
-    "https://www.berlinerfestspiele.de/termine -> 404",
-    "https://www.berlinerfestspiele.de/konzerte -> 404"
-   ]
-  },
-  "ph": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Karajan-Akademie & Norbert Bisky",
-     "url": "https://www.berliner-philharmoniker.de/konzerte/kalender/57049/"
+     "zeit": "00:00",
+     "titel": "75 Jahre Berliner Festspiele",
+     "url": "https://www.berlinerfestspiele.de/jazzfest-berlin/programm/2026/kalender"
     }
    ],
-   "quelle": "https://www.berliner-philharmoniker.de/",
+   "quelle": "https://www.berlinerfestspiele.de/",
    "format": "html-time"
+  },
+  "ph": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.berliner-philharmoniker.de/spielplan -> 404",
+    "https://www.berliner-philharmoniker.de/de/spielplan -> 404",
+    "https://www.berliner-philharmoniker.de/programm -> 404",
+    "https://www.berliner-philharmoniker.de/de/programm -> 404",
+    "https://www.berliner-philharmoniker.de/de/kalender -> 404",
+    "https://www.berliner-philharmoniker.de/termine -> 404"
+   ]
   },
   "kh": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "13:00",
-     "titel": "Führung durch das Konzerthaus Berlin",
-     "url": "https://www.konzerthaus.de/de/programm/fuhrung-durch-das-konzerthaus-berlin/13131"
-    },
-    {
-     "zeit": "13:05",
-     "titel": "Guided tour of the Konzerthaus Berlin",
-     "url": "https://www.konzerthaus.de/de/programm/guided-tour-of-the-konzerthaus-berlin/12977"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "Konzerthausorchester Berlin, Riccardo Minasi",
-     "url": "https://www.konzerthaus.de/de/programm/konzerthausorchester-berlin-riccardo-minasi/12502"
+     "titel": "Vera-Lotte"
     }
    ],
-   "quelle": "https://www.konzerthaus.de/de/programm/31-10-2026",
-   "format": "html-time"
+   "quelle": "https://www.konzerthaus.de/de/",
+   "format": "html-datum"
   },
   "pbs": {
    "status": "fehler",
@@ -271,10 +259,10 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "21:00",
-     "titel": "Honeck & Frang",
-     "ort": "Philharmonie Berlin, Großer Saal",
-     "url": "https://www.roc-berlin.de/konzerte/honeck-frang/concert/227089/"
+     "zeit": "19:00",
+     "titel": "Clärchens Ballhaus 1",
+     "ort": "Clärchens Ballhaus",
+     "url": "https://www.roc-berlin.de/konzerte/claerchens-ballhaus-1-2/concert/227091/"
     }
    ],
    "quelle": "https://www.roc-berlin.de/kalender/",
@@ -284,9 +272,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Die Möwe",
-     "url": "https://schauspielhaus.de/stuecke/die-moewe"
+     "zeit": "18:00",
+     "titel": "Kabale und Liebe – allerdings mit anderem Text und auch anderer Melodie",
+     "url": "https://schauspielhaus.de/stuecke/kabale-und-liebe-allerdings-mit-anderem-text-und-auch-anderer-melodie"
     }
    ],
    "quelle": "https://schauspielhaus.de/spielplan",
@@ -296,36 +284,31 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Eröffnung Kunstaktion Timm Thaler",
-     "url": "https://www.thalia-theater.de/de/stuecke/eroffnung-kunstaktion-timm-thaler/372"
+     "titel": "Hard Times",
+     "url": "https://www.thalia-theater.de/de/stuecke/hard-times/169"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
    "format": "html-datum"
   },
   "hh-kn": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "20:00",
-     "titel": "Jack Halberstam: Keynote: Anarchitecture After Everything",
-     "url": "https://kampnagel.de/produktionen/performativebaustelle-jack-halberstam-keynote-anarchitecture-after-everything"
-    },
-    {
-     "zeit": "22:00",
-     "titel": "Horwitz / Pelosi / Lambertz",
-     "url": "https://kampnagel.de/produktionen/performativebaustelle-horwitz-pelosi-lambertz-voyager-sound-archiv--1"
-    }
-   ],
-   "quelle": "https://kampnagel.de/kalender",
-   "format": "json-eingebettet"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.kampnagel.de/spielplan -> 404",
+    "https://www.kampnagel.de/de/spielplan -> 404",
+    "https://www.kampnagel.de/programm -> 404",
+    "https://www.kampnagel.de/de/programm -> 404",
+    "https://www.kampnagel.de/de/kalender -> 404",
+    "https://www.kampnagel.de/termine -> 404"
+   ]
   },
   "hh-so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "Wunderland",
+     "zeit": "16:00",
+     "titel": "Die Walküre",
      "ort": "Staatsoper, Großes Haus"
     }
    ],
@@ -336,24 +319,24 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "11:00",
+     "titel": "Do You Love Me",
+     "url": "https://www.elbphilharmonie.de/de/programm/do-you-love-me/28991"
+    },
+    {
+     "zeit": "15:00",
+     "titel": "Step Into Dabke – gemeinsam tanzen auf der Plaza",
+     "url": "https://www.elbphilharmonie.de/de/programm/step-into-dabke-gemeinsam-tanzen-auf-der-plaza/28979"
+    },
+    {
      "zeit": "18:00",
-     "titel": "Charbel Rouhana",
-     "url": "https://www.elbphilharmonie.de/de/programm/charbel-rouhana/28429"
+     "titel": "Gustav Mahler: Auferstehen",
+     "url": "https://www.elbphilharmonie.de/de/programm/gustav-mahler-auferstehen/29056"
     },
     {
-     "zeit": "19:00",
-     "titel": "Bellows Across Borders",
-     "url": "https://www.elbphilharmonie.de/de/programm/bellows-across-borders/24230"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Abeer Nehme",
-     "url": "https://www.elbphilharmonie.de/de/programm/abeer-nehme/27972"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Neue Philharmonie Hamburg",
-     "url": "https://www.elbphilharmonie.de/de/programm/neue-philharmonie-hamburg/29045"
+     "zeit": "19:30",
+     "titel": "Tania Saleh",
+     "url": "https://www.elbphilharmonie.de/de/programm/tania-saleh/28430"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
@@ -375,19 +358,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "15:00",
-     "titel": "Theaterführung",
-     "url": "https://www.residenztheater.de/stuecke/detail/theaterfuehrung"
+     "zeit": "18:30",
+     "titel": "Einar Schleef ‒ Ich habe kein Deutschland gefunden",
+     "url": "https://www.residenztheater.de/stuecke/detail/einar-schleef-ich-habe-kein-deutschland-gefunden"
     },
     {
-     "zeit": "19:30",
-     "titel": "Die Rückseite des Lebens",
-     "url": "https://www.residenztheater.de/stuecke/detail/die-rueckseite-des-lebens"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Wie schützt der Mensch sich vor sich selbst?",
-     "url": "https://www.residenztheater.de/stuecke/detail/wie-schuetzt-der-mensch-sich-vor-sich-selbst"
+     "zeit": "19:00",
+     "titel": "La Musica – zwischen ihr und ihm",
+     "url": "https://www.residenztheater.de/stuecke/detail/la-musica"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
@@ -397,12 +375,12 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Jugend ohne Gott"
+     "zeit": "19:30",
+     "titel": "Was ihr wollt"
     },
     {
      "zeit": "20:00",
-     "titel": "(Münchner) Verkehr"
+     "titel": "Anna, Mascha und Julia"
     }
    ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
@@ -413,8 +391,13 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "Ein Volksfeind",
-     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/ein-volksfeind"
+     "titel": "Die Nashörner",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/die-nashoerner"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Appropriate (Was sich gehört)",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/appropriate-was-sich-gehoert"
     }
    ],
    "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
@@ -445,16 +428,16 @@
    ]
   },
   "m-mph": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.mphil.de/spielplan -> 404",
-    "https://www.mphil.de/de/spielplan -> 404",
-    "https://www.mphil.de/programm -> 404",
-    "https://www.mphil.de/de/programm -> 404",
-    "https://www.mphil.de/de/kalender -> 404",
-    "https://www.mphil.de/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:00",
+     "titel": "»Minimal Music« 3. Kammerkonzert",
+     "url": "https://www.mphil.de/ueber-uns/musikerinnen-und-musiker/details/sebastian-foerschl"
+    }
+   ],
+   "quelle": "https://www.mphil.de/kalender",
+   "format": "html-time"
   },
   "m-br": {
    "status": "fehler",
@@ -473,34 +456,28 @@
    "vorstellungen": [
     {
      "zeit": "18:00",
-     "titel": "Unter Tieren",
-     "url": "https://www.burgtheater.at/veranstaltungen/unter-tieren/2026-10-31"
+     "titel": "Die Zauberflöte",
+     "url": "https://www.burgtheater.at/veranstaltungen/die-zauberfloete/2026-11-01"
     },
     {
-     "zeit": "19:30",
-     "titel": "Volksvernichtung oder meine Leber ist sinnlos",
-     "url": "https://www.burgtheater.at/veranstaltungen/volksvernichtung-oder-meine-leber-ist-sinnlos/2026-10-31"
+     "zeit": "19:00",
+     "titel": "Die gröẞere Hoffnung",
+     "url": "https://www.burgtheater.at/veranstaltungen/die-groessere-hoffnung/2026-11-01"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
    "format": "html-time"
   },
   "w-vt": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "16:00",
-     "titel": "DIE KLEINE HEXE",
-     "url": "https://www.volkstheater.at/produktion/3142283/die-kleine-hexe/3605089"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "FRÄULEIN ELSE",
-     "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
-    }
-   ],
-   "quelle": "https://www.volkstheater.at/spielplan/",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.volkstheater.at/programm -> 404",
+    "https://www.volkstheater.at/de/programm -> 404",
+    "https://www.volkstheater.at/kalender -> 404",
+    "https://www.volkstheater.at/de/kalender -> 404",
+    "https://www.volkstheater.at/termine -> 404"
+   ]
   },
   "w-jos": {
    "status": "fehler",
@@ -519,7 +496,7 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "L'Orfeo"
+     "titel": "La Fille du régiment"
     }
    ],
    "quelle": "https://www.wiener-staatsoper.at/",
@@ -529,41 +506,36 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Chicago",
-     "url": "https://www.volksoper.at/produktion/chicago-2025.1014435648.de.html"
+     "zeit": "17:00",
+     "titel": "Lass uns die Welt vergessen - Volksoper 1938",
+     "url": "https://www.volksoper.at/produktion/at-lass-uns-die-welt-vergessen-2023.1014002413.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
    "format": "microdata"
   },
   "w-tadw": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "00:00",
-     "titel": "TAWumm! Kinderführung - Auf Beethovens SpurenFür jung & alle ab 6 Jahren (mit Begleitperson)"
-    }
-   ],
-   "quelle": "https://www.theater-wien.at/de/home",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.theater-wien.at/spielplan -> 404",
+    "https://www.theater-wien.at/programm -> 404",
+    "https://www.theater-wien.at/kalender -> 404",
+    "https://www.theater-wien.at/termine -> 404",
+    "https://www.theater-wien.at/konzerte -> 404"
+   ]
   },
   "w-kh": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:30",
-     "titel": "Greg Niemczuk - Legendäre Klaviersonaten",
-     "url": "https://konzerthaus.at/de/programm-und-karten/greg-niemczuk-legendaere-klaviersonaten/63651"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Shostakovich Ensemble",
-     "url": "https://konzerthaus.at/de/programm-und-karten/shostakovich-ensemble/64381"
-    }
-   ],
-   "quelle": "https://konzerthaus.at/de/programm-und-karten",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.konzerthaus.at/spielplan -> 404",
+    "https://www.konzerthaus.at/de/spielplan -> 404",
+    "https://www.konzerthaus.at/programm -> 404",
+    "https://www.konzerthaus.at/de/programm -> 404",
+    "https://www.konzerthaus.at/de/kalender -> 404",
+    "https://www.konzerthaus.at/termine -> 404"
+   ]
   },
   "w-mv": {
    "status": "fehler",
@@ -1032,10 +1004,10 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "SEE FOR FREE: Aktion zum Tag der Reformation",
-     "von": "2026-10-31",
-     "bis": "2026-10-31",
-     "url": "https://amh.de/veranstaltung/see-for-free-aktion-zum-tag-der-reformation/"
+     "titel": "Kreativ-Werkstatt für Kinder ab 8 Jahren",
+     "von": "2026-11-01",
+     "bis": "2026-11-01",
+     "url": "https://amh.de/veranstaltung/kreativ-werkstatt-fuer-kinder-ab-8-jahren-4/"
     }
    ],
    "quelle": "https://amh.de/ausstellungen/alle-ausstellungen/",
@@ -1414,38 +1386,38 @@
    "ausstellungen": [
     {
      "titel": "miniXplore",
-     "von": "2026-10-31",
-     "bis": "2026-10-31"
+     "von": "2026-11-01",
+     "bis": "2026-11-01"
     },
     {
      "titel": "Birdly® – Das VR-Flug-Erlebnis",
-     "von": "2026-10-31",
-     "bis": "2026-10-31"
+     "von": "2026-11-01",
+     "bis": "2026-11-01"
     },
     {
      "titel": "Hochspannungsvorführung",
-     "von": "2026-10-31",
-     "bis": "2026-10-31"
+     "von": "2026-11-01",
+     "bis": "2026-11-01"
     },
     {
      "titel": "minTi",
-     "von": "2026-10-31",
-     "bis": "2026-10-31"
+     "von": "2026-11-01",
+     "bis": "2026-11-01"
     },
     {
      "titel": "Bergwerk",
-     "von": "2026-10-31",
-     "bis": "2026-10-31"
+     "von": "2026-11-01",
+     "bis": "2026-11-01"
     },
     {
-     "titel": "Alles, was Flügel hat, fliegt",
-     "von": "2026-10-31",
-     "bis": "2026-10-31"
+     "titel": "Das ist es wert! Chancen der Kreislaufwirtschaft",
+     "von": "2026-11-01",
+     "bis": "2026-11-01"
     },
     {
      "titel": "techLAB",
-     "von": "2026-10-31",
-     "bis": "2026-10-31"
+     "von": "2026-11-01",
+     "bis": "2026-11-01"
     }
    ],
    "quelle": "https://www.technischesmuseum.at/jart/prj3/tmw/main.jart",
