@@ -148,7 +148,9 @@ MUSEEN = {
 
 # Seiten, die mehrere Häuser zeigen: nur Ausstellungen dieser Orte bzw. Adressen behalten
 NUR_ORT = {"hh-am": ["Altonaer Museum"], "hh-mda": ["Museum der Arbeit", "Deutsches Hafenmuseum", "Hafenmuseum"]}
-NUR_ADRESSE = {"w-wmw": "weltmuseumwien.at"}
+NUR_ADRESSE = {"w-wmw": "weltmuseumwien.at", "b-gb": "/gropius-bau/"}
+# Gemeinsame Übersicht ohne Ortsangabe: der Ort steht erst auf der Seite der Ausstellung
+ORT_AUF_DETAILSEITE = {"m-ap": "Alte Pinakothek", "m-pdm": "Pinakothek der Moderne"}
 
 sitzung = requests.Session()
 sitzung.headers.update({"User-Agent": UA, "Accept-Language": "de-DE,de;q=0.9"})
@@ -676,8 +678,8 @@ def titel_aus(kand):
             continue
         if zeitraum_aus(t)[1] or re.match(r"^(bis|ab|seit|vom|von)\s+\d", t, re.I) or KEIN_AUSSTELLUNGSTITEL.match(t):
             continue
-        if re.fullmatch(r"[\d.\s–—-]+", t):
-            continue
+        if re.fullmatch(r"[\d.\s–—-]+", t) or re.fullmatch(r"\W+", t):
+            continue                 # nur Ziffern oder Satzzeichen, z. B. „[“ beim HKW
         teile.append(t)
     titel = ""
     for t in teile:
@@ -792,6 +794,20 @@ def ausstellungen_detailseiten(soup, url):
     return gefunden
 
 
+def ort_auf_detailseite(url, ort):
+    """Steht der Ort im Hauptteil der Ausstellungsseite (nicht in Menü oder Fußzeile)?"""
+    if not url:
+        return False
+    try:
+        seite = BeautifulSoup(laden(url).text, "html.parser")
+    except (PermissionError, requests.RequestException):
+        return False
+    for x in seite(["script", "style", "noscript", "nav", "header", "footer"]):
+        x.decompose()
+    haupt = seite.find("main") or seite
+    return ort.lower() in re.sub(r"\s+", " ", haupt.get_text(" ")).lower()
+
+
 def ausstellungen_abrufen(hid, eintrag):
     web, gezielt = eintrag
     basis = "https://www." + web
@@ -831,6 +847,8 @@ def ausstellungen_abrufen(hid, eintrag):
             if hid in NUR_ORT and a.get("ort") and a["ort"] not in NUR_ORT[hid]:
                 continue
             if hid in NUR_ADRESSE and NUR_ADRESSE[hid] not in (a.get("url") or ""):
+                continue
+            if hid in ORT_AUF_DETAILSEITE and not ort_auf_detailseite(a.get("url"), ORT_AUF_DETAILSEITE[hid]):
                 continue
             a.pop("ort", None)
             gesehen.add(a["titel"])
