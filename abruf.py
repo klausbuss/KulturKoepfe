@@ -108,7 +108,7 @@ MUSEEN = {
     "b-mfn": ("museumfuernaturkunde.berlin", ["https://www.museumfuernaturkunde.berlin/besuch-planen/die-ausstellung"]),
     "b-kw":  ("kw-berlin.de", ["https://www.kw-berlin.de/"]),
     "b-hkw": ("hkw.de", ["https://www.hkw.de/programm"]),
-    "b-gb":  ("berlinerfestspiele.de", ["https://www.berlinerfestspiele.de/gropius-bau/programm/ausstellungen"]),
+    "b-gb":  ("berlinerfestspiele.de", ["https://www.berlinerfestspiele.de/gropius-bau"]),
     "b-fut": ("futurium.de", ["https://futurium.de/de/ausstellung"]),
     # Hamburg
     "hh-kh":    ("hamburger-kunsthalle.de", ["https://www.hamburger-kunsthalle.de/ausstellungen"]),
@@ -126,12 +126,13 @@ MUSEEN = {
     "m-pdm": ("pinakothek.de", ["https://www.pinakothek.de/de/pinakothek-der-moderne/ausstellungen"]),
     "m-mb":  ("museum-brandhorst.de", ["https://www.museum-brandhorst.de/ausstellungen/"]),
     "m-lb":  ("lenbachhaus.de", ["https://www.lenbachhaus.de/entdecken/ausstellungen"]),
-    "m-dm":  ("deutsches-museum.de", ["https://www.deutsches-museum.de/museumsinsel/ausstellungen"]),
-    "m-bnm": ("bayerisches-nationalmuseum.de", ["https://www.bayerisches-nationalmuseum.de/ausstellungen"]),
-    "m-hdk": ("hausderkunst.de", ["https://hausderkunst.de/ausstellungen"]),
+    "m-dm":  ("deutsches-museum.de", ["https://www.deutsches-museum.de/museumsinsel/ausstellungen",
+                                      "https://www.deutsches-museum.de/museumsinsel/ausstellung/alle-ausstellungen"]),
+    "m-bnm": ("bayerisches-nationalmuseum.de", ["https://www.bayerisches-nationalmuseum.de/besuch/ausstellungen"]),
+    "m-hdk": ("hausderkunst.de", ["https://www.hausderkunst.de/kalender/ausstellungen"]),
     "m-gly": ("antike-am-koenigsplatz.mwn.de", ["https://antike-am-koenigsplatz.mwn.de/"]),
     "m-m5k": ("museum-fuenf-kontinente.de", ["https://www.museum-fuenf-kontinente.de/ausstellungen/"]),
-    "m-nsd": ("nsdoku.de", ["https://www.nsdoku.de/ausstellungen"]),
+    "m-nsd": ("nsdoku.de", ["https://www.nsdoku.de/ausstellungen/aktuell-und-vorschau"]),
     # Wien
     "w-khm":   ("khm.at", ["https://www.khm.at/besuchen/ausstellungen/"]),
     "w-alb":   ("albertina.at", ["https://www.albertina.at/ausstellungen/"]),
@@ -144,6 +145,10 @@ MUSEEN = {
     "w-tmw":   ("technischesmuseum.at", ["https://www.technischesmuseum.at/ausstellungen"]),
     "w-wmw":   ("weltmuseumwien.at", ["https://www.weltmuseumwien.at/ausstellungen/"]),
 }
+
+# Seiten, die mehrere Häuser zeigen: nur Ausstellungen dieser Orte bzw. Adressen behalten
+NUR_ORT = {"hh-am": ["Altonaer Museum"], "hh-mda": ["Museum der Arbeit", "Deutsches Hafenmuseum", "Hafenmuseum"]}
+NUR_ADRESSE = {"w-wmw": "weltmuseumwien.at"}
 
 sitzung = requests.Session()
 sitzung.headers.update({"User-Agent": UA, "Accept-Language": "de-DE,de;q=0.9"})
@@ -632,29 +637,123 @@ def zeitraum_aus(t):
     return None, None
 
 
+# Ortsangaben, die in Teasern mit im Titel stehen
+ORTE = ["Neues Museum", "Alte Nationalgalerie", "Neue Nationalgalerie", "Gemäldegalerie", "Kulturforum",
+        "Hamburger Bahnhof – Nationalgalerie der Gegenwart", "Hamburger Bahnhof", "Museumsinsel",
+        "Altonaer Museum", "Museum der Arbeit", "Jenisch Haus", "Deutsches Hafenmuseum", "Hafenmuseum",
+        "Wien Museum", "Gropius Bau"]
+ORT_KLEIN = {o.lower(): o for o in ORTE}
+KEIN_AUSSTELLUNGSTITEL = re.compile(
+    r"^(aktuelle )?(sonder|dauer)?ausstellung(en)?$|^kategorie:?$|^(mehr|mehr info|info|tickets?|online-tickets"
+    r"|kombitickets?|zur ausstellung|details|vorschau|aktuell|jetzt|neu|festivals? & programmreihen)$", re.I)
+KEIN_TEIL = re.compile(r"(meta|topline|subheadline|kategorie|category|tag|sronly|sr-only|date|datum)", re.I)
+VERANSTALTUNG = re.compile(r"(führung|kunstgespräch|workshop|lange nacht|kinderprogramm|ausgebucht|durch die ausstellung"
+                           r"|vortrag|ferienprogramm|programmreihe|vr-flug|erlebnis)", re.I)
+UEBERSCHRIFT = ["h1", "h2", "h3", "h4", "h5"]
+NEBENBEREICH = re.compile(r"(footer|opening|oeffnung|hours)", re.I)
+TITELKLASSE = re.compile(r"(^|[-_ ])(title|titel|headline)", re.I)
+
+
+def ist_in(x, behaelter):
+    """Liegt x in behaelter? (Identität, nicht Gleichheit: bs4 hält gleich aussehende Elemente für gleich)"""
+    return any(p is behaelter for p in x.parents)
+
+
+def titel_aus(kand):
+    """Text eines Überschrift-Elements ohne Ort, Datum und Kategorie; dazu den Ort, falls genannt."""
+    teile, ort = [], ""
+    for st in kand.find_all(string=True):
+        t = re.sub(r"\s+", " ", st).strip(" \u00a0")
+        if not t:
+            continue
+        eltern = [x for x in st.parents if x is not kand and ist_in(x, kand)]
+        if any(KEIN_TEIL.search(" ".join(x.get("class", []))) for x in eltern):
+            if t.lower() in ORT_KLEIN:
+                ort = ORT_KLEIN[t.lower()]
+            continue
+        if t.lower() in ORT_KLEIN:
+            ort = ORT_KLEIN[t.lower()]
+            continue
+        if zeitraum_aus(t)[1] or re.match(r"^(bis|ab|seit|vom|von)\s+\d", t, re.I) or KEIN_AUSSTELLUNGSTITEL.match(t):
+            continue
+        if re.fullmatch(r"[\d.\s–—-]+", t):
+            continue
+        teile.append(t)
+    titel = ""
+    for t in teile:
+        titel = t if not titel else titel + (" " if titel[-1] in ".!?:–-" else ". ") + t
+    titel = re.sub(r"^(Sonder)?[Aa]usstellung\s+", "", titel).strip()
+    return titel, ort
+
+
+def titel_suchen(el, basis, zeitraeume):
+    """Vom Datum nach oben gehen, bis eine Überschrift gefunden ist (aber nicht in den nächsten Eintrag).
+    Erst Überschriften auf allen Ebenen, erst danach Linktexte als Notlösung."""
+    ebenen, a = [], el
+    for _ in range(7):
+        a = a.parent
+        if a is None or a.name in ("body", "html", "main"):
+            break
+        if len(zeitraeume.get(id(a), ())) > 1:
+            break                # zu weit nach oben gelaufen: hier beginnt schon der nächste Eintrag
+        ebenen.append(a)
+    for i, a in enumerate(ebenen):
+        kandidaten = [x for x in el.parents if x.name in UEBERSCHRIFT and (x is a or ist_in(x, a))]
+        kandidaten += a.find_all(lambda t: t.name in UEBERSCHRIFT or TITELKLASSE.search(" ".join(t.get("class", []))))
+        for k in kandidaten:
+            if re.search(r"(subtitle|sub-title|subline|unterzeile|untertitel|under-headline)", " ".join(k.get("class", [])), re.I):
+                continue
+            titel, ort = titel_aus(k)
+            if 3 <= len(titel) <= 160:
+                url = ""
+                for b in ebenen[i:]:         # Link steht oft eine Ebene höher als der Titel
+                    url = link_in(b, basis)
+                    if url:
+                        break
+                return {"titel": titel, "ort": ort, "url": url}
+    for a in ebenen:
+        for l in a.find_all("a", href=True):
+            t = (l.get("title") or text(l.get_text(" ")) or "").strip()
+            if 3 <= len(t) <= 160 and not KEIN_AUSSTELLUNGSTITEL.match(t) and not zeitraum_aus(t)[1]:
+                return {"titel": t, "ort": "", "url": urljoin(basis, l["href"])}
+    return None
+
+
 def ausstellungen_html(soup, basis):
-    """Elemente mit Zeitraum suchen und den Titel der Ausstellung daneben finden."""
+    """Elemente mit Zeitraum suchen und den Titel der Ausstellung daneben finden.
+    Gibt die laufenden Ausstellungen zurück und wie viele Zeiträume überhaupt auf der Seite stehen."""
     treffer = []
     for el in soup.find_all(True):
         if el.name in ("script", "style", "option", "select", "noscript", "head", "title"):
             continue
-        t = text(el.get_text(" "))
+        roh = re.sub(r"\s+", " ", el.get_text(" ")).strip()
+        if not roh or len(roh) > 160 or not re.search(r"\d", roh):
+            continue            # schnelle Vorauswahl, text() ist teuer
+        t = text(roh)
         if not t or len(t) > 80:
             continue
         von, bis = zeitraum_aus(t)
         if bis:
             treffer.append((el, von, bis))
-    elemente = [x[0] for x in treffer]
+    # nur die innersten Treffer; für jeden Vorfahren merken, welche Zeiträume darin stehen
+    hat_treffer_darunter = {id(p) for el, _, _ in treffer for p in el.parents}
+    innerste = [x for x in treffer if id(x[0]) not in hat_treffer_darunter]
+    zeitraeume = {}
+    for el, von, bis in innerste:
+        for p in el.parents:
+            zeitraeume.setdefault(id(p), set()).add((von, bis))
     gefunden = []
-    for el, von, bis in treffer:
-        if any(x is not el and x in el.descendants for x in elemente):
-            continue        # nur die innersten Treffer
-        if el.find_parent(["footer", "nav"]) or el.find_parent(class_=re.compile(r"(footer|opening|oeffnung|hours)", re.I)):
-            continue
-        e = eintrag_um(el, basis, bis)
+    for el, von, bis in innerste:
+        if bis < HEUTE or (von and von > HEUTE):
+            continue            # vergangen oder noch nicht eröffnet: Titel gar nicht erst suchen
+        if el.find_parent(["footer", "nav"]) or any(
+                p.name not in ("body", "html") and NEBENBEREICH.search(" ".join(p.get("class", [])))
+                for p in el.parents):
+            continue            # Fußzeile, Öffnungszeiten (body trägt oft Klassen wie „has-footer“)
+        e = titel_suchen(el, basis, zeitraeume)
         if e:
-            gefunden.append({"titel": e["titel"], "von": von, "bis": bis, "url": e["url"]})
-    return gefunden
+            gefunden.append({"titel": e["titel"], "ort": e["ort"], "von": von, "bis": bis, "url": e["url"]})
+    return gefunden, len(innerste)
 
 
 # Häuser, deren Übersichtsseite keine Zeiträume zeigt: Das Ende („bis 30.06.2027“)
@@ -714,17 +813,26 @@ def ausstellungen_abrufen(hid, eintrag):
         if erste_seite is None:
             erste_seite = (r.url, r.text)
             speichere_diagnose(hid, erste_seite)
-        liste, quelle = ausstellungen_jsonld(soup, r.url), "json-ld"
+        liste, quelle, zeitraeume = ausstellungen_jsonld(soup, r.url), "json-ld", 0
         if not liste:
-            liste, quelle = ausstellungen_html(soup, r.url), "html-zeitraum"
+            (liste, zeitraeume), quelle = ausstellungen_html(soup, r.url), "html-zeitraum"
         if not liste and hid in MIT_DETAILSEITEN:
             liste, quelle = ausstellungen_detailseiten(soup, r.url), "detailseiten"
-        if not liste:
-            continue
+        if not liste and not zeitraeume:
+            continue                 # keine Termine auf dieser Seite: nächste Adresse probieren
         aktuell, gesehen = [], set()
         for a in sorted(liste, key=lambda a: a["bis"]):
             if not a["titel"] or a["titel"] in gesehen or a["bis"] < HEUTE or (a["von"] and a["von"] > HEUTE):
                 continue
+            if a["von"] and (a["bis"] - a["von"]).days < 14:
+                continue                     # eintägige Angebote sind keine Ausstellungen
+            if VERANSTALTUNG.search(a["titel"]) or KEIN_AUSSTELLUNGSTITEL.match(a["titel"]):
+                continue
+            if hid in NUR_ORT and a.get("ort") and a["ort"] not in NUR_ORT[hid]:
+                continue
+            if hid in NUR_ADRESSE and NUR_ADRESSE[hid] not in (a.get("url") or ""):
+                continue
+            a.pop("ort", None)
             gesehen.add(a["titel"])
             aktuell.append({k: (v.isoformat() if isinstance(v, dt.date) else v)
                             for k, v in a.items() if v})
