@@ -1,6 +1,6 @@
 {
  "datum": "2026-11-03",
- "stand": "2026-11-03T06:42+01:00",
+ "stand": "2026-11-03T12:26+01:00",
  "haeuser": {
   "so": {
    "status": "ok",
@@ -521,25 +521,25 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Neues Museum100 Jahre Wörterbuch der ägyptischen Sprache",
+     "titel": "100 Jahre Wörterbuch der ägyptischen Sprache",
      "von": "2026-06-06",
      "bis": "2026-12-31",
      "url": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/detail/100-jahre-woerterbuch-der-aegyptischen-sprache/"
     },
     {
-     "titel": "Neues MuseumSchicksal in den SternenDie Anfänge des Tierkreises",
+     "titel": "Schicksal in den Sternen. Die Anfänge des Tierkreises",
      "von": "2026-03-21",
      "bis": "2027-01-10",
      "url": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/detail/schicksal-in-den-sternen/"
     },
     {
-     "titel": "Neues MuseumDioskuren – Der geschenkte Tag",
+     "titel": "Dioskuren – Der geschenkte Tag",
      "von": "2025-04-12",
      "bis": "2027-03-14",
      "url": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/detail/dioskuren-der-geschenkte-tag/"
     },
     {
-     "titel": "Neues MuseumDie Krone von KertschSchätze aus Europas Frühzeit",
+     "titel": "Die Krone von Kertsch. Schätze aus Europas Frühzeit",
      "von": "2017-10-19",
      "bis": "2027-09-22",
      "url": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/detail/die-krone-von-kertsch/"
@@ -552,19 +552,19 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Alte NationalgalerieSkandal!Hermione von Preuschen und der Mors Imperator",
+     "titel": "Skandal! Hermione von Preuschen und der Mors Imperator",
      "von": "2026-03-22",
      "bis": "2026-11-15",
      "url": "https://www.smb.museum/museen-einrichtungen/alte-nationalgalerie/ausstellungen/detail/skandal/"
     },
     {
-     "titel": "Alte NationalgalerieInterNationalgalerie 1Nationalmuseum in Warschau",
+     "titel": "InterNationalgalerie 1. Nationalmuseum in Warschau",
      "von": "2026-06-18",
      "bis": "2027-01-17",
      "url": "https://www.smb.museum/museen-einrichtungen/alte-nationalgalerie/ausstellungen/detail/internationalgalerie-1/"
     },
     {
-     "titel": "Alte NationalgalerieÜber ZeitenGursky, Lucas, Miró, Warhol und die Kunst des langen 19. Jahrhunderts",
+     "titel": "Über Zeiten. Gursky, Lucas, Miró, Warhol und die Kunst des langen 19. Jahrhunderts",
      "von": "2026-10-22",
      "bis": "2027-02-28",
      "url": "https://www.smb.museum/museen-einrichtungen/alte-nationalgalerie/ausstellungen/detail/ueber-zeiten/"
@@ -577,25 +577,25 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Neue NationalgalerieRuin und RauschBerlin 1910–1930",
+     "titel": "Ruin und Rausch. Berlin 1910–1930",
      "von": "2026-04-25",
      "bis": "2027-01-03",
      "url": "https://www.smb.museum/museen-einrichtungen/neue-nationalgalerie/ausstellungen/detail/ruin-und-rausch/"
     },
     {
-     "titel": "Neue NationalgalerieMaurizio Cattelan. NIGHTPreis der Nationalgalerie 2026",
+     "titel": "Maurizio Cattelan. NIGHT. Preis der Nationalgalerie 2026",
      "von": "2026-09-10",
      "bis": "2027-03-07",
      "url": "https://www.smb.museum/museen-einrichtungen/neue-nationalgalerie/ausstellungen/detail/maurizio-cattelan-night/"
     },
     {
-     "titel": "Neue NationalgalerieZerreißprobe. Kunst zwischen Politik und GesellschaftSammlung der Nationalgalerie 1945 – 2000",
+     "titel": "Zerreißprobe. Kunst zwischen Politik und Gesellschaft. Sammlung der Nationalgalerie 1945 – 2000",
      "von": "2023-11-18",
      "bis": "2027-04-04",
      "url": "https://www.smb.museum/museen-einrichtungen/neue-nationalgalerie/ausstellungen/detail/zerreissprobe-kunst-zwischen-politik-und-gesellschaft/"
     },
     {
-     "titel": "Neue NationalgalerieChristoph Schlingensief. Deutschlandsuche ’99",
+     "titel": "Christoph Schlingensief. Deutschlandsuche ’99",
      "von": "2025-05-02",
      "bis": "2027-04-25",
      "url": "https://www.smb.museum/museen-einrichtungen/neue-nationalgalerie/ausstellungen/detail/christoph-schlingensief-deutschlandsuche-99/"
@@ -608,13 +608,13 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "GemäldegalerieDaniel Chodowiecki 1726–1801Berliner Bilder der Aufklärung",
+     "titel": "Daniel Chodowiecki 1726–1801. Berliner Bilder der Aufklärung",
      "von": "2026-09-15",
      "bis": "2027-01-10",
      "url": "https://www.smb.museum/museen-einrichtungen/gemaeldegalerie/ausstellungen/detail/daniel-chodowiecki-1726-1801/"
     },
     {
-     "titel": "GemäldegaleriePorträts!Überraschende Begegnungen von Botticelli bis Lempicka",
+     "titel": "Porträts! Überraschende Begegnungen von Botticelli bis Lempicka",
      "von": "2026-10-16",
      "bis": "2027-03-14",
      "url": "https://www.smb.museum/museen-einrichtungen/gemaeldegalerie/ausstellungen/detail/portraets/"
@@ -627,28 +627,34 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Hamburger Bahnhof – Nationalgalerie der GegenwartShilpa GuptaWhat Still Holds",
+     "titel": "Shilpa Gupta. What Still Holds",
      "von": "2026-03-27",
      "bis": "2027-01-03",
      "url": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/detail/shilpa-gupta/"
     },
     {
-     "titel": "Hamburger Bahnhof – Nationalgalerie der GegenwartCHANEL Commission: Lina Lapelytė. We Make Years Out of Hours",
+     "titel": "CHANEL Commission: Lina Lapelytė. We Make Years Out of Hours",
      "von": "2026-05-01",
      "bis": "2027-01-10",
      "url": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/detail/chanel-commission-lina-lapelyte-we-make-years-out-of-hours/"
     },
     {
-     "titel": "Hamburger Bahnhof – Nationalgalerie der Gegenwart[ materialistin ]Matter of Care, Care of Matter",
+     "titel": "[ materialistin ]. Matter of Care, Care of Matter",
      "von": "2026-07-03",
      "bis": "2027-03-14",
      "url": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/detail/materialistin/"
     },
     {
-     "titel": "Hamburger Bahnhof – Nationalgalerie der GegenwartRyuichi Sakamotoseeing sound, hearing time",
+     "titel": "Ryuichi Sakamoto. seeing sound, hearing time",
      "von": "2026-09-11",
      "bis": "2027-06-20",
      "url": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/detail/ryuichi-sakamoto/"
+    },
+    {
+     "titel": "Next Door. Tacita Dean, Thomas Demand, Olafur Eliasson, Henrik Håkansson, Tomás Saraceno",
+     "von": "2026-10-09",
+     "bis": "2027-06-27",
+     "url": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/detail/next-door/"
     }
    ],
    "quelle": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/aktuell/",
@@ -726,16 +732,19 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Susan Hiller Bad Dreams",
-     "bis": "2027-01-10"
+     "titel": "Susan Hiller. Bad Dreams",
+     "bis": "2027-01-10",
+     "url": "https://www.kw-berlin.de/de/ausstellungen/susan-hiller-bad-dreams"
     },
     {
-     "titel": "KOO JEONG A OUSSSEAN",
-     "bis": "2027-01-10"
+     "titel": "KOO JEONG A. OUSSSEAN",
+     "bis": "2027-01-10",
+     "url": "https://www.kw-berlin.de/de/ausstellungen/koo-jeong-a-ousssean"
     },
     {
-     "titel": "Rafik Greiss The City and the City",
-     "bis": "2027-01-10"
+     "titel": "Rafik Greiss. The City and the City",
+     "bis": "2027-01-10",
+     "url": "https://www.kw-berlin.de/de/ausstellungen/rafik-greiss-the-city-and-the-city"
     }
    ],
    "quelle": "https://www.kw-berlin.de/de/",
@@ -745,28 +754,16 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "School of Quilombismo: Crip Epistemologies",
+     "titel": "[. School of Quilombismo: Crip Epistemologies. ]",
      "von": "2026-04-01",
      "bis": "2026-11-15",
      "url": "https://www.hkw.de/programme/school-of-quilombismo-crip-epistemologies"
-    },
-    {
-     "titel": "Kunstgespräche",
-     "von": "2026-09-14",
-     "bis": "2026-12-05",
-     "url": "https://www.hkw.de/programme/not-all-travellers-walk-roads-of-humanity-as-practice/conversations-on-art"
     },
     {
      "titel": "Nicht alle Reisenden folgen Wegen – Humanität als Praxis",
      "von": "2026-09-12",
      "bis": "2026-12-06",
      "url": "https://www.hkw.de/programme/not-all-travellers-walk-roads-of-humanity-as-practice"
-    },
-    {
-     "titel": "Durch die Ausstellung mit…",
-     "von": "2026-09-12",
-     "bis": "2026-12-06",
-     "url": "https://www.hkw.de/programme/not-all-travellers-walk-roads-of-humanity-as-practice/a-walk-through-the-exhibition-with"
     }
    ],
    "quelle": "https://www.hkw.de/",
@@ -776,13 +773,33 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Festivals & Programmreihen",
+     "titel": "Treffen junger Autor*innen",
+     "bis": "2026-11-30",
+     "url": "https://www.berlinerfestspiele.de/treffen-junge-szene/treffen-junger-autorinnen"
+    },
+    {
+     "titel": "Treffen junge Musikszene",
+     "bis": "2026-11-30",
+     "url": "https://www.berlinerfestspiele.de/treffen-junge-szene/treffen-junge-musikszene"
+    },
+    {
+     "titel": "Gabriele Stötzer",
+     "bis": "2026-12-06",
+     "url": "https://www.berlinerfestspiele.de/gropius-bau/programm/2026/ausstellungen/gabriele-stoetzer"
+    },
+    {
+     "titel": "Kreuzberg",
+     "bis": "2027-01-17",
+     "url": "https://www.berlinerfestspiele.de/gropius-bau/programm/2026/ausstellungen/kreuzberg"
+    },
+    {
+     "titel": "Performing Arts Season",
      "von": "2026-10-13",
      "bis": "2027-01-22",
-     "url": "https://www.berlinerfestspiele.de/jazzfest-berlin"
+     "url": "https://www.berlinerfestspiele.de/performing-arts-season/programm/2026/spielplan"
     }
    ],
-   "quelle": "https://www.berlinerfestspiele.de/programm",
+   "quelle": "https://www.berlinerfestspiele.de/gropius-bau",
    "format": "html-zeitraum"
   },
   "b-fut": {
@@ -801,32 +818,32 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Carrie YamaokaMaria Lassnig Preis",
+     "titel": "Carrie Yamaoka. Maria Lassnig Preis",
      "bis": "2027-01-10",
      "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/carrie-yamaoka"
     },
     {
-     "titel": "David NovrosPainting",
+     "titel": "David Novros. Painting",
      "bis": "2027-02-21",
      "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/david-novros"
     },
     {
-     "titel": "ImpressionismusDeutsch-Französische Begegnungen",
+     "titel": "Impressionismus. Deutsch-Französische Begegnungen",
      "bis": "2027-11-14",
      "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/impressionismus"
     },
     {
-     "titel": "Making HistoryHans Makart und die Salonmalerei des 19. Jahrhunderts",
+     "titel": "Making History. Hans Makart und die Salonmalerei des 19. Jahrhunderts",
      "bis": "2028-01-02",
      "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/making-history"
     },
     {
-     "titel": "SKULPTURALDie neuen Galerien",
+     "titel": "SKULPTURAL. Die neuen Galerien",
      "bis": "2028-04-30",
      "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/skulptural"
     },
     {
-     "titel": "This is the Modern WorldDurchbrüche in der Kunst 1900–1960",
+     "titel": "This is the Modern World. Durchbrüche in der Kunst 1900–1960",
      "bis": "2028-05-07",
      "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/modern-world"
     }
@@ -840,26 +857,31 @@
     {
      "titel": "Sara Sallam – Fürsorge",
      "von": "2026-06-05",
-     "bis": "2027-01-10"
+     "bis": "2027-01-10",
+     "url": "https://www.mkg-hamburg.de/ausstellungen/sara-sallam-fuersorge"
     },
     {
      "titel": "Foto: Hans Hansen",
-     "bis": "2027-01-10"
+     "bis": "2027-01-10",
+     "url": "https://www.mkg-hamburg.de/ausstellungen/foto-hans-hansen"
     },
     {
      "titel": "Schubladenschau #4: Tanz",
      "von": "2026-10-09",
-     "bis": "2027-04-25"
+     "bis": "2027-04-25",
+     "url": "https://www.mkg-hamburg.de/ausstellungen/schubladenschau-4-tanz"
     },
     {
      "titel": "Hella Jongerius",
      "von": "2026-10-23",
-     "bis": "2027-06-13"
+     "bis": "2027-06-13",
+     "url": "https://www.mkg-hamburg.de/ausstellungen/hella-jongerius-whispering-things"
     },
     {
      "titel": "XULY.Bët",
      "von": "2025-08-01",
-     "bis": "2027-08-01"
+     "bis": "2027-08-01",
+     "url": "https://www.mkg-hamburg.de/ausstellungen/xulybet"
     }
    ],
    "quelle": "https://www.mkg-hamburg.de/ausstellungen",
@@ -871,47 +893,53 @@
     {
      "titel": "Hito Steyerl – Deine Mudda macht Show",
      "von": "2026-10-30",
-     "bis": "2027-03-29"
+     "bis": "2027-03-29",
+     "url": "https://www.deichtorhallen.de/de/ausstellungen/hito-steyerl/"
     },
     {
      "titel": "Joyce Pensato: Eyes For You",
      "von": "2026-10-10",
-     "bis": "2027-04-04"
+     "bis": "2027-04-04",
+     "url": "https://www.deichtorhallen.de/de/ausstellungen/joyce-pensato/"
     }
    ],
    "quelle": "https://www.deichtorhallen.de/de/ausstellungen",
    "format": "html-zeitraum"
   },
   "hh-bkf": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Ausstellungsdaten erkannt",
-   "versuche": [
-    "https://www.buceriuskunstforum.de/de/ausstellungen -> 404",
-    "https://www.buceriuskunstforum.de/exhibitions -> 404",
-    "https://www.buceriuskunstforum.de/programm -> 404"
-   ]
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Von Monet bis Picasso. Jüdische Kunstsammler:innen in Deutschland",
+     "von": "2026-09-11",
+     "bis": "2027-03-29",
+     "url": "https://www.buceriuskunstforum.de/ausstellungen/von-monet-bis-picasso-juedische-kunstsammlerinnen-in-deutschland"
+    }
+   ],
+   "quelle": "https://www.buceriuskunstforum.de/ausstellungen",
+   "format": "html-zeitraum"
   },
   "hh-markk": {
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "bis 29. NOVEMBER 2026 KATZEN!",
+     "titel": "KATZEN!",
      "bis": "2026-11-29"
     },
     {
-     "titel": "Fragen an die Geschichte des MARKK",
+     "titel": "Zuschreibung: Jüdisch. Fragen an die Geschichte des MARKK",
      "bis": "2027-06-27"
     },
     {
-     "titel": "bis 27. JUNI 2027 Bilderechos aus Peru",
+     "titel": "Bilderechos aus Peru",
      "bis": "2027-06-27"
     },
     {
-     "titel": "bis 27. JUNI 2027 Pippis Papa und eine wirklich wahre Geschichte aus dem Pazifik",
+     "titel": "Pippis Papa und eine wirklich wahre Geschichte aus dem Pazifik",
      "bis": "2027-06-27"
     },
     {
-     "titel": "bis 30. JUNI 2027 Benin. Geraubte Geschichte",
+     "titel": "Benin. Geraubte Geschichte",
      "bis": "2027-06-30"
     }
    ],
@@ -922,28 +950,10 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Jenisch Haus Parkomania Unerzählte Geschichten aus dem Jenischpark",
-     "von": "2025-05-19",
-     "bis": "2026-12-28",
-     "url": "https://www.shmh.de/ausstellungen/parkomania/"
-    },
-    {
-     "titel": "Museum der Arbeit Respekt Eine Ausstellung übers gemeinsam Verschiedensein",
-     "von": "2025-06-18",
-     "bis": "2027-01-10",
-     "url": "https://www.shmh.de/ausstellungen/respekt/"
-    },
-    {
-     "titel": "Altonaer Museum Aiga Rasch und ihre Detektive Die drei ??? und Sherlock Holmes",
+     "titel": "Aiga Rasch und ihre Detektive. Die drei ??? und Sherlock Holmes",
      "von": "2026-09-02",
      "bis": "2027-03-14",
      "url": "https://www.shmh.de/ausstellungen/aiga-rasch-und-ihre-detektive/"
-    },
-    {
-     "titel": "Museum der Arbeit Nachrichten – News",
-     "von": "2026-10-14",
-     "bis": "2027-05-16",
-     "url": "https://www.shmh.de/ausstellungen/nachrichten-news/"
     }
    ],
    "quelle": "https://www.shmh.de/ausstellungen/",
@@ -978,25 +988,13 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Jenisch Haus Parkomania Unerzählte Geschichten aus dem Jenischpark",
-     "von": "2025-05-19",
-     "bis": "2026-12-28",
-     "url": "https://www.shmh.de/ausstellungen/parkomania/"
-    },
-    {
-     "titel": "Museum der Arbeit Respekt Eine Ausstellung übers gemeinsam Verschiedensein",
+     "titel": "Respekt. Eine Ausstellung übers gemeinsam Verschiedensein",
      "von": "2025-06-18",
      "bis": "2027-01-10",
      "url": "https://www.shmh.de/ausstellungen/respekt/"
     },
     {
-     "titel": "Altonaer Museum Aiga Rasch und ihre Detektive Die drei ??? und Sherlock Holmes",
-     "von": "2026-09-02",
-     "bis": "2027-03-14",
-     "url": "https://www.shmh.de/ausstellungen/aiga-rasch-und-ihre-detektive/"
-    },
-    {
-     "titel": "Museum der Arbeit Nachrichten – News",
+     "titel": "Nachrichten – News",
      "von": "2026-10-14",
      "bis": "2027-05-16",
      "url": "https://www.shmh.de/ausstellungen/nachrichten-news/"
@@ -1009,13 +1007,15 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Fritz Winters Kosmos der 1930er und 1940er Jahre",
-     "bis": "2027-02-21"
+     "titel": "Die Nacht berührt die Erde",
+     "bis": "2027-02-21",
+     "url": "https://www.pinakothek.de/de/ausstellung/fritz-winter-die-nacht-beruehrt-die-erde"
     },
     {
-     "titel": "ZWISCHENRÄUME UND ÜBERGÄNGE. KUNST UND RAUM SEIT 1960",
+     "titel": "Between & Beyond",
      "von": "2026-07-03",
-     "bis": "2027-08-15"
+     "bis": "2027-08-15",
+     "url": "https://www.pinakothek.de/de/ausstellung/between-and-beyond"
     }
    ],
    "quelle": "https://www.pinakothek.de/de",
@@ -1025,13 +1025,15 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Fritz Winters Kosmos der 1930er und 1940er Jahre",
-     "bis": "2027-02-21"
+     "titel": "Die Nacht berührt die Erde",
+     "bis": "2027-02-21",
+     "url": "https://www.pinakothek.de/de/ausstellung/fritz-winter-die-nacht-beruehrt-die-erde"
     },
     {
-     "titel": "ZWISCHENRÄUME UND ÜBERGÄNGE. KUNST UND RAUM SEIT 1960",
+     "titel": "Between & Beyond",
      "von": "2026-07-03",
-     "bis": "2027-08-15"
+     "bis": "2027-08-15",
+     "url": "https://www.pinakothek.de/de/ausstellung/between-and-beyond"
     }
    ],
    "quelle": "https://www.pinakothek.de/de",
@@ -1041,24 +1043,28 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Ausstellung Carrying",
+     "titel": "Carrying",
      "von": "2026-05-14",
-     "bis": "2026-11-08"
+     "bis": "2026-11-08",
+     "url": "https://www.museum-brandhorst.de/ausstellungen/carrying/"
     },
     {
-     "titel": "Spot On Kate Newby: anything, anything",
+     "titel": "Kate Newby: anything, anything",
      "von": "2026-05-14",
-     "bis": "2027-05-30"
+     "bis": "2027-05-30",
+     "url": "https://www.museum-brandhorst.de/ausstellungen/kate-newby-anything-anything/"
     },
     {
-     "titel": "Ausstellung In My Head. Künstlerische Positionen der Gegenwart",
+     "titel": "In My Head. Künstlerische Positionen der Gegenwart",
      "von": "2026-10-30",
-     "bis": "2027-05-30"
+     "bis": "2027-05-30",
+     "url": "https://www.museum-brandhorst.de/ausstellungen/in-my-head/"
     },
     {
-     "titel": "Ausstellung Long Story Short. Eine Kunstgeschichte aus der Sammlung Brandhorst von den 1960er-Jahren bis zur Gegenwart",
+     "titel": "Long Story Short. Eine Kunstgeschichte aus der Sammlung Brandhorst von den 1960er-Jahren bis zur Gegenwart",
      "von": "2025-10-23",
-     "bis": "2027-09-12"
+     "bis": "2027-09-12",
+     "url": "https://www.museum-brandhorst.de/ausstellungen/long-story-short/"
     }
    ],
    "quelle": "https://www.museum-brandhorst.de/ausstellungen/",
@@ -1068,13 +1074,13 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Shifting the Silence. Die Stille verschieben Gegenwartskunst im Lenbachhaus",
+     "titel": "Shifting the Silence. Die Stille verschieben. Gegenwartskunst im Lenbachhaus",
      "von": "2025-10-14",
      "bis": "2027-01-31",
      "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/shifting-the-silence"
     },
     {
-     "titel": "Maria Jarema Revolutionäre Kommissarin der Abstraktion",
+     "titel": "Maria Jarema. Revolutionäre Kommissarin der Abstraktion",
      "von": "2026-10-27",
      "bis": "2027-04-25",
      "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/maria-jarema"
@@ -1106,22 +1112,34 @@
    ]
   },
   "m-bnm": {
-   "status": "keine",
-   "ausstellungen": [],
-   "quelle": "https://www.bayerisches-nationalmuseum.de/",
-   "format": "html-zeitraum"
-  },
-  "m-hdk": {
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Ausstellungen",
-     "von": "2026-06-12",
-     "bis": "2026-12-07",
-     "url": "https://www.hausderkunst.de/eintauchen/tomas-saraceno"
+     "titel": "Kuckuckseier",
+     "von": "2026-07-24",
+     "bis": "2026-11-15",
+     "url": "https://www.bayerisches-nationalmuseum.de/besuch/ausstellungen/kuckuckseier"
+    },
+    {
+     "titel": "Liminal Spaces",
+     "von": "2026-09-24",
+     "bis": "2027-01-17",
+     "url": "https://www.bayerisches-nationalmuseum.de/besuch/ausstellungen/liminal-spaces"
+    },
+    {
+     "titel": "StadtLandschaft",
+     "von": "2026-10-29",
+     "bis": "2027-02-14",
+     "url": "https://www.bayerisches-nationalmuseum.de/besuch/ausstellungen/stadtlandschaft"
     }
    ],
-   "quelle": "https://www.hausderkunst.de/kalender",
+   "quelle": "https://www.bayerisches-nationalmuseum.de/besuch/ausstellungen",
+   "format": "html-zeitraum"
+  },
+  "m-hdk": {
+   "status": "keine",
+   "ausstellungen": [],
+   "quelle": "https://www.hausderkunst.de/kalender/ausstellungen",
    "format": "html-zeitraum"
   },
   "m-gly": {
@@ -1136,7 +1154,8 @@
     {
      "titel": "Krishna",
      "von": "2026-04-24",
-     "bis": "2026-11-08"
+     "bis": "2026-11-08",
+     "url": "https://www.museum-fuenf-kontinente.de/besuch/ausstellungen/sonderausstellungen/krishna-religion-kunst-popkultur"
     }
    ],
    "quelle": "https://www.museum-fuenf-kontinente.de/",
@@ -1153,7 +1172,8 @@
    "ausstellungen": [
     {
      "titel": "Ein 2000 Jahre altes Rätsel",
-     "bis": "2027-03-29"
+     "bis": "2027-03-29",
+     "url": "https://www.khm.at/ausstellungen/tatort-ephesos"
     }
    ],
    "quelle": "https://www.khm.at/",
@@ -1164,11 +1184,13 @@
    "ausstellungen": [
     {
      "titel": "HER STORY",
-     "bis": "2027-02-14"
+     "bis": "2027-02-14",
+     "url": "https://www.albertina.at/ausstellungen/kuenstlerinnen-der-albertina/"
     },
     {
      "titel": "SHARA HUGHES",
-     "bis": "2027-02-28"
+     "bis": "2027-02-28",
+     "url": "https://www.albertina.at/ausstellungen/shara-hughes/"
     }
    ],
    "quelle": "https://www.albertina.at/ausstellungen/",
@@ -1193,7 +1215,8 @@
     {
      "titel": "HERBERT BOECKL – HANS JOSEPHSOHN",
      "von": "2026-07-24",
-     "bis": "2027-01-10"
+     "bis": "2027-01-10",
+     "url": "https://www.leopoldmuseum.org/de/ausstellungen/155/herbert-boeckl-hans-josephsohn"
     }
    ],
    "quelle": "https://www.leopoldmuseum.org/de/ausstellungen/aktuell",
@@ -1218,42 +1241,50 @@
     {
      "titel": "WOMEN OF THE WIENER WERKSTÄTTE",
      "von": "2026-07-17",
-     "bis": "2026-11-15"
+     "bis": "2026-11-15",
+     "url": "https://www.mak.at/programm/ausstellungen/women_of_the_wiener_werkstaette"
     },
     {
      "titel": "ANNEA LOCKWOOD: A SOUND MAP OF THE DANUBE",
      "von": "2026-10-28",
-     "bis": "2026-11-29"
+     "bis": "2026-11-29",
+     "url": "https://www.mak.at/programm/ausstellungen/kooperation_mit_wien_modern"
     },
     {
      "titel": "VALLY WIESELTHIER",
      "von": "2026-04-29",
-     "bis": "2027-01-10"
+     "bis": "2027-01-10",
+     "url": "https://www.mak.at/programm/ausstellungen/vally_wieselthier"
     },
     {
      "titel": "Social Housing: Vienna—Los Angeles",
      "von": "2026-10-22",
-     "bis": "2027-01-17"
+     "bis": "2027-01-17",
+     "url": "https://www.mak.at/programm/ausstellungen/social_housing_viennalos_angeles"
     },
     {
      "titel": "THOMAS DEMAND",
      "von": "2026-05-27",
-     "bis": "2027-01-24"
+     "bis": "2027-01-24",
+     "url": "https://www.mak.at/programm/ausstellungen/thomas_demand"
     },
     {
      "titel": "ARCHITEKTURBAUKÄSTEN 1890–1990",
      "von": "2026-10-07",
-     "bis": "2027-03-14"
+     "bis": "2027-03-14",
+     "url": "https://www.mak.at/programm/ausstellungen/architekturbaukaesten_18901990"
     },
     {
      "titel": "WIEN 1900 – Alltag. Gesamtkunstwerk",
      "von": "2026-02-25",
-     "bis": "2030-08-31"
+     "bis": "2030-08-31",
+     "url": "https://www.mak.at/ausstellung/wien1900"
     },
     {
      "titel": "Neupräsentation: MAK SCHAUSAMMLUNG TEXTILIEN UND TEPPICHE",
      "von": "2026-03-25",
-     "bis": "2030-12-31"
+     "bis": "2030-12-31",
+     "url": "https://www.mak.at/ausstellung/textilienundteppiche"
     }
    ],
    "quelle": "https://www.mak.at/ausstellungen/aktuell",
@@ -1263,7 +1294,7 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Vorsicht Hochspannung Sonderausstellung im Narrenturm",
+     "titel": "Vorsicht Hochspannung. Sonderausstellung im Narrenturm",
      "bis": "2027-04-24",
      "url": "https://www.nhm.at/besuch/ausstellungen/vorsicht-hochspannung"
     },
@@ -1285,25 +1316,25 @@
    "status": "ok",
    "ausstellungen": [
     {
-     "titel": "Verdichtungen Kategorie: Aktuelle Ausstellung",
+     "titel": "Verdichtungen",
      "von": "2026-07-02",
      "bis": "2026-11-29",
      "url": "https://www.wienmuseum.at/verdichtungen_heliane_wiesauer_reiterer "
     },
     {
-     "titel": "Der Bildgenerator Kategorie: Aktuelle Ausstellung",
+     "titel": "Der Bildgenerator",
      "von": "2026-07-02",
      "bis": "2026-11-29",
      "url": "https://www.wienmuseum.at/bildgenerator_karl_heinz_koller"
     },
     {
-     "titel": "Down Syndrom Kategorie: Aktuelle Ausstellung",
+     "titel": "Down Syndrom",
      "von": "2026-10-22",
      "bis": "2027-01-24",
      "url": "https://www.wienmuseum.at/down-syndrom"
     },
     {
-     "titel": "Farbenspiel Kategorie: Aktuelle Ausstellung",
+     "titel": "Farbenspiel",
      "von": "2026-10-01",
      "bis": "2027-03-28",
      "url": "https://www.wienmuseum.at/farbenspiel"
@@ -1313,35 +1344,14 @@
    "format": "html-zeitraum"
   },
   "w-tmw": {
-   "status": "ok",
-   "ausstellungen": [
-    {
-     "titel": "miniXplore",
-     "von": "2026-11-03",
-     "bis": "2026-11-03"
-    },
-    {
-     "titel": "minTi",
-     "von": "2026-11-03",
-     "bis": "2026-11-03"
-    },
-    {
-     "titel": "Birdly® – Das VR-Flug-Erlebnis",
-     "von": "2026-11-03",
-     "bis": "2026-11-03"
-    }
-   ],
+   "status": "keine",
+   "ausstellungen": [],
    "quelle": "https://www.technischesmuseum.at/jart/prj3/tmw/main.jart",
    "format": "json-ld"
   },
   "w-wmw": {
-   "status": "ok",
-   "ausstellungen": [
-    {
-     "titel": "Ein 2000 Jahre altes Rätsel",
-     "bis": "2027-03-29"
-    }
-   ],
+   "status": "keine",
+   "ausstellungen": [],
    "quelle": "https://www.weltmuseumwien.at/ausstellungen",
    "format": "html-zeitraum"
   }
