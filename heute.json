@@ -1,6 +1,6 @@
 {
- "datum": "2026-11-02",
- "stand": "2026-11-02T06:51+01:00",
+ "datum": "2026-11-03",
+ "stand": "2026-11-03T06:42+01:00",
  "haeuser": {
   "so": {
    "status": "ok",
@@ -27,14 +27,8 @@
    ]
   },
   "ko": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "11:00",
-     "titel": "Pippi Lang­strumpf",
-     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/pippi-langstrumpf/1317/"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
    "format": "microdata"
   },
@@ -49,17 +43,22 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Deutscher Herbst",
-     "url": "https://www.deutschestheater.de/programm/produktionen/deutscher-herbst"
+     "titel": "Öffentliche Probe: Rosa L.",
+     "url": "https://www.deutschestheater.de/?do=downloadEvent&uid=3290"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Fake Jews",
+     "url": "https://www.deutschestheater.de/programm/produktionen/fake-jews"
     },
     {
      "zeit": "20:00",
-     "titel": "Verleihung des Feuilletonpreises der F.A.Z. 2026",
-     "url": "https://www.deutschestheater.de/programm/produktionen/verleihung-des-feuilletonpreises-der-faz-2026"
+     "titel": "Gier",
+     "url": "https://www.deutschestheater.de/programm/produktionen/gier"
     },
     {
-     "titel": "Sonne und Beton",
-     "url": "https://www.deutschestheater.de/programm/produktionen/sonne-und-beton"
+     "titel": "disconnected",
+     "url": "https://www.deutschestheater.de/programm/produktionen/disconnected"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -81,22 +80,30 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:30",
-     "titel": "Aufführungen",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/space-afrika-present-quiet-storm/20261022-1830/"
-    },
-    {
-     "zeit": "20:30",
-     "titel": "SPYDERGUM",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/spydergum-ensemble/20261102-1930/"
+     "zeit": "19:30",
+     "titel": "Große Bühne Mononoke Satoko Ichihara mit engl. ÜT",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/mononoke/20261103-1830/"
     }
    ],
-   "quelle": "https://www.volksbuehne-berlin.de/konzerte/",
+   "quelle": "https://www.volksbuehne-berlin.de/",
    "format": "html-time"
   },
   "mg": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "13:00",
+     "titel": "IN THE CORPSE OF THE PRESENT Prinz Friedrich von Homburg Heinrich von Kleist",
+     "ort": "Galerie",
+     "url": "https://www.gorki.de/de/in-the-corpse-of-the-present-prinz-friedrich-von-homburg-2"
+    },
+    {
+     "zeit": "17:00",
+     "titel": "Noise als Strategie — Workshop",
+     "ort": "Eingangsfoyer",
+     "url": "https://www.gorki.de/de/noise-als-strategie"
+    }
+   ],
    "quelle": "https://www.gorki.de/de/spielplan",
    "format": "json-ld"
   },
@@ -116,26 +123,26 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "17:00",
-     "titel": "FAIRSTAGE Treffpunkt – Mit Konstantin Kohl",
+     "zeit": "20:00",
+     "titel": "Bandcamp x HAU Listening Session – Mit Tony Njoku",
      "ort": "WAU",
-     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/fairstage-treffpunkt-mit-konstantin-kohl/"
+     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/bandcamp-x-hau-listening-session-mit-tony-njoku/"
     }
    ],
    "quelle": "https://www.hebbel-am-ufer.de/programm/spielplan-tickets/",
    "format": "html-tagesliste"
   },
   "fp": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.palast.berlin/spielplan -> 404",
-    "https://www.palast.berlin/de/spielplan -> 404",
-    "https://www.palast.berlin/kalender -> 404",
-    "https://www.palast.berlin/de/kalender -> 404",
-    "https://www.palast.berlin/termine -> 404",
-    "https://www.palast.berlin/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "BLINDED by DELIGHT",
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6983"
+    }
+   ],
+   "quelle": "https://www.palast.berlin/",
+   "format": "html-datum"
   },
   "pa": {
    "status": "keine",
@@ -148,8 +155,13 @@
    "vorstellungen": [
     {
      "zeit": "10:00",
-     "titel": "aneinander - vorbei",
-     "url": "https://www.grips-theater.de/de/spielplan/aneinander-vorbei/3245"
+     "titel": "Irgendwo da oben",
+     "url": "https://www.grips-theater.de/de/spielplan/irgendwo-da-oben/3246"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "Linie 1",
+     "url": "https://www.grips-theater.de/de/spielplan/linie-1/3303"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
@@ -180,16 +192,16 @@
    ]
   },
   "kh": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.konzerthaus.de/spielplan -> 404",
-    "https://www.konzerthaus.de/de/spielplan -> 404",
-    "https://www.konzerthaus.de/kalender -> 404",
-    "https://www.konzerthaus.de/de/kalender -> 404",
-    "https://www.konzerthaus.de/termine -> 404",
-    "https://www.konzerthaus.de/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Shavnabada-Chor und -Kinderchor aus Georgien",
+     "url": "https://www.konzerthaus.de/de/programm/shavnabada-chor-und-kinderchor-aus-georgien/13379"
+    }
+   ],
+   "quelle": "https://www.konzerthaus.de/de/programm/03-11-2026",
+   "format": "html-datum"
   },
   "pbs": {
    "status": "fehler",
@@ -204,8 +216,15 @@
    ]
   },
   "roc": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "21:30",
+     "titel": "Liebesreigen",
+     "ort": "Sala Verdi, Mailand",
+     "url": "https://www.roc-berlin.de/konzerte/liebesreigen/concert/227093/"
+    }
+   ],
    "quelle": "https://www.roc-berlin.de/kalender/",
    "format": "json-ld"
   },
@@ -213,14 +232,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Gespräch zu »FREMDE SONNE«",
-     "url": "https://schauspielhaus.de/stuecke/gespraech-zu-fremde-sonne"
-    },
-    {
      "zeit": "20:00",
-     "titel": "Freddie the Queen",
-     "url": "https://schauspielhaus.de/stuecke/freddie-queen"
+     "titel": "An Evening With Fran Lebowitz",
+     "url": "https://schauspielhaus.de/stuecke/evening-fran-lebowitz"
     }
    ],
    "quelle": "https://schauspielhaus.de/spielplan",
@@ -230,28 +244,39 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "The Embassy",
-     "url": "https://www.thalia-theater.de/de/stuecke/the-embassy/269"
+     "titel": "No Body",
+     "url": "https://www.thalia-theater.de/de/stuecke/no-body/178"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
    "format": "html-datum"
   },
   "hh-kn": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.kampnagel.de/spielplan -> 404",
-    "https://www.kampnagel.de/de/spielplan -> 404",
-    "https://www.kampnagel.de/programm -> 404",
-    "https://www.kampnagel.de/de/programm -> 404",
-    "https://www.kampnagel.de/de/kalender -> 404",
-    "https://www.kampnagel.de/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "10:30",
+     "titel": "SWITCH GENERATION! 11+",
+     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55036"
+    }
+   ],
+   "quelle": "https://kampnagel.de/kalender",
+   "format": "json-eingebettet"
   },
   "hh-so": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "18:00",
+     "titel": "Schulklassen­\\;besuche zu den Generalproben",
+     "ort": "Staatsoper, Eingangsfoyer"
+    },
+    {
+     "zeit": "18:00",
+     "titel": "Sneak Klub",
+     "ort": "Staatsoper, Großes Haus"
+    }
+   ],
    "quelle": "https://www.die-hamburgische-staatsoper.de/de",
    "format": "ical"
   },
@@ -260,13 +285,18 @@
    "vorstellungen": [
     {
      "zeit": "20:00",
-     "titel": "Augsburger Domsingknaben: Missa Salisburgensis",
-     "url": "https://www.elbphilharmonie.de/de/programm/augsburger-domsingknaben-missa-salisburgensis/27642"
+     "titel": "Wolf Biermann - Konzert zum 90. Geburtstag",
+     "url": "https://www.elbphilharmonie.de/de/programm/wolf-biermann-konzert-zum-90-geburtstag/28196"
     },
     {
      "zeit": "20:00",
-     "titel": "Andreas Gabalier unplugged",
-     "url": "https://www.elbphilharmonie.de/de/programm/andreas-gabalier-unplugged/27555"
+     "titel": "VERSCHOBEN: Nikita Miller",
+     "url": "https://www.elbphilharmonie.de/de/programm/verschoben-nikita-miller/29199"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Sarah Coponat",
+     "url": "https://www.elbphilharmonie.de/de/programm/sarah-coponat/29078"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
@@ -289,21 +319,16 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "Prima Facie",
-     "url": "https://www.residenztheater.de/stuecke/detail/prima-facie"
+     "titel": "Bye Bye Lolita",
+     "url": "https://www.residenztheater.de/stuecke/detail/bye-bye-lolita"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
    "format": "html-datum"
   },
   "m-mk": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "20:00",
-     "titel": "Anna, Mascha und Julia"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
    "format": "ical"
   },
@@ -371,14 +396,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Die letzten Tage der Menschheit",
-     "url": "https://www.burgtheater.at/veranstaltungen/die-letzten-tage-der-menschheit/2026-11-02"
+     "zeit": "19:30",
+     "titel": "Zu ebener Erde und erster Stock",
+     "url": "https://www.burgtheater.at/veranstaltungen/zu-ebener-erde-und-erster-stock/2026-11-03"
     },
     {
-     "zeit": "19:30",
-     "titel": "Isidor",
-     "url": "https://www.burgtheater.at/index.php/veranstaltungen/isidor/2026-11-02"
+     "zeit": "20:00",
+     "titel": "Der irrende Planet",
+     "url": "https://www.burgtheater.at/veranstaltungen/der-irrende-planet/2026-11-03"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
@@ -389,7 +414,7 @@
    "vorstellungen": [
     {
      "zeit": "20:00",
-     "titel": "DOSSIER-HINTERZIMMER",
+     "titel": "GEGENWARTSKUNDE",
      "url": "https://www.volkstheater.at/spielstaetten/rote-bar"
     }
    ],
@@ -413,19 +438,24 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Otello"
+     "titel": "L'Orfeo",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/lorfeo/2026-11-03/"
+    },
+    {
+     "titel": "Abo 1",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/fin-de-partie/2025-09-30/"
     }
    ],
-   "quelle": "https://www.wiener-staatsoper.at/",
+   "quelle": "https://www.wiener-staatsoper.at/kalender/2026/november/",
    "format": "html-datum"
   },
   "w-vo": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Padam!",
-     "url": "https://www.volksoper.at/produktion/padam-2026.1023188829.de.html"
+     "zeit": "20:00",
+     "titel": "Der Zarewitsch",
+     "url": "https://www.volksoper.at/produktion/der-zarewitsch-2026.1014434529.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
@@ -446,24 +476,19 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Plus: Wein Modern X Katalogpräsentation",
-     "url": "https://konzerthaus.at/de/programm-und-karten/plus-wein-modern-x-katalogpraesentation/64478"
+     "zeit": "11:00",
+     "titel": "Sing Along »Blauli«",
+     "url": "https://konzerthaus.at/de/programm-und-karten/sing-along-blauli/64030"
     },
     {
      "zeit": "19:30",
      "titel": "Wiener Symphoniker / Wiener Singakademie / Koopman",
-     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-symphoniker-wiener-singakademie-koopman/63693"
+     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-symphoniker-wiener-singakademie-koopman/63694"
     },
     {
      "zeit": "19:30",
-     "titel": "Ernst Molden & Der Nino aus Wien",
-     "url": "https://konzerthaus.at/de/programm-und-karten/ernst-molden-der-nino-aus-wien/64115"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Unbezahlbar. Die Menschenrechte",
-     "url": "https://konzerthaus.at/de/programm-und-karten/unbezahlbar-die-menschenrechte/64434"
+     "titel": "Piotr Anderszewski",
+     "url": "https://konzerthaus.at/de/programm-und-karten/piotr-anderszewski/63797"
     }
    ],
    "quelle": "https://konzerthaus.at/de/programm-und-karten",
@@ -486,7 +511,7 @@
     {
      "zeit": "19:30",
      "titel": "Mozart \"Requiem\" mit Ton Koopman",
-     "url": "https://www.wienersymphoniker.at/konzert/mozart-requiem-mit-ton-koopman-02-11-2026"
+     "url": "https://www.wienersymphoniker.at/konzert/mozart-requiem-mit-ton-koopman-03-11-2026"
     }
    ],
    "quelle": "https://www.wienersymphoniker.at/kalender",
@@ -719,6 +744,12 @@
   "b-hkw": {
    "status": "ok",
    "ausstellungen": [
+    {
+     "titel": "School of Quilombismo: Crip Epistemologies",
+     "von": "2026-04-01",
+     "bis": "2026-11-15",
+     "url": "https://www.hkw.de/programme/school-of-quilombismo-crip-epistemologies"
+    },
     {
      "titel": "Kunstgespräche",
      "von": "2026-09-14",
@@ -1081,8 +1112,15 @@
    "format": "html-zeitraum"
   },
   "m-hdk": {
-   "status": "keine",
-   "ausstellungen": [],
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Ausstellungen",
+     "von": "2026-06-12",
+     "bis": "2026-12-07",
+     "url": "https://www.hausderkunst.de/eintauchen/tomas-saraceno"
+    }
+   ],
    "quelle": "https://www.hausderkunst.de/kalender",
    "format": "html-zeitraum"
   },
@@ -1279,33 +1317,18 @@
    "ausstellungen": [
     {
      "titel": "miniXplore",
-     "von": "2026-11-02",
-     "bis": "2026-11-02"
+     "von": "2026-11-03",
+     "bis": "2026-11-03"
     },
     {
      "titel": "minTi",
-     "von": "2026-11-02",
-     "bis": "2026-11-02"
+     "von": "2026-11-03",
+     "bis": "2026-11-03"
     },
     {
      "titel": "Birdly® – Das VR-Flug-Erlebnis",
-     "von": "2026-11-02",
-     "bis": "2026-11-02"
-    },
-    {
-     "titel": "Hochspannungsvorführung",
-     "von": "2026-11-02",
-     "bis": "2026-11-02"
-    },
-    {
-     "titel": "Bodies in Making-Toolkit: Pädagog:innen-Workshop",
-     "von": "2026-11-02",
-     "bis": "2026-11-02"
-    },
-    {
-     "titel": "Wissenschaft im Wandel: Pädagog:innen-Führung",
-     "von": "2026-11-02",
-     "bis": "2026-11-02"
+     "von": "2026-11-03",
+     "bis": "2026-11-03"
     }
    ],
    "quelle": "https://www.technischesmuseum.at/jart/prj3/tmw/main.jart",
