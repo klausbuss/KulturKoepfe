@@ -1,17 +1,17 @@
 {
- "datum": "2026-11-05",
- "stand": "2026-11-05T06:50+01:00",
+ "datum": "2026-11-06",
+ "stand": "2026-11-06T06:48+01:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:30",
+     "zeit": "00:00",
      "titel": "Einblick La Calisto",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/einblick-la-calisto.27850/#event-154889"
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/einblick-la-calisto.27850/?spielzeit=2026-2027#event-154889"
     }
    ],
-   "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
+   "quelle": "https://www.staatsoper-berlin.de/de/",
    "format": "html-time"
   },
   "do": {
@@ -30,17 +30,27 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "11:00",
+     "titel": "Pippi Lang­strumpf",
+     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/pippi-langstrumpf/1318/"
+    },
+    {
      "zeit": "20:00",
-     "titel": "Bitte mit B",
-     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/bitte-mit-b/1363/"
+     "titel": "Wunder­kammer",
+     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/wunderkammer/1268/"
     }
    ],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
    "format": "microdata"
   },
   "sb": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "20:00",
+     "titel": "Wunderkammer"
+    }
+   ],
    "quelle": "https://www.staatsballett-berlin.de/spielplan",
    "format": "ical"
   },
@@ -48,14 +58,24 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Übers Sterben sprechen",
-     "url": "https://www.deutschestheater.de/programm/produktionen/freiboxen-uebers-sterben-sprechen"
+     "zeit": "18:30",
+     "titel": "Die Freiheit der Andersdenkenden. Rosa Luxemburg und die Demokratie heute",
+     "url": "https://www.deutschestheater.de/programm/produktionen/auf-der-schotterpiste-der-geschichte-3-die-freiheit-der-andersdenkenden"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Einfach das Ende der Welt",
+     "url": "https://www.deutschestheater.de/programm/produktionen/einfach-das-ende-der-welt"
     },
     {
      "zeit": "20:00",
-     "titel": "Unter Vögeln",
-     "url": "https://www.deutschestheater.de/programm/produktionen/unter-voegeln-bookpink-new-arrivals"
+     "titel": "fünf minuten stille",
+     "url": "https://www.deutschestheater.de/programm/produktionen/debuet-in-der-box-fuenf-minuten-stille"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Rosa L.",
+     "url": "https://www.deutschestheater.de/programm/produktionen/rosa-l"
     },
     {
      "titel": "disconnected",
@@ -70,8 +90,8 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Einblicke: Open Space",
-     "url": "https://www.berliner-ensemble.de/inszenierung/einblicke-open-space"
+     "titel": "Der Hauptmann von Köpenick",
+     "url": "https://www.berliner-ensemble.de/inszenierung/max-hopp-der-hauptmann-von-koepenick"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -81,19 +101,19 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Grüner Salon A Friend in Berlin mit Wang Tuo und Sim Chi Yin Screening und Gespräch auf Englisch",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/a-friend-in-berlin/20261105-1800/"
+     "zeit": "19:30",
+     "titel": "Roter Salon MEDUSA Festival Berlin Lena Riemer / Alessandro Paschitto Regie: Tobias Herzberg",
+     "url": "https://www.volksbuehne-berlin.de/reihen-und-projekte/medusa/lena-riemer-alessandro-paschitto/"
     },
     {
-     "zeit": "19:30",
-     "titel": "Roter Salon MEDUSA Festival Berlin Silva Marinova / Tatjana Motta Regie: Marie Bues",
-     "url": "https://www.volksbuehne-berlin.de/reihen-und-projekte/medusa/silva-marinova-tatjana-motta/"
+     "zeit": "20:00",
+     "titel": "Große Bühne Der Teich Nach dem Kurzdrama von Robert Walser Gisèle Vienne Berliner Premiere auf Englisch mit dt. ÜT",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/der-teich/20261106-1900/"
     },
     {
      "zeit": "20:00",
      "titel": "Prater Perfection Nach dem Roman von Vincenzo Latronico Anta Recke auf Deutsch und Englisch",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261105-1900/"
+     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261106-1900/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
@@ -109,7 +129,7 @@
      "url": "https://www.gorki.de/de/in-the-corpse-of-the-present-prinz-friedrich-von-homburg-2"
     },
     {
-     "zeit": "17:00",
+     "zeit": "14:00",
      "titel": "Noise als Strategie — Workshop",
      "ort": "Eingangsfoyer",
      "url": "https://www.gorki.de/de/noise-als-strategie"
@@ -134,40 +154,34 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "16:00",
-     "titel": "machina eX & Tadpole Repertory – A Seed Story",
-     "ort": "HAU3",
-     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/machina-ex-tadpole-repertory-a-seed-story/"
+     "zeit": "11:00",
+     "titel": "Houseclub / machina eX – Startlevel",
+     "ort": "HAU3 Houseclub",
+     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/houseclub-machina-ex-startlevel/"
+    },
+    {
+     "zeit": "11:45",
+     "titel": "Houseclub / machina eX – Startlevel",
+     "ort": "HAU3 Houseclub",
+     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/houseclub-machina-ex-startlevel/"
+    },
+    {
+     "zeit": "12:00",
+     "titel": "Houseclub / machina eX – Startlevel",
+     "ort": "HAU3 Houseclub",
+     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/houseclub-machina-ex-startlevel/"
     },
     {
      "zeit": "17:00",
-     "titel": "Houseclub / machina eX – Startlevel",
-     "ort": "HAU3 Houseclub",
-     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/houseclub-machina-ex-startlevel/"
-    },
-    {
-     "zeit": "17:45",
-     "titel": "Houseclub / machina eX – Startlevel",
-     "ort": "HAU3 Houseclub",
-     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/houseclub-machina-ex-startlevel/"
-    },
-    {
-     "zeit": "18:00",
-     "titel": "Houseclub / machina eX – Startlevel",
-     "ort": "HAU3 Houseclub",
-     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/houseclub-machina-ex-startlevel/"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "Philippe Sands, Herta Däubler-Gmelin & Wolfgang Kaleck – On Justice #11",
-     "ort": "HAU1",
-     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/on-justice-11-erinnerung-verantwortung-gerechtigkeit-von-den-nuernberger-prozessen-nach-den-haag/"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "machina eX & Tadpole Repertory – A Seed Story",
+     "titel": "machina eX toolkit Release – Theater-Games entwickeln in Schule & Workshops",
      "ort": "HAU3",
-     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/machina-ex-tadpole-repertory-a-seed-story/"
+     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/machina-ex-toolkit-theater-games-entwickeln-in-schule-workshops/"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "machina eX toolkit Release – Theater-Games entwickeln in Schule & Workshops",
+     "ort": "HAU3",
+     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/machina-ex-toolkit-theater-games-entwickeln-in-schule-workshops/"
     }
    ],
    "quelle": "https://www.hebbel-am-ufer.de/programm/spielplan-tickets/",
@@ -179,7 +193,7 @@
     {
      "zeit": "19:30",
      "titel": "BLINDED by DELIGHT",
-     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6984"
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6991"
     }
    ],
    "quelle": "https://www.palast.berlin/",
@@ -189,19 +203,19 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "09:30",
+     "zeit": "16:00",
      "titel": "Berliner Stücke­preis für junges Publikum",
-     "url": "https://www.parkaue.de/spielplan/spielplan/berliner-stueckepreis-26-lesungen/2024/"
+     "url": "https://www.parkaue.de/spielplan/spielplan/berliner-stueckepreis-26-lesungen/2022/"
     },
     {
-     "zeit": "11:30",
-     "titel": "Berliner Stücke­preis für junges Publikum",
-     "url": "https://www.parkaue.de/spielplan/spielplan/berliner-stueckepreis-26-lesungen/2025/"
+     "zeit": "18:30",
+     "titel": "Über neue Narrative, junge Perspektiven und Gegenwartsdramatik",
+     "url": "https://www.parkaue.de/spielplan/spielplan/ueber-neue-narrative-junge-perspektiven-und-gegenwartsdramatik-/2030/"
     },
     {
-     "zeit": "19:00",
-     "titel": "16GB: Tisch­tennis­platten­politik(14+)",
-     "url": "https://www.parkaue.de/spielplan/spielplan/16gb-tischtennisplattenpolitik/2023/"
+     "zeit": "20:00",
+     "titel": "Preisverleihung Berliner Stücke­preis für junges Publikum",
+     "url": "https://www.parkaue.de/spielplan/spielplan/preisverleihung-berliner-stueckepreis-26/2021/"
     }
    ],
    "quelle": "https://www.parkaue.de/spielplan/",
@@ -211,14 +225,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "10:00",
-     "titel": "KUCKUCKSNEST",
-     "url": "https://www.grips-theater.de/de/spielplan/kuckucksnest/3305"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "Linie 1",
-     "url": "https://www.grips-theater.de/de/spielplan/linie-1/3306"
+     "zeit": "18:00",
+     "titel": "U20 Poetry Slam",
+     "url": "https://www.grips-theater.de/de/spielplan/u20-poetry-slam/3248"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
@@ -249,16 +258,16 @@
    ]
   },
   "kh": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:00",
-     "titel": "2 x hören",
-     "url": "https://www.konzerthaus.de/de/programm/2-x-horen/13082"
-    }
-   ],
-   "quelle": "https://www.konzerthaus.de/de/programm/05-11-2026",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.konzerthaus.de/spielplan -> 404",
+    "https://www.konzerthaus.de/de/spielplan -> 404",
+    "https://www.konzerthaus.de/kalender -> 404",
+    "https://www.konzerthaus.de/de/kalender -> 404",
+    "https://www.konzerthaus.de/termine -> 404",
+    "https://www.konzerthaus.de/konzerte -> 404"
+   ]
   },
   "pbs": {
    "status": "fehler",
@@ -282,9 +291,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Ehrenwort – Der Podcast über Skandale",
-     "url": "https://schauspielhaus.de/stuecke/ehrenwort-der-podcast-ueber-skandale"
+     "zeit": "19:30",
+     "titel": "Fabian oder Der Gang vor die Hunde",
+     "url": "https://schauspielhaus.de/stuecke/fabian-oder-der-gang-vor-die-hunde"
     }
    ],
    "quelle": "https://schauspielhaus.de/spielplan",
@@ -294,8 +303,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Timm Thaler",
-     "url": "https://www.thalia-theater.de/de/stuecke/timm-thaler/350"
+     "titel": "Das Wutschwert muss man herausziehen, bevor es weitergeht",
+     "url": "https://www.thalia-theater.de/de/stuecke/das-wutschwert-muss-man-herausziehen-bevor-es-weitergeht/354"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
@@ -305,19 +314,29 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "12:00",
-     "titel": "SWITCH GENERATION! 11+",
-     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55036"
-    },
-    {
      "zeit": "19:00",
-     "titel": "Meine Damen und Herren mit Gob Squad",
+     "titel": "Tastführung: Meine Damen und Herren / Gob Squad: Das Wutschwert muss man herausziehen, bevor es weitergeht",
      "url": "https://kampnagel.de/produktionen/kandthecity-meine-damen-und-herren-mit-gob-squad-das-wutschwert-muss-man-herausziehen-bevor-es-weitergeht"
     },
     {
      "zeit": "20:00",
      "titel": "MARCO DA SILVA FERREIRA: F*cking Future",
      "url": "https://kampnagel.de/produktionen/marco-da-silva-ferreira-f-cking-future"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Meine Damen und Herren mit Gob Squad",
+     "url": "https://kampnagel.de/produktionen/kandthecity-meine-damen-und-herren-mit-gob-squad-das-wutschwert-muss-man-herausziehen-bevor-es-weitergeht"
+    },
+    {
+     "zeit": "21:00",
+     "titel": "Göksu Kunak: Suspension",
+     "url": "https://kampnagel.de/produktionen/performativebaustelle-göksu-kunak-big-moment--2-moment-vs-monument"
+    },
+    {
+     "zeit": "21:30",
+     "titel": "Meow Mondayz x Pump The Beat",
+     "url": "https://kampnagel.de/produktionen/meow-mondayz-x-pump-the-beat"
     }
    ],
    "quelle": "https://kampnagel.de/kalender",
@@ -335,47 +354,42 @@
     {
      "zeit": "11:00",
      "titel": "Klangzeit",
-     "url": "https://www.elbphilharmonie.de/de/programm/klangzeit/28694"
+     "url": "https://www.elbphilharmonie.de/de/programm/klangzeit/28691"
     },
     {
      "zeit": "11:30",
      "titel": "Schulkonzert »Sonne, Mond und Streicher«",
-     "url": "https://www.elbphilharmonie.de/de/programm/schulkonzert-sonne-mond-und-streicher/28374"
-    },
-    {
-     "zeit": "15:00",
-     "titel": "Association Européenne des Conservatoires, Académies de Musique et Musikhochschulen",
-     "url": "https://www.elbphilharmonie.de/de/programm/association-europeenne-des-conservatoires-academies-de-musique-et-musikhochschulen/29159"
+     "url": "https://www.elbphilharmonie.de/de/programm/schulkonzert-sonne-mond-und-streicher/28376"
     },
     {
      "zeit": "16:00",
      "titel": "Klangzeit",
-     "url": "https://www.elbphilharmonie.de/de/programm/klangzeit/28693"
+     "url": "https://www.elbphilharmonie.de/de/programm/klangzeit/28692"
     },
     {
      "zeit": "18:00",
-     "titel": "Mareille Merck",
-     "url": "https://www.elbphilharmonie.de/de/programm/mareille-merck/28682"
+     "titel": "Insight Piano",
+     "url": "https://www.elbphilharmonie.de/de/programm/insight-piano/28186"
     },
     {
      "zeit": "19:30",
-     "titel": "Isaiah Collier Quartet",
-     "url": "https://www.elbphilharmonie.de/de/programm/isaiah-collier-quartet/27980"
+     "titel": "Giorgi Gigashvili / Nikala Zubiashvili",
+     "url": "https://www.elbphilharmonie.de/de/programm/giorgi-gigashvili-nikala-zubiashvili/28155"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Händel: Israel in Egypt",
+     "url": "https://www.elbphilharmonie.de/de/programm/handel-israel-in-egypt/28909"
     },
     {
      "zeit": "20:00",
-     "titel": "NDR Elbphilharmonie Orchester / Daniel Müller-Schott / Andris Poga",
-     "url": "https://www.elbphilharmonie.de/de/programm/ndr-elbphilharmonie-orchester-daniel-muller-schott-andris-poga/27833"
+     "titel": "Mogwai",
+     "url": "https://www.elbphilharmonie.de/de/programm/mogwai/28301"
     },
     {
      "zeit": "20:00",
-     "titel": "Hamburg singt – der Chor für alle",
-     "url": "https://www.elbphilharmonie.de/de/programm/hamburg-singt-der-chor-fur-alle/29155"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Nacht der Gitarren",
-     "url": "https://www.elbphilharmonie.de/de/programm/nacht-der-gitarren/27714"
+     "titel": "Opus13",
+     "url": "https://www.elbphilharmonie.de/de/programm/opus13/27991"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
@@ -397,14 +411,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "15:00",
-     "titel": "Fortbildung für Pädagog*innen",
-     "url": "https://www.residenztheater.de/stuecke/detail/fortbildung"
+     "zeit": "19:00",
+     "titel": "Faust I",
+     "url": "https://www.residenztheater.de/stuecke/detail/faust"
     },
     {
      "zeit": "20:00",
-     "titel": "Das Gelobte Land",
-     "url": "https://www.residenztheater.de/stuecke/detail/das-gelobte-land"
+     "titel": "Die Gewehre der Frau Carrar / Würgendes Blei",
+     "url": "https://www.residenztheater.de/stuecke/detail/die-gewehre-der-frau-carrar-wuergendes-blei"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
@@ -415,7 +429,11 @@
    "vorstellungen": [
     {
      "zeit": "20:00",
-     "titel": "Anna McCarthy: Rubbermaidxxx"
+     "titel": "Play Auerbach!"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Enjoy Schatz"
     }
    ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
@@ -426,8 +444,13 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "Trauer ist das Ding mit Federn",
-     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/trauer-ist-das-ding-mit-federn"
+     "titel": "Der blinde Passagier",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/der-blinde-passagier"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Der aufhaltsame Aufstieg des Arturo Ui",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/der-aufhaltsame-aufstieg-des-arturo-ui"
     }
    ],
    "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
@@ -446,16 +469,16 @@
    ]
   },
   "m-gp": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:30",
-     "titel": "News",
-     "url": "https://www.gaertnerplatztheater.de/de/start/index.html#belowHeader"
-    }
-   ],
-   "quelle": "https://www.gaertnerplatztheater.de/de/start/index.html",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.gaertnerplatztheater.de/spielplan -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/de/spielplan -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/programm -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/de/programm -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/kalender -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/de/kalender -> ConnectTimeout"
+   ]
   },
   "m-mph": {
    "status": "fehler",
@@ -485,14 +508,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Merlin oder das wüste Land",
-     "url": "https://www.burgtheater.at/veranstaltungen/merlin-oder-das-wueste-land/2026-11-05"
+     "zeit": "20:00",
+     "titel": "Schachnovelle",
+     "url": "https://www.burgtheater.at/veranstaltungen/schachnovelle/2026-11-06"
     },
     {
-     "zeit": "19:30",
-     "titel": "Liliom",
-     "url": "https://www.burgtheater.at/veranstaltungen/liliom/2026-11-05"
+     "zeit": "20:00",
+     "titel": "Glaube Liebe Hoffnung",
+     "url": "https://www.burgtheater.at/veranstaltungen/glaube-liebe-hoffnung/2026-11-06"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
@@ -503,8 +526,13 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "MYTHEN DES ALLTAGS",
+     "titel": "THE BOYS ARE KISSING",
      "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "OPPORTUNISTIN",
+     "url": "https://www.volkstheater.at/spielstaetten/rote-bar"
     }
    ],
    "quelle": "https://www.volkstheater.at/spielplan/",
@@ -527,11 +555,10 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Otello",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/otello/2026-11-05/"
+     "titel": "Nijinsky"
     }
    ],
-   "quelle": "https://www.wiener-staatsoper.at/kalender/2026/november/",
+   "quelle": "https://www.wiener-staatsoper.at/",
    "format": "html-datum"
   },
   "w-vo": {
@@ -539,46 +566,46 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Chicago",
-     "url": "https://www.volksoper.at/produktion/chicago-2025.1014860040.de.html"
+     "titel": "Die Zauberflöte",
+     "url": "https://www.volksoper.at/produktion/die-zauberflote-2025.1014859942.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
    "format": "html-time"
   },
   "w-tadw": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.theater-wien.at/spielplan -> 404",
-    "https://www.theater-wien.at/programm -> 404",
-    "https://www.theater-wien.at/kalender -> 404",
-    "https://www.theater-wien.at/termine -> 404",
-    "https://www.theater-wien.at/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "00:00",
+     "titel": "RadamistoGeorg Friedrich Händel"
+    }
+   ],
+   "quelle": "https://www.theater-wien.at/de/home",
+   "format": "html-time"
   },
   "w-kh": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:30",
-     "titel": "Julian Prégardien / Feride Büyükdenktaş / Saskia Giorgini",
-     "url": "https://konzerthaus.at/de/programm-und-karten/julian-pregardien-feride-bueyuekdenktas-saskia-giorgini/63955"
+     "zeit": "13:00",
+     "titel": "Wiener Konzerthaus Backstage",
+     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-konzerthaus-backstage/64437"
+    },
+    {
+     "zeit": "14:00",
+     "titel": "Wiener Konzerthaus Backstage",
+     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-konzerthaus-backstage/64438"
     },
     {
      "zeit": "19:30",
-     "titel": "Helge Schneider",
-     "url": "https://konzerthaus.at/de/programm-und-karten/helge-schneider/63561"
+     "titel": "Pygmalion / Pichon",
+     "url": "https://konzerthaus.at/de/programm-und-karten/pygmalion-pichon/63752"
     },
     {
      "zeit": "19:30",
-     "titel": "Vivi Vassileva / Frank Dupree",
-     "url": "https://konzerthaus.at/de/programm-und-karten/vivi-vassileva-frank-dupree/64540#important-info"
-    },
-    {
-     "zeit": "20:30",
-     "titel": "Après Schubert",
-     "url": "https://konzerthaus.at/de/programm-und-karten/apres-schubert/64180"
+     "titel": "Leonkoro Quartett / Chorzelski",
+     "url": "https://konzerthaus.at/de/programm-und-karten/leonkoro-quartett-chorzelski/63852"
     }
    ],
    "quelle": "https://konzerthaus.at/de/programm-und-karten",
@@ -1027,6 +1054,12 @@
      "von": "2026-09-02",
      "bis": "2027-03-14",
      "url": "https://www.shmh.de/ausstellungen/aiga-rasch-und-ihre-detektive/"
+    },
+    {
+     "titel": "Faszination Hafen. Das Deutsche Hafenmuseum stellt sich vor",
+     "von": "2026-11-05",
+     "bis": "2027-03-29",
+     "url": "https://www.shmh.de/praesentationen/faszination-hafen-kultur-kontor/"
     }
    ],
    "quelle": "https://www.shmh.de/ausstellungen/",
@@ -1065,6 +1098,12 @@
      "von": "2025-06-18",
      "bis": "2027-01-10",
      "url": "https://www.shmh.de/ausstellungen/respekt/"
+    },
+    {
+     "titel": "Faszination Hafen. Das Deutsche Hafenmuseum stellt sich vor",
+     "von": "2026-11-05",
+     "bis": "2027-03-29",
+     "url": "https://www.shmh.de/praesentationen/faszination-hafen-kultur-kontor/"
     },
     {
      "titel": "Nachrichten – News",
@@ -1204,16 +1243,10 @@
    "format": "html-zeitraum"
   },
   "m-gly": {
-   "status": "fehler",
-   "grund": "keine Seite erreichbar",
-   "versuche": [
-    "https://antike-am-koenigsplatz.mwn.de/ -> ConnectionError",
-    "https://www.antike-am-koenigsplatz.mwn.de/ausstellungen -> 503",
-    "https://www.antike-am-koenigsplatz.mwn.de/de/ausstellungen -> 503",
-    "https://www.antike-am-koenigsplatz.mwn.de/ausstellungen/aktuell -> 503",
-    "https://www.antike-am-koenigsplatz.mwn.de/exhibitions -> 503",
-    "https://www.antike-am-koenigsplatz.mwn.de/en/exhibitions -> 503"
-   ]
+   "status": "keine",
+   "ausstellungen": [],
+   "quelle": "https://www.antike-am-koenigsplatz.mwn.de/",
+   "format": "json-ld"
   },
   "m-m5k": {
    "status": "ok",
@@ -1223,6 +1256,12 @@
      "von": "2026-04-24",
      "bis": "2026-11-08",
      "url": "https://www.museum-fuenf-kontinente.de/besuch/ausstellungen/sonderausstellungen/krishna-religion-kunst-popkultur"
+    },
+    {
+     "titel": "Kabuki",
+     "von": "2026-10-23",
+     "bis": "2027-05-02",
+     "url": "https://www.museum-fuenf-kontinente.de/besuch/ausstellungen/sonderausstellungen/kabuki-schauspiel-drucke-fankultur"
     }
    ],
    "quelle": "https://www.museum-fuenf-kontinente.de/",
@@ -1411,6 +1450,12 @@
      "von": "2026-10-01",
      "bis": "2027-03-28",
      "url": "https://www.wienmuseum.at/farbenspiel"
+    },
+    {
+     "titel": "Franz West und Wien",
+     "von": "2026-11-06",
+     "bis": "2027-05-02",
+     "url": "https://www.wienmuseum.at/franz_west_wien  "
     }
    ],
    "quelle": "https://www.wienmuseum.at/ausstellungen",
