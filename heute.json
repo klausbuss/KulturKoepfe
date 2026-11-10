@@ -1,19 +1,13 @@
 {
- "datum": "2026-11-09",
- "stand": "2026-11-09T06:54+01:00",
+ "datum": "2026-11-10",
+ "stand": "2026-11-10T13:04+01:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Gastspiel in Shanghai",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/staatskapelle-berlin-gastspiel-in-shanghai.29972/#event-167295"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Lamento mirabile",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/lamento-mirabile.27754/#event-154675"
+     "titel": "Opern-Gastspiel in Shanghai",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/staatskapelle-berlin-opern-gastspiel-in-shanghai.27786/#event-154741"
     }
    ],
    "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
@@ -32,14 +26,8 @@
    ]
   },
   "ko": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:30",
-     "titel": "Montags­messe",
-     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/montagsmesse/1370/"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
    "format": "microdata"
   },
@@ -53,19 +41,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "17:20",
-     "titel": "Connected",
-     "url": "https://www.deutschestheater.de/programm/produktionen/connected-klub-der-schreibenden"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Für Narges Mohammadi",
-     "url": "https://www.deutschestheater.de/programm/produktionen/fuer-narges-mohammadi"
-    },
-    {
      "zeit": "20:00",
-     "titel": "Let Them Eat Chaos",
-     "url": "https://www.deutschestheater.de/programm/produktionen/let-them-eat-chaos"
+     "titel": "Die Physiker",
+     "url": "https://www.deutschestheater.de/programm/produktionen/die-physiker"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -76,8 +54,8 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Der Hauptmann von Köpenick",
-     "url": "https://www.berliner-ensemble.de/inszenierung/max-hopp-der-hauptmann-von-koepenick"
+     "titel": "Schnee von gestern, Schnee von morgen",
+     "url": "https://www.berliner-ensemble.de/inszenierung/schnee-von-gestern-schnee-von-morgen"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -87,27 +65,50 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "Große Bühne House of Hopes Rimini Protokoll: Stefan Kaegi, Daniel Wetzel dt. und engl. Tour verfügbar",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/kolonialismus-erinnern/20261109-1700/"
+     "zeit": "19:00",
+     "titel": "Sternfoyer INTERFILM 42 Eröffnungsempfang",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/p14-plem-plem/20261110-1800/"
     },
     {
-     "zeit": "18:00",
-     "titel": "Erinnerungsort Kolonialismus. Call & Response mit Alice Hasters und Khuê Phạm.",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/kolonialismus-erinnern/20261109-1700/"
+     "zeit": "19:00",
+     "titel": "3. Stock P14: Plem Plem Lilli Peters, Tessa Wyrostek",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/p14-plem-plem/20261110-1800/"
     },
     {
-     "zeit": "20:30",
-     "titel": "Große Bühne House of Hopes Rimini Protokoll: Stefan Kaegi, Daniel Wetzel dt. und engl. Tour verfügbar",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/house-of-hopes/20261109-1930/"
+     "zeit": "20:00",
+     "titel": "Prater Perfection Nach dem Roman von Vincenzo Latronico Anta Recke auf Deutsch und Englisch",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261110-1900/"
+    },
+    {
+     "zeit": "21:00",
+     "titel": "Große Bühne INTERFILM 42 Festival Opening",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/interfilm-42/20261110-2000/"
+    },
+    {
+     "zeit": "23:00",
+     "titel": "Sternfoyer INTERFILM 42 Eröffnungsempfang",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/interfilm-42/20261110-2200/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
    "format": "html-time"
   },
   "mg": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "13:00",
+     "titel": "IN THE CORPSE OF THE PRESENT Prinz Friedrich von Homburg Heinrich von Kleist",
+     "ort": "Galerie",
+     "url": "https://www.gorki.de/de/in-the-corpse-of-the-present-prinz-friedrich-von-homburg-2"
+    },
+    {
+     "zeit": "17:00",
+     "titel": "Noise als Strategie — Workshop",
+     "ort": "Eingangsfoyer",
+     "url": "https://www.gorki.de/de/noise-als-strategie"
+    }
+   ],
    "quelle": "https://www.gorki.de/de/spielplan",
    "format": "json-ld"
   },
@@ -136,26 +137,20 @@
    ]
   },
   "fp": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.palast.berlin/spielplan -> 404",
-    "https://www.palast.berlin/de/spielplan -> 404",
-    "https://www.palast.berlin/kalender -> 404",
-    "https://www.palast.berlin/de/kalender -> 404",
-    "https://www.palast.berlin/termine -> 404",
-    "https://www.palast.berlin/konzerte -> 404"
-   ]
-  },
-  "pa": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "10:00",
-     "titel": "16GB: Tisch­tennis­platten­politik(14+)",
-     "url": "https://www.parkaue.de/spielplan/spielplan/16gb-tischtennisplattenpolitik/2020/"
+     "zeit": "19:30",
+     "titel": "BLINDED by DELIGHT",
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6985"
     }
    ],
+   "quelle": "https://www.palast.berlin/",
+   "format": "html-datum"
+  },
+  "pa": {
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.parkaue.de/spielplan/",
    "format": "microdata"
   },
@@ -164,13 +159,8 @@
    "vorstellungen": [
     {
      "zeit": "10:00",
-     "titel": "#diewelle",
-     "url": "https://www.grips-theater.de/de/spielplan/diewelle/3252"
-    },
-    {
-     "zeit": "10:00",
      "titel": "BÄR. Ein Zeitzeuge erzählt",
-     "url": "https://www.grips-theater.de/de/spielplan/bar-ein-zeitzeuge-erzahlt/3251"
+     "url": "https://www.grips-theater.de/de/spielplan/bar-ein-zeitzeuge-erzahlt/3253"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
@@ -201,16 +191,16 @@
    ]
   },
   "kh": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.konzerthaus.de/spielplan -> 404",
-    "https://www.konzerthaus.de/de/spielplan -> 404",
-    "https://www.konzerthaus.de/kalender -> 404",
-    "https://www.konzerthaus.de/de/kalender -> 404",
-    "https://www.konzerthaus.de/termine -> 404",
-    "https://www.konzerthaus.de/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "20:00",
+     "titel": "Aşina – The Sounds of Mesopotamia",
+     "url": "https://www.konzerthaus.de/de/programm/asina-the-sounds-of-mesopotamia/12505"
+    }
+   ],
+   "quelle": "https://www.konzerthaus.de/de/programm/10-11-2026",
+   "format": "html-time"
   },
   "pbs": {
    "status": "fehler",
@@ -234,9 +224,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Fabian Köster",
-     "url": "https://schauspielhaus.de/stuecke/fabian-koester"
+     "zeit": "19:30",
+     "titel": "Kabale und Liebe – allerdings mit anderem Text und auch anderer Melodie",
+     "url": "https://schauspielhaus.de/stuecke/kabale-und-liebe-allerdings-mit-anderem-text-und-auch-anderer-melodie"
     }
    ],
    "quelle": "https://schauspielhaus.de/spielplan",
@@ -246,28 +236,44 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "The Embassy",
-     "url": "https://www.thalia-theater.de/de/stuecke/the-embassy/269"
+     "titel": "Dschinns",
+     "url": "https://www.thalia-theater.de/de/stuecke/dschinns/340"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
    "format": "html-datum"
   },
   "hh-kn": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.kampnagel.de/spielplan -> 404",
-    "https://www.kampnagel.de/de/spielplan -> 404",
-    "https://www.kampnagel.de/programm -> 404",
-    "https://www.kampnagel.de/de/programm -> 404",
-    "https://www.kampnagel.de/de/kalender -> 404",
-    "https://www.kampnagel.de/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "16:00",
+     "titel": "Kampnagel-Führung: mit Jonas Zipf [Geschäftsführer]",
+     "url": "https://kampnagel.de/produktionen/kampnagel-fuehrung-2"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Kriminelle Eröffnung: Verriss oder Begeisterung?",
+     "url": "https://kampnagel.de/produktionen/kriminelle-eroeffnung"
+    }
+   ],
+   "quelle": "https://kampnagel.de/kalender",
+   "format": "json-eingebettet"
   },
   "hh-so": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "13:30",
+     "titel": "Führung durch die Staatsoper",
+     "ort": "Staatsoper, Treffpunkt: Bühneneingang"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "Dido and Aeneas",
+     "ort": "Staatsoper, opera stabile"
+    }
+   ],
    "quelle": "https://www.die-hamburgische-staatsoper.de/de",
    "format": "ical"
   },
@@ -277,36 +283,31 @@
     {
      "zeit": "11:00",
      "titel": "Funkelkonzert XS / Elfi-Babykonzert",
-     "url": "https://www.elbphilharmonie.de/de/programm/funkelkonzert-xs-elfi-babykonzert/28357"
+     "url": "https://www.elbphilharmonie.de/de/programm/funkelkonzert-xs-elfi-babykonzert/28359"
     },
     {
      "zeit": "11:30",
      "titel": "Schulkonzert »Sonne, Mond und Streicher«",
-     "url": "https://www.elbphilharmonie.de/de/programm/schulkonzert-sonne-mond-und-streicher/28377"
-    },
-    {
-     "zeit": "15:30",
-     "titel": "Funkelkonzert XS / Elfi-Babykonzert",
-     "url": "https://www.elbphilharmonie.de/de/programm/funkelkonzert-xs-elfi-babykonzert/28358"
+     "url": "https://www.elbphilharmonie.de/de/programm/schulkonzert-sonne-mond-und-streicher/28380"
     },
     {
      "zeit": "19:30",
-     "titel": "Duplex-Piano – Das Klavier mit zwei Manualen",
-     "url": "https://www.elbphilharmonie.de/de/programm/duplex-piano-das-klavier-mit-zwei-manualen/28778"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Augustin Hadelich / Seong-Jin Cho",
-     "url": "https://www.elbphilharmonie.de/de/programm/augustin-hadelich-seong-jin-cho/27891"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Haydn: Die Schöpfung",
-     "url": "https://www.elbphilharmonie.de/de/programm/haydn-die-schopfung/28159"
-    },
-    {
-     "zeit": "20:00",
      "titel": "NDR Kammerkonzert"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Oscar und Vera Ritter-Stiftung",
+     "url": "https://www.elbphilharmonie.de/de/programm/oscar-und-vera-ritter-stiftung/29157"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Royal Concertgebouw Orchestra / Klaus Mäkelä",
+     "url": "https://www.elbphilharmonie.de/de/programm/royal-concertgebouw-orchestra-klaus-makela/27932"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Stefanie Heinzmann",
+     "url": "https://www.elbphilharmonie.de/de/programm/stefanie-heinzmann/22961"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
@@ -329,8 +330,8 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "Ödipus",
-     "url": "https://www.residenztheater.de/stuecke/detail/oedipus"
+     "titel": "Gschichtn vom Brandner Kaspar",
+     "url": "https://www.residenztheater.de/stuecke/detail/brandner"
     },
     {
      "zeit": "19:30",
@@ -342,8 +343,13 @@
    "format": "html-datum"
   },
   "m-mk": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Offene Probe 'Schubert in Paradise'"
+    }
+   ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
    "format": "ical"
   },
@@ -351,14 +357,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "16:00",
-     "titel": "Volkstour Führung",
-     "url": "https://www.muenchner-volkstheater.de/programm/extra/volkstour"
+     "zeit": "19:30",
+     "titel": "Ein Volksfeind",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/ein-volksfeind"
     },
     {
-     "zeit": "19:00",
-     "titel": "Am Meer lag München nie Live-Hörspiel",
-     "url": "https://www.muenchner-volkstheater.de/programm/extra/am-meer-lag-muenchen-nie"
+     "zeit": "20:00",
+     "titel": "I WANNA CONTACT THE LIVING – Das Gespenstische von Canterville",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/i-wanna-contact-living-das-gespenstische-von-canterville"
     }
    ],
    "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
@@ -389,16 +395,16 @@
    ]
   },
   "m-mph": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "13:30",
-     "titel": "»Chefsache« Probenarbeit mit Lahav Shani",
-     "url": "https://www.mphil.de/ueber-uns/musikerinnen-und-musiker/details/lahav-shani"
-    }
-   ],
-   "quelle": "https://www.mphil.de/kalender",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.mphil.de/spielplan -> 404",
+    "https://www.mphil.de/de/spielplan -> 404",
+    "https://www.mphil.de/programm -> 404",
+    "https://www.mphil.de/de/programm -> 404",
+    "https://www.mphil.de/de/kalender -> 404",
+    "https://www.mphil.de/termine -> 404"
+   ]
   },
   "m-br": {
    "status": "fehler",
@@ -417,28 +423,39 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Wir sind noch einmal davongekommen",
-     "url": "https://www.burgtheater.at/veranstaltungen/wir-sind-noch-einmal-davongekommen/2026-11-09"
+     "titel": "KASINO & DIGITAL: Solaris",
+     "url": "https://www.burgtheater.at/veranstaltungen/kasino-digital-solaris/2026-11-10"
     },
     {
-     "zeit": "19:30",
-     "titel": "Isidor",
-     "url": "https://www.burgtheater.at/veranstaltungen/isidor/2026-11-09"
+     "zeit": "19:00",
+     "titel": "Sankt Falstaff",
+     "url": "https://www.burgtheater.at/veranstaltungen/sankt-falstaff/2026-11-10"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Ellen Babić",
+     "url": "https://www.burgtheater.at/index.php/veranstaltungen/ellen-babic/2026-11-10"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
    "format": "html-time"
   },
   "w-vt": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.volkstheater.at/programm -> 404",
-    "https://www.volkstheater.at/de/programm -> 404",
-    "https://www.volkstheater.at/kalender -> 404",
-    "https://www.volkstheater.at/de/kalender -> 404",
-    "https://www.volkstheater.at/termine -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "14:00",
+     "titel": "Fortbildung für PÄDAGOG:INNEN",
+     "url": "https://www.volkstheater.at/spielstaetten/rote-bar"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "BITCH HUNT",
+     "url": "https://www.volkstheater.at/spielstaetten/rote-bar"
+    }
+   ],
+   "quelle": "https://www.volkstheater.at/spielplan/",
+   "format": "html-datum"
   },
   "w-jos": {
    "status": "fehler",
@@ -456,13 +473,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Nijinsky",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/nijinsky/2026-11-09/"
-    },
-    {
-     "titel": "Abo 16",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/pelleas-et-melisande/2025-10-27/"
+     "titel": "Abo 2",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/iolanta/2025-09-16/"
     }
    ],
    "quelle": "https://www.wiener-staatsoper.at/kalender/2026/november/",
@@ -472,57 +484,61 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Wut, Trotz und eine Warnung!",
-     "url": "https://www.volksoper.at/produktion/wut-trotz-und-eine-warnung-2026.1022845630.de.html"
+     "zeit": "19:00",
+     "titel": "Lass uns die Welt vergessen - Volksoper 1938",
+     "url": "https://www.volksoper.at/produktion/at-lass-uns-die-welt-vergessen-2023.1016099533.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
    "format": "html-time"
   },
   "w-tadw": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.theater-wien.at/spielplan -> 404",
-    "https://www.theater-wien.at/programm -> 404",
-    "https://www.theater-wien.at/kalender -> 404",
-    "https://www.theater-wien.at/termine -> 404",
-    "https://www.theater-wien.at/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "00:00",
+     "titel": "Backstage Guided Tour English"
+    },
+    {
+     "zeit": "00:00",
+     "titel": "Backstageführung Deutsch"
+    }
+   ],
+   "quelle": "https://www.theater-wien.at/de/home",
+   "format": "html-time"
   },
   "w-kh": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "09:00",
-     "titel": "Schulkonzert: TempoS",
-     "url": "https://konzerthaus.at/de/programm-und-karten/schulkonzert-tempos/63996"
+     "zeit": "10:00",
+     "titel": "Klangmobile: Manu Delago / Max ZT",
+     "url": "https://konzerthaus.at/de/programm-und-karten/klangmobile-manu-delago-max-zt/64076"
     },
     {
-     "zeit": "11:00",
-     "titel": "Mamadou Diabate",
-     "url": "https://konzerthaus.at/de/programm-und-karten/mamadou-diabate/63942"
-    },
-    {
-     "zeit": "12:00",
-     "titel": "Schulkonzert: TempoS",
-     "url": "https://konzerthaus.at/de/programm-und-karten/schulkonzert-tempos/63997"
-    },
-    {
-     "zeit": "18:30",
-     "titel": "Mamadou Diabate",
-     "url": "https://konzerthaus.at/de/programm-und-karten/mamadou-diabate/63943"
-    },
-    {
-     "zeit": "18:30",
-     "titel": "Faszination Musik. Öffentliche Meisterklasse mit Franz Welser-Möst",
-     "url": "https://konzerthaus.at/de/programm-und-karten/faszination-musik-oeffentliche-meisterklasse-mit-franz-welser-moest/64463"
+     "zeit": "14:30",
+     "titel": "Klangmobile: Manu Delago / Max ZT",
+     "url": "https://konzerthaus.at/de/programm-und-karten/klangmobile-manu-delago-max-zt/64077"
     },
     {
      "zeit": "19:30",
-     "titel": "Branford Marsalis & Dianne Reeves celebrate John Coltrane",
-     "url": "https://konzerthaus.at/de/programm-und-karten/branford-marsalis-dianne-reeves-celebrate-john-coltrane/63936"
+     "titel": "The King's Singers",
+     "url": "https://konzerthaus.at/de/programm-und-karten/the-kings-singers/63788"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Pierre-Laurent Aimard",
+     "url": "https://konzerthaus.at/de/programm-und-karten/pierre-laurent-aimard/63838"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Manu Delago & Max ZT",
+     "url": "https://konzerthaus.at/de/programm-und-karten/manu-delago-max-zt/64001"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Alban Berg Ensemble Wien",
+     "url": "https://konzerthaus.at/de/programm-und-karten/alban-berg-ensemble-wien/64238"
     }
    ],
    "quelle": "https://konzerthaus.at/de/programm-und-karten",
@@ -540,16 +556,15 @@
    ]
   },
   "w-sym": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:30",
-     "titel": "Berlioz \"Requiem\" mit Maxime Pascal",
-     "url": "https://www.wienersymphoniker.at/konzert/berlioz-requiem-mit-maxime-pascal-09-11-2026"
-    }
-   ],
-   "quelle": "https://www.wienersymphoniker.at/kalender",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.wienersymphoniker.at/spielplan -> 404",
+    "https://www.wienersymphoniker.at/de/spielplan -> 404",
+    "https://www.wienersymphoniker.at/programm -> 404",
+    "https://www.wienersymphoniker.at/termine -> 404",
+    "https://www.wienersymphoniker.at/konzerte -> 404"
+   ]
   },
   "b-nm": {
    "status": "ok",
@@ -980,7 +995,7 @@
      "url": "https://www.shmh.de/praesentationen/faszination-hafen-kultur-kontor/"
     }
    ],
-   "quelle": "https://www.shmh.de/ausstellungen/",
+   "quelle": "https://www.shmh.de/",
    "format": "html-zeitraum"
   },
   "hh-amh": {
@@ -1024,7 +1039,7 @@
      "url": "https://www.shmh.de/ausstellungen/nachrichten-news/"
     }
    ],
-   "quelle": "https://www.shmh.de/ausstellungen/",
+   "quelle": "https://www.shmh.de/",
    "format": "html-zeitraum"
   },
   "m-ap": {
@@ -1149,10 +1164,15 @@
    "format": "html-zeitraum"
   },
   "m-gly": {
-   "status": "keine",
-   "ausstellungen": [],
-   "quelle": "https://www.antike-am-koenigsplatz.mwn.de/",
-   "format": "json-ld"
+   "status": "fehler",
+   "grund": "geladen, aber keine Ausstellungsdaten erkannt",
+   "versuche": [
+    "https://antike-am-koenigsplatz.mwn.de/ -> ConnectionError",
+    "https://www.antike-am-koenigsplatz.mwn.de/ausstellungen -> 404",
+    "https://www.antike-am-koenigsplatz.mwn.de/de/ausstellungen -> 404",
+    "https://www.antike-am-koenigsplatz.mwn.de/ausstellungen/aktuell -> 404",
+    "https://www.antike-am-koenigsplatz.mwn.de/programm -> 404"
+   ]
   },
   "m-m5k": {
    "status": "ok",
