@@ -1,19 +1,19 @@
 {
- "datum": "2026-11-12",
- "stand": "2026-11-12T13:08+01:00",
+ "datum": "2026-11-13",
+ "stand": "2026-11-13T12:50+01:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "01:30",
-     "titel": "Opern-Gastspiel in Shanghai",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/staatskapelle-berlin-opern-gastspiel-in-shanghai.27786/#event-154742"
+     "zeit": "19:00",
+     "titel": "La Calisto",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/la-calisto.27274/#event-153694"
     },
     {
-     "zeit": "19:30",
-     "titel": "Orfeo ed Euridice",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/orfeo-ed-euridice.27753/#event-154648"
+     "zeit": "22:30",
+     "titel": "Nach(t)führung",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/nach-t-fuehrung.10795/#event-176244"
     }
    ],
    "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
@@ -32,8 +32,14 @@
    ]
   },
   "ko": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Or­pheus in der Un­ter­welt",
+     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/orpheus-in-der-unterwelt/1302/"
+    }
+   ],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
    "format": "microdata"
   },
@@ -48,13 +54,18 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "ZEIT FORUM Gesundheit: Gesund oder krank? Wenn Gesundes Essen zur Essstörung wird",
-     "url": "https://verlag.zeit.de/veranstaltungen/ausblick/zeit-veranstaltungen/zeit-forum-gesundheit-am-12-11-2026/"
+     "titel": "Heimsuchung",
+     "url": "https://www.deutschestheater.de/programm/produktionen/heimsuchung"
     },
     {
      "zeit": "20:00",
-     "titel": "Die Holländerinnen",
-     "url": "https://www.deutschestheater.de/programm/produktionen/die-hollaenderinnen"
+     "titel": "Jugend ohne Gott",
+     "url": "https://www.deutschestheater.de/programm/produktionen/jugend-ohne-gott"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Ästhetischer Widerstand?",
+     "url": "https://www.deutschestheater.de/programm/produktionen/literarische-spielzeit-aesthetischer-widerstand"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -65,8 +76,8 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Einblicke: Open Space",
-     "url": "https://www.berliner-ensemble.de/inszenierung/einblicke-open-space"
+     "titel": "Matthias Brandt liest Ian McEwan",
+     "url": "https://www.berliner-ensemble.de/inszenierung/matthias-brandt-liest-ian-mcewan"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -76,29 +87,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Grüner Salon Susan Hiller: The J. Street Project Screening und Gespräch",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/p14-plem-plem/20261112-1800/"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "3. Stock P14: Plem Plem Lilli Peters, Tessa Wyrostek",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/p14-plem-plem/20261112-1800/"
+     "zeit": "20:00",
+     "titel": "Roter Salon INTERFILM 42 Food for Everyone Invites You To The Table",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/interfilm-42/20261113-1900/"
     },
     {
      "zeit": "20:00",
-     "titel": "Prater Perfection Nach dem Roman von Vincenzo Latronico Anta Recke zum letzten Mal auf Deutsch und Englisch",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/perfection/20261112-1900/"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "INTERFILM 42",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/interfilm-42/20261112-1900/"
-    },
-    {
-     "zeit": "21:30",
-     "titel": "Große Bühne INTERFILM 42 Sound & Vision",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/interfilm-42/20261112-2030/"
+     "titel": "Kolonialismus erinnern. Vom Konzept zum Ort",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/kolonialismus-erinnern/20261113-1900/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
@@ -112,12 +108,6 @@
      "titel": "IN THE CORPSE OF THE PRESENT Prinz Friedrich von Homburg Heinrich von Kleist",
      "ort": "Galerie",
      "url": "https://www.gorki.de/de/in-the-corpse-of-the-present-prinz-friedrich-von-homburg-2"
-    },
-    {
-     "zeit": "17:00",
-     "titel": "Noise als Strategie — Workshop",
-     "ort": "Eingangsfoyer",
-     "url": "https://www.gorki.de/de/noise-als-strategie"
     }
    ],
    "quelle": "https://www.gorki.de/de/spielplan",
@@ -125,14 +115,14 @@
   },
   "sh": {
    "status": "fehler",
-   "grund": "keine Seite erreichbar",
+   "grund": "geladen, aber keine Termindaten erkannt",
    "versuche": [
-    "https://www.schaubuehne.de/de/spielplan/ -> ConnectTimeout",
-    "https://www.schaubuehne.de/spielplan -> ConnectTimeout",
-    "https://www.schaubuehne.de/de/spielplan -> ConnectTimeout",
-    "https://www.schaubuehne.de/programm -> ConnectTimeout",
-    "https://www.schaubuehne.de/de/programm -> ConnectTimeout",
-    "https://www.schaubuehne.de/kalender -> ConnectTimeout"
+    "https://www.schaubuehne.de/de/spielplan/ -> 404",
+    "https://www.schaubuehne.de/spielplan -> 404",
+    "https://www.schaubuehne.de/de/spielplan -> 404",
+    "https://www.schaubuehne.de/programm -> 404",
+    "https://www.schaubuehne.de/de/programm -> 404",
+    "https://www.schaubuehne.de/kalender -> 404"
    ]
   },
   "hau": {
@@ -140,12 +130,6 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Dan Daw Creative Projects – EXXY",
-     "ort": "HAU2",
-     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/dan-daw-creative-projects-exxy/"
-    },
-    {
-     "zeit": "20:30",
      "titel": "Clément Papachristou / Théâtre National Wallonie-Bruxelles – Justices",
      "ort": "HAU1",
      "url": "https://www.hebbel-am-ufer.de/programm/pdetail/clement-papachristou-justices/"
@@ -160,7 +144,7 @@
     {
      "zeit": "19:30",
      "titel": "BLINDED by DELIGHT",
-     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6986"
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6992"
     }
    ],
    "quelle": "https://www.palast.berlin/",
@@ -172,17 +156,7 @@
     {
      "zeit": "10:00",
      "titel": "Unterscheidet euch!(10+)",
-     "url": "https://www.parkaue.de/spielplan/spielplan/unterscheidet-euch/2018/"
-    },
-    {
-     "zeit": "18:00",
-     "titel": "Sichtprobe „Pinocchio“",
-     "url": "https://www.parkaue.de/theater-und-schule/paedagoginnen-und-multiplikatorinnen/#sichtproben"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "16GB: Tisch­tennis­platten­politik(14+)",
-     "url": "https://www.parkaue.de/spielplan/spielplan/16gb-tischtennisplattenpolitik/2032/"
+     "url": "https://www.parkaue.de/spielplan/spielplan/unterscheidet-euch/2017/"
     }
    ],
    "quelle": "https://www.parkaue.de/spielplan/",
@@ -194,12 +168,7 @@
     {
      "zeit": "10:00",
      "titel": "#diewelle",
-     "url": "https://www.grips-theater.de/de/spielplan/diewelle/3255"
-    },
-    {
-     "zeit": "17:00",
-     "titel": "Kunst und Empowerment",
-     "url": "https://www.grips-theater.de/de/spielplan/kunst-und-empowerment/3256"
+     "url": "https://www.grips-theater.de/de/spielplan/diewelle/3257"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
@@ -229,16 +198,21 @@
    ]
   },
   "kh": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.konzerthaus.de/spielplan -> 404",
-    "https://www.konzerthaus.de/de/spielplan -> 404",
-    "https://www.konzerthaus.de/kalender -> 404",
-    "https://www.konzerthaus.de/de/kalender -> 404",
-    "https://www.konzerthaus.de/termine -> 404",
-    "https://www.konzerthaus.de/konzerte -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "18:00",
+     "titel": "Wandelkonzert durch drei Säle",
+     "url": "https://www.konzerthaus.de/de/programm/wandelkonzert-durch-drei-sale/13248"
+    },
+    {
+     "zeit": "21:00",
+     "titel": "Wandelkonzert durch drei Säle",
+     "url": "https://www.konzerthaus.de/de/programm/wandelkonzert-durch-drei-sale/13249"
+    }
+   ],
+   "quelle": "https://www.konzerthaus.de/de/programm/13-11-2026",
+   "format": "html-time"
   },
   "pbs": {
    "status": "fehler",
@@ -253,8 +227,15 @@
    ]
   },
   "roc": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "21:00",
+     "titel": "Über Brücken",
+     "ort": "Gethsemanekirche, Berlin-Prenzlauer Berg",
+     "url": "https://www.roc-berlin.de/konzerte/ueber-bruecken/concert/227099/"
+    }
+   ],
    "quelle": "https://www.roc-berlin.de/kalender/",
    "format": "json-ld"
   },
@@ -262,14 +243,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "alphabet",
-     "url": "https://schauspielhaus.de/stuecke/alphabet"
-    },
-    {
      "zeit": "20:00",
-     "titel": "Tante Esther late ein! – Open Stage",
-     "url": "https://schauspielhaus.de/stuecke/tante-esther-late-ein-open-stage"
+     "titel": "Moritz Neumeier: Einer von den Guten?",
+     "url": "https://schauspielhaus.de/stuecke/moritz-neumeier-einer-von-den-guten"
     }
    ],
    "quelle": "https://schauspielhaus.de/spielplan",
@@ -279,8 +255,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Blackbox Selbstermächtigung. Wege aus der Ohnmacht",
-     "url": "https://www.thalia-theater.de/de/stuecke/blackbox-selbstermachtigung-wege-aus-der-ohnmacht/232"
+     "titel": "Dagesh–Studio on the Road #ShabbatEdition",
+     "url": "https://tickets.thalia-theater.de/de/buyingflow/tickets/17532/43929/"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
@@ -290,43 +266,42 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "16:00",
+     "titel": "Kampnagel-Führung: mit Jörn Walter [Technischer Leiter]",
+     "url": "https://kampnagel.de/produktionen/kampnagel-fuehrung-4"
+    },
+    {
      "zeit": "17:30",
-     "titel": "Emily Rudolf: Mörderischer Psychokrieg auf einer Ostseeinsel",
-     "url": "https://kampnagel.de/produktionen/emily-rudolf"
+     "titel": "Josi Wismar / Linda Schipp",
+     "url": "https://kampnagel.de/produktionen/josi-wismar-linda-schipp"
     },
     {
      "zeit": "19:00",
-     "titel": "Hamburger Newcomerin: Sandra Beckedahl",
-     "url": "https://kampnagel.de/produktionen/hamburger-newcomerin-sandra-beckedahl"
+     "titel": "Hamburger Newcomerin: Carola Christiansen",
+     "url": "https://kampnagel.de/produktionen/hamburger-newcomerin-carola-christiansen"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "SWITCH GENERATION! 11+",
+     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55036"
     },
     {
      "zeit": "20:30",
-     "titel": "Marc Elsberg: Wenn die ökologische Katastrophe die Welt bedroht",
-     "url": "https://kampnagel.de/produktionen/marc-elsberg"
+     "titel": "Sven Stricker / Bjarne Mädel",
+     "url": "https://kampnagel.de/produktionen/sven-stricker-bjarne-maedel"
     },
     {
      "zeit": "21:00",
-     "titel": "Lars Haider / Michael Kutej / Axel Leonhard",
-     "url": "https://kampnagel.de/produktionen/lars-haider-michael-kutej-axel-leonhard"
+     "titel": "Frank Göhre: Wenn ein Klassiker des Kriminalromans erzählt",
+     "url": "https://kampnagel.de/produktionen/frank-goehre"
     }
    ],
    "quelle": "https://kampnagel.de/kalender",
    "format": "json-eingebettet"
   },
   "hh-so": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "13:30",
-     "titel": "Führung durch die Staatsoper",
-     "ort": "Staatsoper, Treffpunkt: Bühneneingang"
-    },
-    {
-     "zeit": "18:45",
-     "titel": "Ballett­\\;Insider:innen",
-     "ort": "Staatsoper, Gästezimmer"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.die-hamburgische-staatsoper.de/de",
    "format": "ical"
   },
@@ -334,29 +309,34 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "10:30",
+     "titel": "Musikkorps der Bundeswehr / Timor Oliver Chadik",
+     "url": "https://www.elbphilharmonie.de/de/programm/musikkorps-der-bundeswehr-timor-oliver-chadik/29156"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Trio Gaspard",
+     "url": "https://www.elbphilharmonie.de/de/programm/trio-gaspard/28004"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "»Was würde Helmut Schmidt dazu sagen?«",
+     "url": "https://www.elbphilharmonie.de/de/programm/was-wurde-helmut-schmidt-dazu-sagen/29230"
+    },
+    {
      "zeit": "20:00",
      "titel": "NDR Elbphilharmonie Orchester / Marek Janowski",
-     "url": "https://www.elbphilharmonie.de/de/programm/ndr-elbphilharmonie-orchester-marek-janowski/27835"
+     "url": "https://www.elbphilharmonie.de/de/programm/ndr-elbphilharmonie-orchester-marek-janowski/27836"
     },
     {
      "zeit": "20:00",
-     "titel": "The Dire Straits Experience",
-     "url": "https://www.elbphilharmonie.de/de/programm/the-dire-straits-experience/27580"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Quartet KAIRI",
-     "url": "https://www.elbphilharmonie.de/de/programm/quartet-kairi/29158"
+     "titel": "Decoder Ensemble",
+     "url": "https://www.elbphilharmonie.de/de/programm/decoder-ensemble/28432"
     },
     {
      "zeit": "20:00",
      "titel": "Enemy & Émile Parisien",
-     "url": "https://www.elbphilharmonie.de/de/programm/enemy-emile-parisien/28995"
-    },
-    {
-     "zeit": "20:30",
-     "titel": "lùisa",
-     "url": "https://www.elbphilharmonie.de/de/programm/luisa/28440"
+     "url": "https://www.elbphilharmonie.de/de/programm/enemy-emile-parisien/28996"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
@@ -379,13 +359,13 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Die Dreigroschenoper",
-     "url": "https://www.residenztheater.de/stuecke/detail/die-dreigroschenoper"
+     "titel": "Marat/Sade",
+     "url": "https://www.residenztheater.de/stuecke/detail/marat-sade"
     },
     {
-     "zeit": "20:00",
-     "titel": "La Musica – zwischen ihr und ihm",
-     "url": "https://www.residenztheater.de/stuecke/detail/la-musica"
+     "zeit": "19:30",
+     "titel": "Munich Machine",
+     "url": "https://www.residenztheater.de/stuecke/detail/munich-machine"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
@@ -395,12 +375,12 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Alfons – Jetzt noch deutscherer"
+     "zeit": "19:00",
+     "titel": "Mythen, Misogynie, Medien"
     },
     {
      "zeit": "20:00",
-     "titel": "(Münchner) Verkehr"
+     "titel": "Schubert in Paradise"
     }
    ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
@@ -411,8 +391,13 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "Lichtspiel",
-     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/lichtspiel"
+     "titel": "Echtzeitalter",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/echtzeitalter"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Tide",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/tide"
     }
    ],
    "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
@@ -443,16 +428,16 @@
    ]
   },
   "m-mph": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:30",
-     "titel": "Lahav Shani",
-     "url": "https://www.mphil.de/ueber-uns/musikerinnen-und-musiker/details/lahav-shani"
-    }
-   ],
-   "quelle": "https://www.mphil.de/kalender",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.mphil.de/spielplan -> 404",
+    "https://www.mphil.de/de/spielplan -> 404",
+    "https://www.mphil.de/programm -> 404",
+    "https://www.mphil.de/de/programm -> 404",
+    "https://www.mphil.de/de/kalender -> 404",
+    "https://www.mphil.de/termine -> 404"
+   ]
   },
   "m-br": {
    "status": "fehler",
@@ -470,19 +455,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "Unter Tieren",
-     "url": "https://www.burgtheater.at/veranstaltungen/unter-tieren/2026-11-12"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "keine Vorstellung",
-     "url": "https://www.burgtheater.at/veranstaltungen/keine-vorstellung/2026-11-12"
-    },
-    {
      "zeit": "19:30",
-     "titel": "Puls!",
-     "url": "https://www.burgtheater.at/veranstaltungen/puls/2026-11-12"
+     "titel": "Schachnovelle",
+     "url": "https://www.burgtheater.at/veranstaltungen/schachnovelle/2026-11-13"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Der eingebildete Kranke",
+     "url": "https://www.burgtheater.at/veranstaltungen/der-eingebildete-kranke/2026-11-13"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
@@ -492,13 +472,18 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
+     "zeit": "19:00",
      "titel": "FRÄULEIN ELSE",
      "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
     },
     {
+     "zeit": "19:30",
+     "titel": "ANTHROPOLOGIE",
+     "url": "https://www.volkstheater.at/spielstaetten/volkstheater-bezirke/vz-brigittenau"
+    },
+    {
      "zeit": "20:00",
-     "titel": "VIENNA MOSSE LECTURES",
+     "titel": "DAS MONSTER",
      "url": "https://www.volkstheater.at/spielstaetten/rote-bar"
     }
    ],
@@ -506,22 +491,28 @@
    "format": "html-datum"
   },
   "w-jos": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "titel": "Das Mädl aus der Vorstadt"
-    }
-   ],
-   "quelle": "https://www.josefstadt.org/start.html",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.josefstadt.org/spielplan -> 404",
+    "https://www.josefstadt.org/de/spielplan -> 404",
+    "https://www.josefstadt.org/de/programm -> 404",
+    "https://www.josefstadt.org/kalender -> 404",
+    "https://www.josefstadt.org/de/kalender -> 404",
+    "https://www.josefstadt.org/termine -> 404"
+   ]
   },
   "w-so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Solokonzert Simon Keenlyside",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/solokonzert/2026-11-12/"
+     "zeit": "19:00",
+     "titel": "La Fille du régiment",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/la-fille-du-regiment/2026-11-13/"
+    },
+    {
+     "titel": "Abo 8",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/fin-de-partie/2025-10-03/"
     }
    ],
    "quelle": "https://www.wiener-staatsoper.at/kalender/2026/november/",
@@ -532,8 +523,8 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Salome",
-     "url": "https://www.volksoper.at/produktion/salome-2023.1013456671.de.html"
+     "titel": "Die Fledermaus",
+     "url": "https://www.volksoper.at/produktion/die-fledermaus-1990.1014435484.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
@@ -544,7 +535,7 @@
    "vorstellungen": [
     {
      "zeit": "00:00",
-     "titel": "Unterwegs mit der Künstlerischen ProduktionsleitungFührung"
+     "titel": "Bravissimo!Eine abenteuerliche Entdeckungsreise durch das Theater an der Wien"
     }
    ],
    "quelle": "https://www.theater-wien.at/de/home",
@@ -554,14 +545,24 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Maria Bill singt Edith Piaf",
-     "url": "https://konzerthaus.at/de/programm-und-karten/maria-bill-singt-edith-piaf/63670"
+     "zeit": "13:00",
+     "titel": "Wiener Konzerthaus Backstage",
+     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-konzerthaus-backstage/64439"
+    },
+    {
+     "zeit": "14:00",
+     "titel": "Wiener Konzerthaus Backstage",
+     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-konzerthaus-backstage/64440"
     },
     {
      "zeit": "19:30",
-     "titel": "Orchestre Philharmonique de Radio France / Renaud & Gautier Capuçon / van Zweden",
-     "url": "https://konzerthaus.at/de/programm-und-karten/orchestre-philharmonique-de-radio-france-renaud-gautier-capucon-van-zweden/63754"
+     "titel": "Il Suonar Parlante Orchestra / Ghielmi",
+     "url": "https://konzerthaus.at/de/programm-und-karten/il-suonar-parlante-orchestra-ghielmi/63832"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Vincent Dubois, Orgel",
+     "url": "https://konzerthaus.at/de/programm-und-karten/vincent-dubois-orgel/63953"
     }
    ],
    "quelle": "https://konzerthaus.at/de/programm-und-karten",
@@ -579,16 +580,15 @@
    ]
   },
   "w-sym": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:30",
-     "titel": "Emelyanychev, Kopatchinskaja ・ Schostakowitsch, Beethoven",
-     "url": "https://www.wienersymphoniker.at/konzert/emelyanychev-kopatchinskaja-schostakowitsch-beethoven-12-11-2026"
-    }
-   ],
-   "quelle": "https://www.wienersymphoniker.at/kalender",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.wienersymphoniker.at/spielplan -> 404",
+    "https://www.wienersymphoniker.at/de/spielplan -> 404",
+    "https://www.wienersymphoniker.at/programm -> 404",
+    "https://www.wienersymphoniker.at/termine -> 404",
+    "https://www.wienersymphoniker.at/konzerte -> 404"
+   ]
   },
   "b-nm": {
    "status": "ok",
@@ -716,6 +716,12 @@
      "von": "2026-07-03",
      "bis": "2027-03-14",
      "url": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/detail/materialistin/"
+    },
+    {
+     "titel": "Sophie Calle. Is It Better?",
+     "von": "2026-11-13",
+     "bis": "2027-04-04",
+     "url": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/detail/sophie-calle/"
     },
     {
      "titel": "Ryuichi Sakamoto. seeing sound, hearing time",
@@ -1267,6 +1273,12 @@
      "url": "https://www.belvedere.at/go/tickets?location[]=3"
     },
     {
+     "titel": "Civa. Contemporary Immersive Virtual Art",
+     "von": "2026-11-13",
+     "bis": "2027-03-08",
+     "url": "https://www.belvedere.at/go/tickets?location[]=3"
+    },
+    {
      "titel": "CARLONE CONTEMPORARY: Asta Gröting",
      "von": "2026-09-24",
      "bis": "2027-03-29",
@@ -1284,6 +1296,12 @@
      "von": "2026-07-24",
      "bis": "2027-01-10",
      "url": "https://www.leopoldmuseum.org/de/ausstellungen/155/herbert-boeckl-hans-josephsohn"
+    },
+    {
+     "titel": "NEU. SACHLICH.",
+     "von": "2026-11-13",
+     "bis": "2027-02-28",
+     "url": "https://www.leopoldmuseum.org/de/ausstellungen/153/neu-sachlich"
     }
    ],
    "quelle": "https://www.leopoldmuseum.org/de/ausstellungen/aktuell",

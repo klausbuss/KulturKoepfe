@@ -1,5 +1,44 @@
 <!-- https://www.brso.de/konzerte-tickets/ -->
-<!DOCTYPE html><html lang="de-DE" class="font-default responsive-typography selection-color scrollbar br-theme-so "><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1" />    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<!DOCTYPE html><html lang="de-DE" class="font-default responsive-typography selection-color scrollbar br-theme-so "><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1" />            <script>
+            (function () {
+                var windows = [{"from":1796837400,"until":1796848200},{"from":1796927400,"until":1796938200},{"from":1797013800,"until":1797024600},{"from":1797532200,"until":1797543000},{"from":1797618600,"until":1797629400}];
+                var root = document.documentElement;
+
+                function apply() {
+                    var now = Date.now() / 1000;
+                    var active = false;
+                    var next = null;
+
+                    for (var i = 0; i < windows.length; i++) {
+                        var w = windows[i];
+                        if (now >= w.from && now <= w.until) {
+                            active = true;
+                            next = w.until;
+                            break;
+                        }
+                        if (now < w.from && (next === null || w.from < next)) {
+                            next = w.from;
+                        }
+                    }
+
+                    root.classList.toggle('dark', active);
+
+                    // Flip a long-open tab at the next boundary without a reload.
+                    // setTimeout caps out around 24.8 days, so only arm timers
+                    // inside that range; anything further away is handled by the
+                    // next page load anyway.
+                    if (next !== null) {
+                        var delay = (next - now) * 1000 + 1000;
+                        if (delay > 0 && delay < 2147483647) {
+                            setTimeout(apply, delay);
+                        }
+                    }
+                }
+
+                apply();
+            })();
+        </script>
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
 	<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->
 	<title>Konzerte &amp; Tickets - Symphonieorchester des Bayerischen Rundfunks</title>
@@ -81,13 +120,8 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"de","expires":1,"path":
         });
     </script>
 
-            <!-- Usercentrics CMP -->
-        <link rel="preconnect" href="//app.usercentrics.eu">
-        <link rel="preconnect" href="//api.usercentrics.eu">
-        <link rel="preconnect" href="//privacy-proxy.usercentrics.eu">
-        <link rel="preload" href="//app.usercentrics.eu/browser-ui/latest/loader.js" as="script">
-        <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_-4pEjaG1-9wQL" async></script>
-    
+    <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_-4pEjaG1-9wQL" async></script>
+
     
     <script>
         window.addEventListener('uc_window_events', function(e) {
@@ -475,7 +509,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"de","expires":1,"path":
                                     </div>
 
                                                                             <div>
-                                            <a href="#" onClick="UC_UI.showSecondLayer();" class="show-cookie-banner tracking-widest leading-none uppercase inline-flex transition-all duration-300 ease-in-out hover:no-underline text-15 font-normal opacity-70 hover:opacity-100 mt-5">Cookie-Einstellungen</a>
+                                            <a href="#" class="show-cookie-banner tracking-widest leading-none uppercase inline-flex transition-all duration-300 ease-in-out hover:no-underline text-15 font-normal opacity-70 hover:opacity-100 mt-5">Cookie-Einstellungen</a>
                                         </div>
                                                                                                 </div>
                                                     <div class="w-full sm:w-1/2 md:w-1/3 pr-8 mb-16">
@@ -599,7 +633,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"de","expires":1,"path":
 Mo, Di, Do, Fr, 9 – 16 Uhr<br />
 <a href="tel:089590010882">089 5900 10882</a><strong><br />
 </strong><a href="tel:08005900592" rel="">0800 5900 592</a> <br />
-E-Mail: <a href="javascript:;" data-enc-email="oneevrerserv[at]oe-gvpxrg.qr" target="_blank" rel="noopener" class="mail-link" data-wpel-link="ignore"><span id="eeb-47846-367966"></span><script type="text/javascript">(function() {var ml="t0kifabced.%r4-",mi="65<<38<84<83;=16<>037280:98",o="";for(var j=0,l=mi.length;j<l;j++) {o+=ml.charAt(mi.charCodeAt(j)-48);}document.getElementById("eeb-47846-367966").innerHTML = decodeURIComponent(o);}());</script><noscript>*protected email*</noscript></a></p>
+E-Mail: <a href="javascript:;" data-enc-email="oneevrerserv[at]oe-gvpxrg.qr" target="_blank" rel="noopener" class="mail-link" data-wpel-link="ignore"><span id="eeb-24031-324581"></span><script type="text/javascript">(function() {var ml="rdkta-%bcef.i04",mi="7400<909:09<6>=7053<8293;19",o="";for(var j=0,l=mi.length;j<l;j++) {o+=ml.charAt(mi.charCodeAt(j)-48);}document.getElementById("eeb-24031-324581").innerHTML = decodeURIComponent(o);}());</script><noscript>*protected email*</noscript></a></p>
                 </div>
                         <button aria-label="Schließen Ticket-Information Fenster" class="close-modal">
                 <img src="https://www.brso.de/wp-content/themes/br-kk/dist/images/general/icons/close.svg" alt="" aria-hidden="true"
@@ -614,7 +648,7 @@ E-Mail: <a href="javascript:;" data-enc-email="oneevrerserv[at]oe-gvpxrg.qr" tar
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/sites/2/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/br-kk/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
 <script id="bundle-js-extra">
-var settings = {"baseurl":"https://www.brso.de","tplurl":"https://www.brso.de/wp-content/themes/br-kk","resturl":"https://www.brso.de/wp-json/","blogid":"2","lng":"de","nonce":"e1b8b94c6c","concertCalenderPageId":"842","homePageId":"187","publicationDate":"20220202","pageTitle":"Konzerte & Tickets","pageTitleSanitized":"konzerte-tickets","postType":"page","isLoggedIn":"0","labels":{"not-bookable-yet":"Noch nicht verf\u00fcgbar","not-bookable":"Aktuell nicht verf\u00fcgbar","sold-out":"Ausverkauft","few-tickets":"Wenige Tickets","tickets-from":"Tickets ab","buy-tickets":"Tickets kaufen","show-details":"Details ansehen","no-concert-search-results":"Leider gibt es keine Konzerte zu Ihrer Suche.","e-card-first-name":"Vorname","e-card-last-name":"Nachname","e-card-salutation":"Anrede (z.B. Liebe/r)","e-card-greeting-text":"Ihr Gru\u00dftext","e-card-signature":"Signatur (z.B. Deine/r)","e-card-email-address":"E-Mail-Adresse","e-card-sender":"Absender: ","print":"Drucken"}};
+var settings = {"baseurl":"https://www.brso.de","tplurl":"https://www.brso.de/wp-content/themes/br-kk","resturl":"https://www.brso.de/wp-json/","blogid":"2","lng":"de","nonce":"6cf632660f","concertCalenderPageId":"842","homePageId":"187","publicationDate":"20220202","pageTitle":"Konzerte & Tickets","pageTitleSanitized":"konzerte-tickets","postType":"page","isLoggedIn":"0","labels":{"cookie-settings-unavailable":"Die Cookie-Einstellungen sind derzeit nicht verf\u00fcgbar. Bitte die Seite neu laden oder den Inhaltsblocker f\u00fcr diese Website pr\u00fcfen.","watch-on-youtube":"Auf YouTube ansehen","watch-on-vimeo":"Auf Vimeo ansehen","open-on-spotify":"Auf Spotify \u00f6ffnen","open-on-instagram":"Auf Instagram \u00f6ffnen","not-bookable-yet":"Noch nicht verf\u00fcgbar","not-bookable":"Aktuell nicht verf\u00fcgbar","sold-out":"Ausverkauft","few-tickets":"Wenige Tickets","tickets-from":"Tickets ab","buy-tickets":"Tickets kaufen","show-details":"Details ansehen","no-concert-search-results":"Leider gibt es keine Konzerte zu Ihrer Suche.","e-card-first-name":"Vorname","e-card-last-name":"Nachname","e-card-salutation":"Anrede (z.B. Liebe/r)","e-card-greeting-text":"Ihr Gru\u00dftext","e-card-signature":"Signatur (z.B. Deine/r)","e-card-email-address":"E-Mail-Adresse","e-card-sender":"Absender: ","print":"Drucken"}};
 //# sourceURL=bundle-js-extra
 </script>
 <script src="https://www.brso.de/wp-content/themes/br-kk/dist/js/bundle.js" id="bundle-js"></script>
@@ -668,5 +702,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3
 
 Page Caching using Disk 
 
-Served from: www.brso.de @ 2026-11-12 09:53:08 by W3 Total Cache
+Served from: www.brso.de @ 2026-11-13 12:24:47 by W3 Total Cache
 -->
