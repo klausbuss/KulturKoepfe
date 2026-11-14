@@ -77,7 +77,7 @@
 <div class="app">
   <header><h1><span>Kultur</span><span>Köpfe</span></h1>
     <div class="stadtwahl" id="stadt" role="group" aria-label="Stadt">
-      <button data-stadt="berlin" aria-pressed="true">Berlin</button><button data-stadt="hamburg" aria-pressed="false">Hamburg</button><button data-stadt="muenchen" aria-pressed="false">München</button><button data-stadt="wien" aria-pressed="false">Wien</button>
+      <button data-stadt="berlin" aria-pressed="true">Berlin</button><button data-stadt="hamburg" aria-pressed="false">Hamburg</button><button data-stadt="muenchen" aria-pressed="false">München</button><button data-stadt="wien" aria-pressed="false">Wien</button><button data-stadt="frankfurt" aria-pressed="false">Frankfurt</button>
     </div>
     <p class="sub" id="sub"></p></header>
   <nav class="pfad" id="pfad" aria-label="Pfad"></nav>
@@ -130,7 +130,14 @@ const HAEUSER = [
   {stadt:"wien",id:"w-tadw",bereich:"musik",name:"Theater an der Wien",sparte:"Oper",bezirk:"Mariahilf",c:[16.3637,48.1997],web:"theater-wien.at"},
   {stadt:"wien",id:"w-kh",bereich:"musik",name:"Wiener Konzerthaus",sparte:"Konzert",bezirk:"Landstraße",c:[16.3790,48.2012],web:"konzerthaus.at"},
   {stadt:"wien",id:"w-mv",bereich:"musik",name:"Musikverein Wien",zusatz:"Gesellschaft der Musikfreunde, privater Träger",sparte:"Konzert",bezirk:"Innere Stadt",c:[16.3726,48.2006],web:"musikverein.at"},
-  {stadt:"wien",id:"w-sym",bereich:"musik",name:"Wiener Symphoniker",sparte:"Konzert",bezirk:"Innere Stadt",c:null,web:"wienersymphoniker.at"}
+  {stadt:"wien",id:"w-sym",bereich:"musik",name:"Wiener Symphoniker",sparte:"Konzert",bezirk:"Innere Stadt",c:null,web:"wienersymphoniker.at"},
+  {stadt:"frankfurt",id:"f-sf",bereich:"theater",name:"Schauspiel Frankfurt",zusatz:"Städtische Bühnen",sparte:"Theater",bezirk:"Innenstadt",c:[8.6735,50.1076],web:"schauspielfrankfurt.de"},
+  {stadt:"frankfurt",id:"f-mou",bereich:"theater",name:"Künstlerhaus Mousonturm",zusatz:"Freie Szene, Tanz und Performance",sparte:"Theater",bezirk:"Nordend",c:[8.699,50.1232],web:"mousonturm.de"},
+  {stadt:"frankfurt",id:"f-et",bereich:"theater",name:"English Theatre Frankfurt",sparte:"Theater",bezirk:"Westend",c:[8.668,50.1091],web:"english-theatre.org"},
+  {stadt:"frankfurt",id:"f-op",bereich:"musik",name:"Oper Frankfurt",zusatz:"Städtische Bühnen",sparte:"Oper",bezirk:"Innenstadt",c:[8.6738,50.1073],web:"oper-frankfurt.de"},
+  {stadt:"frankfurt",id:"f-ao",bereich:"musik",name:"Alte Oper Frankfurt",sparte:"Konzert",bezirk:"Westend",c:[8.6727,50.1155],web:"alteoper.de"},
+  {stadt:"frankfurt",id:"f-hr",bereich:"musik",name:"hr-Sinfonieorchester",sparte:"Konzert",bezirk:"Dornbusch",c:null,web:"hr-sinfonieorchester.de"},
+  {stadt:"frankfurt",id:"f-em",bereich:"musik",name:"Ensemble Modern",sparte:"Konzert",bezirk:"Frankfurt",c:null,web:"ensemble-modern.com"}
   ,{stadt:"berlin",id:"b-nm",bereich:"museen",name:"Neues Museum",zusatz:"Ägyptisches Museum und Museum für Vor- und Frühgeschichte",sparte:"Museum",bezirk:"Mitte",c:[13.398,52.52],web:"smb.museum/museen-einrichtungen/neues-museum",zu:[1]}
   ,{stadt:"berlin",id:"b-pm",bereich:"museen",name:"Pergamonmuseum",zusatz:"wegen Sanierung geschlossen, Teilöffnung am 4. Juni 2027",sparte:"Museum",bezirk:"Mitte",c:[13.3966,52.5212],web:"smb.museum/museen-einrichtungen/pergamonmuseum"}
   ,{stadt:"berlin",id:"b-ang",bereich:"museen",name:"Alte Nationalgalerie",zusatz:"Museumsinsel",sparte:"Museum",bezirk:"Mitte",c:[13.3982,52.5208],web:"smb.museum/museen-einrichtungen/alte-nationalgalerie",zu:[1]}
@@ -165,6 +172,18 @@ const HAEUSER = [
   ,{stadt:"muenchen",id:"m-gly",bereich:"museen",name:"Glyptothek und Antikensammlungen",zusatz:"am Königsplatz",sparte:"Museum",bezirk:"Maxvorstadt",c:[11.5658,48.1465],web:"antike-am-koenigsplatz.mwn.de",zu:[1]}
   ,{stadt:"muenchen",id:"m-m5k",bereich:"museen",name:"Museum Fünf Kontinente",sparte:"Museum",bezirk:"Altstadt-Lehel",c:[11.588,48.138],web:"museum-fuenf-kontinente.de",zu:[1]}
   ,{stadt:"muenchen",id:"m-nsd",bereich:"museen",name:"NS-Dokumentationszentrum",sparte:"Museum",bezirk:"Maxvorstadt",c:[11.568,48.145],web:"nsdoku.de",zu:[1]}
+  ,  {stadt:"frankfurt",id:"f-st",bereich:"museen",name:"Städel Museum",sparte:"Museum",bezirk:"Sachsenhausen",c:[8.6726,50.103],web:"staedelmuseum.de",zu:[1]}
+  ,  {stadt:"frankfurt",id:"f-sch",bereich:"museen",name:"Schirn Kunsthalle",sparte:"Museum",bezirk:"Altstadt",c:[8.6842,50.1104],web:"schirn.de",zu:[1]}
+  ,  {stadt:"frankfurt",id:"f-mmk",bereich:"museen",name:"MMK Museum für Moderne Kunst",sparte:"Museum",bezirk:"Altstadt",c:[8.6832,50.1112],web:"mmk.art",zu:[1]}
+  ,  {stadt:"frankfurt",id:"f-hmf",bereich:"museen",name:"Historisches Museum Frankfurt",sparte:"Museum",bezirk:"Altstadt",c:[8.6824,50.1108],web:"historisches-museum-frankfurt.de",zu:[1]}
+  ,  {stadt:"frankfurt",id:"f-sen",bereich:"museen",name:"Senckenberg Naturmuseum",sparte:"Museum",bezirk:"Westend",c:[8.6517,50.1177],web:"museumfrankfurt.senckenberg.de"}
+  ,  {stadt:"frankfurt",id:"f-jm",bereich:"museen",name:"Jüdisches Museum Frankfurt",sparte:"Museum",bezirk:"Westend",c:[8.6718,50.1096],web:"juedischesmuseum.de"}
+  ,  {stadt:"frankfurt",id:"f-wkm",bereich:"museen",name:"Weltkulturen Museum",sparte:"Museum",bezirk:"Sachsenhausen",c:[8.676,50.1033],web:"weltkulturenmuseum.de",zu:[1]}
+  ,  {stadt:"frankfurt",id:"f-mak",bereich:"museen",name:"Museum Angewandte Kunst",sparte:"Museum",bezirk:"Sachsenhausen",c:[8.6763,50.1049],web:"museumangewandtekunst.de",zu:[1]}
+  ,  {stadt:"frankfurt",id:"f-lh",bereich:"museen",name:"Liebieghaus Skulpturensammlung",sparte:"Museum",bezirk:"Sachsenhausen",c:[8.67,50.1027],web:"liebieghaus.de",zu:[1]}
+  ,  {stadt:"frankfurt",id:"f-dam",bereich:"museen",name:"Deutsches Architekturmuseum",sparte:"Museum",bezirk:"Sachsenhausen",c:[8.6757,50.102],web:"dam-online.de",zu:[1]}
+  ,  {stadt:"frankfurt",id:"f-dff",bereich:"museen",name:"DFF – Deutsches Filminstitut & Filmmuseum",sparte:"Museum",bezirk:"Sachsenhausen",c:[8.6766,50.104],web:"dff.film",zu:[1]}
+  ,  {stadt:"frankfurt",id:"f-mfk",bereich:"museen",name:"Museum für Kommunikation",sparte:"Museum",bezirk:"Sachsenhausen",c:[8.6735,50.1018],web:"mfk-frankfurt.de",zu:[1]}
   ,{stadt:"wien",id:"w-khm",bereich:"museen",name:"Kunsthistorisches Museum",sparte:"Museum",bezirk:"Innere Stadt",c:[16.3617,48.2038],web:"khm.at"}
   ,{stadt:"wien",id:"w-alb",bereich:"museen",name:"Albertina",sparte:"Museum",bezirk:"Innere Stadt",c:[16.3683,48.2047],web:"albertina.at"}
   ,{stadt:"wien",id:"w-bel",bereich:"museen",name:"Belvedere",sparte:"Museum",bezirk:"Landstraße",c:[16.3809,48.1916],web:"belvedere.at"}
@@ -246,6 +265,17 @@ const intendanz = [
   ["w-kh","Matthias Naske","Intendant","Seit 2013 Intendant des Wiener Konzerthauses."],
   ["w-mv","Stephan Pauly","Intendant","Seit 2020 Intendant des Musikvereins, Vertrag bis Juni 2030."],
   ["w-sym","Petr Popelka","Chefdirigent","Seit 2024/25 Chefdirigent der Wiener Symphoniker."],
+  ["f-sf","Anselm Weber","Intendant","Seit 2017 Intendant des Schauspiel Frankfurt, sein Vertrag wurde bis 2030 verlängert."],
+  ["f-op","Bernd Loebe","Intendant","Leitet die Oper Frankfurt seit 2002, 2026/27 ist seine 25. Spielzeit."],
+  ["f-op","Thomas Guggeis","Generalmusikdirektor","Generalmusikdirektor der Oper Frankfurt, 2026/27 in seiner vierten Saison."],
+  ["f-ao","Markus Fein","Intendant","Seit September 2020 Intendant und Geschäftsführer der Alten Oper Frankfurt."],
+  ["f-hr","Alain Altinoglu","Chefdirigent","Chefdirigent des hr-Sinfonieorchesters."],
+  ["f-st","Philipp Demandt","Direktor","Seit 2016 Direktor des Städel Museums, zugleich Leiter des Liebieghauses. Vertrag bis 2031."],
+  ["f-sch","Sebastian Baden","Direktor","Direktor der Schirn Kunsthalle, zuvor Kurator für zeitgenössische Kunst an der Kunsthalle Mannheim."],
+  ["f-hmf","Doreen Mölders","Direktorin","Seit Anfang 2025 Direktorin des Historischen Museums Frankfurt, zuvor Direktorin des LWL-Museums für Archäologie und Kultur in Herne."],
+  ["f-wkm","Larissa Förster","Direktorin","Seit Anfang 2025 Direktorin des Weltkulturen Museums, Ethnologin mit Schwerpunkt Provenienzforschung."],
+  ["f-mfk","Annabelle Hornung","Direktorin","Seit 2025 Direktorin des Museums für Kommunikation Frankfurt, zuvor am Museum für Kommunikation Nürnberg."],
+  ["f-lh","Philipp Demandt","Direktor","Leitet neben dem Städel auch das Liebieghaus."],
   ["roc","Vladimir Jurowski","Chefdirigent RSB","Seit 2017 Chefdirigent des Rundfunk-Sinfonieorchesters, Vertrag bis 2029."],
   ["b-nm","Friederike Seyfried","Direktorin Ägyptisches Museum","Leitet das Ägyptische Museum und Papyrussammlung seit 2009, Hüterin der Nofretete."],
   ["b-nm","Matthias Wemhoff","Direktor Museum für Vor- und Frühgeschichte","Seit 2008 Direktor des Museums, zugleich Landesarchäologe von Berlin."],
@@ -599,7 +629,7 @@ fetch("heute.json",{cache:"no-store"}).then(r=>r.ok ? r.json() : null).then(d=>{
   if(d && d.datum===heuteISO()){ HEUTE = d.haeuser; render(); }
 }).catch(()=>{});
 
-const STAEDTE = {berlin:"Berlins", hamburg:"Hamburgs", muenchen:"Münchens", wien:"Wiens"};
+const STAEDTE = {berlin:"Berlins", hamburg:"Hamburgs", muenchen:"Münchens", wien:"Wiens", frankfurt:"Frankfurts"};
 const imOrt = h => h.stadt===state.stadt;
 // Diese Häuser stehen in ihrer Liste ganz oben (Reihenfolge = Rang), alle anderen behalten ihre Reihenfolge
 const NACH_OBEN = ["ko","b-hkw","bf"];

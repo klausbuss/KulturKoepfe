@@ -26,7 +26,7 @@ from zoneinfo import ZoneInfo
 import requests
 from bs4 import BeautifulSoup
 
-TZ = ZoneInfo("Europe/Berlin")          # gilt auch für Hamburg, München, Wien
+TZ = ZoneInfo("Europe/Berlin")          # gilt auch für Hamburg, München, Wien, Frankfurt
 HEUTE = dt.datetime.now(TZ).date()
 UA = "Kulturkoepfe-Spielplanabruf/1.0 (+https://klausbuss.github.io/kulturkoepfe/)"
 TIMEOUT = 20
@@ -88,6 +88,14 @@ HAEUSER = {
     "w-kh":   ("konzerthaus.at", []),
     "w-mv":   ("musikverein.at", []),
     "w-sym":  ("wienersymphoniker.at", []),
+    # Frankfurt
+    "f-sf":   ("schauspielfrankfurt.de", []),
+    "f-mou":  ("mousonturm.de", []),
+    "f-et":   ("english-theatre.org", []),
+    "f-op":   ("oper-frankfurt.de", []),
+    "f-ao":   ("alteoper.de", []),
+    "f-hr":   ("hr-sinfonieorchester.de", []),
+    "f-em":   None,
 }
 
 # Museen: id: (Website, [gezielte Ausstellungsadressen]), None = nicht abrufen
@@ -144,6 +152,19 @@ MUSEEN = {
     "w-wm":    ("wienmuseum.at", ["https://www.wienmuseum.at/ausstellungen"]),
     "w-tmw":   ("technischesmuseum.at", ["https://www.technischesmuseum.at/ausstellungen"]),
     "w-wmw":   ("weltmuseumwien.at", ["https://www.weltmuseumwien.at/ausstellungen/"]),
+    # Frankfurt
+    "f-st":  ("staedelmuseum.de", ["https://www.staedelmuseum.de/de/ausstellungen"]),
+    "f-sch": ("schirn.de", ["https://www.schirn.de/ausstellungen/"]),
+    "f-mmk": ("mmk.art", ["https://www.mmk.art/de/whats-on/"]),
+    "f-hmf": ("historisches-museum-frankfurt.de", ["https://historisches-museum-frankfurt.de/de/ausstellungen"]),
+    "f-sen": ("museumfrankfurt.senckenberg.de", ["https://museumfrankfurt.senckenberg.de/de/ausstellungen/"]),
+    "f-jm":  ("juedischesmuseum.de", ["https://www.juedischesmuseum.de/ausstellungen/"]),
+    "f-wkm": ("weltkulturenmuseum.de", ["https://weltkulturenmuseum.de/de/ausstellungen/"]),
+    "f-mak": ("museumangewandtekunst.de", ["https://www.museumangewandtekunst.de/de/ausstellungen/"]),
+    "f-lh":  ("liebieghaus.de", ["https://www.liebieghaus.de/de/ausstellungen"]),
+    "f-dam": ("dam-online.de", ["https://dam-online.de/ausstellungen/"]),
+    "f-dff": ("dff.film", ["https://www.dff.film/ausstellungen/"]),
+    "f-mfk": ("mfk-frankfurt.de", ["https://www.mfk-frankfurt.de/ausstellungen/"]),
 }
 
 # Seiten, die mehrere Häuser zeigen: nur Ausstellungen dieser Orte bzw. Adressen behalten
@@ -917,7 +938,7 @@ def abrufen(hid, eintrag):
             for t in sorted(heute, key=lambda t: t["zeit"] or "99"):
                 eindeutig.setdefault((t["titel"], t["zeit"]), t)
             for t in eindeutig.values():
-                t["titel"] = re.sub(r"^[^:]{3,30}(München|Berlin|Hamburg|Wien):\s*", "", t["titel"])
+                t["titel"] = re.sub(r"^[^:]{3,30}(München|Berlin|Hamburg|Wien|Frankfurt):\s*", "", t["titel"])
                 t["titel"] = re.sub(r"\s+[-–]\s+\d{1,2}\.? ?(" + MONATE + r")\w*\.?$", "", t["titel"])
             vorstellungen = [{k: v for k, v in t.items() if k != "datum" and v}
                              for t in eindeutig.values()]

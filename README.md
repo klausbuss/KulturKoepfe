@@ -1,2 +1,2 @@
 # KulturKoepfe
-Institutionen der Kulturszene in Berlin, Hamburg, München und Wien auf einen Blick
+Institutionen der Kulturszene in Berlin, Hamburg, München, Wien und Frankfurt auf einen Blick
