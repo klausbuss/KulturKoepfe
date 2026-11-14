@@ -1,19 +1,19 @@
 {
- "datum": "2026-11-13",
- "stand": "2026-11-13T12:50+01:00",
+ "datum": "2026-11-14",
+ "stand": "2026-11-14T12:11+01:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "La Calisto",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/la-calisto.27274/#event-153694"
+     "zeit": "18:15",
+     "titel": "Vor-Führung",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/vor-fuehrung.22834/#event-176562"
     },
     {
-     "zeit": "22:30",
-     "titel": "Nach(t)führung",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/nach-t-fuehrung.10795/#event-176244"
+     "zeit": "19:30",
+     "titel": "Orfeo ed Euridice",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/orfeo-ed-euridice.27753/#event-154649"
     }
    ],
    "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
@@ -36,8 +36,8 @@
    "vorstellungen": [
     {
      "zeit": "19:30",
-     "titel": "Or­pheus in der Un­ter­welt",
-     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/orpheus-in-der-unterwelt/1302/"
+     "titel": "Jew­geni Onegin",
+     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/jewgeni-onegin/1254/"
     }
    ],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
@@ -53,19 +53,19 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Heimsuchung",
-     "url": "https://www.deutschestheater.de/programm/produktionen/heimsuchung"
+     "zeit": "18:00",
+     "titel": "Szenen des Schwindels",
+     "url": "https://www.deutschestheater.de/programm/produktionen/szenen-des-schwindels"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "Deutscher Herbst",
+     "url": "https://www.deutschestheater.de/programm/produktionen/deutscher-herbst"
     },
     {
      "zeit": "20:00",
-     "titel": "Jugend ohne Gott",
-     "url": "https://www.deutschestheater.de/programm/produktionen/jugend-ohne-gott"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Ästhetischer Widerstand?",
-     "url": "https://www.deutschestheater.de/programm/produktionen/literarische-spielzeit-aesthetischer-widerstand"
+     "titel": "Der erste fiese Typ",
+     "url": "https://www.deutschestheater.de/programm/produktionen/der-erste-fiese-typ"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -76,8 +76,8 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Matthias Brandt liest Ian McEwan",
-     "url": "https://www.berliner-ensemble.de/inszenierung/matthias-brandt-liest-ian-mcewan"
+     "titel": "Hamlet",
+     "url": "https://www.berliner-ensemble.de/index.php/inszenierung/hamlet"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -87,14 +87,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Roter Salon INTERFILM 42 Food for Everyone Invites You To The Table",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/interfilm-42/20261113-1900/"
+     "zeit": "19:00",
+     "titel": "3. Stock P14: Plem Plem Lilli Peters, Tessa Wyrostek zum letzten Mal",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/p14-plem-plem/20261114-1800/"
     },
     {
-     "zeit": "20:00",
-     "titel": "Kolonialismus erinnern. Vom Konzept zum Ort",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/kolonialismus-erinnern/20261113-1900/"
+     "zeit": "22:00",
+     "titel": "Große Bühne INTERFILM 42 eject_XXIX: The Long Night of Weird Shorts",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/interfilm-42/20261114-2100/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
@@ -107,6 +107,12 @@
      "zeit": "13:00",
      "titel": "IN THE CORPSE OF THE PRESENT Prinz Friedrich von Homburg Heinrich von Kleist",
      "ort": "Galerie",
+     "url": "https://www.gorki.de/de/in-the-corpse-of-the-present-prinz-friedrich-von-homburg-2"
+    },
+    {
+     "zeit": "21:00",
+     "titel": "IN THE CORPSE OF THE PRESENT Prinz Friedrich von Homburg Heinrich von Kleist",
+     "ort": "Rangfoyer",
      "url": "https://www.gorki.de/de/in-the-corpse-of-the-present-prinz-friedrich-von-homburg-2"
     }
    ],
@@ -126,39 +132,32 @@
    ]
   },
   "hau": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:00",
-     "titel": "Clément Papachristou / Théâtre National Wallonie-Bruxelles – Justices",
-     "ort": "HAU1",
-     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/clement-papachristou-justices/"
-    }
-   ],
-   "quelle": "https://www.hebbel-am-ufer.de/programm/spielplan-tickets/",
-   "format": "html-tagesliste"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.hebbel-am-ufer.de/spielplan -> 404",
+    "https://www.hebbel-am-ufer.de/de/spielplan -> 404",
+    "https://www.hebbel-am-ufer.de/de/programm -> 404",
+    "https://www.hebbel-am-ufer.de/kalender -> 404",
+    "https://www.hebbel-am-ufer.de/de/kalender -> 404",
+    "https://www.hebbel-am-ufer.de/termine -> 404"
+   ]
   },
   "fp": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
+     "zeit": "15:30",
      "titel": "BLINDED by DELIGHT",
-     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6992"
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6996"
     }
    ],
    "quelle": "https://www.palast.berlin/",
    "format": "html-datum"
   },
   "pa": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "10:00",
-     "titel": "Unterscheidet euch!(10+)",
-     "url": "https://www.parkaue.de/spielplan/spielplan/unterscheidet-euch/2017/"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.parkaue.de/spielplan/",
    "format": "microdata"
   },
@@ -166,24 +165,30 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "10:00",
-     "titel": "#diewelle",
-     "url": "https://www.grips-theater.de/de/spielplan/diewelle/3257"
+     "zeit": "16:00",
+     "titel": "Die fabelhaften Millibillies",
+     "url": "https://www.grips-theater.de/de/spielplan/die-fabelhaften-millibillies/3258"
+    },
+    {
+     "zeit": "16:00",
+     "titel": "Alle außer das Einhorn",
+     "url": "https://www.grips-theater.de/de/spielplan/alle-auer-das-einhorn/3308"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
    "format": "html-datum"
   },
   "bf": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "00:00",
-     "titel": "MAMI"
-    }
-   ],
-   "quelle": "https://www.berlinerfestspiele.de/",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.berlinerfestspiele.de/kalender -> 404",
+    "https://www.berlinerfestspiele.de/spielplan -> 404",
+    "https://www.berlinerfestspiele.de/de/spielplan -> 404",
+    "https://www.berlinerfestspiele.de/de/kalender -> 404",
+    "https://www.berlinerfestspiele.de/termine -> 404",
+    "https://www.berlinerfestspiele.de/konzerte -> 404"
+   ]
   },
   "ph": {
    "status": "fehler",
@@ -201,17 +206,12 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "Wandelkonzert durch drei Säle",
-     "url": "https://www.konzerthaus.de/de/programm/wandelkonzert-durch-drei-sale/13248"
-    },
-    {
-     "zeit": "21:00",
-     "titel": "Wandelkonzert durch drei Säle",
-     "url": "https://www.konzerthaus.de/de/programm/wandelkonzert-durch-drei-sale/13249"
+     "zeit": "18:30",
+     "titel": "KONZERTHAUS X İÇ İÇE",
+     "url": "https://www.konzerthaus.de/de/programm/konzerthaus-x-ic-ice/13070"
     }
    ],
-   "quelle": "https://www.konzerthaus.de/de/programm/13-11-2026",
+   "quelle": "https://www.konzerthaus.de/de/programm/14-11-2026",
    "format": "html-time"
   },
   "pbs": {
@@ -227,15 +227,8 @@
    ]
   },
   "roc": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "21:00",
-     "titel": "Über Brücken",
-     "ort": "Gethsemanekirche, Berlin-Prenzlauer Berg",
-     "url": "https://www.roc-berlin.de/konzerte/ueber-bruecken/concert/227099/"
-    }
-   ],
+   "status": "keine",
+   "vorstellungen": [],
    "quelle": "https://www.roc-berlin.de/kalender/",
    "format": "json-ld"
   },
@@ -243,9 +236,14 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "19:30",
+     "titel": "Weil der Frieden Zucker ist! oder: Was für ein kleines Moped mit verchromter Lenkstange steht dort im Hof",
+     "url": "https://schauspielhaus.de/stuecke/weil-der-frieden-zucker-ist"
+    },
+    {
      "zeit": "20:00",
-     "titel": "Moritz Neumeier: Einer von den Guten?",
-     "url": "https://schauspielhaus.de/stuecke/moritz-neumeier-einer-von-den-guten"
+     "titel": "Zur Person: Edward Teller",
+     "url": "https://schauspielhaus.de/stuecke/zur-person-edward-teller"
     }
    ],
    "quelle": "https://schauspielhaus.de/spielplan",
@@ -255,8 +253,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Dagesh–Studio on the Road #ShabbatEdition",
-     "url": "https://tickets.thalia-theater.de/de/buyingflow/tickets/17532/43929/"
+     "titel": "Dornröschen",
+     "url": "https://www.thalia-theater.de/de/stuecke/dornroschen/338"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
@@ -266,42 +264,48 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "14:30",
+     "titel": "Sebastian Fitzner (Tim) / Felix Strüven (Karl) / Julian Greis (Klößchen) / Liza Ohm (Gaby)",
+     "url": "https://kampnagel.de/produktionen/sebastian-fitzner-tim-felix-strueven-karl-julian-greis-kloesschen-liza-ohm-gaby"
+    },
+    {
      "zeit": "16:00",
-     "titel": "Kampnagel-Führung: mit Jörn Walter [Technischer Leiter]",
-     "url": "https://kampnagel.de/produktionen/kampnagel-fuehrung-4"
+     "titel": "Kampnagel-Führung: mit Telse Wohlgehagen [Leitung Vermietungen]",
+     "url": "https://kampnagel.de/produktionen/kampnagel-fuehrung-5"
     },
     {
      "zeit": "17:30",
-     "titel": "Josi Wismar / Linda Schipp",
-     "url": "https://kampnagel.de/produktionen/josi-wismar-linda-schipp"
+     "titel": "Sophie Bonnet / Alexander Oetker / Cay Rademacher",
+     "url": "https://kampnagel.de/produktionen/krimifestival-2026-französischer-abend"
     },
     {
-     "zeit": "19:00",
-     "titel": "Hamburger Newcomerin: Carola Christiansen",
-     "url": "https://kampnagel.de/produktionen/hamburger-newcomerin-carola-christiansen"
-    },
-    {
-     "zeit": "19:00",
-     "titel": "SWITCH GENERATION! 11+",
-     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55036"
+     "zeit": "18:30",
+     "titel": "Abgesagt: Marcello Simoni",
+     "url": "https://kampnagel.de/produktionen/marcello-simoni"
     },
     {
      "zeit": "20:30",
-     "titel": "Sven Stricker / Bjarne Mädel",
-     "url": "https://kampnagel.de/produktionen/sven-stricker-bjarne-maedel"
-    },
-    {
-     "zeit": "21:00",
-     "titel": "Frank Göhre: Wenn ein Klassiker des Kriminalromans erzählt",
-     "url": "https://kampnagel.de/produktionen/frank-goehre"
+     "titel": "Robert Harris: Erbitterter Kampf um die Macht im Römischen Reich",
+     "url": "https://kampnagel.de/produktionen/robert-harris"
     }
    ],
    "quelle": "https://kampnagel.de/kalender",
    "format": "json-eingebettet"
   },
   "hh-so": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "10:00",
+     "titel": "Eintauchen ins Ballettzentrum",
+     "ort": "Ballettzentrum Hamburg – John Neumeier"
+    },
+    {
+     "zeit": "14:00",
+     "titel": "?Alleine!",
+     "ort": "Staatsoper, Parkett-Foyer"
+    }
+   ],
    "quelle": "https://www.die-hamburgische-staatsoper.de/de",
    "format": "ical"
   },
@@ -309,34 +313,34 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "10:30",
-     "titel": "Musikkorps der Bundeswehr / Timor Oliver Chadik",
-     "url": "https://www.elbphilharmonie.de/de/programm/musikkorps-der-bundeswehr-timor-oliver-chadik/29156"
+     "zeit": "11:00",
+     "titel": "Hamburger Ärzteorchester",
+     "url": "https://www.elbphilharmonie.de/de/programm/hamburger-arzteorchester/28781"
     },
     {
-     "zeit": "19:30",
-     "titel": "Trio Gaspard",
-     "url": "https://www.elbphilharmonie.de/de/programm/trio-gaspard/28004"
+     "zeit": "12:00",
+     "titel": "Workshop: Kosmos Minimal Music",
+     "url": "https://www.elbphilharmonie.de/de/programm/workshop-kosmos-minimal-music/28575"
     },
     {
-     "zeit": "19:30",
-     "titel": "»Was würde Helmut Schmidt dazu sagen?«",
-     "url": "https://www.elbphilharmonie.de/de/programm/was-wurde-helmut-schmidt-dazu-sagen/29230"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "NDR Elbphilharmonie Orchester / Marek Janowski",
-     "url": "https://www.elbphilharmonie.de/de/programm/ndr-elbphilharmonie-orchester-marek-janowski/27836"
+     "zeit": "16:00",
+     "titel": "Vsevolod Zavidov, Klavier",
+     "url": "https://www.elbphilharmonie.de/de/programm/vsevolod-zavidov-klavier/27957"
     },
     {
      "zeit": "20:00",
-     "titel": "Decoder Ensemble",
-     "url": "https://www.elbphilharmonie.de/de/programm/decoder-ensemble/28432"
+     "titel": "Utopia / Daniel Lozakovich / Teodor Currentzis",
+     "url": "https://www.elbphilharmonie.de/de/programm/utopia-daniel-lozakovich-teodor-currentzis/27954"
     },
     {
      "zeit": "20:00",
-     "titel": "Enemy & Émile Parisien",
-     "url": "https://www.elbphilharmonie.de/de/programm/enemy-emile-parisien/28996"
+     "titel": "Purcell: The Fairy Queen",
+     "url": "https://www.elbphilharmonie.de/de/programm/purcell-the-fairy-queen/29154"
+    },
+    {
+     "zeit": "20:30",
+     "titel": "Alessandro Cortini",
+     "url": "https://www.elbphilharmonie.de/de/programm/alessandro-cortini/27969"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
@@ -358,14 +362,19 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Marat/Sade",
-     "url": "https://www.residenztheater.de/stuecke/detail/marat-sade"
+     "zeit": "15:00",
+     "titel": "Theaterführung",
+     "url": "https://www.residenztheater.de/stuecke/detail/theaterfuehrung"
     },
     {
      "zeit": "19:30",
-     "titel": "Munich Machine",
-     "url": "https://www.residenztheater.de/stuecke/detail/munich-machine"
+     "titel": "Die Dreigroschenoper",
+     "url": "https://www.residenztheater.de/stuecke/detail/die-dreigroschenoper"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Reigen. Variationen",
+     "url": "https://www.residenztheater.de/stuecke/detail/reigen-variationen"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
@@ -376,11 +385,11 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Mythen, Misogynie, Medien"
+     "titel": "40 Jahre Griechische Filmwoche"
     },
     {
      "zeit": "20:00",
-     "titel": "Schubert in Paradise"
+     "titel": "(Münchner) Verkehr"
     }
    ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
@@ -390,14 +399,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Echtzeitalter",
-     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/echtzeitalter"
+     "zeit": "20:00",
+     "titel": "Salon Sonnenberg #8 Konzert",
+     "url": "https://www.muenchner-volkstheater.de/programm/extra/salon-sonnenberg-8"
     },
     {
      "zeit": "20:00",
-     "titel": "Tide",
-     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/tide"
+     "titel": "Vandalisbin Konzert",
+     "url": "https://www.muenchner-volkstheater.de/programm/extra/vandalisbin"
     }
    ],
    "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
@@ -455,14 +464,19 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Schachnovelle",
-     "url": "https://www.burgtheater.at/veranstaltungen/schachnovelle/2026-11-13"
+     "zeit": "19:00",
+     "titel": "Wir sind noch einmal davongekommen",
+     "url": "https://www.burgtheater.at/veranstaltungen/wir-sind-noch-einmal-davongekommen/2026-11-14"
     },
     {
-     "zeit": "20:00",
-     "titel": "Der eingebildete Kranke",
-     "url": "https://www.burgtheater.at/veranstaltungen/der-eingebildete-kranke/2026-11-13"
+     "zeit": "19:00",
+     "titel": "Merlin oder das wüste Land",
+     "url": "https://www.burgtheater.at/veranstaltungen/merlin-oder-das-wueste-land/2026-11-14"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Puls!",
+     "url": "https://www.burgtheater.at/veranstaltungen/puls/2026-11-14"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
@@ -472,19 +486,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "FRÄULEIN ELSE",
-     "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
-    },
-    {
      "zeit": "19:30",
-     "titel": "ANTHROPOLOGIE",
-     "url": "https://www.volkstheater.at/spielstaetten/volkstheater-bezirke/vz-brigittenau"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "DAS MONSTER",
-     "url": "https://www.volkstheater.at/spielstaetten/rote-bar"
+     "titel": "NA GUT, DANN ACTION!",
+     "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
     }
    ],
    "quelle": "https://www.volkstheater.at/spielplan/",
@@ -506,63 +510,48 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "La Fille du régiment",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/la-fille-du-regiment/2026-11-13/"
-    },
-    {
-     "titel": "Abo 8",
-     "url": "https://www.wiener-staatsoper.at/kalender/detail/fin-de-partie/2025-10-03/"
+     "titel": "Ein Fanboy wird Gott",
+     "url": "https://www.wiener-staatsoper.at/magazin/detail/ein-fanboy-wird-gott/"
     }
    ],
-   "quelle": "https://www.wiener-staatsoper.at/kalender/2026/november/",
-   "format": "html-datum"
+   "quelle": "https://www.wiener-staatsoper.at/",
+   "format": "html-time"
   },
   "w-vo": {
    "status": "ok",
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Die Fledermaus",
-     "url": "https://www.volksoper.at/produktion/die-fledermaus-1990.1014435484.de.html"
+     "titel": "Chicago",
+     "url": "https://www.volksoper.at/produktion/chicago-2025.1013877053.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
    "format": "html-time"
   },
   "w-tadw": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "00:00",
-     "titel": "Bravissimo!Eine abenteuerliche Entdeckungsreise durch das Theater an der Wien"
-    }
-   ],
-   "quelle": "https://www.theater-wien.at/de/home",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.theater-wien.at/spielplan -> 404",
+    "https://www.theater-wien.at/programm -> 404",
+    "https://www.theater-wien.at/kalender -> 404",
+    "https://www.theater-wien.at/termine -> 404",
+    "https://www.theater-wien.at/konzerte -> 404"
+   ]
   },
   "w-kh": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "13:00",
-     "titel": "Wiener Konzerthaus Backstage",
-     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-konzerthaus-backstage/64439"
-    },
-    {
-     "zeit": "14:00",
-     "titel": "Wiener Konzerthaus Backstage",
-     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-konzerthaus-backstage/64440"
+     "zeit": "19:30",
+     "titel": "Wiener KammerOrchester / Daniel Ottensamer / de Vriend",
+     "url": "https://ticket.konzerthaus.at/de/buyingflow/tickets/15222/24639/"
     },
     {
      "zeit": "19:30",
-     "titel": "Il Suonar Parlante Orchestra / Ghielmi",
-     "url": "https://konzerthaus.at/de/programm-und-karten/il-suonar-parlante-orchestra-ghielmi/63832"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Vincent Dubois, Orgel",
-     "url": "https://konzerthaus.at/de/programm-und-karten/vincent-dubois-orgel/63953"
+     "titel": "Mariam Batsashvili",
+     "url": "https://konzerthaus.at/de/programm-und-karten/mariam-batsashvili/63894#important-info"
     }
    ],
    "quelle": "https://konzerthaus.at/de/programm-und-karten",
@@ -580,14 +569,107 @@
    ]
   },
   "w-sym": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Emelyanychev, Kopatchinskaja ・ Schostakowitsch, Beethoven",
+     "url": "https://www.wienersymphoniker.at/index.php/konzert/emelyanychev-kopatchinskaja-schostakowitsch-beethoven-14-11-2026"
+    }
+   ],
+   "quelle": "https://www.wienersymphoniker.at/kalender",
+   "format": "html-time"
+  },
+  "f-sf": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Kleiner Mann - was nun?",
+     "url": "https://www.schauspielfrankfurt.de/spielplan/kalender/kleiner-mann---was-nun/3108/"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Zwischen Welten",
+     "url": "https://www.schauspielfrankfurt.de/spielplan/kalender/zwischen-welten-11140/3279/"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Der Abend vor dem Danach (UA)",
+     "url": "https://www.schauspielfrankfurt.de/spielplan/kalender/der-abend-vor-dem-danach-ua/3249/"
+    }
+   ],
+   "quelle": "https://www.schauspielfrankfurt.de/spielplan",
+   "format": "microdata"
+  },
+  "f-mou": {
    "status": "fehler",
    "grund": "geladen, aber keine Termindaten erkannt",
    "versuche": [
-    "https://www.wienersymphoniker.at/spielplan -> 404",
-    "https://www.wienersymphoniker.at/de/spielplan -> 404",
-    "https://www.wienersymphoniker.at/programm -> 404",
-    "https://www.wienersymphoniker.at/termine -> 404",
-    "https://www.wienersymphoniker.at/konzerte -> 404"
+    "https://www.mousonturm.de/spielplan -> 404",
+    "https://www.mousonturm.de/de/spielplan -> 404",
+    "https://www.mousonturm.de/programm -> 404",
+    "https://www.mousonturm.de/de/programm -> 404",
+    "https://www.mousonturm.de/kalender -> 404",
+    "https://www.mousonturm.de/de/kalender -> 404"
+   ]
+  },
+  "f-et": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.english-theatre.org/spielplan -> 404",
+    "https://www.english-theatre.org/de/spielplan -> 404",
+    "https://www.english-theatre.org/programm -> 404",
+    "https://www.english-theatre.org/de/programm -> 404",
+    "https://www.english-theatre.org/kalender -> 404",
+    "https://www.english-theatre.org/de/kalender -> 404"
+   ]
+  },
+  "f-op": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.oper-frankfurt.de/programm -> 404",
+    "https://www.oper-frankfurt.de/de/programm -> 404",
+    "https://www.oper-frankfurt.de/kalender -> 404",
+    "https://www.oper-frankfurt.de/de/kalender -> 404",
+    "https://www.oper-frankfurt.de/termine -> 404",
+    "https://www.oper-frankfurt.de/konzerte -> 404"
+   ]
+  },
+  "f-ao": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "18:30",
+     "titel": "Kienzles Klassik",
+     "url": "https://www.alteoper.de/de/programm/kienzles-klassik/18937"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Concertgebouworkest",
+     "url": "https://www.alteoper.de/de/programm/concertgebouworkest/18848"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Ensemble Modern",
+     "url": "https://www.alteoper.de/de/programm/ensemble-modern/18855"
+    }
+   ],
+   "quelle": "https://www.alteoper.de/de/programm",
+   "format": "html-datum"
+  },
+  "f-hr": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.hr-sinfonieorchester.de/spielplan -> 404",
+    "https://www.hr-sinfonieorchester.de/de/spielplan -> 404",
+    "https://www.hr-sinfonieorchester.de/programm -> 404",
+    "https://www.hr-sinfonieorchester.de/de/programm -> 404",
+    "https://www.hr-sinfonieorchester.de/kalender -> 404",
+    "https://www.hr-sinfonieorchester.de/de/kalender -> 404"
    ]
   },
   "b-nm": {
@@ -1037,7 +1119,7 @@
   "hh-amh": {
    "status": "keine",
    "ausstellungen": [],
-   "quelle": "https://amh.de/programm/veranstaltungskalender/",
+   "quelle": "https://amh.de/ausstellungen/alle-ausstellungen/",
    "format": "json-ld"
   },
   "hh-imm": {
@@ -1315,6 +1397,12 @@
      "von": "2026-06-20",
      "bis": "2027-02-07",
      "url": "https://www.mumok.at/ausstellungen/terminal-piece"
+    },
+    {
+     "titel": "Push and Pull: A Furniture Comedy",
+     "von": "2026-11-14",
+     "bis": "2027-04-04",
+     "url": "https://www.mumok.at/ausstellungen/push-and-pull"
     }
    ],
    "quelle": "https://www.mumok.at/ausstellungen/aktuell",
@@ -1444,6 +1532,233 @@
    "status": "keine",
    "ausstellungen": [],
    "quelle": "https://www.weltmuseumwien.at/ausstellungen",
+   "format": "html-zeitraum"
+  },
+  "f-st": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Maria Magdalena. Sin. Pray. Love.",
+     "von": "2026-09-17",
+     "bis": "2027-01-17",
+     "url": "https://www.staedelmuseum.de/de/maria-magdalena"
+    },
+    {
+     "titel": "Elmgreen & Dragset. Stillleben mit Gemüse",
+     "von": "2026-05-20",
+     "bis": "2027-01-17",
+     "url": "https://www.staedelmuseum.de/de/elmgreen-dragset"
+    }
+   ],
+   "quelle": "https://www.staedelmuseum.de/de/ausstellungen-programm",
+   "format": "html-zeitraum"
+  },
+  "f-sch": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Anna Hulačová",
+     "bis": "2027-01-10"
+    },
+    {
+     "titel": "Leonor Fini",
+     "bis": "2027-02-21"
+    }
+   ],
+   "quelle": "https://www.schirn.de/",
+   "format": "html-zeitraum"
+  },
+  "f-mmk": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Ausstellungsdaten erkannt",
+   "versuche": [
+    "https://www.mmk.art/ausstellungen -> 404",
+    "https://www.mmk.art/ausstellungen/aktuell -> 404",
+    "https://www.mmk.art/exhibitions -> 404",
+    "https://www.mmk.art/programm -> 404"
+   ]
+  },
+  "f-hmf": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Die Welt im Geld. Globale Ereignisse im Spiegel Frankfurter Finanzobjekte",
+     "bis": "2027-01-31",
+     "url": "https://historisches-museum-frankfurt.de/de/ausstellungen/welt-im-geld"
+    }
+   ],
+   "quelle": "https://historisches-museum-frankfurt.de/de/",
+   "format": "html-zeitraum"
+  },
+  "f-sen": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Secret Service: Frauen in der Naturforschung",
+     "von": "2026-09-25",
+     "bis": "2027-10-31",
+     "url": "https://museumfrankfurt.senckenberg.de/de/ausstellungen/sonderausstellungen/secret-service-frauen-in-der-naturforschung/"
+    }
+   ],
+   "quelle": "https://museumfrankfurt.senckenberg.de/de/ausstellungen/alle-ausstellungen/",
+   "format": "html-zeitraum"
+  },
+  "f-jm": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Follow the Function?",
+     "von": "2025-12-18",
+     "bis": "2026-11-29"
+    },
+    {
+     "titel": "Ostend - Blick in ein Jüdisches Viertel",
+     "von": "2026-04-26",
+     "bis": "2026-11-29"
+    },
+    {
+     "titel": "Armin Stern: Maler und Zionist",
+     "von": "2026-03-26",
+     "bis": "2027-01-03"
+    }
+   ],
+   "quelle": "https://www.juedischesmuseum.de/programm",
+   "format": "html-zeitraum"
+  },
+  "f-wkm": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "The Seruya Archive. Studies of the Wafuranki",
+     "von": "2026-11-13",
+     "bis": "2027-02-14",
+     "url": "https://www.weltkulturenmuseum.de/de/ausstellungen/The-Seruya-Archive"
+    }
+   ],
+   "quelle": "https://www.weltkulturenmuseum.de/de/ausstellungen/",
+   "format": "html-zeitraum"
+  },
+  "f-mak": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Civic City: Design, Poetik und Widerstand in Relation. Planetarische Demokratie angesichts des globalen Imperialismus",
+     "von": "2026-11-08",
+     "bis": "2027-02-14",
+     "url": "https://www.museumangewandtekunst.de/de/besuch/ausstellungen/civic-city-design-poetik-und-widerstand-in-relation/"
+    },
+    {
+     "titel": "Adler, Orden, Wahlurne. Redesigning Democratic Representation",
+     "von": "2026-08-28",
+     "bis": "2027-02-21",
+     "url": "https://www.museumangewandtekunst.de/de/besuch/ausstellungen/adler-orden-wahlurne-redesigning-democratic-representation/"
+    },
+    {
+     "titel": "亞 歐堂 meet asian art: Shibui. Eine Ästhetik jenseits kultureller Grenzen",
+     "von": "2026-11-12",
+     "bis": "2027-08-15",
+     "url": "https://www.museumangewandtekunst.de/de/besuch/ausstellungen/meet-asian-art-shibui-eine-kultur-jenseits-der-grenzen/"
+    }
+   ],
+   "quelle": "https://www.museumangewandtekunst.de/",
+   "format": "html-zeitraum"
+  },
+  "f-lh": {
+   "status": "keine",
+   "ausstellungen": [],
+   "quelle": "https://www.liebieghaus.de/de/ausstellungen",
+   "format": "html-zeitraum"
+  },
+  "f-dam": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "DAM on Tour in Coburg: Architecture & Energy.",
+     "von": "2026-10-22",
+     "bis": "2026-11-29",
+     "url": "https://dam-online.de/veranstaltung/dam-on-tour-in-coburg-architecture-energy/"
+    },
+    {
+     "titel": "DIE LANGE BANK im Stadtraum",
+     "von": "2023-10-10",
+     "bis": "2026-12-31",
+     "url": "https://dam-online.de/veranstaltung/die-lange-bank-installation-auf-der-hauptwache/"
+    },
+    {
+     "titel": "„behind the scenes of the poorest neighbourhoods“ – Hinter den Kulissen der London Slums um 1870",
+     "von": "2026-08-15",
+     "bis": "2026-12-31",
+     "url": "https://dam-online.de/veranstaltung/behind-the-scenes-of-the-poorest-neighbourhoods-hinter-den-kulissen-der-london-slums-um-1870/"
+    },
+    {
+     "titel": "MORE IS NOW! Neue Tschechische Architektur + Restaurierung des Hauses Tugendhat",
+     "von": "2026-09-19",
+     "bis": "2027-01-17",
+     "url": "https://dam-online.de/veranstaltung/more-is-now-neue-tschechische-architektur-restaurierung-der-villa-tugendhat/"
+    },
+    {
+     "titel": "Aufmachen! Rethinking High-Rises",
+     "von": "2026-10-17",
+     "bis": "2027-01-17",
+     "url": "https://dam-online.de/veranstaltung/aufmachen-rethinking-high-rises/"
+    },
+    {
+     "titel": "Too Hot – Heiße Städte, Neue Wege",
+     "von": "2026-06-20",
+     "bis": "2027-02-07",
+     "url": "https://dam-online.de/veranstaltung/too-hot/"
+    },
+    {
+     "titel": "DAM on Tour in Wien: ARCHTEKTURBAUKÄSTEN 1890-1990. Die große Mitspielausstellung",
+     "von": "2026-10-07",
+     "bis": "2027-03-14",
+     "url": "https://dam-online.de/veranstaltung/dam-on-tour-in-wien-archtekturbaukaesten-1890-1990-die-grosse-mitspielausstellung/"
+    },
+    {
+     "titel": "BEST HIGH-RISES. Internationaler Hochhauspreis 2026/27",
+     "von": "2026-11-05",
+     "bis": "2027-04-04",
+     "url": "https://dam-online.de/veranstaltung/best-high-rises-2026-27/"
+    }
+   ],
+   "quelle": "https://dam-online.de/programm/ausstellungen/",
+   "format": "json-ld"
+  },
+  "f-dff": {
+   "status": "fehler",
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.dff.film/ausstellungen/ -> robots.txt verbietet Abruf",
+    "https://www.dff.film/ausstellungen -> robots.txt verbietet Abruf",
+    "https://www.dff.film/de/ausstellungen -> robots.txt verbietet Abruf",
+    "https://www.dff.film/ausstellungen/aktuell -> robots.txt verbietet Abruf",
+    "https://www.dff.film/exhibitions -> robots.txt verbietet Abruf",
+    "https://www.dff.film/en/exhibitions -> robots.txt verbietet Abruf"
+   ]
+  },
+  "f-mfk": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Design-Ikonen der Mediengeschichte",
+     "von": "2026-07-01",
+     "bis": "2026-12-31",
+     "url": "https://www.mfk-frankfurt.de/ausstellung-design-ikonen-der-mediengeschichte/"
+    },
+    {
+     "titel": "Samizdat: Worte der Freiheit",
+     "von": "2026-08-20",
+     "bis": "2027-01-24",
+     "url": "https://www.mfk-frankfurt.de/ausstellung-samizdat-worte-der-freiheit-in-der-tschechoslowakei"
+    },
+    {
+     "titel": "Familienbande. How to Family",
+     "von": "2026-10-22",
+     "bis": "2028-02-27",
+     "url": "https://www.mfk-frankfurt.de/familienbande/"
+    }
+   ],
+   "quelle": "https://www.mfk-frankfurt.de/ausstellungen/",
    "format": "html-zeitraum"
   }
  }

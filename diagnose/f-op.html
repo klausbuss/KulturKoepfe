@@ -1,0 +1,900 @@
+<!-- https://oper-frankfurt.de/de/spielplan -->
+<!DOCTYPE html>
+<html lang="de">
+	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+	    <meta charset="utf-8">
+	    <!--
+	    	e-publisher:stage - Das perfekte Bühnen-CMS
+    	//-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="Oper, Frankfurt, Staatsoper, Main, Karten, Veranstaltungen, Vorstellungen, Premieren" />
+		<meta name="description" content="Offizielle Homepage der Oper Frankfurt" />
+		<meta name="date" content="T+01:00" />
+		<meta name="author" content="Oper Frankfurt" />
+		<meta name="robots" content="index,follow" />
+		<meta name="design" content="Opak Werbeagentur GmbH" />
+		<meta name="generator" content="e-publisher:stage from 3pc, http://e-publisher.de" />
+	 	<link href="/includes/css/slick.css" media="all" type="text/css" rel="stylesheet">
+	 	<link href="/includes/css/mediaelementplayer.css?cache=1" media="all" type="text/css" rel="stylesheet">
+	 	<link href="/includes/css/mejs-skins.css" media="all" type="text/css" rel="stylesheet">
+	 	<link href="/includes/css/slick-lightbox.css" media="all" type="text/css" rel="stylesheet">
+	    <link href="/includes/css/main.css?cache=1794325300" media="all" type="text/css" rel="stylesheet">
+	    <link href="/includes/css/print.css?cache=1" media="print" type="text/css" rel="stylesheet">
+	    <!--<link rel="stylesheet" href="https://i.icomoon.io/public/ea1a62d033/operFrankfurt/style.css?date=1794655321">-->
+	    <!--[if IE 9]><link href="/includes/css/ie9.css" media="all" type="text/css" rel="stylesheet"><![endif]-->
+		
+					<link rel="alternate" hreflang="de" href="/de/spielplan/" />
+					<link rel="alternate" hreflang="en" href="/en/season-calendar/" />
+					<link rel="alternate" hreflang="x-default" href="/de/spielplan/" />
+								<link rel="apple-touch-icon" sizes="57x57" href="/includes/favicons/apple-touch-icon-57x57.png?v=2">
+		<link rel="apple-touch-icon" sizes="60x60" href="/includes/favicons/apple-touch-icon-60x60.png?v=2">
+		<link rel="apple-touch-icon" sizes="72x72" href="/includes/favicons/apple-touch-icon-72x72.png?v=2">
+		<link rel="apple-touch-icon" sizes="76x76" href="/includes/favicons/apple-touch-icon-76x76.png?v=2">
+		<link rel="apple-touch-icon" sizes="114x114" href="/includes/favicons/apple-touch-icon-114x114.png?v=2">
+		<link rel="apple-touch-icon" sizes="120x120" href="/includes/favicons/apple-touch-icon-120x120.png?v=2">
+		<link rel="apple-touch-icon" sizes="144x144" href="/includes/favicons/apple-touch-icon-144x144.png?v=2">
+		<link rel="apple-touch-icon" sizes="152x152" href="/includes/favicons/apple-touch-icon-152x152.png?v=2">
+		<link rel="apple-touch-icon" sizes="180x180" href="/includes/favicons/apple-touch-icon-180x180.png?v=2">
+		<link rel="icon" type="image/png" href="/includes/favicons/favicon-32x32.png?v=2" sizes="32x32">
+		<link rel="icon" type="image/png" href="/includes/favicons/favicon-194x194.png?v=2" sizes="194x194">
+		<link rel="icon" type="image/png" href="/includes/favicons/favicon-96x96.png?v=2" sizes="96x96">
+		<link rel="icon" type="image/png" href="/includes/favicons/android-chrome-192x192.png?v=2" sizes="192x192">
+		<link rel="icon" type="image/png" href="/includes/favicons/favicon-16x16.png?v=2" sizes="16x16">
+		<link rel="manifest" href="/includes/favicons/manifest.json?v=2">
+		<!--<link rel="mask-icon" href="/includes/favicons/safari-pinned-tab.svg?v=2" color="#5bbad5">-->
+		<link rel="mask-icon" href="/includes/favicons/safari-pinned-tab.svg?v=2">
+		<link rel="shortcut icon" href="/includes/favicons/favicon.ico?v=2">
+		<meta name="apple-mobile-web-app-title" content="Oper Frankfurt">
+		<meta name="application-name" content="Oper Frankfurt">
+		<meta name="msapplication-TileColor" content="#603cba">
+		<meta name="msapplication-TileImage" content="/includes/favicons/mstile-144x144.png?v=2">
+		<meta name="msapplication-config" content="/includes/favicons/browserconfig.xml?v=2">
+		<meta name="theme-color" content="#ffffff">		
+		<style type="text/css">
+	        a:hover, a:focus, a:hover h4, a:focus h4 {color: #D51130;}
+			.season-color, .active, .ui-datepicker-today, .btn-link:hover, .btn-link:focus, .event  {background-color: #D51130; color: #FFFFFF}
+	        .highlight {background-color: #D51130; color: #FFFFFF; box-shadow: 10px 0px 0 #D51130, -10px 0px 0 #D51130;}
+	        .season-text, h1, a[aria-expanded="true"] .panel-title, a[aria-expanded="true"], .map a:hover, .map a:focus {color: #D51130}
+	        .season-border, .map a:hover, .map a:focus {border-color: #D51130}
+			.lang-selector .selected a, .lang-selector li a:hover, .lang-selector li a:focus {border-color: #FFFFFF; background-color: transparent}
+			#nav-main .menu-subgroup li:not(:last-child), #nav-main .menu-subgroup ul li:first-child {border-color: #D51130}
+	        .season-hover-color a:hover, .season-hover-color a:focus, .ui-datepicker-current-day {background-color: #D51130; color: #FFFFFF}
+	        .season-hover-overlay:hover .imgcontainer:before, .season-hover-overlay:focus .imgcontainer:before, .mask {background-color: rgba(213,17,48, 0.88)}
+	        .season-hover-overlay:hover, .season-hover-overlay:focus {color: #D51130}
+	        .season-hover-text:hover, .season-hover-text:focus, .on .icon-, .clickout:hover, .clickout:focus {color: #D51130}
+			
+			#h-slider-calendar .months > li *:hover { color:#FFFFFF; background-color:#D51130; }
+			#h-slider-calendar .months > li.active * { color:#FFFFFF; background-color:#D51130; }
+			#h-slider-calendar .passive:hover { color:#D51130!important; background-color:#FFFFFF!important; }
+			.not-content-text { color:#000000; }
+
+			@media screen and (min-width: 769px) {
+				#nav-main {color: #D51130}
+				.lang-selector .selected a, .lang-selector li a:hover, .lang-selector li a:focus {border-color: #D51130; color: #D51130; background-color: transparent}
+			}
+	        @media screen and (max-width: 769px) {
+				.nav-inner, .ui-datepicker-title, .ui-datepicker-prev, .ui-datepicker-next {color: #FFFFFF; background-color: #D51130}
+			}
+	    </style>
+			<title>Spielplan - Oper Frankfurt</title>
+		<script type="text/javascript">
+			var dates_available = new Array("2026-11-14","2026-11-15","2026-11-16","2026-11-20","2026-11-21","2026-11-22","2026-11-26","2026-11-27","2026-11-29","2026-12-01","2026-12-03","2026-12-05","2026-12-06","2026-12-07","2026-12-08","2026-12-09","2026-12-10","2026-12-11","2026-12-12","2026-12-13","2026-12-14","2026-12-15","2026-12-16","2026-12-17","2026-12-18","2026-12-19","2026-12-20","2026-12-21","2026-12-23","2026-12-25","2026-12-26","2026-12-27","2026-12-28","2026-12-30","2026-12-31","2027-01-01","2027-01-02","2027-01-03","2027-01-05","2027-01-06","2027-01-07","2027-01-08","2027-01-09","2027-01-10","2027-01-12","2027-01-13","2027-01-15","2027-01-16","2027-01-17","2027-01-18","2027-01-20","2027-01-21","2027-01-22","2027-01-23","2027-01-24","2027-01-25","2027-01-28","2027-01-29","2027-01-30","2027-01-31","2027-02-04","2027-02-05","2027-02-06","2027-02-07","2027-02-09","2027-02-10","2027-02-12","2027-02-13","2027-02-14","2027-02-15","2027-02-18","2027-02-19","2027-02-20","2027-02-21","2027-02-22","2027-02-24","2027-02-26","2027-02-27","2027-02-28","2027-03-03","2027-03-04","2027-03-05","2027-03-06","2027-03-07","2027-03-09","2027-03-10","2027-03-11","2027-03-13","2027-03-14","2027-03-15","2027-03-16","2027-03-20","2027-03-21","2027-03-22","2027-03-23","2027-03-25","2027-03-26","2027-03-27","2027-03-28","2027-03-29","2027-04-02","2027-04-03","2027-04-04","2027-04-08","2027-04-10","2027-04-11","2027-04-12","2027-04-13","2027-04-17","2027-04-18","2027-04-20","2027-04-21","2027-04-22","2027-04-24","2027-04-25","2027-04-26","2027-04-27","2027-04-28","2027-04-29","2027-04-30","2027-05-01","2027-05-02","2027-05-03","2027-05-04","2027-05-06","2027-05-07","2027-05-08","2027-05-09","2027-05-10","2027-05-12","2027-05-13","2027-05-14","2027-05-15","2027-05-16","2027-05-17","2027-05-18","2027-05-20","2027-05-22","2027-05-23","2027-05-25","2027-05-26","2027-05-27","2027-05-29","2027-05-30","2027-05-31","2027-06-01","2027-06-02","2027-06-05","2027-06-06","2027-06-07","2027-06-10","2027-06-11","2027-06-12","2027-06-13","2027-06-14","2027-06-16","2027-06-17","2027-06-18","2027-06-19","2027-06-20","2027-06-21","2027-06-22","2027-06-23","2027-06-24","2027-06-25","2027-06-26","2027-06-27");		</script>
+	</head>
+	<body>
+	    <div id="page">
+	        <div class="container">
+				<header>
+				    <div class="header-inner">
+				        <div id="logo"><a href="/de"><span class="element-invisible">Oper Frankfurt</span><img src="/media/oper-logo.svg" alt="Oper Frankfurt"></a></div>
+				        <div class="navbar" role="navigation">
+				            <button id="menu-toggle" type="button" class="btn-toggle" data-toggle="dropdown" data-target="#nav-main" aria-haspopup="true" aria-expanded="false"><span class="icon-">&#xe901;</span></button>
+				            <!--  language selection -->
+				            <div class="lang-selector">
+				                <ul class="nav">
+									<!--<li><a href="/de">Home</a></li>-->
+									
+												<li><a href="/en/season-calendar/">English</a></li>
+												<li class="selected"><a href="#">Deutsch</a></li>
+															                </ul>
+				            </div>
+				            <!-- search field -->
+				            <div class="search-container">
+				                <input title="Suche" type="text" name="search" placeholder="" id="srch-term" value="" class="season-color">
+				                <button id="srch-submit" type="submit"><span class="icon-">&#xe902;</span></button>
+				            </div>
+				            <button id="calendar-toggle" type="button" class="btn-toggle" data-toggle="dropdown" data-target="#h-calendar" aria-haspopup="true" aria-expanded="false"><span class="icon-">&#xe900;</span></button>
+				            <div id="h-calendar" class="datepicker season-hover-color"></div>
+				        </div>
+				    </div>
+				    <div class="row">
+					    						<div class="slider-container col-sm-9 col-is-12" style="height: 295px;">
+					        <span class="title">Saison 2026/27</span>
+					        <div class="slick">
+								
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/">
+													<img src="/media/image/slider/523-slideraussenfassadebucher.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Kirsten Bucher</figcaption>-->
+												</a>
+											</figure>
+										
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/haensel-und-gretel_5/">
+													<img src="/media/image/slider/527-haenselwa26slider.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Barbara Aumüller</figcaption>-->
+												</a>
+											</figure>
+										
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/le-roi-arthus/">
+													<img src="/media/image/slider/525-sliderroivorab.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Barbara Aumüller</figcaption>-->
+												</a>
+											</figure>
+										
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/ottone/">
+													<img src="/media/image/slider/524-ottoneslidervorab.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Xiomara Bender </figcaption>-->
+												</a>
+											</figure>
+										
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/cosi-fan-tutte_4/">
+													<img src="/media/image/slider/517-cosiwa26slider.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Barbara Aumüller</figcaption>-->
+												</a>
+											</figure>
+										
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/die-nacht-vor-weihnachten_4/">
+													<img src="/media/image/slider/497-dienachtsliderwa2023.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Barbara Aumüller</figcaption>-->
+												</a>
+											</figure>
+										
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/tannhaeuser-2/">
+													<img src="/media/image/slider/498-tannhaeusersliderneu.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Barbara Aumüller</figcaption>-->
+												</a>
+											</figure>
+										
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/salome_5/">
+													<img src="/media/image/slider/499-salome04sliderneu.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Monika Rittershaus</figcaption>-->
+												</a>
+											</figure>
+										
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/alcina_2/">
+													<img src="/media/image/slider/500-slideralcinaneu3.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Monika Rittershaus</figcaption>-->
+												</a>
+											</figure>
+										
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/das-rheingold_3/">
+													<img src="/media/image/slider/506-sliderrheingoldalt.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Monika Rittershaus</figcaption>-->
+												</a>
+											</figure>
+										
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/die-walkuere_3/">
+													<img src="/media/image/slider/501-diewalkuere56slider.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Barbara Aumüller </figcaption>-->
+												</a>
+											</figure>
+										
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/le-postillon-de-lonjumeau_2/">
+													<img src="/media/image/slider/503-postillonslider.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Barbara Aumüller</figcaption>-->
+												</a>
+											</figure>
+										
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/aida_3/">
+													<img src="/media/image/slider/504-aidaslidervorab.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Barbara Aumüller</figcaption>-->
+												</a>
+											</figure>
+										
+											<figure>
+												<a href="https://oper-frankfurt.de/de/spielplan/dialogues-des-carmelites_2/">
+													<img src="/media/image/slider/505-dialoguesslidervorab.jpg" alt="">
+													<!--<figcaption><span class="copyright-symbol">&copy;</span> Barbara Aumüller </figcaption>-->
+												</a>
+											</figure>
+															        </div>
+					    </div>
+					</div>
+				</header>
+	            <div class="main-content row">
+					<nav id="nav-main" class="col-sm-3 season-hover-color" role="navigation">
+						<div class="nav-inner">
+							<div class="lang-selector">
+							    <ul class="nav">
+									<li ><a href="/en/" target="_self">English</a></li>							    </ul>
+							</div>
+							<ul class="menu-subgroup">
+								<li class="active"><a href="/de/spielplan/" target="_self">Spielplan</a></li><li class=""><a href="/de/premieren/" target="_self">Premieren</a></li><li class=""><a href="/de/wiederaufnahmen/" target="_self">Wieder­aufnahmen</a></li>
+														<li class="menu-collapsed"><a href="/de/liederabende/" target="_self">Liederabende</a>
+															<button type="button" class="btn toggle-btn"></button>
+									        				<ul>
+													<li ><a href="/de/liederabende/liederabende/">Liederabende</a></li>
+									        				</ul>
+														</li>
+													
+														<li class="menu-collapsed"><a href="/de/konzerte/" target="_self">Konzerte</a>
+															<button type="button" class="btn toggle-btn"></button>
+									        				<ul>
+													<li ><a href="/de/konzerte/museumskonzerte/">Museumskonzerte</a></li><li ><a href="/de/konzerte/kammermusik/">Kammermusik </a></li><li ><a href="/de/konzerte/konzerte-der-paul-hindemith-orchesterakademie/">Konzerte der Paul-Hindemith-Orchesterakademie</a></li><li ><a href="/de/konzerte/soireen-des-opernstudios/">Soireen des Opernstudios</a></li><li ><a href="/de/konzerte/happy-new-ears/">Happy New Ears</a></li>
+									        				</ul>
+														</li>
+													
+														<li class="menu-collapsed"><a href="/de/veranstaltungen/" target="_self">Ver&shy;an&shy;stal&shy;tung&shy;en</a>
+															<button type="button" class="btn toggle-btn"></button>
+									        				<ul>
+													<li ><a href="/de/veranstaltungen/oper-extra/">Oper extra</a></li><li ><a href="/de/veranstaltungen/oper-im-dialog/">Oper im Dialog</a></li><li ><a href="/de/veranstaltungen/fuehrungen/">Führungen </a></li><li ><a href="/de/veranstaltungen/fuehrungen-abonnentinnen/">Führungen exklusiv für Abonnent*innen</a></li><li ><a href="/de/veranstaltungen/friedman-in-der-oper/">Friedman in der Oper</a></li><li ><a href="/de/veranstaltungen/flutlicht/">Flutlicht</a></li><li ><a href="/de/veranstaltungen/sneak-in/">Sneak in</a></li><li ><a href="/de/veranstaltungen/brueche/">Brüche</a></li><li ><a href="/de/veranstaltungen/silvesterfeier-in-der-oper-frankfurt/">Silvesterfeier </a></li>
+									        				</ul>
+														</li>
+													
+														<li class="menu-collapsed"><a href="/de/jetzt/" target="_self">JETZT! Junge Oper</a>
+															<button type="button" class="btn toggle-btn"></button>
+									        				<ul>
+													<li ><a href="/de/jetzt/fuer-kinder-und-familien/">Für Kinder </a></li><li ><a href="/de/jetzt/fur-jugendliche/">Für Jugendliche</a></li><li ><a href="/de/jetzt/fuer-erwachsene/">Für junge Leute</a></li><li ><a href="/de/jetzt/fuer-kitas-und-schulen/">Für Kitas und Schulen</a></li>
+									        				</ul>
+														</li>
+													
+														<li class="menu-collapsed"><a href="/de/ensemble-gaeste-teams/" target="_self">Ensemble / Gäste / Opernstudio / Mitarbeiter</a>
+															<button type="button" class="btn toggle-btn"></button>
+									        				<ul>
+													<li><a href="/de/ensemble-gaeste-teams/ensemble/" target="_self">Ensemble / Gäste</a></li><li><a href="/de/ensemble-gaeste-teams/regie/" target="_self">Produktions&shy;teams</a></li><li><a href="/de/ensemble-gaeste-teams/dirigenten/" target="_self">Dirigenten / Repetitoren</a></li><li><a href="/de/ensemble-gaeste-teams/opernstudio/" target="_self">Opernstudio</a></li><li><a href="/de/ensemble-gaeste-teams/das-opernteam/" target="_self">Theaterleitung</a></li><li><a href="/de/ensemble-gaeste-teams/kuenstlerischer-betrieb-oper/" target="_self">Künstlerischer Betrieb Oper</a></li><li><a href="/de/ensemble-gaeste-teams/staedtische-buehnen-frankfurt-gmbh/" target="_self">Städtische Bühnen Frankfurt GmbH</a></li>
+									        				</ul>
+														</li>
+													
+														<li class="menu-collapsed"><a href="/de/das-frankfurter-opern-und-museumsorchester/" target="_self">Orchester</a>
+															<button type="button" class="btn toggle-btn"></button>
+									        				<ul>
+													<li><a href="/de/das-frankfurter-opern-und-museumsorchester/orchester/" target="_self">Das Frankfurter Opern- und Museums&shy;orchester</a></li><li><a href="/de/das-frankfurter-opern-und-museumsorchester/generalmusikdirektor/" target="_self">General­musikdirektor</a></li><li><a href="/de/das-frankfurter-opern-und-museumsorchester/mitglieder-des-orchester/" target="_self">Mitglieder des Orchesters</a></li><li><a href="/de/das-frankfurter-opern-und-museumsorchester/paul-hindemith-orchesterakademie/" target="_self">Paul-Hindemith-Orchester­akademie</a></li><li><a href="/de/das-frankfurter-opern-und-museumsorchester/historie-des-orchesters/" target="_self">Historie des Orchesters</a></li><li><a href="/de/das-frankfurter-opern-und-museumsorchester/stellenangebote-des-orchesters/" target="_self">Stellen­angebote Orchester und Akademie</a></li>
+									        				</ul>
+														</li>
+													
+														<li class="menu-collapsed"><a href="/de/chor/" target="_self">Chor</a>
+															<button type="button" class="btn toggle-btn"></button>
+									        				<ul>
+													<li><a href="/de/chor/kinderchor/" target="_self">Kinderchor</a></li>
+									        				</ul>
+														</li>
+													
+														<li class="menu-collapsed"><a href="/de/presse/" target="_self">Presse</a>
+															<button type="button" class="btn toggle-btn"></button>
+									        				<ul>
+													<li><a href="/de/presse/kontakt/" target="_self">Kontakt</a></li><li><a href="/de/presse/pressemitteilungen/" target="_self">Presse­mitteilungen</a></li><li><a href="/de/presse/pressefotos/" target="_self">Pressefotos</a></li><li><a href="/de/presse/materialien/" target="_self">Materialien</a></li><li><a href="/de/presse/pressestimmen/" target="_self">Presse­stimmen</a></li>
+									        				</ul>
+														</li>
+													<li class=""><a href="/de/news/" target="_self">News</a></li><li class=""><a href="/de/umbesetzungen/" target="_self">Umbesetzungen</a></li>
+														<li class="menu-collapsed"><a href="/de/mediathek/" target="_self">Mediathek</a>
+															<button type="button" class="btn toggle-btn"></button>
+									        				<ul>
+													<li><a href="/de/mediathek/podcast/" target="_self">Kostümpodcast</a></li><li><a href="/de/mediathek/live-cd-dvd-serie-der-oper-frankfurt/" target="_self">CD / DVD-Serie der Oper Frankfurt</a></li>
+									        				</ul>
+														</li>
+													<li class=""><a href="/de/blog-1/" target="_blank">Blog</a></li>							</ul>
+							<ul class="menu-subgroup">
+								
+														<li class="menu-collapsed"><a href="/de/service/" target="_self">Service</a>
+															<button type="button" class="btn toggle-btn"></button>
+									        				<ul>
+													<li><a href="/de/service/gruppenreisen/" target="_self">Gruppenreisen</a></li><li><a href="/de/service/fuer-studierende-1/" target="_self">Für Studierende</a></li><li><a href="/de/service/newsletter/" target="_self">Newsletter</a></li><li><a href="/de/service/opern-fanshop/" target="_self">Fanshop</a></li><li><a href="/de/service/publikationen/" target="_self">Publikationen</a></li><li><a href="/de/service/vermietungen/" target="_self">Vermietungen</a></li><li><a href="/de/service/mediadaten/" target="_self">Mediadaten</a></li><li><a href="/de/service/historie/" target="_self">Zukunft und Historie der Städtischen Bühnen</a></li>
+									        				</ul>
+														</li>
+													
+														<li class="menu-collapsed"><a href="/de/abonnement/" target="_self">Abonnement</a>
+															<button type="button" class="btn toggle-btn"></button>
+									        				<ul>
+													<li><a href="/de/abonnement/uebersicht-serien/" target="_self">Übersicht Serien</a></li><li><a href="/de/abonnement/abonnement-bedingungen/" target="_self">Abonnement-Bedingungen / Information</a></li><li><a href="/de/abonnement/kontakt-abo-und-infoservice/" target="_self">Kontakt Abo-Service</a></li><li><a href="/de/abonnement/vorteile-auf-einen-blick/" target="_self">Opern-Abos: günstig, flexibel, exklusiv</a></li>
+									        				</ul>
+														</li>
+													
+														<li class="menu-collapsed"><a href="/de/patronatsverein-sektion-oper/" target="_self">Patronatsverein</a>
+															<button type="button" class="btn toggle-btn"></button>
+									        				<ul>
+													<li><a href="/de/patronatsverein-sektion-oper/operngala/" target="_self">Operngala</a></li>
+									        				</ul>
+														</li>
+													
+														<li class="menu-collapsed"><a href="/de/partner-und-spenden/" target="_self">Partner und Spenden</a>
+															<button type="button" class="btn toggle-btn"></button>
+									        				<ul>
+													<li><a href="/de/partner-und-spenden/unsere-partner/" target="_self">Unsere Partner</a></li><li><a href="/de/partner-und-spenden/partnerprogramm/" target="_self">Partner­ werden</a></li><li><a href="/de/partner-und-spenden/spenden/" target="_self">Spenden</a></li><li><a href="/de/partner-und-spenden/operngala/" target="_self">Operngala</a></li><li><a href="/de/partner-und-spenden/kooperationen/" target="_self">Kooperationen</a></li>
+									        				</ul>
+														</li>
+																				</ul>
+
+						</div>
+					</nav>
+	                <div class="main-body col-sm-9">
+						<div class="row">
+    <div class="main-innen col-sm-12">
+        <div class="content row">
+            <div class="col-sm-12">
+                <section>
+                    <h1>Spielplan</h1>
+                    <button class="btn-link btn-link-blank season-border season-text btn-print" onClick="window.print()">Drucken</button>
+                    <div id="h-slider-calendar">
+                        <div class="arrow prev season-text btn-link not-content-text">&#xe903;</div>
+                        <div class="arrow next season-text btn-link not-content-text">&#xe904;</div>
+                        <div class="ca-slider-container">
+                            <div class="year not-content-text" id="year1">2026</div><div class="year not-content-text" id="year2">2027</div><div class="ca-slider"><ul class="months"><li class="active"><a href="?datum=2026-11&amp;lang=100">Nov</a></li><li ><a href="?datum=2026-12&amp;lang=100">Dez</a></li></ul><ul class="months"><li ><a href="?datum=2027-01&amp;lang=100">Jan</a></li><li ><a href="?datum=2027-02&amp;lang=100">Feb</a></li><li ><a href="?datum=2027-03&amp;lang=100">Mär</a></li><li ><a href="?datum=2027-04&amp;lang=100">Apr</a></li><li ><a href="?datum=2027-05&amp;lang=100">Mai</a></li><li ><a href="?datum=2027-06&amp;lang=100">Jun</a></li><li style="display:none;" class="passiv"><a href="?datum=2027-07&amp;lang=100">Jul</a></li></ul></div>                        </div>
+                    </div>
+                    
+                                <section class="section-horizontal">
+							        
+                <p>Bitte beachten Sie die ge&auml;nderten <a href="/media/pdf/Servicezeiten_Feiertage_2026-27.pdf" target="_blank">Servicezeiten</a> zu Weihnachten und um den Jahreswechsel.</p>
+            
+						        </section>
+                                                <div class="repertoire">
+                        
+                    <div class="repertoire-element clearfix  repertoire-first-element">
+                        <a href="le-roi-arthus/?id_datum=4829" class="season-hover-text flex">
+                            <div class="col col-date w-10">Sa<span>14</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Le roi Arthus</h3>
+                                <h4>Ernest Chausson</h4>
+                                
+                                
+                                
+                                
+                                <span class="meta">18.00 Uhr, Opernhaus  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16109&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix  ">
+                        <a href="3-sinfoniekonzert_2/?id_datum=4762" class="season-hover-text flex">
+                            <div class="col col-date w-10">So<span>15</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>3. Sinfoniekonzert</h3>
+                                
+                                
+                                
+                                
+                                
+                                <span class="meta">11.00 Uhr, Alte Oper Frankfurt  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <a href="https://www.frankfurtticket.de/tickets/18113.76597" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix  ">
+                        <a href="familienworkshop/?id_datum=5167" class="season-hover-text flex">
+                            <div class="col col-date w-10">So<span>15</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Familienworkshop</h3>
+                                
+                                
+                                
+                                
+                                <div><span><em>H&auml;nsel und Gretel&nbsp;</em><br></span></div>
+                                <span class="meta">11.00 Uhr, Treffpunkt Opernpforte  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16582&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix  ">
+                        <a href="oper-fuer-kinder_6/?id_datum=5043" class="season-hover-text flex">
+                            <div class="col col-date w-10">So<span>15</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Oper für Kinder</h3>
+                                
+                                
+                                
+                                
+                                <div><span><em>Turandot</em><br />
+F&uuml;r Kinder ab 6 Jahren<br></span></div>
+                                <span class="meta">13.00 Uhr, Holzfoyer  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16413&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix extra-labels ">
+                        <a href="familienworkshop/?id_datum=4905" class="season-hover-text flex">
+                            <div class="col col-date w-10">So<span>15</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Familienworkshop</h3>
+                                
+                                
+                                
+                                
+                                <div><span><em>H&auml;nsel und Gretel </em><br />
+F&uuml;r Kinder ab 6 Jahren und (Gro&szlig;-)Eltern<br></span></div>
+                                <span class="meta">14.00 Uhr, Treffpunkt Opernpforte  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <span class="label label-blank">Restkarten</span> <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16452&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix extra-labels ">
+                        <a href="oper-fuer-kinder_6/?id_datum=5038" class="season-hover-text flex">
+                            <div class="col col-date w-10">So<span>15</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Oper für Kinder</h3>
+                                
+                                
+                                
+                                
+                                <div><span><em>Turandot</em><br />
+F&uuml;r Kinder ab 6 Jahren<br></span></div>
+                                <span class="meta">15.00 Uhr, Holzfoyer  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <span class="label label-blank">Restkarten</span> <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16412&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix  ">
+                        <a href="ottone/?id_datum=4820" class="season-hover-text flex">
+                            <div class="col col-date w-10">So<span>15</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Ottone</h3>
+                                <h4>Georg Friedrich Händel</h4>
+                                
+                                
+                                
+                                
+                                <span class="meta">18.00 Uhr, Opernhaus  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16107&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix  ">
+                        <a href="backstage-fuehrung-fuer-abonnentinnen/?id_datum=5142" class="season-hover-text flex">
+                            <div class="col col-date w-10">Mo<span>16</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Backstage-Führung für Abonnent*innen</h3>
+                                
+                                
+                                
+                                
+                                <div><span>Blick hinter die Kulissen<br></span></div>
+                                <span class="meta">17.00 Uhr, Treffpunkt Opernpforte  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix  ">
+                        <a href="3-sinfoniekonzert_2/?id_datum=4763" class="season-hover-text flex">
+                            <div class="col col-date w-10">Mo<span>16</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>3. Sinfoniekonzert</h3>
+                                
+                                
+                                
+                                
+                                
+                                <span class="meta">19.30 Uhr, Alte Oper Frankfurt  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <a href="https://www.frankfurtticket.de/tickets/18113.76606" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix  ">
+                        <a href="haensel-und-gretel_5/?id_datum=4836" class="season-hover-text flex">
+                            <div class="col col-date w-10">Fr<span>20</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Hänsel und Gretel</h3>
+                                <h4>Engelbert Humperdinck</h4>
+                                
+                                
+                                
+                                
+                                <span class="meta">19.00 Uhr, Opernhaus  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16017&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix  ">
+                        <a href="opernworkshop/?id_datum=4932" class="season-hover-text flex">
+                            <div class="col col-date w-10">Sa<span>21</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Opernworkshop </h3>
+                                
+                                
+                                
+                                
+                                <div><span><em>H&auml;nsel und Gretel</em><br></span></div>
+                                <span class="meta">14.00 Uhr, Treffpunkt Opernpforte  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16431&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix extra-labels ">
+                        <a href="ottone/?id_datum=4821" class="season-hover-text flex">
+                            <div class="col col-date w-10">Sa<span>21</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Ottone</h3>
+                                <h4>Georg Friedrich Händel</h4>
+                                
+                                
+                                
+                                
+                                <span class="meta">19.00 Uhr, Opernhaus  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            <span class="label label-decorated highlight">zum letzten Mal in dieser Spielzeit</span>
+                            <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16108&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix extra-labels ">
+                        <a href="oper-extra/?id_datum=4923" class="season-hover-text flex">
+                            <div class="col col-date w-10">So<span>22</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Oper extra</h3>
+                                
+                                
+                                
+                                
+                                <div><span><em>Un ballo in maschera</em><br></span></div>
+                                <span class="meta">11.00 Uhr, Holzfoyer  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <span class="label label-blank">Restkarten</span> <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16321&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix  ">
+                        <a href="kinderbetreuung/?id_datum=5135" class="season-hover-text flex">
+                            <div class="col col-date w-10">So<span>22</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Kinderbetreuung</h3>
+                                
+                                
+                                
+                                
+                                <div><span>F&uuml;r die Vorstellung <em>H&auml;nsel und Gretel </em>am 22. November&nbsp;<br />
+F&uuml;r Kinder von 3 bis 8 Jahren kostenpflichtig buchbar<br></span></div>
+                                <span class="meta">15.15 Uhr, Opernhaus  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16364&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix extra-labels ">
+                        <a href="haensel-und-gretel_5/?id_datum=4837" class="season-hover-text flex">
+                            <div class="col col-date w-10">So<span>22</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Hänsel und Gretel</h3>
+                                <h4>Engelbert Humperdinck</h4>
+                                
+                                
+                                
+                                
+                                <span class="meta">15.30 Uhr, Opernhaus  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            <span class="label label-decorated highlight">Mit Kinderbetreuung</span><span class="label label-decorated highlight">Oper für Familien</span>
+                            <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16018&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix  ">
+                        <a href="werkstaetten-fuehrung-fuer-abonnentinnen/?id_datum=5147" class="season-hover-text flex">
+                            <div class="col col-date w-10">Do<span>26</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Werkstätten-Führung für Abonnent*innen</h3>
+                                
+                                
+                                
+                                
+                                <div><span>Die Kunst des B&uuml;hnenbaus<br></span></div>
+                                <span class="meta">17.00 Uhr, Treffpunkt Opernpforte  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16340&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix  ">
+                        <a href="le-roi-arthus/?id_datum=4830" class="season-hover-text flex">
+                            <div class="col col-date w-10">Fr<span>27</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper"></strong><br>
+                                <h3>Le roi Arthus</h3>
+                                <h4>Ernest Chausson</h4>
+                                
+                                
+                                
+                                
+                                <span class="meta">19.00 Uhr, Opernhaus  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16110&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                    <div class="repertoire-element clearfix  ">
+                        <a href="le-roi-arthus/?id_datum=4831" class="season-hover-text flex">
+                            <div class="col col-date w-10">So<span>29</span></div>
+                            <div class="col col-element w-90">
+                                <strong class="u-upper">1. Advent</strong><br>
+                                <h3>Le roi Arthus</h3>
+                                <h4>Ernest Chausson</h4>
+                                
+                                
+                                
+                                
+                                <span class="meta">18.00 Uhr, Opernhaus  </span>
+                            </div>
+                        </a>
+                        <div class="element-labels clearfix">
+                            
+                            <a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/shop?event=16111&amp;languages=de" data-cache="20261114" onclick="f1=window.open('','ticketing','scrollbars=1,toolbar=0,menubar=0,location=0,status=0,resizable=1,width=920,height=600,print=yes,left=20,top=20'); f1.focus();" target="ticketing" class="btn-link btn-link-blank season-border season-text"><span class="icon-">&#xe90e;</span>Tickets</a>
+                        </div>
+                    </div>
+                
+                                    <p class="repertoire-button-top push-down push-down">
+                                        <a href="#">
+                                        <span class="icon-">&#xe90e;</span>
+                                            nach oben
+                                        </a>
+                                    </p>
+                                                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="season-color">
+			<div class="footer-inner">
+				<div class="container">
+					<nav>
+						<ul class="footer-nav">
+							<li><a href="/de/kasse/">Vorverkauf</a></li><li><a href="/de/presse-1/">Presse</a></li><li><a href="/de/kontakt/">Kontakt</a></li><li><a href="/de/newsletter/">Newsletter</a></li><li><a href="/de/jobs/">Jobs</a></li><li><a href="/de/sitemap/">Sitemap</a></li><li><a href="/de/impressum/">Impressum</a></li><li><a href="/de/agb/">AGB</a></li><li><a href="/de/datenschutz/">Datenschutz</a></li><li><a href="/de/barrierefreiheit/">Barrierefreiheit</a></li>						</ul>
+						<ul class="footer-nav footer-nav--social"><li><a target="_blank" href="//www.instagram.com/oper_frankfurt/">
+							<svg width="19" height="19" viewBox="0 0 70 70">
+  <path fill="transparent" d="M0 0h88v68H0z"/>
+  <path d="M42.16 34c0-4.51-3.65-8.16-8.16-8.16s-8.16 3.65-8.16 8.16 3.65 8.16 8.16 8.16 8.16-3.65 8.16-8.16M50 20.93c0 1.62-1.32 2.94-2.94 2.94s-2.94-1.31-2.94-2.94 1.32-2.94 2.94-2.94S50 19.3 50 20.93M46.57 34c0 6.94-5.63 12.57-12.57 12.57S21.43 40.94 21.43 34 27.06 21.43 34 21.43 46.57 27.06 46.57 34m7.35 9.89c.12-2.58.14-3.36.14-9.89s-.03-7.31-.14-9.89c-.11-2.39-.51-3.68-.84-4.55-.44-1.14-.97-1.96-1.83-2.81-.86-.86-1.67-1.39-2.81-1.83-.86-.33-2.16-.73-4.55-.84-2.58-.12-3.35-.14-9.89-.14s-7.31.02-9.89.14c-2.39.11-3.68.51-4.55.84-1.14.44-1.96.98-2.81 1.83-.86.86-1.39 1.67-1.83 2.81-.33.86-.73 2.16-.84 4.55-.12 2.58-.14 3.35-.14 9.89s.03 7.31.14 9.89c.11 2.39.51 3.68.84 4.54.44 1.14.97 1.96 1.83 2.82.86.86 1.67 1.39 2.81 1.83.86.34 2.16.73 4.55.84 2.58.12 3.35.14 9.89.14s7.31-.03 9.89-.14c2.39-.11 3.68-.51 4.55-.84 1.14-.44 1.96-.97 2.82-1.83.86-.86 1.39-1.67 1.83-2.82.33-.86.73-2.16.84-4.54M58.48 34c0 6.65-.03 7.48-.15 10.09-.12 2.61-.53 4.39-1.14 5.94-.62 1.61-1.46 2.97-2.82 4.33-1.36 1.36-2.73 2.2-4.34 2.82-1.56.61-3.34 1.02-5.94 1.14-2.61.12-3.44.15-10.09.15s-7.48-.03-10.09-.15c-2.61-.12-4.39-.53-5.94-1.14-1.61-.62-2.97-1.46-4.34-2.82-1.36-1.36-2.2-2.73-2.82-4.33-.6-1.56-1.02-3.34-1.14-5.94-.12-2.61-.15-3.44-.15-10.09s.03-7.48.15-10.09c.12-2.61.53-4.39 1.14-5.94.62-1.61 1.46-2.97 2.82-4.34 1.36-1.36 2.73-2.2 4.34-2.82 1.56-.6 3.34-1.02 5.94-1.14 2.61-.12 3.44-.15 10.09-.15s7.48.03 10.09.15c2.6.12 4.39.53 5.94 1.14 1.61.63 2.97 1.46 4.34 2.82 1.36 1.36 2.2 2.73 2.82 4.34.6 1.56 1.02 3.34 1.14 5.94.12 2.61.15 3.44.15 10.09M68 52.55v-37.1C68 6.92 61.08 0 52.54 0H15.46C6.92 0 0 6.92 0 15.45v37.09c0 8.53 6.92 15.45 15.46 15.45h37.09c8.53 0 15.46-6.92 15.46-15.45" fill="#fff"/>
+</svg>
+							
+							</a></li>
+							<li><a target="_blank" href="//www.youtube.com/channel/UCJxEjoXB9TabN8p163dgsiQ">
+<svg width="19" height="19" viewBox="0 0 70 70">
+  <path fill="transparent" d="M0 0h88v68H0z"/>
+  <path d="M48.6 34 23.37 48.35v-28.7L48.6 34ZM68 52.55v-37.1C68 6.92 61.08 0 52.55 0h-37.1C6.92 0 0 6.92 0 15.45v37.09c0 8.53 6.92 15.45 15.45 15.45h37.09c8.53 0 15.45-6.92 15.45-15.45" fill="#fff"/>
+</svg>
+							
+							</a></li>
+							<li><a target="_blank" href="//www.linkedin.com/company/oper-frankfurt/">
+							<svg width="19" height="19" viewBox="0 0 68 68">
+  <path d="M68 52.55v-37.1C68 6.91 61.08 0 52.55 0h-37.1C6.92 0 0 6.92 0 15.45v37.09c0 8.53 6.92 15.45 15.45 15.45h37.09c8.53 0 15.45-6.92 15.45-15.45ZM13.09 24.72h9.04v29.09h-9.04V24.72Zm9.34-8.09c0 2.5-1.84 4.52-4.88 4.52-2.85 0-4.7-2.02-4.7-4.52s1.9-4.52 4.82-4.52 4.7 1.96 4.76 4.52ZM55.15 53.8h-9.04V37.68c0-3.75-1.31-6.3-4.58-6.3-2.5 0-3.98 1.73-4.64 3.39-.24.59-.3 1.43-.3 2.26V53.8h-9.04V33.99c0-3.63-.12-6.66-.24-9.28h7.85l.42 4.04h.18c1.19-1.9 4.1-4.7 8.98-4.7 5.95 0 10.41 3.99 10.41 12.55v17.19Z" style="fill:#fff;stroke-width:0"/>
+</svg>
+							</li>
+							<li><a target="_blank" href="//www.facebook.com/Oper-Frankfurt-107804884207164/">
+							<svg width="19" height="19" viewBox="0 0 70 70">
+  <defs>
+    <clipPath id="a">
+      <path fill="none" d="M0 0h68v68H0z"/>
+    </clipPath>
+  </defs>
+  <path fill="transparent" d="M0 0h88v68H0z"/>
+  <g clip-path="url(#a)">
+    <path d="M48.63 22.45h-4.32c-4.25 0-5.57 2.64-5.57 5.34v6.42h9.49l-1.52 9.89h-7.97V68H28.05V44.1h-8.69v-9.89h8.69v-7.54c0-8.57 5.11-13.31 12.92-13.31 3.74 0 7.66.67 7.66.67v8.42ZM68 52.55v-37.1C68 6.92 61.08 0 52.55 0h-37.1C6.92 0 0 6.92 0 15.45v37.09C0 61.08 6.92 68 15.45 68h37.09c8.53 0 15.45-6.92 15.45-15.45" fill="#fff"/>
+  </g>
+</svg>
+							
+							</a></li>
+							<li>
+								<a target="_blank" href="https://blog.oper-frankfurt.de/?mtm_campaign=Footer%20Website&mtm_kwd=Startseite%20Blog">
+									<svg width="58" height="17" viewBox="0 0 231 68">
+  										<defs>
+											<clipPath id="a">
+											<path fill="none" d="M0 0h231.01v68H0z"/>
+											</clipPath>
+											<clipPath id="b">
+											<path fill="none" d="M0 0h231.01v68H0z"/>
+											</clipPath>
+  										</defs>
+  										<path fill="transparent" d="M0 0h231v68H0z"/>
+										<g clip-path="url(#a)">
+											<path d="M30.66 47.16c0 4.41-3.02 7.35-7.43 7.35H12.08V39.9h10.46c5.01 0 8.12 2.94 8.12 7.26m-2.25-23.83c0 3.97-2.59 6.31-7.52 6.31h-8.81V17.02h9.42c4.75 0 6.91 2.33 6.91 6.31m11.91-1.21c0-8.9-6.04-15.71-17.96-15.71H0v58.71h23.75c12.09 0 19.08-7.25 19.08-16.83 0-8.21-4.57-12.44-11.47-14.16 5.52-1.38 8.97-6.3 8.97-12.01" fill="#fff"/>
+										</g>
+										<path fill="#fff" d="M56.64 65.12h38.68V54.5h-26.6V6.4H56.64v58.72z"/>
+										<g clip-path="url(#b)" fill="#fff">
+											<path d="M151.94 35.76c0 10.97-7.26 19.35-17.97 19.35S116 46.73 116 35.76s7.26-19.35 17.97-19.35 17.97 8.38 17.97 19.35m12.42 0c0-17.36-13.46-30.13-30.39-30.13s-30.39 12.77-30.39 30.13 13.46 30.13 30.39 30.13 30.39-12.77 30.39-30.13m43.25 30.13c10.71 0 19.17-4.05 22.53-6.82V32.82h-25.21v10.61h14.17v9.51c-3.02 1.47-7.69 2.16-11.49 2.16-12.35 0-19.44-8.39-19.44-19.35s6.91-19.18 17.54-19.18c6.82 0 10.19 2.33 13.13 5.36l8.2-8.12c-4.83-5.52-11.74-8.11-21.33-8.11-17.71 0-29.96 12.68-29.96 30.05s12.68 30.13 31.86 30.13"/>
+										</g>
+									</svg>
+								</a>
+							</li>
+							<!--
+								<li><a target="_blank" href="//twitter.com/operfrankfurt"><img src="/media/icon/social/twitter_white.svg" alt=""></a></li>								
+								<li><a target="_blank" href="//google.com"><img src="/media/icon/social/google.svg" alt=""></a></li>
+								<li><a target="_blank" href="//linkedin.com"><img src="/media/icon/social/linkedin.svg" alt=""></a></li>
+								<li><a target="_blank" href="//soundcloud.com/user-482982595-513868412"><img src="/media/icon/social/soundcloud.svg" alt=""></a></li> 
+							-->
+						</ul>
+					</nav>
+
+					<div class="contact-container">
+						<h5 class="visual-h1"><a href="https://oper-frankfurt.eventim-inhouse.de/webshop/webticket/eventlist" target="_blank">Tickets</a></h5>
+						<a href="tel:+49(0)6921249494">+ 49 69 212-49494</a>
+						<span>&copy;  2013 – 2026 Oper Frankfurt</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<article class="cbanner season-border">
+			<div class="cbanner__inner">
+				
+		<h1>Hinweis zum Datenschutz</h1>
+		<p>
+			Wir verwenden auf dieser Webseite Cookies. Ihre IP-Adresse wird ohne Ihre Zustimmung aus technischen Gründen für 10 Tage gespeichert. Ihre Daten werden nicht weitergegeben. 
+		</p>
+		<p>
+			Um Ihnen das beste Nutzererlebnis zu ermöglichen, verwenden wir ein Analysetool. Auswertungen bzw. Statistiken hierzu erfolgen nur anonymisiert.
+		</p>
+					<div class="cbanner__footer">
+					<button class="btn-link btn-link-blank season-text season-border cbanner__button-yes">OK</button>
+					<button class="btn-link btn-link-blank season-text season-border cbanner__button-no">Ablehnen</button>
+					<a href="https://oper-frankfurt.de/de/datenschutz/">
+						<span class="clickout season-hover-text">Mehr Informationen</span>
+					</a>
+				</div>
+			</div>
+		</article>
+				<script type="text/javascript" src="/includes/js/vendors/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="/includes/js/vendors/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/includes/js/vendors/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/includes/js/vendors/slick.js"></script>
+		<script type="text/javascript" src="/includes/js/vendors/mediaelement-and-player.min.js"></script>
+		<script type="text/javascript" src="/includes/js/vendors/slick-lightbox.js"></script>
+		<script type="text/javascript" src="/includes/js/vendors/hammer.min.js"></script>
+		<script type="text/javascript" src="/includes/js/vendors/zoom.js"></script>
+		<script type="text/javascript" src="/includes/js/vendors/jquery.zoom.min.js"></script>
+		<script type="text/javascript" src="/includes/js/datepicker.js"></script>
+		<!--
+		<script type="text/javascript" src="/includes/js/js.cookie.js"></script>
+		-->
+		<script type="text/javascript" src="/includes/js/main.js?cache=20261106"></script>
+		<script type="text/javascript">
+			var _paq = _paq || [];
+
+			function setCookie(cname, cvalue, expireDays) {
+				var date = new Date();
+				date.setTime(date.getTime() + (expireDays*24*60*60*1000));
+				var expires = "expires="+ date.toUTCString();
+				document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+			}
+
+			function getCookie(cname) {
+				var name = cname + "=";
+				var decodedCookie = decodeURIComponent(document.cookie);
+				var ca = decodedCookie.split(';');
+				for(var i = 0; i <ca.length; i++) {
+					var c = ca[i];
+					while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+					}
+					if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+					}
+				}
+				return "";
+			}
+
+			var COOKIE_KEY = 'USER_CBANNER_RESULT'
+			var cookie = getCookie(COOKIE_KEY);
+			var isUserOptedIn = cookie === 'yes';
+
+			if (!cookie) {
+				$('.cbanner__button-yes').on('click', function(){
+					setCookie(COOKIE_KEY, 'yes', 364)
+					_paq.push(['forgetUserOptOut']);
+					_paq.push(['setConsentGiven']);
+					$('.cbanner').hide();
+				});
+				$('.cbanner__button-no').on('click', function(){
+					_paq.push(['optUserOut']);
+					setCookie(COOKIE_KEY, 'no', 1)
+					$('.cbanner').hide();
+				});
+
+				$('.cbanner').show();
+			}
+
+			if (cookie === 'yes'){
+				_paq.push(['setConsentGiven']);
+			} else {
+				_paq.push(['disableCookies']);
+			}
+
+			_paq.push(['requireConsent']);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+				var u="//oper-frankfurt.de/piwik/";
+				_paq.push(['setTrackerUrl', u+'piwik.php']);
+				_paq.push(['setSiteId', 1]);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+
+			$('a[target="_blank"]').on('click', function(e) {
+				this.blur();
+			});
+		</script>
+	</body>
+</html>
