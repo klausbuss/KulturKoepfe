@@ -1,6 +1,6 @@
 {
  "datum": "2026-11-15",
- "stand": "2026-11-15T01:06+01:00",
+ "stand": "2026-11-15T13:00+01:00",
  "haeuser": {
   "so": {
    "status": "ok",
@@ -13,7 +13,7 @@
     {
      "zeit": "11:00",
      "titel": "Monteverdi a solo",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/monteverdi-a-solo.27760/#event-154676"
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/monteverdi-a-solo.27760/?spielzeit=2026-2027#event-154676"
     },
     {
      "zeit": "18:00",
@@ -82,7 +82,7 @@
     {
      "zeit": "19:00",
      "titel": "Daniel Kehlmann: Afrika",
-     "url": "https://www.berliner-ensemble.de/index.php/inszenierung/daniel-kehlmann-afrika"
+     "url": "https://www.berliner-ensemble.de/inszenierung/daniel-kehlmann-afrika"
     }
    ],
    "quelle": "https://www.berliner-ensemble.de/spielplan",
@@ -240,12 +240,6 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "13:00",
-     "titel": "›Eine große Liebe‹",
-     "ort": "Haus des Rundfunks Großer Sendesaal",
-     "url": "https://www.roc-berlin.de/konzerte/eine-grosse-liebe/concert/227101/"
-    },
-    {
      "zeit": "21:00",
      "titel": "Vladimir Jurowski & Kirill Gerstein",
      "ort": "Philharmonie Berlin",
@@ -395,6 +389,10 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "12:00",
+     "titel": "Mythen, Misogynie, Medien"
+    },
+    {
      "zeit": "16:00",
      "titel": "Jeeps"
     }
@@ -411,11 +409,12 @@
      "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/die-geierwally"
     },
     {
-     "titel": "Freddy & Friends #2",
+     "zeit": "20:00",
+     "titel": "Freddy & Friends #2 Comedy",
      "url": "https://www.muenchner-volkstheater.de/programm/extra/freddy-friends-2"
     }
    ],
-   "quelle": "https://www.muenchner-volkstheater.de/",
+   "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
    "format": "html-datum"
   },
   "m-bso": {
@@ -667,11 +666,6 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Frankfurter Opern- und Museumsorchester",
-     "url": "https://www.alteoper.de/de/programm/frankfurter-opern-und-museumsorchester/18810"
-    },
-    {
      "zeit": "17:00",
      "titel": "Annettes DaschSalon",
      "url": "https://www.alteoper.de/de/programm/annettes-daschsalon/18874"
@@ -690,6 +684,517 @@
    ],
    "quelle": "https://www.hr-sinfonieorchester.de/index.html",
    "format": "html-time"
+  },
+  "b-bab": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.babylonberlin.eu/spielplan -> 404",
+    "https://www.babylonberlin.eu/de/spielplan -> 404",
+    "https://www.babylonberlin.eu/de/programm -> 404",
+    "https://www.babylonberlin.eu/kalender -> 404",
+    "https://www.babylonberlin.eu/de/kalender -> 404",
+    "https://www.babylonberlin.eu/termine -> 404"
+   ]
+  },
+  "b-ars": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "16:00",
+     "titel": "Mikuba",
+     "url": "https://www.arsenal-berlin.de/kino/filmvorfuehrung/mikuba-5986/                "
+    },
+    {
+     "zeit": "18:00",
+     "titel": "L’homme qui plante des Baobabs",
+     "url": "https://www.arsenal-berlin.de/kino/filmvorfuehrung/lhomme-qui-plante-des-baobabs-5988/                "
+    },
+    {
+     "zeit": "20:30",
+     "titel": "La mémoire du manguier",
+     "url": "https://www.arsenal-berlin.de/kino/filmvorfuehrung/la-memoire-du-manguier-5990/                "
+    }
+   ],
+   "quelle": "https://www.arsenal-berlin.de/",
+   "format": "html-time"
+  },
+  "b-mov": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.moviemento.de/spielplan -> 404",
+    "https://www.moviemento.de/de/spielplan -> 404",
+    "https://www.moviemento.de/kalender -> 404",
+    "https://www.moviemento.de/de/kalender -> 404",
+    "https://www.moviemento.de/termine -> 404",
+    "https://www.moviemento.de/konzerte -> 404"
+   ]
+  },
+  "b-kin": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "14:00",
+     "titel": "Slow Sessions #3: Gerry",
+     "url": "https://www.yorck.de/kinos/international"
+    },
+    {
+     "zeit": "20:30",
+     "titel": "Special: George Michael – The Faith Tour",
+     "url": "https://www.yorck.de/kinos/international"
+    }
+   ],
+   "quelle": "https://www.yorck.de/kinos/international",
+   "format": "json-eingebettet"
+  },
+  "b-dlx": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "14:00",
+     "titel": "Slow Sessions #3: Gerry",
+     "url": "https://www.yorck.de/kinos/delphi-lux"
+    }
+   ],
+   "quelle": "https://www.yorck.de/kinos/delphi-lux",
+   "format": "json-eingebettet"
+  },
+  "b-fsk": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.fsk-kino.peripherfilm.de/spielplan -> SSLError",
+    "https://www.fsk-kino.peripherfilm.de/de/spielplan -> SSLError",
+    "https://www.fsk-kino.peripherfilm.de/programm -> SSLError",
+    "https://www.fsk-kino.peripherfilm.de/de/programm -> SSLError",
+    "https://www.fsk-kino.peripherfilm.de/kalender -> SSLError",
+    "https://www.fsk-kino.peripherfilm.de/de/kalender -> SSLError"
+   ]
+  },
+  "b-lbk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "06:15",
+     "titel": "Eleanor Coppola:"
+    },
+    {
+     "zeit": "08:00",
+     "titel": "Sofia Coppola:"
+    },
+    {
+     "titel": "Animationsfilm für die ganze Familie",
+     "url": "https://lichtblick-kino.org/edmund-und-luzie-winterabenteuer/"
+    }
+   ],
+   "quelle": "https://lichtblick-kino.org/",
+   "format": "html-datum"
+  },
+  "hh-abk": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.abaton.de/programm -> 403",
+    "https://www.abaton.de/spielplan -> 404",
+    "https://www.abaton.de/de/spielplan -> 404",
+    "https://www.abaton.de/de/programm -> 404",
+    "https://www.abaton.de/kalender -> 404",
+    "https://www.abaton.de/de/kalender -> 404"
+   ]
+  },
+  "hh-3001": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": []
+  },
+  "hh-met": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.metropoliskino.de/spielplan -> 404",
+    "https://www.metropoliskino.de/de/spielplan -> 404",
+    "https://www.metropoliskino.de/programm -> 404",
+    "https://www.metropoliskino.de/de/programm -> 404",
+    "https://www.metropoliskino.de/de/kalender -> 404",
+    "https://www.metropoliskino.de/termine -> 404"
+   ]
+  },
+  "hh-bmv": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "18:00",
+     "titel": "NATIONALHYMNE",
+     "url": "https://www.b-movie.de/programm#info-9923677"
+    }
+   ],
+   "quelle": "https://www.b-movie.de/",
+   "format": "html-datum"
+  },
+  "hh-zei": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.zeise.de/de/spielplan -> 404",
+    "https://www.zeise.de/de/programm -> 404",
+    "https://www.zeise.de/kalender -> 404",
+    "https://www.zeise.de/de/kalender -> 404",
+    "https://www.zeise.de/termine -> 404",
+    "https://www.zeise.de/konzerte -> 404"
+   ]
+  },
+  "m-fm": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "17:00",
+     "titel": "Am Wege stehn und nicht wissen wohin sich drehnAnna, eine junge Bäuerin",
+     "url": "https://www.muenchner-stadtmuseum.de/sammlungen/filmmuseum/aktueller-spielplan/details/am-wege-stehn-und-nicht-wissen-wohin-sich-drehnanna-eine-junge-baeuerin-46760"
+    }
+   ],
+   "quelle": "https://www.muenchner-stadtmuseum.de/",
+   "format": "html-datum"
+  },
+  "m-wk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "Werkstattkino",
+     "url": "https://werkstattkino.de/"
+    }
+   ],
+   "quelle": "https://werkstattkino.de/",
+   "format": "html-datum"
+  },
+  "m-tf": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.theatiner-film.de/spielplan -> 404",
+    "https://www.theatiner-film.de/de/spielplan -> 404",
+    "https://www.theatiner-film.de/programm -> 404",
+    "https://www.theatiner-film.de/de/programm -> 404",
+    "https://www.theatiner-film.de/kalender -> 404",
+    "https://www.theatiner-film.de/de/kalender -> 404"
+   ]
+  },
+  "m-ck": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.city-kinos.de/spielplan -> 404",
+    "https://www.city-kinos.de/de/spielplan -> 404",
+    "https://www.city-kinos.de/programm -> 404",
+    "https://www.city-kinos.de/de/programm -> 404",
+    "https://www.city-kinos.de/kalender -> 404",
+    "https://www.city-kinos.de/de/kalender -> 404"
+   ]
+  },
+  "m-lk": {
+   "status": "fehler",
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.leopold-kino.de/ -> ConnectionError",
+    "https://www.leopold-kino.de/spielplan -> ConnectionError",
+    "https://www.leopold-kino.de/de/spielplan -> ConnectionError",
+    "https://www.leopold-kino.de/programm -> ConnectionError",
+    "https://www.leopold-kino.de/de/programm -> ConnectionError",
+    "https://www.leopold-kino.de/kalender -> ConnectionError"
+   ]
+  },
+  "w-fm": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "18:00",
+     "titel": "The Longest Yard | Robert Aldrich",
+     "ort": "Filmmuseum - Augustinerstraße 1, 1010 Wien (im Gebäude der Albertina)"
+    },
+    {
+     "zeit": "20:30",
+     "titel": "Big Leaguer | Robert Aldrich",
+     "ort": "Filmmuseum - Augustinerstraße 1, 1010 Wien (im Gebäude der Albertina)"
+    }
+   ],
+   "quelle": "https://www.filmmuseum.at/kinoprogramm/spielplan",
+   "format": "ical"
+  },
+  "w-fc": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "Sonntag 15.11.",
+     "url": "https://www.filmcasino.at/programm/?show=films&do=1"
+    }
+   ],
+   "quelle": "https://www.filmcasino.at/",
+   "format": "html-datum"
+  },
+  "w-vk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "12:00",
+     "titel": "var.",
+     "url": "https://www.votivkino.at/specials/ff-kombiticket/#Programm"
+    },
+    {
+     "zeit": "12:00",
+     "titel": "Los Nuevos Rodrigo Plá",
+     "url": "https://www.votivkino.at/specials/festivals/internationales-kinderfilmfestival/#Programm"
+    },
+    {
+     "zeit": "12:00",
+     "titel": "Sonntag, 15. November",
+     "url": "https://www.votivkino.at/film/her-private-hell/"
+    },
+    {
+     "zeit": "13:00",
+     "titel": "Chopin Michal Kwiecinski",
+     "url": "https://www.votivkino.at/film/chopin/"
+    },
+    {
+     "zeit": "13:15",
+     "titel": "Wild Horse Nine Martin McDonagh"
+    },
+    {
+     "zeit": "14:00",
+     "titel": "Atmosphere Erwin Wagenhofer",
+     "url": "https://www.votivkino.at/film/atmosphere/"
+    },
+    {
+     "zeit": "14:15",
+     "titel": "Vaterland Paweł Pawlikowski",
+     "url": "https://www.votivkino.at/film/vaterland/"
+    },
+    {
+     "zeit": "14:30",
+     "titel": "Bruno – Der junge Kreisky Harald Sicheritz",
+     "url": "https://www.votivkino.at/film/bruno-der-junge-kreisky/"
+    },
+    {
+     "zeit": "15:15",
+     "titel": "Naza Yuval Abraham, Rachel Szor",
+     "url": "https://www.votivkino.at/film/naza/"
+    },
+    {
+     "zeit": "15:30",
+     "titel": "Nöstlinger Alexandra Schneider",
+     "url": "https://www.votivkino.at/film/noestlinger/"
+    },
+    {
+     "zeit": "16:00",
+     "titel": "Heimsuchung Volker Schlöndorff",
+     "url": "https://www.votivkino.at/film/heimsuchung-eine-jahrhundertgeschichte/"
+    },
+    {
+     "zeit": "16:30",
+     "titel": "Dante Linda Hambäck",
+     "url": "https://www.votivkino.at/specials/festivals/internationales-kinderfilmfestival/#Programm"
+    },
+    {
+     "zeit": "16:45",
+     "titel": "Alte Liebe Andreas Dresen",
+     "url": "https://www.votivkino.at/film/alte-liebe/"
+    },
+    {
+     "zeit": "17:00",
+     "titel": "Sterben für Anfänger Kurt Langbein",
+     "url": "https://www.votivkino.at/film/sterben-fuer-anfaenger/"
+    },
+    {
+     "zeit": "17:30",
+     "titel": "Die Blutgräfin Ulrike Ottinger",
+     "url": "https://www.votivkino.at/film/die-blutgraefin/"
+    },
+    {
+     "zeit": "18:30",
+     "titel": "Heimsuchung Volker Schlöndorff",
+     "url": "https://www.votivkino.at/film/heimsuchung-eine-jahrhundertgeschichte/"
+    },
+    {
+     "zeit": "18:30",
+     "titel": "Wild Horse Nine Martin McDonagh"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "Atmosphere Erwin Wagenhofer",
+     "url": "https://www.votivkino.at/film/atmosphere/"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "Ein Talent fürs Morden Anton Corbijn",
+     "url": "https://www.votivkino.at/film/ein-talent-fuers-morden/"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Wiener Blues: The Loneliest Man in Town Tizza Covi, Rainer Frimmel",
+     "url": "https://www.votivkino.at/film/wiener-blues-the-loneliest-man-in-town/"
+    },
+    {
+     "zeit": "21:00",
+     "titel": "Die Blutgräfin Ulrike Ottinger",
+     "url": "https://www.votivkino.at/film/die-blutgraefin/"
+    },
+    {
+     "zeit": "21:00",
+     "titel": "Wild Horse Nine Martin McDonagh"
+    },
+    {
+     "zeit": "21:15",
+     "titel": "Digger Alejandro González Iñárritu",
+     "url": "https://www.votivkino.at/film/digger/"
+    },
+    {
+     "zeit": "21:30",
+     "titel": "The Social Reckoning Aaron Sorkin",
+     "url": "https://www.votivkino.at/film/the-social-reckoning/"
+    },
+    {
+     "zeit": "21:45",
+     "titel": "Her private Hell Nicolas Winding Refn",
+     "url": "https://www.votivkino.at/film/her-private-hell/"
+    }
+   ],
+   "quelle": "https://www.votivkino.at/",
+   "format": "html-time"
+  },
+  "w-gbk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "15:45",
+     "titel": "NIRVANNA THE BAND THE SHOW THE MOVIE",
+     "url": "https://www.gartenbaukino.at/programm/programmuebersicht/nirvanna-the-band-the-show-the-movie/"
+    },
+    {
+     "zeit": "18:00",
+     "titel": "WIENER BLUES: THE LONELIEST MAN IN TOWN",
+     "url": "https://www.gartenbaukino.at/programm/programmuebersicht/wiener-blues-the-loneliest-man-in-town/"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "DIGGER",
+     "url": "https://www.gartenbaukino.at/programm/digger/"
+    }
+   ],
+   "quelle": "https://www.gartenbaukino.at/",
+   "format": "html-time"
+  },
+  "w-bk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "12:50",
+     "titel": "Fatherland",
+     "url": "https://www.burgkino.at/movie/fatherland"
+    },
+    {
+     "zeit": "13:00",
+     "titel": "La Gradiva",
+     "url": "https://www.burgkino.at/movie/la-gradiva"
+    },
+    {
+     "zeit": "14:30",
+     "titel": "The Third Man",
+     "url": "https://www.burgkino.at/movie/the-third-man"
+    },
+    {
+     "zeit": "15:40",
+     "titel": "Primetime",
+     "url": "https://www.burgkino.at/movie/primetime"
+    },
+    {
+     "zeit": "16:30",
+     "titel": "Sense and Sensibility",
+     "url": "https://www.burgkino.at/movie/sense-and-sensibility"
+    },
+    {
+     "zeit": "17:45",
+     "titel": "Wild Horse Nine",
+     "url": "https://www.burgkino.at/movie/wild-horse-nine"
+    },
+    {
+     "zeit": "18:55",
+     "titel": "NAZA",
+     "url": "https://www.burgkino.at/movie/naza"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Possible Love",
+     "url": "https://www.burgkino.at/movie/possible-love"
+    },
+    {
+     "zeit": "20:30",
+     "titel": "Wild Horse Nine",
+     "url": "https://www.burgkino.at/movie/wild-horse-nine"
+    }
+   ],
+   "quelle": "https://www.burgkino.at/",
+   "format": "html-time"
+  },
+  "f-har": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.arthouse-kinos.de/spielplan -> 404",
+    "https://www.arthouse-kinos.de/de/spielplan -> 404",
+    "https://www.arthouse-kinos.de/programm -> 404",
+    "https://www.arthouse-kinos.de/de/programm -> 404",
+    "https://www.arthouse-kinos.de/kalender -> 404",
+    "https://www.arthouse-kinos.de/de/kalender -> 404"
+   ]
+  },
+  "f-eld": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.arthouse-kinos.de/spielplan -> 404",
+    "https://www.arthouse-kinos.de/de/spielplan -> 404",
+    "https://www.arthouse-kinos.de/programm -> 404",
+    "https://www.arthouse-kinos.de/de/programm -> 404",
+    "https://www.arthouse-kinos.de/kalender -> 404",
+    "https://www.arthouse-kinos.de/de/kalender -> 404"
+   ]
+  },
+  "f-msk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "12:00",
+     "titel": "THE MAD DOG OF EUROPE",
+     "url": "https://malsehnkino.de/index.php?section=Sonntagsmatinee&movieID=110461#110461"
+    },
+    {
+     "zeit": "14:00",
+     "titel": "SOL UND LISE – MIT DEM CELLO ANS ENDE DER WELT",
+     "url": "https://malsehnkino.de/index.php?section=Sonntagsmatinee&movieID=110555#110555"
+    },
+    {
+     "zeit": "16:00",
+     "titel": "LUSTIGES PETTERSON UND FINDUS MITMACHKINO 2",
+     "url": "https://malsehnkino.de/index.php?section=Kinderkino&movieID=110637#110637"
+    },
+    {
+     "titel": "Gutscheine",
+     "url": "https://kinotickets.express/frankfurt_malsehn"
+    }
+   ],
+   "quelle": "https://malsehnkino.de/",
+   "format": "html-datum"
+  },
+  "f-orf": {
+   "status": "fehler",
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.orfeos.de/ -> SSLError",
+    "https://www.orfeos.de/spielplan -> SSLError",
+    "https://www.orfeos.de/de/spielplan -> SSLError",
+    "https://www.orfeos.de/programm -> SSLError",
+    "https://www.orfeos.de/de/programm -> SSLError",
+    "https://www.orfeos.de/kalender -> SSLError"
+   ]
   },
   "b-nm": {
    "status": "ok",

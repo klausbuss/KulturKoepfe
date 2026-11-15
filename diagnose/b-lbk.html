@@ -1,0 +1,1681 @@
+<!-- https://lichtblick-kino.org/ -->
+<!DOCTYPE html>
+<html xml:lang="de" lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<base href="https://lichtblick-kino.org/">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" lang="de" content="Lichtblick-Kino Berlin – Das Programmkino im Prenzlauer Berg. Kastanienallee 77, Tel. 030 - 44 05 81 79">
+	<meta name="abstract" lang="de" content="Lichtblick-Kino Berlin – Das Programmkino im Prenzlauer Berg. Kastanienallee 77, Tel. 030 - 44 05 81 79">
+	<meta name="keywords" lang="de" content="Lichtblick, Kino, Lichtblick-Kino, Film, Berlin">
+	<meta name="page-topic" content="Kino, Film">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		:root {
+			--farbe_1: 102, 34, 221;
+			--farbe_2: 119, 34, 68;
+		}
+	</style>
+	<link rel="stylesheet" href="https://lichtblick-kino.org/wp-content/themes/lichtblick/css/_fonts.css">
+	<link rel="stylesheet" href="https://lichtblick-kino.org/wp-content/themes/lichtblick/css/_lichtblick.css?rand=2978">
+	<link rel="stylesheet" href="https://lichtblick-kino.org/wp-content/themes/lichtblick/css/navigation.css?rand=2978">
+	<link rel="stylesheet" href="https://lichtblick-kino.org/wp-content/themes/lichtblick/css/kalender.css?rand=2978">
+	<link rel="stylesheet" href="https://lichtblick-kino.org/wp-content/themes/lichtblick/css/start.css?rand=2978">
+	<link rel="stylesheet" href="https://lichtblick-kino.org/wp-content/themes/lichtblick/css/filmliste.css?rand=2978">
+	<link rel="stylesheet" href="https://lichtblick-kino.org/wp-content/themes/lichtblick/css/programm_allgemein.css?rand=2978">
+	<link rel="stylesheet" href="https://lichtblick-kino.org/wp-content/themes/lichtblick/css/programm_film.css?rand=2978">
+	<link rel="stylesheet" href="https://lichtblick-kino.org/wp-content/themes/lichtblick/css/programm_filmreihe.css?rand=2978">
+	<link rel="stylesheet" href="https://lichtblick-kino.org/wp-content/themes/lichtblick/css/programm_special.css?rand=2978">
+	<link rel="stylesheet" href="https://lichtblick-kino.org/wp-content/themes/lichtblick/css/inhalt_text.css?rand=2978">
+	<style media="screen">
+		html {
+			margin-top: 0px!important;
+		}
+	</style>
+	<!--
+	<link rel="icon" type="image/png" href="favicon/favicon.png?rand=2978">
+	-->
+	<link rel="icon" type="image/svg+xml" href="favicon/favicon.php?rand=2978">
+	<link rel="mask-icon" href="favicon/favicon.svg?rand=2978" color="#6622DD">
+	<link rel="manifest" href="manifest.json?rand=2978">
+	<script src="https://lichtblick-kino.org/wp-content/themes/lichtblick/js/jquery-3.7.1.min.js"></script>
+	<script>
+		let omu_def = [
+			["OmU", "Original mit deutschen Untertiteln<br>original version with German subtitles"],
+			["OmeU", "Original mit englischen Untertiteln<br>original version with English subtitles"],
+			["engl. OV", "englische Originalversion<br>English original version"],
+			["OV", "Originalversion ohne Untertitel<br>original version without subtitles"],
+			["DF", "Deutsche Fassung<br>German-dubbed version"],
+			["dt. OV", "deutsche Originalversion<br>German original version"],
+			["engl. OmU", "Englische Originalversion mit deutschen Untertiteln<br>English original version with German subtitles"],
+			["OmfrU", "Original mit französischen Untertiteln<br>version originale, soutitrée en français"],
+			["Fr.OmeU", "Französisch mit englischen Untertiteln<br>Français, soutîtré en anglais"],
+			["Pers.OmeU", "Persisch mit englischen Untertiteln<br>Persian with English subtitles"],
+			["OmU D+E", "German/English OV with English/German subtitles"],
+		];
+	</script>
+	<script src="https://lichtblick-kino.org/wp-content/themes/lichtblick/js/lichtblick.js?rand=2978"></script>
+	<title>Lichtblick-Kino</title>
+</head>
+
+<body class="start">
+<div id="navigation">
+	<div id="nav_button" role="button" aria-label="Navigation">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<div id="nav_rahmen_aussen">
+		<div id="nav_rahmen_innen">
+			<div id="nav_titel"><a href="."></a></div>
+			<nav id="nav_liste">
+				<div class="nav_normal"><a href="https://lichtblick-kino.org/"  class="aktiv">Aktuell</a></div>
+				<div class="nav_normal"><a href="https://lichtblick-kino.org/programm/" >Programm</a></div>
+				<div class="nav_normal"><a href="https://lichtblick-kino.org/das-kino/" >Das Kino</a></div>
+				<div class="nav_normal"><a href="https://lichtblick-kino.org/infos/" >Infos</a></div>
+				<div class="nav_normal"><a href="https://lichtblick-kino.org/kontakt/" >Kontakt</a></div>
+				<!--
+				<div class="nav_normal"><a href="corona">Corona-Infos</a></div>
+				-->
+				<!--
+				<div id="nav_sm"><div><a class="fb" href="https://facebook.com/lichtblickkino/" target="_blank"> <span>Facebook</span></a></div><div><a class="insta" href="https://instagram.com/kinolichtblickberlin/" target="_blank"><span>Instagram</span></a></div></div>
+				-->
+			</nav>
+		</div>
+	</div>
+</div>
+<div id="nav_flaeche"></div>
+<hr class="hidden"><!-- ********** Rahmen ********** -->
+<div id="rahmen_aussen">
+	<div id="rahmen_innen">
+		<!-- ********** Titel + Titel-Infos ********** -->
+		<div id="titel_zeile">
+			<div id="titel">
+				<a href="https://lichtblick-kino.org"><h1><span>Lichtblick-Kino</span></h1></a>
+			</div>
+			<div id="titel_infos">
+				<div class="infos">
+					<h2>Das Programmkino im&nbsp;Prenzlauer&nbsp;Berg.</h2>
+					<p>Kastanienallee 77, <span class="nobr">Tel. <a href="tel:+493044058179">030 - 44 05 81 79</a></span></p>
+					<div id="titel_infos_sm">
+						<div><a class="fb" href="https://facebook.com/kinolichtblick/" target="_blank" rel="noopener noreferrer"><span>Facebook</span></a></div><div><a class="insta" href="https://instagram.com/kinolichtblickberlin/" target="_blank" rel="noopener noreferrer"><span>Instagram</span></a></div><div><a class="newsletter" href="newsletter/" target="_blank"><span>Newsletter</span></a></div><div><a class="gutscheine" href="https://www.kinoheld.de/kino/berlin/lichtblick-kino-berlin/gutscheine?mode=widget%23panel-seats" target="_blank"><span>Gutscheine</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="hidden">
+
+		<!-- ********** Inhalt ********** -->
+		<div id="inhalt_grid">
+
+			<!-- ********** Hauptspalte ********** -->
+			<div id="hauptspalte_rahmen">
+<!-- ********** Überblick ********** -->
+<div id="start">
+	<div class="eintrag breit">
+		<a href="https://lichtblick-kino.org/making-marie-antoinette/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Making_Marie_Antoinette_01-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Making_Marie_Antoinette_01-700x450.jpg 2x">
+						<source media="(min-width: 451px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Making_Marie_Antoinette_01-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Making_Marie_Antoinette_01.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Making_Marie_Antoinette_01-700x450.jpg" width="1400" height="900" alt="Making Marie Antoinette">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Dokumentarfilm</h4>
+				<h4 class="uebertitel_klein">Eleanor Coppola:</h4>
+				<h2 class="titel">Making Marie Antoinette&nbsp;<span class="omu">(<span>OmU</span>)</span></h2>
+				<h3 class="datum">Sunday, 15&nbsp;November, <span class="uhrzeit">6:15 pm</span></h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/marie-antoinette/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Marie_Antoinette_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Marie_Antoinette_02-700x450.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Marie_Antoinette_02-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Marie_Antoinette_02.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Marie_Antoinette_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Marie_Antoinette_02-700x450.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Marie_Antoinette_02-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Marie_Antoinette_02.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Marie_Antoinette_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Marie_Antoinette_02-700x450.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Marie_Antoinette_02-700x450.jpg" width="1400" height="900" alt="Marie Antoinette">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Spielfilm</h4>
+				<h4 class="uebertitel_klein">Sofia Coppola:</h4>
+				<h2 class="titel">Marie Antoinette&nbsp;<span class="omu">(<span>OV</span>)</span></h2>
+				<h4 class="subtitel_klein">Wiederaufführung in 4K</h4>
+				<h3 class="datum">Sunday, 15&nbsp;November, <span class="uhrzeit">8:00 pm</span></h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/biermann/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Biermann_01-350x212.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Biermann_01-700x425.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Biermann_01-700x425.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Biermann_01.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Biermann_01-350x212.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Biermann_01-700x425.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Biermann_01-700x425.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Biermann_01.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Biermann_01-350x212.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Biermann_01-700x425.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Biermann_01-700x425.jpg" width="1400" height="849" alt="Wolf Biermann im Deutschen Historischen Museum">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Dokumentarfilm</h4>
+				<h2 class="titel">Biermann</h2>
+				<h3 class="datum">Dienstag, 17.&thinsp;November, <span class="uhrzeit">19:15&thinsp;Uhr</span></h3>
+				<h3 class="start_anwesenheit">in Anwesenheit des Regisseurs Jens Meurer</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/special/barrio-triste-preview/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Barrio_Triste_05-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Barrio_Triste_05-700x450.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Barrio_Triste_05-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Barrio_Triste_05.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Barrio_Triste_05-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Barrio_Triste_05-700x450.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Barrio_Triste_05-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Barrio_Triste_05.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Barrio_Triste_05-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Barrio_Triste_05-700x450.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Barrio_Triste_05-700x450.jpg" width="1400" height="900" alt="Barrio Triste">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Spielfilm</h4>
+				<h2 class="special_haupttitel">Preview:</h2>
+				<h2 class="titel">Barrio Triste&nbsp;<span class="omu">(<span>OmU</span>)</span></h2>
+				<h3 class="datum">Mittwoch, 18.&thinsp;November, <span class="uhrzeit">20:00&thinsp;Uhr</span></h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/the-party-nature-morte-wa/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/The_Party_Nature_Morte_01-350x219.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/The_Party_Nature_Morte_01-700x438.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/The_Party_Nature_Morte_01-700x438.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/The_Party_Nature_Morte_01.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/The_Party_Nature_Morte_01-350x219.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/The_Party_Nature_Morte_01-700x438.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/The_Party_Nature_Morte_01-700x438.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/The_Party_Nature_Morte_01.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/The_Party_Nature_Morte_01-350x219.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/The_Party_Nature_Morte_01-700x438.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/The_Party_Nature_Morte_01-700x438.jpg" width="1400" height="875" alt="The Party – Nature Morte">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Spielfilm</h4>
+				<h4 class="uebertitel_klein">Filmklassiker im Lichtblick-Kino</h4>
+				<h2 class="titel">The Party – Nature Morte&nbsp;<span class="omu">(<span>OmU</span>)</span></h2>
+				<h4 class="subtitel_klein">Wiederaufführung in 4K</h4>
+				<h3 class="datum">Samstag, 21.&thinsp;November, <span class="uhrzeit">19:00&thinsp;Uhr</span></h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag breit">
+		<a href="https://lichtblick-kino.org/reihe/26-11-22-european-arthouse-cinema-day/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-22-European-Arthouse-Cinema-Day-2026/European_Arthouse_Cinema_Day_Teaser-350x196.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-22-European-Arthouse-Cinema-Day-2026/European_Arthouse_Cinema_Day_Teaser-700x392.jpg 2x">
+						<source media="(min-width: 451px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-22-European-Arthouse-Cinema-Day-2026/European_Arthouse_Cinema_Day_Teaser-700x392.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-22-European-Arthouse-Cinema-Day-2026/European_Arthouse_Cinema_Day_Teaser.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-22-European-Arthouse-Cinema-Day-2026/European_Arthouse_Cinema_Day_Teaser-700x392.jpg" width="1400" height="784" alt="European Arthouse Cinema Day 2026">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h2 class="titel">11. European Arthouse Cinema Day 2026</h2>
+				<h3 class="datum">Sonntag, 22.&thinsp;November</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/reihe/26-11-22-european-arthouse-cinema-day/grand-jete">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Grand_Jete_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Grand_Jete_02-700x450.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Grand_Jete_02-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Grand_Jete_02.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Grand_Jete_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Grand_Jete_02-700x450.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Grand_Jete_02-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Grand_Jete_02.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Grand_Jete_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Grand_Jete_02-700x450.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Grand_Jete_02-700x450.jpg" width="1400" height="900" alt="Grand Jeté">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+				<div class="bild_credits">
+					<div><span>©</span> 2022 Brave New Work</div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Spielfilm</h4>
+				<h2 class="titel_filmreihe">11. European Arthouse Cinema Day 2026</h2>
+				<h2 class="titel">Grand Jeté</h2>
+				<h3 class="datum">Sonntag, 22.&thinsp;November, <span class="uhrzeit">17:00&thinsp;Uhr</span></h3>
+				<h3 class="start_anwesenheit">in Anwesenheit der Filmemacherinnen Isabelle Stever und Anna Melikova</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/helene-weigel-revolutionaerin-im-rampenlicht/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Helene_Weigel_Revolutionaerin_im_Rampenlicht_03-350x243.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Helene_Weigel_Revolutionaerin_im_Rampenlicht_03-700x485.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Helene_Weigel_Revolutionaerin_im_Rampenlicht_03-700x485.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Helene_Weigel_Revolutionaerin_im_Rampenlicht_03.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Helene_Weigel_Revolutionaerin_im_Rampenlicht_03-350x243.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Helene_Weigel_Revolutionaerin_im_Rampenlicht_03-700x485.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Helene_Weigel_Revolutionaerin_im_Rampenlicht_03-700x485.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Helene_Weigel_Revolutionaerin_im_Rampenlicht_03.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Helene_Weigel_Revolutionaerin_im_Rampenlicht_03-350x243.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Helene_Weigel_Revolutionaerin_im_Rampenlicht_03-700x485.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Helene_Weigel_Revolutionaerin_im_Rampenlicht_03-700x485.jpg" width="1400" height="970" alt="Helene Weigel – Revolutionärin im Rampenlicht">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Dokumentarfilm</h4>
+				<h2 class="titel">Helene Weigel – Revolutionärin im Rampenlicht</h2>
+				<h3 class="datum">Montag, 23.&thinsp;November, <span class="uhrzeit">20:00&thinsp;Uhr</span></h3>
+				<h3 class="start_anwesenheit">in Anwesenheit der Regisseurin Maria&nbsp;Wischnewski</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag breit">
+		<a href="https://lichtblick-kino.org/special/26-11-24-ni-una-menos-la-mutante/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-24-Ni-una-menos-2026/Ni_una_menos_2026_Titel-350x196.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-24-Ni-una-menos-2026/Ni_una_menos_2026_Titel-700x392.jpg 2x">
+						<source media="(min-width: 451px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-24-Ni-una-menos-2026/Ni_una_menos_2026_Titel-700x392.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-24-Ni-una-menos-2026/Ni_una_menos_2026_Titel.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-24-Ni-una-menos-2026/Ni_una_menos_2026_Titel-700x392.jpg" width="1400" height="784" alt="Ni una menos 2026">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Special</h4>
+				<h4 class="uebertitel_klein">Vierte Welle Filmfestival presents:</h4>
+				<h2 class="special_haupttitel">Ni una menos: <span class="avoidbr">Films Against Violence Against Women</span></h2>
+				<h2 class="titel">La Mutante&nbsp;<span class="omu">(<span>OmeU</span>)</span></h2>
+				<h3 class="datum">Tuesday, 24&nbsp;November, <span class="uhrzeit">8:00 pm</span></h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag breit">
+		<a href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Soundwatch_2026_Teaser_farbe-350x196.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Soundwatch_2026_Teaser_farbe-700x392.jpg 2x">
+						<source media="(min-width: 451px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Soundwatch_2026_Teaser_farbe-700x392.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Soundwatch_2026_Teaser_farbe.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Soundwatch_2026_Teaser_farbe-700x392.jpg" width="1400" height="784" alt="Soundwatch 2026">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Festival</h4>
+				<h2 class="titel">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span></h2>
+				<h3 class="datum">25–29 November 2026 <!--<span class="normal">(Screenings at Lichtblick-Kino)</span>--></h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-nova-78">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Nova_78_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Nova_78_01-700x394.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Nova_78_01-700x394.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Nova_78_01.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Nova_78_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Nova_78_01-700x394.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Nova_78_01-700x394.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Nova_78_01.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Nova_78_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Nova_78_01-700x394.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Nova_78_01-700x394.jpg" width="1400" height="787" alt="Nova ’78">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+				<div class="bild_credits">
+					<div><span>©</span> Pinball London</div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Dokumentarfilm</h4>
+				<h2 class="titel_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span></h2>
+				<h4 class="uebertitel_klein">Berlin Premiere:</h4>
+				<h2 class="titel">Nova ’78&nbsp;<span class="omu">(<span>engl. OV</span>)</span></h2>
+				<h3 class="datum">Thursday, 26&nbsp;November, <span class="uhrzeit">8:00 pm</span></h3>
+				<h3 class="start_anwesenheit">Online Q&amp;A with co-director Rodrigo Areias</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-popular-music-and-the-secret-service-in-hungary">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Popular_Music_and_the_Secret_Service_in_Hungary-350x219.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Popular_Music_and_the_Secret_Service_in_Hungary-700x438.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Popular_Music_and_the_Secret_Service_in_Hungary-700x438.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Popular_Music_and_the_Secret_Service_in_Hungary.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Popular_Music_and_the_Secret_Service_in_Hungary-350x219.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Popular_Music_and_the_Secret_Service_in_Hungary-700x438.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Popular_Music_and_the_Secret_Service_in_Hungary-700x438.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Popular_Music_and_the_Secret_Service_in_Hungary.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Popular_Music_and_the_Secret_Service_in_Hungary-350x219.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Popular_Music_and_the_Secret_Service_in_Hungary-700x438.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Popular_Music_and_the_Secret_Service_in_Hungary-700x438.jpg" width="1400" height="875" alt="Popular Music and the Secret Service in Hungary, 1945–1990">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+				<div class="bild_credits">
+					<div><span>©</span> Tamás Urbán / Fortepan</div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Book Special</h4>
+				<h2 class="titel_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span></h2>
+				<h3 class="uebertitel">Book Presentation:</h3>
+				<h2 class="titel">Popular Music and the Secret Service in Hungary, 1945–1990</h2>
+				<h3 class="datum">Friday, 27&nbsp;November, <span class="uhrzeit">7:00 pm</span></h3>
+				<h3 class="start_anwesenheit">with author Tamás Szőnyei</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-illustrated-encyclopedia-of-hungarian-punk">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Illustrated_Encyclopedia_of_Hungarian_Punk_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Illustrated_Encyclopedia_of_Hungarian_Punk_02-700x450.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Illustrated_Encyclopedia_of_Hungarian_Punk_02-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Illustrated_Encyclopedia_of_Hungarian_Punk_02.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Illustrated_Encyclopedia_of_Hungarian_Punk_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Illustrated_Encyclopedia_of_Hungarian_Punk_02-700x450.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Illustrated_Encyclopedia_of_Hungarian_Punk_02-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Illustrated_Encyclopedia_of_Hungarian_Punk_02.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Illustrated_Encyclopedia_of_Hungarian_Punk_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Illustrated_Encyclopedia_of_Hungarian_Punk_02-700x450.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Illustrated_Encyclopedia_of_Hungarian_Punk_02-700x450.jpg" width="1400" height="900" alt="">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Book Special</h4>
+				<h2 class="titel_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span></h2>
+				<h3 class="uebertitel">Book Presentation:</h3>
+				<h2 class="titel">Illustrated Encyclopedia of Hungarian Punk 1975–1990</h2>
+				<h3 class="datum">Friday, 27&nbsp;November, <span class="uhrzeit">8:30 pm</span></h3>
+				<h3 class="start_anwesenheit">Talk with editor Tamás Rupaszov and author Henryk Gericke,<br>+ Live Music: The Snobs (Budapest) – acoustic anarcho-punk</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/uebergang-ein-film-fuer-thomas-heise/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Uebergang_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Uebergang_01-700x394.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Uebergang_01-700x394.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Uebergang_01.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Uebergang_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Uebergang_01-700x394.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Uebergang_01-700x394.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Uebergang_01.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Uebergang_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Uebergang_01-700x394.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Uebergang_01-700x394.jpg" width="1400" height="788" alt="Übergang – Ein Film für Thomas Heise">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+				<div class="bild_credits">
+					<div><span>©</span> Ma.ja.de. Filmproduktion</div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Dokumentarfilm</h4>
+				<h2 class="titel">Übergang – <span class="avoidbr">Ein Film für Thomas Heise</span></h2>
+				<h3 class="datum">Samstag, 28.&thinsp;November, <span class="uhrzeit">16:00&thinsp;Uhr</span></h3>
+				<h3 class="start_anwesenheit">in Anwesenheit des Co-Regisseurs Chris Wright</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-punk-under-communist-regime">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Punk_Under_Communist_Regime_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Punk_Under_Communist_Regime_02-700x450.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Punk_Under_Communist_Regime_02-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Punk_Under_Communist_Regime_02.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Punk_Under_Communist_Regime_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Punk_Under_Communist_Regime_02-700x450.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Punk_Under_Communist_Regime_02-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Punk_Under_Communist_Regime_02.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Punk_Under_Communist_Regime_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Punk_Under_Communist_Regime_02-700x450.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/Punk_Under_Communist_Regime_02-700x450.jpg" width="1400" height="900" alt="Punk Under Communist Regime">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Dokumentarfilm</h4>
+				<h2 class="titel_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span></h2>
+				<h3 class="uebertitel">Slovenian Punk Double Feature:</h3>
+				<h2 class="titel">Punk Under Communist Regime&nbsp;<span class="omu">(<span>OmeU</span>)</span></h2>
+				<h3 class="datum">Saturday, 28&nbsp;November, <span class="uhrzeit">8:15 pm</span></h3>
+				<h3 class="start_anwesenheit">Online talk with director Andrej Košak and producer Zoran Dževerdanović</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/performing-the-goddess/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Performing_the_Goddess_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Performing_the_Goddess_02-700x450.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Performing_the_Goddess_02-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Performing_the_Goddess_02.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Performing_the_Goddess_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Performing_the_Goddess_02-700x450.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Performing_the_Goddess_02-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Performing_the_Goddess_02.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Performing_the_Goddess_02-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Performing_the_Goddess_02-700x450.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Performing_the_Goddess_02-700x450.jpg" width="1400" height="900" alt="Performing the Goddess">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Dokumentarfilm</h4>
+				<h2 class="titel">Performing the Goddess: <span class="avoidbr">The Chapal Bhaduri Story</span>&nbsp;<span class="omu">(<span>OmeU</span>)</span></h2>
+				<h3 class="datum">Sunday, 29&nbsp;November, <span class="uhrzeit">11:30 am</span></h3>
+				<h3 class="start_anwesenheit">Gespräch mit Sandip Roy, Autor des Romans »Chapal Rani – The Last Queen of Bengal«</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-mark-fisher">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/We_Are_Making_a_Film_About_Mark_Fisher_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/We_Are_Making_a_Film_About_Mark_Fisher_01-700x394.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/We_Are_Making_a_Film_About_Mark_Fisher_01-700x394.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/We_Are_Making_a_Film_About_Mark_Fisher_01.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/We_Are_Making_a_Film_About_Mark_Fisher_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/We_Are_Making_a_Film_About_Mark_Fisher_01-700x394.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/We_Are_Making_a_Film_About_Mark_Fisher_01-700x394.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/We_Are_Making_a_Film_About_Mark_Fisher_01.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/We_Are_Making_a_Film_About_Mark_Fisher_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/We_Are_Making_a_Film_About_Mark_Fisher_01-700x394.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-11-Soundwatch-2026/We_Are_Making_a_Film_About_Mark_Fisher_01-700x394.jpg" width="1400" height="788" alt="We Are Making a Film About Mark Fisher">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+				<div class="bild_credits">
+					<div><span>©</span> Close and Remote</div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Dokumentarfilm</h4>
+				<h2 class="titel_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span></h2>
+				<h2 class="titel">We Are Making a Film About Mark Fisher&nbsp;<span class="omu">(<span>OmU</span>)</span></h2>
+				<h3 class="datum">Sunday, 29&nbsp;November, <span class="uhrzeit">6:30 pm</span></h3>
+				<h3 class="start_anwesenheit">Online Q&amp;A with directors Sophie Mellor and Simon Poulter</h3>
+				<div class="extra_info">Free entry. Please reserve a free ticket!</div>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/berlinized/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Berlinized_02b-350x193.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Berlinized_02b-700x386.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Berlinized_02b-700x386.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Berlinized_02b.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Berlinized_02b-350x193.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Berlinized_02b-700x386.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Berlinized_02b-700x386.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Berlinized_02b.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Berlinized_02b-350x193.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Berlinized_02b-700x386.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Film/Dokumentarfilm/Berlinized_02b-700x386.jpg" width="1400" height="771" alt="Berlinized">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Dokumentarfilm</h4>
+				<h4 class="uebertitel_klein">Berlin – Filme der Stadt</h4>
+				<h2 class="titel">Berlinized&nbsp;<span class="omu">(<span>OmeU</span>)</span></h2>
+				<h3 class="datum">Montag, 30.&thinsp;November, <span class="uhrzeit">20:00&thinsp;Uhr</span></h3>
+				<h3 class="start_anwesenheit">in Anwesenheit des Regisseurs Lucian&nbsp;Busse</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/trainspotting/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Trainspotting_75A-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Trainspotting_75A-700x450.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Trainspotting_75A-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Trainspotting_75A.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Trainspotting_75A-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Trainspotting_75A-700x450.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Trainspotting_75A-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Trainspotting_75A.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Trainspotting_75A-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Trainspotting_75A-700x450.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Trainspotting_75A-700x450.jpg" width="1400" height="900" alt="Trainspotting">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Spielfilm</h4>
+				<h4 class="uebertitel_klein">Filmklassiker im Lichtblick-Kino</h4>
+				<h2 class="titel">Trainspotting&nbsp;<span class="omu">(<span>engl. OV</span>)</span></h2>
+				<h4 class="subtitel_klein">Wiederaufführung in 4K</h4>
+				<h3 class="datum">Tuesday, 1&nbsp;December, <span class="uhrzeit">8:00 pm</span></h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag breit">
+		<a href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-350x196.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg 2x">
+						<source media="(min-width: 451px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg" width="1400" height="784" alt="Too Drunk to Watch – XIII. Punkfilmfest Berlin 2026">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Festival</h4>
+				<h2 class="titel">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin</h2>
+				<h3 class="datum">2.–6.&thinsp;Dezember</h3>
+				<h3 class="start_anwesenheit">mit Live-Musik und Gästen!</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-acht-eimer-huehnerherzen">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Acht_Eimer_Huehnerherzen_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Acht_Eimer_Huehnerherzen_01-700x394.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Acht_Eimer_Huehnerherzen_01-700x394.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Acht_Eimer_Huehnerherzen_01-1400x787.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Acht_Eimer_Huehnerherzen_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Acht_Eimer_Huehnerherzen_01-700x394.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Acht_Eimer_Huehnerherzen_01-700x394.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Acht_Eimer_Huehnerherzen_01-1400x787.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Acht_Eimer_Huehnerherzen_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Acht_Eimer_Huehnerherzen_01-700x394.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Acht_Eimer_Huehnerherzen_01-700x394.jpg" width="1499" height="843" alt="Acht Eimer Hühnerherzen">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Spielfilm</h4>
+				<h2 class="titel_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin</h2>
+				<h2 class="titel">Acht Eimer Hühnerherzen</h2>
+				<h3 class="subtitel">+ Shorts<br>+ Live Acoustic: Backalley Sirens</h3>
+				<h3 class="datum">Mittwoch, 2.&thinsp;Dezember, <span class="uhrzeit">19:45&thinsp;Uhr</span></h3>
+				<h3 class="start_anwesenheit">+ Live Acoustic: Backalley Sirens</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-last-farm-in-reykjavik">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Last_Farm_in_Reykjavik_01-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Last_Farm_in_Reykjavik_01-700x450.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Last_Farm_in_Reykjavik_01-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Last_Farm_in_Reykjavik_01.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Last_Farm_in_Reykjavik_01-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Last_Farm_in_Reykjavik_01-700x450.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Last_Farm_in_Reykjavik_01-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Last_Farm_in_Reykjavik_01.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Last_Farm_in_Reykjavik_01-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Last_Farm_in_Reykjavik_01-700x450.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Last_Farm_in_Reykjavik_01-700x450.jpg" width="1400" height="900" alt="Last Farm in Reykjavik">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Dokumentarfilm</h4>
+				<h2 class="titel_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin</h2>
+				<h2 class="titel">Last Farm in Reykjavik&nbsp;<span class="omu">(<span>OmeU</span>)</span></h2>
+				<h3 class="subtitel">+ Shorts<br>+ Live Acoustic: Void Queen</h3>
+				<h3 class="datum">Donnerstag, 3.&thinsp;Dezember, <span class="uhrzeit">20:15&thinsp;Uhr</span></h3>
+				<h3 class="start_anwesenheit">+ Live Acoustic: Void Queen</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-short-movie-session-3-2">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-350x196.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-350x196.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-350x196.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg" width="1400" height="784" alt="Too Drunk to Watch – XIII. Punkfilmfest Berlin 2026">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Kurzfilm</h4>
+				<h2 class="titel_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin</h2>
+				<h2 class="titel">Short Movie Session II&nbsp;<span class="omu">(<span>OmU</span>)</span></h2>
+				<h3 class="subtitel">+ Live Acoustic: KreuzCassidy</h3>
+				<h3 class="datum">Samstag, 5.&thinsp;Dezember, <span class="uhrzeit">16:45&thinsp;Uhr</span></h3>
+				<h3 class="start_anwesenheit">+ Live Acoustic: KreuzCassidy</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-short-movie-session-3">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-350x196.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-350x196.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-350x196.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Too_Drunk_to_Watch_XIII_Titel-700x392.jpg" width="1400" height="784" alt="Too Drunk to Watch – XIII. Punkfilmfest Berlin 2026">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Kurzfilm</h4>
+				<h2 class="titel_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin</h2>
+				<h2 class="titel">Short Movie Session III&nbsp;<span class="omu">(<span>OmU</span>)</span></h2>
+				<h3 class="subtitel">+ Live Acoustic: Lauren Lakis</h3>
+				<h3 class="datum">Samstag, 5.&thinsp;Dezember, <span class="uhrzeit">18:45&thinsp;Uhr</span></h3>
+				<h3 class="start_anwesenheit">+ Live Acoustic: Lauren Lakis</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-jawbreaker">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Jawbreaker_01-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Jawbreaker_01-700x450.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Jawbreaker_01-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Jawbreaker_01.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Jawbreaker_01-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Jawbreaker_01-700x450.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Jawbreaker_01-700x450.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Jawbreaker_01.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Jawbreaker_01-350x225.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Jawbreaker_01-700x450.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/Jawbreaker_01-700x450.jpg" width="1400" height="900" alt="Jawbreaker">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Dokumentarfilm</h4>
+				<h2 class="titel_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin</h2>
+				<h2 class="titel">Jawbreaker: <span class="avoidbr">A Film About Anti Cimex</span>&nbsp;<span class="omu">(<span>OmU</span>)</span></h2>
+				<h3 class="subtitel">+ Short<br>+ Live Acoustic: Alex Bepunkt</h3>
+				<h3 class="datum">Samstag, 5.&thinsp;Dezember, <span class="uhrzeit">20:15&thinsp;Uhr</span></h3>
+				<h3 class="start_anwesenheit">+ Live Acoustic: Alex Bepunkt</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag">
+		<a href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-1946">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/1946_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/1946_01-700x394.jpg 2x">
+						<source media="(min-width: 451px) and (max-width: 650px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/1946_01-700x394.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/1946_01.jpg 2x">
+						<source media="(min-width: 651px) and (max-width: 850px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/1946_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/1946_01-700x394.jpg 2x">
+						<source media="(min-width: 851px) and (max-width: 1024px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/1946_01-700x394.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/1946_01.jpg 2x">
+						<source media="(min-width: 1025px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/1946_01-350x197.jpg, https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/1946_01-700x394.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Filmreihen+Specials/2026/26-12-Punkfilmfest-2026/1946_01-700x394.jpg" width="1400" height="788" alt="1946">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Dokumentarfilm</h4>
+				<h2 class="titel_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin</h2>
+				<h2 class="titel">1946: The Mistranslation That Shifted Culture&nbsp;<span class="omu">(<span>engl. OV</span>)</span></h2>
+				<h3 class="subtitel">+ Short<br>+ Live Acoustic: Jesko Braun</h3>
+				<h3 class="datum">Sonntag, 6.&thinsp;Dezember, <span class="uhrzeit">17:45&thinsp;Uhr</span></h3>
+				<h3 class="start_anwesenheit">+ Live Acoustic: Jesko Braun</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+	<div class="eintrag breit">
+		<a href="https://lichtblick-kino.org/punk-state/">
+			<div class="bild_rahmen">
+				<div class="bild">
+					<picture>
+						<source media="(max-width: 450px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Punk_State_121-350x147.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Punk_State_121-700x294.jpg 2x">
+						<source media="(min-width: 451px)" srcset="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Punk_State_121-700x294.jpg, https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Punk_State_121.jpg 2x">
+						<img loading="lazy" src="https://lichtblick-kino.org/wp-content/uploads/Film/Spielfilm/Punk_State_121-700x294.jpg" width="1400" height="587" alt="Punk State">
+					</picture>
+					<div class="bild_hintergrund"></div>
+				</div>
+			</div>
+			<div class="text">
+				<h4 class="genre">Spielfilm / Experimentalfilm</h4>
+				<h2 class="titel">Punk State&nbsp;<span class="omu">(<span>OmeU</span>)</span></h2>
+				<h3 class="datum">Monday, 7&nbsp;December, <span class="uhrzeit">9:00 pm</span></h3>
+				<h3 class="start_anwesenheit">followed by Q&A with director Loris Di Pasquale and actress Alma Noce</h3>
+			</div>
+			<div class="flaeche"></div>
+		</a>
+		<hr class="hidden">
+	</div>
+</div>
+
+			</div>
+			<hr class="hidden">
+			
+			<!-- ********** Kalender ********** -->
+			<div id="kalender_rahmen">
+
+<div id="kalender">
+	<div id="kalender_heute">
+		<div class="kal_tag heute">
+			<div>heute<!--&thinsp;/&thinsp;today-->:</div>
+		</div>
+		<div class="kal_tag">
+			<h4 class="kal_datum">So <span>15<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/edmund-und-luzie-winterabenteuer/">
+			<div class="kal_uhrzeit">14<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Animationsfilm für die ganze Familie</div>
+						<div class="kal_titel">Edmund und Luzie – Winterabenteuer</div>
+					</div>
+				<div class="tickets" data-ticket="3691234094"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/helene-weigel-revolutionaerin-im-rampenlicht/">
+			<div class="kal_uhrzeit">14<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Helene Weigel – Revolutionärin im Rampenlicht</div>
+					</div>
+				<div class="tickets" data-ticket="3691233470"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/einar-schleef-ich-habe-kein-deutschland-gefunden/">
+			<div class="kal_uhrzeit">16<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Einar Schleef – Ich habe kein Deutschland gefunden</div>
+					</div>
+				<div class="tickets" data-ticket="3691239819"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/making-marie-antoinette/">
+			<div class="kal_uhrzeit">18<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_uebertitel_klein">Eleanor Coppola:</div>
+						<div class="kal_titel">Making Marie Antoinette&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3691331711"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/marie-antoinette/">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_uebertitel_klein">Sofia Coppola: </div>
+						<div class="kal_titel">Marie Antoinette&nbsp;<span class="omu">(<span>OV</span>)</span></div>
+						<div class="kal_subtitel_klein">Wiederaufführung in 4K</div>
+					</div>
+				<div class="tickets" data-ticket="3691237337"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/le-citta-di-pianura/">
+			<div class="kal_uhrzeit">22<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Le città di pianura – <span class="avoidbr">Eine letzte Runde</span>&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3691233511"><span>Tickets</span></div>
+			</a>
+	</div>
+			<hr class="hidden">
+		</div>
+	</div>
+
+	<div class="kalender_klappe anfang auf">&nbsp;</div>
+	<div id="kalender_rest">
+		<div id="kalender_rest_innen">
+			<div class="kal_tag">
+				<h4 class="kal_datum">Mo <span>16<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/naza/">
+			<div class="kal_uhrzeit">17<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Naza&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3691230126"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/einar-schleef-ich-habe-kein-deutschland-gefunden/">
+			<div class="kal_uhrzeit">18<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Einar Schleef – Ich habe kein Deutschland gefunden</div>
+					</div>
+				<div class="tickets" data-ticket="3691240517"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/special/audre-lorde-the-berlin-years-1984-1992-witness-history/">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Berlin – Filme der Stadt</div>
+						<div class="kal_titel">Audre Lorde&nbsp;– The Berlin Years 1984 to 1992&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+						<div class="kal_subtitel_klein">+&thinsp;Short Documentary: <span class="avoidbr">Witness History&nbsp;– Ika Hügel-Marshall</span></div>
+					</div>
+				<div class="tickets" data-ticket="3691264102"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/helene-weigel-revolutionaerin-im-rampenlicht/">
+			<div class="kal_uhrzeit">21<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Helene Weigel – Revolutionärin im Rampenlicht</div>
+					</div>
+				<div class="tickets" data-ticket="3691265735"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Di <span>17<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/helene-weigel-revolutionaerin-im-rampenlicht/">
+			<div class="kal_uhrzeit">17<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Helene Weigel – Revolutionärin im Rampenlicht</div>
+					</div>
+				<div class="tickets" data-ticket="3691264658"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/biermann/">
+			<div class="kal_uhrzeit">19<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Biermann</div>
+						<div class="kal_anwesenheit">in Anwesenheit des Regisseurs Jens Meurer</div>
+					</div>
+				<div class="tickets" data-ticket="3691250827"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/le-citta-di-pianura/">
+			<div class="kal_uhrzeit">21<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Le città di pianura – <span class="avoidbr">Eine letzte Runde</span>&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3691251404"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Mi <span>18<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/biermann/">
+			<div class="kal_uhrzeit">18<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Biermann</div>
+					</div>
+				<div class="tickets" data-ticket="3691251016"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/special/barrio-triste-preview/">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_preview">Preview:</div>
+						<div class="kal_titel">Barrio Triste&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3691274609"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/le-citta-di-pianura/">
+			<div class="kal_uhrzeit">21<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Le città di pianura – <span class="avoidbr">Eine letzte Runde</span>&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3691264934"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Do <span>19<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/helene-weigel-revolutionaerin-im-rampenlicht/">
+			<div class="kal_uhrzeit">18<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Helene Weigel – Revolutionärin im Rampenlicht</div>
+					</div>
+				<div class="tickets" data-ticket="3684690780"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/barrio-triste/">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Barrio Triste&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3691234721"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Fr <span>20<span>.11.</span></span></h4>
+<div class="kal_keine_vorstellung">keine Vorstellung</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Sa <span>21<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/edmund-und-luzie-winterabenteuer/">
+			<div class="kal_uhrzeit">14<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Animationsfilm für die ganze Familie</div>
+						<div class="kal_titel">Edmund und Luzie – Winterabenteuer</div>
+					</div>
+				<div class="tickets" data-ticket="3691335171"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/einar-schleef-ich-habe-kein-deutschland-gefunden/">
+			<div class="kal_uhrzeit">15<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Einar Schleef – Ich habe kein Deutschland gefunden</div>
+					</div>
+				<div class="tickets" data-ticket="3691335560"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/biermann/">
+			<div class="kal_uhrzeit">17<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Biermann</div>
+					</div>
+				<div class="tickets" data-ticket="3691267349"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/the-party-nature-morte-wa/">
+			<div class="kal_uhrzeit">19<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">The Party – Nature Morte&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+						<div class="kal_subtitel_klein">Wiederaufführung in 4K</div>
+					</div>
+				<div class="tickets" data-ticket="3691236841"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/barrio-triste/">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Barrio Triste&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3691236018"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/die-blutgraefin/">
+			<div class="kal_uhrzeit">22<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_uebertitel_klein">Ulrike Ottinger:</div>
+						<div class="kal_titel">Die Blutgräfin</div>
+					</div>
+				<div class="tickets" data-ticket="3691234632"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/casablanca/">
+			<div class="kal_uhrzeit">24<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Filmklassiker im Lichtblick-Kino</div>
+						<div class="kal_titel">Casablanca&nbsp;<span class="omu">(<span>OV</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3684690064"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">So <span>22<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/edmund-und-luzie-winterabenteuer/">
+			<div class="kal_uhrzeit">13<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Animationsfilm für die ganze Familie</div>
+						<div class="kal_titel">Edmund und Luzie – Winterabenteuer</div>
+					</div>
+				<div class="tickets" data-ticket="3691233064"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-22-european-arthouse-cinema-day/das-getraeumte-abenteuer">
+			<div class="kal_uhrzeit">14<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">11. European Arthouse Cinema Day 2026			</div>
+						<div class="kal_titel">Das geträumte Abenteuer&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3684919812"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-22-european-arthouse-cinema-day/grand-jete">
+			<div class="kal_uhrzeit">17<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">11. European Arthouse Cinema Day 2026			</div>
+						<div class="kal_titel">Grand Jeté</div>
+						<div class="kal_anwesenheit">in Anwesenheit der Filmemacherinnen Isabelle Stever und Anna Melikova</div>
+					</div>
+				<div class="tickets" data-ticket="3691338262"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-22-european-arthouse-cinema-day/career-girls">
+			<div class="kal_uhrzeit">19<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">11. European Arthouse Cinema Day 2026			</div>
+						<div class="kal_uebertitel"><em>Mike Leigh:</em></div>
+						<div class="kal_titel">Career Girls&nbsp;<span class="omu">(<span>engl. OV</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3694047274"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-22-european-arthouse-cinema-day/staatsschutz">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">11. European Arthouse Cinema Day 2026			</div>
+						<div class="kal_titel">Staatsschutz&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3693463309"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Mo <span>23<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/biermann/">
+			<div class="kal_uhrzeit">18<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Biermann</div>
+					</div>
+				<div class="tickets" data-ticket="3693390281"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/helene-weigel-revolutionaerin-im-rampenlicht/">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Helene Weigel – Revolutionärin im Rampenlicht</div>
+						<div class="kal_anwesenheit">in Anwesenheit der Regisseurin Maria&nbsp;Wischnewski</div>
+					</div>
+				<div class="tickets" data-ticket="3693390300"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/der-himmel-ueber-berlin-wa/">
+			<div class="kal_uhrzeit">22<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Filmklassiker im Lichtblick-Kino / <span class="avoidbr">Berlin – Filme der Stadt</span></div>
+						<div class="kal_uebertitel"><em>Wim Wenders:</em></div>
+						<div class="kal_titel">Der Himmel über Berlin&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3693396362"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Di <span>24<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/einar-schleef-ich-habe-kein-deutschland-gefunden/">
+			<div class="kal_uhrzeit">18<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Einar Schleef – Ich habe kein Deutschland gefunden</div>
+					</div>
+				<div class="tickets" data-ticket="3691273211"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/special/26-11-24-ni-una-menos-la-mutante/">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_uebertitel_klein">Vierte Welle Film Festival presents:</div>
+						<div class="kal_haupttitel">Ni una menos: <span class="avoidbr">Films Against Violence Against Women</span></div>
+						<div class="kal_titel">La Mutante&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3692441882"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/biermann/">
+			<div class="kal_uhrzeit">21<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Biermann</div>
+					</div>
+				<div class="tickets" data-ticket="3693390140"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Mi <span>25<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-broken-english">
+			<div class="kal_uhrzeit">19<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span>			</div>
+						<div class="kal_uebertitel_klein">Berlin Preview:</div>
+						<div class="kal_titel">Broken English – Marianne Faithful&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3693465590"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-the-best-summer">
+			<div class="kal_uhrzeit">21<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span>			</div>
+						<div class="kal_uebertitel_klein">Berlin Premiere:</div>
+						<div class="kal_titel">The Best Summer&nbsp;<span class="omu">(<span>engl. OV</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3695082412"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Do <span>26<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-modernist-usmanbas">
+			<div class="kal_uhrzeit">19<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span>			</div>
+						<div class="kal_uebertitel_klein">German Premiere:</div>
+						<div class="kal_titel">Modernist: Usmanbaş&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+						<div class="kal_subtitel_klein">+ Short Film:<br>Mimaroğlu Remix Project (excerpts)</div>
+					</div>
+				<div class="tickets" data-ticket="3695084086"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-nova-78">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span>			</div>
+						<div class="kal_uebertitel_klein">Berlin Premiere:</div>
+						<div class="kal_titel">Nova ’78&nbsp;<span class="omu">(<span>engl. OV</span>)</span></div>
+						<div class="kal_anwesenheit">Online Q&amp;A with co-director Rodrigo Areias</div>
+					</div>
+				<div class="tickets" data-ticket="3694264610"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-fugs-film">
+			<div class="kal_uhrzeit">21<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span>			</div>
+						<div class="kal_uebertitel_klein">German Premiere:</div>
+						<div class="kal_titel">Fugs Film!&nbsp;<span class="omu">(<span>engl. OV</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3695084273"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<div class="kal_ausblick">Ausblick:</div>
+			</div>			<div class="kal_tag">
+				<h4 class="kal_datum">Fr <span>27<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/der-himmel-ueber-berlin-wa/">
+			<div class="kal_uhrzeit">16<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Filmklassiker im Lichtblick-Kino / <span class="avoidbr">Berlin – Filme der Stadt</span></div>
+						<div class="kal_uebertitel"><em>Wim Wenders:</em></div>
+						<div class="kal_titel">Der Himmel über Berlin&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3695433634"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-popular-music-and-the-secret-service-in-hungary">
+			<div class="kal_uhrzeit">19<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span>			</div>
+						<div class="kal_uebertitel">Book Presentation:</div>
+						<div class="kal_titel">Popular Music and the Secret Service in Hungary, 1945–1990</div>
+						<div class="kal_anwesenheit">with author Tamás Szőnyei</div>
+					</div>
+				<div class="tickets" data-ticket="3695089287"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-illustrated-encyclopedia-of-hungarian-punk">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span>			</div>
+						<div class="kal_uebertitel">Book Presentation:</div>
+						<div class="kal_titel">Illustrated Encyclopedia of Hungarian Punk 1975–1990</div>
+						<div class="kal_anwesenheit">Talk with editor Tamás Rupaszov and author Henryk Gericke,<br>+ Live Music: The Snobs (Budapest) – acoustic anarcho-punk</div>
+					</div>
+				<div class="tickets" data-ticket="3695089555"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Sa <span>28<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/einar-schleef-ich-habe-kein-deutschland-gefunden/">
+			<div class="kal_uhrzeit">14<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Einar Schleef – Ich habe kein Deutschland gefunden</div>
+					</div>
+				<div class="tickets" data-ticket="3695095242"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/uebergang-ein-film-fuer-thomas-heise/">
+			<div class="kal_uhrzeit">16<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Berlin – Filme der Stadt</div>
+						<div class="kal_titel">Übergang – <span class="avoidbr">Ein Film für Thomas Heise</span></div>
+						<div class="kal_anwesenheit">in Anwesenheit des Co-Regisseurs Chris Wright</div>
+					</div>
+				<div class="tickets" data-ticket="3694442539"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-outsider">
+			<div class="kal_uhrzeit">18<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span>			</div>
+						<div class="kal_uebertitel">Slovenian Punk Double Feature:</div>
+						<div class="kal_titel">Outsider&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3695085380"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-punk-under-communist-regime">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span>			</div>
+						<div class="kal_uebertitel">Slovenian Punk Double Feature:</div>
+						<div class="kal_titel">Punk Under Communist Regime&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+						<div class="kal_anwesenheit">Online talk with director Andrej Košak and producer Zoran Dževerdanović</div>
+					</div>
+				<div class="tickets" data-ticket="3694539724"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-butthole-surfers">
+			<div class="kal_uhrzeit">22<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span>			</div>
+						<div class="kal_uebertitel_klein">German Premiere:</div>
+						<div class="kal_titel">Butthole Surfers: <span class="avoidbr">The Hole Truth and Nothing Butt</span>&nbsp;<span class="omu">(<span>engl. OV</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3695086039"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">So <span>29<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/performing-the-goddess/">
+			<div class="kal_uhrzeit">11<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Performing the Goddess: <span class="avoidbr">The Chapal Bhaduri Story</span>&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+						<div class="kal_anwesenheit">Gespräch mit Sandip Roy, Autor des Romans »Chapal Rani – The Last Queen of Bengal«</div>
+					</div>
+				<div class="tickets" data-ticket="3695092224"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/helene-weigel-revolutionaerin-im-rampenlicht/">
+			<div class="kal_uhrzeit">14<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Helene Weigel – Revolutionärin im Rampenlicht</div>
+					</div>
+				<div class="tickets" data-ticket="3695095374"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/uebergang-ein-film-fuer-thomas-heise/">
+			<div class="kal_uhrzeit">16<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Berlin – Filme der Stadt</div>
+						<div class="kal_titel">Übergang – <span class="avoidbr">Ein Film für Thomas Heise</span></div>
+					</div>
+				<div class="tickets" data-ticket="3694443134"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-mark-fisher">
+			<div class="kal_uhrzeit">18<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span>			</div>
+						<div class="kal_titel">We Are Making a Film About Mark Fisher&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+						<div class="kal_anwesenheit">Online Q&amp;A with directors Sophie Mellor and Simon Poulter</div>
+						<div class="kal_info_extra">Free entry. Please reserve a free ticket!</div>
+					</div>
+				<div class="tickets" data-ticket="3695087370"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-mark-fisher">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span>			</div>
+						<div class="kal_titel">We Are Making a Film About Mark Fisher&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+						<div class="kal_info_extra">Free entry. Please reserve a free ticket!</div>
+					</div>
+				<div class="tickets" data-ticket="3695087843"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-eternity">
+			<div class="kal_uhrzeit">21<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Soundwatch – <span class="avoidbr">Music&nbsp;Film Festival Berlin&nbsp;#10</span>			</div>
+						<div class="kal_titel">Eternity&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3694540598"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Mo <span>30<span>.11.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/biermann/">
+			<div class="kal_uhrzeit">18<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Biermann</div>
+					</div>
+				<div class="tickets" data-ticket="3694772013"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/berlinized/">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Berlin – Filme der Stadt</div>
+						<div class="kal_titel">Berlinized&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+						<div class="kal_anwesenheit">in Anwesenheit des Regisseurs Lucian&nbsp;Busse</div>
+					</div>
+				<div class="tickets" data-ticket="3694440474"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/barrio-triste/">
+			<div class="kal_uhrzeit">21<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Barrio Triste&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3694772195"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<div class="kal_monat">Dezember</div>
+			</div>			<div class="kal_tag">
+				<h4 class="kal_datum">Di <span>01<span>.12.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/uebergang-ein-film-fuer-thomas-heise/">
+			<div class="kal_uhrzeit">18<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Berlin – Filme der Stadt</div>
+						<div class="kal_titel">Übergang – <span class="avoidbr">Ein Film für Thomas Heise</span></div>
+					</div>
+				<div class="tickets" data-ticket="3694771922"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/trainspotting/">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Filmklassiker im Lichtblick-Kino</div>
+						<div class="kal_titel">Trainspotting&nbsp;<span class="omu">(<span>engl. OV</span>)</span></div>
+						<div class="kal_subtitel_klein">Wiederaufführung in 4K</div>
+					</div>
+				<div class="tickets" data-ticket="3694440099"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/barrio-triste/">
+			<div class="kal_uhrzeit">21<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Barrio Triste&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3694772032"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Mi <span>02<span>.12.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-bernd">
+			<div class="kal_uhrzeit">17<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">Bernd – Operation Germanenkind</div>
+						<div class="kal_subtitel_klein">+ Kurzfilm</div>
+					</div>
+				<div class="tickets" data-ticket="3694506913"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-acht-eimer-huehnerherzen">
+			<div class="kal_uhrzeit">19<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">Acht Eimer Hühnerherzen</div>
+						<div class="kal_subtitel_klein">+ Shorts</div>
+						<div class="kal_anwesenheit">+ Live Acoustic: Backalley Sirens</div>
+					</div>
+				<div class="tickets" data-ticket="3695623235"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-the-wild-west-bank-sound">
+			<div class="kal_uhrzeit">21<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">The Wild West Bank Sound&nbsp;<span class="omu">(<span>engl. OV</span>)</span></div>
+						<div class="kal_subtitel_klein">+ Shorts</div>
+					</div>
+				<div class="tickets" data-ticket="3695624502"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Do <span>03<span>.12.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-smellscape">
+			<div class="kal_uhrzeit">18<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">Smellscape&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+						<div class="kal_subtitel_klein">+ Shorts</div>
+					</div>
+				<div class="tickets" data-ticket="3695627088"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-last-farm-in-reykjavik">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">Last Farm in Reykjavik&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+						<div class="kal_subtitel_klein">+ Shorts</div>
+						<div class="kal_anwesenheit">+ Live Acoustic: Void Queen</div>
+					</div>
+				<div class="tickets" data-ticket="3695627615"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-once-we-were-punks">
+			<div class="kal_uhrzeit">22<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">Once We Were Punks – <span class="avoidbr">The Best Band You Never Heard</span>&nbsp;<span class="omu">(<span>engl. OV</span>)</span></div>
+						<div class="kal_subtitel_klein">+ Shorts</div>
+					</div>
+				<div class="tickets" data-ticket="3695628523"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Fr <span>04<span>.12.</span></span></h4>
+<div class="kal_keine_vorstellung">keine Vorstellung</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Sa <span>05<span>.12.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/edmund-und-luzie-winterabenteuer/">
+			<div class="kal_uhrzeit">14<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Animationsfilm für die ganze Familie</div>
+						<div class="kal_titel">Edmund und Luzie – Winterabenteuer</div>
+					</div>
+				<div class="tickets" data-ticket="3691233062"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-love-your-local-network">
+			<div class="kal_uhrzeit">15<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">Love Your Local Network – <span class="avoidbr">Ruhestörung im Kosmos</span></div>
+						<div class="kal_subtitel_klein">+ Shorts</div>
+					</div>
+				<div class="tickets" data-ticket="3695631544"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-short-movie-session-3-2">
+			<div class="kal_uhrzeit">16<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">Short Movie Session II&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+						<div class="kal_anwesenheit">+ Live Acoustic: KreuzCassidy</div>
+					</div>
+				<div class="tickets" data-ticket="3695633663"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-short-movie-session-3">
+			<div class="kal_uhrzeit">18<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">Short Movie Session III&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+						<div class="kal_anwesenheit">+ Live Acoustic: Lauren Lakis</div>
+					</div>
+				<div class="tickets" data-ticket="3695633783"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-jawbreaker">
+			<div class="kal_uhrzeit">20<span class="zeichen">:</span>15</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">Jawbreaker: <span class="avoidbr">A Film About Anti Cimex</span>&nbsp;<span class="omu">(<span>OmU</span>)</span></div>
+						<div class="kal_subtitel_klein">+ Short</div>
+						<div class="kal_anwesenheit">+ Live Acoustic: Alex Bepunkt</div>
+					</div>
+				<div class="tickets" data-ticket="3695665765"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-sugar-rot">
+			<div class="kal_uhrzeit">22<span class="zeichen">:</span>30</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">Sugar Rot&nbsp;<span class="omu">(<span>engl. OV</span>)</span></div>
+						<div class="kal_subtitel_klein">+ Short</div>
+					</div>
+				<div class="tickets" data-ticket="3695666440"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">So <span>06<span>.12.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/edmund-und-luzie-winterabenteuer/">
+			<div class="kal_uhrzeit">13<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_haupttitel">Animationsfilm für die ganze Familie</div>
+						<div class="kal_titel">Edmund und Luzie – Winterabenteuer</div>
+					</div>
+				<div class="tickets" data-ticket="3695632527"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/biermann/">
+			<div class="kal_uhrzeit">14<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Biermann</div>
+					</div>
+				<div class="tickets" data-ticket="3695976226"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-alvaro-inside-out">
+			<div class="kal_uhrzeit">16<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">Alvaro Inside Out – <span class="avoidbr">80 Years, No Stagnation – The Reinvention of Chile’s First Punk</span></div>
+						<div class="kal_subtitel_klein">+ Shorts</div>
+					</div>
+				<div class="tickets" data-ticket="3695971669"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-1946">
+			<div class="kal_uhrzeit">17<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">1946: The Mistranslation That Shifted Culture&nbsp;<span class="omu">(<span>engl. OV</span>)</span></div>
+						<div class="kal_subtitel_klein">+ Short</div>
+						<div class="kal_anwesenheit">+ Live Acoustic: Jesko Braun</div>
+					</div>
+				<div class="tickets" data-ticket="3695975447"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-tutti-frutti">
+			<div class="kal_uhrzeit">19<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">Tutti Frutti: <span class="avoidbr">El Templo del Underground</span>&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3695975534"><span>Tickets</span></div>
+			</a>
+			<a class="kal_zeile" href="https://lichtblick-kino.org/reihe/26-12-too-drunk-to-watch-xiii-punkfilmfest-berlin/punkfest26-call-the-cops">
+			<div class="kal_uhrzeit">21<span class="zeichen">:</span>45</div>
+			<div class="kal_vorstellung">
+							<div class="kal_filmreihe">Too Drunk to Watch<br>XIII.&thinsp;Punkfilmfest Berlin			</div>
+						<div class="kal_titel">Call the Cops&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+					</div>
+				<div class="tickets" data-ticket="3695975647"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kal_tag">
+				<h4 class="kal_datum">Mo <span>07<span>.12.</span></span></h4>
+<div class="kal_tagesprogramm">
+			<a class="kal_zeile" href="https://lichtblick-kino.org/punk-state/">
+			<div class="kal_uhrzeit">21<span class="zeichen">:</span>00</div>
+			<div class="kal_vorstellung">
+							<div class="kal_titel">Punk State&nbsp;<span class="omu">(<span>OmeU</span>)</span></div>
+						<div class="kal_anwesenheit">followed by Q&A with director Loris Di Pasquale and actress Alma Noce</div>
+					</div>
+				<div class="tickets" data-ticket="3708241633"><span>Tickets</span></div>
+			</a>
+	</div>
+				<hr class="hidden">
+			</div>
+			<div class="kalender_klappe ende zu">&nbsp;</div>
+		</div>
+	</div>
+</div>
+				
+				<!-- ***** Downloads + Newsletter-Abo + Gutscheine (Kalender) ***** -->
+				<div id="downloads">
+					<div class="download_programm"><strong>Download Programm-PDF:</strong><br>
+						<a href="Downloads/Programm/Lichtblick-11-2026.pdf">Lichtblick-11-2026.pdf</a> <span class="filesize">(159&nbsp;kB)</span>
+					</div>
+					<hr class="hidden">
+					
+					<!-- ***** Newsletter abonnieren ***** -->
+					<div id="newsletter"><a class="newsletter" href="newsletter/" target="_blank" rel="noopener noreferrer"><strong>Newsletter abonnieren&nbsp;/ abbestellen</strong></a></div>
+					
+					<!-- ***** Gutscheine kaufen ***** -->
+					<div id="gutscheine"><a class="gutscheine" href="https://www.kinoheld.de/kino/berlin/lichtblick-kino-berlin/gutscheine?mode=widget%23panel-seats" target="_blank" rel="noopener noreferrer"><strong>Gutscheine online kaufen</strong></a></div>
+				</div>
+			</div>
+			
+		</div>
+		<hr class="hidden">
+		
+		<!-- ***** Fuß ***** -->
+		<div id="fuss">
+			<div id="fuss_schluss">
+				<div id="fuss_logo">
+					<a href="http://www.europa-cinemas.org/en" target="_blank" rel="noopener noreferrer"><div id="logo_europa_cinemas" class="logo"><span>Logo Europa Cinemas</span></div></a>
+				</div>
+				<div id="impressum_datenschutz"><a href="impressum">Impressum&nbsp;+ Datenschutz</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ***** Info-Tafel OmU-Erklärung ***** -->
+<div id="info_omu" data-omu=""><div></div></div>
+
+<!-- ***** Info-Tafel Ticket-Kauf ***** -->
+<div id="info_tickets"><div></div></div>
+
+<!-- ***** Fenster extra (Ticket-Kauf etc.) ***** -->
+<div id="fenster_extra">
+	<div id="fenster_extra_innen"></div>
+	<div class="aus"></div>
+</div>
+<div id="fenster_extra_flaeche"></div>
+
+</body>
+</html>
