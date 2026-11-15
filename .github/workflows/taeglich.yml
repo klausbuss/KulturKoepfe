@@ -5,8 +5,12 @@ on:
     # Einmal täglich um 6 Uhr deutscher Zeit. GitHub kennt nur UTC: 04:00 UTC ist im Sommer
     # 6 Uhr, 05:00 UTC im Winter. Der Schritt „Zeit prüfen“ lässt nur den ersten Lauf ab
     # 6 Uhr arbeiten, der zweite Zeitpunkt wird übersprungen.
-    - cron: "0 4 * * *"
-    - cron: "0 5 * * *"
+    # Minuten bewusst „krumm“ (:17/:43): volle Stunden sind bei GitHub stark überlastet,
+    # dort verzögern sich Läufe seit Anfang November um Stunden. Mehrfachläufe werden übersprungen.
+    - cron: "17 4 * * *"
+    - cron: "43 4 * * *"
+    - cron: "17 5 * * *"
+    - cron: "43 5 * * *"
   workflow_dispatch:      # erlaubt den Start per Knopfdruck (läuft immer)
 
 permissions:
