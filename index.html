@@ -586,7 +586,7 @@ function preisHTML(h){
 }
 
 // „Heute läuft“: wird täglich von abruf.py erzeugt
-let HEUTE = null;
+let HEUTE = null, VORTAG = false;   // VORTAG: Daten von gestern, Aktualisierung steht noch aus
 const esc = t => String(t||"").replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const heuteISO = () => new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Berlin"}).format(new Date());
 const heute = id => HEUTE && HEUTE[id];
@@ -602,10 +602,10 @@ function heuteKurz(id){
     const a = h.ausstellungen[0], mehr = h.ausstellungen.length-1;
     return `<span class="heute-kurz">Aktuell: ${esc(a.titel)}${mehr>0 ? " (+"+mehr+")" : ""}</span>`;
   }
-  if(h.status==="keine") return `<span class="heute-kurz">Heute keine Vorstellung</span>`;
+  if(h.status==="keine") return `<span class="heute-kurz">${VORTAG?"Gestern":"Heute"} keine Vorstellung</span>`;
   if(h.status!=="ok") return "";
   const v = h.vorstellungen[0], mehr = h.vorstellungen.length-1;
-  return `<span class="heute-kurz">Heute: ${esc(v.titel)}${v.zeit ? ", "+v.zeit : ""}${mehr>0 ? " (+"+mehr+")" : ""}</span>`;
+  return `<span class="heute-kurz">${VORTAG?"Gestern":"Heute"}: ${esc(v.titel)}${v.zeit ? ", "+v.zeit : ""}${mehr>0 ? " (+"+mehr+")" : ""}</span>`;
 }
 function heuteBlock(id){
   const zu = geschlossen(id) ? `<div class="heute leer"><h4>Heute</h4><ul><li><span>Heute geschlossen (Ruhetag)</span></li></ul></div>` : "";
@@ -619,14 +619,18 @@ function heuteBlockDaten(id){
       <li><b>${a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.titel)}</a>` : esc(a.titel)}</b>
       <span>bis ${datumKurz(a.bis)}</span></li>`).join("") + `</ul></div>`;
   }
-  if(h.status==="keine") return `<div class="heute leer"><h4>Heute läuft</h4><ul><li><span>Heute keine Vorstellung</span></li></ul></div>`;
+  const kopf = VORTAG ? "Gestern lief" : "Heute läuft";
+  const hinweis = VORTAG ? `<li><span>Stand von gestern – die Aktualisierung für heute folgt.</span></li>` : "";
+  if(h.status==="keine") return `<div class="heute leer"><h4>${kopf}</h4><ul><li><span>${VORTAG?"Gestern":"Heute"} keine Vorstellung</span></li>${hinweis}</ul></div>`;
   if(h.status!=="ok") return "";
-  return `<div class="heute"><h4>Heute läuft</h4><ul>` + h.vorstellungen.map(v=>`
+  return `<div class="heute"><h4>${kopf}</h4><ul>${hinweis}` + h.vorstellungen.map(v=>`
     <li><b>${v.url ? `<a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.titel)}</a>` : esc(v.titel)}</b>
     <span>${[v.zeit ? v.zeit+" Uhr" : "", esc(v.ort)].filter(Boolean).join(" · ")}</span></li>`).join("") + `</ul></div>`;
 }
 fetch("heute.json",{cache:"no-store"}).then(r=>r.ok ? r.json() : null).then(d=>{
-  if(d && d.datum===heuteISO()){ HEUTE = d.haeuser; render(); }
+  if(!d) return;
+  const gestern = new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Berlin"}).format(new Date(Date.now()-864e5));
+  if(d.datum===heuteISO() || d.datum===gestern){ VORTAG = d.datum!==heuteISO(); HEUTE = d.haeuser; render(); }
 }).catch(()=>{});
 
 const STAEDTE = {berlin:"Berlins", hamburg:"Hamburgs", muenchen:"Münchens", wien:"Wiens", frankfurt:"Frankfurts"};
