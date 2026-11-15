@@ -85,8 +85,8 @@
   <p class="stand">Stand Oktober 2026</p>
 </div>
 <script>
-const SPARTEN = {"Theater":"var(--u6)","Festival":"var(--u2)","Oper":"var(--u3)","Tanz":"var(--u7)","Konzert":"var(--u5)","Museum":"var(--u8)"};
-const BEREICHE = {theater:"Theater", musik:"Musik", museen:"Museen"};
+const SPARTEN = {"Theater":"var(--u6)","Festival":"var(--u2)","Oper":"var(--u3)","Tanz":"var(--u7)","Konzert":"var(--u5)","Museum":"var(--u8)","Kino":"var(--u9)"};
+const BEREICHE = {theater:"Theater", musik:"Musik", museen:"Museen", kino:"Kinos"};
 const HAEUSER = [
   {stadt:"berlin",id:"so",bereich:"musik",name:"Staatsoper Unter den Linden",sparte:"Oper",bezirk:"Mitte",c:[13.3955,52.5165],web:"staatsoper-berlin.de"},
   {stadt:"berlin",id:"do",bereich:"musik",name:"Deutsche Oper Berlin",sparte:"Oper",bezirk:"Charlottenburg-Wilmersdorf",c:[13.3087,52.5121],web:"deutscheoperberlin.de"},
@@ -194,6 +194,32 @@ const HAEUSER = [
   ,{stadt:"wien",id:"w-wm",bereich:"museen",name:"Wien Museum",zusatz:"am Karlsplatz",sparte:"Museum",bezirk:"Wieden",c:[16.3718,48.199],web:"wienmuseum.at",zu:[1]}
   ,{stadt:"wien",id:"w-tmw",bereich:"museen",name:"Technisches Museum Wien",sparte:"Museum",bezirk:"Penzing",c:[16.3176,48.1906],web:"technischesmuseum.at"}
   ,{stadt:"wien",id:"w-wmw",bereich:"museen",name:"Weltmuseum Wien",sparte:"Museum",bezirk:"Innere Stadt",c:[16.3653,48.2058],web:"weltmuseumwien.at",zu:[1]}
+  ,{stadt:"berlin",id:"b-bab",bereich:"kino",name:"Babylon",sparte:"Kino",bezirk:"Mitte",c:[13.4115,52.5264],web:"babylonberlin.eu"}
+  ,{stadt:"berlin",id:"b-ars",bereich:"kino",name:"Arsenal Filminstitut",zusatz:"silent green Kulturquartier, neues Kino seit Mai 2026",sparte:"Kino",bezirk:"Wedding",c:[13.3593,52.5455],web:"arsenal-berlin.de"}
+  ,{stadt:"berlin",id:"b-mov",bereich:"kino",name:"Moviemento",zusatz:"ältestes Kino Deutschlands, seit 1907",sparte:"Kino",bezirk:"Kreuzberg",c:[13.4232,52.4893],web:"moviemento.de"}
+  ,{stadt:"berlin",id:"b-kin",bereich:"kino",name:"Kino International",zusatz:"Yorck Kinogruppe, seit März 2026 nach Sanierung wieder offen",sparte:"Kino",bezirk:"Mitte",c:[13.4219,52.5223],web:"yorck.de/kinos/international"}
+  ,{stadt:"berlin",id:"b-dlx",bereich:"kino",name:"delphi LUX",zusatz:"Yorck Kinogruppe, sieben Säle am Zoo",sparte:"Kino",bezirk:"Charlottenburg-Wilmersdorf",c:[13.3318,52.5063],web:"yorck.de/kinos/delphi-lux"}
+  ,{stadt:"berlin",id:"b-fsk",bereich:"kino",name:"fsk Kino",zusatz:"Kollektiv am Oranienplatz",sparte:"Kino",bezirk:"Kreuzberg",c:[13.4148,52.5015],web:"fsk-kino.peripherfilm.de",hinweis:"Das fsk wird von einem Kollektiv geführt, das keine einzelne Leitung nennt."}
+  ,{stadt:"berlin",id:"b-lbk",bereich:"kino",name:"Lichtblick-Kino",zusatz:"Kastanienallee 77",sparte:"Kino",bezirk:"Prenzlauer Berg",c:[13.412,52.5408],web:"lichtblick-kino.org",hinweis:"Das Lichtblick-Kino nennt öffentlich keine Leitung. Ich ergänze sie, sobald sie sich belegen lässt."}
+  ,{stadt:"hamburg",id:"hh-abk",bereich:"kino",name:"Abaton Kino",zusatz:"eines der ersten Programmkinos Deutschlands",sparte:"Kino",bezirk:"Rotherbaum",c:[9.9887,53.5668],web:"abaton.de",hinweis:"Gründer Werner Grassmann starb 2023, die Programmleitung liegt bei seinen Söhnen. Ich ergänze die Namen, sobald sie sich belegen lassen."}
+  ,{stadt:"hamburg",id:"hh-3001",bereich:"kino",name:"3001 Kino",zusatz:"im Hinterhof der Schanzenstraße",sparte:"Kino",bezirk:"Sternschanze",c:[9.9618,53.5632],web:"3001-kino.de",hinweis:"Das 3001 nennt öffentlich keine Leitung. Ich ergänze sie, sobald sie sich belegen lässt."}
+  ,{stadt:"hamburg",id:"hh-met",bereich:"kino",name:"Metropolis Kino",zusatz:"Kinemathek Hamburg e. V., neben der Staatsoper",sparte:"Kino",bezirk:"Neustadt",c:[9.989,53.557],web:"metropoliskino.de",hinweis:"Das Metropolis führt die Kinemathek Hamburg e. V., eine Leitung nennt der Verein nicht öffentlich. Ich ergänze sie, sobald sie sich belegen lässt."}
+  ,{stadt:"hamburg",id:"hh-bmv",bereich:"kino",name:"B-Movie",zusatz:"ehrenamtliche Kulturinitiative, ohne Werbung",sparte:"Kino",bezirk:"St. Pauli",c:[9.965,53.5583],web:"b-movie.de",hinweis:"Das B-Movie wird ehrenamtlich von einem Team betrieben, eine einzelne Leitung gibt es nicht."}
+  ,{stadt:"hamburg",id:"hh-zei",bereich:"kino",name:"Zeise Kinos",zusatz:"in der früheren Schiffsschraubenfabrik",sparte:"Kino",bezirk:"Ottensen",c:[9.9338,53.5516],web:"zeise.de",hinweis:"Die Zeise Kinos nennen öffentlich keine Leitung. Ich ergänze sie, sobald sie sich belegen lässt."}
+  ,{stadt:"muenchen",id:"m-fm",bereich:"kino",name:"Filmmuseum München",zusatz:"im Stadtmuseum, Kino bleibt bis Sommer 2027 offen",sparte:"Kino",bezirk:"Altstadt-Lehel",c:[11.5738,48.1352],web:"muenchner-stadtmuseum.de/sammlungen/filmmuseum"}
+  ,{stadt:"muenchen",id:"m-wk",bereich:"kino",name:"Werkstattkino",zusatz:"Verein, Fraunhoferstraße",sparte:"Kino",bezirk:"Ludwigsvorstadt-Isarvorstadt",c:[11.571,48.1305],web:"werkstattkino.de"}
+  ,{stadt:"muenchen",id:"m-tf",bereich:"kino",name:"Theatiner Film",zusatz:"Theatinerstraße",sparte:"Kino",bezirk:"Altstadt-Lehel",c:[11.578,48.1405],web:"theatiner-film.de"}
+  ,{stadt:"muenchen",id:"m-ck",bereich:"kino",name:"City Kinos",zusatz:"City, Atelier und Neues Maxim-Kinos nahe dem Stachus",sparte:"Kino",bezirk:"Ludwigsvorstadt-Isarvorstadt",c:[11.565,48.1385],web:"city-kinos.de"}
+  ,{stadt:"muenchen",id:"m-lk",bereich:"kino",name:"Leopold Kinos",zusatz:"Leopoldstraße",sparte:"Kino",bezirk:"Schwabing-West",c:[11.586,48.162],web:"leopold-kino.de"}
+  ,{stadt:"wien",id:"w-fm",bereich:"kino",name:"Österreichisches Filmmuseum",zusatz:"„Unsichtbares Kino“ an der Albertina",sparte:"Kino",bezirk:"Innere Stadt",c:[16.3697,48.2047],web:"filmmuseum.at"}
+  ,{stadt:"wien",id:"w-fc",bereich:"kino",name:"Filmcasino",zusatz:"Kino im Stil der 1950er, dazu das Filmhaus am Spittelberg",sparte:"Kino",bezirk:"Margareten",c:[16.3548,48.1922],web:"filmcasino.at"}
+  ,{stadt:"wien",id:"w-vk",bereich:"kino",name:"Votiv Kino",zusatz:"dazu das De France am Schottenring",sparte:"Kino",bezirk:"Alsergrund",c:[16.3578,48.2152],web:"votivkino.at"}
+  ,{stadt:"wien",id:"w-gbk",bereich:"kino",name:"Gartenbaukino",zusatz:"größtes Kino Wiens, Zentrum der Viennale",sparte:"Kino",bezirk:"Innere Stadt",c:[16.3794,48.2043],web:"gartenbaukino.at",hinweis:"Das Gartenbaukino nennt auf seiner Seite keine Leitung. Ich ergänze sie, sobald sie sich belegen lässt."}
+  ,{stadt:"wien",id:"w-bk",bereich:"kino",name:"Burg Kino",zusatz:"zeigt englische Originalfassungen, Opernring",sparte:"Kino",bezirk:"Innere Stadt",c:[16.368,48.2035],web:"burgkino.at"}
+  ,{stadt:"frankfurt",id:"f-har",bereich:"kino",name:"Harmonie Kino",zusatz:"Arthouse Kinos Frankfurt, 2023 Bundespreis fürs beste Kinoprogramm",sparte:"Kino",bezirk:"Sachsenhausen",c:[8.687,50.099],web:"arthouse-kinos.de"}
+  ,{stadt:"frankfurt",id:"f-eld",bereich:"kino",name:"Eldorado Kino",zusatz:"Arthouse Kinos Frankfurt, Schäfergasse",sparte:"Kino",bezirk:"Innenstadt",c:[8.686,50.113],web:"arthouse-kinos.de"}
+  ,{stadt:"frankfurt",id:"f-msk",bereich:"kino",name:"Mal Seh'n Kino",zusatz:"kleines Kino mit Café",sparte:"Kino",bezirk:"Nordend",c:[8.687,50.123],web:"malsehnkino.de",hinweis:"Das Mal Seh'n nennt öffentlich keine Leitung. Ich ergänze sie, sobald sie sich belegen lässt."}
+  ,{stadt:"frankfurt",id:"f-orf",bereich:"kino",name:"Orfeos Erben",zusatz:"Kino mit Café-Restaurant",sparte:"Kino",bezirk:"Bockenheim",c:[8.645,50.12],web:"orfeos.de",hinweis:"Orfeos Erben nennt öffentlich keine Leitung. Ich ergänze sie, sobald sie sich belegen lässt."}
 ];
 const haus = id => HAEUSER.find(h=>h.id===id);
 const intendanz = [
@@ -326,7 +352,30 @@ const intendanz = [
   ["w-nhm","Katrin Vohland","Generaldirektorin","Seit Juni 2020 Generaldirektorin, verlängert bis 2030."],
   ["w-wm","Matti Bunzl","Direktor","Seit 2015 Direktor, führte das Haus durch den Umbau am Karlsplatz."],
   ["w-tmw","Peter Aufreiter","Generaldirektor","Seit 2020 Generaldirektor, zweite Amtszeit bis 2030."],
-  ["w-wmw","Claudia Banz","Direktorin","Seit Februar 2025 Direktorin, Nachfolgerin von Jonathan Fine."]
+  ["w-wmw","Claudia Banz","Direktorin","Seit Februar 2025 Direktorin, Nachfolgerin von Jonathan Fine."],
+  ["b-bab","Timothy Grossman","Betreiber","Betreibt das Babylon am Rosa-Luxemburg-Platz, ein kommunales Kino im Haus von Hans Poelzig."],
+  ["b-ars","Stefanie Schulte Strathaus","Künstlerische Leiterin","Kuratiert seit den frühen 1990ern am Arsenal, seit 2004 im Vorstand."],
+  ["b-ars","Stefan Aue","Kaufmännischer Direktor","Seit dem Wechsel im Vorstand kaufmännischer Direktor des Arsenal Filminstituts."],
+  ["b-mov","Iris Praefke","Betreiberin","Führt das Moviemento gemeinsam mit Wulf Sörgel und hat das Haus 2020 mit ihm gekauft."],
+  ["b-mov","Wulf Sörgel","Betreiber","Führt das Moviemento gemeinsam mit Iris Praefke und hat das Haus 2020 mit ihr gekauft."],
+  ["b-kin","Christian Bräuer","Geschäftsführer Yorck Kinogruppe","Leitet die Yorck Kinogruppe, zu der auch das Kino International gehört."],
+  ["b-dlx","Christian Bräuer","Geschäftsführer Yorck Kinogruppe","Leitet die Yorck Kinogruppe, zu der auch das delphi LUX gehört."],
+  ["m-fm","Stefan Drößler","Leiter","Leitet das Filmmuseum München."],
+  ["m-fm","Claudia Engelhardt","Stellvertretende Leiterin","Stellvertretende Leiterin des Filmmuseums München."],
+  ["m-wk","Wolfgang Bihlmeir","Betreiber","Gehört zum Team des Werkstattkino e. V."],
+  ["m-wk","Bernd Brehmer","Betreiber","Gehört zum Team des Werkstattkino e. V."],
+  ["m-wk","Doris Kuhn","Betreiberin","Gehört zum Team des Werkstattkino e. V."],
+  ["m-wk","Erich Wagner","Betreiber","Gehört zum Team des Werkstattkino e. V."],
+  ["m-tf","Claire Schleeger","Betreiberin","Betreibt Theatiner Film, vom Münchner Kinoprogrammpreis ausgezeichnet."],
+  ["m-ck","Holger Trapp","Betreiber","Betreibt die City Kinos München, vom Münchner Kinoprogrammpreis ausgezeichnet."],
+  ["m-lk","Daniela Bergauer","Betreiberin","Führt die Leopold Kinos gemeinsam mit Michael Hehl."],
+  ["m-lk","Michael Hehl","Betreiber","Führt die Leopold Kinos gemeinsam mit Daniela Bergauer."],
+  ["w-fm","Michael Loebenstein","Direktor","Seit Oktober 2017 Direktor des Österreichischen Filmmuseums, zuvor am National Film and Sound Archive in Australien."],
+  ["w-fc","Sabine Hofmann","Leitung","Spricht für das Filmcasino, wenn es um die Lage der Wiener Programmkinos geht."],
+  ["w-vk","Michael Stejskal","Geschäftsführer","Leitet das Votiv Kino und den Filmverleih Filmladen."],
+  ["w-bk","Babette Allfrey","Betreiberin","Betreibt das Burg Kino als Einzelunternehmerin."],
+  ["f-har","Christopher Bausch","Betreiber","Betreibt die Arthouse Kinos Frankfurt mit Harmonie, Eldorado und Cinéma."],
+  ["f-eld","Christopher Bausch","Betreiber","Betreibt die Arthouse Kinos Frankfurt mit Harmonie, Eldorado und Cinéma."]
 ].map(([h,name,rolle,bio,foto,credit,fotoseite])=>({haus:h,name,rolle,bio,foto,credit,fotoseite}));
 
 // Personen, für die ein Foto im deutschen Wikipedia-Artikel gesucht wird.
@@ -491,7 +540,7 @@ const PREISE = {
 // Wikipedia, zuletzt über Wikidata (Bild-Eigenschaft P18). Alle Quellen verweisen auf
 // frei lizenzierte Bilder in Wikimedia Commons.
 // Schutz gegen Namensvettern: Artikel oder Wikidata-Beschreibung muss einen Bühnenbezug haben
-const BUEHNE = /Intendant|Theat|Oper|Ballet|Choreogra|Regisseur|Director|Dramaturg|Kulturmanager|Bühne|Stage|Schauspiel|Actor|Actress|Performance|Perform|Dirigent|Conductor|Orchest|Festspiele|Festival|Musiker|Musician|Komponist|Composer|Tänzer|Dancer|Sänger|Singer|Filmemacher|Filmmaker|Museum|Direktor|Kurator|Curator|Kunsthistoriker|Art historian|Historiker|Historian|Archäolog|Archaeolog|Ethnolog|Ethnolog|Physiker|Physicist|Sinolog|Kunstvermittl|Galerie|Gallery|Ausstellung|Exhibition|Architekt|Designer|Wissenschaftler|Scientist|Biologe|Biologist|Paläontolog|Zoolog|Kulturwissenschaft/i;
+const BUEHNE = /Intendant|Theat|Oper|Ballet|Choreogra|Regisseur|Director|Dramaturg|Kulturmanager|Bühne|Stage|Schauspiel|Actor|Actress|Performance|Perform|Dirigent|Conductor|Orchest|Festspiele|Festival|Musiker|Musician|Komponist|Composer|Tänzer|Dancer|Sänger|Singer|Filmemacher|Filmmaker|Museum|Direktor|Kurator|Curator|Kunsthistoriker|Art historian|Historiker|Historian|Archäolog|Archaeolog|Ethnolog|Ethnolog|Physiker|Physicist|Sinolog|Kunstvermittl|Galerie|Gallery|Ausstellung|Exhibition|Architekt|Designer|Wissenschaftler|Scientist|Biologe|Biologist|Paläontolog|Zoolog|Kulturwissenschaft|Kino|Cinema|Filmverleih|Filmkurator|Film curator/i;
 const initialen = n => n.split(/\s+/).map(w=>w[0]).filter(Boolean).slice(0,2).join("");
 const bilder = {};
 const holeJSON = url => fetch(url).then(r=>r.ok ? r.json() : null).catch(()=>null);
@@ -646,7 +695,7 @@ const leute = () => intendanz.filter(p=>{const h=haus(p.haus); return imOrt(h) &
 
 function render(){
   document.querySelectorAll("[data-stadt]").forEach(b=>b.setAttribute("aria-pressed", b.dataset.stadt===state.stadt));
-  $("sub").textContent = `Die öffentlichen Bühnen und Museen ${STAEDTE[state.stadt]} und wer sie leitet`;
+  $("sub").textContent = `Die öffentlichen Bühnen, Museen und Programmkinos ${STAEDTE[state.stadt]} und wer sie leitet`;
   const s = schritte();
   $("pfad").innerHTML = s.length ? `<button class="zurueck" data-zurueck>← Zurück</button>` +
     s.map((x,i)=>`<button data-schritt="${i}">${x.label}</button>`).join("<span>/</span>") : "";
@@ -655,11 +704,12 @@ function render(){
     v = `<h2>Was interessiert dich?</h2>
       <button class="gross" data-set='{"bereich":"theater"}'>Theater<small>${anzahl("theater")} öffentliche Bühnen</small></button>
       <button class="gross u3" data-set='{"bereich":"musik"}'>Musik<small>${anzahl("musik")} Opern, Konzerthäuser und Orchester</small></button>
-      <button class="gross u8" data-set='{"bereich":"museen"}'>Museen<small>${anzahl("museen")} Museen und Ausstellungshäuser</small></button>`;
+      <button class="gross u8" data-set='{"bereich":"museen"}'>Museen<small>${anzahl("museen")} Museen und Ausstellungshäuser</small></button>
+      <button class="gross u9" data-set='{"bereich":"kino"}'>Kino<small>${anzahl("kino")} Programmkinos und Filmmuseen</small></button>`;
   } else if(!state.haus){
     v = `
-      <button class="gross dezent oben" data-set='{"haus":"alle"}'><span aria-hidden="true">→ </span>Übersicht<small>${leute().length} ${state.bereich==="museen" ? "Köpfe" : "Leitungspersonen"}</small></button>
-      <h2>${{theater:"Die Theater:", musik:"Die Häuser:", museen:"Die Museen:"}[state.bereich]}</h2>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).sort(nachRang).map(h=>`
+      <button class="gross dezent oben" data-set='{"haus":"alle"}'><span aria-hidden="true">→ </span>Übersicht<small>${leute().length} ${["museen","kino"].includes(state.bereich) ? "Köpfe" : "Leitungspersonen"}</small></button>
+      <h2>${{theater:"Die Theater:", musik:"Die Häuser:", museen:"Die Museen:", kino:"Die Kinos:"}[state.bereich]}</h2>` + HAEUSER.filter(h=>imOrt(h) && h.bereich===state.bereich).sort(nachRang).map(h=>`
       <button class="zeile" data-set='{"haus":"${h.id}"}'>
         <span class="bar" style="background:${SPARTEN[h.sparte]}"></span>
         <span><b>${h.name}</b><small>${h.zusatz ? h.zusatz + ", " : ""}${h.bezirk}</small>${heuteKurz(h.id)}</span>
@@ -677,7 +727,7 @@ function render(){
     const team = intendanz.filter(p=>p.haus===h.id);
     v = `<h2>${h.name}</h2>` + heuteBlock(h.id) + `
       <a class="link" href="https://${h.web}" target="_blank" rel="noopener">${h.bereich==="museen" ? "Ausstellungen" : "Spielplan"} auf ${h.web.split("/")[0]}</a>
-      <h3>${h.bereich==="museen" ? "Köpfe" : "Leitung"}</h3>` + team.map(p=>`
+      <h3>${["museen","kino"].includes(h.bereich) ? "Köpfe" : "Leitung"}</h3>` + team.map(p=>`
         <div class="kopf" data-name="${p.name}">
           <div class="portrait" style="background:${SPARTEN[h.sparte]}" aria-hidden="true">${initialen(p.name)}</div>
           <div class="text"><b>${p.name}</b><div class="rolle">${p.rolle}</div><p>${p.bio}</p></div>
