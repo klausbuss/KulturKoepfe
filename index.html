@@ -220,6 +220,7 @@ const HAEUSER = [
   ,{stadt:"frankfurt",id:"f-eld",bereich:"kino",name:"Eldorado Kino",zusatz:"Arthouse Kinos Frankfurt, Schäfergasse",sparte:"Kino",bezirk:"Innenstadt",c:[8.686,50.113],web:"arthouse-kinos.de"}
   ,{stadt:"frankfurt",id:"f-msk",bereich:"kino",name:"Mal Seh'n Kino",zusatz:"kleines Kino mit Café",sparte:"Kino",bezirk:"Nordend",c:[8.687,50.123],web:"malsehnkino.de",hinweis:"Das Mal Seh'n nennt öffentlich keine Leitung. Ich ergänze sie, sobald sie sich belegen lässt."}
   ,{stadt:"frankfurt",id:"f-orf",bereich:"kino",name:"Orfeos Erben",zusatz:"Kino mit Café-Restaurant",sparte:"Kino",bezirk:"Bockenheim",c:[8.645,50.12],web:"orfeos.de",hinweis:"Orfeos Erben nennt öffentlich keine Leitung. Ich ergänze sie, sobald sie sich belegen lässt."}
+  ,{stadt:"frankfurt",id:"f-cin",bereich:"kino",name:"Cinéma",zusatz:"Arthouse Kinos Frankfurt, Roßmarkt, seit 1956",sparte:"Kino",bezirk:"Innenstadt",c:[8.679,50.111],web:"arthouse-kinos.de"}
 ];
 const haus = id => HAEUSER.find(h=>h.id===id);
 const intendanz = [
@@ -375,7 +376,8 @@ const intendanz = [
   ["w-vk","Michael Stejskal","Geschäftsführer","Leitet das Votiv Kino und den Filmverleih Filmladen."],
   ["w-bk","Babette Allfrey","Betreiberin","Betreibt das Burg Kino als Einzelunternehmerin."],
   ["f-har","Christopher Bausch","Betreiber","Betreibt die Arthouse Kinos Frankfurt mit Harmonie, Eldorado und Cinéma."],
-  ["f-eld","Christopher Bausch","Betreiber","Betreibt die Arthouse Kinos Frankfurt mit Harmonie, Eldorado und Cinéma."]
+  ["f-eld","Christopher Bausch","Betreiber","Betreibt die Arthouse Kinos Frankfurt mit Harmonie, Eldorado und Cinéma."],
+  ["f-cin","Christopher Bausch","Betreiber","Betreibt die Arthouse Kinos Frankfurt mit Harmonie, Eldorado und Cinéma."]
 ].map(([h,name,rolle,bio,foto,credit,fotoseite])=>({haus:h,name,rolle,bio,foto,credit,fotoseite}));
 
 // Personen, für die ein Foto im deutschen Wikipedia-Artikel gesucht wird.
