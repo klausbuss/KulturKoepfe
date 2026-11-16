@@ -122,6 +122,8 @@ HAEUSER = {
     "f-har":  ("arthouse-kinos.de", ["https://www.arthouse-kinos.de/"]),
     "f-eld":  ("arthouse-kinos.de", ["https://www.arthouse-kinos.de/"]),
     "f-cin":  ("arthouse-kinos.de", ["https://www.arthouse-kinos.de/"]),
+    "f-dff":  ("dff.film", ["https://www.dff.film/kino/"]),
+    "f-ffh":  ("filmforum-hoechst.com", ["https://www.filmforum-hoechst.com/"]),
     "f-msk":  ("malsehnkino.de", ["https://www.malsehnkino.de/"]),
     "f-orf":  ("orfeos.de", ["https://www.orfeos.de/"]),
 }
