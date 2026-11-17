@@ -181,10 +181,10 @@
                                                                                     </ul>
                                                                     </li>
                                                             <li>
-                                                                            <a class="dropdown-item "   href="seiten/ticketalarm-2.html">Ticketalarm</a>
+                                                                            <a class="dropdown-item "   href="seiten/geschenke.html">Geschenke</a>
                                                                     </li>
                                                             <li>
-                                                                            <a class="dropdown-item "   href="seiten/geschenkgutschein.html">Geschenkgutschein</a>
+                                                                            <a class="dropdown-item "   href="seiten/ticketalarm-2.html">Ticketalarm</a>
                                                                     </li>
                                                             <li>
                                                                             <a class="dropdown-item "   href="seiten/faq.html">Ticket-FAQ</a>
@@ -214,7 +214,7 @@
                                                                             <a class="dropdown-item "   href="seiten/abos-2026-2027.html">Abos 2026/2027</a>
                                                                     </li>
                                                             <li>
-                                                                            <a class="dropdown-item "   href="seiten/geschenk-abos-4.html">Geschenk-Abos 2026/2027</a>
+                                                                            <a class="dropdown-item "   href="seiten/geschenk-abos-2026-2027.html">Geschenk-Abos 2026/2027</a>
                                                                     </li>
                                                     </ul>
                     
@@ -544,7 +544,7 @@
                                 <div class="d-flex input-daterange justify-content-between">
                                     <div class="dateRangeFromContainer position-relative w-40">
                                         <label class="visually-hidden" for="dateRangeForm">von</label>
-                                        <input type="date" class="form-control my-1 alternateGlyphs" id="dateRangeFrom" value="2026-11-05" aria-label="Von">
+                                        <input type="date" class="form-control my-1 alternateGlyphs" id="dateRangeFrom" value="2026-11-17" aria-label="Von">
                                     </div>
                                     <label for="dateRangeUntil" class="input-group-addon p-2 my-1">&nbsp;bis&nbsp;</label>
                                     <div class="w-40">
@@ -574,7 +574,6 @@
                                                             <option value="1066">Als Hitler das rosa Kaninchen stahl</option>
                                                             <option value="1071">Ariadne auf Naxos</option>
                                                             <option value="996">Aschenbrödel</option>
-                                                            <option value="1000">Bel Canto Me</option>
                                                             <option value="1079">Béla Bartók</option>
                                                             <option value="1082">Brutkasten des Rechtsextremismus</option>
                                                             <option value="1072">Buenos Aires 1940</option>
@@ -616,7 +615,6 @@
                                                             <option value="282">Opern auf Bayrisch</option>
                                                             <option value="1077">Orchesterakademie</option>
                                                             <option value="952">Peter und der Wolf</option>
-                                                            <option value="1078">Richard Strauss</option>
                                                             <option value="1015">Rock to Heaven</option>
                                                             <option value="1070">Romeo und Julia</option>
                                                             <option value="1080">Schön ist die Welt</option>
@@ -833,7 +831,7 @@ if (Cookies.get('filterProduktion')) {
     }
 }
 
-var filter = filter("#spielplan", false, "2026-11-05", "2027-07-29");
+var filter = filter("#spielplan", false, "2026-11-17", "2027-07-29");
 
 function spielplanNachladen(letzterTermin = 0) {
     if (!stopSpielplanLoading) {
@@ -931,6 +929,7 @@ function scrollWennGeladen(){
 			</main>
 	<footer id="footer" class="bg-gelb py-5 py-xl-10 fw-bold  text-center text-md-start border-bottom border-10 border-lila">
 		<div class="container">
+						
 			<div class="row">
 				<div class="col col-12 col-md-6 col-xl-3 mb-5 mb-xl-0">
 					<h2 class="fs-6 text-start mb-5 mt-2 mt-xl-0 text-lila">Kontakt</h2>
