@@ -280,7 +280,7 @@ class="absolute transition-[margin-top] ease-in left-0 flex justify-center flex-
 >
 <ul class="flex justify-around w-full h-full -itemCount- lg:w-auto lg:justify-end lg:pt-1">
 <li class="sb-service-navigation-item -highlights flex flex-col h-10 lg:h-15 md:h-full w-full tablet:first:border-l border-r last:border-r-0 lg:border-r-0 text-navigation-icons border-navigation-border-color">
-<a href="https://www.hr-sinfonieorchester.de/highlights/index.html" x-init="dropped = false" class="flex flex-col items-center justify-center h-full px-4 lg:justify-start lg:px-3 lg:pt-1 lg:rounded-t link-focus-inset js-load" id="flyout-7319-1" data-hr-click-tracking='{"settings": [{"type": "uxNavigation", "secondLevelId": 1, "clickLabel": "Servicenavigation::Highlights-Link geklickt"}]}'>
+<a href="https://www.hr-sinfonieorchester.de/highlights/index.html" x-init="dropped = false" class="flex flex-col items-center justify-center h-full px-4 lg:justify-start lg:px-3 lg:pt-1 lg:rounded-t link-focus-inset js-load" id="flyout-2976-1" data-hr-click-tracking='{"settings": [{"type": "uxNavigation", "secondLevelId": 1, "clickLabel": "Servicenavigation::Highlights-Link geklickt"}]}'>
 <div class="w-7 md:w-8 h-7 md:h-8" >
 <svg class="sb-icon w-full h-full fill-current  " role="presentation" aria-hidden="true"
 ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#highlights-ds"></use>
@@ -296,7 +296,7 @@ Highlights
 </a>
 </li>
                                                             <li class="sb-service-navigation-item -tickets flex flex-col h-10 lg:h-15 md:h-full w-full tablet:first:border-l border-r last:border-r-0 lg:border-r-0 text-navigation-icons border-navigation-border-color">
-<a href="https://www.hr-sinfonieorchester.de/tickets/index.html" x-init="dropped = false" class="flex flex-col items-center justify-center h-full px-4 lg:justify-start lg:px-3 lg:pt-1 lg:rounded-t link-focus-inset js-load" id="flyout-4013-1" data-hr-click-tracking='{"settings": [{"type": "uxNavigation", "secondLevelId": 1, "clickLabel": "Servicenavigation::Tickets-Link geklickt"}]}'>
+<a href="https://www.hr-sinfonieorchester.de/tickets/index.html" x-init="dropped = false" class="flex flex-col items-center justify-center h-full px-4 lg:justify-start lg:px-3 lg:pt-1 lg:rounded-t link-focus-inset js-load" id="flyout-7497-1" data-hr-click-tracking='{"settings": [{"type": "uxNavigation", "secondLevelId": 1, "clickLabel": "Servicenavigation::Tickets-Link geklickt"}]}'>
 <div class="w-7 md:w-8 h-7 md:h-8" >
 <svg class="sb-icon w-full h-full fill-current  " role="presentation" aria-hidden="true"
 ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#tickets-ds"></use>
@@ -312,7 +312,7 @@ Tickets
 </a>
 </li>
                                                             <li class="sb-service-navigation-item -videos flex flex-col h-10 lg:h-15 md:h-full w-full tablet:first:border-l border-r last:border-r-0 lg:border-r-0 text-navigation-icons border-navigation-border-color">
-<a href="https://www.hr-sinfonieorchester.de/videos/index.html" x-init="dropped = false" class="flex flex-col items-center justify-center h-full px-4 lg:justify-start lg:px-3 lg:pt-1 lg:rounded-t link-focus-inset js-load" id="flyout-6796-1" data-hr-click-tracking='{"settings": [{"type": "uxNavigation", "secondLevelId": 1, "clickLabel": "Servicenavigation::Videos-Link geklickt"}]}'>
+<a href="https://www.hr-sinfonieorchester.de/videos/index.html" x-init="dropped = false" class="flex flex-col items-center justify-center h-full px-4 lg:justify-start lg:px-3 lg:pt-1 lg:rounded-t link-focus-inset js-load" id="flyout-4442-1" data-hr-click-tracking='{"settings": [{"type": "uxNavigation", "secondLevelId": 1, "clickLabel": "Servicenavigation::Videos-Link geklickt"}]}'>
 <div class="w-7 md:w-8 h-7 md:h-8" >
 <svg class="sb-icon w-full h-full fill-current  " role="presentation" aria-hidden="true"
 ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#video-ds"></use>
@@ -373,7 +373,7 @@ id="search-content"
 @keydown.arrow-down="moveDownList()"
 @keydown.arrow-up="moveUpList()"
 >
-<label for="searchInput--2473" class="hidden">suchfeld</label>
+<label for="searchInput--1300" class="hidden">suchfeld</label>
 <input
 @input.debounce="getSuggestionsForInput();cursorIndex=-1"
 @click="active=true"
@@ -382,14 +382,14 @@ x-model="query"
 placeholder='Suchen'
 class="ui-test-quick-search w-full px-2 py-2 placeholder-search-header-text text-search-header-text  text-base leading-4 placeholder-opacity-100 rounded-l appearance-none lg:top-10 placeholder-text-xs focus:outline-none"
 type="text"
-id="searchInput--2473"
+id="searchInput--1300"
 autocomplete="off"
 role="combobox"
 aria-haspopup="listbox"
 aria-autocomplete="list"
 x-effect="$el.setAttribute('aria-expanded', (query.length > 1 && active && suggestions.length > 0))"
-aria-owns="suggestionlist--2473"
-aria-controls="suggestionlist--2473"
+aria-owns="suggestionlist--1300"
+aria-controls="suggestionlist--1300"
 >
 <div
 class="absolute left-0 w-auto min-w-full z-100 top-8 lg:top-10"
@@ -401,7 +401,7 @@ x-transition:leave-end="opacity-0"
 >
 <ul
 role="listbox"
-id="suggestionlist--2473"
+id="suggestionlist--1300"
 aria-label="Suche öffnen"
 x-effect="$el.setAttribute('aria-expanded', query.length > 1 && active && suggestions.length > 0);$el.setAttribute('aria-hidden', !(query.length > 1 && active && suggestions.length > 0))"
 class=" w-full mt-1 lg:mt-0.5 bg-white border rounded divide-y shadow-xl"
@@ -528,24 +528,24 @@ class="w-full px-0 mt-10 sb-section-navigation md:mt-0 lg:grid-cols-12 lg:px-10 
 x-effect="$el.setAttribute('aria-expanded',  $store.burgeropen || $screen('lg')); $el.setAttribute('aria-hidden', ! ($store.burgeropen || $screen('lg')))"
 >
 <div x-data="slider()"
-x-init="initialize($refs.scrollContainer_2473)"
+x-init="initialize($refs.scrollContainer_1300)"
 class="relative w-full"
 ax-load
 x-ignore
 >
 <template x-if="isScrollable && $screen('lg')">
 <div>
-<button style="background-image: linear-gradient(90deg, var(--color-navigation-bg) 50%, transparent);" class="absolute left-0 z-10 flex items-center justify-start w-10 h-full text-navigation-icons disabled:hidden" @click="prev($refs.scrollContainer_2473)" :disabled="!arrowLeftDisplay" tabindex="-1" aria-hidden="true" >
+<button style="background-image: linear-gradient(90deg, var(--color-navigation-bg) 50%, transparent);" class="absolute left-0 z-10 flex items-center justify-start w-10 h-full text-navigation-icons disabled:hidden" @click="prev($refs.scrollContainer_1300)" :disabled="!arrowLeftDisplay" tabindex="-1" aria-hidden="true" >
 <svg class="sb-icon w-3.5 h-3.5 fill-current  " role="presentation" aria-hidden="true"
 ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#arrow-left"></use>
 </svg>            </button>
-<button style="background-image: linear-gradient(270deg, var(--color-navigation-bg) 50%, transparent);" class="bg-gradient-to-l absolute right-0 z-10 flex items-center justify-end w-10 h-full text-navigation-icons disabled:hidden group from-[--color-navigation-bg]" @click="next($refs.scrollContainer_2473)" :disabled="!arrowRightDisplay" tabindex="-1" aria-hidden="true">
+<button style="background-image: linear-gradient(270deg, var(--color-navigation-bg) 50%, transparent);" class="bg-gradient-to-l absolute right-0 z-10 flex items-center justify-end w-10 h-full text-navigation-icons disabled:hidden group from-[--color-navigation-bg]" @click="next($refs.scrollContainer_1300)" :disabled="!arrowRightDisplay" tabindex="-1" aria-hidden="true">
 <svg class="sb-icon w-3.5 h-3.5 fill-current  " role="presentation" aria-hidden="true"
 ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#arrow-right"></use>
 </svg>            </button>
 </div>
 </template>
-<div x-ref="scrollContainer_2473" @scroll="updateIndex($event.target)" class="w-full overflow-hidden overflow-x-scroll transition-all duration-300 ease-in-out cursor-default hide-scroll-bar">
+<div x-ref="scrollContainer_1300" @scroll="updateIndex($event.target)" class="w-full overflow-hidden overflow-x-scroll transition-all duration-300 ease-in-out cursor-default hide-scroll-bar">
 <div class="flex w-full">
 <span id="sectionNavHeadline" class="hidden">Bereichsnavigation</span>
 <ul class="flex flex-col items-center w-full text-left list-none text-navigation-icons lg:flex-row lg:h-auto lg:mt-1">
@@ -1023,7 +1023,7 @@ id="search-content"
 @keydown.arrow-down="moveDownList()"
 @keydown.arrow-up="moveUpList()"
 >
-<label for="searchInput--5459" class="hidden">suchfeld</label>
+<label for="searchInput--9940" class="hidden">suchfeld</label>
 <input
 @input.debounce="getSuggestionsForInput();cursorIndex=-1"
 @click="active=true"
@@ -1032,14 +1032,14 @@ x-model="query"
 placeholder='Suchen'
 class="ui-test-quick-search w-full px-2 py-2 placeholder-search-header-text text-search-header-text  text-base leading-4 placeholder-opacity-100 rounded-l appearance-none lg:top-10 placeholder-text-xs focus:outline-none"
 type="text"
-id="searchInput--5459"
+id="searchInput--9940"
 autocomplete="off"
 role="combobox"
 aria-haspopup="listbox"
 aria-autocomplete="list"
 x-effect="$el.setAttribute('aria-expanded', (query.length > 1 && active && suggestions.length > 0))"
-aria-owns="suggestionlist--5459"
-aria-controls="suggestionlist--5459"
+aria-owns="suggestionlist--9940"
+aria-controls="suggestionlist--9940"
 >
 <div
 class="absolute left-0 w-auto min-w-full z-100 top-8 lg:top-10"
@@ -1051,7 +1051,7 @@ x-transition:leave-end="opacity-0"
 >
 <ul
 role="listbox"
-id="suggestionlist--5459"
+id="suggestionlist--9940"
 aria-label="Suche öffnen"
 x-effect="$el.setAttribute('aria-expanded', query.length > 1 && active && suggestions.length > 0);$el.setAttribute('aria-hidden', !(query.length > 1 && active && suggestions.length > 0))"
 class=" w-full mt-1 lg:mt-0.5 bg-white border rounded divide-y shadow-xl"
@@ -1213,7 +1213,7 @@ class="ds-link js-load  ui-test-teaser-link ds-teaser-focus hover:text-toplineCo
 data-hr-click-tracking='{"settings": [{"type":"uxAction", "clickLabel": "Posterteaser:uebersichtsseite-konzerte-100:konzertkalender-106"}]}'
 >
 <h2 class="overflow-anywhere hyphens-auto">
-<span class='pt-px block text-base text-toplineColor font-heading'>Monats-Übersicht</span>                                        <span class='ui-test-teaser-title block mt-0.5 font-title font-bold text-2xl'>Konzertkalender</span>                                </h2>
+<span class='pt-px block text-base text-toplineColor font-heading'>Monats-Übersicht</span>                                    <span class='ui-test-teaser-title block mt-0.5 font-title font-bold text-2xl'>Konzertkalender</span>                                </h2>
 </a>
 </header>
 <div class="sm:px-0 px-5">
@@ -1242,7 +1242,7 @@ class="ds-link js-load  ui-test-teaser-link ds-teaser-focus hover:text-toplineCo
 data-hr-click-tracking='{"settings": [{"type":"uxAction", "clickLabel": "Posterteaser:uebersichtsseite-konzerte-100:structurenodedocument5820"}]}'
 >
 <h2 class="overflow-anywhere hyphens-auto">
-<span class='pt-px block text-base text-toplineColor font-heading'>Übersicht</span>                                        <span class='ui-test-teaser-title block mt-0.5 font-title font-bold text-2xl'>Konzerte 2026/27</span>                                </h2>
+<span class='pt-px block text-base text-toplineColor font-heading'>Übersicht</span>                                    <span class='ui-test-teaser-title block mt-0.5 font-title font-bold text-2xl'>Konzerte 2026/27</span>                                </h2>
 </a>
 </header>
 <div class="sm:px-0 px-5">
@@ -1282,7 +1282,7 @@ class="ds-link js-load  ui-test-teaser-link ds-teaser-focus hover:text-toplineCo
 data-hr-click-tracking='{"settings": [{"type":"uxAction", "clickLabel": "Posterteaser:uebersichtsseite-konzerte-100:highlights-112"}]}'
 >
 <h3 class="overflow-anywhere hyphens-auto">
-<span class='pt-px block text-base text-toplineColor font-heading'>Ausblick</span>                                        <span class='ui-test-teaser-title block mt-0.5 font-title font-bold text-lg md:text-4xl'>Konzert-Highlights</span>                                </h3>
+<span class='pt-px block text-base text-toplineColor font-heading'>Ausblick</span>                                    <span class='ui-test-teaser-title block mt-0.5 font-title font-bold text-lg md:text-4xl'>Konzert-Highlights</span>                                </h3>
 </a>
 </header>
 <div class="sm:px-0">
@@ -1322,7 +1322,7 @@ class="ds-link js-load  ui-test-teaser-link ds-teaser-focus hover:text-toplineCo
 data-hr-click-tracking='{"settings": [{"type":"uxAction", "clickLabel": "Teaser:uebersichtsseite-konzerte-100:newsletter-108"}]}'
 >
 <h3 class="overflow-anywhere hyphens-auto">
-<span class='pt-px block text-base text-toplineColor font-heading'>Bleiben Sie auf dem Laufenden ...</span>                                        <span class='ui-test-teaser-title block mt-0.5 font-title font-bold text-lg md:text-4xl'>Abonnieren Sie den Newsletter des hr-Sinfonieorchesters!</span>                                </h3>
+<span class='pt-px block text-base text-toplineColor font-heading'>Bleiben Sie auf dem Laufenden ...</span>                                    <span class='ui-test-teaser-title block mt-0.5 font-title font-bold text-lg md:text-4xl'>Abonnieren Sie den Newsletter des hr-Sinfonieorchesters!</span>                                </h3>
 </a>
 </header>
 <div class="sm:px-0">
@@ -1362,7 +1362,7 @@ class="ds-link js-load  ui-test-teaser-link ds-teaser-focus hover:text-toplineCo
 data-hr-click-tracking='{"settings": [{"type":"uxAction", "clickLabel": "Posterteaser:uebersichtsseite-konzerte-100:archiv-144"}]}'
 >
 <h3 class="overflow-anywhere hyphens-auto">
-<span class='pt-px block text-base text-toplineColor font-heading'>Vergangene Spielzeiten</span>                                        <span class='ui-test-teaser-title block mt-0.5 font-title font-bold text-lg md:text-4xl'>Konzert-Archiv</span>                                </h3>
+<span class='pt-px block text-base text-toplineColor font-heading'>Vergangene Spielzeiten</span>                                    <span class='ui-test-teaser-title block mt-0.5 font-title font-bold text-lg md:text-4xl'>Konzert-Archiv</span>                                </h3>
 </a>
 </header>
 <div class="sm:px-0">
@@ -1414,7 +1414,7 @@ aria-label='Zum Seitenanfang springen'
         
         <div class="flex items-center md:hidden " :class="dropped ? 'transform rotate-180':''">
 <svg class="sb-icon w-3 h-2 fill-current  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#arrow-down"></use>
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#arrow-down"></use>
 </svg>        </div>
         
     </div>
@@ -1587,7 +1587,7 @@ aria-label='Zum Seitenanfang springen'
         
         <div class="flex items-center md:hidden " :class="dropped ? 'transform rotate-180':''">
 <svg class="sb-icon w-3 h-2 fill-current  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#arrow-down"></use>
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#arrow-down"></use>
 </svg>        </div>
         
     </div>
@@ -1614,7 +1614,7 @@ aria-label='Zum Seitenanfang springen'
     >
                                         Presse                                            <span class="inline-flex mt-0.5 ml-1">
 <svg class="sb-icon w-4 h-4 fill-current  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
 </svg>                                            </span>
 </a>
                                 </li>
@@ -1692,7 +1692,7 @@ aria-label='Zum Seitenanfang springen'
                                                 @keydown.arrow-down="moveDownList()"
                                                 @keydown.arrow-up="moveUpList()"
                                             >   
-                                                <label for="searchInput--1998" class="hidden">suchfeld</label>
+                                                <label for="searchInput--2901" class="hidden">suchfeld</label>
                                                 <input 
                                                     @input.debounce="getSuggestionsForInput();cursorIndex=-1"
                                                     @click="active=true" 
@@ -1701,14 +1701,14 @@ aria-label='Zum Seitenanfang springen'
                                                     placeholder='Suchen' 
                                                     class="ui-test-quick-search w-full px-2 h-10 py-3 placeholder-search-footer-text text-search-footer-text  text-base leading-4 placeholder-opacity-100 rounded-l appearance-none lg:top-10 placeholder-text-xs focus:outline-none"
                                                     type="text"
-                                                    id="searchInput--1998"
+                                                    id="searchInput--2901"
                                                     autocomplete="off"
                                                     role="combobox" 
                                                     aria-haspopup="listbox" 
                                                     aria-autocomplete="list" 
                                                     x-effect="$el.setAttribute('aria-expanded', (query.length > 1 && active && suggestions.length > 0))"
-                                                    aria-owns="suggestionlist--1998"
-                                                    aria-controls="suggestionlist--1998"
+                                                    aria-owns="suggestionlist--2901"
+                                                    aria-controls="suggestionlist--2901"
                                                 > 
                                                 <div 
                                                     class="absolute left-0 w-auto min-w-full z-100 bottom-11" 
@@ -1720,7 +1720,7 @@ aria-label='Zum Seitenanfang springen'
                                                 >
                                                     <ul 
                                                         role="listbox" 
-                                                        id="suggestionlist--1998" 
+                                                        id="suggestionlist--2901" 
                                                         aria-label="Suche öffnen"
                                                         x-effect="$el.setAttribute('aria-expanded', query.length > 1 && active && suggestions.length > 0);$el.setAttribute('aria-hidden', !(query.length > 1 && active && suggestions.length > 0))"
                                                         class=" w-full mt-1 lg:mt-0.5 bg-white border rounded divide-y shadow-xl"
@@ -1748,7 +1748,7 @@ aria-label='Zum Seitenanfang springen'
                                                 type="submit" 
                                                 class="pl-2 pr-2 bg-white border-l rounded-r cursor-pointer link-focus-inset md:bg-white text-primary ">
 <svg class="sb-icon w-7 h-7 text-search-footer-text fill-current bg-transparent  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#suche-ds"></use>
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#suche-ds"></use>
 </svg>                                                </button>    
                                         </form>
                                         
@@ -1822,7 +1822,7 @@ aria-label='Zum Seitenanfang springen'
 
     >
 <svg class="sb-icon w-8 h-8 fill-current hover:scale-105  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#facebook-ds"></use>
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#facebook-ds"></use>
 </svg>                            </a>
                 
                         </li>
@@ -1835,7 +1835,7 @@ aria-label='Zum Seitenanfang springen'
 
     >
 <svg class="sb-icon w-8 h-8 fill-current hover:scale-105  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#youtube-ds"></use>
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#youtube-ds"></use>
 </svg>                            </a>
                 
                         </li>
@@ -1848,322 +1848,322 @@ aria-label='Zum Seitenanfang springen'
 
     >
 <svg class="sb-icon w-8 h-8 fill-current hover:scale-105  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#kontakt-ds"></use>
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#kontakt-ds"></use>
 </svg>                            </a>
                         </li>
             </ul>
     </nav>    
-    <div class="flex items-center justify-center mt-4 md:mt-2 md:justify-end js-load" data-hr-data-policy-settings-ds='{}'>
-                <button
-     id="globalSettingsButton" 
-    class="ds-button inline-flex items-center font-heading  border text-button border-button hover:bg-button-inverted active:bg-button-inverted active:scale-95  p-2 min-w-10 justify-center  js-data-policy-settings-button "
-    
-    type="submit"
-                        data-piano-tracking='{"label":"Footer","secondLevelId":1}'
-                    data-a11y-dialog-show="datapolicy-settings-dialog"
+<div class="flex items-center justify-center mt-4 md:mt-2 md:justify-end js-load" data-hr-data-policy-settings-ds='{}'>
+                        <button
+                 id="globalSettingsButton" 
+                class="ds-button inline-flex items-center font-heading  border text-button border-button hover:bg-button-inverted active:bg-button-inverted active:scale-95  p-2 min-w-10 justify-center  js-data-policy-settings-button "
+                
+                type="submit"
+                                data-piano-tracking='{"label":"Footer","secondLevelId":1}'
+                data-a11y-dialog-show="datapolicy-settings-dialog"
 >
 
 <svg class="sb-icon ds-button-icon w-4 h-4 fill-current w-5 h-5  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#settings"></use>
-</svg>            <span class='ds-button-label text-base '>Einstellungen</span>                </button>
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#settings"></use>
+</svg>                    <span class='ds-button-label text-base '>Einstellungen</span>                        </button>
+    </div>
+    <div id="datapolicy-settings-dialog" aria-labelledby="datapolicy-settings-title" aria-hidden="true" class="fixed inset-0 flex justify-center overflow-y-scroll aria-hidden:hidden z-300">
+        <div class="fixed w-full h-full top-0 left-0 right-0 bottom-0 bg-black/[0.5] js-data-policy-settings-overlay" data-a11y-dialog-hide>
         </div>
-        <div id="datapolicy-settings-dialog" aria-labelledby="datapolicy-settings-title" aria-hidden="true" class="fixed inset-0 flex justify-center overflow-y-scroll aria-hidden:hidden z-300">
-            <div class="fixed w-full h-full top-0 left-0 right-0 bottom-0 bg-black/[0.5] js-data-policy-settings-overlay" data-a11y-dialog-hide>
-            </div>
-            <div role="document" class="pt-0 max-w-[480px] z-300 bg-white mb-6">
-                <div class="flex w-full px-6 bg-primary z-100">
-                    <span class="flex justify-start w-full py-4">
-                        <span
-                            class="pr-4 -ml-1 fill-white"> <svg class="sb-icon h-7 w-7 inline  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#settings"></use>
+        <div role="document" class="pt-0 max-w-[480px] z-300 bg-white mb-6">
+            <div class="flex w-full px-6 bg-primary z-100">
+                <span class="flex justify-start w-full py-4">
+                    <span
+                        class="pr-4 -ml-1 fill-white"> <svg class="sb-icon h-7 w-7 inline  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#settings"></use>
 </svg></span>
-                        <span class="w-full text-2xl text-white font-headingSerif">Einstellungen</span>
-                        <button type="button" aria-label="Close dialog" class="text-white bg-transparent fill-current link-focus-white js-data-policy-settings-close-button" data-a11y-dialog-hide>
+                    <span class="w-full text-2xl text-white font-headingSerif">Einstellungen</span>
+                    <button type="button" aria-label="Close dialog" class="text-white bg-transparent fill-current link-focus-white js-data-policy-settings-close-button" data-a11y-dialog-hide>
 <svg class="sb-icon h-6 w-6 inline  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#close"></use>
-</svg>                        </button>
-                    </span>
-                </div>
-    
-                <div class="bg-[#d8e9f6] p-6 ">
-                    <span id="datapolicy-settings-title" class="block text-lg text-black font-headingSerif">Erhebung von Nutzungszahlen</span>
-                    <p class="mt-4 text-black">
-                                Zur Optimierung des Online-Angebots verwendet der Hessische Rundfunk Zählpixel, die eine statistische Analyse Ihres Surfverhaltens auf unseren Webseiten ermöglichen. Hier können Sie der Erfassung und Übermittlung der Daten widersprechen.
-                                <a class="block mt-2 ds-link text-link hover:underline" target="_blank"
-                                rel="noopener noreferrer" href="https://www.hr.de/unternehmen/struktur/datenschutzerklaerung-v1,datenschutzerklaerung-des-hr-100.html"
-                                title="Mehr Informationen zum Thema Datenschutz">Mehr Informationen zum Thema Datenschutz
-<svg class="sb-icon h-5 w-5 -mt-0.5 fill-current ml-1 inline-flex  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
-</svg>                                </a>
-                    </p>
-                </div>
-    
-                <div class="bg-[#e3e3e3] py-2.5 px-6">
-                    <span class="text-lg text-black font-headingSerif">Statistische Messverfahren</span>
-                </div>
-    
-                <ul class="">
-                    <li class="px-6 py-3 flex justify-between items-center bg-white border-t border-[#e3e3e3]">
-                        <span class="text-base text-black">AGF <a
-                            class="mt-3 -mb-1 ds-link text-link hover:underline" target="_blank" rel="noopener noreferrer"
-                            href="https://www.agf.de/" title="AGF">(https://www.agf.de/)<svg class="sb-icon h-5 w-5 -mt-0.5 fill-current ml-1 inline-flex  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
-</svg></a></span>
-                        <div class="flex w-fit">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-tracking" type="checkbox" id="agf" data-whitelist="true"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="agf">
-                                    <span class="sr-only">agf aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                        </div>
-                    </li>
-                  <li class="px-6 py-3 flex justify-between items-center bg-white border-t border-[#e3e3e3]">
-                        <span class="text-base text-black">Piano Software Inc. <a
-                            class="mt-3 -mb-1 ds-link text-link hover:underline" target="_blank" rel="noopener noreferrer"
-                            href="https://www.piano.io/"
-                            title="Piano Software Inc.">(https://www.piano.io/)<svg class="sb-icon h-5 w-5 -mt-0.5 fill-current ml-1 inline-flex  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
-</svg></a></span>
-                        <div class="flex w-fit">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-tracking" type="checkbox" id="piano" data-whitelist="true"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="piano">
-                                    <span class="sr-only">piano aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                        </div>
-                    </li>
-                </ul>
-    
-                <div class="bg-[#d8e9f6] p-6">
-                    <span class="block text-lg text-black font-headingSerif ">Externe Inhalte</span>
-                    <p class="mt-4 text-base text-black">
-                                Hier können Sie festlegen, ob externe Inhalte (Text, Bild, Video…) ohne erneute Zustimmung angezeigt werden sollen. Bei Aktivierung stellt Ihr Browser beim Abruf der Inhalte eine Verbindung mit dem Anbieter her. Bei Deaktivierung wird Ihre Zustimmung auf der betreffenden Seite erneut eingeholt.
-                                <a class="block mt-2 ds-link text-link hover:underline" target="_blank"
-                                rel="noopener noreferrer" href="https://www.hr.de/unternehmen/struktur/datenschutzerklaerung-v1,datenschutzerklaerung-des-hr-100.html"
-                                title="Mehr Informationen zum Thema Datenschutz">Mehr Informationen zum Thema Datenschutz
-<svg class="sb-icon h-5 w-5 -mt-0.5 fill-current ml-1 inline-flex  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
-</svg>                                </a>
-                    </p>
-                </div>
-                <div class="bg-[#e3e3e3] py-2.5 px-6">
-                    <span class="block pb-2 text-lg text-black font-headingSerif">Externe Anbieter</span>
-                    <div class="flex justify-between">
-                        <span class="inline-flex text-base text-black js-providerTitle">x</span>
-                        <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox-all" type="checkbox" id="all" data-whitelist="false"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="all">
-                                    <span class="sr-only">alle aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                        </div>
-                    </div>
-                </div>
-    
-                <ul>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">23 Degrees (Kommunalwahl 2026)</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="23degrees" data-whitelist="true"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="23degrees">
-                                    <span class="sr-only">23degrees aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">ARD Mediathek (Video)</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="ard_mediathek" data-whitelist="true"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="ard_mediathek">
-                                    <span class="sr-only">ard_mediathek aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">ARD Audiothek (Audio) Alte Version</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="ard_audiothek" data-whitelist="true"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="ard_audiothek">
-                                    <span class="sr-only">ard_audiothek aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">ARD Sounds (Audio) Episode</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="ard_audiothek_new" data-whitelist="true"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="ard_audiothek_new">
-                                    <span class="sr-only">ard_audiothek_new aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">ARD Sounds (Audio) </span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="ard_sounds" data-whitelist="true"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="ard_sounds">
-                                    <span class="sr-only">ard_sounds aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">Arte Concert</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="arte_concert" data-whitelist="true"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="arte_concert">
-                                    <span class="sr-only">arte_concert aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">Arte Concert 2.0</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="arte_concert_new" data-whitelist="true"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="arte_concert_new">
-                                    <span class="sr-only">arte_concert_new aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">Datawrapper (Datengrafik)</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="datawrapper_cdn" data-whitelist="true"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="datawrapper_cdn">
-                                    <span class="sr-only">datawrapper_cdn aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">Esri (Notfallkarte)</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="esri" data-whitelist="false"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="esri">
-                                    <span class="sr-only">esri aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">Flourish (Datengrafik)</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="flourish" data-whitelist="false"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="flourish">
-                                    <span class="sr-only">flourish aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">Giphy (animiertes GIF)</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="giphy" data-whitelist="false"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="giphy">
-                                    <span class="sr-only">giphy aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">Facebook</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="facebook-post" data-whitelist="false"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="facebook-post">
-                                    <span class="sr-only">facebook-post aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">Instagram</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="instagram" data-whitelist="false"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="instagram">
-                                    <span class="sr-only">instagram aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">lokal-o-mat 2026</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="lokalomat2026" data-whitelist="false"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="lokalomat2026">
-                                    <span class="sr-only">lokalomat2026 aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">Microsoft Forms Formulare</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="microsoft-forms" data-whitelist="false"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="microsoft-forms">
-                                    <span class="sr-only">microsoft-forms aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">TikTok</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="tiktok" data-whitelist="false"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="tiktok">
-                                    <span class="sr-only">tiktok aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">Vimeo (Video)</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="vimeo" data-whitelist="false"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="vimeo">
-                                    <span class="sr-only">vimeo aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">YouTube (Video)</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="youtube" data-whitelist="false"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="youtube">
-                                    <span class="sr-only">youtube aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">YouTube 360 (360° Video)</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="youtube360" data-whitelist="false"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="youtube360">
-                                    <span class="sr-only">youtube360 aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                            <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
-                                <span class="inline-flex text-base leading-6 text-black align-text-top">X</span>
-                                <div class="flex float-right">
-                                <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="twitter-post" data-whitelist="false"/>    
-                                <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="twitter-post">
-                                    <span class="sr-only">twitter-post aktivieren/deaktivieren</span>
-                                    <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
-</svg></label>                                </div>
-                            </li>
-                </ul>
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#close"></use>
+</svg>                    </button>
+                </span>
             </div>
-        </div>    
+
+            <div class="bg-[#d8e9f6] p-6 ">
+                <span id="datapolicy-settings-title" class="block text-lg text-black font-headingSerif">Erhebung von Nutzungszahlen</span>
+                <p class="mt-4 text-black">
+                            Zur Optimierung des Online-Angebots verwendet der Hessische Rundfunk Zählpixel, die eine statistische Analyse Ihres Surfverhaltens auf unseren Webseiten ermöglichen. Hier können Sie der Erfassung und Übermittlung der Daten widersprechen.
+                            <a class="block mt-2 ds-link text-link hover:underline" target="_blank"
+                            rel="noopener noreferrer" href="https://www.hr.de/unternehmen/struktur/datenschutzerklaerung-v1,datenschutzerklaerung-des-hr-100.html"
+                            title="Mehr Informationen zum Thema Datenschutz">Mehr Informationen zum Thema Datenschutz
+<svg class="sb-icon h-5 w-5 -mt-0.5 fill-current ml-1 inline-flex  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
+</svg>                            </a>
+                </p>
+            </div>
+
+            <div class="bg-[#e3e3e3] py-2.5 px-6">
+                <span class="text-lg text-black font-headingSerif">Statistische Messverfahren</span>
+            </div>
+
+            <ul class="">
+                <li class="px-6 py-3 flex justify-between items-center bg-white border-t border-[#e3e3e3]">
+                    <span class="text-base text-black">AGF <a
+                        class="mt-3 -mb-1 ds-link text-link hover:underline" target="_blank" rel="noopener noreferrer"
+                        href="https://www.agf.de/" title="AGF">(https://www.agf.de/)<svg class="sb-icon h-5 w-5 -mt-0.5 fill-current ml-1 inline-flex  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
+</svg></a></span>
+                    <div class="flex w-fit">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-tracking" type="checkbox" id="agf" data-whitelist="true"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="agf">
+                                <span class="sr-only">agf aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                    </div>
+                </li>
+              <li class="px-6 py-3 flex justify-between items-center bg-white border-t border-[#e3e3e3]">
+                    <span class="text-base text-black">Piano Software Inc. <a
+                        class="mt-3 -mb-1 ds-link text-link hover:underline" target="_blank" rel="noopener noreferrer"
+                        href="https://www.piano.io/"
+                        title="Piano Software Inc.">(https://www.piano.io/)<svg class="sb-icon h-5 w-5 -mt-0.5 fill-current ml-1 inline-flex  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
+</svg></a></span>
+                    <div class="flex w-fit">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-tracking" type="checkbox" id="piano" data-whitelist="true"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="piano">
+                                <span class="sr-only">piano aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                    </div>
+                </li>
+            </ul>
+
+            <div class="bg-[#d8e9f6] p-6">
+                <span class="block text-lg text-black font-headingSerif ">Externe Inhalte</span>
+                <p class="mt-4 text-base text-black">
+                            Hier können Sie festlegen, ob externe Inhalte (Text, Bild, Video…) ohne erneute Zustimmung angezeigt werden sollen. Bei Aktivierung stellt Ihr Browser beim Abruf der Inhalte eine Verbindung mit dem Anbieter her. Bei Deaktivierung wird Ihre Zustimmung auf der betreffenden Seite erneut eingeholt.
+                            <a class="block mt-2 ds-link text-link hover:underline" target="_blank"
+                            rel="noopener noreferrer" href="https://www.hr.de/unternehmen/struktur/datenschutzerklaerung-v1,datenschutzerklaerung-des-hr-100.html"
+                            title="Mehr Informationen zum Thema Datenschutz">Mehr Informationen zum Thema Datenschutz
+<svg class="sb-icon h-5 w-5 -mt-0.5 fill-current ml-1 inline-flex  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
+</svg>                            </a>
+                </p>
+            </div>
+            <div class="bg-[#e3e3e3] py-2.5 px-6">
+                <span class="block pb-2 text-lg text-black font-headingSerif">Externe Anbieter</span>
+                <div class="flex justify-between">
+                    <span class="inline-flex text-base text-black js-providerTitle">x</span>
+                    <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox-all" type="checkbox" id="all" data-whitelist="false"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="all">
+                                <span class="sr-only">alle aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                    </div>
+                </div>
+            </div>
+
+            <ul>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">23 Degrees (Kommunalwahl 2026)</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="23degrees" data-whitelist="true"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="23degrees">
+                                <span class="sr-only">23degrees aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">ARD Mediathek (Video)</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="ard_mediathek" data-whitelist="true"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="ard_mediathek">
+                                <span class="sr-only">ard_mediathek aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">ARD Audiothek (Audio) Alte Version</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="ard_audiothek" data-whitelist="true"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="ard_audiothek">
+                                <span class="sr-only">ard_audiothek aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">ARD Sounds (Audio) Episode</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="ard_audiothek_new" data-whitelist="true"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="ard_audiothek_new">
+                                <span class="sr-only">ard_audiothek_new aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">ARD Sounds (Audio) </span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="ard_sounds" data-whitelist="true"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="ard_sounds">
+                                <span class="sr-only">ard_sounds aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">Arte Concert</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="arte_concert" data-whitelist="true"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="arte_concert">
+                                <span class="sr-only">arte_concert aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">Arte Concert 2.0</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="arte_concert_new" data-whitelist="true"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="arte_concert_new">
+                                <span class="sr-only">arte_concert_new aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">Datawrapper (Datengrafik)</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="datawrapper_cdn" data-whitelist="true"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="datawrapper_cdn">
+                                <span class="sr-only">datawrapper_cdn aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">Esri (Notfallkarte)</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="esri" data-whitelist="false"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="esri">
+                                <span class="sr-only">esri aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">Flourish (Datengrafik)</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="flourish" data-whitelist="false"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="flourish">
+                                <span class="sr-only">flourish aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">Giphy (animiertes GIF)</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="giphy" data-whitelist="false"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="giphy">
+                                <span class="sr-only">giphy aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">Facebook</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="facebook-post" data-whitelist="false"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="facebook-post">
+                                <span class="sr-only">facebook-post aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">Instagram</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="instagram" data-whitelist="false"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="instagram">
+                                <span class="sr-only">instagram aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">lokal-o-mat 2026</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="lokalomat2026" data-whitelist="false"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="lokalomat2026">
+                                <span class="sr-only">lokalomat2026 aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">Microsoft Forms Formulare</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="microsoft-forms" data-whitelist="false"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="microsoft-forms">
+                                <span class="sr-only">microsoft-forms aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">TikTok</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="tiktok" data-whitelist="false"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="tiktok">
+                                <span class="sr-only">tiktok aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">Vimeo (Video)</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="vimeo" data-whitelist="false"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="vimeo">
+                                <span class="sr-only">vimeo aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">YouTube (Video)</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="youtube" data-whitelist="false"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="youtube">
+                                <span class="sr-only">youtube aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">YouTube 360 (360° Video)</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="youtube360" data-whitelist="false"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="youtube360">
+                                <span class="sr-only">youtube360 aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+                        <li class="bg-white py-2.5 px-6 border-t border-[#e3e3e3]">
+                            <span class="inline-flex text-base leading-6 text-black align-text-top">X</span>
+                            <div class="flex float-right">
+                            <input class="h-0 w-0 opacity-0 toggleSwitch-checkbox js-toggleSwitch-checkbox js-toggleSwitch-external" type="checkbox" id="twitter-post" data-whitelist="false"/>    
+                            <label class="bg-toggle-default cursor-pointer w-[50px] h-[25px] block rounded-3xl relative toggleSwitch-label" for="twitter-post">
+                                <span class="sr-only">twitter-post aktivieren/deaktivieren</span>
+                                <svg class="sb-icon fill-white inline absolute h-[19px] w-[19px] left-[4px] top-[3px]  " role="presentation" aria-hidden="true"
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#check"></use>
+</svg></label>                            </div>
+                        </li>
+            </ul>
+        </div>
+    </div>    
 </div>
 
 <div class="flex w-auto mx-auto mt-12 mb-4 md:mt-0 md:mb-0 md:mx-0 md:pl-0">
@@ -2202,7 +2202,7 @@ aria-label='Zum Seitenanfang springen'
     >
                                 &copy; Hessischer Rundfunk                                         <span class="inline-flex">
 <svg class="sb-icon ml-1 w-4 h-4 fill-footer-text  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
 </svg>                                        </span>
 </a>
                         </div>
@@ -2220,7 +2220,7 @@ aria-label='Zum Seitenanfang springen'
     >
                                 ARD.de                                        <span class="inline-flex">
 <svg class="sb-icon ml-1 w-4 h-4 fill-footer-text  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
 </svg>                                        </span>
 </a>
                         </div>
@@ -2238,7 +2238,7 @@ aria-label='Zum Seitenanfang springen'
     >
                                 Datenschutz                                        <span class="inline-flex">
 <svg class="sb-icon ml-1 w-4 h-4 fill-footer-text  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
 </svg>                                        </span>
 </a>
                         </div>
@@ -2256,7 +2256,7 @@ aria-label='Zum Seitenanfang springen'
     >
                                 Impressum                                        <span class="inline-flex">
 <svg class="sb-icon ml-1 w-4 h-4 fill-footer-text  " role="presentation" aria-hidden="true"
-                ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
+                    ><use href="https://www.hr-sinfonieorchester.de/assets_4.52.0/base/icons/icons/svgmap.min.svg#extern"></use>
 </svg>                                        </span>
 </a>
                         </div>
