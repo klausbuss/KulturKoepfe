@@ -1574,6 +1574,9 @@
 .card.teaser.exposition .row .col .card-header .location,
 .card.exposition .card-header .location,
 .card.teaser.calendar .card-header .location {font-weight: 700;}
+.modul.podcast .img-col .ratio.ratio-21x9 {--bs-aspect-ratio: calc(6 / 21 * 100%);}
+.gallery-slider ul li {justify-content: flex-start;}
+.wysiwyg a[href^="tel:"] {text-decoration: underline;}
 </style>
 <!-- Matomo -->
 <script>
@@ -2171,10 +2174,10 @@ Eyes For You <i class="icon-chevron-right d-none" aria-hidden="true"></i></div>
       <form id="cookie-categories" method="post" action="https://www.deichtorhallen.de/de/ausstellungen"  >
 <div class='hiddenFields'>
 <input type="hidden" name="ACT" value="10" />
-<input type="hidden" name="RET" value="p3ZX+WTuyPRSrCLbVMa2LynYNmrm1LyK8/Sr1u+7U9AWKOxTTdpMoHDgJh0GIW8Z" />
-<input type="hidden" name="consent_names" value="9VLc9cKVIrT+8tc2VFiHli3wQ32DtKqgtaIsPoy08hIi6m6VB8SaKPsEN/pMq9bL5U48aj4vA8AaYTjnZzBIZhLoMZVCEgUcsQ5f+pNYDgQUMIIJOPUcPq5G+N507Raf" />
+<input type="hidden" name="RET" value="vb1grUuy0aHRx4gAwTvFVL5X4G1bxFgTQzEy8JPHW4dj6NnpM7aTHol1brfBQUWJ" />
+<input type="hidden" name="consent_names" value="CskKXjCJyGrK48OwxFxoAFZqxe5EwJ2SZqxnGu+I7XkI/qTqramSTewy98tVphnBpjBozRsYw0JljvwLwt3Y0UT+I6hOegD1Am/p1iGAF31UH62xyANGX36E74vT4Nbl" />
 <input type="hidden" name="site_id" value="1" />
-<input type="hidden" name="csrf_token" value="9025552bcefccd45aff164a28f39185f115f98e6" />
+<input type="hidden" name="csrf_token" value="fa2864bb59c7f77b7a9d92114ad5d221da62d4e5" />
 </div>
 
  
@@ -2573,7 +2576,7 @@ $('.add-to-cart').on("click", function(event){
         url     : '/de/presse/add/',
         dataType: 'html',
         cache: false,
-        data: { XID: "9025552bcefccd45aff164a28f39185f115f98e6", csrf_token: "9025552bcefccd45aff164a28f39185f115f98e6", imagedescription: $(this).data('image-description'), imagecopyright: $(this).data('image-copyright'), fullurl: $(this).data('full-url'), file: $(this).data('file-id'), entryid: $(this).data('entry-id'), relid: $(this).data('rel-id'), filetype: $(this).data('file-type') },
+        data: { XID: "fa2864bb59c7f77b7a9d92114ad5d221da62d4e5", csrf_token: "fa2864bb59c7f77b7a9d92114ad5d221da62d4e5", imagedescription: $(this).data('image-description'), imagecopyright: $(this).data('image-copyright'), fullurl: $(this).data('full-url'), file: $(this).data('file-id'), entryid: $(this).data('entry-id'), relid: $(this).data('rel-id'), filetype: $(this).data('file-type') },
         beforeSend: function( data ) {
         },
         success : function( data ) {
@@ -2590,7 +2593,7 @@ $('.remove-from-cart').on("click", function(event){
         url     : '/de/presse/remove/',
         dataType: 'html',
         cache: false,
-        data: { XID: "9025552bcefccd45aff164a28f39185f115f98e6", csrf_token: "9025552bcefccd45aff164a28f39185f115f98e6", file: $(this).data('file-id') },
+        data: { XID: "fa2864bb59c7f77b7a9d92114ad5d221da62d4e5", csrf_token: "fa2864bb59c7f77b7a9d92114ad5d221da62d4e5", file: $(this).data('file-id') },
         beforeSend: function( data ) {
         },
         success : function( data ) {location.reload();},
