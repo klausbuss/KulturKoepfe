@@ -544,7 +544,7 @@
                                 <div class="d-flex input-daterange justify-content-between">
                                     <div class="dateRangeFromContainer position-relative w-40">
                                         <label class="visually-hidden" for="dateRangeForm">von</label>
-                                        <input type="date" class="form-control my-1 alternateGlyphs" id="dateRangeFrom" value="2026-11-19" aria-label="Von">
+                                        <input type="date" class="form-control my-1 alternateGlyphs" id="dateRangeFrom" value="2026-11-20" aria-label="Von">
                                     </div>
                                     <label for="dateRangeUntil" class="input-group-addon p-2 my-1">&nbsp;bis&nbsp;</label>
                                     <div class="w-40">
@@ -831,7 +831,7 @@ if (Cookies.get('filterProduktion')) {
     }
 }
 
-var filter = filter("#spielplan", false, "2026-11-19", "2027-07-29");
+var filter = filter("#spielplan", false, "2026-11-20", "2027-07-29");
 
 function spielplanNachladen(letzterTermin = 0) {
     if (!stopSpielplanLoading) {
