@@ -1,19 +1,34 @@
 {
- "datum": "2026-11-21",
- "stand": "2026-11-21T13:46+01:00",
+ "datum": "2026-11-22",
+ "stand": "2026-11-22T13:40+01:00",
  "haeuser": {
   "so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "03:15",
+     "zeit": "03:45",
      "titel": "Gastspiel in Taipeh",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/staatskapelle-berlin-gastspiel-in-taipeh.31788/#event-177535"
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/staatskapelle-berlin-gastspiel-in-taipeh.31789/#event-177536"
     },
     {
-     "zeit": "19:00",
-     "titel": "La Calisto",
-     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/la-calisto.27274/#event-153697"
+     "zeit": "11:00",
+     "titel": "Kinderkonzert II",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/kinderkonzert-ii.27838/?spielzeit=2026-2027#event-154855"
+    },
+    {
+     "zeit": "12:30",
+     "titel": "Kinderkonzert II",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/kinderkonzert-ii.27838/?spielzeit=2026-2027#event-154856"
+    },
+    {
+     "zeit": "18:00",
+     "titel": "L’incoronazione di Poppea",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/l-incoronazione-di-poppea.94/#event-154651"
+    },
+    {
+     "zeit": "22:00",
+     "titel": "Nach(t)führung",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/nach-t-fuehrung.10795/#event-176246"
     }
    ],
    "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
@@ -35,9 +50,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Ma­da­ma Butter­fly",
-     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/madama-butterfly/1389/"
+     "zeit": "18:00",
+     "titel": "Jew­geni Onegin",
+     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/jewgeni-onegin/1255/"
     }
    ],
    "quelle": "https://www.komische-oper-berlin.de/spielplan/",
@@ -53,14 +68,29 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "11:00",
+     "titel": "Verleihung des Kleist Preises an Thomas Melle",
+     "url": "https://www.deutschestheater.de/programm/produktionen/verleihung-des-kleist-preises-2026"
+    },
+    {
+     "zeit": "12:00",
+     "titel": "INSIDE EXTENDED_schauspiel",
+     "url": "https://www.deutschestheater.de/programm/produktionen/inside-extended-schauspiel"
+    },
+    {
+     "zeit": "14:00",
+     "titel": "Führung: Das DT früher und heute",
+     "url": "https://www.deutschestheater.de/?do=downloadEvent&uid=3254"
+    },
+    {
      "zeit": "19:30",
      "titel": "Polaris",
      "url": "https://www.deutschestheater.de/programm/produktionen/polaris"
     },
     {
      "zeit": "20:00",
-     "titel": "Die Marquise von O. und –",
-     "url": "https://www.deutschestheater.de/programm/produktionen/die-marquise-von-o-und"
+     "titel": "Die Physiker",
+     "url": "https://www.deutschestheater.de/programm/produktionen/die-physiker"
     }
    ],
    "quelle": "https://www.deutschestheater.de/programm/spielplan",
@@ -82,14 +112,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Große Bühne Mata Leão Davi Pontes, Wallace Ferreira",
-     "url": "https://www.volksbuehne-berlin.de/produktionen/the-school-of-self-defense/mata-leao/20261121-1830/"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Berlin Review x Volksbühne: Fire From All Sides",
-     "url": "https://www.volksbuehne-berlin.de/reihen-und-projekte/berlin-review-x-volksbuehne-fire-from-all-sides/berlin-review-x-volksbuehne-fire-from-all-sides-2/"
+     "zeit": "18:00",
+     "titel": "Große Bühne Mononoke Satoko Ichihara mit engl. ÜT",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/mononoke/20261122-1700/"
     }
    ],
    "quelle": "https://www.volksbuehne-berlin.de/",
@@ -117,10 +142,10 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Aristide Rontini / Skånes Dansteater – May Fall",
-     "ort": "HAU2",
-     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/aristide-rontini-skaanes-dansteater-may-fall/"
+     "zeit": "16:00",
+     "titel": "Anan Fries – Tool-Party #4: Synthetic Desire",
+     "ort": "HAU3 Houseclub",
+     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/anan-fries-tool-party-4-synthetic-desire/"
     }
    ],
    "quelle": "https://www.hebbel-am-ufer.de/programm/spielplan-tickets/",
@@ -132,12 +157,7 @@
     {
      "zeit": "15:30",
      "titel": "BLINDED by DELIGHT",
-     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6997"
-    },
-    {
-     "zeit": "15:30",
-     "titel": "The Future Was GLAMOUROUS",
-     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/7820"
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/6979"
     }
    ],
    "quelle": "https://www.palast.berlin/",
@@ -147,14 +167,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "15:00",
-     "titel": "Chaos der Gefühle(5+)",
-     "url": "https://www.parkaue.de/spielplan/spielplan/chaos-der-gefuehle/2010/"
-    },
-    {
      "zeit": "16:00",
-     "titel": "Ich & Herr Meyer",
-     "url": "https://www.parkaue.de/spielplan/spielplan/ich-herr-meyer/1902/"
+     "titel": "Pinocchio(6+)",
+     "url": "https://www.parkaue.de/spielplan/spielplan/pinocchio/1901/"
     }
    ],
    "quelle": "https://www.parkaue.de/spielplan/",
@@ -164,24 +179,30 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "16:00",
-     "titel": "Vier zurück",
-     "url": "https://www.grips-theater.de/de/spielplan/vier-zuruck/3261"
+     "zeit": "13:30",
+     "titel": "Bühnenführung Berlin sagt Danke",
+     "url": "https://www.grips-theater.de/de/spielplan/buhnenfuhrung-berlin-sagt-danke/3394"
+    },
+    {
+     "zeit": "15:00",
+     "titel": "Kinderdisco",
+     "url": "https://www.grips-theater.de/de/spielplan/kinderdisco/3315"
     }
    ],
    "quelle": "https://www.grips-theater.de/de/spielplan",
    "format": "html-datum"
   },
   "bf": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "00:00",
-     "titel": "GLA55"
-    }
-   ],
-   "quelle": "https://www.berlinerfestspiele.de/",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.berlinerfestspiele.de/kalender -> 404",
+    "https://www.berlinerfestspiele.de/spielplan -> 404",
+    "https://www.berlinerfestspiele.de/de/spielplan -> 404",
+    "https://www.berlinerfestspiele.de/de/kalender -> 404",
+    "https://www.berlinerfestspiele.de/termine -> 404",
+    "https://www.berlinerfestspiele.de/konzerte -> 404"
+   ]
   },
   "ph": {
    "status": "fehler",
@@ -196,31 +217,16 @@
    ]
   },
   "kh": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "11:00",
-     "titel": "Ringel Rangel Röschen",
-     "url": "https://www.konzerthaus.de/de/programm/ringel-rangel-roschen/12514"
-    },
-    {
-     "zeit": "17:30",
-     "titel": "sub_bar live",
-     "url": "https://www.konzerthaus.de/de/programm/sub_bar-live/13582"
-    },
-    {
-     "zeit": "18:30",
-     "titel": "Lamento for Latency",
-     "url": "https://www.konzerthaus.de/de/programm/lamento-for-latency/13364"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Konzerthausorchester & Circle of Live",
-     "url": "https://www.konzerthaus.de/de/programm/konzerthausorchester-circle-of-live/13111"
-    }
-   ],
-   "quelle": "https://www.konzerthaus.de/de/programm/21-11-2026",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.konzerthaus.de/spielplan -> 404",
+    "https://www.konzerthaus.de/de/spielplan -> 404",
+    "https://www.konzerthaus.de/kalender -> 404",
+    "https://www.konzerthaus.de/de/kalender -> 404",
+    "https://www.konzerthaus.de/termine -> 404",
+    "https://www.konzerthaus.de/konzerte -> 404"
+   ]
   },
   "pbs": {
    "status": "fehler",
@@ -235,8 +241,15 @@
    ]
   },
   "roc": {
-   "status": "keine",
-   "vorstellungen": [],
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "21:00",
+     "titel": "Gabel & Bomsori",
+     "ort": "Philharmonie Berlin, Großer Saal",
+     "url": "https://www.roc-berlin.de/konzerte/gabel-bomsori/concert/233474/"
+    }
+   ],
    "quelle": "https://www.roc-berlin.de/kalender/",
    "format": "json-ld"
   },
@@ -244,14 +257,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "Hamlet",
-     "url": "https://schauspielhaus.de/stuecke/hamlet"
+     "zeit": "16:00",
+     "titel": "Weil der Frieden Zucker ist! oder: Was für ein kleines Moped mit verchromter Lenkstange steht dort im Hof",
+     "url": "https://schauspielhaus.de/stuecke/weil-der-frieden-zucker-ist"
     },
     {
-     "zeit": "19:30",
-     "titel": "Das Bildnis des Dorian Gray",
-     "url": "https://schauspielhaus.de/stuecke/das-bildnis-des-dorian-gray"
+     "zeit": "20:00",
+     "titel": "Weisse Flotte",
+     "url": "https://schauspielhaus.de/stuecke/weisse-flotte"
     }
    ],
    "quelle": "https://schauspielhaus.de/spielplan",
@@ -261,37 +274,37 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Draußen vor der Tür",
-     "url": "https://www.thalia-theater.de/de/stuecke/drauen-vor-der-tur/339"
+     "titel": "AUFGEBLÄTTERT Heymanns Literatur-Premiere 2026",
+     "url": "https://www.thalia-theater.de/de/stuecke/aufgeblattert-heymanns-literatur-premiere-2026/365"
     }
    ],
    "quelle": "https://www.thalia-theater.de/de/termine",
    "format": "html-datum"
   },
   "hh-kn": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:00",
-     "titel": "ÜBERJAZZ Festival: Samstag",
-     "url": "https://kampnagel.de/produktionen/grossebühne-ueberjazz-festival-2026-samstag-ueberjazz-festival-2026"
-    }
-   ],
-   "quelle": "https://kampnagel.de/kalender",
-   "format": "json-eingebettet"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.kampnagel.de/spielplan -> 404",
+    "https://www.kampnagel.de/de/spielplan -> 404",
+    "https://www.kampnagel.de/programm -> 404",
+    "https://www.kampnagel.de/de/programm -> 404",
+    "https://www.kampnagel.de/de/kalender -> 404",
+    "https://www.kampnagel.de/termine -> 404"
+   ]
   },
   "hh-so": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "15:30",
-     "titel": "Führung für Familien",
-     "ort": "Staatsoper, Treffpunkt: Bühneneingang"
+     "zeit": "11:00",
+     "titel": "3. Philharmo­\\;nisches Konzert",
+     "ort": "Elbphilharmonie, Großer Saal"
     },
     {
-     "zeit": "19:00",
-     "titel": "Dido and Aeneas",
-     "ort": "Staatsoper, opera stabile"
+     "zeit": "11:00",
+     "titel": "Ballett-Werkstatt",
+     "ort": "Staatsoper, Großes Haus"
     }
    ],
    "quelle": "https://www.die-hamburgische-staatsoper.de/de",
@@ -303,32 +316,46 @@
     {
      "zeit": "10:00",
      "titel": "Workshop: Kreativ Modular Synthesizer",
-     "url": "https://www.elbphilharmonie.de/de/programm/workshop-kreativ-modular-synthesizer/28524"
+     "url": "https://www.elbphilharmonie.de/de/programm/workshop-kreativ-modular-synthesizer/28525"
+    },
+    {
+     "zeit": "11:00",
+     "titel": "Philharmonisches Staatsorchester Hamburg / Omer Meir Wellber",
+     "url": "https://www.elbphilharmonie.de/de/programm/philharmonisches-staatsorchester-hamburg-omer-meir-wellber/27788"
+    },
+    {
+     "zeit": "11:00",
+     "titel": "Kammerkonzert der Symphoniker Hamburg"
+    },
+    {
+     "zeit": "11:00",
+     "titel": "Hasi-Konzert",
+     "url": "https://www.elbphilharmonie.de/de/programm/hasi-konzert/28090"
     },
     {
      "zeit": "14:00",
      "titel": "Funkelkonzert XL / Es ist Zeit",
-     "url": "https://www.elbphilharmonie.de/de/programm/funkelkonzert-xl-es-ist-zeit/28442"
+     "url": "https://www.elbphilharmonie.de/de/programm/funkelkonzert-xl-es-ist-zeit/28444"
     },
     {
      "zeit": "14:30",
      "titel": "Hasi-Konzert",
-     "url": "https://www.elbphilharmonie.de/de/programm/hasi-konzert/28086"
+     "url": "https://www.elbphilharmonie.de/de/programm/hasi-konzert/28088"
     },
     {
      "zeit": "16:00",
      "titel": "Hasi-Konzert",
-     "url": "https://www.elbphilharmonie.de/de/programm/hasi-konzert/28087"
+     "url": "https://www.elbphilharmonie.de/de/programm/hasi-konzert/28089"
+    },
+    {
+     "zeit": "18:00",
+     "titel": "Hamburger Oratorienchor / Hans Sachs Chor Nürnberg / Thekla Jonathal",
+     "url": "https://www.elbphilharmonie.de/de/programm/hamburger-oratorienchor-hans-sachs-chor-nurnberg-thekla-jonathal/28893"
     },
     {
      "zeit": "20:00",
-     "titel": "Michael Wollny",
-     "url": "https://www.elbphilharmonie.de/de/programm/michael-wollny/29139"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Michael Schulte",
-     "url": "https://www.elbphilharmonie.de/de/programm/michael-schulte/27626"
+     "titel": "Evgeny Kissin & Sir András Schiff / Klavierabend",
+     "url": "https://www.elbphilharmonie.de/de/programm/evgeny-kissin-sir-andras-schiff-klavierabend/27883"
     }
    ],
    "quelle": "https://www.elbphilharmonie.de/de/programm/",
@@ -350,19 +377,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Jeff Kinney: Gregs Tagebuch",
-     "url": "https://www.residenztheater.de/stuecke/detail/jeff-kinney-gregs-tagebuch-leseshow"
+     "zeit": "16:30",
+     "titel": "Buch trifft Bühne: Leseclub zu »Bye Bye Lolita«",
+     "url": "https://www.residenztheater.de/stuecke/detail/buchtrifftbuehne"
     },
     {
-     "zeit": "19:00",
-     "titel": "Faust I",
-     "url": "https://www.residenztheater.de/stuecke/detail/faust"
-    },
-    {
-     "zeit": "20:00",
-     "titel": "Bambi",
-     "url": "https://www.residenztheater.de/stuecke/detail/bambi"
+     "zeit": "18:30",
+     "titel": "Cabaret",
+     "url": "https://www.residenztheater.de/stuecke/detail/cabaret"
     }
    ],
    "quelle": "https://www.residenztheater.de/spielplan",
@@ -372,12 +394,8 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "11:00",
-     "titel": "Campus #31 „Über Rechtsextremismus sprechen“"
-    },
-    {
-     "zeit": "19:30",
-     "titel": "Rabbithole"
+     "zeit": "15:00",
+     "titel": "Wallenstein"
     }
    ],
    "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
@@ -387,14 +405,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Felix Krull",
-     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/felix-krull"
+     "zeit": "11:01",
+     "titel": "Große Matinée der \"Saubande\" Kabarett",
+     "url": "https://www.muenchner-volkstheater.de/programm/extra/grosse-matinee-der-saubande"
     },
     {
-     "zeit": "20:00",
-     "titel": "Der gute Mensch von Sezuan Gastspiel",
-     "url": "https://www.muenchner-volkstheater.de/programm/extra/der-gute-mensch-von-sezuan"
+     "zeit": "19:00",
+     "titel": "KINO ASYL Festival",
+     "url": "https://www.muenchner-volkstheater.de/programm/extra/kino-asyl"
     }
    ],
    "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
@@ -425,16 +443,16 @@
    ]
   },
   "m-mph": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "zeit": "19:30",
-     "titel": "Lahav Shani",
-     "url": "https://www.mphil.de/ueber-uns/musikerinnen-und-musiker/details/lahav-shani"
-    }
-   ],
-   "quelle": "https://www.mphil.de/",
-   "format": "html-time"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.mphil.de/spielplan -> 404",
+    "https://www.mphil.de/de/spielplan -> 404",
+    "https://www.mphil.de/programm -> 404",
+    "https://www.mphil.de/de/programm -> 404",
+    "https://www.mphil.de/de/kalender -> 404",
+    "https://www.mphil.de/termine -> 404"
+   ]
   },
   "m-br": {
    "status": "fehler",
@@ -452,19 +470,19 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "20:00",
-     "titel": "Egal",
-     "url": "https://www.burgtheater.at/veranstaltungen/egal/2026-11-21"
+     "zeit": "16:00",
+     "titel": "Lesen & Lauschen: Geschichten vom Franz",
+     "url": "https://www.burgtheater.at/veranstaltungen/lesen-lauschen-geschichten-vom-franz/2026-11-22"
     },
     {
-     "zeit": "20:00",
-     "titel": "Elisabeth!",
-     "url": "https://www.burgtheater.at/veranstaltungen/elisabeth/2026-11-21"
+     "zeit": "18:00",
+     "titel": "Merlin oder das wüste Land",
+     "url": "https://www.burgtheater.at/veranstaltungen/merlin-oder-das-wueste-land/2026-11-22"
     },
     {
-     "zeit": "20:30",
-     "titel": "Kill Baby",
-     "url": "https://www.burgtheater.at/veranstaltungen/kill-baby/2026-11-21"
+     "zeit": "19:00",
+     "titel": "Burgtheater",
+     "url": "https://www.burgtheater.at/veranstaltungen/burgtheater/2026-11-22"
     }
    ],
    "quelle": "https://www.burgtheater.at/spielplan",
@@ -474,9 +492,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "16:00",
-     "titel": "DIE KLEINE HEXE",
-     "url": "https://www.volkstheater.at/spielstaetten/volkstheater-bezirke/vz-brigittenau"
+     "zeit": "19:00",
+     "titel": "NESTROY 2026",
+     "url": "https://www.volkstheater.at/spielstaetten/volkstheater"
     }
    ],
    "quelle": "https://www.volkstheater.at/spielplan/",
@@ -499,7 +517,7 @@
    "vorstellungen": [
     {
      "zeit": "19:00",
-     "titel": "Luisa Miller"
+     "titel": "Ariadne auf Naxos"
     }
    ],
    "quelle": "https://www.wiener-staatsoper.at/",
@@ -509,42 +527,47 @@
    "status": "ok",
    "vorstellungen": [
     {
+     "zeit": "16:00",
+     "titel": "Lutherische Stadtkirche: \"Von Trauer und Trost. Vokalmusik zum Ewigkeitssonntag\"",
+     "url": "https://www.volksoper.at/produktion/lutherische-stadtkirche-von-trauer-und-trost-vokalmusik-zum-ewigkeitssonntag-2026.1023169993.de.html"
+    },
+    {
      "zeit": "19:00",
-     "titel": "Salome",
-     "url": "https://www.volksoper.at/produktion/salome-2023.1013456735.de.html"
+     "titel": "Chicago",
+     "url": "https://www.volksoper.at/produktion/chicago-2025.1013455964.de.html"
     }
    ],
    "quelle": "https://www.volksoper.at/spielplan",
    "format": "html-time"
   },
   "w-tadw": {
-   "status": "ok",
-   "vorstellungen": [
-    {
-     "titel": "International Opera Awards",
-     "url": "https://operavision.eu/performance/international-opera-awards-2026"
-    }
-   ],
-   "quelle": "https://www.theater-wien.at/de/home",
-   "format": "html-datum"
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.theater-wien.at/spielplan -> 404",
+    "https://www.theater-wien.at/programm -> 404",
+    "https://www.theater-wien.at/kalender -> 404",
+    "https://www.theater-wien.at/termine -> 404",
+    "https://www.theater-wien.at/konzerte -> 404"
+   ]
   },
   "w-kh": {
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "14:30",
-     "titel": "Glocal Piano Festival",
-     "url": "https://konzerthaus.at/de/programm-und-karten/glocal-piano-festival/64179"
+     "zeit": "11:00",
+     "titel": "Wiener Symphoniker / Schuen / Popelka",
+     "url": "https://konzerthaus.at/de/programm-und-karten/wiener-symphoniker-schuen-popelka/63695"
     },
     {
-     "zeit": "19:30",
-     "titel": "The Sound of Hans Zimmer & John Williams",
-     "url": "https://konzerthaus.at/de/programm-und-karten/the-sound-of-hans-zimmer-john-williams/63674"
+     "zeit": "11:00",
+     "titel": "Vorhören!",
+     "url": "https://konzerthaus.at/de/programm-und-karten/vorhoeren/64156"
     },
     {
-     "zeit": "19:30",
-     "titel": "Chris Potter Trio",
-     "url": "https://konzerthaus.at/de/programm-und-karten/chris-potter-trio/63847"
+     "zeit": "19:00",
+     "titel": "Katharina Klement",
+     "url": "https://konzerthaus.at/de/programm-und-karten/katharina-klement/64473"
     }
    ],
    "quelle": "https://konzerthaus.at/de/programm-und-karten",
@@ -576,14 +599,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "Kleiner Mann - was nun?",
-     "url": "https://www.schauspielfrankfurt.de/spielplan/kalender/kleiner-mann---was-nun/3109/"
+     "zeit": "16:00",
+     "titel": "Die kleine Hexe",
+     "url": "https://www.schauspielfrankfurt.de/spielplan/kalender/die-kleine-hexe/3026/"
     },
     {
-     "zeit": "20:00",
-     "titel": "Das Deutschland­herz (UA)",
-     "url": "https://www.schauspielfrankfurt.de/spielplan/kalender/ein-neues-stueck-ua/3254/"
+     "zeit": "18:00",
+     "titel": "Die Affäre auf der Straße nach Monaco / L’affare di via Monaco (UA)",
+     "url": "https://www.schauspielfrankfurt.de/spielplan/kalender/die-affaere-auf-der-strasse-nach-monaco/3231/"
     }
    ],
    "quelle": "https://www.schauspielfrankfurt.de/spielplan",
@@ -629,14 +652,19 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:30",
-     "titel": "FREUNDE-APÉRO",
-     "url": "https://www.alteoper.de/de/programm/freunde-apero/18956"
+     "zeit": "14:00",
+     "titel": "Grand Hotel Federspiel",
+     "url": "https://www.alteoper.de/de/programm/grand-hotel-federspiel/19090"
+    },
+    {
+     "zeit": "16:00",
+     "titel": "Musik und Architektur",
+     "url": "https://www.alteoper.de/de/programm/musik-und-architektur/18950"
     },
     {
      "zeit": "19:00",
-     "titel": "Ein musikalischer Krimi-Abend mit Bastian Pastewka",
-     "url": "https://www.alteoper.de/de/programm/ein-musikalischer-krimi-abend-mit-bastian-pastewka/18998"
+     "titel": "Orchestre des Champs-Élysées",
+     "url": "https://www.alteoper.de/de/programm/orchestre-des-champs-elysees/18841"
     }
    ],
    "quelle": "https://www.alteoper.de/de/programm",
@@ -646,13 +674,12 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Wassermusik",
-     "url": "https://www.hr-sinfonieorchester.de/konzerte/konzerte-26-27/wassermusik-,barock-plus-wassermusik-100.html"
+     "zeit": "15:00",
+     "titel": "Sendung"
     }
    ],
    "quelle": "https://www.hr-sinfonieorchester.de/index.html",
-   "format": "html-datum"
+   "format": "html-time"
   },
   "b-bab": {
    "status": "fehler",
@@ -672,22 +699,22 @@
     {
      "zeit": "13:30",
      "titel": "A Crowd Without Rehearsal",
-     "url": "https://www.arsenal-berlin.de/kino/filmvorfuehrung/a-crowd-without-rehearsal-6148/                "
+     "url": "https://www.arsenal-berlin.de/kino/filmvorfuehrung/a-crowd-without-rehearsal-6149/                "
     },
     {
      "zeit": "14:00",
-     "titel": "Der kleine Nick erzählt vom Glück",
-     "url": "https://www.arsenal-berlin.de/kino/filmvorfuehrung/der-kleine-nick-erzaehlt-vom-glueck-6004/                "
+     "titel": "Minions",
+     "url": "https://www.arsenal-berlin.de/kino/filmvorfuehrung/minions-6010/                "
     },
     {
      "zeit": "16:30",
-     "titel": "Central Park",
-     "url": "https://www.arsenal-berlin.de/kino/filmvorfuehrung/central-park-6006/                "
+     "titel": "Dom na Trubnoi",
+     "url": "https://www.arsenal-berlin.de/kino/filmvorfuehrung/dom-na-trubnoi-6012/                "
     },
     {
-     "zeit": "20:00",
-     "titel": "Adieu monde cruel",
-     "url": "https://www.arsenal-berlin.de/kino/filmvorfuehrung/adieu-monde-cruel-6008/                "
+     "zeit": "19:30",
+     "titel": "Nino",
+     "url": "https://www.arsenal-berlin.de/kino/filmvorfuehrung/nino-6016/                "
     }
    ],
    "quelle": "https://www.arsenal-berlin.de/",
@@ -706,28 +733,28 @@
    ]
   },
   "b-kin": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.yorck.de/spielplan -> 404",
-    "https://www.yorck.de/de/spielplan -> 404",
-    "https://www.yorck.de/programm -> 404",
-    "https://www.yorck.de/de/programm -> 404",
-    "https://www.yorck.de/kalender -> 404",
-    "https://www.yorck.de/de/kalender -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:00",
+     "titel": "Europäischer Kinotag 2026",
+     "url": "https://www.yorck.de/kinos/international"
+    }
+   ],
+   "quelle": "https://www.yorck.de/kinos/international",
+   "format": "json-eingebettet"
   },
   "b-dlx": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.yorck.de/spielplan -> 404",
-    "https://www.yorck.de/de/spielplan -> 404",
-    "https://www.yorck.de/programm -> 404",
-    "https://www.yorck.de/de/programm -> 404",
-    "https://www.yorck.de/kalender -> 404",
-    "https://www.yorck.de/de/kalender -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:00",
+     "titel": "Europäischer Kinotag 2026",
+     "url": "https://www.yorck.de/kinos/delphi-lux"
+    }
+   ],
+   "quelle": "https://www.yorck.de/kinos/delphi-lux",
+   "format": "json-eingebettet"
   },
   "b-fsk": {
    "status": "fehler",
@@ -745,8 +772,11 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:00",
-     "titel": "Filmklassiker im Lichtblick-Kino"
+     "zeit": "17:00",
+     "titel": "11. European Arthouse Cinema Day 2026"
+    },
+    {
+     "titel": "11. European Arthouse Cinema Day 2026"
     },
     {
      "titel": "Animationsfilm für die ganze Familie",
@@ -789,14 +819,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "19:30",
-     "titel": "DIE FLÜGEL DER MENSCHEN",
-     "url": "https://www.b-movie.de/programm#info-9923674"
-    },
-    {
-     "zeit": "22:00",
-     "titel": "NATIONALHYMNE",
-     "url": "https://www.b-movie.de/programm#info-9923677"
+     "zeit": "18:00",
+     "titel": "VON MÄDCHEN UND PFERDEN",
+     "url": "https://www.b-movie.de/programm#info-9923676"
     }
    ],
    "quelle": "https://www.b-movie.de/",
@@ -818,9 +843,9 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "Amarcord",
-     "url": "https://www.muenchner-stadtmuseum.de/sammlungen/filmmuseum/aktueller-spielplan/details/amarcord-46768"
+     "zeit": "17:00",
+     "titel": "Primal Fear (Zwielicht)",
+     "url": "https://www.muenchner-stadtmuseum.de/sammlungen/filmmuseum/aktueller-spielplan/details/primal-fear-zwielicht-46770"
     }
    ],
    "quelle": "https://www.muenchner-stadtmuseum.de/",
@@ -850,16 +875,16 @@
    ]
   },
   "m-ck": {
-   "status": "fehler",
-   "grund": "geladen, aber keine Termindaten erkannt",
-   "versuche": [
-    "https://www.city-kinos.de/spielplan -> 404",
-    "https://www.city-kinos.de/de/spielplan -> 404",
-    "https://www.city-kinos.de/programm -> 404",
-    "https://www.city-kinos.de/de/programm -> 404",
-    "https://www.city-kinos.de/kalender -> 404",
-    "https://www.city-kinos.de/de/kalender -> 404"
-   ]
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "20:00",
+     "titel": "Europäischer Kinotag 2026 – München",
+     "url": "https://www.city-kinos.de/"
+    }
+   ],
+   "quelle": "https://www.city-kinos.de/",
+   "format": "json-eingebettet"
   },
   "m-lk": {
    "status": "fehler",
@@ -878,12 +903,12 @@
    "vorstellungen": [
     {
      "zeit": "18:00",
-     "titel": "What Ever Happened to Baby Jane? | Robert Aldrich",
+     "titel": "4 For Texas | Robert Aldrich",
      "ort": "Filmmuseum - Augustinerstraße 1, 1010 Wien (im Gebäude der Albertina)"
     },
     {
      "zeit": "20:30",
-     "titel": "Hush...Hush, Sweet Charlotte | Robert Aldrich",
+     "titel": "The Dirty Dozen | Robert Aldrich",
      "ort": "Filmmuseum - Augustinerstraße 1, 1010 Wien (im Gebäude der Albertina)"
     }
    ],
@@ -894,7 +919,7 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "titel": "Samstag 21.11.",
+     "titel": "Sonntag 22.11.",
      "url": "https://www.filmcasino.at/programm/?show=films&do=1"
     }
    ],
@@ -905,14 +930,38 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "14:00",
-     "titel": "Frösche und Kröten Simone van Dusseldorp",
+     "zeit": "12:00",
+     "titel": "var.",
+     "url": "https://www.votivkino.at/specials/ff-kombiticket/#Programm"
+    },
+    {
+     "zeit": "12:00",
+     "titel": "Konrad aus der Konservenbüchse Claudia Schröder",
      "url": "https://www.votivkino.at/specials/festivals/internationales-kinderfilmfestival/#Programm"
     },
     {
-     "zeit": "14:20",
-     "titel": "Ein Talent fürs Morden Anton Corbijn",
-     "url": "https://www.votivkino.at/film/ein-talent-fuers-morden/"
+     "zeit": "12:00",
+     "titel": "Sonntag, 22. November",
+     "url": "https://www.votivkino.at/film/jim-queen/"
+    },
+    {
+     "zeit": "13:00",
+     "titel": "Die Blutgräfin Ulrike Ottinger",
+     "url": "https://www.votivkino.at/film/die-blutgraefin/"
+    },
+    {
+     "zeit": "13:30",
+     "titel": "Wild Horse Nine Martin McDonagh"
+    },
+    {
+     "zeit": "14:00",
+     "titel": "Was haben wir gelacht Eva Müller, Isabel Schneider",
+     "url": "https://www.votivkino.at/film/was-haben-wir-gelacht/"
+    },
+    {
+     "zeit": "14:30",
+     "titel": "Nöstlinger Alexandra Schneider",
+     "url": "https://www.votivkino.at/film/noestlinger/"
     },
     {
      "zeit": "14:45",
@@ -920,28 +969,23 @@
      "url": "https://www.votivkino.at/film/alte-liebe/"
     },
     {
-     "zeit": "15:00",
-     "titel": "Nöstlinger Alexandra Schneider",
-     "url": "https://www.votivkino.at/film/noestlinger/"
-    },
-    {
-     "zeit": "15:45",
-     "titel": "Wild Horse Nine Martin McDonagh"
+     "zeit": "15:15",
+     "titel": "Heimsuchung Volker Schlöndorff"
     },
     {
      "zeit": "16:00",
-     "titel": "Plitsch Platsch Forever! Natascha Beller",
+     "titel": "La Bola Negra Javier Calvo, Javier Ambrossi",
+     "url": "https://www.votivkino.at/film/la-bola-negra/"
+    },
+    {
+     "zeit": "16:30",
+     "titel": "Meine Stiefmutter ist eine Hexe Joëlle Desjardins Paquette",
      "url": "https://www.votivkino.at/specials/festivals/internationales-kinderfilmfestival/#Programm"
     },
     {
      "zeit": "16:30",
-     "titel": "Sinn und Sinnlichkeit Georgia Oakley",
-     "url": "https://www.votivkino.at/film/sinn-und-sinnlichkeit/"
-    },
-    {
-     "zeit": "17:00",
-     "titel": "Naza Yuval Abraham, Rachel Szor",
-     "url": "https://www.votivkino.at/film/naza/"
+     "titel": "Biermann Jens Meurer",
+     "url": "https://www.votivkino.at/film/biermann/"
     },
     {
      "zeit": "17:00",
@@ -949,52 +993,55 @@
      "url": "https://www.votivkino.at/film/atmosphere/"
     },
     {
-     "zeit": "18:00",
-     "titel": "Heimsuchung Volker Schlöndorff",
-     "url": "https://www.votivkino.at/film/heimsuchung-eine-jahrhundertgeschichte/"
+     "zeit": "17:45",
+     "titel": "Die lieben Eltern Emmanuel Patron",
+     "url": "https://www.votivkino.at/film/die-lieben-eltern/"
     },
     {
-     "zeit": "18:00",
+     "zeit": "18:30",
      "titel": "La Bola Negra Javier Calvo, Javier Ambrossi",
      "url": "https://www.votivkino.at/film/la-bola-negra/"
     },
     {
      "zeit": "18:45",
+     "titel": "Heimsuchung Volker Schlöndorff"
+    },
+    {
+     "zeit": "19:00",
      "titel": "Sterben für Anfänger Kurt Langbein",
      "url": "https://www.votivkino.at/film/sterben-fuer-anfaenger/"
     },
     {
-     "zeit": "19:00",
+     "zeit": "19:15",
      "titel": "Wild Horse Nine Martin McDonagh"
     },
     {
-     "zeit": "19:15",
-     "titel": "Die lieben Eltern Emmanuel Patron",
-     "url": "https://www.votivkino.at/film/die-lieben-eltern/"
+     "zeit": "19:30",
+     "titel": "Biermann Jens Meurer",
+     "url": "https://www.votivkino.at/film/biermann/"
     },
     {
-     "zeit": "20:30",
-     "titel": "La Bola Negra Javier Calvo, Javier Ambrossi",
-     "url": "https://www.votivkino.at/film/la-bola-negra/"
+     "zeit": "21:00",
+     "titel": "Die Blutgräfin Ulrike Ottinger",
+     "url": "https://www.votivkino.at/film/die-blutgraefin/"
     },
     {
-     "zeit": "20:35",
+     "zeit": "21:00",
+     "titel": "Heimsuchung Volker Schlöndorff"
+    },
+    {
+     "zeit": "21:30",
      "titel": "Wiener Blues: The Loneliest Man in Town Tizza Covi, Rainer Frimmel",
      "url": "https://www.votivkino.at/film/wiener-blues-the-loneliest-man-in-town/"
     },
     {
-     "zeit": "21:00",
-     "titel": "Biermann Jens Meurer",
-     "url": "https://www.votivkino.at/specials/film-gespraech/#Programm"
-    },
-    {
-     "zeit": "21:00",
-     "titel": "Heimsuchung Volker Schlöndorff",
-     "url": "https://www.votivkino.at/film/heimsuchung-eine-jahrhundertgeschichte/"
-    },
-    {
      "zeit": "21:30",
      "titel": "Wild Horse Nine Martin McDonagh"
+    },
+    {
+     "zeit": "22:00",
+     "titel": "Jim Queen Marco Nguyen, Nicolas Athane",
+     "url": "https://www.votivkino.at/film/jim-queen/"
     }
    ],
    "quelle": "https://www.votivkino.at/",
@@ -1004,23 +1051,14 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "17:30",
-     "titel": "WIENER BLUES: THE LONELIEST MAN IN TOWN",
-     "url": "https://www.gartenbaukino.at/programm/programmuebersicht/wiener-blues-the-loneliest-man-in-town/"
+     "zeit": "16:00",
+     "titel": "THE ODYSSEY",
+     "url": "https://www.gartenbaukino.at/programm/the-odyssey/"
     },
     {
      "zeit": "19:30",
      "titel": "LA BOLA NEGRA",
      "url": "https://www.gartenbaukino.at/programm/la-bola-negra/"
-    },
-    {
-     "zeit": "22:30",
-     "titel": "BLUE STEEL",
-     "url": "https://www.gartenbaukino.at/programm/programmuebersicht/blue-steel/"
-    },
-    {
-     "titel": "ANALOG IST POP-WORKSHOP",
-     "url": "https://www.gartenbaukino.at/das-kino/workshops/"
     }
    ],
    "quelle": "https://www.gartenbaukino.at/",
@@ -1030,19 +1068,29 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "14:10",
-     "titel": "Wild Horse Nine",
-     "url": "https://www.burgkino.at/movie/wild-horse-nine"
-    },
-    {
-     "zeit": "14:15",
+     "zeit": "12:00",
      "titel": "La bola negra",
      "url": "https://www.burgkino.at/movie/la-bola-negra"
     },
     {
-     "zeit": "16:30",
-     "titel": "La Gradiva",
-     "url": "https://www.burgkino.at/movie/la-gradiva"
+     "zeit": "12:00",
+     "titel": "The Third Man",
+     "url": "https://www.burgkino.at/movie/the-third-man"
+    },
+    {
+     "zeit": "14:00",
+     "titel": "Possible Love",
+     "url": "https://www.burgkino.at/movie/possible-love"
+    },
+    {
+     "zeit": "15:00",
+     "titel": "Wild Horse Nine",
+     "url": "https://www.burgkino.at/movie/wild-horse-nine"
+    },
+    {
+     "zeit": "17:00",
+     "titel": "Sense and Sensibility",
+     "url": "https://www.burgkino.at/movie/sense-and-sensibility"
     },
     {
      "zeit": "17:15",
@@ -1050,7 +1098,7 @@
      "url": "https://www.burgkino.at/movie/la-bola-negra"
     },
     {
-     "zeit": "19:10",
+     "zeit": "19:25",
      "titel": "NAZA",
      "url": "https://www.burgkino.at/movie/naza"
     },
@@ -1060,7 +1108,7 @@
      "url": "https://www.burgkino.at/movie/la-bola-negra"
     },
     {
-     "zeit": "20:45",
+     "zeit": "21:00",
      "titel": "Wild Horse Nine",
      "url": "https://www.burgkino.at/movie/wild-horse-nine"
     }
@@ -1120,14 +1168,19 @@
    "status": "ok",
    "vorstellungen": [
     {
-     "zeit": "18:00",
-     "titel": "Sense and Sensibility | Sinn und Sinnlichkeit",
-     "url": "https://filmforum-hoechst.com/film/sense-and-sensibility-sinn-und-sinnlichkeit/2026-11-21/"
+     "zeit": "15:00",
+     "titel": "Lotte und Totte",
+     "url": "https://filmforum-hoechst.com/film/lotte-und-totte/2026-11-22/"
+    },
+    {
+     "zeit": "18:30",
+     "titel": "Lügen über meine Mutter",
+     "url": "https://filmforum-hoechst.com/film/luegen-ueber-meine-mutter/2026-11-22/"
     },
     {
      "zeit": "20:30",
-     "titel": "Jubiläumsfilmreihe: Alice in den Städten",
-     "url": "https://filmforum-hoechst.com/film/jubilaeumsfilmreihe-alice-in-den-staedten/"
+     "titel": "Sense and Sensibility | Sinn und Sinnlichkeit",
+     "url": "https://filmforum-hoechst.com/film/sense-and-sensibility-sinn-und-sinnlichkeit/2026-11-22/"
     }
    ],
    "quelle": "https://filmforum-hoechst.com/",
@@ -1136,6 +1189,21 @@
   "f-msk": {
    "status": "ok",
    "vorstellungen": [
+    {
+     "zeit": "12:00",
+     "titel": "THE MAD DOG OF EUROPE",
+     "url": "https://malsehnkino.de/index.php?section=Sonntagsmatinee&movieID=110461#110461"
+    },
+    {
+     "zeit": "13:45",
+     "titel": "ÜBERGANG",
+     "url": "https://malsehnkino.de/index.php?section=Sonntagsmatinee&movieID=110571#110571"
+    },
+    {
+     "zeit": "16:00",
+     "titel": "CHECKER TOBI 3 – DIE HEIMLICHE HERRSCHERIN DER ERDE",
+     "url": "https://malsehnkino.de/index.php?section=Kinderkino&movieID=110661#110661"
+    },
     {
      "titel": "Gutscheine",
      "url": "https://kinotickets.express/frankfurt_malsehn"
@@ -1608,7 +1676,7 @@
   "hh-amh": {
    "status": "keine",
    "ausstellungen": [],
-   "quelle": "https://amh.de/programm/veranstaltungskalender/",
+   "quelle": "https://amh.de/ausstellungen/alle-ausstellungen/",
    "format": "json-ld"
   },
   "hh-imm": {
@@ -1699,16 +1767,34 @@
    "format": "html-zeitraum"
   },
   "m-lb": {
-   "status": "fehler",
-   "grund": "keine Seite erreichbar",
-   "versuche": [
-    "https://www.lenbachhaus.de/entdecken/ausstellungen -> ReadTimeout",
-    "https://www.lenbachhaus.de/ausstellungen -> ReadTimeout",
-    "https://www.lenbachhaus.de/de/ausstellungen -> ReadTimeout",
-    "https://www.lenbachhaus.de/ausstellungen/aktuell -> ReadTimeout",
-    "https://www.lenbachhaus.de/exhibitions -> ConnectionError",
-    "https://www.lenbachhaus.de/en/exhibitions -> ReadTimeout"
-   ]
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Shifting the Silence. Die Stille verschieben. Gegenwartskunst im Lenbachhaus",
+     "von": "2025-10-14",
+     "bis": "2027-01-31",
+     "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/shifting-the-silence"
+    },
+    {
+     "titel": "Maria Jarema. Revolutionäre Kommissarin der Abstraktion",
+     "von": "2026-10-27",
+     "bis": "2027-04-25",
+     "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/maria-jarema"
+    },
+    {
+     "titel": "Über die Welt hinaus. Der Blaue Reiter",
+     "von": "2026-03-10",
+     "bis": "2027-09-05",
+     "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/ueber-die-welt-hinaus-der-blaue-reiter"
+    },
+    {
+     "titel": "Was zu verschwinden droht, wird Bild. Mensch – Natur – Kunst",
+     "bis": "2028-01-31",
+     "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/was-zu-verschwinden-droht-wird-bild"
+    }
+   ],
+   "quelle": "https://www.lenbachhaus.de/programm/ausstellungen",
+   "format": "html-zeitraum"
   },
   "m-dm": {
    "status": "fehler",
@@ -1792,12 +1878,12 @@
    "status": "fehler",
    "grund": "keine Seite erreichbar",
    "versuche": [
-    "https://www.albertina.at/ausstellungen/ -> ConnectTimeout",
-    "https://www.albertina.at/ausstellungen -> ConnectTimeout",
-    "https://www.albertina.at/de/ausstellungen -> ConnectTimeout",
-    "https://www.albertina.at/ausstellungen/aktuell -> ConnectTimeout",
-    "https://www.albertina.at/exhibitions -> ConnectTimeout",
-    "https://www.albertina.at/en/exhibitions -> ConnectTimeout"
+    "https://www.albertina.at/ausstellungen/ -> ConnectionError",
+    "https://www.albertina.at/ausstellungen -> ConnectionError",
+    "https://www.albertina.at/de/ausstellungen -> ConnectionError",
+    "https://www.albertina.at/ausstellungen/aktuell -> ConnectionError",
+    "https://www.albertina.at/exhibitions -> ConnectionError",
+    "https://www.albertina.at/en/exhibitions -> ConnectionError"
    ]
   },
   "w-bel": {
