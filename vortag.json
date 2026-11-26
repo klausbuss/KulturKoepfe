@@ -1,0 +1,2153 @@
+{
+ "datum": "2026-11-25",
+ "stand": "2026-11-25T15:32+01:00",
+ "haeuser": {
+  "so": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Dido & Aeneas",
+     "url": "https://www.staatsoper-berlin.de/de/veranstaltungen/dido-aeneas.7528/#event-154654"
+    }
+   ],
+   "quelle": "https://www.staatsoper-berlin.de/de/spielplan/",
+   "format": "html-time"
+  },
+  "do": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.deutscheoperberlin.de/spielplan -> 404",
+    "https://www.deutscheoperberlin.de/de/spielplan -> 404",
+    "https://www.deutscheoperberlin.de/programm -> 404",
+    "https://www.deutscheoperberlin.de/de/programm -> 404",
+    "https://www.deutscheoperberlin.de/kalender -> 404",
+    "https://www.deutscheoperberlin.de/de/kalender -> 404"
+   ]
+  },
+  "ko": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:00",
+     "titel": "Das Kuschel­tier­konzert",
+     "url": "https://www.komische-oper-berlin.de/spielplan/kalender/das-kuscheltierkonzert-26-27/1369/"
+    }
+   ],
+   "quelle": "https://www.komische-oper-berlin.de/spielplan/",
+   "format": "microdata"
+  },
+  "sb": {
+   "status": "keine",
+   "vorstellungen": [],
+   "quelle": "https://www.staatsballett-berlin.de/spielplan",
+   "format": "ical"
+  },
+  "dt": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Öffentliche Probe: Kabale und Liebe",
+     "url": "https://www.deutschestheater.de/programm/produktionen/oeffentliche-probe-kabale-und-liebe"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Die drei Leben der Hannah Arendt",
+     "url": "https://www.deutschestheater.de/programm/produktionen/die-drei-leben-der-hannah-arendt"
+    }
+   ],
+   "quelle": "https://www.deutschestheater.de/programm/spielplan",
+   "format": "html-datum"
+  },
+  "be": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Die Blechtrommel",
+     "url": "https://www.berliner-ensemble.de/inszenierung/die-blechtrommel"
+    }
+   ],
+   "quelle": "https://www.berliner-ensemble.de/spielplan",
+   "format": "html-time"
+  },
+  "vb": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Alles Glück der Welt",
+     "url": "https://www.volksbuehne-berlin.de/produktionen/vb04-alles-glueck-der-welt/20261125-1930/"
+    }
+   ],
+   "quelle": "https://www.volksbuehne-berlin.de/",
+   "format": "html-time"
+  },
+  "mg": {
+   "status": "keine",
+   "vorstellungen": [],
+   "quelle": "https://www.gorki.de/de/spielplan",
+   "format": "json-ld"
+  },
+  "sh": {
+   "status": "fehler",
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.schaubuehne.de/de/spielplan/ -> ConnectTimeout",
+    "https://www.schaubuehne.de/spielplan -> ConnectTimeout",
+    "https://www.schaubuehne.de/de/spielplan -> ConnectTimeout",
+    "https://www.schaubuehne.de/programm -> ConnectTimeout",
+    "https://www.schaubuehne.de/de/programm -> ConnectTimeout",
+    "https://www.schaubuehne.de/kalender -> ConnectTimeout"
+   ]
+  },
+  "hau": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Kat Válastur – Dive into You",
+     "ort": "HAU1",
+     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/kat-valastur-dive-into-you/"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Interrobang – Enter the Blackbox",
+     "ort": "HAU3",
+     "url": "https://www.hebbel-am-ufer.de/programm/pdetail/interrobang-enter-the-blackbox/"
+    }
+   ],
+   "quelle": "https://www.hebbel-am-ufer.de/programm/spielplan-tickets/",
+   "format": "html-tagesliste"
+  },
+  "fp": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "16:00",
+     "titel": "SPOOKY Charlottenburg",
+     "url": "https://fsp-webshop.comfortticket.de/de/veranstaltung/8a5109a1-dce3-41f0-947e-be3f942ef133/7715"
+    }
+   ],
+   "quelle": "https://www.palast.berlin/",
+   "format": "html-datum"
+  },
+  "pa": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "09:30",
+     "titel": "LOVE WORK MACHINE(13+)",
+     "url": "https://www.parkaue.de/spielplan/spielplan/love-work-machine/2006/"
+    },
+    {
+     "zeit": "10:00",
+     "titel": "Pinocchio(6+)",
+     "url": "https://www.parkaue.de/spielplan/spielplan/pinocchio/1966/"
+    },
+    {
+     "zeit": "11:30",
+     "titel": "LOVE WORK MACHINE(13+)",
+     "url": "https://www.parkaue.de/spielplan/spielplan/love-work-machine/2005/"
+    }
+   ],
+   "quelle": "https://www.parkaue.de/spielplan/",
+   "format": "microdata"
+  },
+  "gr": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "11:00",
+     "titel": "Princess",
+     "url": "https://www.grips-theater.de/de/spielplan/princess/3263"
+    },
+    {
+     "zeit": "11:00",
+     "titel": "Das Herz eines Boxers",
+     "url": "https://www.grips-theater.de/de/spielplan/das-herz-eines-boxers/3317"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Fuchs & Söhne",
+     "url": "https://www.grips-theater.de/de/spielplan/fuchs-sohne/3264"
+    }
+   ],
+   "quelle": "https://www.grips-theater.de/de/spielplan",
+   "format": "html-datum"
+  },
+  "bf": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.berlinerfestspiele.de/kalender -> 404",
+    "https://www.berlinerfestspiele.de/spielplan -> 404",
+    "https://www.berlinerfestspiele.de/de/spielplan -> 404",
+    "https://www.berlinerfestspiele.de/de/kalender -> 404",
+    "https://www.berlinerfestspiele.de/termine -> 404",
+    "https://www.berlinerfestspiele.de/konzerte -> 404"
+   ]
+  },
+  "ph": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.berliner-philharmoniker.de/spielplan -> 404",
+    "https://www.berliner-philharmoniker.de/de/spielplan -> 404",
+    "https://www.berliner-philharmoniker.de/programm -> 404",
+    "https://www.berliner-philharmoniker.de/de/programm -> 404",
+    "https://www.berliner-philharmoniker.de/de/kalender -> 404",
+    "https://www.berliner-philharmoniker.de/termine -> 404"
+   ]
+  },
+  "kh": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "14:00",
+     "titel": "Espresso-Konzert",
+     "url": "https://www.konzerthaus.de/de/programm/espresso-konzert/12516"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Chor der Sankt Hedwigs Kathedrale",
+     "url": "https://www.konzerthaus.de/de/programm/chor-der-sankt-hedwigs-kathedrale/13493"
+    }
+   ],
+   "quelle": "https://www.konzerthaus.de/de/programm/25-11-2026",
+   "format": "html-time"
+  },
+  "pbs": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.boulezsaal.de/de/programm -> 404",
+    "https://www.boulezsaal.de/spielplan -> 404",
+    "https://www.boulezsaal.de/de/spielplan -> 404",
+    "https://www.boulezsaal.de/programm -> 404",
+    "https://www.boulezsaal.de/kalender -> 404",
+    "https://www.boulezsaal.de/de/kalender -> 404"
+   ]
+  },
+  "roc": {
+   "status": "keine",
+   "vorstellungen": [],
+   "quelle": "https://www.roc-berlin.de/kalender/",
+   "format": "json-ld"
+  },
+  "hh-sh": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Medea in Kolchis",
+     "url": "https://schauspielhaus.de/stuecke/medea-kolchis"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Das Adressbuch",
+     "url": "https://schauspielhaus.de/stuecke/das-adressbuch"
+    }
+   ],
+   "quelle": "https://schauspielhaus.de/spielplan",
+   "format": "html-datum"
+  },
+  "hh-th": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "Timm Thaler",
+     "url": "https://www.thalia-theater.de/de/stuecke/timm-thaler/350"
+    }
+   ],
+   "quelle": "https://www.thalia-theater.de/de/termine",
+   "format": "html-datum"
+  },
+  "hh-kn": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "20:00",
+     "titel": "Mareike Fallwickl: Haltet euch fest",
+     "url": "https://kampnagel.de/produktionen/mareike-fallwickl-mareike-fallwickl-liest-aus-haltet-euch-fest"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Tickets Parkett",
+     "url": "https://kampnagel.de/produktionen/mareike-fallwickl-mareike-fallwickl-liest-aus-haltet-euch-fest"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Tickets Tribüne",
+     "url": "https://kampnagel.de/produktionen/mareike-fallwickl-mareike-fallwickl-liest-aus-haltet-euch-fest"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "K3 MOVEMENT CLASS",
+     "url": "https://k3-hamburg.de/programm/vorstellungen/kalender/veranstaltung/55020"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "COMMUNITY BATHING: Migrantpolitan",
+     "url": "https://kampnagel.de/produktionen/performativebaustelle-migrantpolitan-community-bathing"
+    }
+   ],
+   "quelle": "https://kampnagel.de/kalender",
+   "format": "json-eingebettet"
+  },
+  "hh-so": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "13:30",
+     "titel": "Führung durch die Staatsoper",
+     "ort": "Staatsoper, Treffpunkt: Bühneneingang"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Petruschka &\\; L’Enfant et les Sortilèges",
+     "ort": "Staatsoper, Großes Haus"
+    }
+   ],
+   "quelle": "https://www.die-hamburgische-staatsoper.de/de",
+   "format": "ical"
+  },
+  "hh-elb": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Rhiannon Giddens & Francesco Turrisi",
+     "url": "https://www.elbphilharmonie.de/de/programm/rhiannon-giddens-francesco-turrisi/27970"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Tonhalle-Orchester Zürich / Paavo Järvi"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Jodok Cello",
+     "url": "https://www.elbphilharmonie.de/de/programm/jodok-cello/27636"
+    }
+   ],
+   "quelle": "https://www.elbphilharmonie.de/de/programm/",
+   "format": "html-time"
+  },
+  "hh-ndr": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.ndr.de/spielplan -> 404",
+    "https://www.ndr.de/de/spielplan -> 404",
+    "https://www.ndr.de/programm -> 404",
+    "https://www.ndr.de/de/programm -> 404",
+    "https://www.ndr.de/kalender -> 404",
+    "https://www.ndr.de/de/kalender -> 404"
+   ]
+  },
+  "m-resi": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Prima Facie",
+     "url": "https://www.residenztheater.de/stuecke/detail/prima-facie"
+    }
+   ],
+   "quelle": "https://www.residenztheater.de/spielplan",
+   "format": "html-datum"
+  },
+  "m-mk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Kino Asyl 2026"
+    }
+   ],
+   "quelle": "https://www.muenchner-kammerspiele.de/de/programm/",
+   "format": "ical"
+  },
+  "m-vt": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Catarina oder Von der Schönheit, Faschisten zu töten",
+     "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/catarina-oder-von-der-schoenheit-faschisten-zu-toeten"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "Achim Bogdahn Lesung",
+     "url": "https://www.muenchner-volkstheater.de/programm/extra/achim-bogdahn"
+    }
+   ],
+   "quelle": "https://www.muenchner-volkstheater.de/programm/spielplan",
+   "format": "html-datum"
+  },
+  "m-bso": {
+   "status": "fehler",
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.staatsoper.de/spielplan -> 403",
+    "https://www.staatsoper.de/de/spielplan -> 403",
+    "https://www.staatsoper.de/programm -> 403",
+    "https://www.staatsoper.de/de/programm -> 403",
+    "https://www.staatsoper.de/kalender -> 403",
+    "https://www.staatsoper.de/de/kalender -> 403"
+   ]
+  },
+  "m-gp": {
+   "status": "fehler",
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.gaertnerplatztheater.de/spielplan -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/de/spielplan -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/programm -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/de/programm -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/kalender -> ConnectTimeout",
+    "https://www.gaertnerplatztheater.de/de/kalender -> ConnectTimeout"
+   ]
+  },
+  "m-mph": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.mphil.de/spielplan -> 404",
+    "https://www.mphil.de/de/spielplan -> 404",
+    "https://www.mphil.de/programm -> 404",
+    "https://www.mphil.de/de/programm -> 404",
+    "https://www.mphil.de/de/kalender -> 404",
+    "https://www.mphil.de/termine -> 404"
+   ]
+  },
+  "m-br": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.brso.de/spielplan -> 404",
+    "https://www.brso.de/de/spielplan -> 404",
+    "https://www.brso.de/programm -> 404",
+    "https://www.brso.de/de/programm -> 404",
+    "https://www.brso.de/kalender -> 404",
+    "https://www.brso.de/de/kalender -> 404"
+   ]
+  },
+  "w-burg": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "20:00",
+     "titel": "Glaube Liebe Hoffnung",
+     "url": "https://www.burgtheater.at/veranstaltungen/glaube-liebe-hoffnung/2026-11-25"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Die verlorene Ehre der Katharina Blum",
+     "url": "https://www.burgtheater.at/veranstaltungen/die-verlorene-ehre-der-katharina-blum/2026-11-25"
+    }
+   ],
+   "quelle": "https://www.burgtheater.at/spielplan",
+   "format": "html-time"
+  },
+  "w-vt": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.volkstheater.at/programm -> 404",
+    "https://www.volkstheater.at/de/programm -> 404",
+    "https://www.volkstheater.at/kalender -> 404",
+    "https://www.volkstheater.at/de/kalender -> 404",
+    "https://www.volkstheater.at/termine -> 404"
+   ]
+  },
+  "w-jos": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.josefstadt.org/spielplan -> 404",
+    "https://www.josefstadt.org/de/spielplan -> 404",
+    "https://www.josefstadt.org/de/programm -> 404",
+    "https://www.josefstadt.org/kalender -> 404",
+    "https://www.josefstadt.org/de/kalender -> 404",
+    "https://www.josefstadt.org/termine -> 404"
+   ]
+  },
+  "w-so": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "Abo 10",
+     "url": "https://www.wiener-staatsoper.at/kalender/detail/tannhaeuser/2025-09-17/"
+    }
+   ],
+   "quelle": "https://www.wiener-staatsoper.at/kalender/2026/november/",
+   "format": "html-datum"
+  },
+  "w-vo": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:00",
+     "titel": "Chicago",
+     "url": "https://www.volksoper.at/produktion/chicago-2025.1015172551.de.html"
+    }
+   ],
+   "quelle": "https://www.volksoper.at/spielplan",
+   "format": "html-time"
+  },
+  "w-tadw": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.theater-wien.at/spielplan -> 404",
+    "https://www.theater-wien.at/programm -> 404",
+    "https://www.theater-wien.at/kalender -> 404",
+    "https://www.theater-wien.at/termine -> 404",
+    "https://www.theater-wien.at/konzerte -> 404"
+   ]
+  },
+  "w-kh": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Boriso-Glebsky / Hakhnazaryan / Tchaidze",
+     "url": "https://konzerthaus.at/de/programm-und-karten/boriso-glebsky-hakhnazaryan-tchaidze/64111"
+    }
+   ],
+   "quelle": "https://konzerthaus.at/de/programm-und-karten",
+   "format": "html-datum"
+  },
+  "w-mv": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.musikverein.at/programm -> 404",
+    "https://www.musikverein.at/de/programm -> 404",
+    "https://www.musikverein.at/kalender -> 404",
+    "https://www.musikverein.at/de/kalender -> 404",
+    "https://www.musikverein.at/termine -> 404"
+   ]
+  },
+  "w-sym": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "20:00",
+     "titel": "Auf Tournee mit Popelka und Fujita",
+     "url": "https://www.wienersymphoniker.at/konzert/auf-tournee-mit-popelka-und-fujita-25-11-2026"
+    }
+   ],
+   "quelle": "https://www.wienersymphoniker.at/kalender",
+   "format": "html-time"
+  },
+  "f-sf": {
+   "status": "keine",
+   "vorstellungen": [],
+   "quelle": "https://www.schauspielfrankfurt.de/spielplan",
+   "format": "microdata"
+  },
+  "f-mou": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.mousonturm.de/spielplan -> 404",
+    "https://www.mousonturm.de/de/spielplan -> 404",
+    "https://www.mousonturm.de/programm -> 404",
+    "https://www.mousonturm.de/de/programm -> 404",
+    "https://www.mousonturm.de/kalender -> 404",
+    "https://www.mousonturm.de/de/kalender -> 404"
+   ]
+  },
+  "f-et": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.english-theatre.org/spielplan -> 404",
+    "https://www.english-theatre.org/de/spielplan -> 404",
+    "https://www.english-theatre.org/programm -> 404",
+    "https://www.english-theatre.org/de/programm -> 404",
+    "https://www.english-theatre.org/kalender -> 404",
+    "https://www.english-theatre.org/de/kalender -> 404"
+   ]
+  },
+  "f-op": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.oper-frankfurt.de/programm -> 404",
+    "https://www.oper-frankfurt.de/de/programm -> 404",
+    "https://www.oper-frankfurt.de/kalender -> 404",
+    "https://www.oper-frankfurt.de/de/kalender -> 404",
+    "https://www.oper-frankfurt.de/termine -> 404",
+    "https://www.oper-frankfurt.de/konzerte -> 404"
+   ]
+  },
+  "f-ao": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "20:00",
+     "titel": "Max Raabe & Palast Orchester",
+     "url": "https://www.alteoper.de/de/programm/max-raabe-palast-orchester/18735"
+    },
+    {
+     "zeit": "20:00",
+     "titel": "Gerd Dudenhöffer spielt Heinz Becker",
+     "url": "https://www.alteoper.de/de/programm/gerd-dudenhoffer-spielt-heinz-becker/18776"
+    }
+   ],
+   "quelle": "https://www.alteoper.de/de/programm",
+   "format": "html-datum"
+  },
+  "f-hr": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.hr-sinfonieorchester.de/spielplan -> 404",
+    "https://www.hr-sinfonieorchester.de/de/spielplan -> 404",
+    "https://www.hr-sinfonieorchester.de/programm -> 404",
+    "https://www.hr-sinfonieorchester.de/de/programm -> 404",
+    "https://www.hr-sinfonieorchester.de/kalender -> 404",
+    "https://www.hr-sinfonieorchester.de/de/kalender -> 404"
+   ]
+  },
+  "b-bab": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.babylonberlin.eu/spielplan -> 404",
+    "https://www.babylonberlin.eu/de/spielplan -> 404",
+    "https://www.babylonberlin.eu/de/programm -> 404",
+    "https://www.babylonberlin.eu/kalender -> 404",
+    "https://www.babylonberlin.eu/de/kalender -> 404",
+    "https://www.babylonberlin.eu/termine -> 404"
+   ]
+  },
+  "b-ars": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "19:30",
+     "titel": "Smultronstället",
+     "url": "https://www.arsenal-berlin.de/kino/filmvorfuehrung/smultronstaellet-6020/                "
+    }
+   ],
+   "quelle": "https://www.arsenal-berlin.de/",
+   "format": "html-time"
+  },
+  "b-mov": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.moviemento.de/spielplan -> 404",
+    "https://www.moviemento.de/de/spielplan -> 404",
+    "https://www.moviemento.de/kalender -> 404",
+    "https://www.moviemento.de/de/kalender -> 404",
+    "https://www.moviemento.de/termine -> 404",
+    "https://www.moviemento.de/konzerte -> 404"
+   ]
+  },
+  "b-kin": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "20:30",
+     "titel": "Special Screening: Eternity",
+     "url": "https://www.yorck.de/kinos/international"
+    }
+   ],
+   "quelle": "https://www.yorck.de/kinos/international",
+   "format": "json-eingebettet"
+  },
+  "b-dlx": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.yorck.de/spielplan -> 404",
+    "https://www.yorck.de/de/spielplan -> 404",
+    "https://www.yorck.de/programm -> 404",
+    "https://www.yorck.de/de/programm -> 404",
+    "https://www.yorck.de/kalender -> 404",
+    "https://www.yorck.de/de/kalender -> 404"
+   ]
+  },
+  "b-fsk": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.fsk-kino.peripherfilm.de/spielplan -> SSLError",
+    "https://www.fsk-kino.peripherfilm.de/de/spielplan -> SSLError",
+    "https://www.fsk-kino.peripherfilm.de/programm -> SSLError",
+    "https://www.fsk-kino.peripherfilm.de/de/programm -> SSLError",
+    "https://www.fsk-kino.peripherfilm.de/kalender -> SSLError",
+    "https://www.fsk-kino.peripherfilm.de/de/kalender -> SSLError"
+   ]
+  },
+  "b-lbk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "Berlin Preview:",
+     "url": "https://lichtblick-kino.org/reihe/26-11-soundwatch-10/sw26-broken-english"
+    }
+   ],
+   "quelle": "https://lichtblick-kino.org/",
+   "format": "html-datum"
+  },
+  "hh-abk": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.abaton.de/programm -> 403",
+    "https://www.abaton.de/spielplan -> 404",
+    "https://www.abaton.de/de/spielplan -> 404",
+    "https://www.abaton.de/de/programm -> 404",
+    "https://www.abaton.de/kalender -> 404",
+    "https://www.abaton.de/de/kalender -> 404"
+   ]
+  },
+  "hh-3001": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": []
+  },
+  "hh-met": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.metropoliskino.de/spielplan -> 404",
+    "https://www.metropoliskino.de/de/spielplan -> 404",
+    "https://www.metropoliskino.de/programm -> 404",
+    "https://www.metropoliskino.de/de/programm -> 404",
+    "https://www.metropoliskino.de/de/kalender -> 404",
+    "https://www.metropoliskino.de/termine -> 404"
+   ]
+  },
+  "hh-bmv": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "20:00",
+     "titel": "HÖRBAR",
+     "url": "https://www.b-movie.de/programm#info-9923685"
+    }
+   ],
+   "quelle": "https://www.b-movie.de/",
+   "format": "html-datum"
+  },
+  "hh-zei": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.zeise.de/de/spielplan -> 404",
+    "https://www.zeise.de/de/programm -> 404",
+    "https://www.zeise.de/kalender -> 404",
+    "https://www.zeise.de/de/kalender -> 404",
+    "https://www.zeise.de/termine -> 404",
+    "https://www.zeise.de/konzerte -> 404"
+   ]
+  },
+  "m-fm": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.muenchner-stadtmuseum.de/sammlungen/filmmuseum/aktuelles-programm -> 404",
+    "https://www.muenchner-stadtmuseum.de/spielplan -> 404",
+    "https://www.muenchner-stadtmuseum.de/de/spielplan -> 404",
+    "https://www.muenchner-stadtmuseum.de/de/programm -> 404",
+    "https://www.muenchner-stadtmuseum.de/kalender -> 404",
+    "https://www.muenchner-stadtmuseum.de/de/kalender -> 404"
+   ]
+  },
+  "m-wk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "Werkstattkino",
+     "url": "https://werkstattkino.de/"
+    }
+   ],
+   "quelle": "https://werkstattkino.de/",
+   "format": "html-datum"
+  },
+  "m-tf": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.theatiner-film.de/spielplan -> 404",
+    "https://www.theatiner-film.de/de/spielplan -> 404",
+    "https://www.theatiner-film.de/programm -> 404",
+    "https://www.theatiner-film.de/de/programm -> 404",
+    "https://www.theatiner-film.de/kalender -> 404",
+    "https://www.theatiner-film.de/de/kalender -> 404"
+   ]
+  },
+  "m-ck": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "20:00",
+     "titel": "Premiere: Nur für Verrückte"
+    }
+   ],
+   "quelle": "https://www.city-kinos.de/",
+   "format": "html-datum"
+  },
+  "m-lk": {
+   "status": "fehler",
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.leopold-kino.de/ -> ConnectionError",
+    "https://www.leopold-kino.de/spielplan -> ConnectionError",
+    "https://www.leopold-kino.de/de/spielplan -> ConnectionError",
+    "https://www.leopold-kino.de/programm -> ConnectionError",
+    "https://www.leopold-kino.de/de/programm -> ConnectionError",
+    "https://www.leopold-kino.de/kalender -> ConnectionError"
+   ]
+  },
+  "w-fm": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "18:00",
+     "titel": "The Grissom Gang | Robert Aldrich",
+     "ort": "Filmmuseum - Augustinerstraße 1, 1010 Wien (im Gebäude der Albertina)"
+    },
+    {
+     "zeit": "20:30",
+     "titel": "Emperor of the North | Robert Aldrich",
+     "ort": "Filmmuseum - Augustinerstraße 1, 1010 Wien (im Gebäude der Albertina)"
+    }
+   ],
+   "quelle": "https://www.filmmuseum.at/kinoprogramm/spielplan",
+   "format": "ical"
+  },
+  "w-fc": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "Mittwoch 25.11.",
+     "url": "https://www.filmcasino.at/programm/?show=films&do=1"
+    }
+   ],
+   "quelle": "https://www.filmcasino.at/",
+   "format": "html-datum"
+  },
+  "w-vk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "15:45",
+     "titel": "Bruno – Der junge Kreisky Harald Sicheritz",
+     "url": "https://www.votivkino.at/film/bruno-der-junge-kreisky/"
+    },
+    {
+     "zeit": "16:00",
+     "titel": "Alte Liebe Andreas Dresen",
+     "url": "https://www.votivkino.at/film/alte-liebe/"
+    },
+    {
+     "zeit": "16:15",
+     "titel": "Wiener Blues: The Loneliest Man in Town Tizza Covi, Rainer Frimmel",
+     "url": "https://www.votivkino.at/film/wiener-blues-the-loneliest-man-in-town/"
+    },
+    {
+     "zeit": "16:45",
+     "titel": "Die Blutgräfin Ulrike Ottinger",
+     "url": "https://www.votivkino.at/specials/film-gespraech/#Programm"
+    },
+    {
+     "zeit": "16:45",
+     "titel": "Sinn und Sinnlichkeit Georgia Oakley",
+     "url": "https://www.votivkino.at/film/sinn-und-sinnlichkeit/"
+    },
+    {
+     "zeit": "18:00",
+     "titel": "La Bola Negra Javier Calvo, Javier Ambrossi",
+     "url": "https://www.votivkino.at/film/la-bola-negra/"
+    },
+    {
+     "zeit": "18:15",
+     "titel": "The Invite Olivia Wilde",
+     "url": "https://www.votivkino.at/film/the-invite/"
+    },
+    {
+     "zeit": "18:30",
+     "titel": "Sterben für Anfänger Kurt Langbein",
+     "url": "https://www.votivkino.at/film/sterben-fuer-anfaenger/"
+    },
+    {
+     "zeit": "19:00",
+     "titel": "Heimsuchung Volker Schlöndorff",
+     "url": "https://www.votivkino.at/film/heimsuchung-eine-jahrhundertgeschichte/"
+    },
+    {
+     "zeit": "19:15",
+     "titel": "Die lieben Eltern Emmanuel Patron",
+     "url": "https://www.votivkino.at/film/die-lieben-eltern/"
+    },
+    {
+     "zeit": "20:30",
+     "titel": "Biermann Jens Meurer",
+     "url": "https://www.votivkino.at/film/biermann/"
+    },
+    {
+     "zeit": "20:30",
+     "titel": "La Bola Negra Javier Calvo, Javier Ambrossi",
+     "url": "https://www.votivkino.at/film/la-bola-negra/"
+    },
+    {
+     "zeit": "21:00",
+     "titel": "Die Blutgräfin Ulrike Ottinger",
+     "url": "https://www.votivkino.at/specials/film-gespraech/#Programm"
+    },
+    {
+     "zeit": "21:00",
+     "titel": "Heimsuchung Volker Schlöndorff",
+     "url": "https://www.votivkino.at/film/heimsuchung-eine-jahrhundertgeschichte/"
+    },
+    {
+     "zeit": "21:30",
+     "titel": "Wild Horse Nine Martin McDonagh",
+     "url": "https://www.votivkino.at/film/wild-horse-nine/"
+    }
+   ],
+   "quelle": "https://www.votivkino.at/",
+   "format": "html-time"
+  },
+  "w-gbk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "16:30",
+     "titel": "LA BOLA NEGRA",
+     "url": "https://www.gartenbaukino.at/programm/la-bola-negra/"
+    },
+    {
+     "zeit": "19:30",
+     "titel": "THIS HUMAN WORLD 2026",
+     "url": "https://thishumanworld.com/filmuebersicht/moscas/"
+    }
+   ],
+   "quelle": "https://www.gartenbaukino.at/",
+   "format": "html-time"
+  },
+  "w-bk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "17:00",
+     "titel": "Wild Horse Nine",
+     "url": "https://www.burgkino.at/movie/wild-horse-nine"
+    },
+    {
+     "zeit": "17:15",
+     "titel": "La bola negra",
+     "url": "https://www.burgkino.at/movie/la-bola-negra"
+    },
+    {
+     "zeit": "19:10",
+     "titel": "NAZA",
+     "url": "https://www.burgkino.at/movie/naza"
+    },
+    {
+     "zeit": "20:15",
+     "titel": "La bola negra",
+     "url": "https://www.burgkino.at/movie/la-bola-negra"
+    },
+    {
+     "zeit": "20:45",
+     "titel": "Wild Horse Nine",
+     "url": "https://www.burgkino.at/movie/wild-horse-nine"
+    }
+   ],
+   "quelle": "https://www.burgkino.at/",
+   "format": "html-time"
+  },
+  "f-har": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.arthouse-kinos.de/spielplan -> 404",
+    "https://www.arthouse-kinos.de/de/spielplan -> 404",
+    "https://www.arthouse-kinos.de/programm -> 404",
+    "https://www.arthouse-kinos.de/de/programm -> 404",
+    "https://www.arthouse-kinos.de/kalender -> 404",
+    "https://www.arthouse-kinos.de/de/kalender -> 404"
+   ]
+  },
+  "f-eld": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.arthouse-kinos.de/spielplan -> 404",
+    "https://www.arthouse-kinos.de/de/spielplan -> 404",
+    "https://www.arthouse-kinos.de/programm -> 404",
+    "https://www.arthouse-kinos.de/de/programm -> 404",
+    "https://www.arthouse-kinos.de/kalender -> 404",
+    "https://www.arthouse-kinos.de/de/kalender -> 404"
+   ]
+  },
+  "f-cin": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Termindaten erkannt",
+   "versuche": [
+    "https://www.arthouse-kinos.de/spielplan -> 404",
+    "https://www.arthouse-kinos.de/de/spielplan -> 404",
+    "https://www.arthouse-kinos.de/programm -> 404",
+    "https://www.arthouse-kinos.de/de/programm -> 404",
+    "https://www.arthouse-kinos.de/kalender -> 404",
+    "https://www.arthouse-kinos.de/de/kalender -> 404"
+   ]
+  },
+  "f-dff": {
+   "status": "fehler",
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.dff.film/ausstellungen/ -> robots.txt verbietet Abruf",
+    "https://www.dff.film/ausstellungen -> robots.txt verbietet Abruf",
+    "https://www.dff.film/de/ausstellungen -> robots.txt verbietet Abruf",
+    "https://www.dff.film/ausstellungen/aktuell -> robots.txt verbietet Abruf",
+    "https://www.dff.film/exhibitions -> robots.txt verbietet Abruf",
+    "https://www.dff.film/en/exhibitions -> robots.txt verbietet Abruf"
+   ]
+  },
+  "f-ffh": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "zeit": "18:00",
+     "titel": "Sense and Sensibility | Sinn und Sinnlichkeit",
+     "url": "https://filmforum-hoechst.com/film/sense-and-sensibility-sinn-und-sinnlichkeit/2026-11-25/"
+    },
+    {
+     "zeit": "20:30",
+     "titel": "Lügen über meine Mutter",
+     "url": "https://filmforum-hoechst.com/film/luegen-ueber-meine-mutter/2026-11-25/"
+    }
+   ],
+   "quelle": "https://filmforum-hoechst.com/",
+   "format": "json-ld"
+  },
+  "f-msk": {
+   "status": "ok",
+   "vorstellungen": [
+    {
+     "titel": "Gutscheine",
+     "url": "https://kinotickets.express/frankfurt_malsehn"
+    }
+   ],
+   "quelle": "https://malsehnkino.de/",
+   "format": "html-datum"
+  },
+  "f-orf": {
+   "status": "fehler",
+   "grund": "keine Seite erreichbar",
+   "versuche": [
+    "https://www.orfeos.de/ -> SSLError",
+    "https://www.orfeos.de/spielplan -> SSLError",
+    "https://www.orfeos.de/de/spielplan -> SSLError",
+    "https://www.orfeos.de/programm -> SSLError",
+    "https://www.orfeos.de/de/programm -> SSLError",
+    "https://www.orfeos.de/kalender -> SSLError"
+   ]
+  },
+  "b-nm": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "100 Jahre Wörterbuch der ägyptischen Sprache",
+     "von": "2026-06-06",
+     "bis": "2026-12-31",
+     "url": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/detail/100-jahre-woerterbuch-der-aegyptischen-sprache/"
+    },
+    {
+     "titel": "Dioskuren – Der geschenkte Tag",
+     "von": "2025-04-12",
+     "bis": "2027-03-14",
+     "url": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/detail/dioskuren-der-geschenkte-tag/"
+    },
+    {
+     "titel": "Schicksal in den Sternen. Die Anfänge des Tierkreises",
+     "von": "2026-03-21",
+     "bis": "2027-04-04",
+     "url": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/detail/schicksal-in-den-sternen/"
+    },
+    {
+     "titel": "Die Krone von Kertsch. Schätze aus Europas Frühzeit",
+     "von": "2017-10-19",
+     "bis": "2027-09-22",
+     "url": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/detail/die-krone-von-kertsch/"
+    }
+   ],
+   "quelle": "https://www.smb.museum/museen-einrichtungen/neues-museum/ausstellungen/aktuell/",
+   "format": "html-zeitraum"
+  },
+  "b-ang": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "InterNationalgalerie 1. Nationalmuseum in Warschau",
+     "von": "2026-06-18",
+     "bis": "2027-01-17",
+     "url": "https://www.smb.museum/museen-einrichtungen/alte-nationalgalerie/ausstellungen/detail/internationalgalerie-1/"
+    },
+    {
+     "titel": "Skandal! Hermione von Preuschen und der Mors Imperator",
+     "von": "2026-03-22",
+     "bis": "2027-02-21",
+     "url": "https://www.smb.museum/museen-einrichtungen/alte-nationalgalerie/ausstellungen/detail/skandal/"
+    },
+    {
+     "titel": "Über Zeiten. Gursky, Lucas, Miró, Warhol und die Kunst des langen 19. Jahrhunderts",
+     "von": "2026-10-22",
+     "bis": "2027-02-28",
+     "url": "https://www.smb.museum/museen-einrichtungen/alte-nationalgalerie/ausstellungen/detail/ueber-zeiten/"
+    }
+   ],
+   "quelle": "https://www.smb.museum/museen-einrichtungen/alte-nationalgalerie/ausstellungen/aktuell/",
+   "format": "html-zeitraum"
+  },
+  "b-nng": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Ruin und Rausch. Berlin 1910–1930",
+     "von": "2026-04-25",
+     "bis": "2027-01-03",
+     "url": "https://www.smb.museum/museen-einrichtungen/neue-nationalgalerie/ausstellungen/detail/ruin-und-rausch/"
+    },
+    {
+     "titel": "Maurizio Cattelan. NIGHT. Preis der Nationalgalerie 2026",
+     "von": "2026-09-10",
+     "bis": "2027-03-07",
+     "url": "https://www.smb.museum/museen-einrichtungen/neue-nationalgalerie/ausstellungen/detail/maurizio-cattelan-night/"
+    },
+    {
+     "titel": "Zerreißprobe. Kunst zwischen Politik und Gesellschaft. Sammlung der Nationalgalerie 1945 – 2000",
+     "von": "2023-11-18",
+     "bis": "2027-04-04",
+     "url": "https://www.smb.museum/museen-einrichtungen/neue-nationalgalerie/ausstellungen/detail/zerreissprobe-kunst-zwischen-politik-und-gesellschaft/"
+    },
+    {
+     "titel": "Christoph Schlingensief. Deutschlandsuche ’99",
+     "von": "2025-05-02",
+     "bis": "2027-04-25",
+     "url": "https://www.smb.museum/museen-einrichtungen/neue-nationalgalerie/ausstellungen/detail/christoph-schlingensief-deutschlandsuche-99/"
+    }
+   ],
+   "quelle": "https://www.smb.museum/museen-einrichtungen/neue-nationalgalerie/ausstellungen/aktuell/",
+   "format": "html-zeitraum"
+  },
+  "b-gg": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Daniel Chodowiecki 1726–1801. Berliner Bilder der Aufklärung",
+     "von": "2026-09-15",
+     "bis": "2027-01-10",
+     "url": "https://www.smb.museum/museen-einrichtungen/gemaeldegalerie/ausstellungen/detail/daniel-chodowiecki-1726-1801/"
+    },
+    {
+     "titel": "Porträts! Überraschende Begegnungen von Botticelli bis Lempicka",
+     "von": "2026-10-16",
+     "bis": "2027-03-14",
+     "url": "https://www.smb.museum/museen-einrichtungen/gemaeldegalerie/ausstellungen/detail/portraets/"
+    }
+   ],
+   "quelle": "https://www.smb.museum/museen-einrichtungen/gemaeldegalerie/ausstellungen/aktuell/",
+   "format": "html-zeitraum"
+  },
+  "b-hbf": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Shilpa Gupta. What Still Holds",
+     "von": "2026-03-27",
+     "bis": "2027-01-03",
+     "url": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/detail/shilpa-gupta/"
+    },
+    {
+     "titel": "CHANEL Commission: Lina Lapelytė. We Make Years Out of Hours",
+     "von": "2026-05-01",
+     "bis": "2027-01-10",
+     "url": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/detail/chanel-commission-lina-lapelyte-we-make-years-out-of-hours/"
+    },
+    {
+     "titel": "[ materialistin ]. Matter of Care, Care of Matter",
+     "von": "2026-07-03",
+     "bis": "2027-03-14",
+     "url": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/detail/materialistin/"
+    },
+    {
+     "titel": "Sophie Calle. Is It Better?",
+     "von": "2026-11-13",
+     "bis": "2027-04-04",
+     "url": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/detail/sophie-calle/"
+    },
+    {
+     "titel": "Ryuichi Sakamoto. seeing sound, hearing time",
+     "von": "2026-09-11",
+     "bis": "2027-06-20",
+     "url": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/detail/ryuichi-sakamoto/"
+    },
+    {
+     "titel": "Next Door. Tacita Dean, Thomas Demand, Olafur Eliasson, Henrik Håkansson, Tomás Saraceno",
+     "von": "2026-10-09",
+     "bis": "2027-06-27",
+     "url": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/detail/next-door/"
+    }
+   ],
+   "quelle": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/ausstellungen/aktuell/",
+   "format": "html-zeitraum"
+  },
+  "b-hf": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Ausstellungsdaten erkannt",
+   "versuche": [
+    "https://www.humboldtforum.org/ausstellungen/aktuell -> 404"
+   ]
+  },
+  "b-jmb": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Das Gegenteil von Jetzt",
+     "von": "2026-09-04",
+     "bis": "2027-01-10",
+     "url": "https://www.jmberlin.de/ausstellung-gegenteil-von-jetzt"
+    }
+   ],
+   "quelle": "https://www.jmberlin.de/aktuelle-ausstellungen",
+   "format": "html-zeitraum"
+  },
+  "b-dhm": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Natur und deutsche Geschichte. Glaube – Biologie – Macht",
+     "von": "2025-11-14",
+     "bis": "2027-01-17",
+     "url": "https://www.dhm.de/ausstellungen/natur-und-deutsche-geschichte-glaube-biologie-macht/"
+    },
+    {
+     "titel": "Umstrittene Verwandtschaft. Koloniale und nationalsozialistische Gewalt",
+     "von": "2026-10-16",
+     "bis": "2027-04-11",
+     "url": "https://www.dhm.de/ausstellungen/umstrittene-verwandtschaft-koloniale-und-nationalsozialistische-gewalt/"
+    },
+    {
+     "titel": "Objekte. Geschichte. Geschichten. Blick in die Sammlung",
+     "von": "2026-05-08",
+     "bis": "2027-10-31",
+     "url": "https://www.dhm.de/ausstellungen/objekte-geschichte-geschichten-blick-in-die-sammlung/"
+    }
+   ],
+   "quelle": "https://www.dhm.de/ausstellungen/unsere-ausstellungen/",
+   "format": "html-zeitraum"
+  },
+  "b-mfn": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "ZUGvögel – Eine Sammlung in Bewegung",
+     "bis": "2027-06-30",
+     "url": "https://www.museumfuernaturkunde.berlin/besuch-planen/die-ausstellung/zugvoegel/"
+    },
+    {
+     "titel": "DINOSAURIER! Zeitalter der Riesenechsen",
+     "bis": "2027-11-30",
+     "url": "https://www.museumfuernaturkunde.berlin/besuch-planen/die-ausstellung/dinosaurier/"
+    }
+   ],
+   "quelle": "https://www.museumfuernaturkunde.berlin/besuch-planen/die-ausstellung",
+   "format": "detailseiten"
+  },
+  "b-kw": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Susan Hiller. Bad Dreams",
+     "bis": "2027-01-10",
+     "url": "https://www.kw-berlin.de/de/ausstellungen/susan-hiller-bad-dreams"
+    },
+    {
+     "titel": "KOO JEONG A. OUSSSEAN",
+     "bis": "2027-01-10",
+     "url": "https://www.kw-berlin.de/de/ausstellungen/koo-jeong-a-ousssean"
+    },
+    {
+     "titel": "Rafik Greiss. The City and the City",
+     "bis": "2027-01-10",
+     "url": "https://www.kw-berlin.de/de/ausstellungen/rafik-greiss-the-city-and-the-city"
+    }
+   ],
+   "quelle": "https://www.kw-berlin.de/de/",
+   "format": "html-zeitraum"
+  },
+  "b-hkw": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Nicht alle Reisenden folgen Wegen – Humanität als Praxis",
+     "von": "2026-09-12",
+     "bis": "2026-12-06",
+     "url": "https://www.hkw.de/programme/not-all-travellers-walk-roads-of-humanity-as-practice"
+    }
+   ],
+   "quelle": "https://www.hkw.de/",
+   "format": "html-zeitraum"
+  },
+  "b-gb": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Gabriele Stötzer",
+     "bis": "2026-12-06",
+     "url": "https://www.berlinerfestspiele.de/gropius-bau/programm/2026/ausstellungen/gabriele-stoetzer"
+    },
+    {
+     "titel": "Kreuzberg",
+     "bis": "2027-01-17",
+     "url": "https://www.berlinerfestspiele.de/gropius-bau/programm/2026/ausstellungen/kreuzberg"
+    }
+   ],
+   "quelle": "https://www.berlinerfestspiele.de/gropius-bau",
+   "format": "html-zeitraum"
+  },
+  "b-fut": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Ausstellungsdaten erkannt",
+   "versuche": [
+    "https://www.futurium.de/ausstellungen -> 404",
+    "https://www.futurium.de/de/ausstellungen -> 404",
+    "https://www.futurium.de/ausstellungen/aktuell -> 404",
+    "https://www.futurium.de/exhibitions -> 404",
+    "https://www.futurium.de/en/exhibitions -> 404",
+    "https://www.futurium.de/programm -> 404"
+   ]
+  },
+  "hh-kh": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Carrie Yamaoka. Maria Lassnig Preis",
+     "bis": "2027-01-10",
+     "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/carrie-yamaoka"
+    },
+    {
+     "titel": "David Novros. Painting",
+     "bis": "2027-02-21",
+     "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/david-novros"
+    },
+    {
+     "titel": "Unstable Media in the 21st Century. Highlights der Sammlung Neue Medien des Centre Pompidou",
+     "bis": "2027-05-02",
+     "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/unstable-media-21st-century"
+    },
+    {
+     "titel": "Impressionismus. Deutsch-Französische Begegnungen",
+     "bis": "2027-11-14",
+     "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/impressionismus"
+    },
+    {
+     "titel": "Making History. Hans Makart und die Salonmalerei des 19. Jahrhunderts",
+     "bis": "2028-01-02",
+     "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/making-history"
+    },
+    {
+     "titel": "SKULPTURAL. Die neuen Galerien",
+     "bis": "2028-04-30",
+     "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/skulptural"
+    },
+    {
+     "titel": "This is the Modern World. Durchbrüche in der Kunst 1900–1960",
+     "bis": "2028-05-07",
+     "url": "https://www.hamburger-kunsthalle.de/de/ausstellungen/modern-world"
+    }
+   ],
+   "quelle": "https://www.hamburger-kunsthalle.de/de/unsere-ausstellungen",
+   "format": "html-zeitraum"
+  },
+  "hh-mkg": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Sara Sallam – Fürsorge",
+     "von": "2026-06-05",
+     "bis": "2027-01-10",
+     "url": "https://www.mkg-hamburg.de/ausstellungen/sara-sallam-fuersorge"
+    },
+    {
+     "titel": "Foto: Hans Hansen",
+     "bis": "2027-01-10",
+     "url": "https://www.mkg-hamburg.de/ausstellungen/foto-hans-hansen"
+    },
+    {
+     "titel": "Schubladenschau #4: Tanz",
+     "von": "2026-10-09",
+     "bis": "2027-04-25",
+     "url": "https://www.mkg-hamburg.de/ausstellungen/schubladenschau-4-tanz"
+    },
+    {
+     "titel": "Hella Jongerius",
+     "von": "2026-10-23",
+     "bis": "2027-06-13",
+     "url": "https://www.mkg-hamburg.de/ausstellungen/hella-jongerius-whispering-things"
+    },
+    {
+     "titel": "XULY.Bët",
+     "von": "2025-08-01",
+     "bis": "2027-08-01",
+     "url": "https://www.mkg-hamburg.de/ausstellungen/xulybet"
+    }
+   ],
+   "quelle": "https://www.mkg-hamburg.de/ausstellungen",
+   "format": "html-zeitraum"
+  },
+  "hh-dth": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Hito Steyerl – Deine Mudda macht Show",
+     "von": "2026-10-30",
+     "bis": "2027-03-29",
+     "url": "https://www.deichtorhallen.de/de/ausstellungen/hito-steyerl/"
+    },
+    {
+     "titel": "Tomorrow’s Ghosts – (Zeit-)­Geister des Fotografischen",
+     "von": "2026-11-20",
+     "bis": "2027-04-04",
+     "url": "https://www.deichtorhallen.de/de/ausstellungen/expanded-horizons/"
+    },
+    {
+     "titel": "Joyce Pensato: Eyes For You",
+     "von": "2026-10-10",
+     "bis": "2027-04-04",
+     "url": "https://www.deichtorhallen.de/de/ausstellungen/joyce-pensato/"
+    }
+   ],
+   "quelle": "https://www.deichtorhallen.de/de/ausstellungen/",
+   "format": "html-zeitraum"
+  },
+  "hh-bkf": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Von Monet bis Picasso. Jüdische Kunstsammler:innen in Deutschland",
+     "von": "2026-09-11",
+     "bis": "2027-03-29",
+     "url": "https://www.buceriuskunstforum.de/ausstellungen/von-monet-bis-picasso-juedische-kunstsammlerinnen-in-deutschland"
+    }
+   ],
+   "quelle": "https://www.buceriuskunstforum.de/ausstellungen",
+   "format": "html-zeitraum"
+  },
+  "hh-markk": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "KATZEN!",
+     "bis": "2026-11-29"
+    },
+    {
+     "titel": "Zuschreibung: Jüdisch. Fragen an die Geschichte des MARKK",
+     "bis": "2027-06-27"
+    },
+    {
+     "titel": "Bilderechos aus Peru",
+     "bis": "2027-06-27"
+    },
+    {
+     "titel": "Pippis Papa und eine wirklich wahre Geschichte aus dem Pazifik",
+     "bis": "2027-06-27"
+    },
+    {
+     "titel": "Benin. Geraubte Geschichte",
+     "bis": "2027-06-30"
+    }
+   ],
+   "quelle": "https://markk-hamburg.de/ausstellungen/",
+   "format": "html-zeitraum"
+  },
+  "hh-am": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Aiga Rasch und ihre Detektive. Die drei ??? und Sherlock Holmes",
+     "von": "2026-09-02",
+     "bis": "2027-03-14",
+     "url": "https://www.shmh.de/ausstellungen/aiga-rasch-und-ihre-detektive/"
+    },
+    {
+     "titel": "Faszination Hafen. Das Deutsche Hafenmuseum stellt sich vor",
+     "von": "2026-11-05",
+     "bis": "2027-03-29",
+     "url": "https://www.shmh.de/praesentationen/faszination-hafen-kultur-kontor/"
+    },
+    {
+     "titel": "Menschen & Orte. Hamburgs Jüdische Geschichte",
+     "von": "2026-11-12",
+     "bis": "2027-07-11",
+     "url": "https://www.shmh.de/ausstellungen/menschen-orte/"
+    }
+   ],
+   "quelle": "https://www.shmh.de/ausstellungen/",
+   "format": "html-zeitraum"
+  },
+  "hh-amh": {
+   "status": "keine",
+   "ausstellungen": [],
+   "quelle": "https://amh.de/programm/veranstaltungskalender/",
+   "format": "json-ld"
+  },
+  "hh-imm": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Heroes of the Sea – die Meere schützen",
+     "von": "2026-08-06",
+     "bis": "2026-12-31",
+     "url": "https://imm-hamburg.de/sonderausstellung/heroes-of-the-sea-die-meere-schuetzen/"
+    }
+   ],
+   "quelle": "https://imm-hamburg.de/",
+   "format": "html-zeitraum"
+  },
+  "hh-mda": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Respekt. Eine Ausstellung übers gemeinsam Verschiedensein",
+     "von": "2025-06-18",
+     "bis": "2027-01-10",
+     "url": "https://www.shmh.de/ausstellungen/respekt/"
+    },
+    {
+     "titel": "Faszination Hafen. Das Deutsche Hafenmuseum stellt sich vor",
+     "von": "2026-11-05",
+     "bis": "2027-03-29",
+     "url": "https://www.shmh.de/praesentationen/faszination-hafen-kultur-kontor/"
+    },
+    {
+     "titel": "Nachrichten – News",
+     "von": "2026-10-14",
+     "bis": "2027-05-16",
+     "url": "https://www.shmh.de/ausstellungen/nachrichten-news/"
+    }
+   ],
+   "quelle": "https://www.shmh.de/ausstellungen/",
+   "format": "html-zeitraum"
+  },
+  "m-ap": {
+   "status": "keine",
+   "ausstellungen": [],
+   "quelle": "https://www.pinakothek.de/de",
+   "format": "html-zeitraum"
+  },
+  "m-pdm": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Die Nacht berührt die Erde",
+     "bis": "2027-02-21",
+     "url": "https://www.pinakothek.de/de/ausstellung/fritz-winter-die-nacht-beruehrt-die-erde"
+    },
+    {
+     "titel": "Between & Beyond",
+     "von": "2026-07-03",
+     "bis": "2027-08-15",
+     "url": "https://www.pinakothek.de/de/ausstellung/between-and-beyond"
+    }
+   ],
+   "quelle": "https://www.pinakothek.de/de",
+   "format": "html-zeitraum"
+  },
+  "m-mb": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Kate Newby: anything, anything",
+     "von": "2026-05-14",
+     "bis": "2027-05-30",
+     "url": "https://www.museum-brandhorst.de/ausstellungen/kate-newby-anything-anything/"
+    },
+    {
+     "titel": "In My Head. Künstlerische Positionen der Gegenwart",
+     "von": "2026-10-30",
+     "bis": "2027-05-30",
+     "url": "https://www.museum-brandhorst.de/ausstellungen/in-my-head/"
+    },
+    {
+     "titel": "Long Story Short. Eine Kunstgeschichte aus der Sammlung Brandhorst von den 1960er-Jahren bis zur Gegenwart",
+     "von": "2025-10-23",
+     "bis": "2027-09-12",
+     "url": "https://www.museum-brandhorst.de/ausstellungen/long-story-short/"
+    }
+   ],
+   "quelle": "https://www.museum-brandhorst.de/ausstellungen/",
+   "format": "html-zeitraum"
+  },
+  "m-lb": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Shifting the Silence. Die Stille verschieben. Gegenwartskunst im Lenbachhaus",
+     "von": "2025-10-14",
+     "bis": "2027-01-31",
+     "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/shifting-the-silence"
+    },
+    {
+     "titel": "Maria Jarema. Revolutionäre Kommissarin der Abstraktion",
+     "von": "2026-10-27",
+     "bis": "2027-04-25",
+     "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/maria-jarema"
+    },
+    {
+     "titel": "Über die Welt hinaus. Der Blaue Reiter",
+     "von": "2026-03-10",
+     "bis": "2027-09-05",
+     "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/ueber-die-welt-hinaus-der-blaue-reiter"
+    },
+    {
+     "titel": "Was zu verschwinden droht, wird Bild. Mensch – Natur – Kunst",
+     "bis": "2028-01-31",
+     "url": "https://www.lenbachhaus.de/programm/ausstellungen/detail/was-zu-verschwinden-droht-wird-bild"
+    }
+   ],
+   "quelle": "https://www.lenbachhaus.de/programm/ausstellungen",
+   "format": "html-zeitraum"
+  },
+  "m-dm": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Ausstellungsdaten erkannt",
+   "versuche": [
+    "https://www.deutsches-museum.de/ausstellungen -> 404",
+    "https://www.deutsches-museum.de/ausstellungen/aktuell -> 404",
+    "https://www.deutsches-museum.de/exhibitions -> 404",
+    "https://www.deutsches-museum.de/en/exhibitions -> 404",
+    "https://www.deutsches-museum.de/programm -> 404"
+   ]
+  },
+  "m-bnm": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Liminal Spaces",
+     "von": "2026-09-24",
+     "bis": "2027-01-17",
+     "url": "https://www.bayerisches-nationalmuseum.de/besuch/ausstellungen/liminal-spaces"
+    },
+    {
+     "titel": "StadtLandschaft",
+     "von": "2026-10-29",
+     "bis": "2027-02-14",
+     "url": "https://www.bayerisches-nationalmuseum.de/besuch/ausstellungen/stadtlandschaft"
+    }
+   ],
+   "quelle": "https://www.bayerisches-nationalmuseum.de/besuch/ausstellungen",
+   "format": "html-zeitraum"
+  },
+  "m-hdk": {
+   "status": "keine",
+   "ausstellungen": [],
+   "quelle": "https://www.hausderkunst.de/kalender/ausstellungen",
+   "format": "html-zeitraum"
+  },
+  "m-gly": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Ausstellungsdaten erkannt",
+   "versuche": [
+    "https://antike-am-koenigsplatz.mwn.de/ -> ConnectionError",
+    "https://www.antike-am-koenigsplatz.mwn.de/ausstellungen -> 404",
+    "https://www.antike-am-koenigsplatz.mwn.de/de/ausstellungen -> 404",
+    "https://www.antike-am-koenigsplatz.mwn.de/ausstellungen/aktuell -> 404",
+    "https://www.antike-am-koenigsplatz.mwn.de/programm -> 404"
+   ]
+  },
+  "m-m5k": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Kabuki",
+     "von": "2026-10-23",
+     "bis": "2027-05-02",
+     "url": "https://www.museum-fuenf-kontinente.de/besuch/ausstellungen/sonderausstellungen/kabuki-schauspiel-drucke-fankultur"
+    }
+   ],
+   "quelle": "https://www.museum-fuenf-kontinente.de/",
+   "format": "html-zeitraum"
+  },
+  "m-nsd": {
+   "status": "keine",
+   "ausstellungen": [],
+   "quelle": "https://www.nsdoku.de/ausstellungen/aktuell-und-vorschau",
+   "format": "html-zeitraum"
+  },
+  "w-khm": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Ein 2000 Jahre altes Rätsel",
+     "bis": "2027-03-29",
+     "url": "https://www.khm.at/ausstellungen/tatort-ephesos"
+    }
+   ],
+   "quelle": "https://www.khm.at/",
+   "format": "html-zeitraum"
+  },
+  "w-alb": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "HER STORY",
+     "bis": "2027-02-14",
+     "url": "https://www.albertina.at/ausstellungen/kuenstlerinnen-der-albertina/"
+    },
+    {
+     "titel": "SHARA HUGHES",
+     "bis": "2027-02-28",
+     "url": "https://www.albertina.at/ausstellungen/shara-hughes/"
+    },
+    {
+     "titel": "ARNULF RAINER",
+     "bis": "2027-04-25",
+     "url": "https://www.albertina.at/ausstellungen/arnulf-rainer-2026/"
+    }
+   ],
+   "quelle": "https://www.albertina.at/ausstellungen/",
+   "format": "html-zeitraum"
+  },
+  "w-bel": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Feminist. Futures. Forever",
+     "von": "2026-11-05",
+     "bis": "2027-03-08",
+     "url": "https://www.belvedere.at/go/tickets?location[]=3"
+    },
+    {
+     "titel": "Civa. Contemporary Immersive Virtual Art",
+     "von": "2026-11-13",
+     "bis": "2027-03-08",
+     "url": "https://www.belvedere.at/go/tickets?location[]=3"
+    },
+    {
+     "titel": "CARLONE CONTEMPORARY: Asta Gröting",
+     "von": "2026-09-24",
+     "bis": "2027-03-29",
+     "url": "https://www.belvedere.at/go/tickets?location[]=1"
+    }
+   ],
+   "quelle": "https://www.belvedere.at/ausstellungen-aktuell",
+   "format": "html-zeitraum"
+  },
+  "w-leo": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "HERBERT BOECKL – HANS JOSEPHSOHN",
+     "von": "2026-07-24",
+     "bis": "2027-01-10",
+     "url": "https://www.leopoldmuseum.org/de/ausstellungen/155/herbert-boeckl-hans-josephsohn"
+    },
+    {
+     "titel": "NEU. SACHLICH.",
+     "von": "2026-11-13",
+     "bis": "2027-02-28",
+     "url": "https://www.leopoldmuseum.org/de/ausstellungen/153/neu-sachlich"
+    }
+   ],
+   "quelle": "https://www.leopoldmuseum.org/de/ausstellungen/aktuell",
+   "format": "html-zeitraum"
+  },
+  "w-mumok": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Terminal Piece",
+     "von": "2026-06-20",
+     "bis": "2027-02-07",
+     "url": "https://www.mumok.at/ausstellungen/terminal-piece"
+    },
+    {
+     "titel": "Push and Pull: A Furniture Comedy",
+     "von": "2026-11-14",
+     "bis": "2027-04-04",
+     "url": "https://www.mumok.at/ausstellungen/push-and-pull"
+    }
+   ],
+   "quelle": "https://www.mumok.at/ausstellungen/aktuell",
+   "format": "html-zeitraum"
+  },
+  "w-mak": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "ANNEA LOCKWOOD: A SOUND MAP OF THE DANUBE",
+     "von": "2026-10-28",
+     "bis": "2026-11-29",
+     "url": "https://www.mak.at/programm/ausstellungen/kooperation_mit_wien_modern"
+    },
+    {
+     "titel": "VALLY WIESELTHIER",
+     "von": "2026-04-29",
+     "bis": "2027-01-10",
+     "url": "https://www.mak.at/programm/ausstellungen/vally_wieselthier"
+    },
+    {
+     "titel": "Social Housing: Vienna—Los Angeles",
+     "von": "2026-10-22",
+     "bis": "2027-01-17",
+     "url": "https://www.mak.at/programm/ausstellungen/social_housing_viennalos_angeles"
+    },
+    {
+     "titel": "THOMAS DEMAND",
+     "von": "2026-05-27",
+     "bis": "2027-01-24",
+     "url": "https://www.mak.at/programm/ausstellungen/thomas_demand"
+    },
+    {
+     "titel": "ARCHITEKTURBAUKÄSTEN 1890–1990",
+     "von": "2026-10-07",
+     "bis": "2027-03-14",
+     "url": "https://www.mak.at/programm/ausstellungen/architekturbaukaesten_18901990"
+    }
+   ],
+   "quelle": "https://www.mak.at/ausstellungen/aktuell",
+   "format": "html-zeitraum"
+  },
+  "w-nhm": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Vorsicht Hochspannung. Sonderausstellung im Narrenturm",
+     "bis": "2027-04-24",
+     "url": "https://www.nhm.at/besuch/ausstellungen/vorsicht-hochspannung"
+    },
+    {
+     "titel": "Gutes Sammeln - Böses Sammeln",
+     "bis": "2027-06-27",
+     "url": "https://www.nhm.at/besuch/ausstellungen/gutes-sammeln-boeses-sammeln"
+    },
+    {
+     "titel": "GENchangers.",
+     "bis": "2027-07-26",
+     "url": "https://www.nhm.at/besuch/ausstellungen/genchangers"
+    }
+   ],
+   "quelle": "https://www.nhm.at/",
+   "format": "html-zeitraum"
+  },
+  "w-wm": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Verdichtungen",
+     "von": "2026-07-02",
+     "bis": "2026-11-29",
+     "url": "https://www.wienmuseum.at/verdichtungen_heliane_wiesauer_reiterer "
+    },
+    {
+     "titel": "Der Bildgenerator",
+     "von": "2026-07-02",
+     "bis": "2026-11-29",
+     "url": "https://www.wienmuseum.at/bildgenerator_karl_heinz_koller"
+    },
+    {
+     "titel": "Down Syndrom",
+     "von": "2026-10-22",
+     "bis": "2027-01-24",
+     "url": "https://www.wienmuseum.at/down-syndrom"
+    },
+    {
+     "titel": "Farbenspiel",
+     "von": "2026-10-01",
+     "bis": "2027-03-28",
+     "url": "https://www.wienmuseum.at/farbenspiel"
+    },
+    {
+     "titel": "Franz West und Wien",
+     "von": "2026-11-06",
+     "bis": "2027-05-02",
+     "url": "https://www.wienmuseum.at/franz_west_wien  "
+    }
+   ],
+   "quelle": "https://www.wienmuseum.at/ausstellungen",
+   "format": "html-zeitraum"
+  },
+  "w-tmw": {
+   "status": "keine",
+   "ausstellungen": [],
+   "quelle": "https://www.technischesmuseum.at/jart/prj3/tmw/main.jart",
+   "format": "json-ld"
+  },
+  "w-wmw": {
+   "status": "keine",
+   "ausstellungen": [],
+   "quelle": "https://www.weltmuseumwien.at/ausstellungen",
+   "format": "html-zeitraum"
+  },
+  "f-st": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Maria Magdalena. Sin. Pray. Love.",
+     "von": "2026-09-17",
+     "bis": "2027-01-17",
+     "url": "https://www.staedelmuseum.de/de/maria-magdalena"
+    },
+    {
+     "titel": "Elmgreen & Dragset. Stillleben mit Gemüse",
+     "von": "2026-05-20",
+     "bis": "2027-01-17",
+     "url": "https://www.staedelmuseum.de/de/elmgreen-dragset"
+    }
+   ],
+   "quelle": "https://www.staedelmuseum.de/de/ausstellungen-programm",
+   "format": "html-zeitraum"
+  },
+  "f-sch": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Anna Hulačová",
+     "bis": "2027-01-10",
+     "url": "https://schirn.ticketfritz.de/Shop/Detail/70987/58839"
+    },
+    {
+     "titel": "Leonor Fini",
+     "bis": "2027-02-21",
+     "url": "https://schirn.ticketfritz.de/Shop/Detail/70987/58839"
+    }
+   ],
+   "quelle": "https://www.schirn.de/",
+   "format": "html-zeitraum"
+  },
+  "f-mmk": {
+   "status": "fehler",
+   "grund": "geladen, aber keine Ausstellungsdaten erkannt",
+   "versuche": [
+    "https://www.mmk.art/ausstellungen -> 404",
+    "https://www.mmk.art/ausstellungen/aktuell -> 404",
+    "https://www.mmk.art/exhibitions -> 404",
+    "https://www.mmk.art/programm -> 404"
+   ]
+  },
+  "f-hmf": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Die Welt im Geld. Globale Ereignisse im Spiegel Frankfurter Finanzobjekte",
+     "bis": "2027-01-31",
+     "url": "https://historisches-museum-frankfurt.de/de/ausstellungen/welt-im-geld"
+    },
+    {
+     "titel": "Höchst erzählt! Über das Museum im Bolongaropalast",
+     "bis": "2027-02-28",
+     "url": "https://historisches-museum-frankfurt.de/de/ausstellungen/hoechst-erzaehlt"
+    },
+    {
+     "titel": "Raumstation von Heide Weidele",
+     "bis": "2027-04-12",
+     "url": "https://historisches-museum-frankfurt.de/de/ausstellungen/raumstation"
+    },
+    {
+     "titel": "Damals 1410",
+     "bis": "2027-05-30",
+     "url": "https://historisches-museum-frankfurt.de/de/ausstellungen/damals-1410"
+    }
+   ],
+   "quelle": "https://historisches-museum-frankfurt.de/de/",
+   "format": "html-zeitraum"
+  },
+  "f-sen": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Ohne Gedöns",
+     "von": "2026-11-16",
+     "bis": "2027-02-26",
+     "url": "https://museumfrankfurt.senckenberg.de/de/ausstellungen/sonderausstellungen/ohne-gedoens/"
+    },
+    {
+     "titel": "Secret Service: Frauen in der Naturforschung",
+     "von": "2026-09-25",
+     "bis": "2027-10-31",
+     "url": "https://museumfrankfurt.senckenberg.de/de/ausstellungen/sonderausstellungen/secret-service-frauen-in-der-naturforschung/"
+    }
+   ],
+   "quelle": "https://museumfrankfurt.senckenberg.de/de/ausstellungen/alle-ausstellungen/",
+   "format": "html-zeitraum"
+  },
+  "f-jm": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Ostend - Blick in ein Jüdisches Viertel",
+     "von": "2026-04-26",
+     "bis": "2026-11-29"
+    },
+    {
+     "titel": "Follow the Function?",
+     "von": "2025-12-18",
+     "bis": "2026-12-06"
+    },
+    {
+     "titel": "Armin Stern: Maler und Zionist",
+     "von": "2026-03-26",
+     "bis": "2027-01-10"
+    },
+    {
+     "titel": "OUT OF THE BOX",
+     "von": "2026-11-20",
+     "bis": "2027-04-25",
+     "url": "https://www.juedischesmuseum.de/besuch/detail/out-of-the-box"
+    },
+    {
+     "titel": "OUT OF THE BOX: Gisèle Freund",
+     "von": "2026-11-20",
+     "bis": "2027-04-25"
+    }
+   ],
+   "quelle": "https://www.juedischesmuseum.de/programm",
+   "format": "html-zeitraum"
+  },
+  "f-wkm": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "The Seruya Archive. Studies of the Wafuranki",
+     "von": "2026-11-13",
+     "bis": "2027-02-14",
+     "url": "https://www.weltkulturenmuseum.de/de/ausstellungen/The-Seruya-Archive"
+    }
+   ],
+   "quelle": "https://www.weltkulturenmuseum.de/de/ausstellungen/",
+   "format": "html-zeitraum"
+  },
+  "f-mak": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Civic City: Design, Poetik und Widerstand in Relation. Planetarische Demokratie angesichts des globalen Imperialismus",
+     "von": "2026-11-08",
+     "bis": "2027-02-14",
+     "url": "https://www.museumangewandtekunst.de/de/besuch/ausstellungen/civic-city-design-poetik-und-widerstand-in-relation/"
+    },
+    {
+     "titel": "Adler, Orden, Wahlurne. Redesigning Democratic Representation",
+     "von": "2026-08-28",
+     "bis": "2027-02-21",
+     "url": "https://www.museumangewandtekunst.de/de/besuch/ausstellungen/adler-orden-wahlurne-redesigning-democratic-representation/"
+    },
+    {
+     "titel": "亞 歐堂 meet asian art: Shibui. Eine Ästhetik jenseits kultureller Grenzen",
+     "von": "2026-11-12",
+     "bis": "2027-08-15",
+     "url": "https://www.museumangewandtekunst.de/de/besuch/ausstellungen/meet-asian-art-shibui-eine-kultur-jenseits-der-grenzen/"
+    }
+   ],
+   "quelle": "https://www.museumangewandtekunst.de/",
+   "format": "html-zeitraum"
+  },
+  "f-lh": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Bühne frei für Athena",
+     "von": "2026-11-18",
+     "bis": "2027-07-25",
+     "url": "https://www.liebieghaus.de/de/ausstellungen/buehne-frei-fuer-athena"
+    }
+   ],
+   "quelle": "https://www.liebieghaus.de/de/ausstellungen",
+   "format": "html-zeitraum"
+  },
+  "f-dam": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "DAM on Tour in Coburg: Architecture & Energy.",
+     "von": "2026-10-22",
+     "bis": "2026-11-29",
+     "url": "https://dam-online.de/veranstaltung/dam-on-tour-in-coburg-architecture-energy/"
+    },
+    {
+     "titel": "DIE LANGE BANK im Stadtraum",
+     "von": "2023-10-10",
+     "bis": "2026-12-31",
+     "url": "https://dam-online.de/veranstaltung/die-lange-bank-installation-auf-der-hauptwache/"
+    },
+    {
+     "titel": "„behind the scenes of the poorest neighbourhoods“ – Hinter den Kulissen der London Slums um 1870",
+     "von": "2026-08-15",
+     "bis": "2026-12-31",
+     "url": "https://dam-online.de/veranstaltung/behind-the-scenes-of-the-poorest-neighbourhoods-hinter-den-kulissen-der-london-slums-um-1870/"
+    },
+    {
+     "titel": "MORE IS NOW! Neue Tschechische Architektur + Restaurierung des Hauses Tugendhat",
+     "von": "2026-09-19",
+     "bis": "2027-01-17",
+     "url": "https://dam-online.de/veranstaltung/more-is-now-neue-tschechische-architektur-restaurierung-der-villa-tugendhat/"
+    },
+    {
+     "titel": "Aufmachen! Rethinking High-Rises",
+     "von": "2026-10-17",
+     "bis": "2027-01-17",
+     "url": "https://dam-online.de/veranstaltung/aufmachen-rethinking-high-rises/"
+    },
+    {
+     "titel": "Too Hot – Heiße Städte, Neue Wege",
+     "von": "2026-06-20",
+     "bis": "2027-02-07",
+     "url": "https://dam-online.de/veranstaltung/too-hot/"
+    },
+    {
+     "titel": "DAM on Tour in Wien: ARCHTEKTURBAUKÄSTEN 1890-1990. Die große Mitspielausstellung",
+     "von": "2026-10-07",
+     "bis": "2027-03-14",
+     "url": "https://dam-online.de/veranstaltung/dam-on-tour-in-wien-archtekturbaukaesten-1890-1990-die-grosse-mitspielausstellung/"
+    },
+    {
+     "titel": "BEST HIGH-RISES. Internationaler Hochhauspreis 2026/27",
+     "von": "2026-11-05",
+     "bis": "2027-04-04",
+     "url": "https://dam-online.de/veranstaltung/best-high-rises-2026-27/"
+    }
+   ],
+   "quelle": "https://dam-online.de/programm/ausstellungen/",
+   "format": "json-ld"
+  },
+  "f-mfk": {
+   "status": "ok",
+   "ausstellungen": [
+    {
+     "titel": "Design-Ikonen der Mediengeschichte",
+     "von": "2026-07-01",
+     "bis": "2026-12-31",
+     "url": "https://www.mfk-frankfurt.de/ausstellung-design-ikonen-der-mediengeschichte/"
+    },
+    {
+     "titel": "Samizdat: Worte der Freiheit",
+     "von": "2026-08-20",
+     "bis": "2027-01-24",
+     "url": "https://www.mfk-frankfurt.de/ausstellung-samizdat-worte-der-freiheit-in-der-tschechoslowakei"
+    },
+    {
+     "titel": "Familienbande. How to Family",
+     "von": "2026-10-22",
+     "bis": "2028-02-27",
+     "url": "https://www.mfk-frankfurt.de/familienbande/"
+    }
+   ],
+   "quelle": "https://www.mfk-frankfurt.de/ausstellungen/",
+   "format": "html-zeitraum"
+  }
+ }
+}
