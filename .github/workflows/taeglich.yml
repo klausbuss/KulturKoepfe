@@ -2,15 +2,12 @@ name: Heute läuft
 
 on:
   schedule:
-    # Einmal täglich um 6 Uhr deutscher Zeit. GitHub kennt nur UTC: 04:00 UTC ist im Sommer
-    # 6 Uhr, 05:00 UTC im Winter. Der Schritt „Zeit prüfen“ lässt nur den ersten Lauf ab
-    # 6 Uhr arbeiten, der zweite Zeitpunkt wird übersprungen.
-    # Minuten bewusst „krumm“ (:17/:43): volle Stunden sind bei GitHub stark überlastet,
-    # dort verzögern sich Läufe seit Anfang November um Stunden. Mehrfachläufe werden übersprungen.
-    - cron: "17 4 * * *"
-    - cron: "43 4 * * *"
-    - cron: "17 5 * * *"
-    - cron: "43 5 * * *"
+    # Abends nach 22 Uhr deutscher Zeit, dann holt der Lauf schon die Vorstellungen des Folgetags.
+    # So sind die Daten morgens fertig, auch wenn GitHub geplante Läufe um Stunden verzögert.
+    # GitHub kennt nur UTC: 21:17 UTC ist im Winter 22:17 Uhr und im Sommer 23:17 Uhr.
+    # Der Schritt „Zeit prüfen“ überspringt weitere Läufe, wenn das Zieldatum schon vorliegt.
+    - cron: "17 21 * * *"
+    - cron: "43 21 * * *"
   workflow_dispatch:      # erlaubt den Start per Knopfdruck (läuft immer)
 
 permissions:
@@ -21,14 +18,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Zeit prüfen (einmal täglich ab 6 Uhr deutscher Zeit)
+      - name: Zeit prüfen (Zieldatum schon vorhanden?)
         id: zeit
         run: |
-          stunde=$(TZ=Europe/Berlin date +%H)
-          heute=$(TZ=Europe/Berlin date +%F)
-          muster="\"stand\": \"${heute}T(0[6-9]|1[0-9]|2[0-3])"
-          if [ "${{ github.event_name }}" = "schedule" ] && { [ "$stunde" -lt 6 ] || grep -Eq "$muster" heute.json; }; then
-            echo "Übersprungen (Stunde $stunde; es ist vor 6 Uhr oder heute.json wurde heute schon ab 6 Uhr erzeugt)"
+          ziel=$(TZ=Europe/Berlin date -d '+2 hours' +%F)
+          echo "ziel=$ziel" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event_name }}" = "schedule" ] && grep -q "\"datum\": \"${ziel}\"" heute.json; then
+            echo "Übersprungen: heute.json enthält schon das Zieldatum ${ziel}"
             echo "run=false" >> "$GITHUB_OUTPUT"
           else
             echo "run=true" >> "$GITHUB_OUTPUT"
@@ -39,6 +35,11 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
         if: steps.zeit.outputs.run == 'true'
+      - name: Stand von heute als vortag.json sichern
+        if: steps.zeit.outputs.run == 'true'
+        run: |
+          # Läuft der Abruf abends für den Folgetag, braucht die App den heutigen Stand bis Mitternacht.
+          if ! grep -q "\"datum\": \"${{ steps.zeit.outputs.ziel }}\"" heute.json; then cp heute.json vortag.json; fi
       - run: python abruf.py
         if: steps.zeit.outputs.run == 'true'
       - name: heute.json speichern
@@ -46,8 +47,8 @@ jobs:
         run: |
           git config user.name "kulturkoepfe-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add heute.json diagnose || git add heute.json
-          git commit -m "Heute läuft: $(date +%F)" || echo "Keine Änderung"
+          git add heute.json vortag.json diagnose || git add heute.json vortag.json
+          git commit -m "Heute läuft: ${{ steps.zeit.outputs.ziel }}" || echo "Keine Änderung"
           for versuch in 1 2 3; do
             git pull --rebase origin main && git push && exit 0
             echo "Push fehlgeschlagen (Versuch $versuch), neuer Versuch"

@@ -27,7 +27,12 @@ import requests
 from bs4 import BeautifulSoup
 
 TZ = ZoneInfo("Europe/Berlin")          # gilt auch für Hamburg, München, Wien, Frankfurt
-HEUTE = dt.datetime.now(TZ).date()
+# Zieldatum: ab 22 Uhr deutscher Zeit holt der Lauf schon den Folgetag, damit die Daten morgens
+# fertig sind, egal wann GitHub den geplanten Lauf wirklich startet. Per Umgebungsvariable
+# ZIELDATUM=JJJJ-MM-TT lässt sich das überschreiben.
+_ziel = os.environ.get("ZIELDATUM")
+HEUTE = (dt.date.fromisoformat(_ziel) if _ziel
+         else (dt.datetime.now(TZ) + dt.timedelta(hours=2)).date())
 UA = "Kulturkoepfe-Spielplanabruf/1.0 (+https://klausbuss.github.io/kulturkoepfe/)"
 TIMEOUT = 20
 PAUSE = 1.0                             # Sekunden zwischen zwei Anfragen

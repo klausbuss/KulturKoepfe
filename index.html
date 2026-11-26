@@ -682,11 +682,14 @@ function heuteBlockDaten(id){
     <li><b>${v.url ? `<a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.titel)}</a>` : esc(v.titel)}</b>
     <span>${[v.zeit ? v.zeit+" Uhr" : "", esc(v.ort)].filter(Boolean).join(" · ")}</span></li>`).join("") + `</ul></div>`;
 }
-fetch("heute.json",{cache:"no-store"}).then(r=>r.ok ? r.json() : null).then(d=>{
+const holeJson = u => fetch(u,{cache:"no-store"}).then(r=>r.ok ? r.json() : null).catch(()=>null);
+holeJson("heute.json").then(async d=>{
   if(!d) return;
+  // Der Abruf läuft abends und holt schon den Folgetag. Bis Mitternacht liegt der heutige Stand in vortag.json.
+  if(d.datum>heuteISO()){ const v = await holeJson("vortag.json"); if(!v) return; d = v; }
   const gestern = new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Berlin"}).format(new Date(Date.now()-864e5));
   if(d.datum===heuteISO() || d.datum===gestern){ VORTAG = d.datum!==heuteISO(); HEUTE = d.haeuser; render(); }
-}).catch(()=>{});
+});
 
 const STAEDTE = {berlin:"Berlins", hamburg:"Hamburgs", muenchen:"Münchens", wien:"Wiens", frankfurt:"Frankfurts"};
 const imOrt = h => h.stadt===state.stadt;
